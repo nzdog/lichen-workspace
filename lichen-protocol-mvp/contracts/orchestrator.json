@@ -1,0 +1,90 @@
+{
+  "orchestrator_id": "pra_orchestrator",
+  "title": "PRA Orchestrator",
+  "version": "0.1.0",
+  "purpose": "Sequence rooms, enforce gates, and carry diagnostics/consent/closure invariants across flows.",
+  "invariants": {
+    "rooms_can_run_independently": true,
+    "rooms_can_be_orchestrated": true,
+    "diagnostics_default": true,
+    "diagnostics_toggle_supported": true,
+    "completion_prompts_required_at_arc_boundaries": true,
+    "gate_chain_required_for_all_user_visible_outputs": true
+  },
+  "inputs": {
+    "entry_room_id": "string (optional; default: entry_room)",
+    "room_id": "string (room to invoke)",
+    "payload": "object (room-specific inputs)",
+    "session_state_ref": "string (uuid)",
+    "diagnostics_capture": "boolean (optional; overrides default)",
+    "delivery_mode": "string (optional; e.g., full|theme_only|scenario_entry|mini_walk)"
+  },
+  "outputs": {
+    "display_text": "string (final user-visible text after gates)",
+    "next_action": "string (room_id|protocol_suggestion|end)",
+    "pace_label": "string (NOW|HOLD|LATER|SOFT_HOLD|null)",
+    "consent_status": "string (granted|withheld|not_applicable)",
+    "diagnostic_summary": "object (tones|residues|readiness; internal)",
+    "telemetry": "object (metrics hooks, gate results, timestamps)"
+  },
+  "default_sequence": [
+    "entry_room",
+    "diagnostic_room",
+    "protocol_room",
+    "walk_room",
+    "integration_commit_room",
+    "exit_room"
+  ],
+  "midwalk_invocations": {
+    "allowed": true,
+    "examples": ["memory_room", "clarity_clinic"],
+    "preserve_context": true
+  },
+  "gate_chain": [
+    "integrity_linter",
+    "plain_language_rewriter",
+    "stones_alignment_filter",
+    "coherence_gate"
+  ],
+  "on_gate_failure": {
+    "regenerate_attempts": 1,
+    "fallback": "refusal_library",
+    "refusal_style": ["not_now", "not_like_this", "not_us"],
+    "offer_safe_alternative": true
+  },
+  "diagnostics": {
+    "signals": ["tones", "residues", "readiness", "joy_sample?"],
+    "capture_on_room_entry": true,
+    "capture_on_room_exit": true,
+    "persist_to_memory": true
+  },
+  "consent_and_completion": {
+    "require_consent_on_entry_rooms": true,
+    "require_completion_on_closing_arcs": true,
+    "prompt_contract": {
+      "fields": ["reflection_text", "accuracy_check", "choice_to_continue_or_pause"]
+    }
+  },
+  "room_contract_expectations": {
+    "required_fields": ["room_id", "purpose", "mini_walk_supported", "completion_prompt_required", "diagnostics_default", "gate_profile"],
+    "gate_profile_override_allowed": true
+  },
+  "metrics_hooks": {
+    "clarity_score": "number (0-1) post-plain-language",
+    "stones_compliance_score": "number (0-1)",
+    "coherence_score": "number (0-1)",
+    "pace_match": "string (matched|mismatched)",
+    "protocol_completion": "boolean",
+    "drift_events": "array of objects (gate: string, reason: string, ts: iso8601)"
+  },
+  "logging": {
+    "level": "info",
+    "fields": ["session_id", "room_id", "gate_results", "consent_status", "metrics", "latency_ms"],
+    "pii_policy": "no_user_raw_text_in_logs"
+  },
+  "safety": {
+    "refusal_on_missing_contracts": true,
+    "block_unregistered_rooms": true,
+    "block_bypass_of_gate_chain": true
+  }
+}

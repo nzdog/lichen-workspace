@@ -1,0 +1,12 @@
+{
+  "doc_id": "doc-entry-room-protocol",
+  "chunk_id": "chunk-1",
+  "text": "The entry room receives first words, reflects clearly, sets pace, and invites consent.",
+  "token_count": 15,
+  "span": {
+    "start": 0,
+    "end": 85
+  },
+  "section": "introduction",
+  "tags": ["entry", "consent"]
+}

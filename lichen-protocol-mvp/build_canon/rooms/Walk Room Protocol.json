@@ -1,0 +1,84 @@
+{
+  "Protocol Title": "Walk Room Protocol",
+  "Overall Purpose": "To execute canon protocols step by step, enforcing sequence, pacing, diagnostics, and closure. The Walk Room ensures protocols are enacted as structured processes rather than delivered as static content.",
+  "Why This Matters": "If protocols are delivered all at once, skipped, or rushed, structural fidelity breaks and downstream rooms cannot rely on consistent state. The Walk Room guarantees sequential delivery, pacing governance, diagnostic capture, and completion enforcement.",
+  "When To Use This Protocol": "Whenever a protocol is being run — full walk, theme-only, or scenario entry. Always invoked after the Protocol Room selects a protocol.",
+  "Overall Outcomes": {
+    "Poor": "Themes delivered in bulk or skipped. No pacing or diagnostics enforced. State incomplete.",
+    "Expected": "Themes delivered in sequence with minimal pacing. Some diagnostics logged. Partial reliability.",
+    "Excellent": "Themes delivered one at a time with enforced pacing, diagnostic logging, and closure. State consistent.",
+    "Transcendent": "Walk Room governance becomes invisible infrastructure — all protocols are walked predictably, with coherent state outputs."
+  },
+  "Themes": [
+    {
+      "Name": "Sequence Enforcement",
+      "Purpose": "Deliver protocol themes in canonical order, one at a time.",
+      "Why This Matters": "Prevents skipping or collapsing steps, protecting structural fidelity.",
+      "Outcomes": {
+        "Poor": "Order not enforced.",
+        "Expected": "Basic order enforced inconsistently.",
+        "Excellent": "Canonical order enforced for all themes.",
+        "Transcendent": "Order enforcement is invariant — protocols always walked correctly."
+      },
+      "Guiding Questions": [
+        "Does the room deliver themes sequentially?",
+        "Is each theme isolated from the next until complete?",
+        "Is out-of-order delivery blocked?"
+      ]
+    },
+    {
+      "Name": "Pacing Governance",
+      "Purpose": "Apply pace gate (NOW, HOLD, LATER, SOFT HOLD) to each step.",
+      "Why This Matters": "Ensures protocols are governed by rhythm, not urgency.",
+      "Outcomes": {
+        "Poor": "No pacing enforced.",
+        "Expected": "Some steps governed by pace gate.",
+        "Excellent": "All steps governed by explicit pace options.",
+        "Transcendent": "Pacing is structural — every walk step governed consistently."
+      },
+      "Guiding Questions": [
+        "Is a pace decision enforced before each theme?",
+        "Are HOLD and LATER respected structurally?",
+        "Can sessions continue only when pace conditions are satisfied?"
+      ]
+    },
+    {
+      "Name": "Step Diagnostics",
+      "Purpose": "Capture tone, residue, and readiness signals at each step.",
+      "Why This Matters": "Without structured diagnostics, downstream continuity fails.",
+      "Outcomes": {
+        "Poor": "No diagnostics captured.",
+        "Expected": "Diagnostics captured at start or end only.",
+        "Excellent": "Diagnostics captured at every step in minimal form.",
+        "Transcendent": "Diagnostics capture is invariant — walk always yields a full diagnostic record."
+      },
+      "Guiding Questions": [
+        "Are diagnostics logged at each step?",
+        "Is data minimal and structured?",
+        "Is logging toggleable without breaking flow?"
+      ]
+    },
+    {
+      "Name": "Completion Enforcement",
+      "Purpose": "Require explicit closure prompts before walk termination.",
+      "Why This Matters": "Prevents incomplete protocols and protects downstream state.",
+      "Outcomes": {
+        "Poor": "No closure enforced.",
+        "Expected": "Closure enforced inconsistently.",
+        "Excellent": "Closure enforced at all walks with prompts logged.",
+        "Transcendent": "Closure enforcement invariant — every walk ends cleanly."
+      },
+      "Guiding Questions": [
+        "Does the room block termination until closure prompts run?",
+        "Is closure always logged?",
+        "Is state flagged as complete before handoff?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Were all themes delivered in canonical order?",
+    "Was pacing enforced at every step?",
+    "Were diagnostics captured across the walk?",
+    "Was closure enforced before termination?"
+  ]
+}

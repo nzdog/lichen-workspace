@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:contract:hallway:v0.2.0",
+  "title": "Hallway Contract (v0.2.0)",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "room_id": { "const": "hallway" },
+    "title": { "type": "string", "const": "Hallway" },
+    "version": { "type": "string", "const": "0.2.0" },
+    "purpose": { "type": "string", "const": "Deterministic multi-room session orchestrator" },
+
+    "stone_alignment": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+
+    "sequence": {
+      "description": "Declared canonical order of rooms for a full walk",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "entry_room",
+          "diagnostic_room",
+          "protocol_room",
+          "walk_room",
+          "memory_room",
+          "integration_commit_room",
+          "exit_room"
+        ]
+      },
+      "minItems": 1
+    },
+
+    "mini_walk_supported": { "type": "boolean" },
+
+    "gate_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "chain": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 0
+        },
+        "overrides": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": ["chain", "overrides"]
+    },
+
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "session_state_ref": { "type": "string", "minLength": 1 },
+        "payloads": {
+          "type": "object",
+          "description": "Optional per-room payload map keyed by room_id",
+          "additionalProperties": true
+        },
+        "options": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "stop_on_decline": { "type": "boolean", "default": true },
+            "dry_run": { "type": "boolean", "default": false },
+            "mini_walk": { "type": "boolean", "default": false },
+            "rooms_subset": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": []
+            }
+          }
+        }
+      },
+      "required": ["session_state_ref"]
+    },
+
+    "outputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "contract_version": { "type": "string", "const": "0.2.0" },
+        "steps": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/StepResult" }
+        },
+        "final_state_ref": { "type": "string" },
+        "exit_summary": { "$ref": "#/$defs/ExitSummary" }
+      },
+      "required": ["contract_version", "steps", "exit_summary"]
+    }
+  },
+  "required": [
+    "room_id",
+    "title",
+    "version",
+    "purpose",
+    "stone_alignment",
+    "sequence",
+    "mini_walk_supported",
+    "gate_profile",
+    "inputs",
+    "outputs"
+  ],
+
+  "$defs": {
+    "HexHash": {
+      "type": "string",
+      "pattern": "^(sha256:)?[A-Fa-f0-9]{64}$"
+    },
+
+    "GateDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "gate": { "type": "string" },
+        "allow": { "type": "boolean" },
+        "reason": { "type": "string" },
+        "details": { "type": "object", "additionalProperties": true }
+      },
+      "required": ["gate", "allow"]
+    },
+
+    "Decline": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reason": { "type": "string" },
+        "message": { "type": "string" },
+        "details": { "type": "object", "additionalProperties": true }
+      },
+      "required": ["reason"]
+    },
+
+    "Invariants": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "deterministic": { "type": "boolean" },
+        "no_partial_write": { "type": "boolean" }
+      },
+      "required": ["deterministic", "no_partial_write"]
+    },
+
+    "Audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "step_hash": { "$ref": "#/$defs/HexHash" },
+        "prev_hash": {
+          "oneOf": [
+            { "$ref": "#/$defs/HexHash" },
+            { "type": "null" }
+          ]
+        },
+        "room_contract_version": { "type": "string" }
+      },
+      "required": ["step_hash", "room_contract_version"]
+    },
+
+    "StepResult": {
+      "description": "Transcendent envelope for a single room step (v0.2). `data` carries the legacy v0.1 room output.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "contract_version": { "type": "string", "const": "0.2.0" },
+        "room_id": { "type": "string" },
+        "status": { "type": "string", "enum": ["ok", "decline"] },
+        "data": {
+          "description": "Exact legacy v0.1 room output (backward compatibility)",
+          "type": "object",
+          "additionalProperties": true
+        },
+        "invariants": { "$ref": "#/$defs/Invariants" },
+        "gate_decisions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/GateDecision" }
+        },
+        "diagnostics_digest": { "$ref": "#/$defs/HexHash" },
+        "audit": { "$ref": "#/$defs/Audit" },
+        "decline": {
+          "oneOf": [
+            { "$ref": "#/$defs/Decline" },
+            { "type": "null" }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "contract_version",
+        "room_id",
+        "status",
+        "data",
+        "invariants",
+        "gate_decisions",
+        "audit"
+      ]
+    },
+
+    "ExitSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "completed": { "type": "boolean" },
+        "decline": {
+          "oneOf": [
+            { "$ref": "#/$defs/Decline" },
+            { "type": "null" }
+          ],
+          "default": null
+        },
+        "auditable_hash_chain": {
+          "description": "Linear chain of step hashes from start to finish for external verification",
+          "type": "array",
+          "items": { "$ref": "#/$defs/HexHash" }
+        }
+      },
+      "required": ["completed"]
+    }
+  }
+}

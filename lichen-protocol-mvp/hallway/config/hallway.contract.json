@@ -1,0 +1,41 @@
+{
+  "room_id": "hallway",
+  "title": "Hallway",
+  "version": "0.2.0",
+  "purpose": "Deterministic multi-room session orchestrator",
+  "stone_alignment": ["deterministic", "atomic", "auditable"],
+  "sequence": [
+    "entry_room",
+    "diagnostic_room",
+    "protocol_room",
+    "walk_room",
+    "memory_room",
+    "integration_commit_room",
+    "exit_room"
+  ],
+  "mini_walk_supported": true,
+  "gate_profile": {
+    "chain": ["coherence_gate"],
+    "overrides": {}
+  },
+  "inputs": {
+    "session_state_ref": "",
+    "payloads": {},
+    "options": {
+      "stop_on_decline": true,
+      "dry_run": false,
+      "mini_walk": false,
+      "rooms_subset": []
+    }
+  },
+  "outputs": {
+    "contract_version": "0.2.0",
+    "steps": [],
+    "final_state_ref": "",
+    "exit_summary": {
+      "completed": false,
+      "decline": null,
+      "auditable_hash_chain": []
+    }
+  }
+}

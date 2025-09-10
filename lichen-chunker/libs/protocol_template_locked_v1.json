@@ -1,0 +1,80 @@
+{
+  "Title": "",
+  "Short Title": "",
+  "Overall Purpose": "",
+  "Why This Matters": "",
+  "When To Use This Protocol": "",
+  "Overall Outcomes": {
+    "Poor": "",
+    "Expected": "",
+    "Excellent": "",
+    "Transcendent": ""
+  },
+  "Themes": [
+    {
+      "Name": "",
+      "Purpose of This Theme": "",
+      "Why This Matters": "",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "",
+          "Immediate cost": "",
+          "30-90 day system effect": "",
+          "Signals": "",
+          "Edge condition": "",
+          "Example moves": "",
+          "Future effect": ""
+        },
+        "Expected": {
+          "Present pattern": "",
+          "Immediate cost": "",
+          "30-90 day system effect": "",
+          "Signals": "",
+          "Edge condition": "",
+          "Example moves": "",
+          "Future effect": ""
+        },
+        "Excellent": {
+          "Present pattern": "",
+          "Immediate cost": "",
+          "30-90 day system effect": "",
+          "Signals": "",
+          "Edge condition": "",
+          "Example moves": "",
+          "Future effect": ""
+        },
+        "Transcendent": {
+          "Present pattern": "",
+          "Immediate cost": "",
+          "30-90 day system effect": "",
+          "Signals": "",
+          "Edge condition": "",
+          "Example moves": "",
+          "Future effect": ""
+        }
+      },
+      "Guiding Questions": []
+    }
+  ],
+  "Completion Prompts": [],
+  "Version": "",
+  "Created At": "",
+  "Protocol ID": "",
+  "Category": "",
+  "Metadata": {
+    "Complexity": 0,
+    "Readiness Stage": "",
+    "Modes": [],
+    "Estimated Time": "",
+    "Tone Markers": [],
+    "Primary Scenarios": [],
+    "Related Protocols": [],
+    "Tags": [],
+    "Algorithm": {
+      "Present": false
+    },
+    "Stones": [],
+    "Fields": [],
+    "Bridges": []
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "Protocol Title": "Build Canon – PRA: Room Set Architecture",
+  "Overall Purpose": "To define the set of rooms, their functions, and governing invariants inside the Protocol Room Architecture. This ensures every builder knows what a room is, how it behaves, and how rooms interconnect.",
+  "Why This Matters": "Without a shared architecture, rooms fragment, confuse builders, and distort the founder’s experience. The PRA provides a coherent room set, embedding diagnostics, pacing, and trust as non-negotiable anchors.",
+  "When To Use This Protocol": "Whenever designing, coding, or refining a room. Reference this protocol before creating new rooms or updating existing ones.",
+  "Overall Outcomes": {
+    "Poor": "Rooms are built ad-hoc without standards. Future: fragmented system and user distrust.",
+    "Expected": "Rooms conform to PRA invariants: each runs independently, can be orchestrated, captures diagnostics by default, and applies consent/closure prompts at arcs. Future: coherent, trustworthy experience.",
+    "Excellent": "Rooms not only follow PRA but embody Stones throughout their design. Future: rooms feel distinct in function yet harmonized in tone and trust.",
+    "Transcendent": "Rooms themselves become living transmissions of the field: sovereign yet interconnected. Future: PRA becomes culture, builders create coherence by instinct."
+  },
+  "Themes": [
+    {
+      "Name": "Entry Room",
+      "Purpose": "To receive the founder’s first words, reflect them clearly, set pace, and anchor consent.",
+      "Why This Matters": "The entry point sets the tone of trust and clarity for the entire walk.",
+      "Outcomes": {
+        "Poor": "Parrots input without attunement. Future: distrust from the start.",
+        "Expected": "Reflects plainly, sets a basic pace, and asks for consent. Future: walk feels functional and safe.",
+        "Excellent": "Clarifies multiple ideas, paces attuned to readiness, surfaces trust naturally. Future: strong relational entry.",
+        "Transcendent": "Reflection itself calms the founder’s field and primes transformation. Future: entry becomes medicine."
+      },
+      "Guiding Questions": [
+        "Does the mirror component return user input exactly, without paraphrase drift?",
+        "Is the pace gate coded to support NOW, HOLD, LATER, SOFT_HOLD?",
+        "Does the room enforce a consent anchor before proceeding downstream?",
+        "Is diagnostics capture on by default with option to toggle?"
+      ]
+    },
+    {
+      "Name": "Diagnostic Room",
+      "Purpose": "To sense tones, residues, readiness, and map to next best protocols.",
+      "Why This Matters": "Diagnostics protect fidelity and match the right walk to the right moment.",
+      "Outcomes": {
+        "Poor": "No diagnostics captured. Future: downstream rooms operate blindly.",
+        "Expected": "Captures basic tones/residues and suggests protocols. Future: reliable scenario mapping.",
+        "Excellent": "Captures subtle states and adjusts scope/pacing. Future: nuanced context enriches all walks.",
+        "Transcendent": "Diagnostics invisibly tune the system to the founder’s field. Future: downstream coherence compounds effortlessly."
+      },
+      "Guiding Questions": [
+        "Does the room automatically capture diagnostic signals on entry and exit?",
+        "Are tones, residues, and readiness states persisted into memory?",
+        "Is protocol suggestion logic mapped to the canonical scenario set?",
+        "Can diagnostics capture be toggled off when explicitly disabled?"
+      ]
+    },
+    {
+      "Name": "Protocol Room",
+      "Purpose": "To surface the right protocol (full, theme-only, or scenario-based) from the canon.",
+      "Why This Matters": "Protocols are the heart of the system; fidelity here defines user trust.",
+      "Outcomes": {
+        "Poor": "Serves incomplete or distorted protocols. Future: system feels hollow.",
+        "Expected": "Retrieves canon protocols cleanly. Future: founders receive trustworthy walks.",
+        "Excellent": "Adapts delivery (theme, full, scenario entry) without losing fidelity. Future: system feels flexible and alive.",
+        "Transcendent": "Protocol delivery feels relational, not mechanical. Future: founder experiences companionship, not content."
+      },
+      "Guiding Questions": [
+        "Does the room fetch only from validated canon protocols?",
+        "Is delivery switchable between full, theme-only, and scenario-based entry?",
+        "Does the Stones filter gate every protocol before output?",
+        "Can the orchestrator override delivery depth based on readiness?"
+      ]
+    },
+    {
+      "Name": "Walk Room",
+      "Purpose": "To guide the founder through protocol steps, themes, outcomes, and questions.",
+      "Why This Matters": "The walk is where change happens; pacing and resonance matter most.",
+      "Outcomes": {
+        "Poor": "Steps rushed or skipped. Future: founder disengages.",
+        "Expected": "Steps walked sequentially with clarity. Future: founders complete coherent walks.",
+        "Excellent": "Walks paced and personalized, mini-walks offered where appropriate. Future: founders trust the rhythm.",
+        "Transcendent": "Walking itself transforms the founder’s field. Future: protocols feel alive, not static."
+      },
+      "Guiding Questions": [
+        "Does the stepper deliver each theme sequentially and completely?",
+        "Are mini-walks supported natively?",
+        "Does the walk enforce a completion prompt before exit?",
+        "Is pacing governed by the pace gate and not by user pressure?"
+      ]
+    },
+    {
+      "Name": "Memory Room",
+      "Purpose": "To store session history, residues, and user-controlled memory items.",
+      "Why This Matters": "Memory provides continuity and trust across walks.",
+      "Outcomes": {
+        "Poor": "No memory captured. Future: system feels forgetful and mechanical.",
+        "Expected": "Session history stored with user control. Future: founders feel continuity.",
+        "Excellent": "Memory contextualizes new walks, preserving rhythm. Future: founders feel truly walked-with.",
+        "Transcendent": "Memory itself becomes sacred continuity. Future: founders sense living relationship over time."
+      },
+      "Guiding Questions": [
+        "Is memory storage minimal, transparent, and user-controlled?",
+        "Can founders edit, delete, or pin items via consent interface?",
+        "Does each room write residues and readiness into memory?",
+        "Is diagnostic state persisted between rooms unless toggled off?"
+      ]
+    },
+    {
+      "Name": "AI Room",
+      "Purpose": "To act as the single steward of AI interactions: receive briefs from other rooms, generate aligned prompts, call models, apply governance checks, and return validated outputs.",
+      "Why This Matters": "Without central stewardship, prompts and outputs scatter across the system, causing drift, duplication, and incoherence. The AI Room ensures coherence, safety, and learning without burdening other rooms.",
+      "Outcomes": {
+        "Poor": "Each room crafts its own prompts and calls AI directly. Future: fragmentation, drift, and loss of trust.",
+        "Expected": "All AI interactions flow through the AI Room, which applies basic guardrails and returns consistent outputs. Future: coherent but limited adaptability.",
+        "Excellent": "The AI Room governs prompts, versioning, champion–challenger testing, and offline learning. Other rooms remain clean and purpose-focused. Future: coherence strengthens system-wide.",
+        "Transcendent": "The AI Room evolves as a living steward of signal. Outputs feel coherent and relational, regardless of model changes. Future: the system speaks with one voice across contexts."
+      },
+      "Guiding Questions": [
+        "Does the AI Room always receive a clear brief rather than raw user input?",
+        "Are prompts generated, stored, and versioned centrally?",
+        "Are outputs always filtered through Stones and coherence gates before delivery?",
+        "Can the AI Room adapt to new models without disturbing other rooms?",
+        "Does the AI Room serve as steward, not controller, of AI interactions?"
+      ]
+    },
+    {
+      "Name": "Integration & Commit Room",
+      "Purpose": "To harvest shifts, set next steps, and close with agency.",
+      "Why This Matters": "Integration protects the impact of every walk.",
+      "Outcomes": {
+        "Poor": "No integration captured. Future: insights dissipate.",
+        "Expected": "Summarizes shifts and offers gentle next steps. Future: founders feel closure and momentum.",
+        "Excellent": "Commits tracked as steward decisions. Future: momentum compounds across walks.",
+        "Transcendent": "Integration becomes transformation. Future: founders exit with embodied shifts, not just notes."
+      },
+      "Guiding Questions": [
+        "Does the room capture session summary and key shifts?",
+        "Are commitments stored with clear linkage to founder consent?",
+        "Is the pace gate integrated to suggest NOW, HOLD, or LATER?",
+        "Is a completion prompt mandatory before session closure?"
+      ]
+    },
+    {
+      "Name": "Exit Room",
+      "Purpose": "To close the arc with reflection, resonance, and choice.",
+      "Why This Matters": "Closure protects trust and primes re-entry later.",
+      "Outcomes": {
+        "Poor": "Arc dropped without closure. Future: founders feel abandoned.",
+        "Expected": "Arc closed with reflection and choice. Future: trust maintained.",
+        "Excellent": "Closure includes resonance checks and future pacing. Future: founders feel deeply respected.",
+        "Transcendent": "Closure itself is transformative. Future: founders leave with coherence magnified."
+      },
+      "Guiding Questions": [
+        "Does this room always prompt for explicit closure or continuation?",
+        "Is reflection text gated through Stones and Coherence checks?",
+        "Does the trust seal validate final output before release?",
+        "Are diagnostic signals logged at exit for downstream learning?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Does this room honor PRA invariants?",
+    "Are diagnostics captured by default?",
+    "If this room stood alone, would it still transmit coherence?",
+    "Has this room’s output been validated against Stones and coherence gates?",
+    "For the AI Room: is it stewarding coherence, not centralizing control?"
+  ]
+}

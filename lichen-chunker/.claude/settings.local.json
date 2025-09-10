@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(python:*)",
+      "Bash(source:*)",
+      "Bash(streamlit run:*)",
+      "Bash(STREAMLIT_EMAIL=\"\" streamlit run ui/app.py --server.port 8501 --server.headless true)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

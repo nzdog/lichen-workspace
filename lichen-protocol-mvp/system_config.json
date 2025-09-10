@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "system_config.json",
+  "title": "Lichen Protocol System Configuration",
+  "description": "System-level configuration for environments, security, and monitoring",
+  "version": "0.1.0",
+  "environments": {
+    "development": {
+      "validation_strictness": "relaxed",
+      "mock_modes": {
+        "gates": false,
+        "diagnostics": true,
+        "memory": true
+      },
+      "debug_logging": true,
+      "hot_reload": true
+    },
+    "staging": {
+      "validation_strictness": "strict",
+      "mock_modes": {
+        "gates": false,
+        "diagnostics": false,
+        "memory": false
+      },
+      "debug_logging": false,
+      "hot_reload": false
+    },
+    "production": {
+      "validation_strictness": "strict",
+      "mock_modes": {
+        "gates": false,
+        "diagnostics": false,
+        "memory": false
+      },
+      "debug_logging": false,
+      "hot_reload": false
+    }
+  },
+  "security": {
+    "token_required": false,
+    "rate_limits": {
+      "requests_per_minute": 60,
+      "burst_limit": 10
+    },
+    "allowed_origins": [
+      "localhost:3000",
+      "localhost:8000",
+      "127.0.0.1:3000",
+      "127.0.0.1:8000"
+    ],
+    "audit_logging": {
+      "enabled": true,
+      "retention_days": 90,
+      "log_level": "info"
+    },
+    "pii_policy": "no_user_raw_text_in_logs",
+    "consent_enforcement": true
+  },
+  "monitoring": {
+    "health_checks": {
+      "enabled": true,
+      "interval_seconds": 30,
+      "timeout_seconds": 5
+    },
+    "latency_thresholds": {
+      "room_execution_ms": 5000,
+      "gate_chain_ms": 2000,
+      "diagnostics_capture_ms": 1000
+    },
+    "alert_thresholds": {
+      "error_rate_percent": 5.0,
+      "latency_p95_ms": 10000,
+      "memory_usage_percent": 80.0
+    },
+    "metrics_collection": {
+      "enabled": true,
+      "retention_days": 30,
+      "export_interval_seconds": 60
+    }
+  },
+  "defaults": {
+    "environment": "development",
+    "validation_strictness": "strict",
+    "mock_modes": {
+      "gates": false,
+      "diagnostics": false,
+      "memory": false
+    },
+    "debug_logging": false,
+    "hot_reload": false,
+    "token_required": false,
+    "audit_logging": {
+      "enabled": true,
+      "retention_days": 90,
+      "log_level": "info"
+    },
+    "health_checks": {
+      "enabled": true,
+      "interval_seconds": 30,
+      "timeout_seconds": 5
+    }
+  }
+}

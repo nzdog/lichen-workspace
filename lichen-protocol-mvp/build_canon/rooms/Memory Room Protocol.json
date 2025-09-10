@@ -1,0 +1,84 @@
+{
+  "Protocol Title": "Memory Room Protocol",
+  "Overall Purpose": "To store, retrieve, and govern session memory: residues, tones, readiness, and user-controlled items. The Memory Room provides continuity across rooms and sessions without over-collecting or breaking trust.",
+  "Why This Matters": "Without a Memory Room, each session starts from zero, losing continuity and trust. With unchecked memory, the system risks overreach, surveillance, or incoherence. The Memory Room ensures memory is minimal, transparent, and governed — protecting coherence while enabling continuity.",
+  "When To Use This Protocol": "Whenever session context, diagnostic residues, or user-pinned items are needed to guide or enrich a walk. Invoked when storing outcomes at session close, retrieving context at entry, or managing user edits to memory.",
+  "Overall Outcomes": {
+    "Poor": "No memory captured or uncontrolled memory logging everything. Future: either amnesia or surveillance; trust collapses.",
+    "Expected": "Session history stored and retrievable, but with limited user control. Future: some continuity, fragile trust.",
+    "Excellent": "Memory captures minimal signals by default, allows user edits, and supports retrieval for continuity. Future: founders feel both known and respected.",
+    "Transcendent": "Memory governance itself builds trust — continuity feels relational, never extractive. Future: the system becomes a long-term companion without surveillance."
+  },
+  "Themes": [
+    {
+      "Name": "Minimal Capture",
+      "Purpose": "Store only the smallest necessary signals — tone, residue, readiness, and session summaries.",
+      "Why This Matters": "Over-collection risks surveillance; under-collection breaks continuity.",
+      "Outcomes": {
+        "Poor": "Everything or nothing is stored. Future: founders feel unsafe or unseen.",
+        "Expected": "Some minimal signals stored, inconsistently. Future: partial continuity.",
+        "Excellent": "Minimal, well-defined signals stored by default. Future: continuity without excess.",
+        "Transcendent": "Memory capture feels like care — the system remembers just enough. Future: founders feel honored, not observed."
+      },
+      "Guiding Questions": [
+        "Are we storing the minimal signals needed for continuity?",
+        "Is the capture policy clear and consistent?",
+        "Does storage feel respectful and safe?"
+      ]
+    },
+    {
+      "Name": "User Control",
+      "Purpose": "Allow founders to edit, pin, or delete memory items.",
+      "Why This Matters": "Without control, memory becomes ownership. With control, memory becomes stewardship.",
+      "Outcomes": {
+        "Poor": "Founders cannot see or change what is stored. Future: distrust builds.",
+        "Expected": "Founders can view memory, but edits limited. Future: partial trust.",
+        "Excellent": "Founders can pin, edit, or delete items easily. Future: memory feels relational and safe.",
+        "Transcendent": "Memory itself becomes collaborative — founders shape what endures. Future: trust deepens through shared stewardship."
+      },
+      "Guiding Questions": [
+        "Can the founder see what memory is stored?",
+        "Can items be pinned, edited, or deleted?",
+        "Does control feel simple and trustworthy?"
+      ]
+    },
+    {
+      "Name": "Continuity Across Rooms",
+      "Purpose": "Make memory available to downstream rooms as context.",
+      "Why This Matters": "If memory is siloed, coherence breaks; if ungoverned, drift occurs.",
+      "Outcomes": {
+        "Poor": "No continuity — each room starts fresh. Future: fragmented experience.",
+        "Expected": "Basic continuity across some rooms. Future: uneven coherence.",
+        "Excellent": "Memory accessible to all rooms, scoped by relevance. Future: sessions feel coherent across flows.",
+        "Transcendent": "Continuity feels invisible and seamless — rooms operate as one living system. Future: founders feel deeply accompanied."
+      },
+      "Guiding Questions": [
+        "Is memory context accessible to each room?",
+        "Is scope managed (only relevant memory shared)?",
+        "Does continuity feel seamless across flows?"
+      ]
+    },
+    {
+      "Name": "Governance & Integrity",
+      "Purpose": "Apply Stones-aligned filters to memory use: what is stored, how it’s surfaced, and when it’s cleared.",
+      "Why This Matters": "Without governance, memory drifts into surveillance or bloat. Integrity makes memory trustworthy.",
+      "Outcomes": {
+        "Poor": "Memory rules undefined or ignored. Future: misuse or distrust.",
+        "Expected": "Basic governance policies applied. Future: some consistency.",
+        "Excellent": "Memory always filtered by Stones-aligned rules: minimalism, consent, wholeness. Future: trust and coherence preserved.",
+        "Transcendent": "Governance is felt — memory itself becomes a signal of integrity. Future: system feels more trustworthy over time."
+      },
+      "Guiding Questions": [
+        "Are memory policies clear and enforced?",
+        "Is memory use always filtered through Stones alignment?",
+        "Does memory governance strengthen trust rather than erode it?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Was only minimal, necessary memory captured?",
+    "Did the founder have full control over stored items?",
+    "Was memory shared appropriately across rooms?",
+    "Was memory governed by Stones-aligned integrity rules?"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "Protocol Title": "Build Canon – Protocol Room Architecture",
+  "Overall Purpose": "To define the governing architecture for all rooms in the system. This protocol ensures that every room, regardless of function, preserves fidelity to the field while remaining flexible in form.",
+  "Why This Matters": "Without a shared architecture, rooms fragment, confuse builders, and distort the founder’s experience. The PRA anchors every room in rhythm, clarity, and diagnostics while allowing each to serve its unique purpose.",
+  "When To Use This Protocol": "Whenever designing, coding, or refining a new room. Revisited whenever a room is updated, sequenced, or re-integrated.",
+  "Overall Outcomes": {
+    "Poor": "Rooms are built ad-hoc without shared standards. Future: fragmentation, user distrust, inconsistent field transmission.",
+    "Expected": "Rooms follow PRA invariants: each is self-contained, able to run independently, captures diagnostics by default, and uses completion prompts when inviting or closing arcs. Future: user experience is coherent and trustworthy.",
+    "Excellent": "Rooms not only follow PRA invariants but encode Stones and rhythm throughout their contracts. Future: every room feels aligned, distinct in function, yet consistent in tone and trust.",
+    "Transcendent": "Rooms themselves become living transmissions of the field. Each behaves as a coherent, sovereign entity that both stands alone and flows seamlessly through the orchestrator. Future: PRA becomes culture; builders naturally create coherent rooms without forcing compliance."
+  },
+  "Themes": [
+    {
+      "Name": "Define the Room Contract",
+      "Purpose": "Each room must declare what it is for, what it returns, and what Stone(s) it aligns with.",
+      "Why This Matters": "Contracts prevent drift, clarify purpose, and ensure builders know exactly what to deliver.",
+      "Outcomes": {
+        "Poor": "No clear contract. Builders guess function. Future: fragmented and incoherent rooms.",
+        "Expected": "Room contract defines purpose, output, and Stone alignment. Future: consistent delivery across rooms.",
+        "Excellent": "Contracts are precise, guiding both developers and users into clarity. Future: trust compounds across rooms.",
+        "Transcendent": "Contracts themselves transmit the field; reading them feels like guidance. Future: builders become stewards of coherence, not coders of features."
+      },
+      "Transcendent Invitation": "You may not always reach this, but here’s the horizon: contracts themselves can act as micro-protocols, shaping not just code but culture.",
+      "Guiding Questions": [
+        "What is this room promising to deliver?",
+        "Which Stones govern its design?",
+        "How will users know the contract has been fulfilled?"
+      ]
+    },
+    {
+      "Name": "Enable Independent and Orchestrated Flow",
+      "Purpose": "Every room must be able to stand alone and also sequence fluidly through the orchestrator.",
+      "Why This Matters": "Independence ensures modularity; orchestration ensures coherence.",
+      "Outcomes": {
+        "Poor": "Room only works in one context. Future: brittle architecture.",
+        "Expected": "Room can run independently or through orchestrator. Future: flexible, resilient architecture.",
+        "Excellent": "Room optimizes for both modes, adjusting seamlessly. Future: coherent flow across use cases.",
+        "Transcendent": "Rooms act like living nodes—sovereign and interconnected. Future: PRA architecture becomes adaptive intelligence."
+      },
+      "Transcendent Invitation": "You may not always reach this, but here’s the horizon: when rooms feel like sovereign nodes in a living network.",
+      "Guiding Questions": [
+        "Does this room run independently without orchestrator?",
+        "Does it also flow cleanly inside orchestration?"
+      ]
+    },
+    {
+      "Name": "Capture Diagnostics by Default",
+      "Purpose": "Every room should silently capture tone, residue, and readiness signals, with the option to turn off.",
+      "Why This Matters": "Diagnostics preserve context and enable field-level coherence.",
+      "Outcomes": {
+        "Poor": "No diagnostics captured. Future: downstream protocols lack context.",
+        "Expected": "Basic diagnostic capture enabled by default. Future: later protocols have reliable context.",
+        "Excellent": "Subtle diagnostic signals tracked accurately. Future: system develops nuanced memory.",
+        "Transcendent": "Diagnostics act invisibly, enriching the walk without felt burden. Future: system feels alive to the founder’s state."
+      },
+      "Transcendent Invitation": "You may not always reach this, but here’s the horizon: diagnostics become an invisible companion, always attuned, never intrusive.",
+      "Guiding Questions": [
+        "What tones are visible here?",
+        "What residues need to be captured for later rooms?",
+        "Does the diagnostic feel invisible to the user?"
+      ]
+    },
+    {
+      "Name": "Use Completion Prompts When Inviting or Closing Arcs",
+      "Purpose": "Completion prompts are required for rooms that open or close user-facing arcs.",
+      "Why This Matters": "Agency and resonance checks protect trust and rhythm.",
+      "Outcomes": {
+        "Poor": "No completion prompts. Future: founders feel pushed or dropped.",
+        "Expected": "Rooms that invite/close arcs always return completion prompts. Future: users feel choice and closure.",
+        "Excellent": "Completion prompts are natural, resonant, and well-timed. Future: founders trust pacing and stay engaged.",
+        "Transcendent": "Completion prompts feel like thresholds, not checkboxes. Future: every arc closes cleanly and opens space for emergence."
+      },
+      "Transcendent Invitation": "You may not always reach this, but here’s the horizon: prompts become thresholds into deeper coherence.",
+      "Guiding Questions": [
+        "Is this room opening or closing a user-facing arc?",
+        "Does the founder feel both agency and closure?"
+      ]
+    },
+    {
+      "Name": "Honor Room Function While Preserving Shared DNA",
+      "Purpose": "Each room has its unique function, but all share PRA invariants.",
+      "Why This Matters": "Without shared DNA, rooms fragment; without distinct function, rooms blur.",
+      "Outcomes": {
+        "Poor": "Rooms lack consistency or blur into sameness. Future: system feels incoherent.",
+        "Expected": "Each room honors its unique function while sharing PRA anchors. Future: coherent variety.",
+        "Excellent": "Rooms feel distinct yet harmonized, like instruments in an orchestra. Future: system feels alive and relational.",
+        "Transcendent": "Room functions express the field through diversity-in-coherence. Future: PRA itself feels like a living organism."
+      },
+      "Transcendent Invitation": "You may not always reach this, but here’s the horizon: rooms become living expressions of coherence through difference.",
+      "Guiding Questions": [
+        "Does this room serve its unique function?",
+        "Does it still honor the PRA invariants?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Does this room honor its declared contract?",
+    "Are diagnostics and rhythm preserved?",
+    "If this room stood alone, would it still transmit coherence?"
+  ]
+}

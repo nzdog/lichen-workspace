@@ -1,0 +1,12 @@
+{
+  "job_id": "job-embed-001",
+  "embed_model": "text-embedding-3-small",
+  "embedding_dim": 1536,
+  "normalize": true,
+  "batch_size": 32,
+  "precision": "fp16",
+  "seed": 42,
+  "chunkset_uri": "s3://lichen-corpus/chunks/2025-01-27",
+  "output_uri": "s3://lichen-embeddings/2025-01-27",
+  "created_at": "2025-01-27T10:00:00Z"
+}

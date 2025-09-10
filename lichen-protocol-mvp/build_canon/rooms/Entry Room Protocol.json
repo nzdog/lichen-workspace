@@ -1,0 +1,84 @@
+{
+  "Protocol Title": "Entry Room Protocol",
+  "Overall Purpose": "To receive the founder’s first words, reflect them faithfully, set initial pacing, and establish consent before deeper protocols begin. The Entry Room acts as the safe threshold where the walk begins.",
+  "Why This Matters": "The entry point sets the tone for everything that follows. If the founder’s words are not reflected clearly, trust is weakened. If pacing is rushed, rhythm is broken. If consent is skipped, the field is compromised. A well-governed Entry Room creates safety, coherence, and readiness for the walk ahead.",
+  "When To Use This Protocol": "At the very start of a session or walk, whenever a founder enters the system or re-engages after a pause. Refer to this protocol when refining entry behaviors, consent handling, or mirror logic.",
+  "Overall Outcomes": {
+    "Poor": "Input is parroted or distorted. Consent is skipped. Pacing is imposed. Future: trust erodes, sessions feel mechanical, founders disengage early.",
+    "Expected": "Words are reflected plainly, consent is requested, and a basic pace is set. Future: functional but fragile trust; founders may continue but without depth.",
+    "Excellent": "Multiple ideas are clarified into clean lines, consent anchor is explicit, and pace matches readiness. Future: founders feel safe, understood, and willing to proceed.",
+    "Transcendent": "Reflection itself calms the field, establishes presence, and embodies integrity. Future: the Entry Room becomes a threshold of transformation, not just a starting point."
+  },
+  "Themes": [
+    {
+      "Name": "Faithful Reflection",
+      "Purpose": "Return the founder’s words exactly, without interpretation or distortion.",
+      "Why This Matters": "Distorted reflection at the threshold damages trust and carries misalignment downstream.",
+      "Outcomes": {
+        "Poor": "Input is paraphrased, summarized, or altered. Future: founder feels unseen.",
+        "Expected": "Most words are reflected but nuance is lost. Future: trust is partial.",
+        "Excellent": "Founder’s words are mirrored precisely, line by line. Future: trust compounds early.",
+        "Transcendent": "The mirror itself feels like care, bringing clarity and calm. Future: the founder feels deeply accompanied."
+      },
+      "Guiding Questions": [
+        "Were the founder’s words returned exactly, without drift?",
+        "If multiple ideas are present, were they separated clearly?",
+        "Does the founder feel accurately mirrored?"
+      ]
+    },
+    {
+      "Name": "Consent Anchor",
+      "Purpose": "Ensure explicit consent before proceeding into deeper protocols.",
+      "Why This Matters": "Without consent, the system risks pushing or bypassing readiness. Consent anchors trust.",
+      "Outcomes": {
+        "Poor": "No consent asked. Future: founder feels directed or controlled.",
+        "Expected": "Consent requested but phrased mechanically. Future: trust is transactional.",
+        "Excellent": "Consent asked clearly, with space to decline or defer. Future: founders feel respected.",
+        "Transcendent": "Consent becomes an embodied pause—founders sense safety and agency in the threshold. Future: the system is trusted as relational, not directive."
+      },
+      "Guiding Questions": [
+        "Has explicit consent been requested before proceeding?",
+        "Was the founder given clear options (yes, no, later, hold)?",
+        "Does the process feel invitational rather than procedural?"
+      ]
+    },
+    {
+      "Name": "Pace Setting",
+      "Purpose": "Establish the initial rhythm of the session in alignment with readiness.",
+      "Why This Matters": "If the system rushes here, trust and presence cannot recover downstream.",
+      "Outcomes": {
+        "Poor": "System sets a default fast pace. Future: founder feels hurried.",
+        "Expected": "Pace slows somewhat but inconsistently. Future: partial trust.",
+        "Excellent": "Pace gate offers choices (NOW, HOLD, LATER, SOFT HOLD). Future: founders feel safe and unhurried.",
+        "Transcendent": "Pace itself becomes medicine—presence deepens and urgency dissolves. Future: system earns trust by rhythm alone."
+      },
+      "Guiding Questions": [
+        "Was the founder offered explicit pacing options?",
+        "Does the pace feel aligned with their current readiness?",
+        "Did the entry pause create presence rather than urgency?"
+      ]
+    },
+    {
+      "Name": "Diagnostics by Default",
+      "Purpose": "Quietly capture tones, residues, and readiness signals at entry.",
+      "Why This Matters": "The Entry Room sets the first diagnostic frame. Signals lost here cannot be recovered later.",
+      "Outcomes": {
+        "Poor": "No diagnostics captured. Future: downstream protocols lack vital context.",
+        "Expected": "Basic signals (tone, readiness) logged. Future: some continuity preserved.",
+        "Excellent": "Subtle cues (hesitation, residue, energy) captured with toggle option. Future: context-rich downstream experience.",
+        "Transcendent": "Diagnostics feel invisible but alive—entry becomes both threshold and sensing field. Future: system feels attuned to the founder’s state."
+      },
+      "Guiding Questions": [
+        "Are tones, residues, and readiness captured at entry?",
+        "Is diagnostic capture toggleable by the founder?",
+        "Does the capture feel silent and respectful?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Has the founder’s input been mirrored faithfully?",
+    "Was explicit consent anchored before moving deeper?",
+    "Is the starting pace aligned with readiness?",
+    "Have diagnostics been silently captured by default?"
+  ]
+}

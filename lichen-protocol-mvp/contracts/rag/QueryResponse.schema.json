@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lichen.system/schemas/rag/QueryResponse.schema.json",
+  "title": "RAG Query Response",
+  "type": "object",
+  "required": ["v", "trace_id", "results", "latency_ms", "mode"],
+  "properties": {
+    "v": { "type": "string", "const": "1.0" },
+    "trace_id": { "type": "string" },
+    "mode": { "type": "string", "enum": ["latency", "accuracy"] },
+    "latency_ms": { "type": "integer", "minimum": 0 },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["doc_id", "chunk_id", "score", "text"],
+        "properties": {
+          "doc_id": { "type": "string" },
+          "chunk_id": { "type": "string" },
+          "rank": { "type": "integer", "minimum": 1 },
+          "score": { "type": "number" }, 
+          "text": { "type": "string" },
+          "source": {
+            "type": "object",
+            "properties": {
+              "doc_type": { "enum": ["protocol", "reflection", "essay"] },
+              "title": { "type": "string" },
+              "url": { "type": "string", "format": "uri" }
+            },
+            "additionalProperties": false
+          },
+          "spans": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["start", "end"],
+              "properties": {
+                "start": { "type": "integer", "minimum": 0 },
+                "end": { "type": "integer", "minimum": 0 }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

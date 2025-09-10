@@ -1,0 +1,29 @@
+{
+  "gate_id": "plain_language_rewriter",
+  "title": "Plain Language Rewriter",
+  "version": "0.1.0",
+  "purpose": "Rewrite system outputs into clear, simple, and non-therapeutic language while preserving meaning.",
+  "rules": {
+    "forbid": [
+      "jargon",
+      "overly technical phrasing",
+      "therapeutic tone"
+    ],
+    "enforce": [
+      "clarity",
+      "directness",
+      "builder-facing precision"
+    ]
+  },
+  "inputs": {
+    "candidate_text": "This is a sample text that may need plain language rewriting."
+  },
+  "outputs": {
+    "rewritten_text": "This is a sample text that may need plain language rewriting.",
+    "changes_made": []
+  },
+  "on_failure": {
+    "action": "return_original",
+    "note": "If rewriting degrades integrity, fallback to original."
+  }
+}

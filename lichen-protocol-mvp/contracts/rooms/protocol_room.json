@@ -1,0 +1,28 @@
+{
+  "room_id": "protocol_room",
+  "title": "Protocol Room",
+  "version": "0.1.0",
+  "purpose": "Surface the right protocol (full, theme-only, scenario entry) from canon.",
+  "stone_alignment": [
+    "Integrity Is the Growth Strategy",
+    "Clarity Over Cleverness"
+  ],
+  "mini_walk_supported": true,
+  "completion_prompt_required": false,
+  "diagnostics_default": true,
+  "gate_profile": {
+    "chain": [
+      "stones_alignment_filter",
+      "coherence_gate"
+    ],
+    "overrides": {}
+  },
+  "inputs": {
+    "session_state_ref": "session-example-abc123",
+    "payload": {}
+  },
+  "outputs": {
+    "display_text": "",
+    "next_action": "continue"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "doc_id": "doc-entry-room-protocol",
+  "doc_type": "protocol",
+  "title": "Entry Room Protocol",
+  "tags": ["entry", "protocol", "consent"],
+  "text": "The entry room receives first words, reflects clearly, sets pace, and invites consent. It serves as the initial point of contact in the Lichen Protocol system.",
+  "source_uri": "https://lichen.system/protocols/entry",
+  "created_at": "2025-01-27T10:00:00Z",
+  "updated_at": "2025-01-27T10:00:00Z"
+}

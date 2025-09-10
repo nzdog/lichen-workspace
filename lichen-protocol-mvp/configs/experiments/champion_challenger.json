@@ -1,0 +1,47 @@
+{
+  "scope": "room",
+  "targets": ["entry_room", "diagnostic_room", "protocol_room"],
+  "traffic": {
+    "live": { "champion_ensemble": 1.0 },
+    "shadow": {
+      "enabled": true,
+      "challenger_pool": 0.15,
+      "sticky_by": "session_id"
+    }
+  },
+  "champions": [
+    "openai.gpt-4o-mini@2025-08-15",
+    "anthropic.claude-3-5-sonnet@2025-07-01",
+    "bedrock.cohere-command-r@2025-06-10"
+  ],
+  "challengers": [
+    "openai.gpt-4.1-mini@2025-09-01",
+    "anthropic.claude-3-haiku@2025-06-15"
+  ],
+  "ensemble_selection": {
+    "strategy": "score_then_gate",
+    "weights": {
+      "coherence_gate": 0.45,
+      "stones_alignment_filter": 0.45,
+      "readability": 0.1,
+      "latency_ms": -0.05,
+      "cost_usd": -0.05
+    },
+    "tie_breaker": "lowest_cost",
+    "soft_timeout_ms": 1200,
+    "max_parallel": 3
+  },
+  "safety": {
+    "max_gate_fail_rate": 0.03,
+    "auto_disable_on_violation": true
+  },
+  "budgets": {
+    "entry_room":  { "max_latency_ms_p95": 1500, "max_cost_per_call_usd": 0.05 },
+    "diagnostic_room": { "max_latency_ms_p95": 1200, "max_cost_per_call_usd": 0.04 }
+  },
+  "shadow_limits": {
+    "per_model_daily_usd": 10,
+    "per_model_qps": 0.05,
+    "max_parallel": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "room_id": "integration_commit_room",
+  "title": "Integration & Commit Room",
+  "version": "0.1.0",
+  "purpose": "Harvest shifts, set next steps, and close arcs with agency.",
+  "stone_alignment": [
+    "Integrity Is the Growth Strategy",
+    "Presence Is Productivity"
+  ],
+  "mini_walk_supported": true,
+  "completion_prompt_required": true,
+  "diagnostics_default": true,
+  "gate_profile": {
+    "chain": [
+      "stones_alignment_filter",
+      "coherence_gate"
+    ],
+    "overrides": {}
+  },
+  "inputs": {
+    "session_state_ref": "session-example-abc123",
+    "payload": {}
+  },
+  "outputs": {
+    "display_text": "",
+    "next_action": "continue"
+  }
+}

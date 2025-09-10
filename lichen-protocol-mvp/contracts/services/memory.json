@@ -1,0 +1,65 @@
+{
+  "service_id": "memory_service",
+  "title": "Memory Service",
+  "version": "0.1.0",
+  "purpose": "Provide minimal, transparent, consentful continuity across sessions (session history, signals, commits).",
+  "stores": {
+    "session_history": [],
+    "signals": [],
+    "commits": []
+  },
+  "consent": {
+    "founder_visible": true,
+    "founder_controls": [
+      "view",
+      "edit",
+      "delete",
+      "pin"
+    ],
+    "default_retention_days": 180,
+    "hard_delete_supported": true
+  },
+  "api": {
+    "write": [
+      "append_session_event",
+      "upsert_signal",
+      "record_commit"
+    ],
+    "read": [
+      "get_session_history",
+      "get_signals",
+      "get_commits"
+    ],
+    "manage": [
+      "delete_item",
+      "pin_item",
+      "update_item"
+    ]
+  },
+  "inputs": {
+    "session_state_ref": "session-example-mem789",
+    "payload": {}
+  },
+  "outputs": {
+    "status": "ok",
+    "data": {},
+    "timestamp": "2025-09-02T06:42:31Z"
+  },
+  "retention": {
+    "signals_days": 90,
+    "session_history_days": 365,
+    "commits_days": 365,
+    "auto_prune": true
+  },
+  "safety": {
+    "pii_policy": "no_user_raw_text_in_logs",
+    "enforce_consent_on_read": true,
+    "enforce_consent_on_write": true
+  },
+  "telemetry": {
+    "reads": 0,
+    "writes": 0,
+    "deletes": 0,
+    "latency_ms": 0
+  }
+}

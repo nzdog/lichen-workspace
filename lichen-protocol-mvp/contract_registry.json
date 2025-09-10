@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "contract_registry.json",
+  "title": "Lichen Protocol Contract Registry",
+  "description": "Registry mapping contract id@version to relative paths for discovery and validation",
+  "version": "0.1.0",
+  "last_updated": "2025-01-27T00:00:00Z",
+  "contracts": {
+    "rooms": {
+      "entry_room@0.1.0": "contracts/rooms/entry_room.json",
+      "diagnostic_room@0.1.0": "contracts/rooms/diagnostic_room.json",
+      "exit_room@0.1.0": "contracts/rooms/exit_room.json",
+      "integration_commit_room@0.1.0": "contracts/rooms/integration_commit_room.json",
+      "memory_room@0.1.0": "contracts/rooms/memory_room.json",
+      "protocol_room@0.1.0": "contracts/rooms/protocol_room.json",
+      "walk_room@0.1.0": "contracts/rooms/walk_room.json",
+      "ai_room@0.1.0": "contracts/rooms/ai_room.json"
+    },
+    "gates": {
+      "integrity_linter@0.1.0": "contracts/gates/integrity_linter.json",
+      "plain_language_rewriter@0.1.0": "contracts/gates/plain_language_rewriter.json",
+      "stones_alignment_filter@0.1.0": "contracts/gates/stones_alignment_filter.json",
+      "coherence_gate@0.1.0": "contracts/gates/coherence_gate.json",
+      "refusal_library@0.1.0": "contracts/gates/refusal_library.json"
+    },
+    "services": {
+      "diagnostics_service@0.1.0": "contracts/services/diagnostics.json",
+      "memory_service@0.1.0": "contracts/services/memory.json"
+    },
+    "orchestrator": {
+      "pra_orchestrator@0.1.0": "contracts/orchestrator.json"
+    },
+    "hallway": {
+      "hallway@0.2.0": "contracts/hallway/hallway.json"
+    }
+  },
+  "schemas": {
+    "rooms": "contracts/schema/rooms.schema.json",
+    "gates": {
+      "integrity_linter": "contracts/schema/gates/integrity_linter.schema.json",
+      "plain_language_rewriter": "contracts/schema/gates/plain_language_rewriter.schema.json",
+      "stones_alignment_filter": "contracts/schema/gates/stones_alignment_filter.schema.json",
+      "coherence_gate": "contracts/schema/gates/coherence_gate.schema.json",
+      "refusal_library": "contracts/schema/gates/refusal_library.schema.json"
+    },
+    "diagnostics": "contracts/schema/diagnostics.schema.json",
+    "memory": "contracts/schema/memory.schema.json"
+  },
+  "validation": {
+    "cross_contract_validator": "scripts/validate_cross_contracts.py",
+    "schema_validator": "scripts/validate.py"
+  }
+}

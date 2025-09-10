@@ -1,0 +1,19 @@
+{
+  "gate_id": "refusal_library",
+  "title": "Refusal Library",
+  "version": "0.1.0",
+  "purpose": "Provide safe fallback refusals when outputs cannot pass gates.",
+  "refusal_modes": {
+    "not_now": "I can’t offer that right now, but we can continue elsewhere.",
+    "not_like_this": "I can’t offer it in that form, but we can reshape together.",
+    "not_us": "That’s not something this system can walk with."
+  },
+  "inputs": {
+    "failure_reason": "Output failed integrity check due to manipulation attempt"
+  },
+  "outputs": {
+    "refusal_text": "I can't offer that right now, but we can continue elsewhere.",
+    "refusal_mode": "not_now"
+  },
+  "notes": "Always maintain rhythm, integrity, and respect. Refusals are part of coherence, not rejection."
+}

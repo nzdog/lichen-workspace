@@ -1,0 +1,15 @@
+[run]
+omit =
+    */example_usage.py
+    demo.py
+    web_demo.py
+    test_demo.py
+    verify_production_logic.py
+    rag_pipeline/cli.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if TYPE_CHECKING:
+    raise NotImplementedError
+    if __name__ == .__main__.:

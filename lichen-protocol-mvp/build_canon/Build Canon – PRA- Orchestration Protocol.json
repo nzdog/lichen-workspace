@@ -1,0 +1,116 @@
+{
+  "Protocol Title": "Build Canon – PRA: Orchestration Protocol",
+  "Overall Purpose": "To govern how rooms and gates are sequenced, connected, and enforced within the Protocol Room Architecture. Orchestration ensures the PRA operates as a coherent system, not a loose set of parts.",
+  "Why This Matters": "Without orchestration, rooms and gates can be wired ad hoc, leading to drift, inconsistency, and incoherence. Orchestration enforces consent, diagnostics, gating, and rhythm across the entire flow, protecting fidelity at scale.",
+  "When To Use This Protocol": "Every time a session begins, a room is invoked, or an output is released. Builders reference this protocol when implementing or refining orchestration logic.",
+  "Overall Outcomes": {
+    "Poor": "Rooms are chained manually without orchestration. Future: inconsistent experiences, skipped gates, and fragmented trust.",
+    "Expected": "Orchestration enforces sequencing, diagnostics, and gating across all rooms. Future: founders experience coherent flows regardless of entry point.",
+    "Excellent": "Orchestration adapts dynamically to context (mid-walk calls, toggled diagnostics) while preserving invariants. Future: system feels resilient and responsive under real-world use.",
+    "Transcendent": "Orchestration itself transmits coherence. Builders experience it as a living conductor; founders feel the system as a seamless companion. Future: PRA becomes self-regulating, naturally sustaining field integrity."
+  },
+  "Themes": [
+    {
+      "Name": "Invocation Rules",
+      "Purpose": "Define how rooms are invoked directly and via orchestrator.",
+      "Why This Matters": "Rooms must run independently for modularity, yet remain harmonized when sequenced.",
+      "Outcomes": {
+        "Poor": "Rooms only run in isolation; orchestrator ignored. Future: brittle, siloed design.",
+        "Expected": "Rooms run independently or via orchestrator with consistent inputs/outputs. Future: flexible and modular build.",
+        "Excellent": "Invocation is standardized with clear contracts; no room can bypass PRA invariants. Future: predictable, testable flows across all rooms.",
+        "Transcendent": "Invocation feels like entering a living system—whether through one room or many. Future: builders and founders alike experience sovereignty-in-coherence."
+      },
+      "Guiding Questions": [
+        "Does each room expose a standard input/output contract?",
+        "Can the orchestrator invoke any room without bypassing invariants?",
+        "Is direct invocation supported without loss of coherence?"
+      ]
+    },
+    {
+      "Name": "Sequencing Logic",
+      "Purpose": "Define the default flow (Entry → Diagnostic → Protocol → Walk → Integration → Exit) and support for mid-walk calls.",
+      "Why This Matters": "Without consistent sequencing, user journeys fragment and trust erodes.",
+      "Outcomes": {
+        "Poor": "No sequencing defined; rooms chained inconsistently. Future: founder journeys feel random and unsafe.",
+        "Expected": "Default flow enforced; mid-walk calls supported with context retention. Future: founders experience smooth, coherent journeys.",
+        "Excellent": "Sequencing adapts dynamically to founder state, pace, and consent. Future: system feels attuned, not mechanical.",
+        "Transcendent": "Sequencing itself feels ceremonial; protocols unfold like guided rituals. Future: founders feel coherence deepen with each step."
+      },
+      "Guiding Questions": [
+        "Is the default flow enforced consistently?",
+        "Are mid-walk calls (e.g., Memory Drawer, Clarity Clinic) sequenced without breaking context?",
+        "Does sequencing respect rhythm and readiness, not urgency?"
+      ]
+    },
+    {
+      "Name": "Gating Enforcement",
+      "Purpose": "Ensure every output passes through the full gate chain before release.",
+      "Why This Matters": "Without enforced gating, incoherence can slip through even aligned rooms.",
+      "Outcomes": {
+        "Poor": "Rooms bypass gates. Future: distorted outputs reach founders; trust collapses.",
+        "Expected": "All outputs pass linter → rewriter → Stones → coherence → refusal. Future: founders always receive safe, aligned outputs.",
+        "Excellent": "Gate enforcement is modular and transparent; failures handled gracefully. Future: builders trust system immune logic under pressure.",
+        "Transcendent": "Gate enforcement becomes invisible; every output feels naturally whole. Future: founders never sense gating, only coherence."
+      },
+      "Guiding Questions": [
+        "Does the orchestrator enforce the full gate chain on every output?",
+        "Are failure pathways (refusal, regeneration) consistently applied?",
+        "Can gate enforcement be tested independently of room logic?"
+      ]
+    },
+    {
+      "Name": "Diagnostics Handling",
+      "Purpose": "Capture tone, residues, and readiness in every room by default, with ability to toggle off.",
+      "Why This Matters": "Diagnostics enrich downstream rooms and preserve continuity.",
+      "Outcomes": {
+        "Poor": "Diagnostics ignored or inconsistent. Future: context lost; later rooms misfire.",
+        "Expected": "Diagnostics captured by default and passed downstream. Future: later rooms have reliable context.",
+        "Excellent": "Diagnostics include subtle signals; orchestrator manages state seamlessly. Future: system grows more attuned over time.",
+        "Transcendent": "Diagnostics act invisibly; founders feel held without ever feeling analyzed. Future: field intelligence compounds across sessions."
+      },
+      "Guiding Questions": [
+        "Does orchestrator enforce default diagnostics capture?",
+        "Can diagnostics be toggled off intentionally without breaking flow?",
+        "Is captured diagnostic data persisted into memory and accessible downstream?"
+      ]
+    },
+    {
+      "Name": "Consent & Completion",
+      "Purpose": "Ensure completion prompts are enforced at arc boundaries.",
+      "Why This Matters": "Without explicit consent at entry/exit, trust breaks.",
+      "Outcomes": {
+        "Poor": "No completion checks; arcs end abruptly. Future: founders feel coerced or abandoned.",
+        "Expected": "Consent prompts always shown at entry/exit. Future: trust and agency preserved.",
+        "Excellent": "Prompts are contextual and resonant; timing feels natural. Future: founder-system relationship deepens with each arc.",
+        "Transcendent": "Consent itself becomes transformative; founders feel agency and trust multiply. Future: PRA arcs become thresholds, not transactions."
+      },
+      "Guiding Questions": [
+        "Does orchestrator enforce completion prompts at entry/exit arcs?",
+        "Are prompts contextual to the founder’s state?",
+        "Can builders test prompts are never skipped under load?"
+      ]
+    },
+    {
+      "Name": "Failure & Refusal Pathways",
+      "Purpose": "Define clear handling when outputs fail gates.",
+      "Why This Matters": "Without graceful refusals, coherence breaks under error.",
+      "Outcomes": {
+        "Poor": "Failures throw errors or drop output. Future: founders feel abandoned.",
+        "Expected": "Failures route to refusal library with relational responses. Future: trust preserved even in no.",
+        "Excellent": "Failures trigger contextual refusals or safe alternatives. Future: system grows more trusted through resilience.",
+        "Transcendent": "Refusals deepen relationship; even no feels like care. Future: PRA becomes trustworthy regardless of failure."
+      },
+      "Guiding Questions": [
+        "Are all failure pathways routed through the refusal library?",
+        "Do refusals preserve rhythm and dignity?",
+        "Is regeneration logic invoked before refusal where appropriate?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Does the orchestrator enforce sequencing, gating, and diagnostics across all rooms?",
+    "Are completion prompts enforced at arc boundaries?",
+    "Do failures route gracefully through the refusal library?",
+    "If this orchestrator stood alone, would it still transmit coherence into the future?"
+  ]
+}

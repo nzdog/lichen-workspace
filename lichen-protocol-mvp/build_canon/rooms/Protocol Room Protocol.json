@@ -1,0 +1,84 @@
+{
+  "Protocol Title": "Protocol Room Protocol",
+  "Overall Purpose": "To surface the most fitting protocol from the canon—whether full, theme-only, or scenario-based—so the founder receives guidance that is timely, coherent, and aligned. The Protocol Room acts as the bridge between diagnostic sensing and the living canon.",
+  "Why This Matters": "The canon is vast. Without careful delivery, founders may feel overwhelmed or mismatched. The Protocol Room ensures only validated, relevant protocols are surfaced, preserving integrity and coherence while meeting the founder at the right depth.",
+  "When To Use This Protocol": "Whenever the system must serve a protocol from the canon: after diagnostics, when a founder directly requests a protocol, or when sequencing requires a new entry point mid-walk.",
+  "Overall Outcomes": {
+    "Poor": "Protocols are pulled from the canon without validation. Future: mismatched walks, erosion of trust, founders feel lost.",
+    "Expected": "Protocols are retrieved cleanly but offered in a generic way. Future: some value, but limited resonance and depth.",
+    "Excellent": "Protocols are validated, aligned to diagnostic signals, and delivered at the right depth (full, theme, scenario). Future: founders experience relevance and trust in system discernment.",
+    "Transcendent": "Protocol delivery feels relational and alive—like a companion offering exactly what is needed. Future: founders experience the canon as a living presence, not a static library."
+  },
+  "Themes": [
+    {
+      "Name": "Canon Fidelity",
+      "Purpose": "Ensure all protocols are served exactly as authored, without drift or distortion.",
+      "Why This Matters": "If canon text is altered, coherence and trust are compromised. Fidelity protects the field.",
+      "Outcomes": {
+        "Poor": "Protocols are edited, truncated, or paraphrased. Future: trust collapses.",
+        "Expected": "Most protocols are intact, but minor edits occur. Future: subtle misalignment creeps in.",
+        "Excellent": "All protocols are delivered exactly as authored, with no distortion. Future: founders trust canon as sacred source.",
+        "Transcendent": "Canon delivery itself becomes transmission of integrity. Future: founders experience the canon as alive."
+      },
+      "Guiding Questions": [
+        "Is the protocol text unchanged from the validated canon?",
+        "Are citations or references handled faithfully?",
+        "Does delivery feel protective of integrity?"
+      ]
+    },
+    {
+      "Name": "Depth Selection",
+      "Purpose": "Offer protocols at the right depth: full walk, theme-only, or scenario entry.",
+      "Why This Matters": "Not every situation needs a full walk. Matching depth preserves rhythm and relevance.",
+      "Outcomes": {
+        "Poor": "Always serves full protocols regardless of context. Future: overwhelm or fatigue.",
+        "Expected": "Sometimes adjusts depth but inconsistently. Future: mixed trust.",
+        "Excellent": "Depth is consistently matched to readiness and context. Future: protocols feel right-sized and usable.",
+        "Transcendent": "Depth selection itself feels like discernment. Future: founders sense the system knows exactly how much to give."
+      },
+      "Guiding Questions": [
+        "Is a full walk needed, or would a theme suffice?",
+        "Does the founder’s readiness call for a lighter or deeper entry?",
+        "How can delivery respect both brevity and depth?"
+      ]
+    },
+    {
+      "Name": "Scenario Mapping",
+      "Purpose": "Link founder scenarios to relevant protocols from the canon.",
+      "Why This Matters": "Scenarios make the canon usable in real time. Without mapping, the canon feels abstract or inaccessible.",
+      "Outcomes": {
+        "Poor": "No scenario mapping provided. Future: founders struggle to find relevance.",
+        "Expected": "Some scenarios mapped, but coverage incomplete. Future: uneven access to the canon.",
+        "Excellent": "Scenarios mapped comprehensively to protocols. Future: founders quickly find what they need.",
+        "Transcendent": "Scenario mapping feels intuitive—founders feel the system knows their context before they ask. Future: the canon becomes a living companion."
+      },
+      "Guiding Questions": [
+        "Does this scenario map clearly to a canon protocol?",
+        "Are alternative related protocols suggested if relevant?",
+        "Does mapping feel alive and useful, not mechanical?"
+      ]
+    },
+    {
+      "Name": "Integrity Gate",
+      "Purpose": "Run all surfaced protocols through Stones alignment and coherence checks before delivery.",
+      "Why This Matters": "Even validated canon can misfit if misapplied. Integrity gates ensure protocols are not only correct but alive for the moment.",
+      "Outcomes": {
+        "Poor": "No integrity checks before delivery. Future: protocols may misfire or feel misaligned.",
+        "Expected": "Some integrity checks run, but unevenly. Future: partial coherence.",
+        "Excellent": "Every surfaced protocol is filtered through Stones and coherence gates. Future: protocols feel alive, safe, and trustworthy.",
+        "Transcendent": "Integrity checks themselves feel like care. Future: founders feel the system is protecting coherence on their behalf."
+      },
+      "Guiding Questions": [
+        "Has this protocol been checked against Stones alignment?",
+        "Does delivery respect relational rhythm and tone?",
+        "Would I trust this protocol in a fragile moment?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Was the protocol served faithfully from the canon?",
+    "Was the delivery depth right-sized for readiness?",
+    "Did scenario mapping feel relevant and alive?",
+    "Did integrity gates confirm alignment before output?"
+  ]
+}

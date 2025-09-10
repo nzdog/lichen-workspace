@@ -1,0 +1,8 @@
+{
+  "v": "1.0",
+  "trace_id": "trace-err-123",
+  "error": {
+    "code": "WHATEVER",
+    "message": "Invalid error code"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "v": "1.0",
+  "trace_id": "trace-abc123",
+  "mode": "latency",
+  "latency_ms": 100,
+  "results": [
+    {
+      "doc_id": "doc-1",
+      "chunk_id": "chunk-1",
+      "rank": 1,
+      "score": 0.95
+    }
+  ]
+}

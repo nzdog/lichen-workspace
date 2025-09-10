@@ -1,0 +1,41 @@
+{
+  "room_id": "ai_room",
+  "version": "0.1.0",
+  "title": "AI Room",
+  "purpose": "Single steward for AI interactions: receive briefs, craft aligned prompts, call models, apply pre/post gates, and return validated outputs.",
+  "stone_alignment": [
+    "Clarity Over Cleverness",
+    "Integrity Is the Growth Strategy",
+    "The System Walks With Us"
+  ],
+  "inputs": {
+    "brief": {
+      "type": "object",
+      "required": true,
+      "description": "Normalized task brief from a calling room (task, tone, constraints, success markers, references)."
+    },
+    "context": {
+      "type": "object",
+      "required": false,
+      "description": "Optional contextual signals (diagnostics snapshot, memory pointers, caller metadata)."
+    },
+    "session_state_ref": "session-example-abc123",
+    "payload": {}
+  },
+  "outputs": {
+    "display_text": "",
+    "next_action": "continue"
+  },
+  "mini_walk_supported": true,
+  "completion_prompt_required": false,
+  "diagnostics_default": true,
+  "gate_profile": {
+    "chain": [
+      "integrity_linter",
+      "stones_alignment_filter",
+      "coherence_gate",
+      "plain_language_rewriter"
+    ],
+    "overrides": {}
+  }
+}

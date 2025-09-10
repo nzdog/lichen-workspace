@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lichen.system/schemas/rag_build/Chunk.schema.json",
+  "title": "Chunk",
+  "type": "object",
+  "required": ["doc_id", "chunk_id", "text", "token_count", "span"],
+  "properties": {
+    "doc_id": { "type": "string" },
+    "chunk_id": { "type": "string" },
+    "text": { "type": "string" },
+    "token_count": { "type": "integer", "minimum": 1 },
+    "span": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "section": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

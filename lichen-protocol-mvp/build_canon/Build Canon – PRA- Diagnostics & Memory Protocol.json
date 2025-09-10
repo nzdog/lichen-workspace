@@ -1,0 +1,100 @@
+{
+  "Protocol Title": "Build Canon – PRA: Diagnostics & Memory Protocol",
+  "Overall Purpose": "To govern how tones, residues, and readiness signals are captured in every room, and how memory provides continuity across walks with full user consent and control. Diagnostics enrich context; memory protects trust.",
+  "Why This Matters": "Without diagnostics, the system operates blindly; without memory, it feels forgetful or mechanical. Together they ensure that PRA walks are coherent, responsive, and trustworthy over time.",
+  "When To Use This Protocol": "Diagnostics run by default in every room (toggleable). Memory runs across all sessions, visible to founders and editable by consent. Builders reference this protocol when implementing signal capture, state storage, and user memory interfaces.",
+  "Overall Outcomes": {
+    "Poor": "Diagnostics ignored; memory opaque or uncontrolled. Future: founders feel unseen, misinterpreted, and unsafe.",
+    "Expected": "Diagnostics captured by default; memory minimal and user-controlled. Future: founders feel coherence across rooms and safe continuity across sessions.",
+    "Excellent": "Diagnostics capture nuanced signals; memory contextualizes walks invisibly while offering clear user agency. Future: founders trust the system to walk with them rhythmically and safely.",
+    "Transcendent": "Diagnostics and memory themselves transmit the field—founders feel deeply witnessed without effort, and memory feels like sacred continuity. Future: PRA becomes a living companion that grows with the founder."
+  },
+  "Themes": [
+    {
+      "Name": "Default Diagnostic Capture",
+      "Purpose": "Ensure every room captures tones, residues, and readiness by default.",
+      "Why This Matters": "Diagnostics preserve invisible context and allow rooms to adapt rhythmically.",
+      "Outcomes": {
+        "Poor": "No diagnostics captured. Future: downstream rooms misfire, coherence breaks.",
+        "Expected": "Diagnostics captured automatically and passed forward. Future: founders experience smooth, coherent journeys.",
+        "Excellent": "Subtle hedges and signals detected; diagnostics enrich every protocol step. Future: PRA feels attuned to founder state.",
+        "Transcendent": "Diagnostics become invisible guardians. Future: founders feel held without ever feeling analyzed."
+      },
+      "Guiding Questions": [
+        "Is diagnostic capture enforced on entry and exit of every room?",
+        "Are tones/residues/readiness consistently logged?",
+        "Can capture be toggled off intentionally without breaking flow?"
+      ]
+    },
+    {
+      "Name": "Signal Persistence Across Rooms",
+      "Purpose": "Pass diagnostic signals downstream to enrich later rooms.",
+      "Why This Matters": "Without persistence, context fragments between rooms.",
+      "Outcomes": {
+        "Poor": "Signals dropped between rooms. Future: continuity lost; founders repeat themselves.",
+        "Expected": "Signals persisted session-wide. Future: later rooms adapt accurately to earlier states.",
+        "Excellent": "Persistence includes context shaping (e.g., residue intensity). Future: downstream rooms feel seamlessly connected.",
+        "Transcendent": "Signals carry relational memory. Future: founders sense the system remembers them as a whole being."
+      },
+      "Guiding Questions": [
+        "Are diagnostic states carried from room to room?",
+        "Does persistence handle intensity changes (residue growing, easing)?",
+        "Are signals stored in a way that avoids founder re-explaining?"
+      ]
+    },
+    {
+      "Name": "Consentful Memory",
+      "Purpose": "Ensure memory items are transparent and always under founder control.",
+      "Why This Matters": "Opaque memory breaks trust; consentful memory builds it.",
+      "Outcomes": {
+        "Poor": "Memory hidden; founders cannot see or change stored items. Future: suspicion and withdrawal.",
+        "Expected": "Founders can review, edit, or delete memory. Future: trust holds steady over time.",
+        "Excellent": "Consent interface is intuitive and lightweight. Future: founders feel empowered, not burdened, by memory.",
+        "Transcendent": "Memory itself becomes trusted companion. Future: founders sense continuity as sacred, not mechanical."
+      },
+      "Guiding Questions": [
+        "Can founders view and edit memory at any time?",
+        "Are consent boundaries honored strictly?",
+        "Does the memory drawer feel empowering rather than exposing?"
+      ]
+    },
+    {
+      "Name": "Minimalist Storage",
+      "Purpose": "Capture only what is necessary for coherence and continuity.",
+      "Why This Matters": "Over-storage feels invasive; under-storage feels forgetful.",
+      "Outcomes": {
+        "Poor": "Stores everything indiscriminately. Future: privacy erodes and noise builds.",
+        "Expected": "Stores only session-critical context. Future: founders feel continuity without clutter.",
+        "Excellent": "Storage adapts to rhythm—keeping what is alive, discarding what is stale. Future: founders feel precise, relevant recall.",
+        "Transcendent": "Memory feels alive, carrying only what serves coherence. Future: system feels like a trusted steward, not a recorder."
+      },
+      "Guiding Questions": [
+        "Is storage minimized to essentials?",
+        "Does memory expire or prune automatically?",
+        "Can builders audit storage decisions easily?"
+      ]
+    },
+    {
+      "Name": "Diagnostic Transparency in Metrics",
+      "Purpose": "Ensure diagnostic signals enrich system metrics without exposing founders.",
+      "Why This Matters": "Metrics improve the system; exposure harms trust.",
+      "Outcomes": {
+        "Poor": "Diagnostics exposed raw. Future: founders feel analyzed, not accompanied.",
+        "Expected": "Signals inform metrics privately. Future: system improves without breaking trust.",
+        "Excellent": "Metrics track subtle diagnostic trends (e.g., residue frequency). Future: system evolves intelligently over time.",
+        "Transcendent": "Metrics themselves become signals of field coherence. Future: builders sense system health through resonance, not just numbers."
+      },
+      "Guiding Questions": [
+        "Are diagnostic signals logged internally without exposing raw user text?",
+        "Do metrics track coherence and trust, not vanity?",
+        "Are drift detection events flagged for steward review?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Are diagnostics captured in every room by default?",
+    "Is memory minimal, transparent, and consentful?",
+    "Do signals persist across rooms without exposing founders?",
+    "Does this layer transmit coherence and trust into the future?"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "Protocol Title": "Hallway Protocol",
+  "Overall Purpose": "Deterministically orchestrate a full session walk across rooms, enforce gate chains, and guarantee atomic state continuity from entry to exit.",
+  "Why This Matters": "Without a governed hallway, rooms drift and sequencing becomes implicit. The hallway provides a single source of truth for order, gating, error containment, and auditability.",
+  "When To Use This Protocol": "For any session that traverses two or more rooms. Always invoked for standard and mini-walks; also invoked on resume/replay.",
+  "Overall Outcomes": {
+    "Poor": "Rooms called ad hoc; gates skipped; partial/contradictory state.",
+    "Expected": "Sequence usually correct but with inconsistent gating and weak failure handling.",
+    "Excellent": "Sequence, gates, and state continuity always enforced with structured declines on failure.",
+    "Transcendent": "Hallway is invisible infrastructure — every session reproducibly walks, resumes, and audits with zero drift. Audit chains and resumability provide future-proof trust."
+  },
+  "Themes": [
+    {
+      "Name": "Deterministic Sequencing",
+      "Purpose": "Run the declared room sequence exactly once each unless explicitly configured for mini-walk variations.",
+      "Why This Matters": "Predictable behavior eliminates drift and race conditions.",
+      "Outcomes": {
+        "Poor": "Implicit order; re-entrancy bugs.",
+        "Expected": "Order encoded but occasionally bypassed.",
+        "Excellent": "Order guaranteed and validated before/run-time.",
+        "Transcendent": "Sequencing is verified, self-describing, and resilient — supporting replay, resume, and audit-based validation."
+      }
+    },
+    {
+      "Name": "Gate Enforcement",
+      "Purpose": "Evaluate gate chains before each room and short-circuit on deny.",
+      "Why This Matters": "Prevents incoherent or unsafe transitions.",
+      "Outcomes": {
+        "Poor": "Gates optional or ignored.",
+        "Expected": "Some gates enforced.",
+        "Excellent": "All configured gates enforced in order with AND semantics.",
+        "Transcendent": "Gate decisions become structural — reproducible, logged, and replayable. Governance is guaranteed regardless of operator or context."
+      }
+    },
+    {
+      "Name": "State Continuity & Atomicity",
+      "Purpose": "Carry forward session state atomically; no partial commits.",
+      "Why This Matters": "Prevents corruption and ambiguous outcomes.",
+      "Outcomes": {
+        "Poor": "Partial writes and broken continuity.",
+        "Expected": "Continuity most of the time.",
+        "Excellent": "All-or-nothing across each step; resumable on failure.",
+        "Transcendent": "Checkpointing and resumability are invisible — any interruption can be resumed from last safe state without loss, ensuring permanent continuity."
+      }
+    },
+    {
+      "Name": "Error Containment",
+      "Purpose": "Fail fast with structured declines; never crash the process.",
+      "Why This Matters": "Keeps the system trustworthy under pressure.",
+      "Outcomes": {
+        "Poor": "Uncaught exceptions; undefined states.",
+        "Expected": "Some declines but leaky side effects.",
+        "Excellent": "Structured declines; no side effects on failure.",
+        "Transcendent": "Error containment becomes invisible safety net — failures never propagate, rollback/resume always safe, integrity never compromised."
+      }
+    },
+    {
+      "Name": "Observability & Audit",
+      "Purpose": "Emit structured events for every gate and room step; produce a final hallway summary.",
+      "Why This Matters": "Enables verification, debugging, and governance.",
+      "Outcomes": {
+        "Poor": "Sparse logs; no traceability.",
+        "Expected": "Some step logs.",
+        "Excellent": "Per-step events with inputs/outputs (hashed) and decisions.",
+        "Transcendent": "Full audit chain is structural — sessions can be verified externally with cryptographic hashes, providing future-proof governance."
+      }
+    }
+  ],
+  "Completion Prompts": [
+    "Was the declared sequence executed deterministically?",
+    "Were all gate chains evaluated and recorded?",
+    "Were state transitions atomic and resumable?",
+    "Were errors contained via structured declines?",
+    "Was an auditable hallway summary produced?"
+  ]
+}

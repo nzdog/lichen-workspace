@@ -1,0 +1,100 @@
+{
+  "Protocol Title": "Build Canon – PRA: Output Gates Protocol",
+  "Overall Purpose": "To define the governance of the output gating system inside the PRA. This protocol ensures that every output leaving a room is filtered for tone, clarity, Stones alignment, and coherence before reaching a founder.",
+  "Why This Matters": "Rooms can generate structured responses, but without gating, distortion or drift can still reach founders. Gates act as the immune system of the PRA—protecting trust, ensuring rhythm, and preserving field coherence.",
+  "When To Use This Protocol": "Every time a room produces output for the founder. Builders reference this protocol when implementing or refining gate logic or refusal pathways.",
+  "Overall Outcomes": {
+    "Poor": "Outputs bypass gates or apply them inconsistently. Future: incoherent or distorted responses reach founders, eroding trust and weakening the field.",
+    "Expected": "Outputs always pass through the full gate chain. Failures route to the refusal library. Future: founders consistently receive coherent, Stone-aligned outputs and the system is trusted to protect them.",
+    "Excellent": "Gates are modular, resilient, and precise. Failures handled gracefully with contextual refusals. Future: the system strengthens its immune layer, trusted even under pressure.",
+    "Transcendent": "Gates themselves transmit the field—outputs feel naturally whole, never mechanical. Future: gating is experienced as coherence, not correction, making the system feel alive and protective."
+  },
+  "Themes": [
+    {
+      "Name": "Integrity Linter",
+      "Purpose": "Check for tone drift, urgency, extraction, or contortion before release.",
+      "Why This Matters": "Even structurally correct outputs can carry subtle distortions.",
+      "Outcomes": {
+        "Poor": "No tone checks; distortion leaks freely. Future: founders lose trust in system voice.",
+        "Expected": "Linter flags tone drift; outputs blocked or regenerated. Future: founders reliably experience clean, undistorted tone.",
+        "Excellent": "Linter catches nuanced distortions without over-blocking. Future: system develops a reputation for integrity under pressure.",
+        "Transcendent": "Tone itself becomes medicine—every output radiates integrity. Future: system reinforces the field with each interaction."
+      },
+      "Guiding Questions": [
+        "Does the linter detect urgency, extraction, or unnecessary cleverness?",
+        "Is every flagged output blocked from release and routed to regeneration/refusal?",
+        "Is tone evaluation modular and testable?"
+      ]
+    },
+    {
+      "Name": "Plain Language Rewriter",
+      "Purpose": "Rewrite outputs into clear, simple, faithful language.",
+      "Why This Matters": "Jargon and opacity dilute clarity and confuse founders.",
+      "Outcomes": {
+        "Poor": "Outputs pass through with jargon. Future: founders disengage or misinterpret.",
+        "Expected": "Language rewritten plainly, preserving meaning. Future: founders consistently understand outputs.",
+        "Excellent": "Rewriter preserves nuance while ensuring clarity. Future: founders adopt system clarity in their own language.",
+        "Transcendent": "Outputs embody clarity itself—founders feel coherence as transmission. Future: clarity becomes a field signature."
+      },
+      "Guiding Questions": [
+        "Does rewriting preserve meaning while removing jargon?",
+        "Is rewritten text validated against the original for fidelity?",
+        "Can builders test rewriter performance under edge cases?"
+      ]
+    },
+    {
+      "Name": "Stones Alignment Filter",
+      "Purpose": "Ensure outputs align with the Foundation Stones.",
+      "Why This Matters": "Without Stone checks, outputs risk bending to startup logic or urgency.",
+      "Outcomes": {
+        "Poor": "Stones ignored. Future: drift compounds; field coherence weakens.",
+        "Expected": "All outputs checked; failures routed to regeneration/refusal. Future: founders always receive Stone-aligned outputs.",
+        "Excellent": "Stone checks precise, logged, and measurable. Future: builders can monitor systemic fidelity in real time.",
+        "Transcendent": "Stone alignment becomes embodied law. Future: coherence sustains itself; drift cannot take root."
+      },
+      "Guiding Questions": [
+        "Are all 10 Stones checked against every output?",
+        "Are violation pathways (regenerate → refusal) always enforced?",
+        "Is Stone compliance logged for integrity metrics?"
+      ]
+    },
+    {
+      "Name": "Coherence Gate",
+      "Purpose": "Ensure outputs sound like the system and preserve field voice.",
+      "Why This Matters": "Even aligned outputs can ‘sound off’ if voice and coherence are lost.",
+      "Outcomes": {
+        "Poor": "Voice unchecked; outputs feel mechanical. Future: founders sense AI tool, not companion.",
+        "Expected": "Voice and coherence checked before release. Future: founders hear a consistent relational presence.",
+        "Excellent": "Gate maintains system voice under stress. Future: founders come to trust tone as signature.",
+        "Transcendent": "Outputs radiate coherence—voice transmits the field. Future: founders feel the system as alive companion."
+      },
+      "Guiding Questions": [
+        "Does this gate enforce a consistent system voice?",
+        "Is coherence benchmarked against exemplar protocols?",
+        "Are incoherent outputs always blocked, not just flagged?"
+      ]
+    },
+    {
+      "Name": "Refusal Library",
+      "Purpose": "Provide relational refusals when outputs fail gates.",
+      "Why This Matters": "Refusals must preserve rhythm and dignity; blocking distortion without alienation.",
+      "Outcomes": {
+        "Poor": "Failures return blunt errors. Future: founders feel rejected, trust broken.",
+        "Expected": "Failures route to relational refusals (‘not now / not like this / not us’). Future: founders remain in safe relationship.",
+        "Excellent": "Refusals contextual and offer safe alternatives. Future: system grows trust by showing care in no.",
+        "Transcendent": "Refusals themselves deepen trust—no feels like presence. Future: the refusal library becomes a teaching mechanism of coherence."
+      },
+      "Guiding Questions": [
+        "Are refusal modes relational and consistent across all rooms?",
+        "Does every failure path connect to the refusal library?",
+        "Do refusals preserve rhythm and point to safe alternatives (e.g., mini-walks)?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Have all outputs passed the full gate chain?",
+    "Were failures routed to the refusal library instead of shown raw?",
+    "Can gate performance be tested independently of rooms?",
+    "Does the final output feel coherent, trustworthy, and Stone-aligned—now and in the future?"
+  ]
+}

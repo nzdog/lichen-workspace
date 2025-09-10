@@ -1,0 +1,149 @@
+{
+  "Protocol Title": "AI Room Protocol",
+  "Overall Purpose": "To act as the single steward of AI interactions across the house: receive briefs, shape aligned prompts, call models, govern outputs, and return validated responses—so coherence is preserved and improvement happens in rhythm.",
+  "Why This Matters": "When prompts and model calls are scattered, tone drifts, governance weakens, and duplication grows. Central stewardship keeps the voice unified, makes integrity observable, and allows learning to happen offline without disrupting live flow.",
+  "When To Use This Protocol": "Whenever any room requires AI-generated language, reflection, analysis, or transformation. Refer to this protocol when refining prompts, adjusting model strategy, or updating guardrails.",
+  "Overall Outcomes": {
+    "Poor": "Rooms craft their own prompts and call models directly. Future: fragmented tone, inconsistent safety, rising maintenance cost.",
+    "Expected": "All AI interactions flow through the AI Room with basic guardrails and consistent returns. Future: coherence improves, operational load decreases.",
+    "Excellent": "Briefs are faithfully transformed into aligned prompts; pre/post gates run; outputs are validated and logged for offline learning. Future: one coherent voice across contexts and models.",
+    "Transcendent": "The AI Room becomes a living steward of signal: quietly improving between sessions, never intruding on presence, always transmitting integrity. Future: coherence scales without forcing speed."
+  },
+  "Themes": [
+    {
+      "Name": "Brief Intake (Signal Before Form)",
+      "Purpose": "Receive clear briefs from calling rooms and preserve the signal before shaping.",
+      "Why This Matters": "If the signal is distorted at the doorway, everything downstream inherits the distortion.",
+      "Outcomes": {
+        "Poor": "Ambiguous or overloaded requests flow through. Future: misfires and rework.",
+        "Expected": "Briefs declare task, tone, constraints, and success markers. Future: fewer retries, cleaner outputs.",
+        "Excellent": "Briefs are normalized and confirmed; missing context is surfaced early. Future: stable foundations for prompt craft.",
+        "Transcendent": "Briefing itself calms urgency and clarifies intent. Future: the system acts from essence, not scramble."
+      },
+      "Guiding Questions": [
+        "What is the requested outcome in one sentence?",
+        "What constraints (tone, length, exclusions) are non-negotiable?",
+        "What evidence or references must the output respect?"
+      ]
+    },
+    {
+      "Name": "Prompt Craft & Versioning",
+      "Purpose": "Translate briefs into aligned, reusable prompts and keep a clear version history.",
+      "Why This Matters": "Unversioned prompt edits create silent drift and make learning impossible.",
+      "Outcomes": {
+        "Poor": "Ad-hoc prompts with no traceability. Future: tone drift and irreproducible results.",
+        "Expected": "Prompts are templated and versioned. Future: consistent reproduction and easier updates.",
+        "Excellent": "Prompts include rationale, examples, and constraints; variants exist per model where needed. Future: fast iteration without fragmentation.",
+        "Transcendent": "Prompt language becomes an expression of the system’s voice. Future: upgrades deepen fidelity rather than chase scores."
+      },
+      "Guiding Questions": [
+        "Does this prompt faithfully carry the brief?",
+        "What changed since the last version—and why?",
+        "Is there a per-model variant needed, or can one prompt serve many?"
+      ]
+    },
+    {
+      "Name": "Pre-Call Guardrails",
+      "Purpose": "Run alignment and safety checks before any model call.",
+      "Why This Matters": "Catching drift upstream prevents harmful or incoherent outputs downstream.",
+      "Outcomes": {
+        "Poor": "No pre-checks; prompts go straight to model. Future: avoidable issues propagate.",
+        "Expected": "Basic integrity and tone checks run. Future: fewer redirections and cleaner outputs.",
+        "Excellent": "Stones-aligned filters and policy checks run with clear, legible reasons. Future: integrity becomes observable, not assumed.",
+        "Transcendent": "Guardrails feel like care, not control. Future: builders trust gates because they are simple and transparent."
+      },
+      "Guiding Questions": [
+        "Does the prompt violate any explicit guardrails?",
+        "Is the tone aligned with the calling room’s context?",
+        "Would you ship this prompt verbatim with your name on it?"
+      ]
+    },
+    {
+      "Name": "Model Orchestration & Routing",
+      "Purpose": "Select and call the appropriate model(s) without leaking model complexity to other rooms.",
+      "Why This Matters": "Abstracting the model keeps the house coherent during upgrades, outages, or experiments.",
+      "Outcomes": {
+        "Poor": "Callers hard-code models and settings. Future: brittle integrations and hidden costs.",
+        "Expected": "The AI Room routes requests and handles fallbacks. Future: fewer failures and simpler callers.",
+        "Excellent": "Champion–challenger routing, quotas, and health checks are managed centrally. Future: safer evolution and cost control.",
+        "Transcendent": "Model changes are invisible to the founder; the voice stays one. Future: infrastructure shifts without shaking trust."
+      },
+      "Guiding Questions": [
+        "Is this task best served by the current champion?",
+        "What is our safe challenger fraction here?",
+        "What happens on failure at each step (retry, fallback, decline)?"
+      ]
+    },
+    {
+      "Name": "Post-Call Validation & Delivery",
+      "Purpose": "Evaluate outputs against the brief and gates, then deliver only governed responses.",
+      "Why This Matters": "Unvalidated outputs erode trust, even when they look fluent.",
+      "Outcomes": {
+        "Poor": "Raw model text is passed through. Future: subtle incoherence and safety leaks.",
+        "Expected": "Outputs are checked for alignment and basic safety. Future: fewer regressions.",
+        "Excellent": "Outputs are scored against success markers; failures trigger repair or decline with a clear reason. Future: reliability compounds.",
+        "Transcendent": "Delivery feels like a trusted handover, not plumbing. Future: rooms downstream stay simple and clean."
+      },
+      "Guiding Questions": [
+        "Does the output satisfy the brief’s success markers?",
+        "What must be repaired, if anything, before delivery?",
+        "Is a graceful decline more aligned than a forced answer?"
+      ]
+    },
+    {
+      "Name": "Diagnostics & Offline Learning",
+      "Purpose": "Capture minimal metadata for improvement between sessions—never at the cost of presence.",
+      "Why This Matters": "Learning in rhythm prevents latency and keeps optimization from hijacking live experience.",
+      "Outcomes": {
+        "Poor": "No learning; same mistakes repeat. Future: stagnation and frustration.",
+        "Expected": "Basic logs (prompt version, model, outcome) enable after-session review. Future: steady improvements.",
+        "Excellent": "Aggregated scoring (not raw content) guides prompt evolution; promotions/retirements are legible. Future: learning without surveillance.",
+        "Transcendent": "The system gets better while users feel lighter. Future: presence is protected; progress is evident."
+      },
+      "Guiding Questions": [
+        "What is the smallest set of signals that will help us learn?",
+        "How do we prevent score-chasing from overriding integrity?",
+        "What will we promote, retire, or hold for more evidence?"
+      ]
+    },
+    {
+      "Name": "Stewardship, Not Control",
+      "Purpose": "Hold the AI Room as a servant to the house, not a controller of it.",
+      "Why This Matters": "Centralization can drift into gatekeeping; stewardship keeps humility and service at the center.",
+      "Outcomes": {
+        "Poor": "AI Room dictates terms; callers contort briefs to fit. Future: rigidity and resentment.",
+        "Expected": "Clear contracts with callers; minimal required fields; transparent decisions. Future: smooth collaboration.",
+        "Excellent": "The AI Room adapts to diverse contexts while keeping shared DNA intact. Future: coherence through difference.",
+        "Transcendent": "Builders experience the room as supportive companion. Future: the whole house grows more itself."
+      },
+      "Guiding Questions": [
+        "Are we serving the caller’s intention—or making them serve ours?",
+        "Where can we flex without losing shared DNA?",
+        "Is any rule here solving our fear rather than the founder’s need?"
+      ]
+    },
+    {
+      "Name": "Failure & Fallbacks",
+      "Purpose": "Degrade gracefully when inputs are malformed, models fail, or gates trip.",
+      "Why This Matters": "How we fail teaches the house what we value.",
+      "Outcomes": {
+        "Poor": "Opaque errors, silent drops. Future: distrust and rework.",
+        "Expected": "Clear decline with reason and next step. Future: predictable recovery.",
+        "Excellent": "Tiered fallbacks (repair, alternate model, exemplar) are visible to the caller. Future: resilience without drama.",
+        "Transcendent": "Even failure preserves dignity and rhythm. Future: trust is strengthened by how we say no."
+      },
+      "Guiding Questions": [
+        "What is the simplest, kindest fallback here?",
+        "What should never be auto-repaired?",
+        "How do we communicate ‘not now’ without closing the door?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Was the brief honored without distortion?",
+    "Did pre/post guardrails run and return legible reasons?",
+    "Is the delivered output the minimum sufficient, coherent response?",
+    "What (if anything) should be learned offline before next time?",
+    "Did the AI Room serve as steward—not controller—of this interaction?"
+  ]
+}

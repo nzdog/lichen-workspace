@@ -1,0 +1,27 @@
+{
+  "v": "1.0",
+  "trace_id": "trace-abc123",
+  "mode": "latency",
+  "latency_ms": 100,
+  "results": [
+    {
+      "doc_id": "doc-1",
+      "chunk_id": "chunk-1",
+      "rank": 1,
+      "score": 0.95,
+      "text": "The entry room receives first words, reflects clearly, sets pace, and invites consent.",
+      "source": {
+        "doc_type": "protocol",
+        "title": "Entry Room Protocol",
+        "url": "https://lichen.system/protocols/entry"
+      },
+      "spans": [
+        {
+          "start": 0,
+          "end": 10
+        }
+      ]
+    }
+  ],
+  "warnings": ["Low confidence results"]
+}

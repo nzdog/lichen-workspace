@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "rooms.schema.json",
+  "title": "PRA Room Contract",
+  "type": "object",
+  "required": ["room_id", "title", "version", "purpose", "stone_alignment", "mini_walk_supported", "completion_prompt_required", "diagnostics_default", "gate_profile", "inputs", "outputs"],
+  "properties": {
+    "room_id": { "type": "string" },
+    "title": { "type": "string" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "purpose": { "type": "string" },
+  "stone_alignment": {
+    "description": "Declares which Foundation Stones this room explicitly aligns to.",
+    "type": "array",
+    "items": { "type": "string" },
+    "minItems": 1
+  },
+
+    "mini_walk_supported": { "type": "boolean" },
+    "completion_prompt_required": { "type": "boolean" },
+    "diagnostics_default": { "type": "boolean" },
+
+    "gate_profile": {
+      "type": "object",
+      "required": ["chain"],
+      "properties": {
+        "chain": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["integrity_linter", "plain_language_rewriter", "stones_alignment_filter", "coherence_gate", "refusal_library"]
+          }
+        },
+        "overrides": { "type": "object", "additionalProperties": true }
+      },
+      "additionalProperties": false
+    },
+
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "payload": { "type": ["object", "null"] },
+        "session_state_ref": { "type": "string" }
+      },
+      "required": ["session_state_ref"],
+      "additionalProperties": true
+    },
+
+    "outputs": {
+      "type": "object",
+      "required": ["display_text", "next_action"],
+      "properties": {
+        "display_text": { "type": "string" },
+        "next_action": { "type": "string" },
+        "pace_label": { "type": ["string", "null"], "enum": ["NOW", "HOLD", "LATER", "SOFT_HOLD", null] },
+        "consent_status": { "type": ["string", "null"], "enum": ["granted", "withheld", "not_applicable", null] },
+        "diagnostic_summary": { "type": ["object", "null"] },
+        "telemetry": { "type": ["object", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
+

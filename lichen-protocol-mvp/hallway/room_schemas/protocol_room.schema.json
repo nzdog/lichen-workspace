@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "display_text": {
+      "type": "string",
+      "description": "Text to display to the user"
+    },
+    "next_action": {
+      "type": "string",
+      "enum": ["continue"],
+      "description": "Next action to take"
+    }
+  },
+  "required": ["display_text", "next_action"],
+  "additionalProperties": true
+}

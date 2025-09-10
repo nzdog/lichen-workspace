@@ -1,0 +1,29 @@
+{
+  "room_id": "entry_room",
+  "title": "Entry Room",
+  "purpose": "Receive first words, reflect clearly, set pace, invite consent.",
+  "stone_alignment": ["Light Before Form", "The Speed of Trust", "Presence Is Productivity", "Built for Wholeness"],
+  "inputs": {
+    "user_text": "string",
+    "session_state_ref": "uuid",
+    "diagnostic_toggle": "boolean (default: true)"
+  },
+  "steps": [
+    "mirror_engine.reflect",
+    "pace_gate.assign",
+    "consent_anchor.invite"
+  ],
+  "mini_walk_supported": true,
+  "completion_prompt_required": true,
+  "diagnostics": {
+    "capture": true,
+    "signals": ["tones", "residues", "readiness", "joy_sample?"]
+  },
+  "outputs": {
+    "display_text": "string",
+    "pace_label": "NOW|HOLD|LATER|SOFT_HOLD",
+    "next_action": "room_id|protocol_suggestion|end",
+    "diagnostic_summary": "object (internal)"
+  },
+  "gate_profile": ["integrity_linter", "plain_language_rewriter", "stones_filter", "coherence_gate", "refusal_library"]
+}

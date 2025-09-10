@@ -1,0 +1,17 @@
+{
+  "index_id": "latency-local",
+  "mode": "latency",
+  "ann": {
+    "backend": "faiss",
+    "metric": "cosine",
+    "params": {
+      "kind": "bruteforce"
+    }
+  },
+  "metadata_fields": ["doc_type", "tags", "section"],
+  "limits": {
+    "top_k_max": 10,
+    "p95_target_ms": 150
+  },
+  "created_at": "2025-09-07T00:00:00Z"
+}

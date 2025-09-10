@@ -1,0 +1,84 @@
+{
+  "Protocol Title": "Integration & Commit Room Protocol",
+  "Overall Purpose": "To finalize integration and commitments at the end of a walk. This room enforces capture of integration data, recording of commitments with pace, and memory writes to preserve continuity.",
+  "Why This Matters": "If integration and commitments are optional, system continuity fails. The Integration & Commit Room ensures that shifts and next steps are always recorded structurally, with minimal data written into memory.",
+  "When To Use This Protocol": "Always invoked after the Walk Room and before the Exit Room. May also be triggered mid-session when explicit integration or re-commitment is required.",
+  "Overall Outcomes": {
+    "Poor": "Integration and commitments skipped. No data written to memory.",
+    "Expected": "Integration and commitments recorded inconsistently. Partial continuity.",
+    "Excellent": "Integration and commitments always captured with pace and memory write enforced.",
+    "Transcendent": "Integration governance becomes invisible — every session produces reliable integration data."
+  },
+  "Themes": [
+    {
+      "Name": "Integration Capture",
+      "Purpose": "Require structured capture of integration data before closure.",
+      "Why This Matters": "Prevents loss of session insights needed for continuity.",
+      "Outcomes": {
+        "Poor": "No integration recorded.",
+        "Expected": "Integration sometimes recorded.",
+        "Excellent": "Integration always captured in structured fields.",
+        "Transcendent": "Integration capture invariant — closure blocked without it."
+      },
+      "Guiding Questions": [
+        "Is integration capture enforced before closure?",
+        "Is data structured and minimal?",
+        "Is integration linked to session context?"
+      ]
+    },
+    {
+      "Name": "Commit Recording",
+      "Purpose": "Require all commitments to be captured and structured.",
+      "Why This Matters": "Ensures continuity of next steps across sessions.",
+      "Outcomes": {
+        "Poor": "No commitments recorded.",
+        "Expected": "Commitments recorded inconsistently.",
+        "Excellent": "All commitments recorded in structured fields.",
+        "Transcendent": "Commit capture invariant — closure blocked without commit data."
+      },
+      "Guiding Questions": [
+        "Are commitments recorded every time?",
+        "Is data structured (task, context, timestamp)?",
+        "Are commits linked to integration data?"
+      ]
+    },
+    {
+      "Name": "Pace Enforcement",
+      "Purpose": "Tag every commitment with pace state (NOW, HOLD, LATER, SOFT HOLD).",
+      "Why This Matters": "Prevents urgency drift and enforces rhythm governance.",
+      "Outcomes": {
+        "Poor": "No pace tagging.",
+        "Expected": "Some commitments tagged with pace.",
+        "Excellent": "All commitments tagged with pace states.",
+        "Transcendent": "Pace tagging invariant — commits without pace rejected."
+      },
+      "Guiding Questions": [
+        "Does the room block commits without pace tags?",
+        "Are pace states consistently applied?",
+        "Are HOLD/LATER honored structurally?"
+      ]
+    },
+    {
+      "Name": "Memory Commit",
+      "Purpose": "Write integration and commitment data into the Memory Room.",
+      "Why This Matters": "Continuity fails without memory writes.",
+      "Outcomes": {
+        "Poor": "No memory writes.",
+        "Expected": "Memory writes inconsistent.",
+        "Excellent": "All integration and commitments written to memory.",
+        "Transcendent": "Memory commit invariant — closure blocked without write."
+      },
+      "Guiding Questions": [
+        "Is integration and commit data always written to memory?",
+        "Is data scoped to minimal fields?",
+        "Is memory updated atomically to prevent partial writes?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Was integration captured before closure?",
+    "Were commitments recorded structurally?",
+    "Were all commitments tagged with pace?",
+    "Was data written to memory atomically?"
+  ]
+}

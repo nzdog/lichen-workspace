@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "refusal_library.schema.json",
+  "title": "Gate: Refusal Library",
+  "type": "object",
+  "required": ["gate_id", "title", "version", "purpose", "refusal_modes", "inputs", "outputs"],
+  "properties": {
+    "gate_id": { "const": "refusal_library" },
+    "title": { "type": "string" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "purpose": { "type": "string" },
+    "refusal_modes": {
+      "type": "object",
+      "required": ["not_now", "not_like_this", "not_us"],
+      "properties": {
+        "not_now": { "type": "string" },
+        "not_like_this": { "type": "string" },
+        "not_us": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "object",
+      "required": ["failure_reason"],
+      "properties": { "failure_reason": { "type": "string" } },
+      "additionalProperties": false
+    },
+    "outputs": {
+      "type": "object",
+      "required": ["refusal_text", "refusal_mode"],
+      "properties": {
+        "refusal_text": { "type": "string" },
+        "refusal_mode": { "type": "string", "enum": ["not_now", "not_like_this", "not_us"] }
+      },
+      "additionalProperties": false
+    },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

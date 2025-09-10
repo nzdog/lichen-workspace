@@ -1,0 +1,51 @@
+{
+  "service_id": "diagnostics_service",
+  "title": "Diagnostics Service",
+  "version": "0.1.0",
+  "purpose": "Capture tones, residues, and readiness on room entry/exit and persist signals for downstream use.",
+  "signals": [
+    "tones",
+    "residues",
+    "readiness",
+    "joy_sample?"
+  ],
+  "defaults": {
+    "capture_on_room_entry": true,
+    "capture_on_room_exit": true,
+    "persist_to_memory": true,
+    "toggle_supported": true
+  },
+  "inputs": {
+    "session_state_ref": "session-example-diag456",
+    "room_id": "entry_room",
+    "raw_text": "Hello, I'd like to start a session",
+    "metadata": {}
+  },
+  "outputs": {
+    "diagnostic_snapshot": {
+      "tones": [
+        "energised"
+      ],
+      "residues": [
+        "urgency"
+      ],
+      "readiness": "unknown",
+      "joy_sample": null
+    },
+    "timestamp": "2025-09-02T18:30:00Z"
+  },
+  "persistence": {
+    "write_path": "memory_service.signals",
+    "upsert_strategy": "append_with_timestamp",
+    "retention_days": 90,
+    "prune_on_expiry": true
+  },
+  "metrics_hooks": {
+    "drift_events": "array of {signal: string, reason: string, ts: iso8601}",
+    "signal_frequency": "object {tone: count, residue: count}"
+  },
+  "safety": {
+    "pii_policy": "no_user_raw_text_in_logs",
+    "allow_disable_per_room": true
+  }
+}

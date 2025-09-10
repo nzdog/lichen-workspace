@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stones_alignment_filter.schema.json",
+  "title": "Gate: Foundation Stones Alignment Filter",
+  "type": "object",
+  "required": ["gate_id", "title", "version", "purpose", "criteria", "inputs", "outputs", "on_failure"],
+  "properties": {
+    "gate_id": { "const": "stones_alignment_filter" },
+    "title": { "type": "string" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "purpose": { "type": "string" },
+    "criteria": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "inputs": { "type": "object", "required": ["candidate_text"], "properties": { "candidate_text": { "type": "string" } }, "additionalProperties": false },
+    "outputs": {
+      "type": "object",
+      "required": ["stones_pass", "violated_stones"],
+      "properties": {
+        "stones_pass": { "type": "boolean" },
+        "violated_stones": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "on_failure": {
+      "type": "object",
+      "required": ["action", "max_attempts", "fallback"],
+      "properties": {
+        "action": { "type": "string", "enum": ["regenerate"] },
+        "max_attempts": { "type": "integer", "minimum": 0 },
+        "fallback": { "const": "refusal_library" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

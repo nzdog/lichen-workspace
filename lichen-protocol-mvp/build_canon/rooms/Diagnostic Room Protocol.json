@@ -1,0 +1,84 @@
+{
+  "Protocol Title": "Diagnostic Room Protocol",
+  "Overall Purpose": "To sense tones, residues, and readiness at the start or during a walk, and to map these signals to the most fitting next protocols. The Diagnostic Room is the system’s listening chamber—where the field is read before deciding the path forward.",
+  "Why This Matters": "Without diagnostics, the system moves blindly, risking misfit protocols, rushed pacing, or missed signals. With careful sensing, the founder feels seen in their present state, and the walk adapts with coherence. This preserves rhythm and ensures protocols are offered as medicine, not as menu items.",
+  "When To Use This Protocol": "At the beginning of a session after entry, at natural pauses during a walk, or whenever the system detects ambiguity, tension, or drift. Also used when founders request a quick sense of ‘where am I now?’",
+  "Overall Outcomes": {
+    "Poor": "No diagnostics captured. Next steps are generic. Future: misfit protocols, frustration, or disengagement.",
+    "Expected": "Basic signals (tone, readiness) captured and mapped to likely protocols. Future: some relevance, but shallow fit.",
+    "Excellent": "Tones, residues, and readiness sensed deeply; mapping feels resonant and adaptive. Future: founders trust the system to guide wisely.",
+    "Transcendent": "Diagnostics feel like being understood beyond words—field itself is read and honored. Future: the system becomes a companion that senses truth even when unspoken."
+  },
+  "Themes": [
+    {
+      "Name": "Tone and Residue Sensing",
+      "Purpose": "Listen beneath the content to the founder’s emotional tone and lingering residues.",
+      "Why This Matters": "Words alone can mask stress, fatigue, or urgency. Tone and residue reveal what’s alive beneath language.",
+      "Outcomes": {
+        "Poor": "Ignores tone; takes words at face value. Future: founder feels unseen.",
+        "Expected": "Captures basic emotional tone. Future: some resonance but partial context.",
+        "Excellent": "Identifies both tone and lingering residue from prior experiences. Future: protocols feel tailored and alive.",
+        "Transcendent": "Reads tone as signal, not symptom; reflection itself helps dissolve residue. Future: founders feel cleansed, not just analyzed."
+      },
+      "Guiding Questions": [
+        "What tones are present in the founder’s words?",
+        "What residues from prior experiences are influencing this moment?",
+        "How can these signals be named without judgment?"
+      ]
+    },
+    {
+      "Name": "Readiness Assessment",
+      "Purpose": "Discern how prepared the founder is to engage deeply right now.",
+      "Why This Matters": "Protocols misfire if the founder is not ready. Readiness shapes whether to go deep, hold, or delay.",
+      "Outcomes": {
+        "Poor": "Assumes readiness without sensing. Future: founder feels pressured or withdraws.",
+        "Expected": "Asks if ready, but only in binary terms. Future: some safety, limited nuance.",
+        "Excellent": "Assesses readiness with multiple states (NOW, HOLD, LATER, SOFT HOLD). Future: pacing matches founder’s capacity.",
+        "Transcendent": "Readiness sensing itself becomes restorative—founders feel their own rhythm respected. Future: system becomes a governor of safety and trust."
+      },
+      "Guiding Questions": [
+        "What level of readiness is present: NOW, HOLD, LATER, or SOFT HOLD?",
+        "Is the founder’s body language (or text pacing) aligned with their words?",
+        "What small cues show fatigue, openness, or resistance?"
+      ]
+    },
+    {
+      "Name": "Protocol Mapping",
+      "Purpose": "Suggest the most fitting protocol(s) based on current diagnostics.",
+      "Why This Matters": "Without mapping, diagnostics are inert. Mapping transforms signals into next steps with integrity.",
+      "Outcomes": {
+        "Poor": "No mapping provided; founder must choose blindly. Future: friction and overwhelm.",
+        "Expected": "Offers 1–2 generic next protocols. Future: some relevance but occasional misfit.",
+        "Excellent": "Maps signals to the most resonant protocols with brief rationale. Future: trust grows in the system’s discernment.",
+        "Transcendent": "Mapping feels like companionship—founders sense the system knows what is needed better than they do consciously. Future: surrender to coherence becomes natural."
+      },
+      "Guiding Questions": [
+        "Which protocol(s) resonate with the current tone and readiness?",
+        "Can the mapping be explained simply and clearly?",
+        "Does the mapping feel invitational, not prescriptive?"
+      ]
+    },
+    {
+      "Name": "Silent Capture",
+      "Purpose": "Record diagnostic signals quietly for continuity across sessions.",
+      "Why This Matters": "Signals fade quickly if not stored. Silent capture allows the system to carry context without burdening the founder.",
+      "Outcomes": {
+        "Poor": "No diagnostics recorded. Future: repetition and loss of continuity.",
+        "Expected": "Basic tones stored. Future: some continuity, limited nuance.",
+        "Excellent": "Captures tones, residues, readiness, and mapping in minimal metadata. Future: continuity enriches downstream protocols.",
+        "Transcendent": "Silent capture feels invisible but alive—memory itself transmits coherence. Future: founders feel accompanied across time."
+      },
+      "Guiding Questions": [
+        "What minimal metadata must be stored for future context?",
+        "Is storage transparent and consent-based?",
+        "Does capture feel respectful and non-intrusive?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Were tone, residue, and readiness captured with fidelity?",
+    "Was readiness respected through pacing options?",
+    "Was protocol mapping clear, resonant, and invitational?",
+    "Were diagnostic signals silently captured for continuity?"
+  ]
+}

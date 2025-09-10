@@ -1,0 +1,27 @@
+{
+  "room_id": "exit_room",
+  "title": "Exit Room",
+  "version": "0.1.0",
+  "purpose": "Close arc with reflection, resonance, and explicit choice.",
+  "stone_alignment": [
+    "The Speed of Trust",
+    "Integrity Is the Growth Strategy"
+  ],
+  "mini_walk_supported": true,
+  "completion_prompt_required": true,
+  "diagnostics_default": true,
+  "gate_profile": {
+    "chain": [
+      "coherence_gate"
+    ],
+    "overrides": {}
+  },
+  "inputs": {
+    "session_state_ref": "session-example-abc123",
+    "payload": {}
+  },
+  "outputs": {
+    "display_text": "",
+    "next_action": "continue"
+  }
+}

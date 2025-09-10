@@ -1,0 +1,23 @@
+{
+  "index_id": "index-lichen-v1",
+  "mode": "latency",
+  "ann": {
+    "backend": "faiss",
+    "metric": "cosine",
+    "params": {
+      "nlist": 1024,
+      "nprobe": 16
+    }
+  },
+  "reranker": {
+    "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "max_passages": 10,
+    "budget_ms": 100
+  },
+  "metadata_fields": ["doc_type", "tags", "section"],
+  "limits": {
+    "top_k_max": 50,
+    "p95_target_ms": 200
+  },
+  "created_at": "2025-01-27T10:00:00Z"
+}

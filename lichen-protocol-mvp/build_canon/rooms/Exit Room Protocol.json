@@ -1,0 +1,84 @@
+{
+  "Protocol Title": "Exit Room Protocol",
+  "Overall Purpose": "To finalize and close sessions in the PRA. The Exit Room enforces completion prompts, captures closing diagnostics, and commits final session state into memory. It ensures all sessions terminate in a governed and reproducible way.",
+  "Why This Matters": "If sessions end without structure, state becomes inconsistent, diagnostics are lost, and memory is unreliable. The Exit Room guarantees that termination is uniform, closing contracts are honored, and downstream continuity is preserved.",
+  "When To Use This Protocol": "Always invoked at session termination, after Integration & Commit. Also invoked when a session is aborted or force-closed, to ensure state is finalized.",
+  "Overall Outcomes": {
+    "Poor": "Sessions terminate with no finalization. State remains open or partial. Memory is not updated.",
+    "Expected": "Exit steps run but inconsistently. Some sessions finalize correctly, others leave gaps.",
+    "Excellent": "All sessions finalize through completion prompts, diagnostic logging, and memory handoff. State is consistent.",
+    "Transcendent": "Exit logic becomes invisible infrastructure — every session closes predictably, and state handoff is always complete."
+  },
+  "Themes": [
+    {
+      "Name": "Completion Enforcement",
+      "Purpose": "Require explicit completion before allowing session termination.",
+      "Why This Matters": "Prevents sessions from ending in an indeterminate state.",
+      "Outcomes": {
+        "Poor": "No completion required; sessions can drop arbitrarily.",
+        "Expected": "Completion enforced in most cases, with some bypass paths.",
+        "Excellent": "Completion required in all cases; bypass blocked.",
+        "Transcendent": "Completion enforcement is structural — closure is never skipped."
+      },
+      "Guiding Questions": [
+        "Does the Exit Room block termination until completion prompts run?",
+        "Are bypass or early exits routed through the same enforcement?",
+        "Is session state marked as closed only after completion is confirmed?"
+      ]
+    },
+    {
+      "Name": "Closing Diagnostics",
+      "Purpose": "Capture and log final session diagnostics into memory.",
+      "Why This Matters": "Closing diagnostics ensure continuity and integrity across sessions.",
+      "Outcomes": {
+        "Poor": "Diagnostics not logged at exit.",
+        "Expected": "Some diagnostics logged inconsistently.",
+        "Excellent": "Diagnostics consistently captured and written to memory.",
+        "Transcendent": "Diagnostics logging is structural; exit always produces a final state snapshot."
+      },
+      "Guiding Questions": [
+        "Are diagnostics captured on every session exit?",
+        "Are they written in structured, minimal form?",
+        "Can downstream processes reliably access the final state?"
+      ]
+    },
+    {
+      "Name": "Memory Commit",
+      "Purpose": "Write all closing data into the Memory Room.",
+      "Why This Matters": "If memory handoff is incomplete, continuity is broken and later rooms cannot retrieve state.",
+      "Outcomes": {
+        "Poor": "No memory write at closure.",
+        "Expected": "Memory updated partially or with gaps.",
+        "Excellent": "Memory commit always runs, writing integration, commitments, diagnostics, and closure flag.",
+        "Transcendent": "Memory commit is invariant — all exits result in a closed session record."
+      },
+      "Guiding Questions": [
+        "Does the Exit Room always write closing data to memory?",
+        "Is the commit atomic (all-or-nothing)?",
+        "Does the session record include a closure flag for re-entry validation?"
+      ]
+    },
+    {
+      "Name": "State Reset",
+      "Purpose": "Ensure the system is returned to a ready state after closure.",
+      "Why This Matters": "Without reset, session residues may leak into future sessions.",
+      "Outcomes": {
+        "Poor": "State not reset; residues persist.",
+        "Expected": "State reset performed inconsistently.",
+        "Excellent": "State reset enforced on every exit.",
+        "Transcendent": "Reset becomes invisible infrastructure — every new session starts clean."
+      },
+      "Guiding Questions": [
+        "Does the Exit Room clear temporary buffers or caches?",
+        "Is the session marked as terminated before new entry is allowed?",
+        "Is reset behavior consistent across all exit paths?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Was explicit completion enforced before termination?",
+    "Were closing diagnostics captured and logged?",
+    "Was final data committed into memory?",
+    "Was the session state reset for clean re-entry?"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "v": "1.0",
+  "trace_id": "trace-telemetry-123",
+  "event": "REQUEST_RECEIVED",
+  "data": {
+    "note": "missing timestamp"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lichen.system/schemas/rag_build/IndexConfig.schema.json",
+  "title": "IndexConfig",
+  "type": "object",
+  "required": ["index_id", "mode", "ann", "metadata_fields"],
+  "properties": {
+    "index_id": { "type": "string" },
+    "mode": { "enum": ["latency", "accuracy"] },
+    "ann": {
+      "type": "object",
+      "required": ["backend", "metric", "params"],
+      "properties": {
+        "backend": { "enum": ["faiss", "pgvector", "qdrant", "weaviate", "elasticsearch"] },
+        "metric": { "enum": ["cosine", "dot", "l2"] },
+        "params": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "reranker": {
+      "type": "object",
+      "properties": {
+        "model": { "type": "string" },
+        "max_passages": { "type": "integer", "minimum": 1 },
+        "budget_ms": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "metadata_fields": { "type": "array", "items": { "enum": ["doc_type", "tags", "section"] } },
+    "limits": {
+      "type": "object",
+      "properties": {
+        "top_k_max": { "type": "integer", "minimum": 1 },
+        "p95_target_ms": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

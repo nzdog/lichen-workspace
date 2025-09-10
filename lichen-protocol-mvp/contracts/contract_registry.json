@@ -1,0 +1,98 @@
+{
+  "registry_version": "1.0.0",
+  "last_updated": "2025-09-05T00:00:00Z",
+  "contracts": {
+    "rooms": {
+      "entry_room": {
+        "version": "0.1.0",
+        "path": "./rooms/entry_room.json",
+        "dependencies": ["coherence_gate", "integrity_linter", "plain_language_rewriter", "stones_alignment_filter"]
+      },
+      "diagnostic_room": {
+        "version": "0.1.0",
+        "path": "./rooms/diagnostic_room.json", 
+        "dependencies": ["coherence_gate", "stones_alignment_filter"]
+      },
+      "protocol_room": {
+        "version": "0.1.0",
+        "path": "./rooms/protocol_room.json",
+        "dependencies": ["coherence_gate", "stones_alignment_filter"]
+      },
+      "walk_room": {
+        "version": "0.1.0", 
+        "path": "./rooms/walk_room.json",
+        "dependencies": ["coherence_gate", "integrity_linter", "stones_alignment_filter"]
+      },
+      "memory_room": {
+        "version": "0.1.0",
+        "path": "./rooms/memory_room.json",
+        "dependencies": ["coherence_gate", "integrity_linter", "plain_language_rewriter", "stones_alignment_filter"]
+      },
+      "integration_commit_room": {
+        "version": "0.1.0",
+        "path": "./rooms/integration_commit_room.json", 
+        "dependencies": ["coherence_gate", "stones_alignment_filter"]
+      },
+      "exit_room": {
+        "version": "0.1.0",
+        "path": "./rooms/exit_room.json",
+        "dependencies": ["coherence_gate"]
+      },
+      "ai_room": {
+        "version": "0.1.0",
+        "path": "./rooms/ai_room.json",
+        "dependencies": ["coherence_gate", "integrity_linter", "plain_language_rewriter", "stones_alignment_filter"]
+      }
+    },
+    "gates": {
+      "coherence_gate": {
+        "version": "0.1.0",
+        "path": "./gates/coherence_gate.json"
+      },
+      "integrity_linter": {
+        "version": "0.1.0", 
+        "path": "./gates/integrity_linter.json"
+      },
+      "plain_language_rewriter": {
+        "version": "0.1.0",
+        "path": "./gates/plain_language_rewriter.json"
+      },
+      "stones_alignment_filter": {
+        "version": "0.1.0",
+        "path": "./gates/stones_alignment_filter.json"
+      },
+      "refusal_library": {
+        "version": "0.1.0", 
+        "path": "./gates/refusal_library.json"
+      }
+    },
+    "services": {
+      "memory_service": {
+        "version": "0.1.0",
+        "path": "./services/memory.json"
+      },
+      "diagnostics_service": {
+        "version": "0.1.0",
+        "path": "./services/diagnostics.json"
+      }
+    },
+    "rag": {
+      "QueryRequest": "contracts/rag/QueryRequest.schema.json",
+      "QueryResponse": "contracts/rag/QueryResponse.schema.json",
+      "Error": "contracts/rag/Error.schema.json",
+      "TelemetryEvent": "contracts/rag/TelemetryEvent.schema.json"
+    },
+    "rag_build": {
+      "CorpusDoc": "contracts/rag_build/CorpusDoc.schema.json",
+      "Chunk": "contracts/rag_build/Chunk.schema.json",
+      "EmbeddingJob": "contracts/rag_build/EmbeddingJob.schema.json",
+      "IndexConfig": "contracts/rag_build/IndexConfig.schema.json"
+    },
+    "hallway": {
+      "hallway@0.2.0": {
+        "version": "0.2.0",
+        "path": "./hallway/hallway.json"
+      }
+    }
+  }
+}

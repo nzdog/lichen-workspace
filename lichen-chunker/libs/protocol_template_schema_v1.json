@@ -1,0 +1,232 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Lichen Protocol Template Schema v1",
+  "description": "Schema for validating Lichen Protocol JSON files",
+  "required": [
+    "Title",
+    "Short Title",
+    "Overall Purpose",
+    "Why This Matters",
+    "When To Use This Protocol",
+    "Overall Outcomes",
+    "Themes",
+    "Completion Prompts"
+  ],
+  "properties": {
+    "Title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The title of the protocol"
+    },
+    "Short Title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "A short version of the title"
+    },
+    "Overall Purpose": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The overall purpose of the protocol"
+    },
+    "Why This Matters": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Explanation of why this protocol matters"
+    },
+    "When To Use This Protocol": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Guidance on when to use this protocol"
+    },
+    "Overall Outcomes": {
+      "type": "object",
+      "required": ["Poor", "Expected", "Excellent", "Transcendent"],
+      "properties": {
+        "Poor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Expected": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Excellent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Transcendent": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "Themes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["Name", "Purpose of This Theme", "Why This Matters", "Outcomes", "Guiding Questions"],
+        "properties": {
+          "Name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "Purpose of This Theme": {
+            "type": "string",
+            "minLength": 1
+          },
+          "Why This Matters": {
+            "type": "string",
+            "minLength": 1
+          },
+          "Outcomes": {
+            "type": "object",
+            "required": ["Poor", "Expected", "Excellent", "Transcendent"],
+            "properties": {
+              "Poor": {
+                "type": "object",
+                "required": ["Present pattern", "Immediate cost", "30-90 day system effect", "Signals", "Edge condition", "Example moves", "Future effect"],
+                "properties": {
+                  "Present pattern": {"type": "string"},
+                  "Immediate cost": {"type": "string"},
+                  "30-90 day system effect": {"type": "string"},
+                  "Signals": {"type": "string"},
+                  "Edge condition": {"type": "string"},
+                  "Example moves": {"type": "string"},
+                  "Future effect": {"type": "string"}
+                },
+                "additionalProperties": false
+              },
+              "Expected": {
+                "type": "object",
+                "required": ["Present pattern", "Immediate cost", "30-90 day system effect", "Signals", "Edge condition", "Example moves", "Future effect"],
+                "properties": {
+                  "Present pattern": {"type": "string"},
+                  "Immediate cost": {"type": "string"},
+                  "30-90 day system effect": {"type": "string"},
+                  "Signals": {"type": "string"},
+                  "Edge condition": {"type": "string"},
+                  "Example moves": {"type": "string"},
+                  "Future effect": {"type": "string"}
+                },
+                "additionalProperties": false
+              },
+              "Excellent": {
+                "type": "object",
+                "required": ["Present pattern", "Immediate cost", "30-90 day system effect", "Signals", "Edge condition", "Example moves", "Future effect"],
+                "properties": {
+                  "Present pattern": {"type": "string"},
+                  "Immediate cost": {"type": "string"},
+                  "30-90 day system effect": {"type": "string"},
+                  "Signals": {"type": "string"},
+                  "Edge condition": {"type": "string"},
+                  "Example moves": {"type": "string"},
+                  "Future effect": {"type": "string"}
+                },
+                "additionalProperties": false
+              },
+              "Transcendent": {
+                "type": "object",
+                "required": ["Present pattern", "Immediate cost", "30-90 day system effect", "Signals", "Edge condition", "Example moves", "Future effect"],
+                "properties": {
+                  "Present pattern": {"type": "string"},
+                  "Immediate cost": {"type": "string"},
+                  "30-90 day system effect": {"type": "string"},
+                  "Signals": {"type": "string"},
+                  "Edge condition": {"type": "string"},
+                  "Example moves": {"type": "string"},
+                  "Future effect": {"type": "string"}
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          },
+          "Guiding Questions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "Completion Prompts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "Version": {
+      "type": "string",
+      "description": "Protocol version"
+    },
+    "Created At": {
+      "type": "string",
+      "description": "Creation date"
+    },
+    "Protocol ID": {
+      "type": "string",
+      "description": "Unique protocol identifier"
+    },
+    "Category": {
+      "type": "string",
+      "description": "Protocol category"
+    },
+    "Metadata": {
+      "type": "object",
+      "properties": {
+        "Complexity": {"type": "integer"},
+        "Readiness Stage": {"type": "string"},
+        "Modes": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "Estimated Time": {"type": "string"},
+        "Tone Markers": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "Primary Scenarios": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "Related Protocols": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "Tags": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "Algorithm": {
+          "type": "object",
+          "properties": {
+            "Present": {"type": "boolean"}
+          }
+        },
+        "Stones": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "Fields": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "Bridges": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

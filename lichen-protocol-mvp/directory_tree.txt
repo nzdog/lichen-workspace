@@ -1,0 +1,409 @@
+.
+├── __pycache__
+│   ├── conftest.cpython-313-pytest-8.4.1.pyc
+│   ├── demo.cpython-313.pyc
+│   ├── test_diagnostic_room_comprehensive.cpython-313-pytest-8.4.1.pyc
+│   ├── test_diagnostic_room_simple.cpython-313-pytest-8.4.1.pyc
+│   └── web_demo.cpython-313.pyc
+├── build_canon
+│   ├── Build Canon – Governing the MVP 4 Build.json
+│   ├── Build Canon – PRA- Diagnostics & Memory Protocol.json
+│   ├── Build Canon – PRA- Orchestration Protocol.json
+│   ├── Build Canon – PRA- Output Gates Protocol.json
+│   ├── Build Canon – PRA- Output Gates.json
+│   ├── Build Canon – PRA- Room Set Architecture.json
+│   ├── Build Canon – Protocol Room Architecture.json
+│   ├── hallway
+│   │   └── hallway.json
+│   ├── Quick “Room Contract” schema (for builders).json
+│   └── rooms
+│       ├── AI Room Protocol.json
+│       ├── Diagnostic Room Protocol.json
+│       ├── Entry Room Protocol.json
+│       ├── Exit Room Protocol.json
+│       ├── Integration & Commit Room Protocol.json
+│       ├── Memory Room Protocol.json
+│       ├── Protocol Room Protocol.json
+│       └── Walk Room Protocol.json
+├── Commands.rtf
+├── configs
+│   └── experiments
+│       └── champion_challenger.json
+├── conftest.py
+├── contract_registry.json
+├── contracts
+│   ├── contract_registry.json
+│   ├── gates
+│   │   ├── coherence_gate.json
+│   │   ├── integrity_linter.json
+│   │   ├── plain_language_rewriter.json
+│   │   ├── refusal_library.json
+│   │   └── stones_alignment_filter.json
+│   ├── hallway
+│   │   ├── Error.schema.json
+│   │   ├── hallway.json
+│   │   ├── QueryRequest.schema.json
+│   │   ├── QueryResponse.schema.json
+│   │   └── TelemetryEvent.schema.json
+│   ├── orchestrator.json
+│   ├── rooms
+│   │   ├── ai_room.json
+│   │   ├── diagnostic_room.json
+│   │   ├── entry_room.json
+│   │   ├── exit_room.json
+│   │   ├── integration_commit_room.json
+│   │   ├── memory_room.json
+│   │   ├── protocol_room.json
+│   │   └── walk_room.json
+│   ├── schema
+│   │   ├── diagnostics.schema.json
+│   │   ├── gates
+│   │   │   ├── coherence_gate.schema.json
+│   │   │   ├── integrity_linter.schema.json
+│   │   │   ├── plain_language_rewriter.schema.json
+│   │   │   ├── refusal_library.schema.json
+│   │   │   └── stones_alignment_filter.schema.json
+│   │   ├── memory.schema.json
+│   │   └── rooms.schema.json
+│   ├── services
+│   │   ├── diagnostics.json
+│   │   └── memory.json
+│   └── types
+│       ├── contracts.d.ts
+│       ├── diagnostics.d.ts
+│       ├── gate.coherence_gate.d.ts
+│       ├── gate.integrity_linter.d.ts
+│       ├── gate.plain_language_rewriter.d.ts
+│       ├── gate.refusal_library.d.ts
+│       ├── gate.stones_alignment_filter.d.ts
+│       ├── memory.d.ts
+│       └── rooms.d.ts
+├── contracts.schema.json
+├── DEMO_README.md
+├── demo.py
+├── diagnostic_room
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── capture.cpython-313.pyc
+│   │   ├── completion.cpython-313.pyc
+│   │   ├── diagnostic_room.cpython-313.pyc
+│   │   ├── mapping.cpython-313.pyc
+│   │   ├── readiness.cpython-313.pyc
+│   │   ├── sensing.cpython-313.pyc
+│   │   └── types.cpython-313.pyc
+│   ├── capture.py
+│   ├── completion.py
+│   ├── diagnostic_room.py
+│   ├── example_usage.py
+│   ├── mapping.py
+│   ├── readiness.py
+│   ├── README.md
+│   ├── sensing.py
+│   ├── tests
+│   │   ├── __pycache__
+│   │   │   └── test_diagnostic_room.cpython-313-pytest-8.4.1.pyc
+│   │   └── test_diagnostic_room.py
+│   └── types.py
+├── DIAGNOSTIC_ROOM_SUMMARY.md
+├── directory_tree.txt
+├── ENTRY_ROOM_EXPLANATION.md
+├── EXIT_ROOM_SUMMARY.md
+├── filetree.txt
+├── hallway
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── audit.cpython-313.pyc
+│   │   ├── example_usage.cpython-313.pyc
+│   │   ├── gates.cpython-313.pyc
+│   │   ├── hallway.cpython-313.pyc
+│   │   ├── rooms_registry.cpython-313.pyc
+│   │   ├── schema_utils.cpython-313.pyc
+│   │   └── upcaster.cpython-313.pyc
+│   ├── audit.py
+│   ├── config
+│   │   └── hallway.contract.json
+│   ├── example_usage.py
+│   ├── gates.py
+│   ├── hallway.py
+│   ├── README.md
+│   ├── room_schemas
+│   │   ├── diagnostic_room.schema.json
+│   │   ├── entry_room.schema.json
+│   │   ├── exit_room.schema.json
+│   │   ├── integration_commit_room.schema.json
+│   │   ├── memory_room.schema.json
+│   │   ├── protocol_room.schema.json
+│   │   └── walk_room.schema.json
+│   ├── rooms_registry.py
+│   ├── schema_utils.py
+│   ├── schemas
+│   │   └── hallway_v0_2.schema.json
+│   ├── tests
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── test_hallway_decline.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_hallway_decline.cpython-313.pyc
+│   │   │   ├── test_hallway_happy.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_rooms_registry.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_schema_utils.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_schema_validation.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_upcaster_helpers.cpython-313-pytest-8.4.1.pyc
+│   │   │   └── test_upcaster_roundtrip.cpython-313-pytest-8.4.1.pyc
+│   │   ├── test_hallway_decline.py
+│   │   ├── test_hallway_happy.py
+│   │   ├── test_rooms_registry.py
+│   │   ├── test_schema_utils.py
+│   │   ├── test_schema_validation.py
+│   │   ├── test_upcaster_helpers.py
+│   │   └── test_upcaster_roundtrip.py
+│   └── upcaster.py
+├── HALLWAY_IMPLEMENTATION_SUMMARY.md
+├── INTEGRATION_COMMIT_ROOM_SUMMARY.md
+├── MEMORY_ROOM_SUMMARY.md
+├── protocol_room
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── protocol_room.cpython-313.pyc
+│   ├── canon.py
+│   ├── completion.py
+│   ├── depth.py
+│   ├── example_usage.py
+│   ├── integrity.py
+│   ├── mapping.py
+│   ├── protocol_room.py
+│   ├── README.md
+│   ├── tests
+│   │   ├── __pycache__
+│   │   │   └── test_protocol_room.cpython-313-pytest-8.4.1.pyc
+│   │   └── test_protocol_room.py
+│   └── types.py
+├── PROTOCOL_ROOM_SUMMARY.md
+├── pytest.ini
+├── README.md
+├── requirements.txt
+├── rooms
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-313.pyc
+│   ├── coverage
+│   │   ├── clover.xml
+│   │   ├── coverage-final.json
+│   │   ├── lcov-report
+│   │   │   ├── base.css
+│   │   │   ├── block-navigation.js
+│   │   │   ├── favicon.png
+│   │   │   ├── index.html
+│   │   │   ├── prettify.css
+│   │   │   ├── prettify.js
+│   │   │   ├── rooms
+│   │   │   │   ├── entry_room
+│   │   │   │   │   ├── completion.ts.html
+│   │   │   │   │   ├── consent.ts.html
+│   │   │   │   │   ├── diagnostics.ts.html
+│   │   │   │   │   ├── gates.ts.html
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── index.ts.html
+│   │   │   │   │   ├── pace.ts.html
+│   │   │   │   │   └── reflection.ts.html
+│   │   │   │   ├── index.html
+│   │   │   │   └── index.ts.html
+│   │   │   ├── sort-arrow-sprite.png
+│   │   │   └── sorter.js
+│   │   └── lcov.info
+│   ├── diagnostic_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── capture.cpython-313.pyc
+│   │   │   ├── completion.cpython-313.pyc
+│   │   │   ├── diagnostic_room.cpython-313.pyc
+│   │   │   ├── mapping.cpython-313.pyc
+│   │   │   ├── readiness.cpython-313.pyc
+│   │   │   ├── room_types.cpython-313.pyc
+│   │   │   ├── sensing.cpython-313.pyc
+│   │   │   └── types.cpython-313.pyc
+│   │   ├── capture.py
+│   │   ├── completion.py
+│   │   ├── diagnostic_room.py
+│   │   ├── example_usage.py
+│   │   ├── mapping.py
+│   │   ├── readiness.py
+│   │   ├── README.md
+│   │   ├── room_types.py
+│   │   ├── sensing.py
+│   │   └── tests
+│   │       ├── __pycache__
+│   │       │   └── test_diagnostic_room.cpython-313-pytest-8.4.1.pyc
+│   │       └── test_diagnostic_room.py
+│   ├── entry_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── completion.cpython-313.pyc
+│   │   │   ├── consent.cpython-313.pyc
+│   │   │   ├── diagnostics.cpython-313.pyc
+│   │   │   ├── entry_room.cpython-313.pyc
+│   │   │   ├── gates.cpython-313.pyc
+│   │   │   ├── pace.cpython-313.pyc
+│   │   │   ├── reflection.cpython-313.pyc
+│   │   │   └── types.cpython-313.pyc
+│   │   ├── completion.py
+│   │   ├── consent.py
+│   │   ├── diagnostics.py
+│   │   ├── entry_room.py
+│   │   ├── gates.py
+│   │   ├── pace.py
+│   │   ├── README.md
+│   │   ├── reflection.py
+│   │   ├── tests
+│   │   │   ├── __pycache__
+│   │   │   │   └── test_entry_room.cpython-313-pytest-8.4.1.pyc
+│   │   │   └── test_entry_room.py
+│   │   └── types.py
+│   ├── example_usage.py
+│   ├── exit_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── completion.cpython-313.pyc
+│   │   │   ├── contract_types.cpython-313.pyc
+│   │   │   ├── diagnostics.cpython-313.pyc
+│   │   │   ├── exit_room.cpython-313.pyc
+│   │   │   ├── memory_commit.cpython-313.pyc
+│   │   │   └── reset.cpython-313.pyc
+│   │   ├── completion.py
+│   │   ├── contract_types.py
+│   │   ├── diagnostics.py
+│   │   ├── example_usage.py
+│   │   ├── exit_room.py
+│   │   ├── memory_commit.py
+│   │   ├── README.md
+│   │   ├── reset.py
+│   │   └── tests
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-313.pyc
+│   │       │   └── test_exit_room.cpython-313-pytest-8.4.1.pyc
+│   │       └── test_exit_room.py
+│   ├── index.py
+│   ├── integration_commit_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── commits.cpython-313.pyc
+│   │   │   ├── completion.cpython-313.pyc
+│   │   │   ├── contract_types.cpython-313.pyc
+│   │   │   ├── example_usage.cpython-313.pyc
+│   │   │   ├── integration_commit_room.cpython-313.pyc
+│   │   │   ├── integration.cpython-313.pyc
+│   │   │   ├── memory_write.cpython-313.pyc
+│   │   │   └── pace.cpython-313.pyc
+│   │   ├── commits.py
+│   │   ├── completion.py
+│   │   ├── contract_types.py
+│   │   ├── example_usage.py
+│   │   ├── integration_commit_room.py
+│   │   ├── integration.py
+│   │   ├── memory_write.py
+│   │   ├── pace.py
+│   │   ├── README.md
+│   │   └── tests
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-313.pyc
+│   │       │   └── test_integration_commit_room.cpython-313-pytest-8.4.1.pyc
+│   │       └── test_integration_commit_room.py
+│   ├── memory_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── capture.cpython-313.pyc
+│   │   │   ├── completion.cpython-313.pyc
+│   │   │   ├── continuity.cpython-313.pyc
+│   │   │   ├── contract_types.cpython-313.pyc
+│   │   │   ├── control.cpython-313.pyc
+│   │   │   ├── governance.cpython-313.pyc
+│   │   │   └── memory_room.cpython-313.pyc
+│   │   ├── capture.py
+│   │   ├── completion.py
+│   │   ├── continuity.py
+│   │   ├── contract_types.py
+│   │   ├── control.py
+│   │   ├── example_usage.py
+│   │   ├── governance.py
+│   │   ├── memory_room.py
+│   │   ├── README.md
+│   │   └── tests
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-313.pyc
+│   │       │   └── test_memory_room.cpython-313-pytest-8.4.1.pyc
+│   │       └── test_memory_room.py
+│   ├── protocol_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── canon.cpython-313.pyc
+│   │   │   ├── completion.cpython-313.pyc
+│   │   │   ├── depth.cpython-313.pyc
+│   │   │   ├── integrity.cpython-313.pyc
+│   │   │   ├── mapping.cpython-313.pyc
+│   │   │   ├── protocol_room.cpython-313.pyc
+│   │   │   ├── room_types.cpython-313.pyc
+│   │   │   └── types.cpython-313.pyc
+│   │   ├── canon.py
+│   │   ├── completion.py
+│   │   ├── depth.py
+│   │   ├── example_usage.py
+│   │   ├── integrity.py
+│   │   ├── mapping.py
+│   │   ├── protocol_room.py
+│   │   ├── README.md
+│   │   ├── room_types.py
+│   │   └── tests
+│   │       ├── __pycache__
+│   │       │   └── test_protocol_room.cpython-313-pytest-8.4.1.pyc
+│   │       └── test_protocol_room.py
+│   ├── README.md
+│   ├── requirements.txt
+│   └── walk_room
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── __init__.cpython-313.pyc
+│       │   ├── completion.cpython-313.pyc
+│       │   ├── contract_types.cpython-313.pyc
+│       │   ├── pacing.cpython-313.pyc
+│       │   ├── sequencer.cpython-313.pyc
+│       │   ├── step_diag.cpython-313.pyc
+│       │   └── walk_room.cpython-313.pyc
+│       ├── completion.py
+│       ├── contract_types.py
+│       ├── example_usage.py
+│       ├── pacing.py
+│       ├── README.md
+│       ├── sequencer.py
+│       ├── step_diag.py
+│       ├── tests
+│       │   ├── __pycache__
+│       │   │   └── test_walk_room.cpython-313-pytest-8.4.1.pyc
+│       │   └── test_walk_room.py
+│       └── walk_room.py
+├── scripts
+│   ├── validate_cross_contracts.py
+│   ├── validate_dependencies.py
+│   └── validate.py
+├── sonar-project.properties
+├── sonarqube-macos.sh
+├── SUMMARY.md
+├── system_config.json
+├── test_demo.py
+├── test_diagnostic_room_comprehensive.py
+├── test_diagnostic_room_simple.py
+├── verify_production_logic.py
+├── WALK_ROOM_SUMMARY.md
+└── web_demo.py
+
+65 directories, 342 files

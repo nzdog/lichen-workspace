@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lichen-chunker"
+version = "0.1.0"
+description = "A tool for chunking and embedding Lichen Protocol JSONs"
+authors = [{name = "Lichen Team"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.12.3",
+    "pydantic>=2.5.2",
+    "jsonschema>=4.20.0",
+    "tiktoken>=0.5.2",
+    "faiss-cpu>=1.7.4",
+    "sentence-transformers>=2.2.2",
+    "numpy>=1.24.3",
+    "pandas>=2.0.3",
+    "tqdm>=4.66.1",
+    "streamlit>=1.29.0",
+    "python-dotenv>=1.0.0",
+    "openai>=1.6.1",
+    "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1.8",
+    "black>=23.12.1",
+    "pytest>=7.4.0",
+]
+
+[project.scripts]
+lichen-chunker = "src.lichen_chunker.cli:app"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+

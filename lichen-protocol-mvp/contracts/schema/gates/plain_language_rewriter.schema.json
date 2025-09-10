@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "plain_language_rewriter.schema.json",
+  "title": "Gate: Plain Language Rewriter",
+  "type": "object",
+  "required": ["gate_id", "title", "version", "purpose", "rules", "inputs", "outputs", "on_failure"],
+  "properties": {
+    "gate_id": { "const": "plain_language_rewriter" },
+    "title": { "type": "string" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "purpose": { "type": "string" },
+    "rules": {
+      "type": "object",
+      "required": ["forbid", "enforce"],
+      "properties": {
+        "forbid": { "type": "array", "items": { "type": "string" } },
+        "enforce": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "inputs": { "type": "object", "required": ["candidate_text"], "properties": { "candidate_text": { "type": "string" } }, "additionalProperties": false },
+    "outputs": {
+      "type": "object",
+      "required": ["rewritten_text", "changes_made"],
+      "properties": {
+        "rewritten_text": { "type": "string" },
+        "changes_made": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "on_failure": {
+      "type": "object",
+      "required": ["action", "note"],
+      "properties": {
+        "action": { "type": "string", "enum": ["return_original"] },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

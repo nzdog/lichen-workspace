@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "diagnostics.schema.json",
+  "title": "DiagnosticsServiceContract",
+  "type": "object",
+  "required": [
+    "service_id",
+    "title",
+    "version",
+    "purpose",
+    "signals",
+    "defaults",
+    "inputs",
+    "outputs",
+    "persistence",
+    "metrics_hooks",
+    "safety"
+  ],
+  "properties": {
+    "service_id": { "const": "diagnostics_service" },
+    "title": { "type": "string" },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "purpose": { "type": "string" },
+
+    "signals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+
+    "defaults": {
+      "type": "object",
+      "required": [
+        "capture_on_room_entry",
+        "capture_on_room_exit",
+        "persist_to_memory",
+        "toggle_supported"
+      ],
+      "properties": {
+        "capture_on_room_entry": { "type": "boolean" },
+        "capture_on_room_exit": { "type": "boolean" },
+        "persist_to_memory": { "type": "boolean" },
+        "toggle_supported": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+
+    "inputs": {
+      "type": "object",
+      "required": ["session_state_ref", "room_id"],
+      "properties": {
+        "session_state_ref": { "type": "string" },
+        "room_id": { "type": "string" },
+        "raw_text": { "type": "string" },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "outputs": {
+      "type": "object",
+      "required": ["diagnostic_snapshot", "timestamp"],
+      "properties": {
+        "diagnostic_snapshot": {
+          "type": "object",
+          "required": ["tones", "residues", "readiness"],
+          "properties": {
+            "tones": { "type": "array", "items": { "type": "string" } },
+            "residues": { "type": "array", "items": { "type": "string" } },
+            "readiness": {
+              "type": "string",
+              "enum": ["ready", "hesitant", "reluctant", "unknown"]
+            },
+            "joy_sample": {
+              "type": ["string", "null"],
+              "enum": ["present", "absent", null]
+            }
+          },
+          "additionalProperties": false
+        },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+
+    "persistence": {
+      "type": "object",
+      "required": ["write_path", "upsert_strategy", "retention_days", "prune_on_expiry"],
+      "properties": {
+        "write_path": { "type": "string" },
+        "upsert_strategy": {
+          "type": "string",
+          "enum": ["append_with_timestamp", "replace", "merge"]
+        },
+        "retention_days": { "type": "integer", "minimum": 0 },
+        "prune_on_expiry": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+
+    "metrics_hooks": {
+      "type": "object",
+      "properties": {
+        "drift_events": {
+          "type": "string",
+          "description": "Implementation-defined hook identifier or path"
+        },
+        "signal_frequency": {
+          "type": "string",
+          "description": "Implementation-defined hook identifier or path"
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "safety": {
+      "type": "object",
+      "required": ["pii_policy", "allow_disable_per_room"],
+      "properties": {
+        "pii_policy": { "type": "string" },
+        "allow_disable_per_room": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

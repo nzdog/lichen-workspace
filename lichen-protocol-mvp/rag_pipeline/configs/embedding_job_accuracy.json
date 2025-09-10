@@ -1,0 +1,12 @@
+{
+  "job_id": "embed-accuracy-local",
+  "embed_model": "text-embedding-3-large",
+  "embedding_dim": 3072,
+  "normalize": true,
+  "batch_size": 16,
+  "precision": "fp32",
+  "seed": 42,
+  "chunkset_uri": "artifacts/chunks.jsonl",
+  "output_uri": "artifacts/accuracy/",
+  "created_at": "2025-09-07T00:00:00Z"
+}

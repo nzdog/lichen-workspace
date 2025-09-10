@@ -1,0 +1,14 @@
+{
+  "index_id": "index-lichen-v1",
+  "mode": "invalid_mode",
+  "ann": {
+    "backend": "invalid_backend",
+    "metric": "invalid_metric",
+    "params": {
+      "nlist": 1024,
+      "nprobe": 16
+    }
+  },
+  "metadata_fields": ["invalid_field"],
+  "unknown_field": "should not be allowed"
+}

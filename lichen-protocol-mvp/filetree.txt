@@ -1,0 +1,61 @@
+/Users/Nigel/Desktop/Lichen_Protocol_MVP_4
+├── build_canon
+│   ├── Build Canon – Governing the MVP 4 Build.json
+│   ├── Build Canon – PRA- Diagnostics & Memory Protocol.json
+│   ├── Build Canon – PRA- Orchestration Protocol.json
+│   ├── Build Canon – PRA- Output Gates Protocol.json
+│   ├── Build Canon – PRA- Output Gates.json
+│   ├── Build Canon – PRA- Room Set Architecture.json
+│   ├── Build Canon – Protocol Room Architecture.json
+│   └── Quick “Room Contract” schema (for builders).json
+├── configs
+│   └── experiments
+│       └── champion_challenger.json
+├── contracts
+│   ├── gates
+│   │   ├── coherence_gate.json
+│   │   ├── integrity_linter.json
+│   │   ├── plain_language_rewriter.json
+│   │   ├── refusal_library.json
+│   │   └── stones_alignment_filter.json
+│   ├── orchestrator.json
+│   ├── rooms
+│   │   ├── diagnostic_room.json
+│   │   ├── entry_room.json
+│   │   ├── exit_room.json
+│   │   ├── integration_commit_room.json
+│   │   ├── memory_room.json
+│   │   ├── protocol_room.json
+│   │   └── walk_room.json
+│   ├── schema
+│   │   ├── diagnostics.schema.json
+│   │   ├── gates
+│   │   │   ├── coherence_gate.schema.json
+│   │   │   ├── integrity_linter.schema.json
+│   │   │   ├── plain_language_rewriter.schema.json
+│   │   │   ├── refusal_library.schema.json
+│   │   │   └── stones_alignment_filter.schema.json
+│   │   ├── memory.schema.json
+│   │   └── rooms.schema.json
+│   ├── services
+│   │   ├── diagnostics.json
+│   │   └── memory.json
+│   └── types
+│       ├── contracts.d.ts
+│       ├── diagnostics.d.ts
+│       ├── gate.coherence_gate.d.ts
+│       ├── gate.integrity_linter.d.ts
+│       ├── gate.plain_language_rewriter.d.ts
+│       ├── gate.refusal_library.d.ts
+│       ├── gate.stones_alignment_filter.d.ts
+│       ├── memory.d.ts
+│       └── rooms.d.ts
+├── contracts.schema.json
+├── filetree.txt
+├── package-lock.json
+├── package.json
+├── README.md
+├── repo_tree.txt
+└── tsconfig.json
+
+11 directories, 48 files

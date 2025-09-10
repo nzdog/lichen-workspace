@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "memory.schema.json",
+  "title": "MemoryServiceContract",
+  "type": "object",
+  "required": ["service_id", "version", "purpose", "stores", "consent", "api", "inputs", "outputs", "retention", "safety"],
+  "properties": {
+    "service_id": { "const": "memory_service" },
+    "title": { "type": "string" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "purpose": { "type": "string" },
+
+    "stores": {
+      "type": "object",
+      "required": ["session_history", "signals", "commits"],
+      "properties": {
+        "session_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["room_id", "summary", "ts"],
+            "properties": {
+              "room_id": { "type": "string" },
+              "summary": { "type": "string" },
+              "ts": { "type": "string", "format": "date-time" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "signals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["tones", "residues", "readiness", "ts"],
+            "properties": {
+              "tones": { "type": "array", "items": { "type": "string" } },
+              "residues": { "type": "array", "items": { "type": "string" } },
+              "readiness": { "type": "string", "enum": ["ready", "hesitant", "reluctant", "unknown"] },
+              "joy_sample": { "type": ["string", "null"], "enum": ["present", "absent", null] },
+              "ts": { "type": "string", "format": "date-time" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "commits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text", "pace", "consent_id", "ts"],
+            "properties": {
+              "text": { "type": "string" },
+              "pace": { "type": "string", "enum": ["NOW", "HOLD", "LATER", "SOFT_HOLD"] },
+              "consent_id": { "type": "string" },
+              "ts": { "type": "string", "format": "date-time" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "consent": {
+      "type": "object",
+      "required": ["founder_visible", "founder_controls", "default_retention_days", "hard_delete_supported"],
+      "properties": {
+        "founder_visible": { "type": "boolean" },
+        "founder_controls": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["view", "edit", "delete", "pin"] },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "default_retention_days": { "type": "integer", "minimum": 0 },
+        "hard_delete_supported": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+
+    "api": {
+      "type": "object",
+      "required": ["write", "read", "manage"],
+      "properties": {
+        "write": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["append_session_event", "upsert_signal", "record_commit"] },
+          "uniqueItems": true
+        },
+        "read": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["get_session_history", "get_signals", "get_commits"] },
+          "uniqueItems": true
+        },
+        "manage": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["delete_item", "pin_item", "update_item"] },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "inputs": {
+      "type": "object",
+      "required": ["session_state_ref", "payload"],
+      "properties": {
+        "session_state_ref": { "type": "string" },
+        "payload": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+
+    "outputs": {
+      "type": "object",
+      "required": ["status", "timestamp"],
+      "properties": {
+        "status": { "type": "string", "enum": ["ok", "error"] },
+        "data": { "type": ["object", "null"] },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+
+    "retention": {
+      "type": "object",
+      "required": ["signals_days", "session_history_days", "commits_days", "auto_prune"],
+      "properties": {
+        "signals_days": { "type": "integer", "minimum": 0 },
+        "session_history_days": { "type": "integer", "minimum": 0 },
+        "commits_days": { "type": "integer", "minimum": 0 },
+        "auto_prune": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+
+    "safety": {
+      "type": "object",
+      "required": ["pii_policy", "enforce_consent_on_read", "enforce_consent_on_write"],
+      "properties": {
+        "pii_policy": { "type": "string" },
+        "enforce_consent_on_read": { "type": "boolean" },
+        "enforce_consent_on_write": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+
+    "telemetry": {
+      "type": "object",
+      "properties": {
+        "reads": { "type": "integer", "minimum": 0 },
+        "writes": { "type": "integer", "minimum": 0 },
+        "deletes": { "type": "integer", "minimum": 0 },
+        "latency_ms": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
