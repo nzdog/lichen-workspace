@@ -22,6 +22,16 @@ python tools/build_manifest.py \
   --out "manifests"
 ```
 
+### Copy protocols from manifest to test directory
+
+```bash
+# Copy all protocols from latest manifest to test-protocols folder
+python tools/copy_manifest_protocols.py --latest
+
+# Or specify a specific manifest file
+python tools/copy_manifest_protocols.py --manifest manifests/canon_batch_2025-09-11.yaml --output test-protocols
+```
+
 ### Run both lanes with the manifest (Speed then Accuracy)
 
 ```bash
