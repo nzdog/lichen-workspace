@@ -2,7 +2,7 @@
 
 import sys
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 import typer
 from rich.console import Console
@@ -10,11 +10,70 @@ from rich.table import Table
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
 from .io_utils import find_files
-from .pipeline import create_pipeline
+from .pipeline import create_pipeline, resolve_profile
 from .schema_validation import validate_protocol_file
+import time
 
 app = typer.Typer(help="Lichen Protocol Chunker - Chunk and embed Lichen Protocol JSONs")
 console = Console()
+
+
+def process_with_profile(
+    files: List[Path],
+    profile_name: str,
+    backend: str,
+    max_tokens: int,
+    overlap: int,
+    output_dir: Path,
+    index_path: Path,
+    schema: Optional[Path],
+    debug: bool = False
+) -> Tuple[List, dict, float]:
+    """Process files with a specific profile."""
+    start_time = time.time()
+    
+    # Create pipeline with profile-specific CLI overrides
+    pipeline = create_pipeline(
+        backend=backend,
+        max_tokens=max_tokens,
+        overlap_tokens=overlap,
+        index_path=index_path,
+        profile=profile_name,
+        sidebar_overrides={
+            "backend": backend,
+            "max_tokens": max_tokens, 
+            "overlap_tokens": overlap
+        }
+    )
+    
+    # Add progress bar for profile processing
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        console=console
+    ) as progress:
+        task = progress.add_task(f"Processing files with {profile_name} profile...", total=len(files))
+        
+        results = []
+        for file_path in files:
+            if not file_path.exists():
+                if debug:
+                    console.print(f"[red]File not found: {file_path}[/red]")
+                progress.advance(task)
+                continue
+            
+            result = pipeline.process_file(file_path, output_dir, schema)
+            results.append(result)
+            progress.advance(task)
+    
+    # Save index
+    pipeline.save_index()
+    
+    # Get stats
+    stats = pipeline.get_stats()
+    elapsed = time.time() - start_time
+    
+    return results, stats, elapsed
 
 
 @app.command()
@@ -57,6 +116,7 @@ def validate(
 @app.command()
 def chunk(
     files: List[Path] = typer.Argument(..., help="Protocol JSON files to chunk"),
+    profile: Optional[str] = typer.Option(None, "--profile", "-p", help="Profile to use (speed, accuracy, both)"),
     output_dir: Path = typer.Option(Path("./data"), "--output", "-o", help="Output directory for chunks"),
     max_tokens: int = typer.Option(600, "--max-tokens", help="Maximum tokens per chunk"),
     overlap: int = typer.Option(60, "--overlap", help="Overlap tokens between chunks"),
@@ -67,7 +127,13 @@ def chunk(
         console.print("[red]No files provided[/red]")
         raise typer.Exit(1)
     
-    pipeline = create_pipeline(max_tokens=max_tokens, overlap_tokens=overlap)
+    # Show effective configuration if profile is used
+    if profile:
+        config = resolve_profile(profile)
+        console.print(f"[cyan]Using profile: {profile}[/cyan]")
+        console.print(f"Effective settings: max_tokens={config['max_tokens']}, overlap={config['overlap_tokens']}")
+    
+    pipeline = create_pipeline(max_tokens=max_tokens, overlap_tokens=overlap, profile=profile)
     
     with Progress(
         SpinnerColumn(),
@@ -182,6 +248,7 @@ def index(
 @app.command()
 def process(
     files: List[Path] = typer.Argument(..., help="Protocol JSON files to process"),
+    profile: Optional[str] = typer.Option(None, "--profile", "-p", help="Profile to use (speed, accuracy, both)"),
     backend: str = typer.Option("auto", "--backend", "-b", help="Embedding backend (openai, sbert, auto)"),
     max_tokens: int = typer.Option(600, "--max-tokens", help="Maximum tokens per chunk"),
     overlap: int = typer.Option(60, "--overlap", help="Overlap tokens between chunks"),
@@ -194,11 +261,70 @@ def process(
         console.print("[red]No files provided[/red]")
         raise typer.Exit(1)
     
+    # Handle "both" profile - process with both speed and accuracy
+    if profile == "both":
+        console.print("[cyan]Processing with both Speed and Accuracy profiles[/cyan]")
+        
+        # Process with Speed profile
+        console.print("\n[cyan]📈 Speed Profile Processing[/cyan]")
+        speed_results, speed_stats, speed_time = process_with_profile(
+            files, "speed", backend, max_tokens, overlap, output_dir, index_path, schema
+        )
+        
+        # Process with Accuracy profile  
+        console.print("\n[cyan]🎯 Accuracy Profile Processing[/cyan]")
+        accuracy_results, accuracy_stats, accuracy_time = process_with_profile(
+            files, "accuracy", backend, max_tokens, overlap, output_dir, index_path, schema
+        )
+        
+        # Two-lane summary
+        summary_table = Table(title="Dual RAG Processing Summary")
+        summary_table.add_column("Profile", style="cyan")
+        summary_table.add_column("Valid Files", style="green")
+        summary_table.add_column("Chunks Created", style="blue")
+        summary_table.add_column("Index Size", style="yellow")
+        summary_table.add_column("Backend", style="magenta")
+        summary_table.add_column("Time (s)", style="white")
+        
+        speed_valid = sum(1 for r in speed_results if r.valid)
+        speed_chunks = sum(r.chunks_created for r in speed_results if r.valid)
+        accuracy_valid = sum(1 for r in accuracy_results if r.valid)
+        accuracy_chunks = sum(r.chunks_created for r in accuracy_results if r.valid)
+        
+        summary_table.add_row(
+            "Speed", str(speed_valid), str(speed_chunks), 
+            str(speed_stats["total_chunks"]), speed_stats["embedding_backend"], f"{speed_time:.2f}"
+        )
+        summary_table.add_row(
+            "Accuracy", str(accuracy_valid), str(accuracy_chunks),
+            str(accuracy_stats["total_chunks"]), accuracy_stats["embedding_backend"], f"{accuracy_time:.2f}"
+        )
+        
+        console.print(summary_table)
+        console.print(f"\n[green]✅ Dual indexing complete![/green]")
+        console.print(f"Speed lane: {speed_chunks} chunks in index/speed/")
+        console.print(f"Accuracy lane: {accuracy_chunks} chunks in index/accuracy/")
+        return
+    
+    # Single profile processing (existing logic)
+    if profile:
+        config = resolve_profile(profile)
+        console.print(f"[cyan]Using profile: {profile}[/cyan]")
+        console.print(f"Profile defaults: backend={config['backend']}, max_tokens={config['max_tokens']}, overlap={config['overlap_tokens']}")
+        console.print(f"Validation: {config['validation']}, Save chunks: {config['save_chunks']}, Duplicate check: {config['duplicate_check']}")
+        console.print(f"[yellow]CLI overrides: backend={backend}, max_tokens={max_tokens}, overlap={overlap}[/yellow]")
+    
     pipeline = create_pipeline(
         backend=backend,
         max_tokens=max_tokens,
         overlap_tokens=overlap,
-        index_path=index_path
+        index_path=index_path,
+        profile=profile,
+        sidebar_overrides={
+            "backend": backend,
+            "max_tokens": max_tokens, 
+            "overlap_tokens": overlap
+        } if profile else None
     )
     
     with Progress(
@@ -218,7 +344,6 @@ def process(
             results.append(result)
             progress.advance(task)
     
-    # Save index
     pipeline.save_index()
     
     # Display results
@@ -257,11 +382,21 @@ def process(
     # Display summary
     stats = pipeline.get_stats()
     console.print(f"\n[green]Summary:[/green]")
+    if profile:
+        console.print(f"Profile: {profile}")
     console.print(f"Files processed: {len(files)}")
     console.print(f"Valid files: {valid_count}")
     console.print(f"Total chunks: {total_chunks}")
     console.print(f"Index chunks: {stats['total_chunks']}")
     console.print(f"Backend: {stats['embedding_backend']}")
+    
+    # Add profile-specific summary info
+    if profile:
+        config = resolve_profile(profile)
+        if not config.get('save_chunks', True):
+            console.print("[yellow]Note: Chunk files not saved (speed mode)[/yellow]")
+        if not config.get('validation', True):
+            console.print("[yellow]Note: Schema validation skipped (speed mode)[/yellow]")
 
 
 @app.command()
