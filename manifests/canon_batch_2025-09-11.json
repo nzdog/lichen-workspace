@@ -1,0 +1,465 @@
+{
+  "batch_id": "canon_batch_2025-09-11",
+  "created_at": "2025-09-11T20:44:24.453510Z",
+  "total": 24,
+  "mix": {
+    "stages": {
+      "Explore": 8,
+      "Act": 8,
+      "Integrate": 8
+    },
+    "lengths": {
+      "short": 0,
+      "medium": 3,
+      "long": 21
+    }
+  },
+  "items": [
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/letting_go_of_the_startup.json",
+      "protocol_id": "letting_go_of_the_startup",
+      "title": "Letting Go of the Startup",
+      "readiness_stage": "Integrate",
+      "est_tokens": 3281,
+      "length_bucket": "long",
+      "stones": [
+        "built-for-wholeness",
+        "integrity-is-the-growth-strategy",
+        "light-before-form",
+        "no-contortion-for-acceptance",
+        "nothing-forced-nothing-withheld",
+        "the-speed-of-trust"
+      ],
+      "fields": [
+        "collapse",
+        "integrity",
+        "relational",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/the_leadership_im_actually_carrying.json",
+      "protocol_id": "the_leadership_im_actually_carrying",
+      "title": "The Leadership I\u2019m Actually Carrying",
+      "readiness_stage": "Integrate",
+      "est_tokens": 2218,
+      "length_bucket": "long",
+      "stones": [
+        "integrity-is-the-growth-strategy",
+        "stewardship-not-ownership"
+      ],
+      "fields": [
+        "integrity",
+        "relational",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/Test.json",
+      "protocol_id": "Test",
+      "title": "Mapping Our Funding Narrative",
+      "readiness_stage": "Explore",
+      "est_tokens": 1969,
+      "length_bucket": "medium",
+      "stones": [
+        "[foundation-stone slugs]"
+      ],
+      "fields": [
+        "[field slugs]"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/test_2.json",
+      "protocol_id": "test_2",
+      "title": "Mapping Our Funding Narrative",
+      "readiness_stage": "Explore",
+      "est_tokens": 1969,
+      "length_bucket": "medium",
+      "stones": [
+        "[foundation-stone slugs]"
+      ],
+      "fields": [
+        "[field slugs]"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/Test 2.json",
+      "protocol_id": "Test 2",
+      "title": "Mapping Our Funding Narrative",
+      "readiness_stage": "Explore",
+      "est_tokens": 1969,
+      "length_bucket": "medium",
+      "stones": [
+        "[foundation-stone slugs]"
+      ],
+      "fields": [
+        "[field slugs]"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/presence_is_productivity.json",
+      "protocol_id": "presence_is_productivity",
+      "title": "Presence Is Productivity",
+      "readiness_stage": "Integrate",
+      "est_tokens": 2255,
+      "length_bucket": "long",
+      "stones": [
+        "presence-is-productivity"
+      ],
+      "fields": [
+        "signal",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates I Think/presence_is_productivity_2.json",
+      "protocol_id": "presence_is_productivity_2",
+      "title": "Presence Is Productivity",
+      "readiness_stage": "Integrate",
+      "est_tokens": 2255,
+      "length_bucket": "long",
+      "stones": [
+        "presence-is-productivity"
+      ],
+      "fields": [
+        "signal",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/nothing_forced_nothing_withheld.json",
+      "protocol_id": "nothing_forced_nothing_withheld",
+      "title": "Nothing Forced, Nothing Withheld",
+      "readiness_stage": "Integrate",
+      "est_tokens": 2333,
+      "length_bucket": "long",
+      "stones": [
+        "nothing-forced",
+        "nothing-withheld"
+      ],
+      "fields": [
+        "relational",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates I Think/nothing_forced_nothing_withheld_2.json",
+      "protocol_id": "nothing_forced_nothing_withheld_2",
+      "title": "Nothing Forced, Nothing Withheld",
+      "readiness_stage": "Integrate",
+      "est_tokens": 2333,
+      "length_bucket": "long",
+      "stones": [
+        "nothing-forced",
+        "nothing-withheld"
+      ],
+      "fields": [
+        "relational",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/holding_expansion_without_overwhelm.json",
+      "protocol_id": "holding_expansion_without_overwhelm",
+      "title": "Holding Expansion Without Overwhelm",
+      "readiness_stage": "Act",
+      "est_tokens": 2221,
+      "length_bucket": "long",
+      "stones": [
+        "built-for-wholeness",
+        "presence-is-productivity"
+      ],
+      "fields": [
+        "movefast",
+        "signal",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates I Think/holding_expansion_without_overwhelm_2.json",
+      "protocol_id": "holding_expansion_without_overwhelm_2",
+      "title": "Holding Expansion Without Overwhelm",
+      "readiness_stage": "Act",
+      "est_tokens": 2221,
+      "length_bucket": "long",
+      "stones": [
+        "built-for-wholeness",
+        "presence-is-productivity"
+      ],
+      "fields": [
+        "movefast",
+        "signal",
+        "wholeness"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/when_its_not_repairable.json",
+      "protocol_id": "when_its_not_repairable",
+      "title": "When It\u2019s Not Repairable",
+      "readiness_stage": "Integrate",
+      "est_tokens": 2174,
+      "length_bucket": "long",
+      "stones": [
+        "integrity-is-the-growth-strategy",
+        "nothing-forced-nothing-withheld"
+      ],
+      "fields": [
+        "collapse",
+        "integrity",
+        "relational"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates I Think/when_its_not_repairable_2.json",
+      "protocol_id": "when_its_not_repairable_2",
+      "title": "When It\u2019s Not Repairable",
+      "readiness_stage": "Integrate",
+      "est_tokens": 2174,
+      "length_bucket": "long",
+      "stones": [
+        "integrity-is-the-growth-strategy",
+        "nothing-forced-nothing-withheld"
+      ],
+      "fields": [
+        "collapse",
+        "integrity",
+        "relational"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/who_are_we_really_here_for.json",
+      "protocol_id": "who_are_we_really_here_for",
+      "title": "Who Are We Really Here For",
+      "readiness_stage": "Act",
+      "est_tokens": 3220,
+      "length_bucket": "long",
+      "stones": [
+        "aligned-scaling",
+        "core-signal-naming",
+        "integrity-over-expedience",
+        "plain-speech",
+        "relational-depth",
+        "trust-paces-growth"
+      ],
+      "fields": [
+        "decision-clarity",
+        "misalignment-awareness",
+        "signal-vs-noise",
+        "systemic-safeguards",
+        "trust-as-currency",
+        "values-before-velocity"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/when_to_pause_the_growth_curve 2.json",
+      "protocol_id": "when_to_pause_the_growth_curve 2",
+      "title": "When to Pause the Growth Curve",
+      "readiness_stage": "Act",
+      "est_tokens": 3417,
+      "length_bucket": "long",
+      "stones": [
+        "aligned-scaling",
+        "coherence-as-growth",
+        "renewal-as-output",
+        "rhythm-alignment",
+        "trust-paces-growth"
+      ],
+      "fields": [
+        "aligned-scaling",
+        "coherence-practices",
+        "misalignment-awareness",
+        "resilience-rooting",
+        "systemic-safeguards",
+        "trust-as-currency"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/when_to_pause_the_growth_curve_2.json",
+      "protocol_id": "when_to_pause_the_growth_curve_2",
+      "title": "When to Pause the Growth Curve",
+      "readiness_stage": "Act",
+      "est_tokens": 3417,
+      "length_bucket": "long",
+      "stones": [
+        "aligned-scaling",
+        "coherence-as-growth",
+        "renewal-as-output",
+        "rhythm-alignment",
+        "trust-paces-growth"
+      ],
+      "fields": [
+        "aligned-scaling",
+        "coherence-practices",
+        "misalignment-awareness",
+        "resilience-rooting",
+        "systemic-safeguards",
+        "trust-as-currency"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/when_to_pause_the_growth_curve.json",
+      "protocol_id": "when_to_pause_the_growth_curve",
+      "title": "When to Pause the Growth Curve",
+      "readiness_stage": "Act",
+      "est_tokens": 3417,
+      "length_bucket": "long",
+      "stones": [
+        "aligned-scaling",
+        "coherence-as-growth",
+        "renewal-as-output",
+        "rhythm-alignment",
+        "trust-paces-growth"
+      ],
+      "fields": [
+        "aligned-scaling",
+        "coherence-practices",
+        "misalignment-awareness",
+        "resilience-rooting",
+        "systemic-safeguards",
+        "trust-as-currency"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/what_business_are_we_actually_in.json",
+      "protocol_id": "what_business_are_we_actually_in",
+      "title": "What Business Are We Actually In?",
+      "readiness_stage": "Explore",
+      "est_tokens": 3147,
+      "length_bucket": "long",
+      "stones": [
+        "aligned-scaling",
+        "coherence-as-growth",
+        "core-signal-naming",
+        "honoring-complexity",
+        "integration-not-fragmentation",
+        "plain-speech"
+      ],
+      "fields": [
+        "aligned-scaling",
+        "coherence-practices",
+        "misalignment-awareness",
+        "resilience-rooting",
+        "trust-as-currency",
+        "values-before-velocity"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/what_actually_moved_the_needle_2.json",
+      "protocol_id": "what_actually_moved_the_needle_2",
+      "title": "What Actually Moved the Needle",
+      "readiness_stage": "Act",
+      "est_tokens": 2989,
+      "length_bucket": "long",
+      "stones": [
+        "co-evolving-architecture",
+        "core-signal-naming",
+        "plain-speech",
+        "reflection-built-in"
+      ],
+      "fields": [
+        "aligned-scaling",
+        "decision-clarity",
+        "signal-vs-noise",
+        "systemic-safeguards"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot MVP/what_actually_moved_the_needle 2.json",
+      "protocol_id": "what_actually_moved_the_needle 2",
+      "title": "What Actually Moved the Needle",
+      "readiness_stage": "Act",
+      "est_tokens": 2989,
+      "length_bucket": "long",
+      "stones": [
+        "co-evolving-architecture",
+        "core-signal-naming",
+        "plain-speech",
+        "reflection-built-in"
+      ],
+      "fields": [
+        "aligned-scaling",
+        "decision-clarity",
+        "signal-vs-noise",
+        "systemic-safeguards"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/sensing_the_whole_system.json",
+      "protocol_id": "sensing_the_whole_system",
+      "title": "Sensing the Whole System",
+      "readiness_stage": "Explore",
+      "est_tokens": 3417,
+      "length_bucket": "long",
+      "stones": [
+        "co-evolving-architecture",
+        "honoring-complexity",
+        "integration-not-fragmentation",
+        "reflection-built-in"
+      ],
+      "fields": [
+        "coherence-practices",
+        "integration-practices",
+        "resilience-rooting",
+        "whole-system-sensing"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/right_person,_right_role_(hiring_&_role_clarity).json",
+      "protocol_id": "right_person,_right_role_(hiring_&_role_clarity)",
+      "title": "Right Person, Right Role (Hiring & Role Clarity)",
+      "readiness_stage": "Explore",
+      "est_tokens": 3409,
+      "length_bucket": "long",
+      "stones": [
+        "built-for-wholeness",
+        "clarity-over-cleverness",
+        "integrity-is-the-growth-strategy",
+        "the-system-walks-with-us"
+      ],
+      "fields": [
+        "responsibility-clarity",
+        "role-definition",
+        "strategic-hiring",
+        "values-alignment"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates I Think/right_person,_right_role_(hiring_&_role_clarity)_2.json",
+      "protocol_id": "right_person,_right_role_(hiring_&_role_clarity)_2",
+      "title": "Right Person, Right Role (Hiring & Role Clarity)",
+      "readiness_stage": "Explore",
+      "est_tokens": 3409,
+      "length_bucket": "long",
+      "stones": [
+        "built-for-wholeness",
+        "clarity-over-cleverness",
+        "integrity-is-the-growth-strategy",
+        "the-system-walks-with-us"
+      ],
+      "fields": [
+        "responsibility-clarity",
+        "role-definition",
+        "strategic-hiring",
+        "values-alignment"
+      ]
+    },
+    {
+      "path": "/Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/the_speed_of_trust__user_facing.json",
+      "protocol_id": "the_speed_of_trust__user_facing",
+      "title": "The Speed of Trust",
+      "readiness_stage": "Explore",
+      "est_tokens": 3312,
+      "length_bucket": "long",
+      "stones": [
+        "built-for-wholeness",
+        "clarity-over-cleverness",
+        "integrity-is-the-growth-strategy",
+        "presence-is-productivity",
+        "the-speed-of-trust"
+      ],
+      "fields": [
+        "relational"
+      ]
+    }
+  ]
+}
