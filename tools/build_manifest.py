@@ -291,9 +291,9 @@ def main():
     
     print(f"Scanning canon folder: {canon_path}")
     
-    # Collect all valid protocol files
+    # Collect all valid protocol files (main directory only, no subfolders)
     candidates = []
-    for file_path in canon_path.rglob("*.json"):
+    for file_path in canon_path.glob("*.json"):
         if is_valid_protocol(file_path):
             protocol_data = load_protocol(file_path)
             if protocol_data:

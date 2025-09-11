@@ -1,15 +1,15 @@
 batch_id: canon_batch_2025-09-11
-created_at: '2025-09-11T20:44:24.453510Z'
+created_at: '2025-09-11T20:52:03.957811Z'
 total: 24
 mix:
   stages:
-    Explore: 8
-    Act: 8
+    Explore: 7
+    Act: 9
     Integrate: 8
   lengths:
     short: 0
-    medium: 3
-    long: 21
+    medium: 0
+    long: 24
 items:
 - path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/letting_go_of_the_startup.json
   protocol_id: letting_go_of_the_startup
@@ -42,53 +42,8 @@ items:
   - integrity
   - relational
   - wholeness
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/Test.json
-  protocol_id: Test
-  title: Mapping Our Funding Narrative
-  readiness_stage: Explore
-  est_tokens: 1969
-  length_bucket: medium
-  stones:
-  - '[foundation-stone slugs]'
-  fields:
-  - '[field slugs]'
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/test_2.json
-  protocol_id: test_2
-  title: Mapping Our Funding Narrative
-  readiness_stage: Explore
-  est_tokens: 1969
-  length_bucket: medium
-  stones:
-  - '[foundation-stone slugs]'
-  fields:
-  - '[field slugs]'
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/Test 2.json
-  protocol_id: Test 2
-  title: Mapping Our Funding Narrative
-  readiness_stage: Explore
-  est_tokens: 1969
-  length_bucket: medium
-  stones:
-  - '[foundation-stone slugs]'
-  fields:
-  - '[field slugs]'
 - path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/presence_is_productivity.json
   protocol_id: presence_is_productivity
-  title: Presence Is Productivity
-  readiness_stage: Integrate
-  est_tokens: 2255
-  length_bucket: long
-  stones:
-  - presence-is-productivity
-  fields:
-  - signal
-  - wholeness
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates
-    I Think/presence_is_productivity_2.json
-  protocol_id: presence_is_productivity_2
   title: Presence Is Productivity
   readiness_stage: Integrate
   est_tokens: 2255
@@ -110,46 +65,6 @@ items:
   fields:
   - relational
   - wholeness
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates
-    I Think/nothing_forced_nothing_withheld_2.json
-  protocol_id: nothing_forced_nothing_withheld_2
-  title: Nothing Forced, Nothing Withheld
-  readiness_stage: Integrate
-  est_tokens: 2333
-  length_bucket: long
-  stones:
-  - nothing-forced
-  - nothing-withheld
-  fields:
-  - relational
-  - wholeness
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/holding_expansion_without_overwhelm.json
-  protocol_id: holding_expansion_without_overwhelm
-  title: Holding Expansion Without Overwhelm
-  readiness_stage: Act
-  est_tokens: 2221
-  length_bucket: long
-  stones:
-  - built-for-wholeness
-  - presence-is-productivity
-  fields:
-  - movefast
-  - signal
-  - wholeness
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates
-    I Think/holding_expansion_without_overwhelm_2.json
-  protocol_id: holding_expansion_without_overwhelm_2
-  title: Holding Expansion Without Overwhelm
-  readiness_stage: Act
-  est_tokens: 2221
-  length_bucket: long
-  stones:
-  - built-for-wholeness
-  - presence-is-productivity
-  fields:
-  - movefast
-  - signal
-  - wholeness
 - path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/when_its_not_repairable.json
   protocol_id: when_its_not_repairable
   title: "When It\u2019s Not Repairable"
@@ -163,29 +78,47 @@ items:
   - collapse
   - integrity
   - relational
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates
-    I Think/when_its_not_repairable_2.json
-  protocol_id: when_its_not_repairable_2
-  title: "When It\u2019s Not Repairable"
-  readiness_stage: Integrate
-  est_tokens: 2174
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/holding_expansion_without_overwhelm.json
+  protocol_id: holding_expansion_without_overwhelm
+  title: Holding Expansion Without Overwhelm
+  readiness_stage: Act
+  est_tokens: 2221
   length_bucket: long
   stones:
-  - integrity-is-the-growth-strategy
-  - nothing-forced-nothing-withheld
+  - built-for-wholeness
+  - presence-is-productivity
   fields:
-  - collapse
-  - integrity
-  - relational
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/who_are_we_really_here_for.json
-  protocol_id: who_are_we_really_here_for
-  title: Who Are We Really Here For
+  - movefast
+  - signal
+  - wholeness
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/the_rhythm_of_legacy.json
+  protocol_id: the_rhythm_of_legacy
+  title: The Rhythm of Legacy
   readiness_stage: Act
-  est_tokens: 3220
+  est_tokens: 3172
   length_bucket: long
   stones:
   - aligned-scaling
+  - core-signal-naming
+  - integrity-over-expedience
+  - plain-speech
+  - renewal-as-output
+  - rhythm-alignment
+  fields:
+  - coherence-practices
+  - integration-practices
+  - presence-restoration
+  - systemic-safeguards
+  - values-before-velocity
+  - whole-system-sensing
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/the_energy_behind_the_ask.json
+  protocol_id: the_energy_behind_the_ask
+  title: The Energy Behind the Ask
+  readiness_stage: Act
+  est_tokens: 3008
+  length_bucket: long
+  stones:
+  - coherence-as-growth
   - core-signal-naming
   - integrity-over-expedience
   - plain-speech
@@ -193,126 +126,88 @@ items:
   - trust-paces-growth
   fields:
   - decision-clarity
-  - misalignment-awareness
-  - signal-vs-noise
+  - relational-repair
   - systemic-safeguards
   - trust-as-currency
   - values-before-velocity
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/when_to_pause_the_growth_curve 2.json
-  protocol_id: when_to_pause_the_growth_curve 2
-  title: When to Pause the Growth Curve
+  - walking-with-responsibility
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/team_protocol_relational_repair.json
+  protocol_id: team_protocol_relational_repair
+  title: "Team Protocol \u2013 Relational Repair"
   readiness_stage: Act
-  est_tokens: 3417
+  est_tokens: 3277
   length_bucket: long
   stones:
-  - aligned-scaling
-  - coherence-as-growth
-  - renewal-as-output
-  - rhythm-alignment
-  - trust-paces-growth
-  fields:
-  - aligned-scaling
-  - coherence-practices
-  - misalignment-awareness
-  - resilience-rooting
-  - systemic-safeguards
-  - trust-as-currency
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/when_to_pause_the_growth_curve_2.json
-  protocol_id: when_to_pause_the_growth_curve_2
-  title: When to Pause the Growth Curve
-  readiness_stage: Act
-  est_tokens: 3417
-  length_bucket: long
-  stones:
-  - aligned-scaling
-  - coherence-as-growth
-  - renewal-as-output
-  - rhythm-alignment
-  - trust-paces-growth
-  fields:
-  - aligned-scaling
-  - coherence-practices
-  - misalignment-awareness
-  - resilience-rooting
-  - systemic-safeguards
-  - trust-as-currency
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/when_to_pause_the_growth_curve.json
-  protocol_id: when_to_pause_the_growth_curve
-  title: When to Pause the Growth Curve
-  readiness_stage: Act
-  est_tokens: 3417
-  length_bucket: long
-  stones:
-  - aligned-scaling
-  - coherence-as-growth
-  - renewal-as-output
-  - rhythm-alignment
-  - trust-paces-growth
-  fields:
-  - aligned-scaling
-  - coherence-practices
-  - misalignment-awareness
-  - resilience-rooting
-  - systemic-safeguards
-  - trust-as-currency
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/what_business_are_we_actually_in.json
-  protocol_id: what_business_are_we_actually_in
-  title: What Business Are We Actually In?
-  readiness_stage: Explore
-  est_tokens: 3147
-  length_bucket: long
-  stones:
-  - aligned-scaling
-  - coherence-as-growth
   - core-signal-naming
+  - plain-speech
+  - reflection-built-in
+  - relational-depth
+  - repair-in-motion
+  fields:
+  - relational-repair
+  - systemic-safeguards
+  - tension-listening
+  - values-before-velocity
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/sustaining_rhythm_without_a_hero.json
+  protocol_id: sustaining_rhythm_without_a_hero
+  title: Sustaining Rhythm Without a Hero
+  readiness_stage: Integrate
+  est_tokens: 3063
+  length_bucket: long
+  stones:
+  - co-evolving-architecture
+  - reflection-built-in
+  - renewal-as-output
+  - repair-in-motion
+  - rhythm-alignment
+  - trust-paces-growth
+  fields:
+  - aligned-scaling
+  - exhaustion-patterns
+  - presence-restoration
+  - resilience-rooting
+  - rhythm-collapse
+  - systemic-safeguards
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/support_rhythm_and_escalations.json
+  protocol_id: support_rhythm_and_escalations
+  title: Support Rhythm & Escalations
+  readiness_stage: Integrate
+  est_tokens: 2892
+  length_bucket: long
+  stones:
+  - core-signal-naming
+  - plain-speech
+  - relational-depth
+  - renewal-as-output
+  - rhythm-alignment
+  - trust-paces-growth
+  fields:
+  - coherence-practices
+  - decision-clarity
+  - relational-repair
+  - resilience-rooting
+  - signal-vs-noise
+  - trust-as-currency
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/speaking_to_funders_without_shrinking_the_system.json
+  protocol_id: speaking_to_funders_without_shrinking_the_system
+  title: Speaking to Funders Without Shrinking the System
+  readiness_stage: Act
+  est_tokens: 3170
+  length_bucket: long
+  stones:
+  - aligned-scaling
+  - coherence-as-growth
   - honoring-complexity
   - integration-not-fragmentation
   - plain-speech
+  - simple-not-shallow
   fields:
-  - aligned-scaling
-  - coherence-practices
+  - integration-practices
   - misalignment-awareness
-  - resilience-rooting
+  - systemic-safeguards
   - trust-as-currency
   - values-before-velocity
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/what_actually_moved_the_needle_2.json
-  protocol_id: what_actually_moved_the_needle_2
-  title: What Actually Moved the Needle
-  readiness_stage: Act
-  est_tokens: 2989
-  length_bucket: long
-  stones:
-  - co-evolving-architecture
-  - core-signal-naming
-  - plain-speech
-  - reflection-built-in
-  fields:
-  - aligned-scaling
-  - decision-clarity
-  - signal-vs-noise
-  - systemic-safeguards
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/zNot
-    MVP/what_actually_moved_the_needle 2.json
-  protocol_id: what_actually_moved_the_needle 2
-  title: What Actually Moved the Needle
-  readiness_stage: Act
-  est_tokens: 2989
-  length_bucket: long
-  stones:
-  - co-evolving-architecture
-  - core-signal-naming
-  - plain-speech
-  - reflection-built-in
-  fields:
-  - aligned-scaling
-  - decision-clarity
-  - signal-vs-noise
-  - systemic-safeguards
+  - whole-system-sensing
 - path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/sensing_the_whole_system.json
   protocol_id: sensing_the_whole_system
   title: Sensing the Whole System
@@ -345,23 +240,129 @@ items:
   - role-definition
   - strategic-hiring
   - values-alignment
-- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/Duplicates
-    I Think/right_person,_right_role_(hiring_&_role_clarity)_2.json
-  protocol_id: right_person,_right_role_(hiring_&_role_clarity)_2
-  title: Right Person, Right Role (Hiring & Role Clarity)
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/rebalancing_after_rapid_change.json
+  protocol_id: rebalancing_after_rapid_change
+  title: Rebalancing After Rapid Change
+  readiness_stage: Integrate
+  est_tokens: 3948
+  length_bucket: long
+  stones:
+  - co-evolving-architecture
+  - core-signal-naming
+  - plain-speech
+  - reflection-built-in
+  - renewal-as-output
+  - rhythm-alignment
+  fields:
+  - aligned-scaling
+  - coherence-practices
+  - misalignment-awareness
+  - presence-restoration
+  - systemic-safeguards
+  - trust-as-currency
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/preparing_for_a_repair_conversation.json
+  protocol_id: preparing_for_a_repair_conversation
+  title: Preparing for a Repair Conversation
   readiness_stage: Explore
-  est_tokens: 3409
+  est_tokens: 3282
   length_bucket: long
   stones:
   - built-for-wholeness
   - clarity-over-cleverness
   - integrity-is-the-growth-strategy
+  - presence-is-productivity
   - the-system-walks-with-us
   fields:
-  - responsibility-clarity
-  - role-definition
-  - strategic-hiring
-  - values-alignment
+  - relational
+  - signal
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/naming_whats_not_working.json
+  protocol_id: naming_whats_not_working
+  title: Naming What's Not Working
+  readiness_stage: Explore
+  est_tokens: 3146
+  length_bucket: long
+  stones:
+  - built-for-wholeness
+  - clarity-over-cleverness
+  - integrity-is-the-growth-strategy
+  - nothing-forced-nothing-withheld
+  - presence-is-productivity
+  fields: []
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/mapping_whats_emerging.json
+  protocol_id: mapping_whats_emerging
+  title: "Mapping What\u2019s Emerging"
+  readiness_stage: Explore
+  est_tokens: 3334
+  length_bucket: long
+  stones:
+  - core-signal-naming
+  - honoring-complexity
+  - integration-not-fragmentation
+  - signal-before-shape
+  fields:
+  - decision-clarity
+  - emergent-timing
+  - resilience-rooting
+  - signal-vs-noise
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/holding_my_rhythm.json
+  protocol_id: holding_my_rhythm
+  title: Holding My Rhythm
+  readiness_stage: Act
+  est_tokens: 3045
+  length_bucket: long
+  stones:
+  - coherence-as-growth
+  - core-signal-naming
+  - integrity-over-expedience
+  - plain-speech
+  - renewal-as-output
+  - rhythm-alignment
+  fields:
+  - exhaustion-patterns
+  - human-wholeness
+  - integration-practices
+  - presence-restoration
+  - resilience-rooting
+  - rhythm-collapse
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/do_we_need_to_raise.json
+  protocol_id: do_we_need_to_raise
+  title: Do We Need to Raise?
+  readiness_stage: Act
+  est_tokens: 3183
+  length_bucket: long
+  stones:
+  - aligned-scaling
+  - core-signal-naming
+  - integrity-over-expedience
+  - plain-speech
+  - rhythm-alignment
+  fields:
+  - capital-field-dynamics
+  - decision-clarity
+  - presence-restoration
+  - resilience-rooting
+  - systemic-safeguards
+  - walking-with-responsibility
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/decision_making_in_rhythm.json
+  protocol_id: decision_making_in_rhythm
+  title: Decision Making in Rhythm
+  readiness_stage: Act
+  est_tokens: 3387
+  length_bucket: long
+  stones:
+  - core-signal-naming
+  - plain-speech
+  - reflection-built-in
+  - renewal-as-output
+  - rhythm-alignment
+  - system-as-companion
+  fields:
+  - coherence-practices
+  - decision-clarity
+  - emergent-timing
+  - misalignment-awareness
+  - trust-as-currency
+  - walking-with-responsibility
 - path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/the_speed_of_trust__user_facing.json
   protocol_id: the_speed_of_trust__user_facing
   title: The Speed of Trust
@@ -376,3 +377,33 @@ items:
   - the-speed-of-trust
   fields:
   - relational
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/after_conflict_returning_to_integrity.json
+  protocol_id: after_conflict_returning_to_integrity
+  title: Restoring Integrity After Conflict
+  readiness_stage: Explore
+  est_tokens: 3262
+  length_bucket: long
+  stones:
+  - clarity-over-cleverness
+  - integrity-is-the-growth-strategy
+  - no-contortion-for-acceptance
+  - presence-is-productivity
+  - the-speed-of-trust
+  fields:
+  - integrity
+- path: /Users/Nigel/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon/walking_the_financial_rhythm_(cashflow,_runway,_resource_allocation).json
+  protocol_id: walking_the_financial_rhythm_(cashflow,_runway,_resource_allocation)
+  title: Walking the Financial Rhythm
+  readiness_stage: Act
+  est_tokens: 3468
+  length_bucket: long
+  stones:
+  - clarity-over-cleverness
+  - integrity-is-the-growth-strategy
+  - presence-is-productivity
+  - stewardship-not-ownership
+  fields:
+  - financial-clarity
+  - integrity-maintenance
+  - pressure-management
+  - resource-alignment
