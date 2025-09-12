@@ -1,0 +1,48 @@
+prompts:
+- query_id: rhythm-001
+  prompt: How do I find and maintain my natural rhythm in work and life?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: rhythm-and-timing
+  difficulty: medium
+  assertions:
+  - Should emphasize the importance of listening to natural cycles
+  - Should mention the value of creating sustainable work patterns
+  - Should reference the difference between forced pace and natural rhythm
+  gold_doc_ids:
+  - holding_my_rhythm
+  - the_rhythm_of_legacy
+  top_k_for_generation: 8
+- query_id: rhythm-002
+  prompt: What does it mean to walk the financial rhythm in my business?
+  stone: the-system-walks-with-us
+  stone_meaning: 'We are not separate from it. As we evolve, it evolves. As we remember,
+    it reveals.
+
+    '
+  field: rhythm-and-timing
+  difficulty: hard
+  assertions:
+  - Should explain the importance of understanding cash flow cycles
+  - Should mention the value of planning around natural business rhythms
+  - Should reference the difference between forced growth and sustainable expansion
+  gold_doc_ids:
+  - walking_the_financial_rhythm_(cashflow,_runway,_resource_allocation)
+  - the_rhythm_of_legacy
+  top_k_for_generation: 8
+- query_id: rhythm-003
+  prompt: How can I support rhythm and escalations in my team without creating overwhelm?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: rhythm-and-timing
+  difficulty: hard
+  assertions:
+  - Should provide strategies for managing workload and escalation patterns
+  - Should mention the importance of clear boundaries and support systems
+  - Should reference the value of sustainable team practices
+  gold_doc_ids:
+  - support_rhythm_and_escalations
+  - holding_expansion_without_overwhelm
+  top_k_for_generation: 8

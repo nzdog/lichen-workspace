@@ -1,0 +1,33 @@
+prompts:
+- query_id: energy-001
+  prompt: How do I understand the energy behind the ask when someone makes a request?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: energy-management
+  difficulty: medium
+  assertions:
+  - Should emphasize the importance of reading underlying energy and intention
+  - Should mention the value of responding to the real need, not just the surface
+    request
+  - Should reference the difference between reactive and thoughtful response
+  gold_doc_ids:
+  - the_energy_behind_the_ask
+  - presence_is_productivity
+  top_k_for_generation: 8
+- query_id: energy-002
+  prompt: What does it mean to sustain rhythm without a hero in my team?
+  stone: stewardship-not-ownership
+  stone_meaning: "The system is not a possession\u2014it is a responsibility. I walk\
+    \ with it, not above it.\n"
+  field: energy-management
+  difficulty: hard
+  assertions:
+  - Should explain the importance of distributed leadership and shared responsibility
+  - Should mention the value of creating sustainable systems that don't depend on
+    individual heroics
+  - Should reference the difference between hero-based and system-based approaches
+  gold_doc_ids:
+  - sustaining_rhythm_without_a_hero
+  - the_leadership_im_actually_carrying
+  top_k_for_generation: 8

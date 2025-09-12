@@ -1,0 +1,40 @@
+# RAG Observability Logging Configuration
+# This is a placeholder configuration file for future logging enhancements
+
+rag_observability:
+  # Enable/disable RAG observability logging
+  # Can be overridden by RAG_OBS_ENABLED environment variable
+  enabled: false
+  
+  # Directory for log files
+  # Can be overridden by RAG_OBS_DIR environment variable
+  log_directory: "logs/rag"
+  
+  # File naming pattern (supports strftime format)
+  # Can be overridden by RAG_OBS_FILE environment variable
+  file_pattern: "%Y-%m-%d.jsonl"
+  
+  # Sampling rate (0.0 to 1.0)
+  # Can be overridden by RAG_OBS_SAMPLING environment variable
+  sampling_rate: 1.0
+  
+  # Enable query redaction for privacy
+  # Can be overridden by RAG_OBS_REDACT environment variable
+  redact_queries: false
+  
+  # Maximum length for text fields
+  # Can be overridden by RAG_OBS_MAXLEN environment variable
+  max_text_length: 2000
+  
+  # Include full context in logs (for debugging)
+  # Can be overridden by RAG_OBS_INCLUDE_CONTEXT environment variable
+  include_context: false
+
+# Future: Additional logging configurations for other system components
+# system_logging:
+#   level: "INFO"
+#   format: "json"
+# 
+# audit_logging:
+#   enabled: true
+#   include_payloads: false

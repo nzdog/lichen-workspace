@@ -1,0 +1,72 @@
+prompts:
+- query_id: system-001
+  prompt: How do I know when the system is walking with me rather than against me?
+  stone: the-system-walks-with-us
+  stone_meaning: 'We are not separate from it. As we evolve, it evolves. As we remember,
+    it reveals.
+
+    '
+  field: intuition
+  difficulty: medium
+  assertions:
+  - Should explain the feeling of alignment and flow
+  - Should mention the importance of listening to internal signals
+  - Should reference the difference between forcing and allowing
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - holding_my_rhythm
+  top_k_for_generation: 8
+- query_id: system-002
+  prompt: What does it mean to work with the system rather than against it?
+  stone: the-system-walks-with-us
+  stone_meaning: 'We are not separate from it. As we evolve, it evolves. As we remember,
+    it reveals.
+
+    '
+  field: collaboration
+  difficulty: medium
+  assertions:
+  - Should emphasize the importance of understanding natural patterns and flows
+  - Should mention the value of working with existing momentum
+  - Should reference the difference between collaboration and resistance
+  gold_doc_ids:
+  - sensing_the_whole_system
+  - the_rhythm_of_legacy
+  top_k_for_generation: 8
+- query_id: system-003
+  prompt: How can I align my business practices with the natural rhythms and patterns
+    of the system?
+  stone: the-system-walks-with-us
+  stone_meaning: 'We are not separate from it. As we evolve, it evolves. As we remember,
+    it reveals.
+
+    '
+  field: business-strategy
+  difficulty: hard
+  assertions:
+  - Should provide strategies for understanding and working with natural cycles
+  - Should mention the importance of timing and rhythm in business decisions
+  - Should reference the value of sustainable and regenerative practices
+  gold_doc_ids:
+  - the_rhythm_of_legacy
+  - walking_the_financial_rhythm_(cashflow,_runway,_resource_allocation)
+  - support_rhythm_and_escalations
+  top_k_for_generation: 8
+- query_id: system-004
+  prompt: What are the signs that I'm working against the system rather than with
+    it?
+  stone: the-system-walks-with-us
+  stone_meaning: 'We are not separate from it. As we evolve, it evolves. As we remember,
+    it reveals.
+
+    '
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify patterns of resistance and struggle
+  - Should mention the importance of noticing when things feel forced
+  - Should reference the value of paying attention to feedback and signals
+  gold_doc_ids:
+  - naming_whats_not_working
+  - the_rhythm_of_legacy
+  top_k_for_generation: 8

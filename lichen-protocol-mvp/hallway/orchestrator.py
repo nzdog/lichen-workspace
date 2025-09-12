@@ -4,12 +4,14 @@ Pure control flow orchestrator for the Hallway Protocol.
 
 import os
 import time
+import uuid
 from typing import Dict, Any, List, Optional
 
 from .types import ExecutionContext, FinalOutput, StepStatus, StepResult
 from .steps import run_step
 from .logging import emit_event
 from .errors import BudgetExceededError
+from .rag_observability import log_rag_turn
 
 
 async def run_hallway(ctx: ExecutionContext) -> FinalOutput:
@@ -37,7 +39,7 @@ async def run_hallway(ctx: ExecutionContext) -> FinalOutput:
             step_result = await run_step(room_id, ctx)
             
             # Add RAG retrieval stage for AI Room
-            if room_id == "ai_room" and os.getenv("RAG_ENABLED", "0") == "1":
+            if room_id == "ai_room":
                 rag_result = await _run_rag_retrieval(ctx)
                 if rag_result:
                     # Merge RAG results into the step result
@@ -227,7 +229,21 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         rag_adapter = get_rag_adapter()
         
         if not rag_adapter.enabled:
-            return None
+            # Return fallback response when RAG is disabled
+            return {
+                "meta": {
+                    "retrieval": {
+                        "lane": "disabled",
+                        "top_k": 0,
+                        "used_doc_ids": [],
+                        "citations": []
+                    },
+                    "stones_alignment": 0.0,
+                    "grounding_score_1to5": 1,
+                    "insufficient_support": True,
+                    "reason": "flags.disabled"
+                }
+            }
         
         # Extract query from context
         # Look for brief or query in the payload
@@ -244,6 +260,9 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         if not query:
             return None
         
+        # Generate turn ID for this RAG operation
+        turn_id = str(uuid.uuid4())
+        
         # Determine lane from request meta or default
         lane = ai_room_payload.get("meta", {}).get("rag_lane", rag_adapter.default_lane)
         
@@ -253,6 +272,29 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         retrieval_time = (time.time() - start_time) * 1000
         
         if not retrieval_results:
+            # Log empty result with new schema
+            latency_metrics = {
+                "retrieve_ms": int(retrieval_time),
+                "rerank_ms": 0,
+                "synth_ms": 0,
+                "total_ms": int(retrieval_time)
+            }
+            
+            log_rag_turn(
+                request_id=turn_id,
+                profile=lane,
+                query=query,
+                k=0,
+                latency=latency_metrics,
+                grounding_score=1.0,
+                citations=[],
+                additional_metrics={
+                    "stones_alignment": 0.0,
+                    "hallucination": 1.0,
+                    "used_doc_ids": []
+                }
+            )
+            
             return {
                 "meta": {
                     "retrieval": {
@@ -298,7 +340,31 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         # Extract document IDs
         used_doc_ids = list(set(result.get("doc", "") for result in retrieval_results if result.get("doc")))
         
-        # Log RAG metrics
+        # Log RAG turn for observability with new schema
+        citations = generation_result.get("citations", [])
+        latency_metrics = {
+            "retrieve_ms": int(retrieval_time),
+            "rerank_ms": 0,  # Not implemented in current adapter
+            "synth_ms": int(generation_time),
+            "total_ms": int(retrieval_time + generation_time)
+        }
+        
+        log_rag_turn(
+            request_id=turn_id,
+            profile=lane,
+            query=query,
+            k=len(retrieval_results),
+            latency=latency_metrics,
+            grounding_score=float(grounding_score),
+            citations=citations,
+            additional_metrics={
+                "stones_alignment": stones_alignment,
+                "hallucination": float(generation_result["hallucinations"]),
+                "used_doc_ids": used_doc_ids
+            }
+        )
+        
+        # Log RAG metrics (existing event system)
         emit_event(ctx, phase="rag_retrieval", 
                   query=query, lane=lane, top_k=len(retrieval_results),
                   doc_ids=used_doc_ids, stones_alignment=stones_alignment,

@@ -65,15 +65,20 @@ class IndexBuilder:
 
         # Build nearest neighbor index
         nn_index = ExactNearestNeighbor(vectors, metric=self.ann_config["metric"])
+        
+        # Compute grounding scores for each vector
+        grounding_scores = self._compute_grounding_scores(vectors, metadata)
 
         # Save vectors (possibly normalized)
         vectors_output_path = output_path / "vectors.npy"
         np.save(vectors_output_path, nn_index.vectors)
 
-        # Save metadata
+        # Save metadata with grounding scores
         metadata_output_path = output_path / "meta.jsonl"
         with open(metadata_output_path, 'w') as f:
-            for record in metadata:
+            for i, record in enumerate(metadata):
+                # Add grounding score to each metadata record
+                record["grounding_score"] = float(grounding_scores[i])
                 f.write(json.dumps(record) + '\n')
 
         # Save index metadata
@@ -149,3 +154,57 @@ class IndexBuilder:
         nn_index = ExactNearestNeighbor(vectors, metric=index_meta["metric"])
 
         return nn_index, metadata, index_meta
+    
+    def _compute_grounding_scores(self, vectors: np.ndarray, metadata: List[Dict[str, Any]]) -> np.ndarray:
+        """
+        Compute grounding scores for each vector based on metadata quality.
+        
+        Args:
+            vectors: Array of vectors
+            metadata: List of metadata records
+            
+        Returns:
+            Array of grounding scores (0.0 to 1.0)
+        """
+        scores = np.zeros(len(metadata))
+        
+        for i, meta in enumerate(metadata):
+            score = 0.0
+            
+            # Base score for having text content
+            text = meta.get("text", "")
+            if text and len(text.strip()) > 10:
+                score += 0.3
+            
+            # Score for having proper document structure
+            if "doc_id" in meta and meta["doc_id"]:
+                score += 0.2
+            
+            if "chunk_id" in meta and meta["chunk_id"]:
+                score += 0.1
+            
+            # Score for having source information
+            source = meta.get("source", {})
+            if source:
+                score += 0.2
+                if source.get("doc_type"):
+                    score += 0.1
+                if source.get("title"):
+                    score += 0.1
+            
+            # Score for having spans (text positioning)
+            if "span" in meta and meta["span"]:
+                span = meta["span"]
+                if isinstance(span, dict) and "start" in span and "end" in span:
+                    score += 0.1
+            
+            # Bonus for longer, more substantial content
+            if len(text) > 100:
+                score += 0.1
+            if len(text) > 500:
+                score += 0.1
+            
+            # Cap at 1.0
+            scores[i] = min(score, 1.0)
+        
+        return scores

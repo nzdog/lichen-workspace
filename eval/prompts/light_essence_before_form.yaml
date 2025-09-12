@@ -1,0 +1,62 @@
+prompts:
+- query_id: light-001
+  prompt: How do I start from essence before form when building a new product?
+  stone: light-before-form
+  stone_meaning: "We protect the soul of the system before shaping its structure.\
+    \ We trust essence to lead design\u2014not the other way around.\n"
+  field: product-development
+  difficulty: medium
+  assertions:
+  - Should emphasize starting with core purpose and values
+  - Should mention avoiding feature-first thinking
+  - Should reference understanding the deeper need being served
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - presence_is_productivity
+  top_k_for_generation: 8
+- query_id: light-002
+  prompt: What does it mean to begin with essence rather than jumping to solutions?
+  stone: light-before-form
+  stone_meaning: "We protect the soul of the system before shaping its structure.\
+    \ We trust essence to lead design\u2014not the other way around.\n"
+  field: decision-making
+  difficulty: easy
+  assertions:
+  - Should explain the difference between essence and form
+  - Should provide examples of essence-first thinking
+  - Should mention avoiding premature optimization
+  gold_doc_ids:
+  - decision_making_in_rhythm
+  - mapping_whats_emerging
+  top_k_for_generation: 8
+- query_id: light-003
+  prompt: How can I ensure my team starts from essence when facing urgent deadlines?
+  stone: light-before-form
+  stone_meaning: "We protect the soul of the system before shaping its structure.\
+    \ We trust essence to lead design\u2014not the other way around.\n"
+  field: team-management
+  difficulty: hard
+  assertions:
+  - Should address the tension between essence and urgency
+  - Should provide practical strategies for maintaining essence under pressure
+  - Should reference the importance of clarity in high-pressure situations
+  gold_doc_ids:
+  - presence_is_productivity
+  - sustaining_rhythm_without_a_hero
+  - the_speed_of_trust__user_facing
+  top_k_for_generation: 8
+- query_id: light-004
+  prompt: What are the signs that I'm operating from form instead of essence?
+  stone: light-before-form
+  stone_meaning: "We protect the soul of the system before shaping its structure.\
+    \ We trust essence to lead design\u2014not the other way around.\n"
+  field: self-awareness
+  difficulty: medium
+  assertions:
+  - Should identify common patterns of form-first thinking
+  - Should provide self-reflection questions
+  - Should mention the feeling of being disconnected from purpose
+  gold_doc_ids:
+  - naming_whats_not_working
+  - the_leadership_im_actually_carrying
+  top_k_for_generation: 8

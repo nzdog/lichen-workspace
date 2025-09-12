@@ -2,6 +2,10 @@
 
 This workspace contains two main projects for protocol processing and management:
 
+## Security
+
+[![Redaction & Repo Hygiene](https://github.com/nzdog/lichen-workspace/actions/workflows/redaction.yml/badge.svg)](https://github.com/nzdog/lichen-workspace/actions/workflows/redaction.yml) Redaction & Repo Hygiene: passing ✅
+
 ## Projects
 
 ### lichen-chunker
@@ -43,6 +47,53 @@ xargs -a <(yq '.items[].path' manifests/canon_batch_*.yaml) \
 xargs -a <(yq '.items[].path' manifests/canon_batch_*.yaml) \
   python -m src.lichen_chunker.cli process --profile accuracy --schema libs/protocol_template_schema_v1.json
 ```
+
+y## Git Branch Naming Helper
+
+This workspace includes a Git branch naming helper that follows our convention:
+
+`<type>/<area>-p<phase>-<scope>[-i<issue>]`
+
+### Setup
+
+Add the git alias to your global git configuration:
+
+```bash
+git config --global alias.nb '!sh tools/git-nb.sh'
+```
+
+### Usage
+
+#### Interactive Mode
+```bash
+git nb
+```
+
+#### Command-line Mode
+```bash
+# Create feature branch
+git nb feature rag 2 "staging-observability" 7
+# → creates: feature/rag-p2-staging-observability-i7
+
+# Create fix branch  
+git nb fix ai-room 3 "citation-ui" 42
+# → creates: fix/ai-room-p3-citation-ui-i42
+
+# Create chore branch without issue
+git nb chore eval 1 "cleanup-old-data"
+# → creates: chore/eval-p1-cleanup-old-data
+```
+
+#### Branch Types
+- `feature` - New features
+- `fix` - Bug fixes
+- `hotfix` - Critical fixes
+- `chore` - Maintenance tasks
+- `docs` - Documentation updates
+- `perf` - Performance improvements
+- `test` - Test-related changes
+- `spike` - Experimental work
+- `release` - Release preparation
 
 ## Requirements
 

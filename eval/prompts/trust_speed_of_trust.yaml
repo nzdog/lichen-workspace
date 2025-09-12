@@ -1,0 +1,70 @@
+prompts:
+- query_id: trust-001
+  prompt: How do I build trust with my team when we're under pressure to deliver quickly?
+  stone: speed-of-trust
+  stone_meaning: 'We move only as fast as relationship allows. Urgency is never more
+    important than alignment.
+
+    '
+  field: team-building
+  difficulty: hard
+  assertions:
+  - Should emphasize that trust cannot be rushed
+  - Should mention the importance of consistency over speed
+  - Should reference the long-term benefits of trust-based relationships
+  gold_doc_ids:
+  - the_speed_of_trust__user_facing
+  - presence_is_productivity
+  top_k_for_generation: 8
+- query_id: trust-002
+  prompt: What does it mean to move at the speed of trust in business decisions?
+  stone: speed-of-trust
+  stone_meaning: 'We move only as fast as relationship allows. Urgency is never more
+    important than alignment.
+
+    '
+  field: decision-making
+  difficulty: medium
+  assertions:
+  - Should explain how trust affects decision-making pace
+  - Should mention the difference between trust-based and urgency-based decisions
+  - Should reference the importance of stakeholder alignment
+  gold_doc_ids:
+  - decision_making_in_rhythm
+  - the_speed_of_trust__user_facing
+  top_k_for_generation: 8
+- query_id: trust-003
+  prompt: How can I maintain trust when I need to make difficult decisions that affect
+    my team?
+  stone: speed-of-trust
+  stone_meaning: 'We move only as fast as relationship allows. Urgency is never more
+    important than alignment.
+
+    '
+  field: leadership
+  difficulty: hard
+  assertions:
+  - Should emphasize transparency and clear communication
+  - Should mention the importance of explaining the reasoning behind decisions
+  - Should reference the value of involving team members in the process
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - team_protocol_relational_repair
+  top_k_for_generation: 8
+- query_id: trust-004
+  prompt: What are the warning signs that I'm moving faster than trust allows?
+  stone: speed-of-trust
+  stone_meaning: 'We move only as fast as relationship allows. Urgency is never more
+    important than alignment.
+
+    '
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify symptoms of trust-deficit situations
+  - Should mention feelings of resistance or pushback
+  - Should reference the importance of checking in with stakeholders
+  gold_doc_ids:
+  - naming_whats_not_working
+  - the_speed_of_trust__user_facing
+  top_k_for_generation: 8

@@ -1,3 +1,9 @@
+# RAG Configuration
+# Environment variables:
+#   RAG_ENABLED: "1" (default) or "0" to disable RAG entirely
+#   RAG_PROFILE: "fast" (default) or "accuracy" for retrieval profile
+#   REDACT_LOGS: "1" (default) or "0" to disable log redaction
+
 fast:
   top_k: 8
   mmr_lambda: 0.4
@@ -29,3 +35,4 @@ vector_store:
 
 limits:
   max_context_chars: 12000
+  min_grounding: 0.25  # Minimum grounding score threshold for retrieval results

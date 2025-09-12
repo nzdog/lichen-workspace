@@ -1,0 +1,62 @@
+prompts:
+- query_id: presence-001
+  prompt: How do I prioritize presence over urgency when my team is under pressure?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: team-management
+  difficulty: hard
+  assertions:
+  - Should emphasize the importance of being fully present with team members
+  - Should mention the value of listening and understanding over rushing to solutions
+  - Should reference the long-term benefits of presence-based leadership
+  gold_doc_ids:
+  - presence_is_productivity
+  - sustaining_rhythm_without_a_hero
+  top_k_for_generation: 8
+- query_id: presence-002
+  prompt: What does it mean to be present in my work rather than just productive?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: personal-effectiveness
+  difficulty: medium
+  assertions:
+  - Should explain the difference between presence and productivity
+  - Should mention the importance of quality attention over quantity of output
+  - Should reference the value of deep focus and engagement
+  gold_doc_ids:
+  - presence_is_productivity
+  - holding_my_rhythm
+  top_k_for_generation: 8
+- query_id: presence-003
+  prompt: How can I maintain presence when facing urgent deadlines and competing priorities?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: stress-management
+  difficulty: hard
+  assertions:
+  - Should provide strategies for staying present under pressure
+  - Should mention the importance of pausing and grounding
+  - Should reference the value of clear priorities and boundaries
+  gold_doc_ids:
+  - presence_is_productivity
+  - rebalancing_after_rapid_change
+  - holding_expansion_without_overwhelm
+  top_k_for_generation: 8
+- query_id: presence-004
+  prompt: What are the signs that I'm operating from urgency rather than presence?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify symptoms of urgency-driven behavior
+  - Should mention feelings of rushing or being scattered
+  - Should reference the importance of noticing internal state
+  gold_doc_ids:
+  - naming_whats_not_working
+  - presence_is_productivity
+  top_k_for_generation: 8

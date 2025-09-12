@@ -1,0 +1,48 @@
+prompts:
+- query_id: change-001
+  prompt: How do I rebalance after rapid change in my organization?
+  stone: built-for-wholeness
+  stone_meaning: 'We don''t fragment people to make them fit. We create scaffolds
+    that hold complexity, humanity, and contradiction.
+
+    '
+  field: change-management
+  difficulty: hard
+  assertions:
+  - Should emphasize the importance of allowing time for integration
+  - Should mention the value of checking in with all stakeholders
+  - Should reference the need for stability after periods of rapid change
+  gold_doc_ids:
+  - rebalancing_after_rapid_change
+  - sensing_the_whole_system
+  top_k_for_generation: 8
+- query_id: change-002
+  prompt: What does it mean to hold expansion without overwhelm during growth?
+  stone: presence-is-productivity
+  stone_meaning: "Our capacity to hold stillness is part of how the work gets done.\
+    \ Rest is not a break from progress\u2014it is part of it.\n"
+  field: change-management
+  difficulty: hard
+  assertions:
+  - Should explain strategies for managing growth sustainably
+  - Should mention the importance of maintaining quality during expansion
+  - Should reference the value of pacing growth with capacity
+  gold_doc_ids:
+  - holding_expansion_without_overwhelm
+  - sustaining_rhythm_without_a_hero
+  top_k_for_generation: 8
+- query_id: change-003
+  prompt: How can I map what's emerging in my organization during times of transition?
+  stone: light-before-form
+  stone_meaning: "We protect the soul of the system before shaping its structure.\
+    \ We trust essence to lead design\u2014not the other way around.\n"
+  field: change-management
+  difficulty: medium
+  assertions:
+  - Should emphasize the importance of understanding emerging patterns
+  - Should mention the value of staying connected to essence during change
+  - Should reference the difference between reactive and responsive change
+  gold_doc_ids:
+  - mapping_whats_emerging
+  - sensing_the_whole_system
+  top_k_for_generation: 8

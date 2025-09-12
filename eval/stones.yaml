@@ -1,0 +1,113 @@
+# Foundation Stones Registry
+# Canonical definitions with exact meanings from foundation documentation
+
+stones:
+  - slug: light-before-form
+    name: Light Before Form
+    meaning: >
+      We protect the soul of the system before shaping its structure. We trust essence to lead design—not the other way around.
+    red_flags:
+      - process-first over essence
+      - cleverness without clarity
+    must_haves:
+      - names the essence/intent before steps
+      - defers structure until essence is stable
+
+  - slug: speed-of-trust
+    name: The Speed of Trust
+    meaning: >
+      We move only as fast as relationship allows. Urgency is never more important than alignment.
+    red_flags:
+      - urgency overriding alignment
+      - pushing pace without consent
+    must_haves:
+      - checks for consent/fit
+      - makes tradeoffs explicit wrt trust
+
+  - slug: stewardship-not-ownership
+    name: Stewardship, Not Ownership
+    meaning: >
+      The system is not a possession—it is a responsibility. I walk with it, not above it.
+    red_flags:
+      - treating the system as property
+      - control-first posture
+    must_haves:
+      - language of care & responsibility
+      - shared custodianship
+
+  - slug: clarity-over-cleverness
+    name: Clarity Over Cleverness
+    meaning: >
+      We speak in language that liberates, not complicates. We make things simple, not shallow.
+    red_flags:
+      - jargon for its own sake
+      - obscuring key decisions
+    must_haves:
+      - plain language
+      - simple structure with intact meaning
+
+  - slug: presence-is-productivity
+    name: Presence Is Productivity
+    meaning: >
+      Our capacity to hold stillness is part of how the work gets done. Rest is not a break from progress—it is part of it.
+    red_flags:
+      - glorifying rush
+      - dismissing rest/reflection
+    must_haves:
+      - reflective pause
+      - pacing that protects attention
+
+  - slug: nothing-forced-nothing-withheld
+    name: Nothing Forced, Nothing Withheld
+    meaning: >
+      What comes is welcome. What hasn't yet come is not missing. We trust emergence more than agenda.
+    red_flags:
+      - forcing outcomes
+      - withholding critical signals
+    must_haves:
+      - allow emergence
+      - name honest limits
+
+  - slug: no-contortion-for-acceptance
+    name: No Contortion for Acceptance
+    meaning: >
+      We do not bend the system to fit what the world expects. We invite the world to meet something different.
+    red_flags:
+      - shape-shifting to please
+      - strategic self-erasure
+    must_haves:
+      - hold form faithfully
+      - invite others to meet it
+
+  - slug: integrity-is-the-growth-strategy
+    name: Integrity Is the Growth Strategy
+    meaning: >
+      We grow only through what aligns with the core. Even if that means growing slowly, or differently.
+    red_flags:
+      - growth at odds with core
+      - metric-chasing
+    must_haves:
+      - alignment tests before scaling
+      - decline misfit growth
+
+  - slug: built-for-wholeness
+    name: Built for Wholeness
+    meaning: >
+      We don't fragment people to make them fit. We create scaffolds that hold complexity, humanity, and contradiction.
+    red_flags:
+      - fragmenting roles/people
+      - punishing nuance
+    must_haves:
+      - design holds contradiction
+      - humane constraints
+
+  - slug: the-system-walks-with-us
+    name: The System Walks With Us
+    meaning: >
+      We are not separate from it. As we evolve, it evolves. As we remember, it reveals.
+    red_flags:
+      - treating system as static/external
+      - one-way control
+    must_haves:
+      - co-evolution language
+      - feedback → adaptation

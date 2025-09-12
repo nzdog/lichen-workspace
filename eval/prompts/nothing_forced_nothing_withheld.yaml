@@ -1,0 +1,71 @@
+prompts:
+- query_id: nothing-forced-001
+  prompt: How do I ensure nothing is forced or withheld in my team's decision-making
+    process?
+  stone: nothing-forced-nothing-withheld
+  stone_meaning: 'What comes is welcome. What hasn''t yet come is not missing. We
+    trust emergence more than agenda.
+
+    '
+  field: team-management
+  difficulty: hard
+  assertions:
+  - Should emphasize creating space for all voices to be heard
+  - Should mention the importance of voluntary participation
+  - Should reference the value of transparency and openness
+  gold_doc_ids:
+  - nothing_forced_nothing_withheld
+  - team_protocol_relational_repair
+  top_k_for_generation: 8
+- query_id: nothing-forced-002
+  prompt: What does it mean to practice nothing forced, nothing withheld in my leadership?
+  stone: nothing-forced-nothing-withheld
+  stone_meaning: 'What comes is welcome. What hasn''t yet come is not missing. We
+    trust emergence more than agenda.
+
+    '
+  field: leadership
+  difficulty: medium
+  assertions:
+  - Should explain the balance between invitation and respect for boundaries
+  - Should mention the importance of authentic engagement
+  - Should reference the value of creating safe spaces for expression
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - nothing_forced_nothing_withheld
+  top_k_for_generation: 8
+- query_id: nothing-forced-003
+  prompt: How can I apply nothing forced, nothing withheld when dealing with conflict?
+  stone: nothing-forced-nothing-withheld
+  stone_meaning: 'What comes is welcome. What hasn''t yet come is not missing. We
+    trust emergence more than agenda.
+
+    '
+  field: conflict-resolution
+  difficulty: hard
+  assertions:
+  - Should emphasize allowing natural resolution processes
+  - Should mention the importance of not forcing reconciliation
+  - Should reference the value of creating space for authentic expression
+  gold_doc_ids:
+  - after_conflict_returning_to_integrity
+  - preparing_for_a_repair_conversation
+  - team_protocol_relational_repair
+  top_k_for_generation: 8
+- query_id: nothing-forced-004
+  prompt: What are the signs that I'm forcing or withholding in my interactions?
+  stone: nothing-forced-nothing-withheld
+  stone_meaning: 'What comes is welcome. What hasn''t yet come is not missing. We
+    trust emergence more than agenda.
+
+    '
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify patterns of pressure or manipulation
+  - Should mention the importance of noticing resistance in others
+  - Should reference the value of checking for authentic engagement
+  gold_doc_ids:
+  - naming_whats_not_working
+  - nothing_forced_nothing_withheld
+  top_k_for_generation: 8

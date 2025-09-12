@@ -1,0 +1,52 @@
+prompts:
+- query_id: conflict-001
+  prompt: How do I return to integrity after a conflict with my team member?
+  stone: integrity-is-the-growth-strategy
+  stone_meaning: 'We grow only through what aligns with the core. Even if that means
+    growing slowly, or differently.
+
+    '
+  field: conflict-resolution
+  difficulty: hard
+  assertions:
+  - Should emphasize the importance of authentic repair and reconciliation
+  - Should mention the value of taking responsibility and making amends
+  - Should reference the difference between forced resolution and genuine healing
+  gold_doc_ids:
+  - after_conflict_returning_to_integrity
+  - team_protocol_relational_repair
+  top_k_for_generation: 8
+- query_id: conflict-002
+  prompt: What does it mean to prepare for a repair conversation?
+  stone: nothing-forced-nothing-withheld
+  stone_meaning: 'What comes is welcome. What hasn''t yet come is not missing. We
+    trust emergence more than agenda.
+
+    '
+  field: conflict-resolution
+  difficulty: medium
+  assertions:
+  - Should explain the importance of creating safe space for authentic dialogue
+  - Should mention the value of approaching with openness and curiosity
+  - Should reference the difference between preparation and manipulation
+  gold_doc_ids:
+  - preparing_for_a_repair_conversation
+  - team_protocol_relational_repair
+  top_k_for_generation: 8
+- query_id: conflict-003
+  prompt: How do I know when something is not repairable in a relationship?
+  stone: no-contortion-for-acceptance
+  stone_meaning: 'We do not bend the system to fit what the world expects. We invite
+    the world to meet something different.
+
+    '
+  field: conflict-resolution
+  difficulty: hard
+  assertions:
+  - Should provide guidance on recognizing when repair is not possible
+  - Should mention the importance of acceptance and letting go
+  - Should reference the value of protecting one's own integrity
+  gold_doc_ids:
+  - when_its_not_repairable
+  - letting_go_of_the_startup
+  top_k_for_generation: 8

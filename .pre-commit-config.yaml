@@ -1,0 +1,16 @@
+repos:
+  - repo: local
+    hooks:
+      - id: no-logs-or-indexes
+        name: block logs/indexes
+        entry: bash -c '! git diff --cached --name-only | grep -E "(^|/)logs/|\.jsonl$|lichen-chunker/index/"'
+        language: system
+        description: Prevent commits of log files and indexes
+        
+      - id: redaction-tests
+        name: run redaction tests
+        entry: bash -c 'cd lichen-protocol-mvp && python -m pytest hallway/tests/ -k "redaction" -q'
+        language: system
+        description: Run redaction unit tests
+        pass_filenames: false
+        always_run: true
