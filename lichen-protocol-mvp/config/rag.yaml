@@ -1,0 +1,31 @@
+fast:
+  top_k: 8
+  mmr_lambda: 0.4
+  embed_model: sentence-transformers/all-MiniLM-L6-v2
+
+accurate:
+  top_k_retrieve: 40
+  top_k_rerank: 10
+  cross_encoder: cross-encoder/ms-marco-electra-base
+  embed_model: sentence-transformers/all-mpnet-base-v2
+  # Alternative 1024d model (commented for compatibility):
+  # embed_model: intfloat/e5-large-v2
+
+vector_store:
+  provider: faiss
+  fast:
+    path: .vector/fast.index.faiss
+    meta: .vector/fast.meta.jsonl
+    stats: .vector/fast.stats.json
+  accurate:
+    path: .vector/accurate.index.faiss
+    meta: .vector/accurate.meta.jsonl
+    stats: .vector/accurate.stats.json
+  # legacy single-index keys remain for back-compat:
+  path_or_index: .vector/index.faiss
+  dim: 384
+  dtype: float32
+  namespace: protocols
+
+limits:
+  max_context_chars: 12000

@@ -8,7 +8,10 @@
       "Bash(STREAMLIT_EMAIL=\"\" streamlit run ui/app.py --server.port 8501 --server.headless true)",
       "Bash(cat:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(lichen-chunker process:*)",
+      "Bash(pkill:*)",
+      "Bash(STREAMLIT_EMAIL=\"\" streamlit run ui/app.py --server.port 8502 --server.headless true)"
     ],
     "deny": [],
     "ask": []
