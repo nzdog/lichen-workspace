@@ -1,0 +1,71 @@
+prompts:
+- query_id: no-contortion-001
+  prompt: How do I avoid contorting myself to gain acceptance from investors or stakeholders?
+  stone: no-contortion-for-acceptance
+  stone_meaning: 'We do not bend the system to fit what the world expects. We invite
+    the world to meet something different.
+
+    '
+  field: fundraising
+  difficulty: hard
+  assertions:
+  - Should emphasize maintaining authenticity in investor relationships
+  - Should mention the importance of staying true to core values
+  - Should reference the long-term cost of contortion
+  gold_doc_ids:
+  - speaking_to_funders_without_shrinking_the_system
+  - letting_go_of_the_startup
+  top_k_for_generation: 8
+- query_id: no-contortion-002
+  prompt: What does it mean to accept what is rather than contorting to change it?
+  stone: no-contortion-for-acceptance
+  stone_meaning: 'We do not bend the system to fit what the world expects. We invite
+    the world to meet something different.
+
+    '
+  field: mindfulness
+  difficulty: medium
+  assertions:
+  - Should explain the difference between acceptance and resignation
+  - Should mention the importance of working with reality as it is
+  - Should reference the value of authentic response over forced change
+  gold_doc_ids:
+  - letting_go_of_the_startup
+  - when_its_not_repairable
+  top_k_for_generation: 8
+- query_id: no-contortion-003
+  prompt: How can I maintain my authentic self when facing pressure to conform to
+    industry standards?
+  stone: no-contortion-for-acceptance
+  stone_meaning: 'We do not bend the system to fit what the world expects. We invite
+    the world to meet something different.
+
+    '
+  field: authenticity
+  difficulty: hard
+  assertions:
+  - Should provide strategies for staying authentic under pressure
+  - Should mention the importance of clear boundaries and values
+  - Should reference the value of finding aligned partners and supporters
+  gold_doc_ids:
+  - letting_go_of_the_startup
+  - the_leadership_im_actually_carrying
+  - speaking_to_funders_without_shrinking_the_system
+  top_k_for_generation: 8
+- query_id: no-contortion-004
+  prompt: What are the warning signs that I'm contorting myself for acceptance?
+  stone: no-contortion-for-acceptance
+  stone_meaning: 'We do not bend the system to fit what the world expects. We invite
+    the world to meet something different.
+
+    '
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify patterns of inauthentic behavior
+  - Should mention feelings of discomfort or disconnection from self
+  - Should reference the importance of noticing internal resistance
+  gold_doc_ids:
+  - naming_whats_not_working
+  - letting_go_of_the_startup
+  top_k_for_generation: 8

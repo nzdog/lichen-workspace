@@ -12,3 +12,10 @@ nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
+
+# Vector indexes and chunker artifacts
+lichen-chunker/index/**
+.vector/
+
+# RAG logs
+logs/rag/

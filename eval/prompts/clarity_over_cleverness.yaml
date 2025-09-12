@@ -1,0 +1,69 @@
+prompts:
+- query_id: clarity-001
+  prompt: How do I choose clarity over cleverness when communicating with my team?
+  stone: clarity-over-cleverness
+  stone_meaning: 'We speak in language that liberates, not complicates. We make things
+    simple, not shallow.
+
+    '
+  field: communication
+  difficulty: medium
+  assertions:
+  - Should emphasize simple, direct communication
+  - Should mention avoiding jargon and complexity
+  - Should reference the importance of being understood over being impressive
+  gold_doc_ids:
+  - presence_is_productivity
+  - the_leadership_im_actually_carrying
+  top_k_for_generation: 8
+- query_id: clarity-002
+  prompt: What does it mean to prioritize clarity in my decision-making process?
+  stone: clarity-over-cleverness
+  stone_meaning: 'We speak in language that liberates, not complicates. We make things
+    simple, not shallow.
+
+    '
+  field: decision-making
+  difficulty: medium
+  assertions:
+  - Should explain the importance of clear reasoning
+  - Should mention avoiding overcomplicated solutions
+  - Should reference the value of transparent decision-making
+  gold_doc_ids:
+  - decision_making_in_rhythm
+  - mapping_whats_emerging
+  top_k_for_generation: 8
+- query_id: clarity-003
+  prompt: How can I maintain clarity when dealing with complex technical problems?
+  stone: clarity-over-cleverness
+  stone_meaning: 'We speak in language that liberates, not complicates. We make things
+    simple, not shallow.
+
+    '
+  field: problem-solving
+  difficulty: hard
+  assertions:
+  - Should emphasize breaking down complex problems into simple components
+  - Should mention the importance of clear problem definition
+  - Should reference avoiding over-engineering solutions
+  gold_doc_ids:
+  - mapping_whats_emerging
+  - naming_whats_not_working
+  top_k_for_generation: 8
+- query_id: clarity-004
+  prompt: What are the warning signs that I'm choosing cleverness over clarity?
+  stone: clarity-over-cleverness
+  stone_meaning: 'We speak in language that liberates, not complicates. We make things
+    simple, not shallow.
+
+    '
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify patterns of overcomplication
+  - Should mention the feeling of needing to impress others
+  - Should reference confusion or misunderstanding in communication
+  gold_doc_ids:
+  - naming_whats_not_working
+  - presence_is_productivity
+  top_k_for_generation: 8

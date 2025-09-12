@@ -24,8 +24,8 @@ class RAGAdapter:
         self.config = self._load_config(config_path)
         self.lanes_config = self._load_lanes_config()
         self.dummy_mode = os.getenv("USE_DUMMY_RAG", "0") == "1"
-        self.enabled = os.getenv("RAG_ENABLED", "0") == "1"
-        self.default_lane = os.getenv("RAG_LANE", "fast")
+        self.enabled = os.getenv("RAG_ENABLED", "1") == "1"
+        self.default_lane = os.getenv("RAG_PROFILE", "fast")
         
         # Load dummy data if in dummy mode
         if self.dummy_mode:
@@ -324,7 +324,8 @@ class RAGAdapter:
             return {
                 "answer": "RAG is not enabled.",
                 "citations": [],
-                "hallucinations": 1
+                "hallucinations": 1,
+                "reason": "flags.disabled"
             }
         
         if lane is None:
@@ -442,6 +443,57 @@ class RAGAdapter:
         max_hallucinations = 0 if self.get_lane_threshold(lane, "hallucination_rate") < 0.01 else 1
         
         return stones_alignment >= threshold and hallucinations <= max_hallucinations
+    
+    def to_log_dict(self, results: List[Dict[str, Any]], retrieval_time_ms: float, 
+                   generation_time_ms: float, lane: str) -> Dict[str, Any]:
+        """
+        Convert retrieval results to log dictionary format.
+        
+        Args:
+            results: Retrieval results
+            retrieval_time_ms: Retrieval time in milliseconds
+            generation_time_ms: Generation time in milliseconds
+            lane: Lane used (fast/accurate)
+            
+        Returns:
+            Dict suitable for observability logging
+        """
+        # Get embedding model and index info
+        embedder_name = "unknown"
+        index_info = {"path": "unknown", "dim": 0, "count": 0}
+        reranker_name = None
+        
+        if not self.dummy_mode and hasattr(self, 'faiss_stores') and lane in self.faiss_stores:
+            store = self.faiss_stores[lane]
+            embedder_name = store.get_embedder_name()
+            index_info = store.get_index_info()
+            reranker_name = store.get_reranker_name()
+        
+        # Build retrieval metrics
+        retrieval_metrics = {
+            "elapsed_ms": retrieval_time_ms,
+            "topk": len(results),
+            "breadth": len(results),  # For now, same as topk - would be different with MMR
+            "embed_model": embedder_name,
+            "index": index_info,
+            "reranker_model": reranker_name,
+            "rerank_elapsed_ms": None  # Would be filled if reranking was timed separately
+        }
+        
+        # Build results array (doc/chunk/rank/score only)
+        log_results = []
+        for result in results:
+            log_results.append({
+                "rank": result.get("rank", 0),
+                "doc": result.get("doc", ""),
+                "chunk": result.get("chunk", 0),
+                "score": result.get("score", 0.0)
+            })
+        
+        return {
+            "retrieval": retrieval_metrics,
+            "results": log_results
+        }
 
 
 # Global instance for easy access

@@ -1,0 +1,769 @@
+/Users/Nigel/Desktop/lichen-workspace
+├── config
+│   ├── logging.yaml
+│   └── rag.yaml -> ../lichen-protocol-mvp/config/rag.yaml
+├── data
+│   ├── dummy_answers.jsonl
+│   └── dummy_retrieval.jsonl
+├── directory_tree.txt
+├── eval
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── adapter.cpython-313.pyc
+│   │   ├── config.cpython-313.pyc
+│   │   ├── metrics.cpython-313.pyc
+│   │   └── run_eval.cpython-313.pyc
+│   ├── adapter.py
+│   ├── config.py
+│   ├── data
+│   │   ├── dummy_answers.jsonl
+│   │   ├── dummy_answers.jsonl.bak
+│   │   ├── dummy_retrieval.jsonl
+│   │   └── dummy_retrieval.jsonl.bak
+│   ├── evalset.json
+│   ├── metrics.py
+│   ├── out
+│   │   ├── records_accurate.jsonl
+│   │   ├── records_fast.jsonl
+│   │   ├── summary_accurate.json
+│   │   └── summary_fast.json
+│   └── run_eval.py
+├── lichen-chunker
+│   ├── data
+│   │   ├── accuracy
+│   │   │   ├── after_conflict_returning_to_integrity.chunks.jsonl
+│   │   │   ├── decision_making_in_rhythm.chunks.jsonl
+│   │   │   ├── do_we_need_to_raise.chunks.jsonl
+│   │   │   ├── holding_expansion_without_overwhelm.chunks.jsonl
+│   │   │   ├── holding_my_rhythm.chunks.jsonl
+│   │   │   ├── letting_go_of_the_startup.chunks.jsonl
+│   │   │   ├── mapping_whats_emerging.chunks.jsonl
+│   │   │   ├── naming_whats_not_working.chunks.jsonl
+│   │   │   ├── nothing_forced_nothing_withheld.chunks.jsonl
+│   │   │   ├── preparing_for_a_repair_conversation.chunks.jsonl
+│   │   │   ├── presence_is_productivity.chunks.jsonl
+│   │   │   ├── rebalancing_after_rapid_change.chunks.jsonl
+│   │   │   ├── right_person_right_role_hiring__role_clarity.chunks.jsonl
+│   │   │   ├── sensing_the_whole_system.chunks.jsonl
+│   │   │   ├── speaking_to_funders_without_shrinking_the_system.chunks.jsonl
+│   │   │   ├── support_rhythm_and_escalations.chunks.jsonl
+│   │   │   ├── sustaining_rhythm_without_a_hero.chunks.jsonl
+│   │   │   ├── team_protocol_relational_repair.chunks.jsonl
+│   │   │   ├── the_energy_behind_the_ask.chunks.jsonl
+│   │   │   ├── the_leadership_im_actually_carrying.chunks.jsonl
+│   │   │   ├── the_rhythm_of_legacy.chunks.jsonl
+│   │   │   ├── the_speed_of_trust__user_facing.chunks.jsonl
+│   │   │   ├── walking_the_financial_rhythm_cashflow_runway_resource_allocation.chunks.jsonl
+│   │   │   └── when_its_not_repairable.chunks.jsonl
+│   │   ├── aligning_investor_energy_with_the_field.chunks.jsonl
+│   │   ├── angels_vs.chunks.jsonl
+│   │   ├── learning_the_pattern_behind_the_conflict.chunks.jsonl
+│   │   ├── letting_go_of_the_startup.chunks.jsonl
+│   │   ├── speed
+│   │   │   ├── after_conflict_returning_to_integrity.chunks.jsonl
+│   │   │   ├── decision_making_in_rhythm.chunks.jsonl
+│   │   │   ├── do_we_need_to_raise.chunks.jsonl
+│   │   │   ├── holding_expansion_without_overwhelm.chunks.jsonl
+│   │   │   ├── holding_my_rhythm.chunks.jsonl
+│   │   │   ├── letting_go_of_the_startup.chunks.jsonl
+│   │   │   ├── mapping_whats_emerging.chunks.jsonl
+│   │   │   ├── naming_whats_not_working.chunks.jsonl
+│   │   │   ├── nothing_forced_nothing_withheld.chunks.jsonl
+│   │   │   ├── preparing_for_a_repair_conversation.chunks.jsonl
+│   │   │   ├── presence_is_productivity.chunks.jsonl
+│   │   │   ├── rebalancing_after_rapid_change.chunks.jsonl
+│   │   │   ├── right_person_right_role_hiring__role_clarity.chunks.jsonl
+│   │   │   ├── sensing_the_whole_system.chunks.jsonl
+│   │   │   ├── speaking_to_funders_without_shrinking_the_system.chunks.jsonl
+│   │   │   ├── support_rhythm_and_escalations.chunks.jsonl
+│   │   │   ├── sustaining_rhythm_without_a_hero.chunks.jsonl
+│   │   │   ├── team_protocol_relational_repair.chunks.jsonl
+│   │   │   ├── the_energy_behind_the_ask.chunks.jsonl
+│   │   │   ├── the_leadership_im_actually_carrying.chunks.jsonl
+│   │   │   ├── the_rhythm_of_legacy.chunks.jsonl
+│   │   │   ├── the_speed_of_trust__user_facing.chunks.jsonl
+│   │   │   ├── walking_the_financial_rhythm_cashflow_runway_resource_allocation.chunks.jsonl
+│   │   │   └── when_its_not_repairable.chunks.jsonl
+│   │   ├── the_leadership_im_actually_carrying.chunks.jsonl
+│   │   ├── tmp1025i05i.chunks.jsonl
+│   │   ├── tmp2k8rz5e6.chunks.jsonl
+│   │   └── tmpshfef3ax.chunks.jsonl
+│   ├── data_small_chunks
+│   │   └── the_leadership_im_actually_carrying.chunks.jsonl
+│   ├── env.example
+│   ├── index
+│   │   ├── accuracy
+│   │   │   ├── docstore.pkl
+│   │   │   ├── index.faiss
+│   │   │   └── metadata.parquet
+│   │   ├── docstore.pkl
+│   │   ├── index.faiss
+│   │   ├── metadata.parquet
+│   │   └── speed
+│   │       ├── docstore.pkl
+│   │       ├── index.faiss
+│   │       └── metadata.parquet
+│   ├── libs
+│   │   ├── protocol_template_locked_v1.json
+│   │   └── protocol_template_schema_v1.json
+│   ├── pyproject.toml
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── samples
+│   │   └── the_leadership_im_actually_carrying.json
+│   ├── src
+│   │   └── lichen_chunker
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-313.pyc
+│   │       │   ├── chunking.cpython-313.pyc
+│   │       │   ├── cli.cpython-313.pyc
+│   │       │   ├── indexer.cpython-313.pyc
+│   │       │   ├── io_utils.cpython-313.pyc
+│   │       │   ├── pipeline.cpython-313.pyc
+│   │       │   ├── schema_validation.cpython-313.pyc
+│   │       │   └── types.cpython-313.pyc
+│   │       ├── chunking.py
+│   │       ├── cli.py
+│   │       ├── embeddings
+│   │       │   ├── __init__.py
+│   │       │   ├── __pycache__
+│   │       │   │   ├── __init__.cpython-313.pyc
+│   │       │   │   ├── base.cpython-313.pyc
+│   │       │   │   ├── openai_backend.cpython-313.pyc
+│   │       │   │   └── sbert_backend.cpython-313.pyc
+│   │       │   ├── base.py
+│   │       │   ├── openai_backend.py
+│   │       │   └── sbert_backend.py
+│   │       ├── indexer.py
+│   │       ├── io_utils.py
+│   │       ├── pipeline.py
+│   │       ├── schema_validation.py
+│   │       └── types.py
+│   ├── tests
+│   │   ├── __pycache__
+│   │   │   ├── test_chunking.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_chunking.cpython-313-pytest-8.4.2.pyc
+│   │   │   ├── test_pipeline_e2e.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_pipeline_e2e.cpython-313-pytest-8.4.2.pyc
+│   │   │   ├── test_validation.cpython-313-pytest-8.4.1.pyc
+│   │   │   └── test_validation.cpython-313-pytest-8.4.2.pyc
+│   │   ├── test_chunking.py
+│   │   ├── test_pipeline_e2e.py
+│   │   └── test_validation.py
+│   ├── ui
+│   │   └── app.py
+│   └── uploads
+│       ├── aligning_investor_energy_with_the_field.json
+│       ├── angels_vs.json
+│       ├── built_for_wholeness.json
+│       ├── clearing_lingering_residue.json
+│       ├── learning_the_pattern_behind_the_conflict.json
+│       ├── letting_go_of_the_startup.json
+│       └── the_leadership_im_actually_carrying.json
+├── lichen-protocol-mvp
+│   ├── __pycache__
+│   │   ├── conftest.cpython-313-pytest-8.4.1.pyc
+│   │   ├── conftest.cpython-313-pytest-8.4.2.pyc
+│   │   ├── demo.cpython-313.pyc
+│   │   ├── test_demo.cpython-313-pytest-8.4.1.pyc
+│   │   ├── test_diagnostic_room_comprehensive.cpython-313-pytest-8.4.1.pyc
+│   │   ├── test_diagnostic_room_simple.cpython-313-pytest-8.4.1.pyc
+│   │   └── web_demo.cpython-313.pyc
+│   ├── artifacts
+│   │   ├── chunks.jsonl
+│   │   ├── index
+│   │   │   └── latency
+│   │   │       ├── index.meta.json
+│   │   │       ├── meta.jsonl
+│   │   │       └── vectors.npy
+│   │   └── latency
+│   │       ├── embedding.meta.json
+│   │       ├── metadata.jsonl
+│   │       └── vectors.npy
+│   ├── build_canon
+│   │   ├── Build Canon – Governing the MVP 4 Build.json
+│   │   ├── Build Canon – PRA- Diagnostics & Memory Protocol.json
+│   │   ├── Build Canon – PRA- Orchestration Protocol.json
+│   │   ├── Build Canon – PRA- Output Gates Protocol.json
+│   │   ├── Build Canon – PRA- Output Gates.json
+│   │   ├── Build Canon – PRA- Room Set Architecture.json
+│   │   ├── Build Canon – Protocol Room Architecture.json
+│   │   ├── hallway
+│   │   │   └── hallway.json
+│   │   ├── Quick “Room Contract” schema (for builders).json
+│   │   └── rooms
+│   │       ├── AI Room Protocol.json
+│   │       ├── Diagnostic Room Protocol.json
+│   │       ├── Entry Room Protocol.json
+│   │       ├── Exit Room Protocol.json
+│   │       ├── Integration & Commit Room Protocol.json
+│   │       ├── Memory Room Protocol.json
+│   │       ├── Protocol Room Protocol.json
+│   │       └── Walk Room Protocol.json
+│   ├── CHANGELOG.md
+│   ├── Commands.rtf
+│   ├── config
+│   │   ├── rag_lanes.json
+│   │   └── rag.yaml
+│   ├── configs
+│   │   └── experiments
+│   │       └── champion_challenger.json
+│   ├── conftest.py
+│   ├── contract_registry.json
+│   ├── contracts
+│   │   ├── contract_registry.json
+│   │   ├── gates
+│   │   │   ├── coherence_gate.json
+│   │   │   ├── integrity_linter.json
+│   │   │   ├── plain_language_rewriter.json
+│   │   │   ├── refusal_library.json
+│   │   │   └── stones_alignment_filter.json
+│   │   ├── hallway
+│   │   │   └── hallway.json
+│   │   ├── orchestrator.json
+│   │   ├── rag
+│   │   │   ├── Error.schema.json
+│   │   │   ├── QueryRequest.schema.json
+│   │   │   ├── QueryResponse.schema.json
+│   │   │   └── TelemetryEvent.schema.json
+│   │   ├── rag_build
+│   │   │   ├── Chunk.schema.json
+│   │   │   ├── CorpusDoc.schema.json
+│   │   │   ├── EmbeddingJob.schema.json
+│   │   │   └── IndexConfig.schema.json
+│   │   ├── rooms
+│   │   │   ├── ai_room.json
+│   │   │   ├── diagnostic_room.json
+│   │   │   ├── entry_room.json
+│   │   │   ├── exit_room.json
+│   │   │   ├── integration_commit_room.json
+│   │   │   ├── memory_room.json
+│   │   │   ├── protocol_room.json
+│   │   │   └── walk_room.json
+│   │   ├── schema
+│   │   │   ├── diagnostics.schema.json
+│   │   │   ├── gates
+│   │   │   │   ├── coherence_gate.schema.json
+│   │   │   │   ├── integrity_linter.schema.json
+│   │   │   │   ├── plain_language_rewriter.schema.json
+│   │   │   │   ├── refusal_library.schema.json
+│   │   │   │   └── stones_alignment_filter.schema.json
+│   │   │   ├── memory.schema.json
+│   │   │   └── rooms.schema.json
+│   │   ├── services
+│   │   │   ├── diagnostics.json
+│   │   │   └── memory.json
+│   │   └── types
+│   │       ├── contracts.d.ts
+│   │       ├── diagnostics.d.ts
+│   │       ├── gate.coherence_gate.d.ts
+│   │       ├── gate.integrity_linter.d.ts
+│   │       ├── gate.plain_language_rewriter.d.ts
+│   │       ├── gate.refusal_library.d.ts
+│   │       ├── gate.stones_alignment_filter.d.ts
+│   │       ├── memory.d.ts
+│   │       └── rooms.d.ts
+│   ├── contracts.schema.json
+│   ├── DEMO_README.md
+│   ├── demo.py
+│   ├── diagnostic_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── capture.cpython-313.pyc
+│   │   │   ├── completion.cpython-313.pyc
+│   │   │   ├── diagnostic_room.cpython-313.pyc
+│   │   │   ├── mapping.cpython-313.pyc
+│   │   │   ├── readiness.cpython-313.pyc
+│   │   │   ├── sensing.cpython-313.pyc
+│   │   │   └── types.cpython-313.pyc
+│   │   ├── capture.py
+│   │   ├── completion.py
+│   │   ├── diagnostic_room.py
+│   │   ├── example_usage.py
+│   │   ├── mapping.py
+│   │   ├── readiness.py
+│   │   ├── README.md
+│   │   ├── sensing.py
+│   │   ├── tests
+│   │   │   ├── __pycache__
+│   │   │   │   └── test_diagnostic_room.cpython-313-pytest-8.4.1.pyc
+│   │   │   └── test_diagnostic_room.py
+│   │   └── types.py
+│   ├── DIAGNOSTIC_ROOM_SUMMARY.md
+│   ├── directory_tree.txt
+│   ├── ENTRY_ROOM_EXPLANATION.md
+│   ├── EXIT_ROOM_SUMMARY.md
+│   ├── filetree.txt
+│   ├── fixtures
+│   │   ├── rag
+│   │   │   ├── error.bad.json
+│   │   │   ├── error.good.json
+│   │   │   ├── query_request.bad.json
+│   │   │   ├── query_request.good.json
+│   │   │   ├── query_response.bad.json
+│   │   │   ├── query_response.good.json
+│   │   │   ├── telemetry.bad.json
+│   │   │   └── telemetry.good.json
+│   │   └── rag_build
+│   │       ├── chunk.bad.json
+│   │       ├── chunk.good.json
+│   │       ├── corpus_doc.bad.json
+│   │       ├── corpus_doc.good.json
+│   │       ├── embedding_job.bad.json
+│   │       ├── embedding_job.good.json
+│   │       ├── index_config.bad.json
+│   │       └── index_config.good.json
+│   ├── hallway
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── audit.cpython-313.pyc
+│   │   │   ├── errors.cpython-313.pyc
+│   │   │   ├── example_usage.cpython-313.pyc
+│   │   │   ├── gates.cpython-313.pyc
+│   │   │   ├── hallway.cpython-313.pyc
+│   │   │   ├── logging.cpython-313.pyc
+│   │   │   ├── orchestrator.cpython-313.pyc
+│   │   │   ├── planner.cpython-313.pyc
+│   │   │   ├── ports.cpython-313.pyc
+│   │   │   ├── rag_observability.cpython-313.pyc
+│   │   │   ├── rooms_registry.cpython-313.pyc
+│   │   │   ├── schema_utils.cpython-313.pyc
+│   │   │   ├── steps.cpython-313.pyc
+│   │   │   ├── types.cpython-313.pyc
+│   │   │   ├── upcaster.cpython-313.pyc
+│   │   │   └── validation.cpython-313.pyc
+│   │   ├── adapters
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── _faiss_store.cpython-313.pyc
+│   │   │   │   ├── fs_storage.cpython-313.pyc
+│   │   │   │   ├── id_factory.cpython-313.pyc
+│   │   │   │   ├── mock_adapters.cpython-313.pyc
+│   │   │   │   ├── ports_builder.cpython-313.pyc
+│   │   │   │   └── rag_adapter.cpython-313.pyc
+│   │   │   ├── _faiss_store.py
+│   │   │   ├── fs_storage.py
+│   │   │   ├── id_factory.py
+│   │   │   ├── mock_adapters.py
+│   │   │   ├── ports_builder.py
+│   │   │   └── rag_adapter.py
+│   │   ├── audit.py
+│   │   ├── config
+│   │   │   └── hallway.contract.json
+│   │   ├── errors.py
+│   │   ├── example_usage.py
+│   │   ├── gates.py
+│   │   ├── hallway.py
+│   │   ├── logging.py
+│   │   ├── orchestrator.py
+│   │   ├── planner.py
+│   │   ├── ports.py
+│   │   ├── rag_observability.py
+│   │   ├── README.md
+│   │   ├── room_schemas
+│   │   │   ├── diagnostic_room.schema.json
+│   │   │   ├── entry_room.schema.json
+│   │   │   ├── exit_room.schema.json
+│   │   │   ├── integration_commit_room.schema.json
+│   │   │   ├── memory_room.schema.json
+│   │   │   ├── protocol_room.schema.json
+│   │   │   └── walk_room.schema.json
+│   │   ├── rooms_registry.py
+│   │   ├── schema_utils.py
+│   │   ├── schemas
+│   │   │   └── hallway_v0_2.schema.json
+│   │   ├── steps.py
+│   │   ├── tests
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── test_hallway_decline.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_hallway_decline.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   ├── test_hallway_decline.cpython-313.pyc
+│   │   │   │   ├── test_hallway_happy.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_hallway_happy.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   ├── test_rooms_registry.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_rooms_registry.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   ├── test_schema_utils.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_schema_utils.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   ├── test_schema_validation.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_schema_validation.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   ├── test_upcaster_helpers.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_upcaster_helpers.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   ├── test_upcaster_roundtrip.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   └── test_upcaster_roundtrip.cpython-313-pytest-8.4.2.pyc
+│   │   │   ├── test_hallway_decline.py
+│   │   │   ├── test_hallway_happy.py
+│   │   │   ├── test_rooms_registry.py
+│   │   │   ├── test_schema_utils.py
+│   │   │   ├── test_schema_validation.py
+│   │   │   ├── test_upcaster_helpers.py
+│   │   │   └── test_upcaster_roundtrip.py
+│   │   ├── types.py
+│   │   ├── upcaster.py
+│   │   └── validation.py
+│   ├── HALLWAY_IMPLEMENTATION_SUMMARY.md
+│   ├── INTEGRATION_COMMIT_ROOM_SUMMARY.md
+│   ├── logs
+│   │   ├── rag
+│   │   │   └── 2025-09-12.jsonl
+│   │   └── README.md
+│   ├── MEMORY_ROOM_SUMMARY.md
+│   ├── protocol_room
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   └── protocol_room.cpython-313.pyc
+│   │   ├── canon.py
+│   │   ├── completion.py
+│   │   ├── depth.py
+│   │   ├── example_usage.py
+│   │   ├── integrity.py
+│   │   ├── mapping.py
+│   │   ├── protocol_room.py
+│   │   ├── README.md
+│   │   ├── tests
+│   │   │   ├── __pycache__
+│   │   │   │   └── test_protocol_room.cpython-313-pytest-8.4.1.pyc
+│   │   │   └── test_protocol_room.py
+│   │   └── types.py
+│   ├── PROTOCOL_ROOM_SUMMARY.md
+│   ├── pytest.ini
+│   ├── rag_pipeline
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   └── cli.cpython-313.pyc
+│   │   ├── cli.py
+│   │   ├── configs
+│   │   │   ├── embedding_job_accuracy.json
+│   │   │   ├── embedding_job_latency.json
+│   │   │   ├── index_accuracy.json
+│   │   │   └── index_latency.json
+│   │   ├── env.example
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── embedders.cpython-313.pyc
+│   │   │   │   ├── indexer.cpython-313.pyc
+│   │   │   │   ├── nn.cpython-313.pyc
+│   │   │   │   └── rag_service.cpython-313.pyc
+│   │   │   ├── embedders.py
+│   │   │   ├── indexer.py
+│   │   │   ├── nn.py
+│   │   │   └── rag_service.py
+│   │   └── tests
+│   │       ├── __pycache__
+│   │       │   ├── test_index_build.cpython-313-pytest-8.4.1.pyc
+│   │       │   └── test_query_e2e.cpython-313-pytest-8.4.1.pyc
+│   │       ├── test_index_build.py
+│   │       └── test_query_e2e.py
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── rooms
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   └── __init__.cpython-313.pyc
+│   │   ├── coverage
+│   │   │   ├── clover.xml
+│   │   │   ├── coverage-final.json
+│   │   │   ├── lcov-report
+│   │   │   │   ├── base.css
+│   │   │   │   ├── block-navigation.js
+│   │   │   │   ├── favicon.png
+│   │   │   │   ├── index.html
+│   │   │   │   ├── prettify.css
+│   │   │   │   ├── prettify.js
+│   │   │   │   ├── rooms
+│   │   │   │   │   ├── entry_room
+│   │   │   │   │   │   ├── completion.ts.html
+│   │   │   │   │   │   ├── consent.ts.html
+│   │   │   │   │   │   ├── diagnostics.ts.html
+│   │   │   │   │   │   ├── gates.ts.html
+│   │   │   │   │   │   ├── index.html
+│   │   │   │   │   │   ├── index.ts.html
+│   │   │   │   │   │   ├── pace.ts.html
+│   │   │   │   │   │   └── reflection.ts.html
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   └── index.ts.html
+│   │   │   │   ├── sort-arrow-sprite.png
+│   │   │   │   └── sorter.js
+│   │   │   └── lcov.info
+│   │   ├── diagnostic_room
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── capture.cpython-313.pyc
+│   │   │   │   ├── completion.cpython-313.pyc
+│   │   │   │   ├── diagnostic_room.cpython-313.pyc
+│   │   │   │   ├── mapping.cpython-313.pyc
+│   │   │   │   ├── readiness.cpython-313.pyc
+│   │   │   │   ├── room_types.cpython-313.pyc
+│   │   │   │   ├── sensing.cpython-313.pyc
+│   │   │   │   └── types.cpython-313.pyc
+│   │   │   ├── capture.py
+│   │   │   ├── completion.py
+│   │   │   ├── diagnostic_room.py
+│   │   │   ├── example_usage.py
+│   │   │   ├── mapping.py
+│   │   │   ├── readiness.py
+│   │   │   ├── README.md
+│   │   │   ├── room_types.py
+│   │   │   ├── sensing.py
+│   │   │   └── tests
+│   │   │       ├── __pycache__
+│   │   │       │   ├── test_diagnostic_room.cpython-313-pytest-8.4.1.pyc
+│   │   │       │   └── test_diagnostic_room.cpython-313-pytest-8.4.2.pyc
+│   │   │       └── test_diagnostic_room.py
+│   │   ├── entry_room
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── completion.cpython-313.pyc
+│   │   │   │   ├── consent.cpython-313.pyc
+│   │   │   │   ├── diagnostics.cpython-313.pyc
+│   │   │   │   ├── entry_room.cpython-313.pyc
+│   │   │   │   ├── gates.cpython-313.pyc
+│   │   │   │   ├── pace.cpython-313.pyc
+│   │   │   │   ├── reflection.cpython-313.pyc
+│   │   │   │   └── types.cpython-313.pyc
+│   │   │   ├── completion.py
+│   │   │   ├── consent.py
+│   │   │   ├── diagnostics.py
+│   │   │   ├── entry_room.py
+│   │   │   ├── gates.py
+│   │   │   ├── pace.py
+│   │   │   ├── README.md
+│   │   │   ├── reflection.py
+│   │   │   ├── tests
+│   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── test_entry_room.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   │   └── test_entry_room.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   └── test_entry_room.py
+│   │   │   └── types.py
+│   │   ├── example_usage.py
+│   │   ├── exit_room
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── completion.cpython-313.pyc
+│   │   │   │   ├── contract_types.cpython-313.pyc
+│   │   │   │   ├── diagnostics.cpython-313.pyc
+│   │   │   │   ├── exit_room.cpython-313.pyc
+│   │   │   │   ├── memory_commit.cpython-313.pyc
+│   │   │   │   └── reset.cpython-313.pyc
+│   │   │   ├── completion.py
+│   │   │   ├── contract_types.py
+│   │   │   ├── diagnostics.py
+│   │   │   ├── example_usage.py
+│   │   │   ├── exit_room.py
+│   │   │   ├── memory_commit.py
+│   │   │   ├── README.md
+│   │   │   ├── reset.py
+│   │   │   └── tests
+│   │   │       ├── __init__.py
+│   │   │       ├── __pycache__
+│   │   │       │   ├── __init__.cpython-313.pyc
+│   │   │       │   ├── test_exit_room.cpython-313-pytest-8.4.1.pyc
+│   │   │       │   └── test_exit_room.cpython-313-pytest-8.4.2.pyc
+│   │   │       └── test_exit_room.py
+│   │   ├── index.py
+│   │   ├── integration_commit_room
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── commits.cpython-313.pyc
+│   │   │   │   ├── completion.cpython-313.pyc
+│   │   │   │   ├── contract_types.cpython-313.pyc
+│   │   │   │   ├── example_usage.cpython-313.pyc
+│   │   │   │   ├── integration_commit_room.cpython-313.pyc
+│   │   │   │   ├── integration.cpython-313.pyc
+│   │   │   │   ├── memory_write.cpython-313.pyc
+│   │   │   │   └── pace.cpython-313.pyc
+│   │   │   ├── commits.py
+│   │   │   ├── completion.py
+│   │   │   ├── contract_types.py
+│   │   │   ├── example_usage.py
+│   │   │   ├── integration_commit_room.py
+│   │   │   ├── integration.py
+│   │   │   ├── memory_write.py
+│   │   │   ├── pace.py
+│   │   │   ├── README.md
+│   │   │   └── tests
+│   │   │       ├── __init__.py
+│   │   │       ├── __pycache__
+│   │   │       │   ├── __init__.cpython-313.pyc
+│   │   │       │   ├── test_integration_commit_room.cpython-313-pytest-8.4.1.pyc
+│   │   │       │   └── test_integration_commit_room.cpython-313-pytest-8.4.2.pyc
+│   │   │       └── test_integration_commit_room.py
+│   │   ├── memory_room
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── capture.cpython-313.pyc
+│   │   │   │   ├── completion.cpython-313.pyc
+│   │   │   │   ├── continuity.cpython-313.pyc
+│   │   │   │   ├── contract_types.cpython-313.pyc
+│   │   │   │   ├── control.cpython-313.pyc
+│   │   │   │   ├── governance.cpython-313.pyc
+│   │   │   │   └── memory_room.cpython-313.pyc
+│   │   │   ├── capture.py
+│   │   │   ├── completion.py
+│   │   │   ├── continuity.py
+│   │   │   ├── contract_types.py
+│   │   │   ├── control.py
+│   │   │   ├── example_usage.py
+│   │   │   ├── governance.py
+│   │   │   ├── memory_room.py
+│   │   │   ├── README.md
+│   │   │   └── tests
+│   │   │       ├── __init__.py
+│   │   │       ├── __pycache__
+│   │   │       │   ├── __init__.cpython-313.pyc
+│   │   │       │   ├── test_memory_room.cpython-313-pytest-8.4.1.pyc
+│   │   │       │   └── test_memory_room.cpython-313-pytest-8.4.2.pyc
+│   │   │       └── test_memory_room.py
+│   │   ├── protocol_room
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── canon.cpython-313.pyc
+│   │   │   │   ├── completion.cpython-313.pyc
+│   │   │   │   ├── depth.cpython-313.pyc
+│   │   │   │   ├── integrity.cpython-313.pyc
+│   │   │   │   ├── mapping.cpython-313.pyc
+│   │   │   │   ├── protocol_room.cpython-313.pyc
+│   │   │   │   ├── room_types.cpython-313.pyc
+│   │   │   │   └── types.cpython-313.pyc
+│   │   │   ├── canon.py
+│   │   │   ├── completion.py
+│   │   │   ├── depth.py
+│   │   │   ├── example_usage.py
+│   │   │   ├── integrity.py
+│   │   │   ├── mapping.py
+│   │   │   ├── protocol_room.py
+│   │   │   ├── README.md
+│   │   │   ├── room_types.py
+│   │   │   └── tests
+│   │   │       ├── __pycache__
+│   │   │       │   ├── test_protocol_room.cpython-313-pytest-8.4.1.pyc
+│   │   │       │   └── test_protocol_room.cpython-313-pytest-8.4.2.pyc
+│   │   │       └── test_protocol_room.py
+│   │   ├── README.md
+│   │   ├── requirements.txt
+│   │   └── walk_room
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-313.pyc
+│   │       │   ├── completion.cpython-313.pyc
+│   │       │   ├── contract_types.cpython-313.pyc
+│   │       │   ├── pacing.cpython-313.pyc
+│   │       │   ├── sequencer.cpython-313.pyc
+│   │       │   ├── step_diag.cpython-313.pyc
+│   │       │   └── walk_room.cpython-313.pyc
+│   │       ├── completion.py
+│   │       ├── contract_types.py
+│   │       ├── example_usage.py
+│   │       ├── pacing.py
+│   │       ├── README.md
+│   │       ├── sequencer.py
+│   │       ├── step_diag.py
+│   │       ├── tests
+│   │       │   ├── __pycache__
+│   │       │   │   ├── test_walk_room.cpython-313-pytest-8.4.1.pyc
+│   │       │   │   └── test_walk_room.cpython-313-pytest-8.4.2.pyc
+│   │       │   └── test_walk_room.py
+│   │       └── walk_room.py
+│   ├── scripts
+│   │   ├── index_canon.py
+│   │   ├── validate_cross_contracts.py
+│   │   ├── validate_dependencies.py
+│   │   └── validate.py
+│   ├── sonar-project.properties
+│   ├── sonarqube-macos.sh
+│   ├── SUMMARY.md
+│   ├── system_config.json
+│   ├── test_demo.py
+│   ├── test_diagnostic_room_comprehensive.py
+│   ├── test_diagnostic_room_simple.py
+│   ├── tests
+│   │   ├── __pycache__
+│   │   │   └── test_rag_wiring.cpython-313-pytest-8.4.1.pyc
+│   │   ├── contracts
+│   │   │   ├── __pycache__
+│   │   │   │   ├── test_rag_build_schemas.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   └── test_rag_schemas.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_rag_build_schemas.py
+│   │   │   └── test_rag_schemas.py
+│   │   ├── hallway
+│   │   │   ├── __pycache__
+│   │   │   │   ├── test_legacy_parity.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_orchestrator_flow.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_orchestrator_flow.cpython-313-pytest-8.4.2.pyc
+│   │   │   │   ├── test_planner.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   ├── test_policy_budget.cpython-313-pytest-8.4.1.pyc
+│   │   │   │   └── test_schema_failures.cpython-313-pytest-8.4.1.pyc
+│   │   │   ├── test_legacy_parity.py
+│   │   │   ├── test_orchestrator_flow.py
+│   │   │   ├── test_planner.py
+│   │   │   ├── test_policy_budget.py
+│   │   │   └── test_schema_failures.py
+│   │   └── test_rag_wiring.py
+│   ├── verify_production_logic.py
+│   ├── WALK_ROOM_SUMMARY.md
+│   └── web_demo.py
+├── logs
+├── manifests
+│   ├── canon_batch_2025-09-11.json
+│   ├── canon_batch_2025-09-11.yaml
+│   ├── canon_batch_2025-09-12.json
+│   └── canon_batch_2025-09-12.yaml
+├── README.md
+├── test-protocols
+│   ├── after_conflict_returning_to_integrity.json
+│   ├── decision_making_in_rhythm.json
+│   ├── do_we_need_to_raise.json
+│   ├── holding_expansion_without_overwhelm.json
+│   ├── holding_my_rhythm.json
+│   ├── letting_go_of_the_startup.json
+│   ├── mapping_whats_emerging.json
+│   ├── naming_whats_not_working.json
+│   ├── nothing_forced_nothing_withheld.json
+│   ├── preparing_for_a_repair_conversation.json
+│   ├── presence_is_productivity.json
+│   ├── rebalancing_after_rapid_change.json
+│   ├── right_person,_right_role_(hiring_&_role_clarity).json
+│   ├── sensing_the_whole_system.json
+│   ├── speaking_to_funders_without_shrinking_the_system.json
+│   ├── support_rhythm_and_escalations.json
+│   ├── sustaining_rhythm_without_a_hero.json
+│   ├── team_protocol_relational_repair.json
+│   ├── the_energy_behind_the_ask.json
+│   ├── the_leadership_im_actually_carrying.json
+│   ├── the_rhythm_of_legacy.json
+│   ├── the_speed_of_trust__user_facing.json
+│   ├── walking_the_financial_rhythm_(cashflow,_runway,_resource_allocation).json
+│   └── when_its_not_repairable.json
+├── tests
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   └── test_rag_eval.cpython-313-pytest-8.4.1.pyc
+│   └── test_rag_eval.py
+└── tools
+    ├── build_manifest.py
+    ├── copy_manifest_protocols.py
+    ├── expand_dummy_jsonl.py
+    ├── git-nb.sh
+    ├── manifests
+    │   ├── canon_batch_2025-09-12.json
+    │   └── canon_batch_2025-09-12.yaml
+    ├── query.py
+    └── tail_rag_logs.py
+
+125 directories, 642 files

@@ -1,0 +1,72 @@
+prompts:
+- query_id: integrity-001
+  prompt: How does integrity drive sustainable growth in my business?
+  stone: integrity-is-the-growth-strategy
+  stone_meaning: 'We grow only through what aligns with the core. Even if that means
+    growing slowly, or differently.
+
+    '
+  field: business-strategy
+  difficulty: medium
+  assertions:
+  - Should explain how integrity creates long-term value
+  - Should mention the importance of trust-based relationships
+  - Should reference the difference between integrity-driven and growth-at-all-costs
+    approaches
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - letting_go_of_the_startup
+  top_k_for_generation: 8
+- query_id: integrity-002
+  prompt: What does it mean to make integrity the growth strategy for my team?
+  stone: integrity-is-the-growth-strategy
+  stone_meaning: 'We grow only through what aligns with the core. Even if that means
+    growing slowly, or differently.
+
+    '
+  field: team-building
+  difficulty: medium
+  assertions:
+  - Should emphasize building trust and authentic relationships
+  - Should mention the importance of consistent values and actions
+  - Should reference the value of reputation and word-of-mouth growth
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - team_protocol_relational_repair
+  top_k_for_generation: 8
+- query_id: integrity-003
+  prompt: How can I maintain integrity when facing pressure to compromise for short-term
+    gains?
+  stone: integrity-is-the-growth-strategy
+  stone_meaning: 'We grow only through what aligns with the core. Even if that means
+    growing slowly, or differently.
+
+    '
+  field: ethical-leadership
+  difficulty: hard
+  assertions:
+  - Should provide strategies for staying true to values under pressure
+  - Should mention the importance of long-term thinking
+  - Should reference the cost of compromising integrity
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - after_conflict_returning_to_integrity
+  - letting_go_of_the_startup
+  top_k_for_generation: 8
+- query_id: integrity-004
+  prompt: What are the signs that I'm compromising integrity for growth?
+  stone: integrity-is-the-growth-strategy
+  stone_meaning: 'We grow only through what aligns with the core. Even if that means
+    growing slowly, or differently.
+
+    '
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify patterns of value compromise
+  - Should mention feelings of discomfort or guilt
+  - Should reference the importance of checking alignment with core values
+  gold_doc_ids:
+  - naming_whats_not_working
+  - after_conflict_returning_to_integrity
+  top_k_for_generation: 8

@@ -1,0 +1,7 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dim": 384,
+  "count": 435,
+  "build_time": 1757641572.6130729,
+  "index_type": "IndexFlatIP"
+}

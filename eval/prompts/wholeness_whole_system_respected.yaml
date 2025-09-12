@@ -1,0 +1,71 @@
+prompts:
+- query_id: wholeness-001
+  prompt: How do I respect the whole system when making decisions that affect my organization?
+  stone: built-for-wholeness
+  stone_meaning: 'We don''t fragment people to make them fit. We create scaffolds
+    that hold complexity, humanity, and contradiction.
+
+    '
+  field: systems-thinking
+  difficulty: hard
+  assertions:
+  - Should emphasize considering all stakeholders and interconnected parts
+  - Should mention the importance of understanding ripple effects
+  - Should reference the value of holistic decision-making
+  gold_doc_ids:
+  - sensing_the_whole_system
+  - the_leadership_im_actually_carrying
+  top_k_for_generation: 8
+- query_id: wholeness-002
+  prompt: What does it mean to see my team as a whole system rather than individual
+    parts?
+  stone: built-for-wholeness
+  stone_meaning: 'We don''t fragment people to make them fit. We create scaffolds
+    that hold complexity, humanity, and contradiction.
+
+    '
+  field: team-management
+  difficulty: medium
+  assertions:
+  - Should explain the importance of understanding team dynamics and relationships
+  - Should mention the value of supporting the whole team's health and growth
+  - Should reference the interconnectedness of individual and collective success
+  gold_doc_ids:
+  - sustaining_rhythm_without_a_hero
+  - team_protocol_relational_repair
+  top_k_for_generation: 8
+- query_id: wholeness-003
+  prompt: How can I practice wholeness when dealing with complex organizational challenges?
+  stone: built-for-wholeness
+  stone_meaning: 'We don''t fragment people to make them fit. We create scaffolds
+    that hold complexity, humanity, and contradiction.
+
+    '
+  field: organizational-development
+  difficulty: hard
+  assertions:
+  - Should provide strategies for understanding system-wide impacts
+  - Should mention the importance of considering multiple perspectives
+  - Should reference the value of integrated solutions over isolated fixes
+  gold_doc_ids:
+  - sensing_the_whole_system
+  - mapping_whats_emerging
+  - rebalancing_after_rapid_change
+  top_k_for_generation: 8
+- query_id: wholeness-004
+  prompt: What are the signs that I'm not respecting the whole system in my decisions?
+  stone: built-for-wholeness
+  stone_meaning: 'We don''t fragment people to make them fit. We create scaffolds
+    that hold complexity, humanity, and contradiction.
+
+    '
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify patterns of fragmented or siloed thinking
+  - Should mention the importance of noticing unintended consequences
+  - Should reference the value of seeking diverse perspectives
+  gold_doc_ids:
+  - naming_whats_not_working
+  - sensing_the_whole_system
+  top_k_for_generation: 8

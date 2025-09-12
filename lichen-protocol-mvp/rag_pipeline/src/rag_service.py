@@ -4,6 +4,7 @@ RAG service shim that serves QueryRequest -> QueryResponse using local indices.
 
 import json
 import time
+import os
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 import numpy as np
@@ -50,17 +51,40 @@ class RagService:
             QueryResponse dictionary conforming to QueryResponse.schema.json
         """
         start_time = time.time()
+        retrieve_start = None
+        rerank_start = None
+        synth_start = None
 
+        # Check if RAG is enabled via environment flag
+        rag_enabled = os.getenv("RAG_ENABLED", "1") == "1"
+        if not rag_enabled:
+            total_ms = int((time.time() - start_time) * 1000)
+            return {
+                "v": "1.0",
+                "trace_id": payload.get("trace_id", "unknown"),
+                "mode": "disabled",
+                "latency_ms": total_ms,
+                "retrieve_ms": 0,
+                "rerank_ms": 0,
+                "synth_ms": 0,
+                "total_ms": total_ms,
+                "results": [],
+                "reason": "flags.disabled"
+            }
+
+        # Get RAG profile from environment (default "fast")
+        rag_profile = os.getenv("RAG_PROFILE", "fast")
+        
         # Extract query parameters
-        mode = payload["mode"]
+        mode = payload.get("mode", rag_profile)  # Use profile as default mode if not specified
         query_text = payload["query"]
         top_k = payload.get("top_k", 5)
         filters = payload.get("filters", {})
         include_spans = payload.get("include_spans", True)
         max_chunk_tokens = payload.get("max_chunk_tokens")
 
-        # Select index based on mode
-        if mode == "latency":
+        # Select index based on mode/profile
+        if mode in ["latency", "fast"]:
             nn_index = self.latency_nn
             metadata = self.latency_metadata
             index_meta = self.latency_meta
@@ -74,6 +98,9 @@ class RagService:
             metadata = self.latency_metadata
             index_meta = self.latency_meta
 
+        # Start retrieval timing
+        retrieve_start = time.time()
+        
         # For this MVP, we'll use a simple text-based similarity
         # In production, this would use an embedding model
         query_vector_list = self._text_to_vector(query_text, nn_index.embedding_dim)
@@ -88,6 +115,10 @@ class RagService:
             filtered_vectors = nn_index.vectors[filtered_indices]
             filtered_nn = type(nn_index)(filtered_vectors, metric=nn_index.metric)
             search_results = filtered_nn.search(query_vector, min(top_k, len(filtered_indices)))
+
+            # End retrieval timing, start reranking timing
+            retrieve_ms = int((time.time() - retrieve_start) * 1000)
+            rerank_start = time.time()
 
             # Map back to original indices
             results = []
@@ -106,7 +137,8 @@ class RagService:
                     "chunk_id": meta["chunk_id"],
                     "rank": rank,
                     "score": score,
-                    "text": text
+                    "text": text,
+                    "grounding_score": meta.get("grounding_score", 0.0)
                 }
 
                 # Add source information if available
@@ -118,19 +150,41 @@ class RagService:
                     result["spans"] = [meta["span"]]
 
                 results.append(result)
+            
+            # End reranking timing, start synthesis timing
+            rerank_ms = int((time.time() - rerank_start) * 1000)
+            synth_start = time.time()
         else:
             results = []
+            retrieve_ms = int((time.time() - retrieve_start) * 1000)
+            rerank_start = time.time()
+            rerank_ms = int((time.time() - rerank_start) * 1000)
+            synth_start = time.time()
 
-        # Calculate latency
-        latency_ms = int((time.time() - start_time) * 1000)
+        # End synthesis timing
+        synth_ms = int((time.time() - synth_start) * 1000)
+        
+        # Calculate total latency
+        total_ms = int((time.time() - start_time) * 1000)
+        
+        # Calculate overall grounding score (average of top results)
+        overall_grounding_score = 0.0
+        if results:
+            grounding_scores = [r.get("grounding_score", 0.0) for r in results]
+            overall_grounding_score = sum(grounding_scores) / len(grounding_scores)
 
         # Build response
         response = {
             "v": "1.0",
             "trace_id": payload.get("trace_id", "unknown"),
             "mode": mode,
-            "latency_ms": latency_ms,
-            "results": results
+            "latency_ms": total_ms,  # Keep for backward compatibility
+            "retrieve_ms": retrieve_ms,
+            "rerank_ms": rerank_ms,
+            "synth_ms": synth_ms,
+            "total_ms": total_ms,
+            "results": results,
+            "grounding_score": overall_grounding_score
         }
 
         # Add warnings if any

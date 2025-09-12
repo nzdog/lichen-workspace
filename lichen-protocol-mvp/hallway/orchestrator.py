@@ -4,12 +4,43 @@ Pure control flow orchestrator for the Hallway Protocol.
 
 import os
 import time
+import uuid
 from typing import Dict, Any, List, Optional
+
+# Global warmup counter for performance budget tracking
+_warmup_counter = 0
+_warmup_threshold = 3
 
 from .types import ExecutionContext, FinalOutput, StepStatus, StepResult
 from .steps import run_step
 from .logging import emit_event
 from .errors import BudgetExceededError
+from .rag_observability import log_rag_turn
+
+
+def _is_warmup_query() -> bool:
+    """
+    Check if this is a warm-up query and increment counter.
+    
+    Returns:
+        True if this is a warm-up query (first 3 queries per process)
+    """
+    global _warmup_counter
+    _warmup_counter += 1
+    return _warmup_counter <= _warmup_threshold
+
+
+def _get_timing_ms(start_time: float) -> float:
+    """
+    Get high precision timing in milliseconds.
+    
+    Args:
+        start_time: Start time from time.perf_counter()
+        
+    Returns:
+        Elapsed time in milliseconds with microsecond precision
+    """
+    return (time.perf_counter() - start_time) * 1000.0
 
 
 async def run_hallway(ctx: ExecutionContext) -> FinalOutput:
@@ -37,7 +68,7 @@ async def run_hallway(ctx: ExecutionContext) -> FinalOutput:
             step_result = await run_step(room_id, ctx)
             
             # Add RAG retrieval stage for AI Room
-            if room_id == "ai_room" and os.getenv("RAG_ENABLED", "0") == "1":
+            if room_id == "ai_room":
                 rag_result = await _run_rag_retrieval(ctx)
                 if rag_result:
                     # Merge RAG results into the step result
@@ -227,7 +258,49 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         rag_adapter = get_rag_adapter()
         
         if not rag_adapter.enabled:
-            return None
+            # Track warmup for disabled RAG events too
+            is_warmup = _is_warmup_query()
+            
+            # Log disabled RAG event
+            turn_id = str(uuid.uuid4())
+            payloads = ctx.state.get("payloads", {})
+            ai_room_payload = payloads.get("ai_room", {})
+            brief = ai_room_payload.get("brief", {})
+            query = ""
+            if isinstance(brief, dict):
+                query = brief.get("task", "") or brief.get("query", "")
+            else:
+                query = str(brief) if brief else ""
+            
+            expected_stones = brief.get("stones", []) if isinstance(brief, dict) else []
+            
+            log_rag_turn(
+                request_id=turn_id,
+                lane="disabled",
+                query=query,
+                topk=0,
+                stages={"retrieve_ms": 0.0, "rerank_ms": 0.0, "synth_ms": 0.0, "total_ms": 0.0},
+                grounding_score=None,
+                stones=expected_stones,
+                citations=[],
+                flags={"rag_enabled": False, "fallback": "flags.disabled", "warmup": is_warmup}
+            )
+            
+            # Return fallback response when RAG is disabled
+            return {
+                "meta": {
+                    "retrieval": {
+                        "lane": "disabled",
+                        "top_k": 0,
+                        "used_doc_ids": [],
+                        "citations": []
+                    },
+                    "stones_alignment": 0.0,
+                    "grounding_score_1to5": 1,
+                    "insufficient_support": True,
+                    "reason": "flags.disabled"
+                }
+            }
         
         # Extract query from context
         # Look for brief or query in the payload
@@ -244,15 +317,41 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         if not query:
             return None
         
+        # Generate turn ID for this RAG operation
+        turn_id = str(uuid.uuid4())
+        
         # Determine lane from request meta or default
         lane = ai_room_payload.get("meta", {}).get("rag_lane", rag_adapter.default_lane)
         
-        # Run retrieval
-        start_time = time.time()
+        # Track if this is a warm-up query for performance budgets
+        is_warmup = _is_warmup_query()
+        
+        # Run retrieval with high precision timing
+        retrieve_start = time.perf_counter()
         retrieval_results = rag_adapter.retrieve(query, lane)
-        retrieval_time = (time.time() - start_time) * 1000
+        retrieve_ms = _get_timing_ms(retrieve_start)
         
         if not retrieval_results:
+            # Log empty result with new schema
+            latency_metrics = {
+                "retrieve_ms": round(retrieve_ms, 3),
+                "rerank_ms": 0.0,
+                "synth_ms": 0.0,
+                "total_ms": round(retrieve_ms, 3)
+            }
+            
+            log_rag_turn(
+                request_id=turn_id,
+                lane=lane,
+                query=query,
+                topk=0,
+                stages=latency_metrics,
+                grounding_score=1.0,
+                stones=expected_stones,
+                citations=[],
+                flags={"rag_enabled": True, "fallback": None, "warmup": is_warmup}
+            )
+            
             return {
                 "meta": {
                     "retrieval": {
@@ -270,10 +369,10 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         # Extract context texts for generation
         context_texts = [result.get("text", "") for result in retrieval_results]
         
-        # Run generation
-        start_time = time.time()
+        # Run generation with high precision timing
+        synth_start = time.perf_counter()
         generation_result = rag_adapter.generate(query, context_texts, lane)
-        generation_time = (time.time() - start_time) * 1000
+        synth_ms = _get_timing_ms(synth_start)
         
         # Calculate Stones alignment
         expected_stones = brief.get("stones", []) if isinstance(brief, dict) else []
@@ -285,25 +384,121 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
         )
         
         # Calculate grounding score (1-5 scale based on citations and alignment)
-        grounding_score = 1
+        grounding_score_1to5 = 1
         if generation_result["citations"]:
-            grounding_score += 1
+            grounding_score_1to5 += 1
         if stones_alignment > 0.5:
-            grounding_score += 1
+            grounding_score_1to5 += 1
         if stones_alignment > 0.7:
-            grounding_score += 1
+            grounding_score_1to5 += 1
         if generation_result["hallucinations"] == 0:
-            grounding_score += 1
+            grounding_score_1to5 += 1
+        
+        # Convert to 0-1 scale for guardrail checks
+        grounding_score_normalized = (grounding_score_1to5 - 1) / 4.0
+        
+        # Load minimum grounding threshold from config
+        from .gates import GroundingGate
+        gate = GroundingGate()
+        min_grounding_threshold = gate.min_grounding
+        
+        # Check grounding threshold guardrail
+        if grounding_score_normalized < min_grounding_threshold:
+            # Log refusal event
+            refusal_latency = {
+                "retrieve_ms": round(retrieve_ms, 3),
+                "rerank_ms": 0.0,
+                "synth_ms": round(synth_ms, 3),
+                "total_ms": round(retrieve_ms + synth_ms, 3)
+            }
+            
+            log_rag_turn(
+                request_id=turn_id,
+                lane=lane,
+                query=query,
+                topk=len(retrieval_results),
+                stages=refusal_latency,
+                grounding_score=grounding_score_normalized,
+                stones=expected_stones,
+                citations=[],
+                flags={"rag_enabled": True, "fallback": "low_grounding", "refusal": "low_grounding", "warmup": is_warmup}
+            )
+            
+            # Return fallback refusal payload
+            return {
+                "text": "Cannot answer confidently: insufficient grounding.",
+                "citations": [],
+                "meta": {
+                    "profile": lane,
+                    "fallback": "low_grounding",
+                    "grounding_score": grounding_score_normalized
+                }
+            }
+        
+        # Check citations requirement guardrail
+        citations = generation_result.get("citations", [])
+        if not citations:
+            # Log refusal event for missing citations
+            refusal_latency = {
+                "retrieve_ms": round(retrieve_ms, 3),
+                "rerank_ms": 0.0,
+                "synth_ms": round(synth_ms, 3),
+                "total_ms": round(retrieve_ms + synth_ms, 3)
+            }
+            
+            log_rag_turn(
+                request_id=turn_id,
+                lane=lane,
+                query=query,
+                topk=len(retrieval_results),
+                stages=refusal_latency,
+                grounding_score=grounding_score_normalized,
+                stones=expected_stones,
+                citations=[],
+                flags={"rag_enabled": True, "fallback": "no_citations", "refusal": "no_citations", "warmup": is_warmup}
+            )
+            
+            # Return fallback refusal payload
+            return {
+                "text": "Cannot answer confidently: insufficient grounding.",
+                "citations": [],
+                "meta": {
+                    "profile": lane,
+                    "fallback": "no_citations",
+                    "grounding_score": grounding_score_normalized
+                }
+            }
         
         # Extract document IDs
         used_doc_ids = list(set(result.get("doc", "") for result in retrieval_results if result.get("doc")))
         
-        # Log RAG metrics
+        # Log RAG turn for observability with new schema
+        latency_metrics = {
+            "retrieve_ms": round(retrieve_ms, 3),
+            "rerank_ms": 0.0,  # Not implemented in current adapter
+            "synth_ms": round(synth_ms, 3),
+            "total_ms": round(retrieve_ms + synth_ms, 3)
+        }
+        
+        log_rag_turn(
+            request_id=turn_id,
+            lane=lane,
+            query=query,
+            topk=len(retrieval_results),
+            stages=latency_metrics,
+            grounding_score=grounding_score_normalized,
+            stones=expected_stones,
+            citations=citations,
+            flags={"rag_enabled": True, "fallback": None, "warmup": is_warmup},
+            trace={"used_doc_ids": used_doc_ids}
+        )
+        
+        # Log RAG metrics (existing event system)
         emit_event(ctx, phase="rag_retrieval", 
                   query=query, lane=lane, top_k=len(retrieval_results),
                   doc_ids=used_doc_ids, stones_alignment=stones_alignment,
-                  grounding_score=grounding_score, hallucinations=generation_result["hallucinations"],
-                  latency_ms_retriever=retrieval_time, latency_ms_generator=generation_time)
+                  grounding_score=grounding_score_normalized, hallucinations=generation_result["hallucinations"],
+                  latency_ms_retriever=retrieve_ms, latency_ms_generator=synth_ms)
         
         return {
             "meta": {
@@ -314,7 +509,7 @@ async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
                     "citations": generation_result["citations"]
                 },
                 "stones_alignment": stones_alignment,
-                "grounding_score_1to5": grounding_score,
+                "grounding_score_1to5": grounding_score_1to5,
                 "insufficient_support": insufficient_support
             },
             "rag_context": {

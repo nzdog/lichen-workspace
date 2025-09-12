@@ -1,0 +1,17 @@
+[
+  {
+    "query_id": "q-002",
+    "query": "What are the key principles of effective leadership?",
+    "gold_doc_ids": [
+      "the_leadership_im_actually_carrying",
+      "presence_is_productivity",
+      "the_speed_of_trust__user_facing"
+    ],
+    "expected_stones": [
+      "presence-is-productivity",
+      "the-speed-of-trust",
+      "integrity-is-the-growth-strategy"
+    ],
+    "top_k_for_generation": 8
+  }
+]

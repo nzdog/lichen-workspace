@@ -1,0 +1,62 @@
+prompts:
+- query_id: stewardship-001
+  prompt: How do I shift from an ownership mindset to a stewardship mindset in my
+    business?
+  stone: stewardship-not-ownership
+  stone_meaning: "The system is not a possession\u2014it is a responsibility. I walk\
+    \ with it, not above it.\n"
+  field: leadership
+  difficulty: hard
+  assertions:
+  - Should explain the difference between ownership and stewardship
+  - Should mention the responsibility to care for rather than control
+  - Should reference the long-term perspective of stewardship
+  gold_doc_ids:
+  - the_leadership_im_actually_carrying
+  - letting_go_of_the_startup
+  top_k_for_generation: 8
+- query_id: stewardship-002
+  prompt: What does it mean to steward my team's growth rather than manage their performance?
+  stone: stewardship-not-ownership
+  stone_meaning: "The system is not a possession\u2014it is a responsibility. I walk\
+    \ with it, not above it.\n"
+  field: team-management
+  difficulty: medium
+  assertions:
+  - Should emphasize supporting individual growth and development
+  - Should mention creating conditions for people to thrive
+  - Should reference the difference between control and care
+  gold_doc_ids:
+  - right_person,_right_role_(hiring_&_role_clarity)
+  - sustaining_rhythm_without_a_hero
+  top_k_for_generation: 8
+- query_id: stewardship-003
+  prompt: How can I practice stewardship when making decisions about company resources?
+  stone: stewardship-not-ownership
+  stone_meaning: "The system is not a possession\u2014it is a responsibility. I walk\
+    \ with it, not above it.\n"
+  field: resource-management
+  difficulty: medium
+  assertions:
+  - Should emphasize responsible use of resources
+  - Should mention considering the impact on all stakeholders
+  - Should reference the importance of sustainability
+  gold_doc_ids:
+  - walking_the_financial_rhythm_(cashflow,_runway,_resource_allocation)
+  - the_leadership_im_actually_carrying
+  top_k_for_generation: 8
+- query_id: stewardship-004
+  prompt: What are the signs that I'm operating from ownership rather than stewardship?
+  stone: stewardship-not-ownership
+  stone_meaning: "The system is not a possession\u2014it is a responsibility. I walk\
+    \ with it, not above it.\n"
+  field: self-awareness
+  difficulty: easy
+  assertions:
+  - Should identify possessive or controlling behaviors
+  - Should mention the feeling of needing to control outcomes
+  - Should reference the importance of letting go of attachment to results
+  gold_doc_ids:
+  - letting_go_of_the_startup
+  - naming_whats_not_working
+  top_k_for_generation: 8

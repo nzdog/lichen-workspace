@@ -1,0 +1,171 @@
+name: Redaction & Repo Hygiene
+
+on:
+  pull_request:
+    branches: [ main, master, develop ]
+  push:
+    branches: [ main, master, develop ]
+
+jobs:
+  check:
+    name: Security & Privacy Checks
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history for better analysis
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
+          pip install pytest watchdog
+      
+      - name: Run redaction unit tests
+        run: |
+          echo "🧪 Running redaction and observability tests..."
+          pytest -q eval/tests/ hallway/tests/ -k "redaction or observability" --tb=short
+      
+      - name: Ensure no logs or indexes in tree
+        run: |
+          echo "🔍 Checking for tracked logs and indexes..."
+          if git ls-files | grep -E '(^|/)logs/|\.jsonl$|lichen-chunker/index/'; then
+            echo "❌ Found tracked logs or indexes in repository"
+            echo "These files should be excluded by .gitignore:"
+            git ls-files | grep -E '(^|/)logs/|\.jsonl$|lichen-chunker/index/'
+            exit 1
+          else
+            echo "✅ No logs or indexes found in tracked files"
+          fi
+      
+      - name: Ensure large/binary files not tracked
+        run: |
+          echo "🔍 Checking for large or binary files..."
+          large_files=()
+          binary_files=()
+          
+          # Check file sizes
+          while IFS= read -r file; do
+            if [ -f "$file" ]; then
+              size=$(wc -c <"$file")
+              if [ $size -gt 1000000 ]; then
+                large_files+=("$file ($(numfmt --to=iec $size))")
+              fi
+              
+              # Check for binary files
+              if file "$file" | grep -q "binary\|executable\|compressed\|image\|audio\|video"; then
+                binary_files+=("$file")
+              fi
+            fi
+          done < <(git ls-files)
+          
+          if [ ${#large_files[@]} -gt 0 ]; then
+            echo "❌ Found large files in repository:"
+            printf '%s\n' "${large_files[@]}"
+            exit 1
+          fi
+          
+          if [ ${#binary_files[@]} -gt 0 ]; then
+            echo "❌ Found binary files in repository:"
+            printf '%s\n' "${binary_files[@]}"
+            exit 1
+          fi
+          
+          echo "✅ No large or binary files found in tracked files"
+      
+      - name: Check .gitignore coverage
+        run: |
+          echo "🔍 Verifying .gitignore coverage..."
+          
+          # Check if .gitignore exists
+          if [ ! -f .gitignore ]; then
+            echo "❌ .gitignore file not found"
+            exit 1
+          fi
+          
+          # Check for required patterns
+          required_patterns=(
+            "logs/"
+            "*.jsonl"
+            "lichen-chunker/index/"
+            "*.faiss"
+            "*.pkl"
+            "*.parquet"
+          )
+          
+          missing_patterns=()
+          for pattern in "${required_patterns[@]}"; do
+            if ! grep -q "$pattern" .gitignore; then
+              missing_patterns+=("$pattern")
+            fi
+          done
+          
+          if [ ${#missing_patterns[@]} -gt 0 ]; then
+            echo "❌ Missing patterns in .gitignore:"
+            printf '%s\n' "${missing_patterns[@]}"
+            exit 1
+          fi
+          
+          echo "✅ .gitignore has required patterns"
+      
+      - name: Check pre-commit hook
+        run: |
+          echo "🔍 Verifying pre-commit hook..."
+          
+          if [ ! -f .git/hooks/pre-commit ]; then
+            echo "❌ Pre-commit hook not found"
+            exit 1
+          fi
+          
+          if [ ! -x .git/hooks/pre-commit ]; then
+            echo "❌ Pre-commit hook not executable"
+            exit 1
+          fi
+          
+          echo "✅ Pre-commit hook exists and is executable"
+      
+      - name: Test redaction functionality
+        run: |
+          echo "🧪 Testing redaction functionality..."
+          
+          # Test with redaction enabled
+          export REDACT_LOGS=1
+          python3 -c "
+          import sys
+          sys.path.insert(0, 'lichen-protocol-mvp/hallway')
+          from redaction import redact_text
+          result = redact_text('Contact john@example.com for details')
+          assert '[EMAIL_REDACTED]' in result
+          assert 'john@example.com' not in result
+          print('✅ Redaction enabled test passed')
+          "
+          
+          # Test with redaction disabled
+          export REDACT_LOGS=0
+          python3 -c "
+          import sys
+          sys.path.insert(0, 'lichen-protocol-mvp/hallway')
+          from redaction import redact_text
+          result = redact_text('Contact john@example.com for details')
+          assert 'john@example.com' in result
+          assert '[EMAIL_REDACTED]' not in result
+          print('✅ Redaction disabled test passed')
+          "
+      
+      - name: Security summary
+        run: |
+          echo "🎉 All security and privacy checks passed!"
+          echo "✅ Redaction tests passed"
+          echo "✅ No sensitive files in repository"
+          echo "✅ No large or binary files tracked"
+          echo "✅ .gitignore properly configured"
+          echo "✅ Pre-commit hook functional"
+          echo "✅ Redaction system working correctly"

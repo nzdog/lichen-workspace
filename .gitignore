@@ -49,6 +49,8 @@ Thumbs.db
 # Logs
 *.log
 logs/
+**/logs/
+*.jsonl
 
 # Runtime data
 pids
@@ -133,6 +135,9 @@ data_small_chunks/
 # Artifacts and build outputs
 artifacts/
 index/
+
+# Lichen chunker indexes (may contain sensitive data)
+lichen-chunker/index/
 
 # Test outputs
 .pytest_cache/

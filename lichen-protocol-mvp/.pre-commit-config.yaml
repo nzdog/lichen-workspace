@@ -21,3 +21,9 @@ repos:
         language: system
         pass_filenames: false
         files: ^(contracts/|tests/contracts/)
+      - id: block-vector-files
+        name: block-vector-files
+        entry: python tools/block_vector_files.py
+        language: system
+        pass_filenames: true
+        files: ^(\.vector/|lichen-chunker/index/)

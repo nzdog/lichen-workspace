@@ -121,6 +121,10 @@ class FAISSStore:
         # Extract model name from the cross-encoder
         return getattr(self.cross_encoder, 'model_name', 'unknown')
     
+    def get_reranker_name(self) -> Optional[str]:
+        """Get the reranker model name (alias for get_reranker_model_name)."""
+        return self.get_reranker_model_name()
+    
     def _load_index(self) -> faiss.Index:
         """Load FAISS index from disk."""
         index_path = Path(self.index_path)
@@ -422,3 +426,33 @@ def get_store(lane: str = None) -> Optional[FAISSStore]:
         # Return any available store for backward compatibility
         return next(iter(_store_instances.values())) if _store_instances else None
     return _store_instances.get(lane)
+
+
+def get_embedder_name(lane: str) -> str:
+    """Get the embedding model name for a specific lane."""
+    store = get_store(lane)
+    if store:
+        return store.get_embedder_name()
+    return "unknown"
+
+
+def get_index_info(lane: str) -> Dict[str, Any]:
+    """Get index information (path, dim, count) for a specific lane."""
+    store = get_store(lane)
+    if store:
+        return store.get_index_info()
+    return {
+        "path": "unknown",
+        "dim": 0,
+        "count": 0,
+        "lane": lane,
+        "model_name": "unknown"
+    }
+
+
+def get_reranker_name(lane: str) -> Optional[str]:
+    """Get the reranker model name for a specific lane."""
+    store = get_store(lane)
+    if store:
+        return store.get_reranker_name()
+    return None
