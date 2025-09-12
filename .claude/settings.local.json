@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(python3 tools/tail_rag_logs.py:*)",
+      "Bash(python:*)",
+      "Bash(jq:*)",
+      "Bash(yq:*)",
+      "Read(//Users/Nigel/Desktop/**)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(git merge:*)",
+      "Bash(git push:*)",
+      "Bash(git tag:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
