@@ -2,3 +2,6 @@ pytest
 watchdog
 pyyaml
 jsonschema
+black
+ruff
+mypy
