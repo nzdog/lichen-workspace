@@ -10,7 +10,7 @@ import os
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from protocol_room.protocol_room import ProtocolRoom, run_protocol_room
+from rooms.protocol_room.protocol_room import ProtocolRoom, run_protocol_room
 from protocol_room.types import ProtocolRoomInput, ProtocolRoomOutput, ProtocolDepth, ProtocolText, ScenarioMapping, IntegrityResult
 from protocol_room.canon import fetch_protocol_text, get_protocol_by_depth, list_available_protocols
 from protocol_room.depth import select_protocol_depth, format_depth_label, get_depth_description

@@ -4,7 +4,7 @@ Main orchestrator that implements the Protocol Room Protocol and Contract
 """
 
 from typing import Optional, Dict, Any, List
-from protocol_room.types import ProtocolRoomInput, ProtocolRoomOutput, ProtocolDepth, ProtocolText
+from rooms.protocol_room.types import ProtocolRoomInput, ProtocolRoomOutput, ProtocolDepth, ProtocolText
 from .canon import fetch_protocol_text, get_protocol_by_depth
 from .depth import select_protocol_depth, format_depth_label, get_depth_description
 from .mapping import map_scenario_to_protocol, get_scenario_mapping
