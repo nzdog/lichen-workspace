@@ -32,8 +32,7 @@ jobs:
       - name: Run redaction unit tests
         run: |
           echo "🧪 Running redaction and observability tests..."
-          pytest -q eval/tests/ hallway/tests/ -k "redaction or observability" --tb=short
-      
+          pytest -q eval/tests/ lichen-protocol-mvp/hallway/tests/ -k "redaction or observability" --tb=short      
       - name: Ensure no logs or indexes in tree
         run: |
           echo "🔍 Checking for tracked logs and indexes..."
