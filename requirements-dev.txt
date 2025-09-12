@@ -1,0 +1,4 @@
+pytest
+watchdog
+pyyaml
+jsonschema
