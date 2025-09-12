@@ -381,7 +381,7 @@ class TestRunProtocolRoomFunction:
         
         result = run_protocol_room(input_data)
         
-        assert isinstance(result, dict)
+        assert isinstance(result, ProtocolRoomOutput)
         assert 'display_text' in result
         assert 'next_action' in result
         assert result['next_action'] == "continue"
