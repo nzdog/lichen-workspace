@@ -4,7 +4,7 @@ Implements Canon Fidelity theme from Protocol Room Protocol
 """
 
 from typing import Dict, Optional, List
-from .room_types import ProtocolText, Protocols
+from .types import ProtocolText, Protocols
 
 
 # Static canon store - in production this would be a database or file system

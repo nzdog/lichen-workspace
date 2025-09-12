@@ -4,7 +4,7 @@ Implements Depth Selection theme from Protocol Room Protocol
 """
 
 from typing import Optional
-from .room_types import ProtocolDepth
+from .types import ProtocolDepth
 
 
 def select_protocol_depth(

@@ -4,7 +4,7 @@ Implements Scenario Mapping theme from Protocol Room Protocol
 """
 
 from typing import List, Optional
-from .room_types import ScenarioMapping, Protocols, Scenarios
+from .types import ScenarioMapping, Protocols, Scenarios
 
 
 # Static scenario mapping registry - deterministic only, no AI or heuristics
