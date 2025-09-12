@@ -113,7 +113,17 @@ class GroundingGate(GateInterface):
         self.refusal_library = self._load_refusal_library()
     
     def _load_min_grounding(self, config_path: str = None) -> float:
-        """Load minimum grounding threshold from config."""
+        """Load minimum grounding threshold from config with env var override."""
+        import os
+        
+        # Check for environment variable override first
+        env_min_grounding = os.getenv("MIN_GROUNDING")
+        if env_min_grounding:
+            try:
+                return float(env_min_grounding)
+            except ValueError:
+                pass  # Fall back to config file if env var is invalid
+        
         if config_path is None:
             # Try multiple possible config paths
             config_paths = [

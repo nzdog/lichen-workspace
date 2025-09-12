@@ -144,25 +144,29 @@ class RAGObservability:
     
     def log_rag_turn(self, 
                     request_id: str,
-                    profile: str,
+                    lane: str,
                     query: str,
-                    k: int,
-                    latency: Dict[str, int],
-                    grounding_score: float,
-                    citations: List[Dict[str, Any]],
-                    additional_metrics: Optional[Dict[str, Any]] = None) -> None:
+                    topk: int,
+                    stages: Dict[str, int],
+                    grounding_score: Optional[float] = None,
+                    stones: Optional[List[str]] = None,
+                    citations: Optional[List[Dict[str, Any]]] = None,
+                    flags: Optional[Dict[str, Any]] = None,
+                    trace: Optional[Dict[str, Any]] = None) -> None:
         """
-        Log a RAG turn event with new JSONL schema.
+        Log a RAG turn event with updated JSONL schema.
         
         Args:
-            request_id: Unique request identifier
-            profile: RAG profile (fast/accurate)
-            query: User query
-            k: Number of results requested
-            latency: Timing metrics {retrieve_ms, rerank_ms, synth_ms, total_ms}
-            grounding_score: Overall grounding score
-            citations: Citations array with source_id, span_start, span_end
-            additional_metrics: Optional additional metrics
+            request_id: Unique request identifier (UUID v4)
+            lane: RAG lane (fast/accurate)
+            query: User query (will be redacted if REDACT_LOGS=1)
+            topk: Number of results requested
+            stages: Stage timing {retrieve_ms, rerank_ms, synth_ms, total_ms}
+            grounding_score: Overall grounding score 0..1 (null if not computed)
+            stones: List of expected stones/principles (null if not available)
+            citations: Citations array with source_id and span info
+            flags: RAG flags {rag_enabled, fallback}
+            trace: Optional debug info (kept small)
         """
         if not self.enabled or not self._should_sample():
             return
@@ -170,20 +174,26 @@ class RAGObservability:
         try:
             # Build event with new JSONL schema
             event = {
-                "ts": datetime.utcnow().isoformat() + "Z",
+                "ts": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),  # Second precision
                 "request_id": request_id,
-                "profile": profile,
-                "k": k,
-                "latency": latency,
+                "lane": lane,
+                "topk": topk,
+                "stones": stones,
                 "grounding_score": grounding_score,
-                "citations": citations
+                "stages": stages,
+                "flags": flags or {"rag_enabled": True, "fallback": None},
+                "citations": citations or [],
+                "trace": trace
             }
             
-            # Add additional metrics if provided
-            if additional_metrics:
-                event.update(additional_metrics)
+            # Handle query redaction - only redact the query field if redaction is enabled
+            if self.redact:
+                event["query"] = self._redact_query(query)
+            else:
+                # Include truncated query for development
+                event["query"] = self._truncate_text(query)
             
-            # Apply redaction before writing
+            # Apply full redaction before writing (preserves existing redaction system)
             redactor = get_redactor()
             redacted_event = redactor.redact_dict(event)
             
@@ -192,7 +202,7 @@ class RAGObservability:
             # Ensure directory exists before writing
             Path(log_file).parent.mkdir(parents=True, exist_ok=True)
             with open(log_file, "a", buffering=1) as f:  # Line buffering
-                f.write(json.dumps(redacted_event) + "\n")
+                f.write(json.dumps(redacted_event, separators=(',', ':')) + "\n")
                 
         except Exception as e:
             # Never break the product flow
@@ -204,12 +214,14 @@ _rag_obs = RAGObservability()
 
 
 def log_rag_turn(request_id: str,
-                profile: str,
+                lane: str,
                 query: str,
-                k: int,
-                latency: Dict[str, int],
-                grounding_score: float,
-                citations: List[Dict[str, Any]],
-                additional_metrics: Optional[Dict[str, Any]] = None) -> None:
+                topk: int,
+                stages: Dict[str, int],
+                grounding_score: Optional[float] = None,
+                stones: Optional[List[str]] = None,
+                citations: Optional[List[Dict[str, Any]]] = None,
+                flags: Optional[Dict[str, Any]] = None,
+                trace: Optional[Dict[str, Any]] = None) -> None:
     """Log a RAG turn event using the global observability instance."""
-    _rag_obs.log_rag_turn(request_id, profile, query, k, latency, grounding_score, citations, additional_metrics)
+    _rag_obs.log_rag_turn(request_id, lane, query, topk, stages, grounding_score, stones, citations, flags, trace)
