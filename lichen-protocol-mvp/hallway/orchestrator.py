@@ -2,6 +2,8 @@
 Pure control flow orchestrator for the Hallway Protocol.
 """
 
+import os
+import time
 from typing import Dict, Any, List, Optional
 
 from .types import ExecutionContext, FinalOutput, StepStatus, StepResult
@@ -33,6 +35,14 @@ async def run_hallway(ctx: ExecutionContext) -> FinalOutput:
 
             # Execute the step
             step_result = await run_step(room_id, ctx)
+            
+            # Add RAG retrieval stage for AI Room
+            if room_id == "ai_room" and os.getenv("RAG_ENABLED", "0") == "1":
+                rag_result = await _run_rag_retrieval(ctx)
+                if rag_result:
+                    # Merge RAG results into the step result
+                    step_result.outputs.update(rag_result)
+            
             ctx.add_step(step_result)
 
             emit_event(
@@ -198,3 +208,137 @@ def _build_audit_chain(steps: List[Dict[str, Any]]) -> List[str]:
         prev_hash = step_hash
 
     return chain
+
+
+async def _run_rag_retrieval(ctx: ExecutionContext) -> Optional[Dict[str, Any]]:
+    """
+    Run RAG retrieval stage for AI Room.
+    
+    Args:
+        ctx: Execution context
+        
+    Returns:
+        Dict with RAG results or None if RAG is not applicable
+    """
+    try:
+        from .adapters.rag_adapter import get_rag_adapter
+        
+        # Get RAG adapter
+        rag_adapter = get_rag_adapter()
+        
+        if not rag_adapter.enabled:
+            return None
+        
+        # Extract query from context
+        # Look for brief or query in the payload
+        payloads = ctx.state.get("payloads", {})
+        ai_room_payload = payloads.get("ai_room", {})
+        
+        # Try to extract query from brief
+        brief = ai_room_payload.get("brief", {})
+        if isinstance(brief, dict):
+            query = brief.get("task", "") or brief.get("query", "")
+        else:
+            query = str(brief) if brief else ""
+        
+        if not query:
+            return None
+        
+        # Determine lane from request meta or default
+        lane = ai_room_payload.get("meta", {}).get("rag_lane", rag_adapter.default_lane)
+        
+        # Run retrieval
+        start_time = time.time()
+        retrieval_results = rag_adapter.retrieve(query, lane)
+        retrieval_time = (time.time() - start_time) * 1000
+        
+        if not retrieval_results:
+            return {
+                "meta": {
+                    "retrieval": {
+                        "lane": lane,
+                        "top_k": 0,
+                        "used_doc_ids": [],
+                        "citations": []
+                    },
+                    "stones_alignment": 0.0,
+                    "grounding_score_1to5": 1,
+                    "insufficient_support": True
+                }
+            }
+        
+        # Extract context texts for generation
+        context_texts = [result.get("text", "") for result in retrieval_results]
+        
+        # Run generation
+        start_time = time.time()
+        generation_result = rag_adapter.generate(query, context_texts, lane)
+        generation_time = (time.time() - start_time) * 1000
+        
+        # Calculate Stones alignment
+        expected_stones = brief.get("stones", []) if isinstance(brief, dict) else []
+        stones_alignment = rag_adapter.stones_align(generation_result["answer"], expected_stones)
+        
+        # Check if support is sufficient
+        insufficient_support = not rag_adapter.is_sufficient_support(
+            lane, stones_alignment, generation_result["hallucinations"]
+        )
+        
+        # Calculate grounding score (1-5 scale based on citations and alignment)
+        grounding_score = 1
+        if generation_result["citations"]:
+            grounding_score += 1
+        if stones_alignment > 0.5:
+            grounding_score += 1
+        if stones_alignment > 0.7:
+            grounding_score += 1
+        if generation_result["hallucinations"] == 0:
+            grounding_score += 1
+        
+        # Extract document IDs
+        used_doc_ids = list(set(result.get("doc", "") for result in retrieval_results if result.get("doc")))
+        
+        # Log RAG metrics
+        emit_event(ctx, phase="rag_retrieval", 
+                  query=query, lane=lane, top_k=len(retrieval_results),
+                  doc_ids=used_doc_ids, stones_alignment=stones_alignment,
+                  grounding_score=grounding_score, hallucinations=generation_result["hallucinations"],
+                  latency_ms_retriever=retrieval_time, latency_ms_generator=generation_time)
+        
+        return {
+            "meta": {
+                "retrieval": {
+                    "lane": lane,
+                    "top_k": len(retrieval_results),
+                    "used_doc_ids": used_doc_ids,
+                    "citations": generation_result["citations"]
+                },
+                "stones_alignment": stones_alignment,
+                "grounding_score_1to5": grounding_score,
+                "insufficient_support": insufficient_support
+            },
+            "rag_context": {
+                "query": query,
+                "retrieved_docs": retrieval_results,
+                "generated_answer": generation_result["answer"],
+                "hallucinations": generation_result["hallucinations"]
+            }
+        }
+        
+    except Exception as e:
+        # Log error but don't fail the entire step
+        emit_event(ctx, phase="rag_error", error=str(e))
+        return {
+            "meta": {
+                "retrieval": {
+                    "lane": "unknown",
+                    "top_k": 0,
+                    "used_doc_ids": [],
+                    "citations": []
+                },
+                "stones_alignment": 0.0,
+                "grounding_score_1to5": 1,
+                "insufficient_support": True
+            },
+            "rag_error": str(e)
+        }

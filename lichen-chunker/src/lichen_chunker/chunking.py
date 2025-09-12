@@ -26,7 +26,11 @@ class ProtocolChunker:
         self, 
         max_tokens: int = 600, 
         overlap_tokens: int = 60,
-        encoding_name: str = "cl100k_base"
+        encoding_name: str = "cl100k_base",
+        flatten_fields: bool = False,
+        minimal_normalization: bool = False,
+        sentence_aware: bool = False,
+        add_breadcrumbs: bool = False
     ):
         """
         Initialize chunker.
@@ -35,9 +39,17 @@ class ProtocolChunker:
             max_tokens: Maximum tokens per chunk
             overlap_tokens: Number of tokens to overlap between chunks
             encoding_name: Tiktoken encoding name
+            flatten_fields: Whether to flatten long fields (speed profile)
+            minimal_normalization: Whether to use minimal normalization (speed profile)
+            sentence_aware: Whether to use sentence-aware splitting (accuracy profile)
+            add_breadcrumbs: Whether to add breadcrumb lines (accuracy profile)
         """
         self.max_tokens = max_tokens
         self.overlap_tokens = overlap_tokens
+        self.flatten_fields = flatten_fields
+        self.minimal_normalization = minimal_normalization
+        self.sentence_aware = sentence_aware
+        self.add_breadcrumbs = add_breadcrumbs
         
         try:
             self.encoding = tiktoken.get_encoding(encoding_name)

@@ -1,0 +1,18 @@
+{
+  "fast": {
+    "precision@5": 0.40,
+    "recall@20": 0.70,
+    "mrr@10": 0.35,
+    "ndcg@10": 0.55,
+    "stones_alignment": 0.70,
+    "hallucination_rate": 0.02
+  },
+  "accurate": {
+    "precision@5": 0.60,
+    "recall@20": 0.85,
+    "mrr@10": 0.50,
+    "ndcg@10": 0.70,
+    "stones_alignment": 0.80,
+    "hallucination_rate": 0.01
+  }
+}

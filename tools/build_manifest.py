@@ -13,6 +13,8 @@ import json
 import os
 import argparse
 import random
+import re
+import hashlib
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Tuple, Set
@@ -22,7 +24,21 @@ import yaml
 # Fixed seed for deterministic selection
 random.seed(42)
 
-# Required Stones (all 10)
+# True Stones canon (fallback list)
+TRUE_STONES_FALLBACK = [
+    "Light Before Form",
+    "The Speed of Trust",
+    "Stewardship, Not Ownership",
+    "Clarity Over Cleverness",
+    "Presence Is Productivity",
+    "Nothing Forced, Nothing Withheld",
+    "No Contortion for Acceptance",
+    "Integrity Is the Growth Strategy",
+    "Built for Wholeness",
+    "The System Walks With Us",
+]
+
+# Required Stones (all 10) - legacy list for backward compatibility
 ALL_STONES = {
     "stewardship-not-ownership",
     "integrity-is-the-growth-strategy", 
@@ -61,6 +77,45 @@ STAGE_QUOTAS = {"Explore": 8, "Act": 8, "Integrate": 8}
 LENGTH_QUOTAS = {"short": 0, "medium": 4, "long": 20}
 
 
+def slugify(text: str) -> str:
+    """Convert text to slug format: lowercase, replace non-alphanumeric with hyphens, strip edges."""
+    if not text:
+        return ""
+    # Convert to lowercase
+    slug = text.lower()
+    # Replace any non [a-z0-9]+ with a single hyphen
+    slug = re.sub(r'[^a-z0-9]+', '-', slug)
+    # Strip leading/trailing hyphens
+    slug = slug.strip('-')
+    return slug
+
+
+def load_true_stones(path: str = "docs/foundation_stones.txt") -> Tuple[List[str], Dict[str, str]]:
+    """Load true Stones canon from file or use fallback. Returns (slugs, slug_to_display_map)."""
+    stones_file = Path(path)
+    if stones_file.exists():
+        try:
+            with open(stones_file, 'r', encoding='utf-8') as f:
+                stones = [line.strip() for line in f if line.strip() and not line.strip().startswith('#')]
+            print(f"Loaded {len(stones)} true Stones from {stones_file}")
+        except Exception as e:
+            print(f"Warning: Could not load {stones_file}: {e}")
+            stones = TRUE_STONES_FALLBACK
+    else:
+        print(f"Using fallback true Stones list ({len(TRUE_STONES_FALLBACK)} stones)")
+        stones = TRUE_STONES_FALLBACK
+    
+    # Create slug to display name mapping
+    slug_to_display = {}
+    slugs = []
+    for stone in stones:
+        slug = slugify(stone)
+        slugs.append(slug)
+        slug_to_display[slug] = stone
+    
+    return slugs, slug_to_display
+
+
 def estimate_tokens(content: str) -> int:
     """Estimate token count as ~chars/4."""
     return len(content) // 4
@@ -91,15 +146,15 @@ def extract_protocol_info(file_path: Path, protocol_data: Dict) -> Dict:
     
     metadata = protocol_data.get("Metadata", {})
     
-    # Handle stones - convert to strings if they're dicts
+    # Handle stones - convert to strings if they're dicts and normalize to slugs
     stones_raw = metadata.get("Stones", [])
     stones = set()
     for stone in stones_raw:
         if isinstance(stone, str):
-            stones.add(stone)
+            stones.add(slugify(stone))
         elif isinstance(stone, dict):
             # Extract string value from dict if needed
-            stones.add(str(stone))
+            stones.add(slugify(str(stone)))
     
     # Handle fields - convert to strings if they're dicts  
     fields_raw = metadata.get("Fields", [])
@@ -277,6 +332,139 @@ def select_protocols(candidates: List[Dict]) -> List[Dict]:
     return selected
 
 
+def compute_true_stones_coverage(selected_ids: Set[str], protocol_stones: Dict[str, Set[str]], true_stones_slugs: List[str]) -> Dict[str, int]:
+    """Compute coverage of true Stones in the current selection."""
+    coverage = {stone: 0 for stone in true_stones_slugs}
+    for pid in selected_ids:
+        for stone in protocol_stones.get(pid, set()):
+            if stone in coverage:
+                coverage[stone] += 1
+    return coverage
+
+
+def print_coverage_table(coverage: Dict[str, int], title: str, slug_to_display: Dict[str, str]):
+    """Print a coverage table for true Stones."""
+    print(f"\n🪨 {title}:")
+    for stone in sorted(coverage.keys()):
+        count = coverage[stone]
+        print(f"- {stone}: {count}")
+
+
+def find_swap_candidates(selected_ids: Set[str], candidates: List[Dict], protocol_stones: Dict[str, Set[str]],
+                        missing_stones: List[str], true_stones_slugs: List[str]) -> List[Tuple[str, str]]:
+    """Find candidate protocols to add for missing stones. Returns (protocol_id, stone_slug)."""
+    swap_candidates = []
+    
+    for missing_stone in missing_stones:
+        # Find protocols not yet selected that include this stone
+        stone_candidates = []
+        for candidate in candidates:
+            if candidate["protocol_id"] not in selected_ids and missing_stone in protocol_stones.get(candidate["protocol_id"], set()):
+                # Calculate stone density (number of true stones this protocol covers)
+                stone_density = len(protocol_stones.get(candidate["protocol_id"], set()) & set(true_stones_slugs))
+                stone_candidates.append((stone_density, candidate["est_tokens"], candidate["protocol_id"]))
+        
+        if stone_candidates:
+            # Sort by stone density (descending), then by length (ascending), then alphabetical
+            stone_candidates.sort(key=lambda x: (-x[0], x[1], x[2]))
+            best_candidate_id = stone_candidates[0][2]
+            swap_candidates.append((best_candidate_id, missing_stone))
+    
+    return swap_candidates
+
+
+def find_removal_candidate(selected_ids: Set[str], protocol_stones: Dict[str, Set[str]], 
+                          true_stones_slugs: List[str], candidates: List[Dict]) -> str:
+    """Find a protocol to remove that doesn't contribute uniquely to any stone."""
+    # Calculate how many protocols cover each stone
+    stone_counts = {stone: 0 for stone in true_stones_slugs}
+    for pid in selected_ids:
+        for stone in protocol_stones.get(pid, set()):
+            if stone in stone_counts:
+                stone_counts[stone] += 1
+    
+    # Find protocols that don't contribute uniquely (all their stones are covered elsewhere ≥2)
+    removable_candidates = []
+    for pid in selected_ids:
+        unique_contribution = False
+        for stone in protocol_stones.get(pid, set()):
+            if stone in stone_counts and stone_counts[stone] <= 1:
+                unique_contribution = True
+                break
+        
+        if not unique_contribution:
+            # Calculate total coverage contribution
+            total_contribution = sum(stone_counts.get(stone, 0) for stone in protocol_stones.get(pid, set()) if stone in stone_counts)
+            # Get protocol length for tie-breaking
+            protocol = next((c for c in candidates if c["protocol_id"] == pid), None)
+            length = protocol["est_tokens"] if protocol else 0
+            removable_candidates.append((total_contribution, length, pid))
+    
+    if removable_candidates:
+        # Sort by total contribution (descending), then by length (descending), then alphabetical
+        removable_candidates.sort(key=lambda x: (-x[0], -x[1], x[2]))
+        return removable_candidates[0][2]
+    
+    # Fallback: return the longest protocol
+    longest_protocol = max(selected_ids, key=lambda pid: next((c["est_tokens"] for c in candidates if c["protocol_id"] == pid), 0))
+    return longest_protocol
+
+
+def perform_auto_swaps(selected: List[Dict], candidates: List[Dict], protocol_stones: Dict[str, Set[str]],
+                      true_stones_slugs: List[str], slug_to_display: Dict[str, str], max_swaps: int = 3) -> List[Dict]:
+    """Perform auto-swaps to improve true Stones coverage."""
+    selected_ids = {p["protocol_id"] for p in selected}
+    
+    # Compute initial coverage
+    coverage_before = compute_true_stones_coverage(selected_ids, protocol_stones, true_stones_slugs)
+    print_coverage_table(coverage_before, "True Stones Coverage (before)", slug_to_display)
+    
+    # Identify missing stones
+    missing_stones = [stone for stone in true_stones_slugs if coverage_before[stone] == 0]
+    
+    if not missing_stones:
+        print("\n✅ All true Stones are covered!")
+        return selected
+    
+    print(f"\n🔍 Found {len(missing_stones)} missing stones: {missing_stones}")
+    
+    # Perform swaps (up to max_swaps)
+    swaps_performed = 0
+    for missing_stone in missing_stones[:max_swaps]:
+        # Find candidates for this stone
+        swap_candidates = find_swap_candidates(selected_ids, candidates, protocol_stones, [missing_stone], true_stones_slugs)
+        
+        if not swap_candidates:
+            print(f"⚠️ No available protocol covers {missing_stone}; leaving as 0 this round.")
+            continue
+        
+        # Get the best candidate
+        new_protocol_id, target_stone = swap_candidates[0]
+        
+        # Find a protocol to remove
+        removed_protocol_id = find_removal_candidate(selected_ids, protocol_stones, true_stones_slugs, candidates)
+        
+        # Perform the swap
+        selected_ids.remove(removed_protocol_id)
+        selected_ids.add(new_protocol_id)
+        
+        # Update the selected list
+        selected = [c for c in candidates if c["protocol_id"] in selected_ids]
+        
+        # Update coverage
+        coverage_before = compute_true_stones_coverage(selected_ids, protocol_stones, true_stones_slugs)
+        
+        print(f"[SWAP] + {new_protocol_id} (adds: {target_stone}) | - {removed_protocol_id}")
+        swaps_performed += 1
+    
+    if swaps_performed > 0:
+        print_coverage_table(coverage_before, "True Stones Coverage (after)", slug_to_display)
+    else:
+        print("\n⚠️ No swaps could be performed")
+    
+    return selected
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build balanced 24-protocol manifest")
     parser.add_argument("--canon", default="~/Desktop/Hybrid_SIS_Build/02_Canon_Exemplars/Protocol_Canon",
@@ -303,8 +491,20 @@ def main():
     
     print(f"Found {len(candidates)} valid protocols")
     
+    # Load true Stones
+    true_stones_slugs, slug_to_display = load_true_stones()
+    print(f"True Stones slugs: {true_stones_slugs}")
+    
+    # Build protocol_stones mapping
+    protocol_stones = {}
+    for candidate in candidates:
+        protocol_stones[candidate["protocol_id"]] = candidate["stones"]
+    
     # Select 24 protocols
     selected = select_protocols(candidates)
+    
+    # Perform auto-swaps to improve true Stones coverage
+    selected = perform_auto_swaps(selected, candidates, protocol_stones, true_stones_slugs, slug_to_display, max_swaps=3)
     
     # Prepare manifest data
     now = datetime.now()
@@ -356,18 +556,6 @@ def main():
     print(f"  Stages: {manifest_data['mix']['stages']}")
     print(f"  Lengths: {manifest_data['mix']['lengths']}")
     
-    # Stones coverage
-    stones_coverage = {}
-    for protocol in selected:
-        for stone in protocol["stones"]:
-            if stone in ALL_STONES:
-                stones_coverage[stone] = stones_coverage.get(stone, 0) + 1
-    
-    print(f"\n🪨 Stones Coverage:")
-    for stone in sorted(ALL_STONES):
-        count = stones_coverage.get(stone, 0)
-        status = "✅" if count >= 2 else "⚠️"
-        print(f"  {status} {stone}: {count}")
     
     # Fields coverage
     fields_coverage = set()
@@ -378,6 +566,16 @@ def main():
     for field in sorted(REQUIRED_FIELDS):
         status = "✅" if field in fields_coverage else "❌"
         print(f"  {status} {field}")
+    
+    # True Stones coverage summary
+    selected_ids = {p["protocol_id"] for p in selected}
+    true_stones_coverage = compute_true_stones_coverage(selected_ids, protocol_stones, true_stones_slugs)
+    
+    covered_count = sum(1 for count in true_stones_coverage.values() if count > 0)
+    total_count = len(true_stones_slugs)
+    
+    print(f"\n📊 Coverage (true Stones): {covered_count}/{total_count} stones covered")
+    print(f"  Missing: {[stone for stone, count in true_stones_coverage.items() if count == 0]}")
 
 
 if __name__ == "__main__":

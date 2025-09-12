@@ -105,6 +105,8 @@ class ChunkMetadata(BaseModel):
     stones: List[str] = Field(default_factory=list)
     created_at: str
     hash: str
+    profile: Optional[str] = None
+    fusion_info: Optional[Dict[str, Any]] = None
 
 
 class Chunk(BaseModel):

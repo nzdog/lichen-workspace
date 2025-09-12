@@ -24,7 +24,18 @@
   },
   "outputs": {
     "display_text": "",
-    "next_action": "continue"
+    "next_action": "continue",
+    "meta": {
+      "retrieval": {
+        "lane": "fast|accurate",
+        "top_k": 0,
+        "used_doc_ids": [],
+        "citations": [{"doc": "string", "chunk": 0}]
+      },
+      "stones_alignment": 0.0,
+      "grounding_score_1to5": 1,
+      "insufficient_support": false
+    }
   },
   "mini_walk_supported": true,
   "completion_prompt_required": false,

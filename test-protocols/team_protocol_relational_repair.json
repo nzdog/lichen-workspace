@@ -1,0 +1,311 @@
+{
+  "Title": "Team Protocol – Relational Repair",
+  "Short Title": "Relational Repair (Team)",
+  "Overall Purpose": "To restore trust, understanding, and effective collaboration within a team after conflict, misunderstanding, or harm.",
+  "Why This Matters": "Unrepaired relational fractures in a team erode trust, reduce performance, and create ongoing tension. Repairing relationships proactively strengthens the foundation for future work.",
+  "When To Use This Protocol": "Use when tension, conflict, or a breakdown in trust has occurred within a team, and you want to restore alignment, connection, and collaborative capacity.",
+  "Overall Outcomes": {
+    "Poor": "You ignore or avoid the strain → The future carries unresolved tension, mistrust, and reduced effectiveness.",
+    "Expected": "You address the surface issues but not the underlying dynamics → The future remains functional but prone to repeated breakdowns.",
+    "Excellent": "You address both surface and root issues, restoring trust and collaboration → The future moves forward stronger and more resilient.",
+    "Transcendent": "Relational repair is embedded in team culture → The future consistently turns conflict into growth and deeper connection."
+  },
+  "Themes": [
+    {
+      "Name": "Naming the Strain",
+      "Purpose of This Theme": "To openly acknowledge that tension or harm exists.",
+      "Why This Matters": "Naming the strain brings the issue into the open, signaling readiness for repair.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You avoid naming the issue.",
+          "Immediate cost": "Tension simmers beneath the surface.",
+          "30-90 day system effect": "Trust continues to erode.",
+          "Signals": "Avoidance of certain topics or people.",
+          "Edge condition": "Fear of making things worse.",
+          "Example moves": "Pretending nothing happened.",
+          "Future effect": "The future carries unresolved tension, mistrust, and reduced effectiveness."
+        },
+        "Expected": {
+          "Present pattern": "You acknowledge the strain briefly but without depth.",
+          "Immediate cost": "Some awareness created, but no clear path forward.",
+          "30-90 day system effect": "Partial relief but recurring issues.",
+          "Signals": "Vague mentions of 'misunderstandings'.",
+          "Edge condition": "Rushing past acknowledgment.",
+          "Example moves": "Saying 'We had a bump' without context.",
+          "Future effect": "The future remains functional but prone to repeated breakdowns."
+        },
+        "Excellent": {
+          "Present pattern": "You clearly name the strain and its impact.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Opens door to meaningful resolution.",
+          "Signals": "Clear, direct conversations about what happened.",
+          "Edge condition": "Balancing honesty with care.",
+          "Example moves": "Stating the specific dynamic or event that caused tension.",
+          "Future effect": "The future moves forward stronger and more resilient."
+        },
+        "Transcendent": {
+          "Present pattern": "Naming strain is normalized and safe.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Trust strengthens with each resolution.",
+          "Signals": "Comfort in naming and addressing tension.",
+          "Edge condition": "Avoiding over-dramatizing minor issues.",
+          "Example moves": "Using regular check-ins to identify tension early.",
+          "Future effect": "The future consistently turns conflict into growth and deeper connection."
+        }
+      },
+      "Guiding Questions": [
+        "What is the strain we need to address?",
+        "Who is affected and how?",
+        "How can we name it in a way that invites repair?"
+      ]
+    },
+    {
+      "Name": "Owning Our Part",
+      "Purpose of This Theme": "To acknowledge personal contributions to the breakdown.",
+      "Why This Matters": "Taking responsibility builds credibility and models accountability.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You deny any role in the problem.",
+          "Immediate cost": "Defensiveness blocks resolution.",
+          "30-90 day system effect": "Conflict remains unresolved.",
+          "Signals": "Blaming others entirely.",
+          "Edge condition": "Fear of losing face or authority.",
+          "Example moves": "Refusing to acknowledge mistakes.",
+          "Future effect": "The future carries unresolved tension, mistrust, and reduced effectiveness."
+        },
+        "Expected": {
+          "Present pattern": "You acknowledge a role but minimize it.",
+          "Immediate cost": "Partial accountability leaves gaps.",
+          "30-90 day system effect": "Trust is partially rebuilt.",
+          "Signals": "Qualified apologies.",
+          "Edge condition": "Avoiding full ownership to protect image.",
+          "Example moves": "Saying 'I could have done better' without specifics.",
+          "Future effect": "The future remains functional but prone to repeated breakdowns."
+        },
+        "Excellent": {
+          "Present pattern": "You fully own your part in the breakdown.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Encourages reciprocal accountability.",
+          "Signals": "Specific and unqualified acknowledgment.",
+          "Edge condition": "Balancing self-responsibility with not over-owning.",
+          "Example moves": "Naming exactly what you did or didn’t do that contributed.",
+          "Future effect": "The future moves forward stronger and more resilient."
+        },
+        "Transcendent": {
+          "Present pattern": "Ownership is standard in conflict resolution.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Accountability becomes cultural.",
+          "Signals": "Frequent, unforced acknowledgment of contributions to issues.",
+          "Edge condition": "Avoiding performative over-apologizing.",
+          "Example moves": "Structured reflection on each person’s contribution.",
+          "Future effect": "The future consistently turns conflict into growth and deeper connection."
+        }
+      },
+      "Guiding Questions": [
+        "What part did I play in this breakdown?",
+        "What could I have done differently?",
+        "How can I communicate my ownership clearly?"
+      ]
+    },
+    {
+      "Name": "Understanding Each Other’s Perspective",
+      "Purpose of This Theme": "To listen for and acknowledge the experiences, needs, and feelings of those involved.",
+      "Why This Matters": "Understanding builds empathy, reduces defensiveness, and opens paths to resolution.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You dismiss or ignore others’ perspectives.",
+          "Immediate cost": "Resentment deepens.",
+          "30-90 day system effect": "Stalemates persist.",
+          "Signals": "Interrupting or invalidating others’ experiences.",
+          "Edge condition": "Assuming you already understand.",
+          "Example moves": "Telling others 'That’s not what happened'.",
+          "Future effect": "The future carries unresolved tension, mistrust, and reduced effectiveness."
+        },
+        "Expected": {
+          "Present pattern": "You listen but only partially acknowledge.",
+          "Immediate cost": "Some understanding, but not enough for full repair.",
+          "30-90 day system effect": "Residual tension remains.",
+          "Signals": "Minimal or formulaic acknowledgment.",
+          "Edge condition": "Listening without reflecting back understanding.",
+          "Example moves": "Saying 'I hear you' without elaboration.",
+          "Future effect": "The future remains functional but prone to repeated breakdowns."
+        },
+        "Excellent": {
+          "Present pattern": "You actively seek and reflect others’ perspectives.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conflicts resolve more quickly.",
+          "Signals": "Detailed reflection of what you’ve heard.",
+          "Edge condition": "Avoiding turning listening into interrogation.",
+          "Example moves": "Summarizing the other person’s view to confirm accuracy.",
+          "Future effect": "The future moves forward stronger and more resilient."
+        },
+        "Transcendent": {
+          "Present pattern": "Perspective-taking is cultural.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conflicts become opportunities for connection.",
+          "Signals": "High comfort in expressing and receiving perspectives.",
+          "Edge condition": "Avoiding over-analysis that delays resolution.",
+          "Example moves": "Embedding perspective-sharing rounds in repair conversations.",
+          "Future effect": "The future consistently turns conflict into growth and deeper connection."
+        }
+      },
+      "Guiding Questions": [
+        "What is their perspective on this situation?",
+        "What do they need me to understand?",
+        "How can I reflect it back accurately?"
+      ]
+    },
+    {
+      "Name": "Agreeing on the Path Forward",
+      "Purpose of This Theme": "To define together how you will prevent recurrence and strengthen the relationship.",
+      "Why This Matters": "A shared plan ensures repair is actionable and sustainable.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You end the conversation without a clear path forward.",
+          "Immediate cost": "Issues may resurface quickly.",
+          "30-90 day system effect": "Cycle of conflict repeats.",
+          "Signals": "No commitments or follow-up after repair talk.",
+          "Edge condition": "Avoiding agreements to keep things light.",
+          "Example moves": "Ending with 'Let’s just move on' without specifics.",
+          "Future effect": "The future carries unresolved tension, mistrust, and reduced effectiveness."
+        },
+        "Expected": {
+          "Present pattern": "You make vague agreements.",
+          "Immediate cost": "Some improvement, but no accountability.",
+          "30-90 day system effect": "Mixed results in preventing recurrence.",
+          "Signals": "Agreements not tracked or revisited.",
+          "Edge condition": "Keeping commitments broad to avoid discomfort.",
+          "Example moves": "Agreeing to 'communicate better' without defining how.",
+          "Future effect": "The future remains functional but prone to repeated breakdowns."
+        },
+        "Excellent": {
+          "Present pattern": "You co-create clear agreements for the future.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Trust grows through follow-through.",
+          "Signals": "Specific commitments with timelines.",
+          "Edge condition": "Balancing firmness with flexibility.",
+          "Example moves": "Agreeing on new check-in practices.",
+          "Future effect": "The future moves forward stronger and more resilient."
+        },
+        "Transcendent": {
+          "Present pattern": "Shared agreements are standard practice.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conflicts transform into stronger collaboration.",
+          "Signals": "Commitments kept and celebrated.",
+          "Edge condition": "Avoiding rigidity that ignores evolving needs.",
+          "Example moves": "Using written agreements as part of repair culture.",
+          "Future effect": "The future consistently turns conflict into growth and deeper connection."
+        }
+      },
+      "Guiding Questions": [
+        "What do we need to agree on to prevent this happening again?",
+        "What commitments will we make to each other?",
+        "How will we track and revisit these agreements?"
+      ]
+    },
+    {
+      "Name": "Reinforcing the Repair",
+      "Purpose of This Theme": "To intentionally follow up and ensure the repair holds over time.",
+      "Why This Matters": "Follow-up solidifies trust and makes repair lasting.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You never check back in after the repair conversation.",
+          "Immediate cost": "Issues quietly resurface.",
+          "30-90 day system effect": "Trust erodes again.",
+          "Signals": "Old patterns return unnoticed.",
+          "Edge condition": "Assuming one conversation is enough.",
+          "Example moves": "Not revisiting the topic after initial talk.",
+          "Future effect": "The future carries unresolved tension, mistrust, and reduced effectiveness."
+        },
+        "Expected": {
+          "Present pattern": "You check in informally without a plan.",
+          "Immediate cost": "Some reinforcement, but gaps remain.",
+          "30-90 day system effect": "Partial stability in the relationship.",
+          "Signals": "Mixed signals about the health of the relationship.",
+          "Edge condition": "Following up only if issues reappear.",
+          "Example moves": "Casual chats about 'how things are going'.",
+          "Future effect": "The future remains functional but prone to repeated breakdowns."
+        },
+        "Excellent": {
+          "Present pattern": "You intentionally follow up to reinforce repair.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Repair holds and deepens.",
+          "Signals": "Positive changes maintained over time.",
+          "Edge condition": "Balancing check-ins with respect for autonomy.",
+          "Example moves": "Scheduling a follow-up meeting to review agreements.",
+          "Future effect": "The future moves forward stronger and more resilient."
+        },
+        "Transcendent": {
+          "Present pattern": "Repair reinforcement is cultural.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "High resilience in collaboration.",
+          "Signals": "Conflicts rarely recur without new contributing factors.",
+          "Edge condition": "Avoiding over-monitoring that feels mistrustful.",
+          "Example moves": "Embedding follow-up rounds into repair processes.",
+          "Future effect": "The future consistently turns conflict into growth and deeper connection."
+        }
+      },
+      "Guiding Questions": [
+        "How will we follow up to ensure the repair holds?",
+        "When will we check in next?",
+        "What signs will tell us the relationship is stronger?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Name one action you will take to reinforce today's repair.",
+    "Identify one signal that shows our relationship is strengthening.",
+    "Choose one commitment to focus on this week to support our path forward."
+  ],
+  "Version": "1",
+  "Created At": "2025-08-13",
+  "Protocol ID": "auto_1754995405062_0",
+  "Category": "",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false,
+      "Type": "",
+      "Description": "",
+      "Version": ""
+    },
+    "Complexity": 3,
+    "Readiness Stage": "Act",
+    "Tone Markers": [
+      "grounded",
+      "invitational",
+      "reassuring"
+    ],
+    "Primary Scenarios": [
+      "Team conflict resolution",
+      "Trust rebuilding"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Estimated Time": "60–90 min",
+    "Related Protocols": [],
+    "Tags": [
+      "conflict-resolution",
+      "team-dynamics",
+      "trust"
+    ],
+    "Stones": [
+      "relational-depth",
+      "repair-in-motion",
+      "plain-speech",
+      "core-signal-naming",
+      "reflection-built-in"
+    ],
+    "Fields": [
+      "relational-repair",
+      "tension-listening",
+      "systemic-safeguards",
+      "values-before-velocity"
+    ],
+    "Bridges": [
+      "relational-integrity",
+      "wholeness-relational"
+    ]
+  }
+}

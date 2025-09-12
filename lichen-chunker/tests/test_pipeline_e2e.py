@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from src.lichen_chunker.pipeline import create_pipeline
+from src.lichen_chunker.pipeline import create_pipeline, resolve_profile
 from src.lichen_chunker.embeddings import SBERTEmbedder
 
 
@@ -390,3 +390,157 @@ def test_preserve_clean_explicit_id():
             for chunk in chunks:
                 assert chunk["metadata"]["protocol_id"] == "my_custom_stable_id"
                 assert chunk["metadata"]["chunk_id"].startswith("my_custom_stable_id::s")
+
+
+def test_resolve_profile():
+    """Test profile resolution."""
+    # Test speed profile
+    speed_config = resolve_profile("speed")
+    assert speed_config["validation"] == False
+    assert speed_config["max_tokens"] == 1000
+    assert speed_config["overlap_tokens"] == 100
+    assert speed_config["backend"] == "sbert"
+    assert speed_config["save_chunks"] == False
+    assert speed_config["duplicate_check"] == False
+    
+    # Test accuracy profile
+    accuracy_config = resolve_profile("accuracy")
+    assert accuracy_config["validation"] == True
+    assert accuracy_config["max_tokens"] == 600
+    assert accuracy_config["overlap_tokens"] == 60
+    assert accuracy_config["backend"] == "openai"
+    assert accuracy_config["save_chunks"] == True
+    assert accuracy_config["duplicate_check"] == True
+    
+    # Test sidebar overrides
+    overrides = {"max_tokens": 800, "backend": "sbert"}
+    overridden_config = resolve_profile("accuracy", overrides)
+    assert overridden_config["max_tokens"] == 800
+    assert overridden_config["backend"] == "sbert"
+    assert overridden_config["validation"] == True  # Still from accuracy profile
+
+
+def test_speed_profile_pipeline():
+    """Test pipeline with speed profile."""
+    protocol_file = create_test_protocol_file()
+    
+    try:
+        # Create pipeline with speed profile
+        pipeline = create_pipeline(profile="speed")
+        
+        # Check pipeline configuration
+        assert pipeline.validation == False
+        assert pipeline.save_chunks == False
+        assert pipeline.duplicate_check == False
+        assert pipeline.max_tokens == 1000
+        assert pipeline.overlap_tokens == 100
+        
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            output_dir = Path(tmp_dir) / "output"
+            
+            # Process file
+            result = pipeline.process_file(protocol_file, output_dir)
+            
+            # Should be valid even without validation
+            assert result.valid
+            assert result.chunks_created > 0
+            
+            # Should not create chunk file in speed mode
+            assert result.chunks_file is None
+            
+            # Should still add to index
+            stats = pipeline.get_stats()
+            assert stats["total_chunks"] > 0
+    
+    finally:
+        protocol_file.unlink(missing_ok=True)
+
+
+def test_accuracy_profile_pipeline():
+    """Test pipeline with accuracy profile."""
+    protocol_file = create_test_protocol_file()
+    
+    try:
+        # Create pipeline with accuracy profile (using SBERT for testing)
+        pipeline = create_pipeline(profile="accuracy", sidebar_overrides={"backend": "sbert"})
+        
+        # Check pipeline configuration
+        assert pipeline.validation == True
+        assert pipeline.save_chunks == True
+        assert pipeline.duplicate_check == True
+        assert pipeline.max_tokens == 600
+        assert pipeline.overlap_tokens == 60
+        
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            output_dir = Path(tmp_dir) / "output"
+            
+            # Process file
+            result = pipeline.process_file(protocol_file, output_dir)
+            
+            # Should be valid with validation
+            assert result.valid
+            assert result.chunks_created > 0
+            
+            # Should create chunk file in accuracy mode
+            assert result.chunks_file is not None
+            chunks_file = Path(result.chunks_file)
+            assert chunks_file.exists()
+            
+            # Check chunk file content
+            with open(chunks_file, 'r') as f:
+                chunks = [json.loads(line) for line in f]
+            
+            assert len(chunks) > 0
+            
+            # Should add to index
+            stats = pipeline.get_stats()
+            assert stats["total_chunks"] > 0
+    
+    finally:
+        protocol_file.unlink(missing_ok=True)
+
+
+def test_profile_sidebar_overrides():
+    """Test that sidebar overrides work with profiles."""
+    protocol_file = create_test_protocol_file()
+    
+    try:
+        # Create accuracy profile with speed-like overrides
+        sidebar_overrides = {
+            "max_tokens": 1000,
+            "overlap_tokens": 100,
+            "backend": "sbert"
+        }
+        
+        pipeline = create_pipeline(profile="accuracy", sidebar_overrides=sidebar_overrides)
+        
+        # Should use overridden values
+        assert pipeline.max_tokens == 1000
+        assert pipeline.overlap_tokens == 100
+        # But keep accuracy profile settings for validation and save_chunks
+        assert pipeline.validation == True
+        assert pipeline.save_chunks == True
+        
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            output_dir = Path(tmp_dir) / "output"
+            
+            result = pipeline.process_file(protocol_file, output_dir)
+            
+            assert result.valid
+            assert result.chunks_created > 0
+            assert result.chunks_file is not None  # Still saves in accuracy mode
+    
+    finally:
+        protocol_file.unlink(missing_ok=True)
+
+
+def test_custom_pipeline_without_profile():
+    """Test custom pipeline creation without profiles."""
+    # Should work the same as before when no profile is specified
+    pipeline = create_pipeline(backend="sbert", max_tokens=400, overlap_tokens=40)
+    
+    assert pipeline.max_tokens == 400
+    assert pipeline.overlap_tokens == 40
+    assert pipeline.validation == True  # Default
+    assert pipeline.save_chunks == True  # Default
+    assert pipeline.duplicate_check == True  # Default

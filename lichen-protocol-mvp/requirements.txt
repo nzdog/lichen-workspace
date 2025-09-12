@@ -12,3 +12,10 @@ pytest-asyncio==1.1.0
 referencing==0.36.2
 rpds-py==0.27.1
 pre-commit~=3.8
+# RAG dependencies
+faiss-cpu>=1.7.4
+numpy>=1.21.0
+sentence-transformers>=2.2.0
+torch>=1.9.0
+scikit-learn>=1.0.0
+PyYAML>=6.0
