@@ -1,8 +1,5 @@
 name: Redaction & Repo Hygiene
-- name: Set up Python:
-  uses: actions/setup-python@v4
-  with:
-    python-version: '3.11'  # Or your needed version
+
 
 - name: Install dependencies
   run: |
@@ -18,7 +15,11 @@ jobs:
   check:
     name: Security & Privacy Checks
     runs-on: ubuntu-latest
-    
+    - name: Set up Python:
+    uses: actions/setup-python@v4
+    with:
+      python-version: '3.11'  # Or your needed version
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
