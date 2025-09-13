@@ -83,39 +83,54 @@ jobs:
           echo "✅ No large or binary files found in tracked files"
       
       - name: Check .gitignore coverage
+        shell: bash
         run: |
-          echo "🔍 Verifying .gitignore coverage..."
-          
-          # Check if .gitignore exists
+          set -euo pipefail
+          echo "🔍 Verifying .gitignore coverage (semantic check)..."
+
           if [ ! -f .gitignore ]; then
             echo "❌ .gitignore file not found"
             exit 1
           fi
-          
-          # Check for required patterns
-          required_patterns=(
-            "logs/"
-            "*.jsonl"
-            "lichen-chunker/index/"
-            "*.faiss"
-            "*.pkl"
-            "*.parquet"
+
+          # Sample paths that MUST be ignored by .gitignore behavior
+          required_paths=(
+            "logs/example.log"
+            "somewhere/file.jsonl"
+            "lichen-chunker/index/dump.faiss"
+            "models/example.pkl"
+            "datasets/part.parquet"
+            ".venv/bin/python"
+            "pkg/.venv/bin/python"
+            ".DS_Store"
           )
-          
-          missing_patterns=()
-          for pattern in "${required_patterns[@]}"; do
-            if ! grep -q "$pattern" .gitignore; then
-              missing_patterns+=("$pattern")
+
+          missing=()
+          for p in "${required_paths[@]}"; do
+            if ! git check-ignore -q "$p"; then
+              missing+=("$p")
             fi
           done
-          
-          if [ ${#missing_patterns[@]} -gt 0 ]; then
-            echo "❌ Missing patterns in .gitignore:"
-            printf '%s\n' "${missing_patterns[@]}"
+
+          if ((${#missing[@]})); then
+            echo "❌ These example paths are NOT ignored by your current .gitignore:"
+            printf '  - %s\n' "${missing[@]}"
+            echo "Hint: add patterns like these if you don't have them yet:"
+            cat <<'PATTERNS'
+    logs/
+    *.jsonl
+    lichen-chunker/index/
+    *.faiss
+    *.pkl
+    *.parquet
+    .venv/
+    **/.venv/
+    .DS_Store
+    PATTERNS
             exit 1
           fi
-          
-          echo "✅ .gitignore has required patterns"
+
+          echo "✅ .gitignore correctly ignores required paths"
       
       - name: Check pre-commit hook
         run: |
