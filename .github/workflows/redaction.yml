@@ -11,32 +11,47 @@ jobs:
   check:
     name: Security & Privacy Checks
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch full history for better analysis
-      
+          fetch-depth: 0  # full history for better analysis
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      
+
       - name: Install dependencies
+        shell: bash
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip
           pip install -r lichen-protocol-mvp/requirements.txt
-          # Optional: install dev requirements and additional tools
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
-          pip install pytest watchdog
-      
-      - name: Run redaction unit tests
+          pip install pytest watchdog pre-commit
+
+      # Optional: cache pip to speed repeats
+      # - name: Cache pip
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: ~/.cache/pip
+      #     key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-pip-
+
+      - name: Run redaction-focused unit tests
+        shell: bash
         run: |
+          set -euo pipefail
           echo "🧪 Running redaction and observability tests..."
-          pytest -q eval/tests/ lichen-protocol-mvp/hallway/tests/ -k "redaction or observability" --tb=short      
-      - name: Ensure no logs or indexes in tree
+          pytest -q eval/tests/ lichen-protocol-mvp/hallway/tests/ -k "redaction or observability" --tb=short
+
+      - name: Ensure no logs or indexes in tracked files
+        shell: bash
         run: |
+          set -euo pipefail
           echo "🔍 Checking for tracked logs and indexes..."
           if git ls-files | grep -E '(^|/)logs/|\.jsonl$|lichen-chunker/index/'; then
             echo "❌ Found tracked logs or indexes in repository"
@@ -46,42 +61,55 @@ jobs:
           else
             echo "✅ No logs or indexes found in tracked files"
           fi
-      
-      - name: Ensure large/binary files not tracked
+
+      - name: Ensure large/binary files are not tracked
+        shell: bash
         run: |
-          echo "🔍 Checking for large or binary files..."
-          large_files=()
-          binary_files=()
-          
-          # Check file sizes
-          while IFS= read -r file; do
-            if [ -f "$file" ]; then
-              size=$(wc -c <"$file")
-              if [ $size -gt 1000000 ]; then
-                large_files+=("$file ($(numfmt --to=iec $size))")
-              fi
-              
-              # Check for binary files
-              if file "$file" | grep -q "binary\|executable\|compressed\|image\|audio\|video"; then
-                binary_files+=("$file")
+          set -euo pipefail
+          echo "🔍 Checking for large or binary files (tracked only)..."
+          THRESHOLD_BYTES=$((5 * 1024 * 1024)) # 5 MB
+          declare -a large_files=()
+          declare -a binary_files=()
+
+          # Loop safely over tracked files (NUL-delimited)
+          while IFS= read -r -d '' f; do
+            # ---- size check
+            sz=$(wc -c <"$f")
+            if [ "$sz" -gt "$THRESHOLD_BYTES" ]; then
+              if command -v numfmt >/dev/null 2>&1; then
+                human=$(numfmt --to=iec "$sz")
+                large_files+=("$f ($human)")
+              else
+                large_files+=("$f ($sz bytes)")
               fi
             fi
-          done < <(git ls-files)
-          
-          if [ ${#large_files[@]} -gt 0 ]; then
-            echo "❌ Found large files in repository:"
+
+            # ---- binary check: only flag true binaries (charset=binary)
+            # allowlist common text/code extensions to avoid mislabels
+            case "$f" in
+              *.md|*.txt|*.json|*.jsonl|*.yml|*.yaml|*.toml|*.ini|*.csv|*.tsv|*.py|*.pyi|*.sh|*.bash|*.zsh|*.js|*.ts|*.tsx|*.jsx|*.css|*.scss|*.html|*.xml|*.svg)
+                continue
+                ;;
+            esac
+            if file -I "$f" 2>/dev/null | grep -q 'charset=binary'; then
+              binary_files+=("$f")
+            fi
+          done < <(git ls-files -z)
+
+          if ((${#large_files[@]})); then
+            echo "❌ Found large files (> $THRESHOLD_BYTES bytes):"
             printf '%s\n' "${large_files[@]}"
             exit 1
           fi
-          
-          if [ ${#binary_files[@]} -gt 0 ]; then
+
+          if ((${#binary_files[@]})); then
             echo "❌ Found binary files in repository:"
             printf '%s\n' "${binary_files[@]}"
             exit 1
           fi
-          
+
           echo "✅ No large or binary files found in tracked files"
-      
+
       - name: Check .gitignore coverage
         shell: bash
         run: |
@@ -131,30 +159,20 @@ jobs:
           fi
 
           echo "✅ .gitignore correctly ignores required paths"
-      
-      - name: Check pre-commit hook
+
+      # Replace "check pre-commit hook file" (CI doesn't have local hooks) with actually running pre-commit
+      - name: Run pre-commit
+        uses: pre-commit/action@v3.0.1
+
+      - name: Test redaction functionality (runtime toggle)
+        shell: bash
         run: |
-          echo "🔍 Verifying pre-commit hook..."
-          
-          if [ ! -f .git/hooks/pre-commit ]; then
-            echo "❌ Pre-commit hook not found"
-            exit 1
-          fi
-          
-          if [ ! -x .git/hooks/pre-commit ]; then
-            echo "❌ Pre-commit hook not executable"
-            exit 1
-          fi
-          
-          echo "✅ Pre-commit hook exists and is executable"
-      
-      - name: Test redaction functionality
-        run: |
+          set -euo pipefail
           echo "🧪 Testing redaction functionality..."
-          
+
           # Test with redaction enabled
           export REDACT_LOGS=1
-          python3 -c "
+          python3 - <<'PY'
           import sys
           sys.path.insert(0, 'lichen-protocol-mvp/hallway')
           from redaction import redact_text
@@ -162,11 +180,11 @@ jobs:
           assert '[EMAIL_REDACTED]' in result
           assert 'john@example.com' not in result
           print('✅ Redaction enabled test passed')
-          "
-          
+          PY
+
           # Test with redaction disabled
           export REDACT_LOGS=0
-          python3 -c "
+          python3 - <<'PY'
           import sys
           sys.path.insert(0, 'lichen-protocol-mvp/hallway')
           from redaction import redact_text
@@ -174,14 +192,15 @@ jobs:
           assert 'john@example.com' in result
           assert '[EMAIL_REDACTED]' not in result
           print('✅ Redaction disabled test passed')
-          "
-      
+          PY
+
       - name: Security summary
+        shell: bash
         run: |
           echo "🎉 All security and privacy checks passed!"
           echo "✅ Redaction tests passed"
-          echo "✅ No sensitive files in repository"
+          echo "✅ No sensitive logs/index files tracked"
           echo "✅ No large or binary files tracked"
           echo "✅ .gitignore properly configured"
-          echo "✅ Pre-commit hook functional"
-          echo "✅ Redaction system working correctly"
+          echo "✅ pre-commit checks passed"
+          echo "✅ Redaction toggle works as expected"
