@@ -1,3 +1,6 @@
+lichen-protocol-mvp/.vector/accurate.meta.jsonl
+lichen-protocol-mvp/.vector/fast.meta.jsonl
+lichen-protocol-mvp/.vector/meta.jsonl
 # Python
 __pycache__/
 *.py[cod]
