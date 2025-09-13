@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from src.lichen_chunker.schema_validation import (
+from lichen_chunker.schema_validation import (
     validate_protocol_json,
     validate_protocol_file,
     normalize_protocol_data

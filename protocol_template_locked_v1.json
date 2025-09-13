@@ -1,0 +1,109 @@
+{
+  "Title": "[Protocol Title]",
+  "Short Title": "[Short Title, optional]",
+  "Overall Purpose": "[One clear paragraph — why this exists]",
+  "Why This Matters": "[One paragraph — what goes wrong without it]",
+  "When To Use This Protocol": "[Bulleted or sentence list of situations]",
+  "Overall Outcomes": {
+    "Poor": "[Narrative sentence(s). Include present-to-future arc if desired]",
+    "Expected": "[Narrative sentence(s)]",
+    "Excellent": "[Narrative sentence(s)]",
+    "Transcendent": "[Narrative sentence(s)]"
+  },
+  "Themes": [
+    {
+      "Name": "[Theme Name]",
+      "Purpose of This Theme": "[1–2 sentences]",
+      "Why This Matters": "[1–2 sentences]",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "[What’s happening now]",
+          "Immediate cost": "[Immediate cost at poor]",
+          "30-90 day system effect": "[Effect]",
+          "Signals": "[Short phrases or comma list]",
+          "Edge condition": "[Boundary condition to watch]",
+          "Example moves": "[Concrete moves]",
+          "Future effect": "[If this persists…]"
+        },
+        "Expected": {
+          "Present pattern": "[What’s happening now]",
+          "Immediate cost": "[Immediate cost at expected]",
+          "30-90 day system effect": "[Effect]",
+          "Signals": "[Short phrases or comma list]",
+          "Edge condition": "[Boundary condition]",
+          "Example moves": "[Concrete moves]",
+          "Future effect": "[If this holds…]"
+        },
+        "Excellent": {
+          "Present pattern": "[What’s happening now]",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "[Effect]",
+          "Signals": "[Short phrases or comma list]",
+          "Edge condition": "[Boundary condition]",
+          "Example moves": "[Concrete moves]",
+          "Future effect": "[If this holds…]"
+        },
+        "Transcendent": {
+          "Present pattern": "[What’s happening now]",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "[Effect]",
+          "Signals": "[Short phrases or comma list]",
+          "Edge condition": "[Boundary condition]",
+          "Example moves": "[Concrete moves]",
+          "Future effect": "[If this holds…]"
+        }
+      },
+      "Guiding Questions": [
+        "[Q1]",
+        "[Q2]",
+        "[Q3]"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "[Prompt 1]",
+    "[Prompt 2]",
+    "[Prompt 3]"
+  ],
+  "Version": "1",
+  "Created At": "YYYY-MM-DD",
+  "Protocol ID": "[stable id]",
+  "Category": "[optional grouping]",
+  "Metadata": {
+    "Complexity": 1,
+    "Readiness Stage": "Explore",
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Estimated Time": "[e.g., 60–90 min]",
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ],
+    "Primary Scenarios": [
+      "[scenario]"
+    ],
+    "Related Protocols": [
+      "[title]"
+    ],
+    "Tags": [
+      "[tag]"
+    ],
+    "Algorithm": {
+      "Present": false,
+      "Type": "",
+      "Description": "",
+      "Version": ""
+    },
+    "Stones": [
+      "[foundation-stone slugs]"
+    ],
+    "Fields": [
+      "[field slugs]"
+    ],
+    "Bridges": [
+      "[bridge slugs]"
+    ]
+  }
+}

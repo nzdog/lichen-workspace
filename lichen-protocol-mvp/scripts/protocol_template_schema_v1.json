@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lichen.mini/schema/protocol.v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "Title",
+    "Overall Purpose",
+    "Why This Matters",
+    "When To Use This Protocol",
+    "Overall Outcomes",
+    "Themes",
+    "Completion Prompts",
+    "Version",
+    "Created At",
+    "Protocol ID",
+    "Metadata"
+  ],
+  "properties": {
+    "Title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "Short Title": {
+      "type": "string"
+    },
+    "Overall Purpose": {
+      "type": "string"
+    },
+    "Why This Matters": {
+      "type": "string"
+    },
+    "When To Use This Protocol": {
+      "type": "string"
+    },
+    "Overall Outcomes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Poor",
+        "Expected",
+        "Excellent",
+        "Transcendent"
+      ],
+      "properties": {
+        "Poor": {
+          "type": "string"
+        },
+        "Expected": {
+          "type": "string"
+        },
+        "Excellent": {
+          "type": "string"
+        },
+        "Transcendent": {
+          "type": "string"
+        }
+      }
+    },
+    "Themes": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "Name",
+          "Purpose of This Theme",
+          "Why This Matters",
+          "Outcomes",
+          "Guiding Questions"
+        ],
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "Purpose of This Theme": {
+            "type": "string"
+          },
+          "Why This Matters": {
+            "type": "string"
+          },
+          "Outcomes": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "Poor",
+              "Expected",
+              "Excellent",
+              "Transcendent"
+            ],
+            "properties": {
+              "Poor": {
+                "$ref": "#/$defs/Level"
+              },
+              "Expected": {
+                "$ref": "#/$defs/Level"
+              },
+              "Excellent": {
+                "$ref": "#/$defs/LevelEx"
+              },
+              "Transcendent": {
+                "$ref": "#/$defs/LevelEx"
+              }
+            }
+          },
+          "Guiding Questions": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "Completion Prompts": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "Version": {
+      "type": "string"
+    },
+    "Created At": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "Protocol ID": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "string"
+    },
+    "Metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Complexity",
+        "Readiness Stage",
+        "Modes",
+        "Estimated Time",
+        "Tone Markers",
+        "Primary Scenarios",
+        "Related Protocols",
+        "Tags"
+      ],
+      "properties": {
+        "Complexity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "Readiness Stage": {
+          "type": "string",
+          "enum": [
+            "Explore",
+            "Act",
+            "Integrate"
+          ]
+        },
+        "Modes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Full Walk",
+              "Theme-Only"
+            ]
+          }
+        },
+        "Estimated Time": {
+          "type": "string"
+        },
+        "Tone Markers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Primary Scenarios": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Related Protocols": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Algorithm": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "Present": {
+              "type": "boolean"
+            },
+            "Type": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            }
+          }
+        },
+        "Stones": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Bridges": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "Level": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Present pattern",
+        "Immediate cost",
+        "30-90 day system effect",
+        "Signals",
+        "Edge condition",
+        "Example moves",
+        "Future effect"
+      ],
+      "properties": {
+        "Present pattern": {
+          "type": "string"
+        },
+        "Immediate cost": {
+          "type": "string"
+        },
+        "30-90 day system effect": {
+          "type": "string"
+        },
+        "Signals": {
+          "type": "string"
+        },
+        "Edge condition": {
+          "type": "string"
+        },
+        "Example moves": {
+          "type": "string"
+        },
+        "Future effect": {
+          "type": "string"
+        }
+      }
+    },
+    "LevelEx": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/Level"
+        },
+        {
+          "properties": {
+            "Immediate cost": {
+              "const": "Not applicable"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

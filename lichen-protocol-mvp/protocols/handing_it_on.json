@@ -1,0 +1,310 @@
+{
+  "Title": "Handing It On: Transitioning with Integrity",
+  "Short Title": "Transition Integrity",
+  "Overall Purpose": "To ensure seamless transitions by honoring the essence of the work and the people involved, fostering continuity and growth.",
+  "Why This Matters": "Without a thoughtful transition, valuable insights and relationships can be lost, leading to disruption and misalignment. Ensuring integrity in transitions supports sustained progress and trust.",
+  "When To Use This Protocol": "Use during leadership changes, project handoffs, or when key team members are departing.",
+  "Overall Outcomes": {
+    "Poor": "Transitions occur abruptly without preparation → The future faces confusion and loss of momentum.",
+    "Expected": "Some transition elements are managed, but gaps remain → The future experiences partial continuity and occasional setbacks.",
+    "Excellent": "Transitions are planned and executed with care and clarity → The future maintains steady progress and relational trust.",
+    "Transcendent": "Transition integrity becomes a cultural norm → The future evolves seamlessly, with deepened trust and resilience."
+  },
+  "Themes": [
+    {
+      "Name": "Preserving Core Essence",
+      "Purpose of This Theme": "To maintain the foundational values and vision during transitions.",
+      "Why This Matters": "Core essence guides continuity and coherence, preventing drift from original intent.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Transitions overlook core values and vision.",
+          "Immediate cost": "Loss of direction and purpose.",
+          "30-90 day system effect": "Disorientation and misalignment grow.",
+          "Signals": "Frequent questioning of purpose, inconsistent actions.",
+          "Edge condition": "Compromising essence for expedience.",
+          "Example moves": "Ignoring foundational principles during handoffs.",
+          "Future effect": "The future loses its grounding and coherence."
+        },
+        "Expected": {
+          "Present pattern": "Some attention to core values, but inconsistently.",
+          "Immediate cost": "Partial retention of direction.",
+          "30-90 day system effect": "Mixed adherence to original vision.",
+          "Signals": "Occasional missteps, need for course corrections.",
+          "Edge condition": "Assuming core values are self-evident.",
+          "Example moves": "Referencing values sporadically during transitions.",
+          "Future effect": "The future retains some alignment but risks drift."
+        },
+        "Excellent": {
+          "Present pattern": "Core essence is central to transition planning.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Consistent adherence to vision and values.",
+          "Signals": "Clear continuity in purpose and actions.",
+          "Edge condition": "Balancing fidelity to core with necessary evolution.",
+          "Example moves": "Embedding core values in transition protocols.",
+          "Future effect": "The future remains aligned and purpose-driven."
+        },
+        "Transcendent": {
+          "Present pattern": "Core essence is deeply embedded in culture.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Seamless evolution with core integrity intact.",
+          "Signals": "Natural adherence to values in all transitions.",
+          "Edge condition": "Avoiding rigidity that stifles innovation.",
+          "Example moves": "Cultural rituals reinforcing core essence.",
+          "Future effect": "The future evolves with integrity and resilience."
+        }
+      },
+      "Guiding Questions": [
+        "What are the core values that must persist?",
+        "How is the vision communicated during transitions?",
+        "What risks arise from neglecting core essence?"
+      ]
+    },
+    {
+      "Name": "Fostering Relational Continuity",
+      "Purpose of This Theme": "To nurture relationships and trust through transitions.",
+      "Why This Matters": "Strong relationships ensure support and collaboration, reducing friction and anxiety.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Relationships are overlooked during transitions.",
+          "Immediate cost": "Erosion of trust and collaboration.",
+          "30-90 day system effect": "Increased tension and isolation.",
+          "Signals": "Withdrawal, lack of engagement.",
+          "Edge condition": "Prioritizing tasks over people.",
+          "Example moves": "Neglecting team dynamics in handoffs.",
+          "Future effect": "The future is marked by fractured relationships."
+        },
+        "Expected": {
+          "Present pattern": "Some attention to relationships, but not prioritized.",
+          "Immediate cost": "Partial trust and collaboration.",
+          "30-90 day system effect": "Inconsistent support and engagement.",
+          "Signals": "Mixed levels of team cohesion.",
+          "Edge condition": "Assuming relationships will naturally endure.",
+          "Example moves": "Occasional team-building during transitions.",
+          "Future effect": "The future retains some relational continuity."
+        },
+        "Excellent": {
+          "Present pattern": "Relationships are central to transition processes.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Strong, resilient team dynamics.",
+          "Signals": "High levels of trust and collaboration.",
+          "Edge condition": "Balancing relational focus with task completion.",
+          "Example moves": "Facilitating open dialogues and support networks.",
+          "Future effect": "The future thrives on robust relational foundations."
+        },
+        "Transcendent": {
+          "Present pattern": "Relational continuity is a cultural norm.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Enduring trust and collaboration through change.",
+          "Signals": "Natural, effortless support and engagement.",
+          "Edge condition": "Avoiding complacency in relational health.",
+          "Example moves": "Institutionalizing relationship-building practices.",
+          "Future effect": "The future is resilient and cohesive."
+        }
+      },
+      "Guiding Questions": [
+        "Who are the key relationships to nurture?",
+        "How can we foster trust during transitions?",
+        "What relational gaps need addressing?"
+      ]
+    },
+    {
+      "Name": "Ensuring Knowledge Transfer",
+      "Purpose of This Theme": "To safeguard critical knowledge and insights during transitions.",
+      "Why This Matters": "Knowledge transfer prevents loss of expertise and supports continuity.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Knowledge transfer is neglected.",
+          "Immediate cost": "Loss of critical insights and expertise.",
+          "30-90 day system effect": "Increased errors and inefficiencies.",
+          "Signals": "Frequent rediscovery of past solutions.",
+          "Edge condition": "Relying on documentation alone.",
+          "Example moves": "Skipping debriefs and handover meetings.",
+          "Future effect": "The future struggles with repeated mistakes."
+        },
+        "Expected": {
+          "Present pattern": "Some knowledge transfer occurs, but gaps remain.",
+          "Immediate cost": "Partial retention of expertise.",
+          "30-90 day system effect": "Inconsistent application of past learnings.",
+          "Signals": "Occasional need to revisit old issues.",
+          "Edge condition": "Assuming informal knowledge sharing suffices.",
+          "Example moves": "Conducting sporadic knowledge-sharing sessions.",
+          "Future effect": "The future retains some knowledge but risks gaps."
+        },
+        "Excellent": {
+          "Present pattern": "Knowledge transfer is structured and prioritized.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Robust retention of expertise and insights.",
+          "Signals": "Smooth application of past learnings.",
+          "Edge condition": "Balancing thoroughness with efficiency.",
+          "Example moves": "Implementing systematic knowledge handovers.",
+          "Future effect": "The future builds on a strong foundation of knowledge."
+        },
+        "Transcendent": {
+          "Present pattern": "Knowledge transfer is embedded in culture.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Continuous learning and adaptation.",
+          "Signals": "Effortless integration of new insights.",
+          "Edge condition": "Avoiding rigidity in knowledge processes.",
+          "Example moves": "Creating a culture of continuous knowledge sharing.",
+          "Future effect": "The future evolves with cumulative wisdom."
+        }
+      },
+      "Guiding Questions": [
+        "What critical knowledge needs transferring?",
+        "How can we ensure effective knowledge handover?",
+        "What systems support continuous knowledge sharing?"
+      ]
+    },
+    {
+      "Name": "Aligning Expectations and Roles",
+      "Purpose of This Theme": "To clarify roles and expectations during transitions.",
+      "Why This Matters": "Clear roles prevent confusion and ensure accountability.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Roles and expectations are unclear.",
+          "Immediate cost": "Confusion and duplicated efforts.",
+          "30-90 day system effect": "Reduced accountability and performance.",
+          "Signals": "Frequent role conflicts and misunderstandings.",
+          "Edge condition": "Assuming roles will naturally align.",
+          "Example moves": "Omitting role clarification in transitions.",
+          "Future effect": "The future is marked by inefficiency and conflict."
+        },
+        "Expected": {
+          "Present pattern": "Some role clarity, but inconsistently applied.",
+          "Immediate cost": "Partial alignment and accountability.",
+          "30-90 day system effect": "Occasional role overlaps and gaps.",
+          "Signals": "Inconsistent understanding of responsibilities.",
+          "Edge condition": "Relying on informal role adjustments.",
+          "Example moves": "Clarifying roles reactively.",
+          "Future effect": "The future retains some role clarity but risks misalignment."
+        },
+        "Excellent": {
+          "Present pattern": "Roles and expectations are clearly defined.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "High accountability and performance.",
+          "Signals": "Smooth role execution and collaboration.",
+          "Edge condition": "Balancing clarity with flexibility.",
+          "Example moves": "Establishing clear role definitions and expectations.",
+          "Future effect": "The future operates with precision and efficiency."
+        },
+        "Transcendent": {
+          "Present pattern": "Role clarity is a cultural standard.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Effortless role alignment and adaptability.",
+          "Signals": "Natural understanding of roles and responsibilities.",
+          "Edge condition": "Avoiding rigidity that stifles innovation.",
+          "Example moves": "Embedding role clarity in organizational culture.",
+          "Future effect": "The future is agile and aligned."
+        }
+      },
+      "Guiding Questions": [
+        "What roles need clarification?",
+        "How do we align expectations during transitions?",
+        "What systems support role clarity and accountability?"
+      ]
+    },
+    {
+      "Name": "Cultivating a Legacy of Growth",
+      "Purpose of This Theme": "To foster a mindset of growth and evolution through transitions.",
+      "Why This Matters": "A growth mindset ensures adaptability and continuous improvement.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Transitions focus solely on continuity.",
+          "Immediate cost": "Stagnation and missed opportunities.",
+          "30-90 day system effect": "Resistance to change and innovation.",
+          "Signals": "Reluctance to adopt new practices.",
+          "Edge condition": "Prioritizing stability over growth.",
+          "Example moves": "Maintaining status quo without challenge.",
+          "Future effect": "The future is static and unresponsive."
+        },
+        "Expected": {
+          "Present pattern": "Some growth focus, but not prioritized.",
+          "Immediate cost": "Partial adaptability and innovation.",
+          "30-90 day system effect": "Occasional growth spurts.",
+          "Signals": "Inconsistent embrace of new ideas.",
+          "Edge condition": "Assuming growth will occur naturally.",
+          "Example moves": "Encouraging innovation sporadically.",
+          "Future effect": "The future experiences intermittent growth."
+        },
+        "Excellent": {
+          "Present pattern": "Growth mindset is central to transitions.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Continuous improvement and adaptability.",
+          "Signals": "Proactive adoption of new practices.",
+          "Edge condition": "Balancing growth with core stability.",
+          "Example moves": "Embedding growth opportunities in transition plans.",
+          "Future effect": "The future is dynamic and evolving."
+        },
+        "Transcendent": {
+          "Present pattern": "Growth mindset is ingrained in culture.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Effortless evolution and innovation.",
+          "Signals": "Natural embrace of change and improvement.",
+          "Edge condition": "Avoiding growth for its own sake.",
+          "Example moves": "Cultivating a culture of continuous learning.",
+          "Future effect": "The future is vibrant and resilient."
+        }
+      },
+      "Guiding Questions": [
+        "How can we foster a growth mindset during transitions?",
+        "What opportunities for innovation exist?",
+        "How do we balance growth with core stability?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Identify one transition you can enhance with integrity this month.",
+    "Choose a relationship to nurture during an upcoming transition.",
+    "Reflect on a recent transition: Did you ensure effective knowledge transfer?"
+  ],
+  "Protocol ID": "auto_1755597243771_0",
+  "Version": "1",
+  "Created At": "2023-10-15",
+  "Category": "",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false,
+      "Type": "",
+      "Description": "",
+      "Version": ""
+    },
+    "Complexity": 2,
+    "Readiness Stage": "Explore",
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ],
+    "Primary Scenarios": [
+      "Leadership change",
+      "Project handoff",
+      "Team member departure"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Estimated Time": "60–90 min",
+    "Related Protocols": [
+      "Building Trust in Teams",
+      "Sustaining Organizational Memory"
+    ],
+    "Tags": [
+      "transition",
+      "integrity",
+      "continuity"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "light-before-form",
+      "presence-is-productivity",
+      "stewardship-not-ownership",
+      "the-speed-of-trust"
+    ],
+    "Fields": [
+      "relational"
+    ],
+    "Bridges": [
+      "liminal"
+    ]
+  }
+}

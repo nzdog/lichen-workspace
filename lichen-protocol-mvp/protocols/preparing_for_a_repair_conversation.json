@@ -1,0 +1,308 @@
+{
+  "Title": "Preparing for a Repair Conversation",
+  "Short Title": "Repair Prep",
+  "Overall Purpose": "To equip individuals with the tools and mindset necessary to engage in conversations that mend and strengthen relationships, fostering understanding and resolution.",
+  "Why This Matters": "Without preparation, repair conversations can escalate conflicts, deepen misunderstandings, and damage trust. Thoughtful preparation ensures a constructive dialogue that heals and builds stronger connections.",
+  "When To Use This Protocol": "Use when a relationship has experienced tension or conflict, when misunderstandings have occurred, or when trust needs rebuilding.",
+  "Overall Outcomes": {
+    "Poor": "You enter the conversation unprepared and defensive → The future sees further erosion of trust and unresolved tensions.",
+    "Expected": "You prepare somewhat but miss key aspects → The future holds partial resolution but lingering issues.",
+    "Excellent": "You prepare thoroughly, considering all perspectives → The future enjoys restored trust and strengthened bonds.",
+    "Transcendent": "Preparation becomes a natural part of your relational practice → The future thrives on deepened understanding and resilience."
+  },
+  "Themes": [
+    {
+      "Name": "Understanding the Root Cause",
+      "Purpose of This Theme": "To identify and comprehend the underlying issues that led to the conflict.",
+      "Why This Matters": "Addressing surface symptoms without understanding root causes leads to temporary fixes rather than lasting solutions.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You focus on immediate grievances.",
+          "Immediate cost": "Misunderstandings persist.",
+          "30-90 day system effect": "Recurring conflicts and frustration.",
+          "Signals": "Repetitive arguments, unresolved issues.",
+          "Edge condition": "Mistaking symptoms for causes.",
+          "Example moves": "Blaming without exploring deeper issues.",
+          "Future effect": "The future inherits unresolved tensions and trust erosion."
+        },
+        "Expected": {
+          "Present pattern": "You consider some underlying factors.",
+          "Immediate cost": "Partial understanding and resolution.",
+          "30-90 day system effect": "Some improvement, but issues linger.",
+          "Signals": "Occasional breakthroughs, but recurring themes.",
+          "Edge condition": "Stopping at surface-level insights.",
+          "Example moves": "Identifying patterns but not their origins.",
+          "Future effect": "The future holds partial resolution but lingering issues."
+        },
+        "Excellent": {
+          "Present pattern": "You delve into root causes with curiosity.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Deeper understanding and resolution.",
+          "Signals": "Fewer recurring conflicts, increased trust.",
+          "Edge condition": "Balancing depth with actionable insights.",
+          "Example moves": "Engaging in reflective dialogue to uncover causes.",
+          "Future effect": "The future enjoys restored trust and strengthened bonds."
+        },
+        "Transcendent": {
+          "Present pattern": "Root cause analysis is second nature.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Consistent resolution and growth.",
+          "Signals": "Proactive conflict prevention, resilient relationships.",
+          "Edge condition": "Avoiding over-analysis that stalls action.",
+          "Example moves": "Embedding root cause exploration in all interactions.",
+          "Future effect": "The future thrives on deepened understanding and resilience."
+        }
+      },
+      "Guiding Questions": [
+        "What underlying issues might be driving this conflict?",
+        "How have similar issues been resolved in the past?",
+        "What assumptions need re-examining?"
+      ]
+    },
+    {
+      "Name": "Setting Intentions and Boundaries",
+      "Purpose of This Theme": "To clarify your goals and establish healthy boundaries for the conversation.",
+      "Why This Matters": "Clear intentions and boundaries prevent conversations from derailing and ensure mutual respect.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You enter without clear intentions.",
+          "Immediate cost": "Conversations become unfocused or hostile.",
+          "30-90 day system effect": "Increased tension and unresolved issues.",
+          "Signals": "Frequent derailments, emotional escalation.",
+          "Edge condition": "Mistaking flexibility for lack of direction.",
+          "Example moves": "Engaging without a plan or limits.",
+          "Future effect": "The future suffers from misalignment and conflict."
+        },
+        "Expected": {
+          "Present pattern": "You set some intentions but lack clarity.",
+          "Immediate cost": "Conversations are somewhat productive.",
+          "30-90 day system effect": "Partial resolution, with some confusion.",
+          "Signals": "Mixed outcomes, occasional clarity.",
+          "Edge condition": "Setting intentions without boundaries.",
+          "Example moves": "Identifying goals but not limits.",
+          "Future effect": "The future holds partial resolution but lingering issues."
+        },
+        "Excellent": {
+          "Present pattern": "You clearly define intentions and boundaries.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Focused, respectful conversations.",
+          "Signals": "Clear, productive dialogue.",
+          "Edge condition": "Balancing firm boundaries with openness.",
+          "Example moves": "Communicating goals and limits upfront.",
+          "Future effect": "The future enjoys restored trust and strengthened bonds."
+        },
+        "Transcendent": {
+          "Present pattern": "Intentions and boundaries are naturally integrated.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conversations are consistently constructive.",
+          "Signals": "Effortless clarity and respect.",
+          "Edge condition": "Avoiding rigidity that stifles dialogue.",
+          "Example moves": "Embedding intention-setting in all preparations.",
+          "Future effect": "The future thrives on deepened understanding and resilience."
+        }
+      },
+      "Guiding Questions": [
+        "What do I hope to achieve in this conversation?",
+        "What boundaries are necessary for a healthy dialogue?",
+        "How can I communicate my intentions clearly?"
+      ]
+    },
+    {
+      "Name": "Cultivating Empathy and Openness",
+      "Purpose of This Theme": "To approach the conversation with a mindset of understanding and receptivity.",
+      "Why This Matters": "Empathy and openness create a safe space for honest dialogue and mutual growth.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You approach with defensiveness.",
+          "Immediate cost": "Conversations become confrontational.",
+          "30-90 day system effect": "Increased conflict and misunderstanding.",
+          "Signals": "Frequent defensiveness, lack of listening.",
+          "Edge condition": "Mistaking openness for vulnerability.",
+          "Example moves": "Interrupting or dismissing others' perspectives.",
+          "Future effect": "The future suffers from misalignment and conflict."
+        },
+        "Expected": {
+          "Present pattern": "You show some empathy but remain guarded.",
+          "Immediate cost": "Conversations are partially open.",
+          "30-90 day system effect": "Some understanding, but barriers remain.",
+          "Signals": "Inconsistent empathy, guarded responses.",
+          "Edge condition": "Balancing openness with self-protection.",
+          "Example moves": "Listening but withholding full engagement.",
+          "Future effect": "The future holds partial resolution but lingering issues."
+        },
+        "Excellent": {
+          "Present pattern": "You engage with empathy and openness.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conversations are rich and transformative.",
+          "Signals": "Mutual respect and understanding.",
+          "Edge condition": "Balancing empathy with assertiveness.",
+          "Example moves": "Actively listening and validating feelings.",
+          "Future effect": "The future enjoys restored trust and strengthened bonds."
+        },
+        "Transcendent": {
+          "Present pattern": "Empathy and openness are ingrained habits.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conversations consistently foster growth.",
+          "Signals": "Effortless empathy and receptivity.",
+          "Edge condition": "Avoiding over-empathy that neglects self-needs.",
+          "Example moves": "Embedding empathy training in team development.",
+          "Future effect": "The future thrives on deepened understanding and resilience."
+        }
+      },
+      "Guiding Questions": [
+        "How can I better understand their perspective?",
+        "What assumptions might I need to challenge?",
+        "How can I remain open to unexpected insights?"
+      ]
+    },
+    {
+      "Name": "Preparing for Emotional Regulation",
+      "Purpose of This Theme": "To manage emotions effectively during the conversation.",
+      "Why This Matters": "Emotional regulation prevents escalation and keeps the conversation productive.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You react emotionally without control.",
+          "Immediate cost": "Conversations escalate quickly.",
+          "30-90 day system effect": "Increased tension and unresolved issues.",
+          "Signals": "Frequent emotional outbursts, defensiveness.",
+          "Edge condition": "Mistaking emotional expression for authenticity.",
+          "Example moves": "Raising voice or shutting down.",
+          "Future effect": "The future suffers from misalignment and conflict."
+        },
+        "Expected": {
+          "Present pattern": "You attempt to regulate emotions with mixed success.",
+          "Immediate cost": "Conversations are somewhat stable.",
+          "30-90 day system effect": "Some emotional control, but volatility persists.",
+          "Signals": "Inconsistent emotional responses.",
+          "Edge condition": "Balancing expression with regulation.",
+          "Example moves": "Pausing but not fully calming.",
+          "Future effect": "The future holds partial resolution but lingering issues."
+        },
+        "Excellent": {
+          "Present pattern": "You manage emotions with skill and awareness.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conversations remain calm and focused.",
+          "Signals": "Stable, composed interactions.",
+          "Edge condition": "Balancing regulation with genuine expression.",
+          "Example moves": "Practicing breathing techniques before engaging.",
+          "Future effect": "The future enjoys restored trust and strengthened bonds."
+        },
+        "Transcendent": {
+          "Present pattern": "Emotional regulation is a natural strength.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conversations are consistently constructive.",
+          "Signals": "Effortless emotional stability.",
+          "Edge condition": "Avoiding suppression that stifles authenticity.",
+          "Example moves": "Embedding emotional intelligence in team culture.",
+          "Future effect": "The future thrives on deepened understanding and resilience."
+        }
+      },
+      "Guiding Questions": [
+        "What emotions might arise during this conversation?",
+        "How can I prepare to manage them effectively?",
+        "What strategies help me stay calm and focused?"
+      ]
+    },
+    {
+      "Name": "Crafting a Collaborative Approach",
+      "Purpose of This Theme": "To engage the other party as a partner in finding solutions.",
+      "Why This Matters": "Collaboration fosters mutual respect and shared ownership of outcomes.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You approach as adversaries rather than partners.",
+          "Immediate cost": "Conversations become competitive.",
+          "30-90 day system effect": "Increased division and lack of resolution.",
+          "Signals": "Frequent power struggles, lack of compromise.",
+          "Edge condition": "Mistaking collaboration for concession.",
+          "Example moves": "Insisting on your perspective without listening.",
+          "Future effect": "The future suffers from misalignment and conflict."
+        },
+        "Expected": {
+          "Present pattern": "You attempt collaboration with varying success.",
+          "Immediate cost": "Conversations are somewhat cooperative.",
+          "30-90 day system effect": "Partial collaboration, with some resistance.",
+          "Signals": "Mixed willingness to compromise.",
+          "Edge condition": "Balancing collaboration with assertiveness.",
+          "Example moves": "Proposing solutions but not fully engaging others.",
+          "Future effect": "The future holds partial resolution but lingering issues."
+        },
+        "Excellent": {
+          "Present pattern": "You engage in genuine collaboration.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conversations are productive and unifying.",
+          "Signals": "Mutual respect and shared solutions.",
+          "Edge condition": "Balancing collaboration with clarity of goals.",
+          "Example moves": "Facilitating joint problem-solving sessions.",
+          "Future effect": "The future enjoys restored trust and strengthened bonds."
+        },
+        "Transcendent": {
+          "Present pattern": "Collaboration is an ingrained practice.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Conversations consistently foster unity.",
+          "Signals": "Effortless partnership and co-creation.",
+          "Edge condition": "Avoiding over-collaboration that dilutes focus.",
+          "Example moves": "Embedding collaborative practices in team norms.",
+          "Future effect": "The future thrives on deepened understanding and resilience."
+        }
+      },
+      "Guiding Questions": [
+        "How can we approach this as partners?",
+        "What shared goals can guide our conversation?",
+        "How can I invite collaboration without losing focus?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Identify one relationship that could benefit from a repair conversation this week.",
+    "Reflect on a past conflict: How could preparation have changed the outcome?",
+    "Choose one theme to focus on in your next repair conversation."
+  ],
+  "Protocol ID": "auto_1755596918331_0",
+  "Version": "1",
+  "Created At": "2023-10-09",
+  "Category": "Communication",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false,
+      "Type": "",
+      "Description": "",
+      "Version": ""
+    },
+    "Complexity": 2,
+    "Readiness Stage": "Explore",
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ],
+    "Primary Scenarios": [
+      "Conflict resolution",
+      "Relationship repair"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Estimated Time": "45–60 min",
+    "Related Protocols": [
+      "Conflict Navigation",
+      "Trust Rebuilding"
+    ],
+    "Tags": [
+      "communication",
+      "relationships",
+      "conflict resolution"
+    ],
+    "Stones": [
+      "built-for-wholeness",
+      "clarity-over-cleverness",
+      "integrity-is-the-growth-strategy",
+      "presence-is-productivity",
+      "the-system-walks-with-us"
+    ],
+    "Fields": [
+      "relational",
+      "signal"
+    ],
+    "Bridges": []
+  }
+}

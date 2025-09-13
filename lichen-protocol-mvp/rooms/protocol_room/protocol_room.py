@@ -36,17 +36,18 @@ class ProtocolRoom:
             # 2. Determine protocol depth
             depth = self._determine_protocol_depth(payload)
             
-            # 3. Fetch protocol text from canon (exact, no edits)
-            protocol_text = self._fetch_protocol_text(protocol_id, depth)
-            if not protocol_text:
+            # 3. Fetch protocol data from canon (exact, no edits)
+            protocol_data = self._fetch_protocol_data(protocol_id)
+            if not protocol_data:
                 return self._create_error_output(f"Protocol '{protocol_id}' not found in canon")
             
             # 4. Run integrity gate checks
-            integrity_result = validate_protocol_delivery(protocol_text)
+            integrity_result = validate_protocol_delivery(protocol_data)
             if not integrity_result.passed:
                 return self._create_decline_output(integrity_result.notes)
             
             # 5. Format display text
+            protocol_text = get_protocol_by_depth(protocol_id, depth)
             display_text = self._format_protocol_display(protocol_id, depth, protocol_text)
             
             # 6. Add completion marker
@@ -89,6 +90,11 @@ class ProtocolRoom:
             readiness_level=readiness_level,
             time_available=time_available
         )
+    
+    def _fetch_protocol_data(self, protocol_id: str) -> Optional[dict]:
+        """Fetch protocol data (JSON) from canon for integrity checks"""
+        from .canon import _load_protocol_json
+        return _load_protocol_json(protocol_id)
     
     def _fetch_protocol_text(self, protocol_id: str, depth: ProtocolDepth) -> Optional[str]:
         """Fetch protocol text from canon (exact, no edits)"""

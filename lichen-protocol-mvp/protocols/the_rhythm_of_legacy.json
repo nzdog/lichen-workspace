@@ -1,0 +1,318 @@
+{
+  "Title": "The Rhythm of Legacy",
+  "Short Title": "Legacy Rhythm",
+  "Overall Purpose": "To align daily actions and long-term vision so that the work we do now contributes meaningfully to the legacy we want to leave.",
+  "Why This Matters": "Without connecting present choices to long-term impact, teams risk chasing short-term wins that do not build toward a meaningful future. Legacy grows from consistent, intentional rhythm.",
+  "When To Use This Protocol": "When setting strategic priorities\nDuring annual or multi-year planning\nTo evaluate whether current work aligns with deeper purpose\nWhen facing pressure to compromise long-term values for short-term gains",
+  "Overall Outcomes": {
+    "Poor": "Daily work is disconnected from long-term vision → The future sees fragmented results and unfulfilled mission.",
+    "Expected": "Some work aligns to long-term goals but without consistent tracking → The future delivers partial legacy building.",
+    "Excellent": "Daily rhythm is consciously linked to long-term vision → The future steadily builds the intended legacy.",
+    "Transcendent": "Legacy rhythm is cultural DNA → The future flourishes with sustained impact and integrity."
+  },
+  "Themes": [
+    {
+      "Name": "Defining the Legacy You Want",
+      "Purpose of This Theme": "To clarify the lasting impact you want your work to have.",
+      "Why This Matters": "Without clarity on the legacy, rhythm drifts toward urgency over meaning.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Legacy is vague or undefined.",
+          "Immediate cost": "No clear direction for long-term impact.",
+          "30-90 day system effect": "Effort is scattered.",
+          "Signals": "Work feels disconnected from bigger purpose.",
+          "Edge condition": "You avoid thinking far ahead.",
+          "Example moves": "Focusing only on this quarter’s goals.",
+          "Future effect": "Legacy forms accidentally."
+        },
+        "Expected": {
+          "Present pattern": "Some vision exists but is not revisited often.",
+          "Immediate cost": "Priorities drift without notice.",
+          "30-90 day system effect": "Impact is inconsistent.",
+          "Signals": "Occasional reference to mission in planning.",
+          "Edge condition": "You treat legacy as an abstract ideal.",
+          "Example moves": "Annual vision statements without daily connection.",
+          "Future effect": "Legacy is partially built."
+        },
+        "Excellent": {
+          "Present pattern": "Legacy is clearly defined and documented.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Effort compounds toward a clear impact.",
+          "Signals": "Frequent reference to legacy in decision-making.",
+          "Edge condition": "You update the vision as context evolves.",
+          "Example moves": "Writing a legacy statement for the team.",
+          "Future effect": "Legacy is built with intention."
+        },
+        "Transcendent": {
+          "Present pattern": "Legacy definition is a living part of culture.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Collective action builds a unified legacy.",
+          "Signals": "Legacy talk is part of everyday language.",
+          "Edge condition": "You refuse to pursue work misaligned with legacy.",
+          "Example moves": "Starting meetings with a legacy checkpoint.",
+          "Future effect": "Legacy becomes inevitable and deeply aligned."
+        }
+      },
+      "Guiding Questions": [
+        "What is the legacy we want to leave?",
+        "How will people experience our work years from now?",
+        "What would make this legacy worth the effort?"
+      ]
+    },
+    {
+      "Name": "Connecting Daily Actions to Legacy",
+      "Purpose of This Theme": "To ensure that daily work meaningfully contributes to long-term goals.",
+      "Why This Matters": "Small actions, repeated consistently, shape the legacy more than rare big moments.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Daily actions are disconnected from the bigger vision.",
+          "Immediate cost": "Effort feels routine, not meaningful.",
+          "30-90 day system effect": "Legacy progress stalls.",
+          "Signals": "Frequent questions about why work matters.",
+          "Edge condition": "You treat legacy work as occasional.",
+          "Example moves": "Focusing on immediate tasks without bigger context.",
+          "Future effect": "Daily work fails to add up."
+        },
+        "Expected": {
+          "Present pattern": "Some daily actions support legacy, others don’t.",
+          "Immediate cost": "Mixed contribution to long-term goals.",
+          "30-90 day system effect": "Progress is uneven.",
+          "Signals": "Occasional course corrections.",
+          "Edge condition": "You connect legacy to work only in special projects.",
+          "Example moves": "Including legacy talk in major planning but not daily work.",
+          "Future effect": "Legacy takes longer to form."
+        },
+        "Excellent": {
+          "Present pattern": "Daily actions are intentionally tied to legacy outcomes.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Progress toward legacy accelerates.",
+          "Signals": "Frequent reminders of how work builds legacy.",
+          "Edge condition": "You use legacy as a filter for priorities.",
+          "Example moves": "Linking daily standups to legacy checkpoints.",
+          "Future effect": "Daily work naturally builds legacy."
+        },
+        "Transcendent": {
+          "Present pattern": "Legacy linkage is embedded in all work habits.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Momentum compounds powerfully.",
+          "Signals": "Team can articulate legacy impact of their work anytime.",
+          "Edge condition": "You refuse to approve work without legacy alignment.",
+          "Example moves": "Legacy lens applied to every decision.",
+          "Future effect": "Legacy emerges as a daily lived reality."
+        }
+      },
+      "Guiding Questions": [
+        "How does today’s work contribute to our legacy?",
+        "What daily habit could reinforce our long-term goals?",
+        "What are we doing now that doesn’t serve the legacy?"
+      ]
+    },
+    {
+      "Name": "Protecting Long-Term Priorities from Short-Term Pressure",
+      "Purpose of This Theme": "To defend legacy-focused work from being overshadowed by urgent but less important demands.",
+      "Why This Matters": "Without protection, urgent tasks will always crowd out legacy-building work.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Legacy work is postponed for short-term gains.",
+          "Immediate cost": "Long-term impact is sacrificed.",
+          "30-90 day system effect": "Legacy loses momentum.",
+          "Signals": "Frequent delays on strategic initiatives.",
+          "Edge condition": "You treat urgent as more important than important.",
+          "Example moves": "Canceling legacy work for immediate deliverables.",
+          "Future effect": "Legacy vision fades."
+        },
+        "Expected": {
+          "Present pattern": "Some legacy work is protected, but not consistently.",
+          "Immediate cost": "Progress is slow.",
+          "30-90 day system effect": "Urgency still wins too often.",
+          "Signals": "Inconsistent focus on strategic projects.",
+          "Edge condition": "You allow exceptions without clear rules.",
+          "Example moves": "Rescheduling long-term work when deadlines loom.",
+          "Future effect": "Legacy growth is intermittent."
+        },
+        "Excellent": {
+          "Present pattern": "Legacy priorities are clearly protected in scheduling and resources.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Long-term goals stay on track.",
+          "Signals": "Regular progress on legacy initiatives.",
+          "Edge condition": "You set rules for when urgency can override legacy work.",
+          "Example moves": "Dedicated legacy work blocks in the calendar.",
+          "Future effect": "Legacy momentum is steady."
+        },
+        "Transcendent": {
+          "Present pattern": "Protecting legacy work is a cultural standard.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Legacy goals are met or exceeded.",
+          "Signals": "Team defends strategic focus together.",
+          "Edge condition": "You refuse to let urgency undermine legacy.",
+          "Example moves": "System-wide rules for safeguarding long-term priorities.",
+          "Future effect": "Legacy is built without interruption."
+        }
+      },
+      "Guiding Questions": [
+        "What pressures most often push legacy work aside?",
+        "How can we shield it from those pressures?",
+        "What rules protect legacy time?"
+      ]
+    },
+    {
+      "Name": "Measuring Progress Toward Legacy",
+      "Purpose of This Theme": "To track and celebrate steps that move the legacy forward.",
+      "Why This Matters": "Without measurement, it’s hard to see progress or maintain motivation for long-term goals.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "No tracking of legacy progress.",
+          "Immediate cost": "Motivation fades.",
+          "30-90 day system effect": "Work loses connection to purpose.",
+          "Signals": "Uncertainty about whether legacy is advancing.",
+          "Edge condition": "You rely on memory or feeling to gauge progress.",
+          "Example moves": "Vague statements about making impact.",
+          "Future effect": "Legacy becomes invisible."
+        },
+        "Expected": {
+          "Present pattern": "Some legacy progress is measured.",
+          "Immediate cost": "Incomplete understanding of impact.",
+          "30-90 day system effect": "Mixed momentum.",
+          "Signals": "Celebrations happen only for big wins.",
+          "Edge condition": "You measure inconsistently.",
+          "Example moves": "Tracking annual milestones only.",
+          "Future effect": "Legacy growth is partly seen."
+        },
+        "Excellent": {
+          "Present pattern": "Legacy progress is measured regularly and clearly.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Steady momentum toward long-term goals.",
+          "Signals": "Frequent progress updates.",
+          "Edge condition": "You tie measures to legacy definition.",
+          "Example moves": "Quarterly legacy scorecards.",
+          "Future effect": "Legacy progress is visible and celebrated."
+        },
+        "Transcendent": {
+          "Present pattern": "Measuring legacy is a cultural habit.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Legacy moves forward faster and with greater unity.",
+          "Signals": "Shared pride in measurable progress.",
+          "Edge condition": "You refuse to let legacy go unmeasured.",
+          "Example moves": "Public legacy progress dashboards.",
+          "Future effect": "Legacy is tangible and inspiring daily."
+        }
+      },
+      "Guiding Questions": [
+        "How will we measure legacy progress?",
+        "What indicators show we’re on track?",
+        "How will we celebrate milestones along the way?"
+      ]
+    },
+    {
+      "Name": "Living the Legacy Now",
+      "Purpose of This Theme": "To embody the values and impact of the intended legacy in the present moment.",
+      "Why This Matters": "Legacy is not only what you leave—it’s what you live now.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "Values and behaviors don’t reflect the intended legacy.",
+          "Immediate cost": "Misalignment between message and action.",
+          "30-90 day system effect": "Trust and credibility weaken.",
+          "Signals": "‘Do as I say, not as I do’ culture.",
+          "Edge condition": "You delay living the legacy until later.",
+          "Example moves": "Acting counter to stated mission under pressure.",
+          "Future effect": "Legacy is undermined."
+        },
+        "Expected": {
+          "Present pattern": "Some actions reflect the legacy now.",
+          "Immediate cost": "Mixed cultural signals.",
+          "30-90 day system effect": "Partial credibility and trust.",
+          "Signals": "Legacy-aligned behavior is situational.",
+          "Edge condition": "You live the legacy only when convenient.",
+          "Example moves": "Making value-based choices only when easy.",
+          "Future effect": "Legacy feels inconsistent."
+        },
+        "Excellent": {
+          "Present pattern": "Daily behavior reflects the intended legacy.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Culture aligns closely with vision.",
+          "Signals": "Consistency between words and actions.",
+          "Edge condition": "You model the legacy even in challenge.",
+          "Example moves": "Applying mission values in hard decisions.",
+          "Future effect": "Legacy is already visible."
+        },
+        "Transcendent": {
+          "Present pattern": "Living the legacy now is a cultural non-negotiable.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Long-term impact is accelerated.",
+          "Signals": "External recognition of cultural alignment.",
+          "Edge condition": "You refuse to compromise present behavior for expedience.",
+          "Example moves": "Embedding legacy principles into all processes.",
+          "Future effect": "Legacy is as much present reality as future aspiration."
+        }
+      },
+      "Guiding Questions": [
+        "How can we live our legacy now?",
+        "Where are our actions misaligned with our intended legacy?",
+        "What would it look like to embody legacy in small daily ways?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Capture one daily action that aligns with your legacy vision.",
+    "Name one habit you will adopt to protect your legacy work.",
+    "Identify one way you will measure progress toward your legacy."
+  ],
+  "Version": "1",
+  "Created At": "2025-08-13",
+  "Protocol ID": "auto_1754995406480_0",
+  "Category": "",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false,
+      "Type": "",
+      "Description": "",
+      "Version": ""
+    },
+    "Complexity": 4,
+    "Readiness Stage": "Act",
+    "Tone Markers": [
+      "grounded",
+      "directive",
+      "reassuring"
+    ],
+    "Primary Scenarios": [
+      "Strategic alignment",
+      "Long-term planning",
+      "Legacy building"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Estimated Time": "60–90 min",
+    "Related Protocols": [
+      "Cost Lines to Bless or Cut",
+      "Unit Economics as a Living Compass"
+    ],
+    "Tags": [
+      "long-term-vision",
+      "strategic-planning",
+      "legacy"
+    ],
+    "Stones": [
+      "rhythm-alignment",
+      "renewal-as-output",
+      "integrity-over-expedience",
+      "aligned-scaling",
+      "core-signal-naming",
+      "plain-speech"
+    ],
+    "Fields": [
+      "coherence-practices",
+      "presence-restoration",
+      "values-before-velocity",
+      "systemic-safeguards",
+      "integration-practices",
+      "whole-system-sensing"
+    ],
+    "Bridges": [
+      "relational-integrity",
+      "regenerative-integrity"
+    ]
+  }
+}

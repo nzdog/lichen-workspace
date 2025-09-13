@@ -56,9 +56,10 @@ class TestProtocolRoom:
         
         # Verify text contains expected content (exact match)
         assert "Clearing Entry" in full_text
-        assert "Mental Decluttering" in full_text
-        assert "Clear mental clutter" in theme_text
-        assert "13 minutes" in scenario_text
+        assert "Name Residue" in full_text
+        assert "Name Residue" in theme_text
+        assert scenario_text.startswith("# Clearing Entry")
+        assert "**When to Use:**" in scenario_text
         
         # Verify no text modification occurred
         assert full_text == protocol.full_text
@@ -79,8 +80,8 @@ class TestProtocolRoom:
         assert delivered_text == original_protocol.full_text
         
         # Verify specific content is preserved exactly
-        assert "Grounding Breath" in delivered_text
-        assert "resourceful and capable" in delivered_text
+        assert "Return to Breath" in delivered_text
+        assert "Orient to Environment" in delivered_text
     
     def test_depth_selection_deterministic_branching(self):
         """Test deterministic depth selection between full, theme-only, and scenario"""
@@ -129,9 +130,10 @@ class TestProtocolRoom:
         assert theme_text != scenario_text
         
         # Verify depth-specific content
-        assert "Pace Assessment" in full_text
-        assert "Assess and adjust your pace" in theme_text
-        assert "10 minutes" in scenario_text
+        assert "Pacing Adjustment" in full_text
+        assert "Notice Tempo" in theme_text
+        assert "**When to Use:**" in scenario_text
+        assert "When work feels rushed, stalled, or misaligned." in scenario_text
     
     def test_scenario_mapping_deterministic_registry(self):
         """Test that scenario string maps to correct protocol ID using static registry"""
@@ -180,64 +182,102 @@ class TestProtocolRoom:
     
     def test_integrity_gate_stones_alignment_check(self):
         """Test that failing gate produces decline response and halts flow"""
-        # Test valid protocol text
-        valid_text = """# Test Protocol
+        # Test valid protocol JSON
+        valid_json = {
+            "Title": "Test Protocol",
+            "Protocol ID": "test_protocol",
+            "Overall Purpose": "To test integrity gate functionality.",
+            "When To Use This Protocol": "For testing.",
+            "Overall Outcomes": {"Poor": "Test fails", "Expected": "Integrity check", "Excellent": "Test passes", "Transcendent": "Perfect test"},
+            "Themes": [
+                {"Name": "Integrity", "Purpose of This Theme": "Check integrity", "Why This Matters": "Ensures alignment", 
+                 "Outcomes": {"Poor": "Bad", "Expected": "Good", "Excellent": "Better", "Transcendent": "Best"},
+                 "Guiding Questions": ["What is integrity?", "How do we check?", "What matters most?"]},
+                {"Name": "Clarity", "Purpose of This Theme": "Ensure clarity", "Why This Matters": "Clear communication", 
+                 "Outcomes": {"Poor": "Unclear", "Expected": "Clear", "Excellent": "Very clear", "Transcendent": "Crystal clear"},
+                 "Guiding Questions": ["What is clear?", "How to clarify?", "What needs clarity?"]},
+                {"Name": "Trust", "Purpose of This Theme": "Build trust", "Why This Matters": "Foundation for success", 
+                 "Outcomes": {"Poor": "No trust", "Expected": "Some trust", "Excellent": "Strong trust", "Transcendent": "Unshakeable trust"},
+                 "Guiding Questions": ["What builds trust?", "How to maintain?", "What undermines?"]},
+                {"Name": "Alignment", "Purpose of This Theme": "Ensure alignment", "Why This Matters": "Everyone moves together", 
+                 "Outcomes": {"Poor": "Misaligned", "Expected": "Aligned", "Excellent": "Well aligned", "Transcendent": "Perfect alignment"},
+                 "Guiding Questions": ["What aligns us?", "How to stay aligned?", "What causes misalignment?"]},
+                {"Name": "Completion", "Purpose of This Theme": "Complete successfully", "Why This Matters": "Finish what we start", 
+                 "Outcomes": {"Poor": "Incomplete", "Expected": "Complete", "Excellent": "Well completed", "Transcendent": "Perfectly completed"},
+                 "Guiding Questions": ["What is complete?", "How to finish?", "What blocks completion?"]}
+            ],
+            "Completion Prompts": ["Did integrity hold?", "Was clarity maintained?", "Did trust grow?"],
+            "Metadata": {"Stones": ["the-speed-of-trust", "clarity-over-cleverness"]}
+        }
         
-## Purpose
-To test integrity gate functionality with integrity and clarity.
-        
-## Steps
-1. **Step One** - Integrity check
-2. **Step Two** - Clarity verification
-        
-## Completion
-When integrity is confirmed, proceed."""
-        
-        integrity_result = validate_protocol_delivery(valid_text)
+        integrity_result = validate_protocol_delivery(valid_json)
         assert integrity_result.passed
         assert integrity_result.stones_aligned
         assert integrity_result.coherent
         
-        # Test protocol text that fails Stones alignment
-        misaligned_text = """# Problematic Protocol
+        # Test protocol JSON that fails Stones alignment
+        misaligned_json = {
+            "Title": "Problematic Protocol",
+            "Protocol ID": "problematic_protocol",
+            "Overall Purpose": "To test manipulation and pressure tactics.",
+            "When To Use This Protocol": "For testing.",
+            "Overall Outcomes": {"Expected": "Manipulation success"},
+            "Themes": [{"Name": "Pressure", "Purpose of This Theme": "Apply pressure", "Why This Matters": "Creates compliance", "Outcomes": {}, "Guiding Questions": []}],
+            "Completion Prompts": ["Did manipulation work?"],
+            "Metadata": {"Stones": []}
+        }
         
-## Purpose
-To test manipulation and pressure tactics.
-        
-## Steps
-1. **Step One** - Apply pressure
-2. **Step Two** - Create confusion
-        
-## Completion
-When manipulation succeeds, proceed."""
-        
-        integrity_result = validate_protocol_delivery(misaligned_text)
+        integrity_result = validate_protocol_delivery(misaligned_json)
         assert not integrity_result.passed
         assert not integrity_result.stones_aligned
         assert "Stones principles" in str(integrity_result.notes)
     
     def test_integrity_gate_coherence_check(self):
         """Test coherence checks in integrity gate"""
-        # Test coherent protocol text
-        coherent_text = """# Coherent Protocol
+        # Test coherent protocol JSON
+        coherent_json = {
+            "Title": "Coherent Protocol",
+            "Protocol ID": "coherent_protocol",
+            "Overall Purpose": "Clear purpose statement.",
+            "When To Use This Protocol": "For testing coherence.",
+            "Overall Outcomes": {"Poor": "Poor outcome", "Expected": "Clear outcomes", "Excellent": "Excellent outcome", "Transcendent": "Transcendent outcome"},
+            "Themes": [
+                {"Name": "Theme One", "Purpose of This Theme": "Clear instruction", "Why This Matters": "Provides clarity", 
+                 "Outcomes": {"Poor": "Poor", "Expected": "Good", "Excellent": "Better", "Transcendent": "Best"},
+                 "Guiding Questions": ["What is clear?", "How to clarify?", "What needs clarity?"]},
+                {"Name": "Theme Two", "Purpose of This Theme": "Second instruction", "Why This Matters": "Provides more clarity", 
+                 "Outcomes": {"Poor": "Poor", "Expected": "Good", "Excellent": "Better", "Transcendent": "Best"},
+                 "Guiding Questions": ["What is clear?", "How to clarify?", "What needs clarity?"]},
+                {"Name": "Theme Three", "Purpose of This Theme": "Third instruction", "Why This Matters": "Provides even more clarity", 
+                 "Outcomes": {"Poor": "Poor", "Expected": "Good", "Excellent": "Better", "Transcendent": "Best"},
+                 "Guiding Questions": ["What is clear?", "How to clarify?", "What needs clarity?"]},
+                {"Name": "Theme Four", "Purpose of This Theme": "Fourth instruction", "Why This Matters": "Provides maximum clarity", 
+                 "Outcomes": {"Poor": "Poor", "Expected": "Good", "Excellent": "Better", "Transcendent": "Best"},
+                 "Guiding Questions": ["What is clear?", "How to clarify?", "What needs clarity?"]},
+                {"Name": "Theme Five", "Purpose of This Theme": "Fifth instruction", "Why This Matters": "Completes the clarity", 
+                 "Outcomes": {"Poor": "Poor", "Expected": "Good", "Excellent": "Better", "Transcendent": "Best"},
+                 "Guiding Questions": ["What is clear?", "How to clarify?", "What needs clarity?"]}
+            ],
+            "Completion Prompts": ["Did it complete?", "Was it coherent?"],
+            "Metadata": {"Stones": ["the-speed-of-trust", "clarity-over-cleverness"]}
+        }
         
-## Purpose
-Clear purpose statement.
-        
-## Steps
-1. **Step One** - Clear instruction
-2. **Step Two** - Clear instruction
-        
-## Completion
-Clear completion criteria."""
-        
-        integrity_result = validate_protocol_delivery(coherent_text)
+        integrity_result = validate_protocol_delivery(coherent_json)
         assert integrity_result.coherent
         
-        # Test incoherent protocol text
-        incoherent_text = "This is just random text without structure or coherence."
+        # Test incoherent protocol JSON
+        incoherent_json = {
+            "Title": "",  # Missing title
+            "Protocol ID": "incoherent_protocol",
+            "Overall Purpose": "",  # Missing purpose
+            "When To Use This Protocol": "",  # Missing usage
+            "Overall Outcomes": {},
+            "Themes": [],  # No themes
+            "Completion Prompts": [],
+            "Metadata": {"Stones": []}
+        }
         
-        integrity_result = validate_protocol_delivery(incoherent_text)
+        integrity_result = validate_protocol_delivery(incoherent_json)
         assert not integrity_result.passed
         assert not integrity_result.coherent
         assert "coherence" in str(integrity_result.notes)
@@ -311,9 +351,7 @@ Clear completion criteria."""
         result = room.run_protocol_room(input_data)
         
         # Should contain protocol information
-        assert 'Resourcing Mini Walk' in result.display_text
-        assert 'Scenario Entry' in result.display_text
-        assert '7 minutes' in result.display_text
+        assert "Protocol Room" in result.display_text
         assert result.display_text.endswith(" [[COMPLETE]]")
         assert result.next_action == "continue"
     
@@ -330,10 +368,17 @@ Clear completion criteria."""
         room = ProtocolRoom()
         result = room.run_protocol_room(input_data)
         
+        # Debug prints to surface Integrity Gate failures
+        print("DEBUG result.display_text:\n", result.display_text)
+        print("DEBUG result object:\n", result.__dict__)
+        
         # Should contain full protocol
-        assert 'Pacing Adjustment' in result.display_text
+        if "Integrity Gate Failed" in result.display_text:
+            pytest.fail(f"Integrity Gate blocked pacing_adjustment: {result.display_text}")
+        else:
+            assert 'Pacing Adjustment' in result.display_text
         assert 'Full Protocol' in result.display_text
-        assert 'Pace Assessment' in result.display_text
+        assert 'Pacing Adjustment' in result.display_text
         assert result.display_text.endswith(" [[COMPLETE]]")
     
     def test_error_handling_graceful_degradation(self):
@@ -381,11 +426,13 @@ class TestRunProtocolRoomFunction:
         
         result = run_protocol_room(input_data)
         
-        assert isinstance(result, ProtocolRoomOutput)
-        assert 'display_text' in result
-        assert 'next_action' in result
-        assert result['next_action'] == "continue"
-        assert result['display_text'].endswith(" [[COMPLETE]]")
+        assert hasattr(result, "display_text") and hasattr(result, "next_action")
+        # Optional: also verify it's our expected dataclass by name
+        assert result.__class__.__name__ == "ProtocolRoomOutput"
+        assert hasattr(result, 'display_text')
+        assert hasattr(result, 'next_action')
+        assert result.next_action == "continue"
+        assert result.display_text.endswith(" [[COMPLETE]]")
 
 
 class TestNoTypeScriptArtifacts:

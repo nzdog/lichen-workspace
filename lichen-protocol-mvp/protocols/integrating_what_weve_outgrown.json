@@ -1,0 +1,319 @@
+{
+  "Title": "Integrating What We’ve Outgrown",
+  "Short Title": "Integrating Outgrown",
+  "Overall Purpose": "To consciously integrate lessons, assets, and identity shifts from what is no longer a fit—transforming endings into foundations for the next chapter.",
+  "Why This Matters": "Without integration, we either cling to the old or discard it entirely, losing valuable experience and creating hidden residue in the system.",
+  "When To Use This Protocol": "Use when ending a product, role, market, process, or identity that once served but no longer fits the system’s direction.",
+  "Overall Outcomes": {
+    "Poor": "You abruptly abandon what’s outgrown → The future repeats avoidable mistakes and loses valuable insight.",
+    "Expected": "You acknowledge the end but skip deeper integration → The future carries some learning but leaves residue unprocessed.",
+    "Excellent": "You intentionally harvest lessons and carry forward what’s useful → The future builds on solid, integrated foundations.",
+    "Transcendent": "Integration becomes cultural practice → The future evolves with compounding wisdom and minimal drag."
+  },
+  "Themes": [
+    {
+      "Name": "Recognizing What’s Outgrown",
+      "Purpose of This Theme": "To clearly identify the people, processes, or structures that no longer fit.",
+      "Why This Matters": "Clarity on what’s no longer aligned is the first step to integration.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You sense misfit but avoid naming it.",
+          "Immediate cost": "Energy drains into work that no longer serves.",
+          "30-90 day system effect": "Misalignment deepens, morale dips.",
+          "Signals": "Persistent friction, lack of enthusiasm.",
+          "Edge condition": "Confusing discomfort with growth.",
+          "Example moves": "Continuing to invest in a declining product.",
+          "Future effect": "The future repeats avoidable mistakes."
+        },
+        "Expected": {
+          "Present pattern": "You acknowledge misfit when it’s obvious.",
+          "Immediate cost": "Late response limits recovery options.",
+          "30-90 day system effect": "Partial improvements, lingering misalignment.",
+          "Signals": "Drop in performance after prolonged strain.",
+          "Edge condition": "Addressing only visible misfits.",
+          "Example moves": "Shutting down a project only after budget overruns.",
+          "Future effect": "The future carries some learning but leaves residue unprocessed."
+        },
+        "Excellent": {
+          "Present pattern": "You identify misfit early and openly.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "System remains light and adaptive.",
+          "Signals": "Proactive discussion of fit during reviews.",
+          "Edge condition": "Balancing decisiveness with care.",
+          "Example moves": "Using fit-check criteria in project evaluations.",
+          "Future effect": "The future builds on solid, integrated foundations."
+        },
+        "Transcendent": {
+          "Present pattern": "Fit-checking is a continuous cultural habit.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Long-term alignment stays strong.",
+          "Signals": "Regular letting go without resistance.",
+          "Edge condition": "Avoiding over-pruning through patience.",
+          "Example moves": "Monthly reflection on what is still serving.",
+          "Future effect": "The future evolves with compounding wisdom and minimal drag."
+        }
+      },
+      "Guiding Questions": [
+        "What in our work feels misaligned or heavy now?",
+        "How long have we noticed this?",
+        "What would happen if we named it openly?"
+      ]
+    },
+    {
+      "Name": "Honoring What Has Served",
+      "Purpose of This Theme": "To acknowledge and appreciate the value that the outgrown element brought.",
+      "Why This Matters": "Gratitude strengthens closure and preserves positive energy for the future.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You drop the old without acknowledgment.",
+          "Immediate cost": "Loss feels abrupt and unprocessed.",
+          "30-90 day system effect": "Residual resentment or regret lingers.",
+          "Signals": "Avoidance of discussing the ending.",
+          "Edge condition": "Treating closure as unproductive.",
+          "Example moves": "Silently removing a role from the org chart.",
+          "Future effect": "The future repeats endings that leave emotional residue."
+        },
+        "Expected": {
+          "Present pattern": "You acknowledge value privately but not publicly.",
+          "Immediate cost": "Closure is incomplete for stakeholders.",
+          "30-90 day system effect": "Mixed feelings about the decision.",
+          "Signals": "Team members speculate about reasons.",
+          "Edge condition": "Assuming everyone already understands.",
+          "Example moves": "Thanking individuals in private but not in team settings.",
+          "Future effect": "The future carries partial gratitude but incomplete closure."
+        },
+        "Excellent": {
+          "Present pattern": "You express appreciation clearly and inclusively.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Trust and morale stay intact.",
+          "Signals": "Positive reflection on what was.",
+          "Edge condition": "Balancing gratitude with readiness to move on.",
+          "Example moves": "Hosting a closing ritual or celebration.",
+          "Future effect": "The future builds on goodwill and shared memory."
+        },
+        "Transcendent": {
+          "Present pattern": "Gratitude for endings is woven into culture.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Community bonds strengthen through change.",
+          "Signals": "Endings create pride in the journey.",
+          "Edge condition": "Avoiding sentimentality that delays closure.",
+          "Example moves": "Making appreciation a standard part of closure processes.",
+          "Future effect": "The future grows from endings without emotional drag."
+        }
+      },
+      "Guiding Questions": [
+        "What value did this bring at its peak?",
+        "Who or what deserves acknowledgment here?",
+        "How will we express gratitude as we close this chapter?"
+      ]
+    },
+    {
+      "Name": "Extracting Lessons and Assets",
+      "Purpose of This Theme": "To capture and carry forward what’s worth keeping.",
+      "Why This Matters": "Integration turns endings into fuel for what’s next.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You discard the old without harvesting its value.",
+          "Immediate cost": "Knowledge and assets are lost.",
+          "30-90 day system effect": "Relearning past lessons wastes time.",
+          "Signals": "Starting from scratch unnecessarily.",
+          "Edge condition": "Assuming nothing is transferable.",
+          "Example moves": "Deleting project files without review.",
+          "Future effect": "The future repeats avoidable mistakes and loses valuable insight."
+        },
+        "Expected": {
+          "Present pattern": "You save some useful pieces informally.",
+          "Immediate cost": "Integration happens inconsistently.",
+          "30-90 day system effect": "Partial efficiency gains, missed opportunities.",
+          "Signals": "Old assets resurface sporadically.",
+          "Edge condition": "No structured process for asset review.",
+          "Example moves": "Saving a few templates from a closed product.",
+          "Future effect": "The future carries some learning but leaves residue unprocessed."
+        },
+        "Excellent": {
+          "Present pattern": "You systematically review and capture lessons and assets.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "New initiatives benefit from proven insights.",
+          "Signals": "Lessons referenced in planning.",
+          "Edge condition": "Avoiding overload by curating only what’s valuable.",
+          "Example moves": "Documenting key wins and pitfalls in a shared archive.",
+          "Future effect": "The future builds on solid, integrated foundations."
+        },
+        "Transcendent": {
+          "Present pattern": "Harvesting value is a natural part of closure.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "Wisdom compounds and spreads.",
+          "Signals": "Teams draw from past cycles instinctively.",
+          "Edge condition": "Balancing efficiency with reflection.",
+          "Example moves": "Making 'harvest sessions' a closure ritual.",
+          "Future effect": "The future evolves with compounding wisdom and minimal drag."
+        }
+      },
+      "Guiding Questions": [
+        "What’s worth keeping from this?",
+        "How will we document and share it?",
+        "What mistakes can we now avoid repeating?"
+      ]
+    },
+    {
+      "Name": "Releasing What No Longer Serves",
+      "Purpose of This Theme": "To let go of structures, beliefs, and habits that belong to the past phase.",
+      "Why This Matters": "Release creates the space for the next chapter to grow.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You hold onto the old just in case.",
+          "Immediate cost": "New growth is crowded out.",
+          "30-90 day system effect": "Change feels heavy and slow.",
+          "Signals": "Backlog of unused assets or outdated processes.",
+          "Edge condition": "Mistaking familiarity for usefulness.",
+          "Example moves": "Keeping inactive accounts or subscriptions.",
+          "Future effect": "The future clogs with outdated processes."
+        },
+        "Expected": {
+          "Present pattern": "You let go of obvious mismatches.",
+          "Immediate cost": "Some clutter remains and slows momentum.",
+          "30-90 day system effect": "Partial lightening of load.",
+          "Signals": "Mixed use of old and new systems.",
+          "Edge condition": "Avoiding deeper releases out of caution.",
+          "Example moves": "Phasing out a tool but keeping legacy workarounds.",
+          "Future effect": "The future improves slightly but keeps hidden residue."
+        },
+        "Excellent": {
+          "Present pattern": "You release misaligned elements with intention and closure.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "System feels lighter and more responsive.",
+          "Signals": "Reduced maintenance of unused assets.",
+          "Edge condition": "Releasing without losing valuable history.",
+          "Example moves": "Archiving old files after extracting lessons.",
+          "Future effect": "The future gains speed and clarity."
+        },
+        "Transcendent": {
+          "Present pattern": "Release is a celebrated and normalized act.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "System remains lean and adaptive.",
+          "Signals": "Proactive identification of what’s ready to release.",
+          "Edge condition": "Avoiding release for novelty’s sake.",
+          "Example moves": "Quarterly 'release reviews' across the team.",
+          "Future effect": "The future remains light, responsive, and adaptive."
+        }
+      },
+      "Guiding Questions": [
+        "What is taking space without contributing value?",
+        "What am I holding onto from habit?",
+        "What could we bless and release now?"
+      ]
+    },
+    {
+      "Name": "Integrating Identity Shifts",
+      "Purpose of This Theme": "To consciously step into the new role, scope, or posture that emerges after release.",
+      "Why This Matters": "Without claiming the new identity, the system risks slipping back into old patterns.",
+      "Outcomes": {
+        "Poor": {
+          "Present pattern": "You keep operating as if the old role still applies.",
+          "Immediate cost": "New opportunities are missed.",
+          "30-90 day system effect": "System defaults to outdated dynamics.",
+          "Signals": "Decisions made from past constraints.",
+          "Edge condition": "Fear of stepping into the unknown.",
+          "Example moves": "Declining offers that fit the new role out of habit.",
+          "Future effect": "The future stays anchored to the past."
+        },
+        "Expected": {
+          "Present pattern": "You adopt some aspects of the new identity but inconsistently.",
+          "Immediate cost": "Partial alignment with current reality.",
+          "30-90 day system effect": "Mixed signals about direction and readiness.",
+          "Signals": "Alternating between old and new behaviors.",
+          "Edge condition": "Not fully trusting the new identity.",
+          "Example moves": "Updating job title but not responsibilities.",
+          "Future effect": "The future moves forward unevenly."
+        },
+        "Excellent": {
+          "Present pattern": "You fully inhabit the new identity.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "System confidently navigates its new chapter.",
+          "Signals": "Consistent communication of new role and focus.",
+          "Edge condition": "Remaining open to evolution.",
+          "Example moves": "Redesigning workflows to match the new scope.",
+          "Future effect": "The future builds momentum in the new direction."
+        },
+        "Transcendent": {
+          "Present pattern": "Identity integration is fluid and ongoing.",
+          "Immediate cost": "Not applicable",
+          "30-90 day system effect": "System adapts identities without losing coherence.",
+          "Signals": "No confusion about roles or direction.",
+          "Edge condition": "Avoiding fixation on any single identity.",
+          "Example moves": "Embedding identity check-ins in leadership reviews.",
+          "Future effect": "The future evolves seamlessly into new forms."
+        }
+      },
+      "Guiding Questions": [
+        "What is my role now, in truth?",
+        "How will I act from this new identity?",
+        "What structures will reinforce this shift?"
+      ]
+    }
+  ],
+  "Completion Prompts": [
+    "Name one lesson or asset you'll carry forward.",
+    "Identify one thing you can release today to make space for growth.",
+    "Capture one commitment to act from your new identity."
+  ],
+  "Version": "1",
+  "Created At": "2025-08-13",
+  "Protocol ID": "auto_1754995405294_0",
+  "Category": "",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false,
+      "Type": "",
+      "Description": "",
+      "Version": ""
+    },
+    "Complexity": 3,
+    "Readiness Stage": "Integrate",
+    "Tone Markers": [
+      "grounded",
+      "invitational",
+      "non-coercive"
+    ],
+    "Primary Scenarios": [
+      "Post-project review",
+      "Organizational change"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Estimated Time": "60–90 min",
+    "Related Protocols": [
+      "Closing a Chapter",
+      "Letting Go of the Startup"
+    ],
+    "Tags": [
+      "change-management",
+      "integration",
+      "reflection"
+    ],
+    "Stones": [
+      "integration-not-fragmentation",
+      "honoring-complexity",
+      "core-signal-naming",
+      "plain-speech",
+      "coherence-as-growth",
+      "integrity-over-expedience"
+    ],
+    "Fields": [
+      "integration-practices",
+      "whole-system-sensing",
+      "coherence-practices",
+      "presence-restoration",
+      "misalignment-awareness",
+      "relational-repair"
+    ],
+    "Bridges": [
+      "identity-shift",
+      "misalignment",
+      "relational-integrity",
+      "wholeness-contortion"
+    ]
+  }
+}

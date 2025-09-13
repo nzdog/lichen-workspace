@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pytest
 
-from src.lichen_chunker.chunking import ProtocolChunker
-from src.lichen_chunker.types import Protocol, OverallOutcomes, Theme, ThemeOutcomes, OutcomeLevel
+from lichen_chunker.chunking import ProtocolChunker
+from lichen_chunker.types import Protocol, OverallOutcomes, Theme, ThemeOutcomes, OutcomeLevel
 
 
 def create_test_protocol() -> Protocol:

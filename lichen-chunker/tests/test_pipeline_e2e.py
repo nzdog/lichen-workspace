@@ -6,8 +6,8 @@ from pathlib import Path
 
 import pytest
 
-from src.lichen_chunker.pipeline import create_pipeline, resolve_profile
-from src.lichen_chunker.embeddings import SBERTEmbedder
+from lichen_chunker.pipeline import create_pipeline, resolve_profile
+from lichen_chunker.embeddings import SBERTEmbedder
 
 
 def create_test_protocol_file() -> Path:
