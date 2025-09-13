@@ -19,6 +19,13 @@ lichen-chunker/index/**
 
 # RAG logs
 logs/rag/
+logs/
+logs/**/*
+**/*.log
+indexes/
+indexes/**/*
+vector_store/
+data/
 .DS_Store
 */.DS_Store
 ds_store
