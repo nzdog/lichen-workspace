@@ -1,6 +1,6 @@
 name: Redaction & Repo Hygiene
 
-on:
+"on":
   pull_request:
     branches: [ main, master, develop ]
   push:
@@ -144,17 +144,15 @@ jobs:
             echo "❌ These example paths are NOT ignored by your current .gitignore:"
             printf '  - %s\n' "${missing[@]}"
             echo "Hint: add patterns like these if you don't have them yet:"
-            cat <<'PATTERNS'
-    logs/
-    *.jsonl
-    lichen-chunker/index/
-    *.faiss
-    *.pkl
-    *.parquet
-    .venv/
-    **/.venv/
-    .DS_Store
-    PATTERNS
+            echo "    logs/"
+            echo "    *.jsonl"
+            echo "    lichen-chunker/index/"
+            echo "    *.faiss"
+            echo "    *.pkl"
+            echo "    *.parquet"
+            echo "    .venv/"
+            echo "    **/.venv/"
+            echo "    .DS_Store"
             exit 1
           fi
 
