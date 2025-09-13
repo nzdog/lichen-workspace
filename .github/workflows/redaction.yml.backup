@@ -1,0 +1,204 @@
+name: Redaction & Repo Hygiene
+
+on:
+  pull_request:
+    branches: [ main, master, develop ]
+  push:
+    branches: [ main, master, develop ]
+  workflow_dispatch:  # Manual trigger enabled
+
+jobs:
+  check:
+    name: Security & Privacy Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history for better analysis
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          pip install -r lichen-protocol-mvp/requirements.txt
+          if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
+          pip install pytest watchdog pre-commit
+
+      # Optional: cache pip to speed repeats
+      # - name: Cache pip
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: ~/.cache/pip
+      #     key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-pip-
+
+      - name: Run redaction-focused unit tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "🧪 Running redaction and observability tests..."
+          pytest -q eval/tests/ lichen-protocol-mvp/hallway/tests/ -k "redaction or observability" --tb=short
+
+      - name: Ensure no logs or indexes in tracked files
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "🔍 Checking for tracked logs and indexes..."
+          if git ls-files | grep -E '(^|/)logs/|\.jsonl$|lichen-chunker/index/'; then
+            echo "❌ Found tracked logs or indexes in repository"
+            echo "These files should be excluded by .gitignore:"
+            git ls-files | grep -E '(^|/)logs/|\.jsonl$|lichen-chunker/index/'
+            exit 1
+          else
+            echo "✅ No logs or indexes found in tracked files"
+          fi
+
+      - name: Ensure large/binary files are not tracked
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "🔍 Checking for large or binary files (tracked only)..."
+          THRESHOLD_BYTES=$((5 * 1024 * 1024)) # 5 MB
+          declare -a large_files=()
+          declare -a binary_files=()
+
+          # Loop safely over tracked files (NUL-delimited)
+          while IFS= read -r -d '' f; do
+            # ---- size check
+            sz=$(wc -c <"$f")
+            if [ "$sz" -gt "$THRESHOLD_BYTES" ]; then
+              if command -v numfmt >/dev/null 2>&1; then
+                human=$(numfmt --to=iec "$sz")
+                large_files+=("$f ($human)")
+              else
+                large_files+=("$f ($sz bytes)")
+              fi
+            fi
+
+            # ---- binary check: only flag true binaries (charset=binary)
+            # allowlist common text/code extensions to avoid mislabels
+            case "$f" in
+              *.md|*.txt|*.json|*.jsonl|*.yml|*.yaml|*.toml|*.ini|*.csv|*.tsv|*.py|*.pyi|*.sh|*.bash|*.zsh|*.js|*.ts|*.tsx|*.jsx|*.css|*.scss|*.html|*.xml|*.svg)
+                continue
+                ;;
+            esac
+            if file -I "$f" 2>/dev/null | grep -q 'charset=binary'; then
+              binary_files+=("$f")
+            fi
+          done < <(git ls-files -z)
+
+          if ((${#large_files[@]})); then
+            echo "❌ Found large files (> $THRESHOLD_BYTES bytes):"
+            printf '%s\n' "${large_files[@]}"
+            exit 1
+          fi
+
+          if ((${#binary_files[@]})); then
+            echo "❌ Found binary files in repository:"
+            printf '%s\n' "${binary_files[@]}"
+            exit 1
+          fi
+
+          echo "✅ No large or binary files found in tracked files"
+
+      - name: Check .gitignore coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "🔍 Verifying .gitignore coverage (semantic check)..."
+
+          if [ ! -f .gitignore ]; then
+            echo "❌ .gitignore file not found"
+            exit 1
+          fi
+
+          # Sample paths that MUST be ignored by .gitignore behavior
+          required_paths=(
+            "logs/example.log"
+            "somewhere/file.jsonl"
+            "lichen-chunker/index/dump.faiss"
+            "models/example.pkl"
+            "datasets/part.parquet"
+            ".venv/bin/python"
+            "pkg/.venv/bin/python"
+            ".DS_Store"
+          )
+
+          missing=()
+          for p in "${required_paths[@]}"; do
+            if ! git check-ignore -q "$p"; then
+              missing+=("$p")
+            fi
+          done
+
+          if ((${#missing[@]})); then
+            echo "❌ These example paths are NOT ignored by your current .gitignore:"
+            printf '  - %s\n' "${missing[@]}"
+            echo "Hint: add patterns like these if you don't have them yet:"
+            echo "    logs/"
+            echo "    *.jsonl"
+            echo "    lichen-chunker/index/"
+            echo "    *.faiss"
+            echo "    *.pkl"
+            echo "    *.parquet"
+            echo "    .venv/"
+            echo "    **/.venv/"
+            echo "    .DS_Store"
+            exit 1
+          fi
+
+          echo "✅ .gitignore correctly ignores required paths"
+
+      # Replace "check pre-commit hook file" (CI doesn't have local hooks) with actually running pre-commit
+      - name: Run pre-commit
+        uses: pre-commit/action@v3.0.1
+
+      - name: Test redaction functionality (runtime toggle)
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "🧪 Testing redaction functionality..."
+
+          # Test with redaction enabled
+          export REDACT_LOGS=1
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, 'lichen-protocol-mvp/hallway')
+          from redaction import redact_text
+          result = redact_text('Contact john@example.com for details')
+          assert '[EMAIL_REDACTED]' in result
+          assert 'john@example.com' not in result
+          print('✅ Redaction enabled test passed')
+          PY
+
+          # Test with redaction disabled
+          export REDACT_LOGS=0
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, 'lichen-protocol-mvp/hallway')
+          from redaction import redact_text
+          result = redact_text('Contact john@example.com for details')
+          assert 'john@example.com' in result
+          assert '[EMAIL_REDACTED]' not in result
+          print('✅ Redaction disabled test passed')
+          PY
+
+      - name: Security summary
+        shell: bash
+        run: |
+          echo "🎉 All security and privacy checks passed!"
+          echo "✅ Redaction tests passed"
+          echo "✅ No sensitive logs/index files tracked"
+          echo "✅ No large or binary files tracked"
+          echo "✅ .gitignore properly configured"
+          echo "✅ pre-commit checks passed"
+          echo "✅ Redaction toggle works as expected"

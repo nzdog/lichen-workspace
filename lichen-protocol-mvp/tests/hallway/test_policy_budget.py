@@ -4,7 +4,7 @@ Tests for policy enforcement and budget management.
 
 import pytest
 from unittest.mock import Mock
-from hallway.types import ExecutionContext, StepStatus
+from hallway.hallway_types import ExecutionContext, StepStatus
 from hallway.orchestrator import run_hallway, _exceeded_budgets
 from hallway.adapters.mock_adapters import MockLLM, MockVectorStore, MockClock, MockIdFactory, MockMetrics, MockLogger
 from hallway.adapters.fs_storage import FilesystemStorage

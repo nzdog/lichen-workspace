@@ -11,7 +11,7 @@ from typing import Dict, Any, List, Optional
 _warmup_counter = 0
 _warmup_threshold = 3
 
-from .types import ExecutionContext, FinalOutput, StepStatus, StepResult
+from .hallway_types import ExecutionContext, FinalOutput, StepStatus, StepResult
 from .steps import run_step
 from .logging import emit_event
 from .errors import BudgetExceededError

@@ -6,7 +6,7 @@ import pytest
 import os
 from unittest.mock import patch, MagicMock
 from ..orchestrator import _run_rag_retrieval
-from ..types import ExecutionContext
+from ..hallway_types import ExecutionContext
 
 
 class TestMissingCitationsRefusal:

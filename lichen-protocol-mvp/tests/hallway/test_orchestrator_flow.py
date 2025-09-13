@@ -1,7 +1,7 @@
 import types
 import pytest
 
-from hallway.types import ExecutionContext, StepStatus
+from hallway.hallway_types import ExecutionContext, StepStatus
 from hallway.orchestrator import run_hallway
 import hallway.orchestrator as orch_mod  # we patch the symbol used inside orchestrator
 

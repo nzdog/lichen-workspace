@@ -5,7 +5,7 @@ Step execution primitives for gate and room coordination.
 import time
 from typing import Dict, Any, List
 
-from .types import ExecutionContext, StepResult, StepStatus
+from .hallway_types import ExecutionContext, StepResult, StepStatus
 from .errors import GateError, RoomError, ValidationError
 from .validation import validate_room_input, validate_room_output
 from .gates import evaluate_gate_chain

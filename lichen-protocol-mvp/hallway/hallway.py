@@ -15,7 +15,7 @@ from .schema_utils import validate_room_output, create_schema_decline
 
 # New orchestrator imports
 from .orchestrator import run_hallway
-from .types import ExecutionContext
+from .hallway_types import ExecutionContext
 from .adapters import build_ports
 
 

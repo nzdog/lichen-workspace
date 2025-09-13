@@ -3,7 +3,7 @@ Structured event logging helpers for the Hallway Protocol.
 """
 
 from typing import Dict, Any
-from .types import ExecutionContext
+from .hallway_types import ExecutionContext
 
 
 def emit_event(ctx: ExecutionContext, **fields) -> None:
