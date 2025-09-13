@@ -1,5 +1,12 @@
 name: Redaction & Repo Hygiene
+- name: Set up Python:
+  uses: actions/setup-python@v4
+  with:
+    python-version: '3.11'  # Or your needed version
 
+- name: Install dependencies
+  run: |
+    pip install -r lichen-protocol-mvp/requirements.txt
 on:
   pull_request:
     branches: [ main, master, develop ]
