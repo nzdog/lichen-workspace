@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "doc_id": "",
+  "doc_type": "invalid_type",
+  "title": "Invalid Document",
+  "text": "",
+  "unknown_field": "should not be allowed"
+}

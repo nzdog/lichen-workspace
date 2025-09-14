@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lichen.system/schemas/rag/QueryRequest.schema.json",
+  "title": "RAG Query Request",
+  "type": "object",
+  "required": ["v", "query", "mode"],
+  "properties": {
+    "v": { "type": "string", "const": "1.0" },
+    "trace_id": { "type": "string", "minLength": 8 },
+    "query": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "mode": { "type": "string", "enum": ["latency", "accuracy"] },
+    "top_k": { "type": "integer", "minimum": 1, "maximum": 10, "default": 5 },
+    "filters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "doc_types": { "type": "array", "items": { "enum": ["protocol", "reflection", "essay"] } },
+        "tags": { "type": "array", "items": { "type": "string" }, "maxItems": 20 }
+      }
+    },
+    "include_spans": { "type": "boolean", "default": true },
+    "max_chunk_tokens": { "type": "integer", "minimum": 64, "maximum": 2048 }
+  },
+  "additionalProperties": false
+}

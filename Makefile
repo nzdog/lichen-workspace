@@ -1,6 +1,8 @@
 # Makefile for RAG Pipeline
 # Headless two-lane pipeline with per-lane model control
 
+-include Makefile.rag_v0
+
 .PHONY: help embed-fast embed-accurate catalog clean logs test-eval auto-label
 
 # Default target

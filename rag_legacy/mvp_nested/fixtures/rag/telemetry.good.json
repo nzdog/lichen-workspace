@@ -1,0 +1,11 @@
+{
+  "v": "1.0",
+  "trace_id": "trace-telemetry-123",
+  "ts": "2025-09-07T00:00:00Z",
+  "event": "REQUEST_RECEIVED",
+  "data": {
+    "note": "ok",
+    "query_length": 45,
+    "mode": "latency"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "job_id": "embed-latency-local",
+  "embed_model": "text-embedding-3-small",
+  "embedding_dim": 1536,
+  "normalize": true,
+  "batch_size": 32,
+  "precision": "fp16",
+  "seed": 42,
+  "chunkset_uri": "artifacts/chunks.jsonl",
+  "output_uri": "artifacts/latency/",
+  "created_at": "2025-09-07T00:00:00Z"
+}

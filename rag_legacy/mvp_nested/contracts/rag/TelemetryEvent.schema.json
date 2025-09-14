@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lichen.system/schemas/rag/TelemetryEvent.schema.json",
+  "title": "RAG Telemetry Event",
+  "type": "object",
+  "required": ["v", "trace_id", "event", "ts"],
+  "properties": {
+    "v": { "type": "string", "const": "1.0" },
+    "trace_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "event": {
+      "type": "string",
+      "enum": ["REQUEST_RECEIVED", "INDEX_SELECTED", "HITS_RETURNED", "CACHE_HIT", "TIMEOUT", "ERROR"]
+    },
+    "data": { "type": "object", "additionalProperties": true }
+  },
+  "additionalProperties": false
+}

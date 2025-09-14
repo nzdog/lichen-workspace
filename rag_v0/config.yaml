@@ -1,0 +1,43 @@
+embedding:
+  provider: openai
+  model: text-embedding-3-small
+  # switchable later, e.g. sentence-transformers: all-MiniLM-L6-v2
+  batch_size: 128
+
+chunking:
+  window: 800
+  overlap: 120
+  policy: by_sentence_then_window
+
+index:
+  type: faiss.IndexFlatIP
+  path: rag_v0/index/vecs.faiss
+  meta_path: rag_v0/index/vecs.meta.json
+
+corpus:
+  # absolute path with protocols; supports .json and .md
+  input_dir: /Users/Nigel/Desktop/lichen-workspace/protocols
+  patterns: [".json", ".md"]
+  protocols_path: rag_v0/corpus/protocols.jsonl
+  chunks_path: rag_v0/chunks/chunks.jsonl
+
+retrieval:
+  k: 20
+  # reserve knobs for later lanes without implementing them yet
+  score_normalization: true
+
+eval:
+  dataset: eval/datasets/evalset.jsonl
+  topk_for_metrics: 20
+  latency_p95_target_ms: 5000
+  # weekly scorecards saved here
+  out_dir: eval/out
+
+drift:
+  foundation_stones_path: /Users/Nigel/Desktop/lichen-workspace/Foundation_Stones_of_the_System.txt
+  min_keyword_coverage: 0.10  # fraction of Stones terms appearing across retrieved contexts
+  min_semantic_sim: 0.50      # cosine similarity between Stones embedding and mean of retrieved text embeddings
+
+logging:
+  log_dir: logs
+  verbose: false

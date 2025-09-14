@@ -1,0 +1,8 @@
+.PHONY: build-corpus chunk embed search eval drift interactive
+build-corpus: ; python3 rag_v0/scripts/00_build_corpus.py
+chunk:        ; python3 rag_v0/scripts/01_chunk.py
+embed:        ; python3 rag_v0/scripts/02_embed.py
+search:       ; python3 rag_v0/scripts/10_search.py --query "$$Q" --k $${K:-20}
+eval:         ; python3 rag_v0/scripts/11_eval.py
+drift:        ; python3 rag_v0/scripts/12_drift_audit.py
+interactive:  ; python3 rag_v0/scripts/interactive_search.py

@@ -1,0 +1,22 @@
+{
+  "index_id": "accuracy-local",
+  "mode": "accuracy",
+  "ann": {
+    "backend": "faiss",
+    "metric": "cosine",
+    "params": {
+      "kind": "bruteforce"
+    }
+  },
+  "reranker": {
+    "model": "placeholder-noop",
+    "max_passages": 20,
+    "budget_ms": 400
+  },
+  "metadata_fields": ["doc_type", "tags", "section"],
+  "limits": {
+    "top_k_max": 10,
+    "p95_target_ms": 800
+  },
+  "created_at": "2025-09-07T00:00:00Z"
+}

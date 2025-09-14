@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lichen.system/schemas/rag/Error.schema.json",
+  "title": "RAG Error",
+  "type": "object",
+  "required": ["v", "trace_id", "error"],
+  "properties": {
+    "v": { "type": "string", "const": "1.0" },
+    "trace_id": { "type": "string" },
+    "error": {
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": ["BAD_REQUEST", "RATE_LIMIT", "INDEX_UNAVAILABLE", "TIMEOUT", "INTERNAL"]
+        },
+        "message": { "type": "string" },
+        "details": { "type": "object" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

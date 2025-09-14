@@ -1,0 +1,12 @@
+{
+  "v": "1.0",
+  "trace_id": "trace-err-123",
+  "error": {
+    "code": "TIMEOUT",
+    "message": "Query processing timed out after 30 seconds",
+    "details": {
+      "timeout_ms": 30000,
+      "partial_results": false
+    }
+  }
+}
