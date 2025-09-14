@@ -13,6 +13,8 @@ import logging
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 
+from .model_config import get_model_config
+
 logger = logging.getLogger(__name__)
 
 
@@ -23,6 +25,7 @@ class RAGAdapter:
         """Initialize RAG adapter with configuration."""
         self.config = self._load_config(config_path)
         self.lanes_config = self._load_lanes_config()
+        self.model_config = get_model_config()  # Initialize model configuration
         self.dummy_mode = os.getenv("USE_DUMMY_RAG", "0") == "1"
         self.enabled = os.getenv("RAG_ENABLED", "1") == "1"
         self.default_lane = os.getenv("RAG_PROFILE", "fast")
@@ -186,13 +189,14 @@ class RAGAdapter:
             self.dummy_retrieval = self._load_dummy_retrieval()
             self.dummy_answers = self._load_dummy_answers()
     
-    def retrieve(self, query: str, lane: str = None) -> List[Dict[str, Any]]:
+    def retrieve(self, query: str, lane: str = None, use_router: bool = True) -> List[Dict[str, Any]]:
         """
         Retrieve relevant documents for a query.
         
         Args:
             query: Search query
             lane: Retrieval lane (fast/accurate), defaults to configured default
+            use_router: Whether to use protocol router for scoped retrieval
             
         Returns:
             List of retrieval results with doc, chunk, rank, score, text
@@ -207,7 +211,7 @@ class RAGAdapter:
             return self._dummy_retrieve(query, lane)
         
         # Live retrieval implementation
-        return self._live_retrieve(query, lane)
+        return self._live_retrieve(query, lane, use_router)
     
     def _dummy_retrieve(self, query: str, lane: str) -> List[Dict[str, Any]]:
         """Dummy retrieval using pre-computed results."""
@@ -230,7 +234,7 @@ class RAGAdapter:
         # Return empty results if no match found
         return []
     
-    def _live_retrieve(self, query: str, lane: str) -> List[Dict[str, Any]]:
+    def _live_retrieve(self, query: str, lane: str, use_router: bool = True) -> List[Dict[str, Any]]:
         """Live retrieval using actual embedding models and vector store."""
         if not hasattr(self, 'faiss_stores') or lane not in self.faiss_stores:
             logger.warning(f"FAISS store for {lane} lane not initialized, returning empty results")
@@ -248,48 +252,148 @@ class RAGAdapter:
             # Get lane configuration
             lane_config = self.config.get(lane, {})
             
+            # Apply protocol router if enabled
+            allowed_protocol_ids = None
+            router_decision = None
+            if use_router and self.config.get("router", {}).get("enabled", True):
+                try:
+                    import sys
+                    # Add the root directory to the path
+                    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../'))
+                    sys.path.append(root_dir)
+                    from rag.router import parse_query, route_query
+                    
+                    # Parse query and route to protocols
+                    parsed = parse_query(query)
+                    router_decision = route_query(parsed)
+                    route = getattr(router_decision, "route", router_decision.get("route") if isinstance(router_decision, dict) else None)
+                    candidates = getattr(router_decision, "candidates", router_decision.get("candidates") if isinstance(router_decision, dict) else None)
+                    
+                    if route != "all" and candidates:
+                        allowed_protocol_ids = [c["protocol_id"] for c in candidates]
+                        logger.info(f"Router selected {len(allowed_protocol_ids)} protocols: {allowed_protocol_ids}")
+                    else:
+                        logger.info("Router confidence too low, using global search")
+                        
+                except Exception as e:
+                    logger.warning(f"Router failed: {e}, falling back to global search")
+            
             if lane == "fast":
-                # Fast lane: MMR reranking
-                top_k = lane_config.get("top_k", 8)
+                # Fast lane: MMR reranking with router filtering
+                top_k = lane_config.get("top_k", 20)  # Increased for router filtering
                 mmr_lambda = lane_config.get("mmr_lambda", 0.4)
                 
-                # Search for more candidates for MMR
+                # Search for more candidates for MMR and router filtering
                 search_k = top_k * 4
                 candidates = faiss_store.search(query_embedding, search_k)
+                
+                # Apply protocol filtering if router was used
+                if allowed_protocol_ids:
+                    filtered_candidates = []
+                    for idx, score in candidates:
+                        meta = faiss_store.get_meta(idx)
+                        if meta and meta.get("doc") in allowed_protocol_ids:
+                            filtered_candidates.append((idx, score))
+                    
+                    # If we have fewer results after filtering, top up with global search
+                    if len(filtered_candidates) < top_k:
+                        logger.info(f"Protocol filter reduced results to {len(filtered_candidates)}, topping up with global search")
+                        # Add remaining candidates from global search
+                        remaining_needed = top_k - len(filtered_candidates)
+                        seen_indices = {idx for idx, _ in filtered_candidates}
+                        for idx, score in candidates:
+                            if idx not in seen_indices and len(filtered_candidates) < top_k:
+                                filtered_candidates.append((idx, score))
+                                # Mark as top-up source
+                                meta = faiss_store.get_meta(idx)
+                                if meta:
+                                    meta["source"] = "topup"
+                    
+                    candidates = filtered_candidates
                 
                 # Apply MMR reranking
                 reranked = faiss_store._mmr_rerank(candidates, query_embedding, mmr_lambda, top_k)
                 
             elif lane == "accurate":
-                # Accurate lane: cross-encoder reranking with environment overrides
-                top_k_retrieve = int(os.getenv("ACCURATE_TOPK_RETRIEVE", lane_config.get("top_k_retrieve", 40)))
+                # Accurate lane: cross-encoder reranking with router filtering
+                top_k_retrieve = int(os.getenv("ACCURATE_TOPK_RETRIEVE", lane_config.get("top_k_retrieve", 50)))  # Increased
                 top_k_rerank = int(os.getenv("ACCURATE_TOPK_RERANK", lane_config.get("top_k_rerank", 10)))
-                cross_encoder = os.getenv("RERANKER_MODEL", lane_config.get("cross_encoder", "cross-encoder/ms-marco-electra-base"))
+                
+                # Get reranker model from model config
+                _, reranker_model = self.get_active_model_ids(lane)
+                if not reranker_model:
+                    logger.warning(f"No reranker model configured for {lane} lane, using fallback")
+                    reranker_model = "cross-encoder/ms-marco-electra-base"
                 
                 # Search for candidates
                 candidates = faiss_store.search(query_embedding, top_k_retrieve)
                 
+                # Apply protocol filtering if router was used
+                if allowed_protocol_ids:
+                    filtered_candidates = []
+                    for idx, score in candidates:
+                        meta = faiss_store.get_meta(idx)
+                        if meta and meta.get("doc") in allowed_protocol_ids:
+                            filtered_candidates.append((idx, score))
+                    
+                    # If we have fewer results after filtering, top up with global search
+                    if len(filtered_candidates) < top_k_retrieve:
+                        logger.info(f"Protocol filter reduced results to {len(filtered_candidates)}, topping up with global search")
+                        # Add remaining candidates from global search
+                        remaining_needed = top_k_retrieve - len(filtered_candidates)
+                        seen_indices = {idx for idx, _ in filtered_candidates}
+                        for idx, score in candidates:
+                            if idx not in seen_indices and len(filtered_candidates) < top_k_retrieve:
+                                filtered_candidates.append((idx, score))
+                                # Mark as top-up source
+                                meta = faiss_store.get_meta(idx)
+                                if meta:
+                                    meta["source"] = "topup"
+                    
+                    candidates = filtered_candidates
+                
                 # Apply cross-encoder reranking
-                reranked = faiss_store.rerank_with_cross_encoder(query, candidates, cross_encoder, top_k_rerank)
+                reranked = faiss_store.rerank_with_cross_encoder(query, candidates, reranker_model, top_k_rerank)
                 
             else:
                 # Default to fast lane behavior
-                top_k = lane_config.get("top_k", 8)
+                top_k = lane_config.get("top_k", 20)
                 candidates = faiss_store.search(query_embedding, top_k)
                 reranked = candidates
             
-            # Convert to expected format
+            # Convert to expected format with smart deduplication
             results = []
+            seen_docs = set()
             for rank, (idx, score) in enumerate(reranked, 1):
                 meta = faiss_store.get_meta(idx)
                 if meta:
-                    results.append({
-                        "doc": meta.get("doc", ""),
-                        "chunk": meta.get("chunk", 0),
-                        "rank": rank,
-                        "score": float(score),
-                        "text": meta.get("text", "")
-                    })
+                    doc_id = meta.get("doc", "")
+                    # Allow up to 2 chunks per document to maintain some diversity
+                    doc_count = sum(1 for r in results if r["doc"] == doc_id)
+                    if doc_count < 2:  # Allow max 2 chunks per document
+                        result = {
+                            "doc": doc_id,
+                            "chunk": meta.get("chunk", 0),
+                            "rank": len(results) + 1,
+                            "score": float(score),
+                            "text": meta.get("text", "")
+                        }
+                        
+                        # Add router information if available
+                        if router_decision:
+                            confidence = getattr(router_decision, "confidence", router_decision.get("confidence") if isinstance(router_decision, dict) else None)
+                            result["router_decision"] = {
+                                "route": route,
+                                "confidence": confidence,
+                                "candidates": candidates
+                            }
+                        
+                        # Add source information if available
+                        if meta.get("source"):
+                            result["source"] = meta["source"]
+                        
+                        results.append(result)
+                        seen_docs.add(doc_id)
             
             # Sort by score descending, then by doc and chunk for ties
             results.sort(key=lambda x: (-x["score"], x["doc"], x["chunk"]))
@@ -300,12 +404,22 @@ class RAGAdapter:
             
             latency_ms = (time.time() - start_time) * 1000
             embedder_name = faiss_store.get_embedder_name()
-            logger.info(f"{lane} lane retrieval: {embedder_name}, {len(results)} results in {latency_ms:.1f}ms")
+            
+            # Log router information
+            router_info = ""
+            if router_decision:
+                confidence = getattr(router_decision, "confidence", router_decision.get("confidence") if isinstance(router_decision, dict) else None)
+                confidence_str = f"{confidence:.2f}" if confidence is not None else "N/A"
+                router_info = f", router: {route} (conf: {confidence_str})"
+            
+            logger.info(f"{lane} lane retrieval: {embedder_name}, {len(results)} results in {latency_ms:.1f}ms{router_info}")
             
             return results
             
         except Exception as e:
             logger.error(f"Live retrieval failed: {e}")
+            import traceback
+            logger.error(f"Traceback: {traceback.format_exc()}")
             return []
     
     def generate(self, query: str, context_texts: List[str], lane: str = None) -> Dict[str, Any]:
@@ -436,6 +550,27 @@ class RAGAdapter:
     def get_lane_threshold(self, lane: str, metric: str) -> float:
         """Get threshold value for a specific lane and metric."""
         return self.lanes_config.get(lane, {}).get(metric, 0.0)
+    
+    def get_active_model_ids(self, lane: str) -> tuple[str, Optional[str]]:
+        """
+        Get the active model IDs for a lane.
+        
+        Args:
+            lane: Lane name (fast/accurate)
+            
+        Returns:
+            Tuple of (embed_model_id, reranker_model_id)
+        """
+        return self.model_config.get_model_ids(lane)
+    
+    def get_all_active_model_ids(self) -> Dict[str, Dict[str, Any]]:
+        """
+        Get all active model IDs for all lanes.
+        
+        Returns:
+            Dict mapping lane names to their model configurations
+        """
+        return self.model_config.get_all_model_ids()
     
     def is_sufficient_support(self, lane: str, stones_alignment: float, hallucinations: int) -> bool:
         """Check if the generated answer has sufficient support based on lane thresholds."""

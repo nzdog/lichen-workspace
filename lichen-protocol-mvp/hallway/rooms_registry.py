@@ -15,6 +15,7 @@ try:
     from rooms.memory_room import run_memory_room
     from rooms.integration_commit_room import run_integration_commit_room
     from rooms.exit_room import run_exit_room
+    from rooms.ai_room import run_ai_room
 except ImportError as e:
     # Fallback for testing or when rooms are not available
     print(f"Warning: Could not import room modules: {e}")
@@ -33,6 +34,7 @@ except ImportError as e:
     run_memory_room = mock_run
     run_integration_commit_room = mock_run
     run_exit_room = mock_run
+    run_ai_room = mock_run
 
 # Registry mapping contract room_id to callable async run functions
 ROOMS: Dict[str, Callable[[Dict[str, Any]], Awaitable[Dict[str, Any]]]] = {
@@ -43,6 +45,7 @@ ROOMS: Dict[str, Callable[[Dict[str, Any]], Awaitable[Dict[str, Any]]]] = {
     "memory_room": run_memory_room,
     "integration_commit_room": run_integration_commit_room,
     "exit_room": run_exit_room,
+    "ai_room": run_ai_room,
 }
 
 def get_room_function(room_id: str) -> Callable[[Dict[str, Any]], Awaitable[Dict[str, Any]]]:

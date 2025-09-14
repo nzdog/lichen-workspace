@@ -1,0 +1,86 @@
+{
+  "lane": "fast",
+  "num_queries": 51,
+  "precision_at_5": 0.24019607843137256,
+  "recall_at_20": 0.6013071895424836,
+  "mrr_at_10": 0.4526143790849673,
+  "ndcg_at_10": 0.4704525217456126,
+  "coverage": 0.6274509803921569,
+  "latency_ms_p95": 10540.574073791504,
+  "diversity_avg_top8": 4.862745098039215,
+  "stones_alignment": 0.9019607843137255,
+  "grounding_1to5": 2.792705850374827,
+  "hallucination_rate": 0.0,
+  "stone_metrics": [
+    {
+      "stone": "light-before-form",
+      "prompts": 5,
+      "passed": 0,
+      "failed": 5,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "speed-of-trust",
+      "prompts": 4,
+      "passed": 2,
+      "failed": 2,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "stewardship-not-ownership",
+      "prompts": 5,
+      "passed": 0,
+      "failed": 5,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "clarity-over-cleverness",
+      "prompts": 4,
+      "passed": 0,
+      "failed": 4,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "presence-is-productivity",
+      "prompts": 8,
+      "passed": 8,
+      "failed": 0,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "nothing-forced-nothing-withheld",
+      "prompts": 5,
+      "passed": 1,
+      "failed": 4,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "no-contortion-for-acceptance",
+      "prompts": 5,
+      "passed": 0,
+      "failed": 5,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "integrity-is-the-growth-strategy",
+      "prompts": 5,
+      "passed": 0,
+      "failed": 5,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "built-for-wholeness",
+      "prompts": 5,
+      "passed": 5,
+      "failed": 0,
+      "top_failed_assertion": null
+    },
+    {
+      "stone": "the-system-walks-with-us",
+      "prompts": 5,
+      "passed": 0,
+      "failed": 5,
+      "top_failed_assertion": null
+    }
+  ]
+}

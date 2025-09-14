@@ -13,7 +13,22 @@
       "Bash(git pull:*)",
       "Bash(git merge:*)",
       "Bash(git push:*)",
-      "Bash(git tag:*)"
+      "Bash(git tag:*)",
+      "Bash(source:*)",
+      "Bash(streamlit run:*)",
+      "Bash(export STREAMLIT_BROWSER_GATHER_USAGE_STATS=false)",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 -m rag.cli test-route --query \"leadership feels heavy / hidden load\")",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 test_router_smoke.py)",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 run_eval.py --prompts-dir prompts --outdir out --router --debug-retrieval)",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 -c \"import run_eval; print(''Import successful'')\")",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 run_eval.py --help)",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 -m rag.cli build-catalog --model sentence-transformers/all-MiniLM-L6-v2)",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 run_eval.py --prompts-dir prompts --outdir out --no-router --debug-retrieval)",
+      "Bash(export HF_HUB_OFFLINE=1)",
+      "Bash(export TRANSFORMERS_OFFLINE=1)",
+      "Bash(find:*)",
+      "Bash(PYTHONPATH=/Users/Nigel/Desktop/lichen-workspace python3 -m rag.cli test-route --query \"how do i shift from ownership mindset to stewardship mindset\")",
+      "Bash(PYTHONPATH:*)"
     ],
     "deny": [],
     "ask": []

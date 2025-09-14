@@ -1,0 +1,49 @@
+{
+  "total_rows": 50,
+  "labeled_rows": 50,
+  "unlabeled_rows": 0,
+  "avg_confidence": 0.7246810422324527,
+  "top_ids": [
+    [
+      "naming_what_s_not_working",
+      11
+    ],
+    [
+      "holding_my_rhythm",
+      11
+    ],
+    [
+      "the_rhythm_of_legacy",
+      10
+    ],
+    [
+      "speaking_to_funders_without_shrinking_the_system",
+      8
+    ],
+    [
+      "the_speed_of_trust",
+      7
+    ],
+    [
+      "decision_making_in_rhythm",
+      6
+    ],
+    [
+      "sustaining_rhythm_without_a_hero",
+      6
+    ],
+    [
+      "clearing_entry",
+      5
+    ],
+    [
+      "not_alone_in_the_walk_founder_isolation",
+      5
+    ],
+    [
+      "mapping_whats_emerging",
+      5
+    ]
+  ],
+  "timestamp": "2025-09-14T19:20:27.872646"
+}

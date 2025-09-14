@@ -5,33 +5,49 @@
 #   REDACT_LOGS: "1" (default) or "0" to disable log redaction
 
 fast:
-  top_k: 8
-  mmr_lambda: 0.4
-  embed_model: sentence-transformers/all-MiniLM-L6-v2
+  top_k: 20  # Increased for router filtering
+  mmr_lambda: 0.5  # Balanced relevance/diversity
+  embed_model: all-MiniLM-L6-v2
+  normalize_embeddings: true
+  fallback_search: bm25
 
 accurate:
-  top_k_retrieve: 40
-  top_k_rerank: 10
+  top_k_retrieve: 50  # Increased for router filtering
+  top_k_rerank: 10    # Reduced to focus on highest quality
   cross_encoder: cross-encoder/ms-marco-electra-base
-  embed_model: sentence-transformers/all-mpnet-base-v2
+  embed_model: all-MiniLM-L6-v2
+  normalize_embeddings: true
+  fallback_search: bm25
   # Alternative 1024d model (commented for compatibility):
   # embed_model: intfloat/e5-large-v2
 
 vector_store:
   provider: faiss
   fast:
-    path: .vector/fast.index.faiss
-    meta: .vector/fast.meta.jsonl
-    stats: .vector/fast.stats.json
+    path: /Users/Nigel/Desktop/lichen-workspace/lichen-chunker/index/speed/index.faiss
+    meta: /Users/Nigel/Desktop/lichen-workspace/.vector/fast.meta.jsonl
+    stats: /Users/Nigel/Desktop/lichen-workspace/.vector/fast.stats.json
   accurate:
-    path: .vector/accurate.index.faiss
-    meta: .vector/accurate.meta.jsonl
-    stats: .vector/accurate.stats.json
+    path: /Users/Nigel/Desktop/lichen-workspace/lichen-chunker/index/accuracy/index.faiss
+    meta: /Users/Nigel/Desktop/lichen-workspace/.vector/accurate.meta.jsonl
+    stats: /Users/Nigel/Desktop/lichen-workspace/.vector/accurate.stats.json
   # legacy single-index keys remain for back-compat:
   path_or_index: .vector/index.faiss
   dim: 384
   dtype: float32
   namespace: protocols
+
+router:
+  enabled: true
+  k: 3
+  min_conf_single: 0.20
+  min_conf_double: 0.15
+  min_conf_triple: 0.10
+  weights:
+    embed: 0.7
+    stones: 0.25
+    keywords: 0.05
+  cache_path: .vector/catalog_{model}.pkl
 
 limits:
   max_context_chars: 12000

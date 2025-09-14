@@ -1,0 +1,338 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Capture one commitment to align investor energy with field health.",
+    "Name one signal that shows investor and field alignment.",
+    "Choose your next smallest move to reinforce field stewardship."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "collapse-regenerative",
+      "regenerative-integrity"
+    ],
+    "Complexity": 4,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "resilience-rooting",
+      "coherence-practices",
+      "systemic-safeguards",
+      "capital-field-dynamics",
+      "relational-repair",
+      "trust-as-currency"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Selecting investors for a raise",
+      "Onboarding new investors",
+      "Recalibrating investor relationships",
+      "Expanding influence in a mission-driven field"
+    ],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [],
+    "Stones": [
+      "co-stewardship",
+      "guardianship-of-integrity",
+      "aligned-scaling",
+      "coherence-as-growth",
+      "relational-depth",
+      "trust-paces-growth"
+    ],
+    "Tags": [
+      "finance",
+      "energy",
+      "ecosystem",
+      "impact",
+      "optimization",
+      "infrastructure",
+      "environment",
+      "sustainability",
+      "resources",
+      "efficiency",
+      "investor-alignment",
+      "investor",
+      "stewardship",
+      "policy",
+      "market",
+      "green-energy",
+      "renewable",
+      "investment",
+      "strategy",
+      "protocol",
+      "field-health",
+      "alignment",
+      "development",
+      "innovation"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational",
+      "directive"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Investor energy is actively aligned with the field’s health and momentum → The future benefits from amplified impact and trust.",
+    "Expected": "Some alignment exists, but key differences remain unaddressed → The future grows unevenly, with pockets of misfit influence.",
+    "Poor": "Investor energy is misaligned with the field → The future sees friction, extraction, and weakened trust in the ecosystem.",
+    "Transcendent": "Investor–field alignment is cultural instinct—every investor becomes a steward of the field’s thriving → The future compounds coherence and resilience."
+  },
+  "Overall Purpose": "To ensure that investor energy, expectations, and influence reinforce the health, rhythm, and direction of the broader field you serve—not just the needs of the company or portfolio.",
+  "Protocol ID": "auto_1754995405530_0",
+  "Short Title": "Investor–Field Energy Fit",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What is the current energy and momentum in the field?",
+        "What does the field most need now?",
+        "Where could investor influence help or harm?"
+      ],
+      "Name": "Understanding the Field’s Energy and Needs",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Field trust reinforced.",
+          "Edge condition": "You regularly update field context.",
+          "Example moves": "Field energy briefing for investors.",
+          "Future effect": "Ecosystem thrives.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Clear, detailed understanding of field dynamics.",
+          "Signals": "Investor initiatives integrate smoothly."
+        },
+        "Expected": {
+          "30-90 day system effect": "Occasional friction in ecosystem.",
+          "Edge condition": "You rely on surface-level research.",
+          "Example moves": "Investor intro without stakeholder mapping.",
+          "Future effect": "Influence misfires.",
+          "Immediate cost": "Partial fit.",
+          "Present pattern": "Some understanding of field, but not detailed.",
+          "Signals": "Investor asks misaligned with field realities."
+        },
+        "Poor": {
+          "30-90 day system effect": "Field trust erodes.",
+          "Edge condition": "You assume company needs are the same as field needs.",
+          "Example moves": "Onboarding investor without field briefing.",
+          "Future effect": "Ecosystem health declines.",
+          "Immediate cost": "Misfit investor influence.",
+          "Present pattern": "Field context is ignored in investor selection.",
+          "Signals": "Investor initiatives clash with field norms."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Field momentum accelerates sustainably.",
+          "Edge condition": "You refuse investors who resist field alignment.",
+          "Example moves": "Cultural ritual of field–investor sync.",
+          "Future effect": "Field and company rise together.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Field understanding is cultural instinct.",
+          "Signals": "Investors become field advocates."
+        }
+      },
+      "Purpose of This Theme": "To deeply understand the current state, needs, and momentum of the field before engaging investors.",
+      "Why This Matters": "Without this understanding, investor involvement can unintentionally disrupt healthy dynamics."
+    },
+    {
+      "Guiding Questions": [
+        "What motivates this investor beyond returns?",
+        "How does their pace match our field’s rhythm?",
+        "What kind of influence do they tend to exert?"
+      ],
+      "Name": "Assessing Investor Energy and Intent",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Smooth collaboration.",
+          "Edge condition": "You ensure fit across multiple dimensions.",
+          "Example moves": "Energy alignment interview process.",
+          "Future effect": "Mutual reinforcement of values and outcomes.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Full picture of investor intent and energy style understood.",
+          "Signals": "Investor supports agreed pace and priorities."
+        },
+        "Expected": {
+          "30-90 day system effect": "Occasional tension.",
+          "Edge condition": "You accept alignment on one dimension only.",
+          "Example moves": "Reviewing financial terms without cultural fit check.",
+          "Future effect": "Investor relationship requires frequent correction.",
+          "Immediate cost": "Partial alignment.",
+          "Present pattern": "Some assessment of investor intent, but not holistic.",
+          "Signals": "Investor pushes pace misaligned with field rhythm."
+        },
+        "Poor": {
+          "30-90 day system effect": "Conflict in priorities.",
+          "Edge condition": "You assume capital is neutral.",
+          "Example moves": "Skipping deep investor due diligence.",
+          "Future effect": "Misfit pace and pressure.",
+          "Immediate cost": "Misaligned expectations.",
+          "Present pattern": "Investor motives are unknown or assumed.",
+          "Signals": "Pressure to chase trends over field health."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "No tension between investor and field.",
+          "Edge condition": "You refuse investors with misaligned energy.",
+          "Example moves": "Cultural habit of whole-person investor vetting.",
+          "Future effect": "Investors become long-term field stewards.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Investor energy assessment is cultural instinct.",
+          "Signals": "Investor’s influence always amplifies field health."
+        }
+      },
+      "Purpose of This Theme": "To evaluate the motives, pacing, and influence style of potential investors.",
+      "Why This Matters": "Investor energy shapes not just funding but the pace, tone, and priorities of the work."
+    },
+    {
+      "Guiding Questions": [
+        "How can this investor contribute to the field’s long-term health?",
+        "What stewardship commitments can we make together?",
+        "How will we track and celebrate field contributions?"
+      ],
+      "Name": "Creating Shared Field Stewardship",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Ecosystem trust grows.",
+          "Edge condition": "You formalize stewardship in relationship.",
+          "Example moves": "Joint initiatives for field health.",
+          "Future effect": "Field resilience grows alongside company.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Investor embraces shared field stewardship role.",
+          "Signals": "Investor actively supports ecosystem needs."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial trust in field relationships.",
+          "Edge condition": "You depend on investor goodwill.",
+          "Example moves": "One-off field support projects.",
+          "Future effect": "Stewardship impact fades over time.",
+          "Immediate cost": "Inconsistent ecosystem contributions.",
+          "Present pattern": "Some discussion of field stewardship, but not embedded.",
+          "Signals": "Investor occasionally backs field-strengthening moves."
+        },
+        "Poor": {
+          "30-90 day system effect": "Field fragmentation.",
+          "Edge condition": "You avoid conversations about stewardship.",
+          "Example moves": "Never discussing field needs with investors.",
+          "Future effect": "Company thrives while field weakens.",
+          "Immediate cost": "Neglect of field health.",
+          "Present pattern": "Investor focus is solely on company ROI.",
+          "Signals": "Investor resists ecosystem investments."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Field-wide trust and cooperation.",
+          "Edge condition": "You refuse to work with investors unwilling to steward.",
+          "Example moves": "Culture of collective field leadership.",
+          "Future effect": "Ecosystem thrives across generations.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Field stewardship is cultural instinct among investors.",
+          "Signals": "Investor advocates for field health even beyond portfolio."
+        }
+      },
+      "Purpose of This Theme": "To ensure investors see themselves as co-stewards of the field’s long-term health.",
+      "Why This Matters": "Stewardship shifts the relationship from transactional to transformative."
+    },
+    {
+      "Guiding Questions": [
+        "How does this decision impact the field?",
+        "Where might company gain and field suffer?",
+        "What’s the win–win path?"
+      ],
+      "Name": "Balancing Company Needs with Field Health",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Field trust deepens.",
+          "Edge condition": "You measure impact on field in all decisions.",
+          "Example moves": "Shared value impact reporting.",
+          "Future effect": "Mutual reinforcement of company and field.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Decisions weigh both company and field outcomes.",
+          "Signals": "Peers see company as contributor to field health."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partnership opportunities lost.",
+          "Edge condition": "You address field only when convenient.",
+          "Example moves": "Occasional collaboration with field peers.",
+          "Future effect": "Trust remains fragile.",
+          "Immediate cost": "Uneven trust.",
+          "Present pattern": "Some consideration of field health, but secondary.",
+          "Signals": "Mixed reputation in field."
+        },
+        "Poor": {
+          "30-90 day system effect": "Reduced collaboration and opportunities.",
+          "Edge condition": "You prioritize short-term wins.",
+          "Example moves": "Raising capital for market dominance that harms field.",
+          "Future effect": "Ecosystem resists collaboration.",
+          "Immediate cost": "Field trust damaged.",
+          "Present pattern": "Company needs override field health.",
+          "Signals": "Field sees company as extractive."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Unified momentum in ecosystem.",
+          "Edge condition": "You reject growth that harms the field.",
+          "Example moves": "Cultural mantra of ‘field-first growth’.",
+          "Future effect": "Field and company become inseparable in success.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Balance between company and field is cultural instinct.",
+          "Signals": "Peers seek company leadership in field initiatives."
+        }
+      },
+      "Purpose of This Theme": "To make funding and strategy decisions that serve both the company and the field.",
+      "Why This Matters": "Company success at the expense of the field undermines long-term viability."
+    },
+    {
+      "Guiding Questions": [
+        "How will we keep investor and field alignment current?",
+        "What cadence will we use for alignment reviews?",
+        "What will we do if alignment starts to drift?"
+      ],
+      "Name": "Embedding Field Alignment in Investor Relationships",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Field–investor relationship stays strong.",
+          "Edge condition": "You schedule alignment into investor relations.",
+          "Example moves": "Quarterly field alignment sessions.",
+          "Future effect": "Consistent, shared stewardship.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Regular, structured field alignment with investors.",
+          "Signals": "Shared sense of evolving needs."
+        },
+        "Expected": {
+          "30-90 day system effect": "Misalignment corrected slowly.",
+          "Edge condition": "You lack structured alignment reviews.",
+          "Example moves": "Annual casual check-ins.",
+          "Future effect": "Trust erodes gradually.",
+          "Immediate cost": "Gaps emerge over time.",
+          "Present pattern": "Some ongoing alignment, but informal.",
+          "Signals": "Periodic surprises from investor actions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Field–investor disconnect widens.",
+          "Edge condition": "You treat alignment as one-time exercise.",
+          "Example moves": "No review of alignment after onboarding.",
+          "Future effect": "Erosion of fit and trust.",
+          "Immediate cost": "Misfit influence grows.",
+          "Present pattern": "No ongoing field alignment with investors.",
+          "Signals": "Investor actions increasingly misaligned."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Unified long-term impact.",
+          "Edge condition": "You protect alignment as a non-negotiable.",
+          "Example moves": "Culture of ongoing co-stewardship.",
+          "Future effect": "Field and company co-evolve seamlessly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Field alignment embedded as cultural instinct.",
+          "Signals": "Investors act as field-alignment champions."
+        }
+      },
+      "Purpose of This Theme": "To make field alignment a living, ongoing part of investor engagement.",
+      "Why This Matters": "Without regular alignment, investor–field fit can drift over time."
+    }
+  ],
+  "Title": "Aligning Investor Energy with the Field",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When selecting investors for a raise\nWhen onboarding new investors\nWhen recalibrating investor relationships\nWhen expanding influence in a mission-driven field",
+  "Why This Matters": "Investors can amplify or distort the energy in a field. Aligning their energy with the field ensures growth benefits the whole ecosystem, not just short-term returns."
+}

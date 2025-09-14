@@ -1,0 +1,46 @@
+# Model Configuration for RAG Lanes
+# This file defines the embedding and reranker models used by each lane.
+# Environment variables can override these defaults:
+#   RAG_FAST_EMBED, RAG_FAST_RERANK, RAG_ACCURATE_EMBED, RAG_ACCURATE_RERANK
+
+fast:
+  embed_model: all-MiniLM-L6-v2
+  reranker_model: null  # Fast lane uses MMR, no cross-encoder
+
+accurate:
+  embed_model: all-MiniLM-L6-v2  # Use same model as fast lane for router compatibility
+  reranker_model: cross-encoder/ms-marco-electra-base
+
+# Alternative models for experimentation (commented out)
+# fast:
+#   embed_model: sentence-transformers/all-MiniLM-L12-v2  # Higher quality, slower
+#   reranker_model: null
+
+# accurate:
+#   embed_model: intfloat/e5-large-v2  # 1024d model, higher quality
+#   reranker_model: cross-encoder/ms-marco-MiniLM-L-6-v2  # Faster reranker
+
+# Model metadata for reference
+model_info:
+  sentence-transformers/all-MiniLM-L6-v2:
+    dimensions: 384
+    description: "Fast, lightweight embedding model"
+    use_case: "Fast lane, low latency"
+  
+  sentence-transformers/all-mpnet-base-v2:
+    dimensions: 768
+    description: "High-quality embedding model"
+    use_case: "Accurate lane, high quality"
+  
+  intfloat/e5-large-v2:
+    dimensions: 1024
+    description: "Large, high-quality embedding model"
+    use_case: "Maximum accuracy, higher latency"
+  
+  cross-encoder/ms-marco-electra-base:
+    description: "High-quality cross-encoder for reranking"
+    use_case: "Accurate lane reranking"
+  
+  cross-encoder/ms-marco-MiniLM-L-6-v2:
+    description: "Faster cross-encoder for reranking"
+    use_case: "Balanced speed/quality reranking"

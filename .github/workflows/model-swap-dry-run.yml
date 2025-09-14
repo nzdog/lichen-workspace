@@ -1,0 +1,120 @@
+name: Model Swap Dry Run
+
+on:
+  workflow_dispatch:
+    inputs:
+      lane:
+        description: 'RAG lane to test'
+        required: true
+        default: 'fast'
+        type: choice
+        options:
+          - fast
+          - accurate
+      new_embed:
+        description: 'Proposed embedding model ID'
+        required: false
+        type: string
+      new_reranker:
+        description: 'Proposed reranker model ID'
+        required: false
+        type: string
+      queries_path:
+        description: 'Path to JSONL file with test queries'
+        required: true
+        default: 'eval/data/dummy_retrieval.jsonl'
+        type: string
+      k:
+        description: 'Number of results to retrieve'
+        required: false
+        default: '10'
+        type: string
+
+jobs:
+  model-swap-dry-run:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements-dev.txt
+        # Install additional dependencies for model swap dry run
+        pip install sentence-transformers faiss-cpu scikit-learn
+        
+    - name: Validate inputs
+      run: |
+        if [ -z "${{ inputs.new_embed }}" ] && [ -z "${{ inputs.new_reranker }}" ]; then
+          echo "Error: At least one of new_embed or new_reranker must be specified"
+          exit 1
+        fi
+        
+        if [ ! -f "${{ inputs.queries_path }}" ]; then
+          echo "Error: Queries file not found: ${{ inputs.queries_path }}"
+          exit 1
+        fi
+        
+    - name: Run model swap dry run
+      run: |
+        # Create output directory
+        mkdir -p /tmp/model_swap_results
+        
+        # Run the dry run tool
+        python tools/model_swap_dry_run.py \
+          --lane "${{ inputs.lane }}" \
+          $([ -n "${{ inputs.new_embed }}" ] && echo "--new-embed ${{ inputs.new_embed }}" || echo "") \
+          $([ -n "${{ inputs.new_reranker }}" ] && echo "--new-reranker ${{ inputs.new_reranker }}" || echo "") \
+          --queries "${{ inputs.queries_path }}" \
+          --k "${{ inputs.k }}" \
+          --outdir /tmp/model_swap_results \
+          --verbose
+        
+    - name: Upload reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: model-swap-dry-run-reports
+        path: /tmp/model_swap_results/
+        retention-days: 30
+        
+    - name: Display summary
+      run: |
+        echo "=== Model Swap Dry Run Summary ==="
+        echo "Lane: ${{ inputs.lane }}"
+        echo "Proposed Embedding Model: ${{ inputs.new_embed || 'No change' }}"
+        echo "Proposed Reranker Model: ${{ inputs.new_reranker || 'No change' }}"
+        echo "Queries: ${{ inputs.queries_path }}"
+        echo "K: ${{ inputs.k }}"
+        echo ""
+        echo "Reports generated:"
+        ls -la /tmp/model_swap_results/
+        echo ""
+        echo "Markdown report preview:"
+        head -50 /tmp/model_swap_results/report.md || echo "Report not found"
+        
+    - name: Comment on PR (if applicable)
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const path = '/tmp/model_swap_results/report.md';
+          
+          if (fs.existsSync(path)) {
+            const report = fs.readFileSync(path, 'utf8');
+            const summary = report.split('## Summary')[0]; // Get everything before summary
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## Model Swap Dry Run Results\n\n${summary}\n\n📊 Full reports available in workflow artifacts.`
+            });
+          }

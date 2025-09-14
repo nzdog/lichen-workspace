@@ -1,0 +1,103 @@
+{
+  "Title": "Pacing Adjustment",
+  "Short Title": "Pacing Adjustment",
+  "Overall Purpose": "Help founders slow down or speed up to align with system rhythm.",
+  "Why This Matters": "The Speed of Trust and Clarity Over Cleverness remind us that pacing, not force, sustains growth.",
+  "When To Use This Protocol": "When work feels rushed, stalled, or misaligned.",
+  "Overall Outcomes": {
+    "Poor": "Pace mismatched, trust eroded.",
+    "Expected": "Adjustments restore balance.",
+    "Excellent": "Pacing becomes a leadership skill.",
+    "Transcendent": "System-wide coherence emerges as rhythm aligns."
+  },
+  "Themes": [
+    {
+      "Name": "Notice Tempo",
+      "Purpose of This Theme": "Track current speed.",
+      "Why This Matters": "You can’t adjust what you can’t perceive.",
+      "Outcomes": {
+        "Poor": { "Present pattern": "Oblivious to pace.", "Immediate cost": "Burnout or stagnation.", "30-90 day system effect": "Trust declines.", "Signals": "Impatience.", "Edge condition": "Over-focus.", "Example moves": "Pause and rate pace.", "Future effect": "Disconnection grows." },
+        "Expected": { "Present pattern": "Pace noticed.", "Immediate cost": "Awareness grows.", "30-90 day system effect": "Stress reduced.", "Signals": "Breath regulated.", "Edge condition": "Avoid over-analyzing.", "Example moves": "Ask: too fast/too slow?", "Future effect": "Clarity returns." },
+        "Excellent": { "Present pattern": "Pace awareness steady.", "Immediate cost": "Not applicable", "30-90 day system effect": "Trust restored.", "Signals": "Team synchrony.", "Edge condition": "Not rigidity.", "Example moves": "Align with shared rhythm.", "Future effect": "Resilience builds." },
+        "Transcendent": { "Present pattern": "Pace sensed as field rhythm.", "Immediate cost": "Not applicable", "30-90 day system effect": "Collective flow.", "Signals": "Shared ease.", "Edge condition": "No bypass.", "Example moves": "Synchronize steps.", "Future effect": "Field coherence deepens." }
+      },
+      "Guiding Questions": ["What speed am I moving at?", "Where is the mismatch?", "What would right-pace feel like now?"]
+    },
+    {
+      "Name": "Detect External Pressure",
+      "Purpose of This Theme": "Notice where pressure to rush or stall comes from.",
+      "Why This Matters": "External pressure distorts natural rhythm.",
+      "Outcomes": {
+        "Poor": { "Present pattern": "Unaware of pressure.", "Immediate cost": "Misalignment.", "30-90 day system effect": "Resentment grows.", "Signals": "Tight chest.", "Edge condition": "Avoid blaming others.", "Example moves": "Push through regardless.", "Future effect": "Disconnection increases." },
+        "Expected": { "Present pattern": "Pressure noticed.", "Immediate cost": "Relief arises.", "30-90 day system effect": "Pace rebalanced.", "Signals": "Easier breath.", "Edge condition": "Avoid over-reacting.", "Example moves": "Name one pressure source.", "Future effect": "Clarity grows." },
+        "Excellent": { "Present pattern": "Pressure tracked clearly.", "Immediate cost": "Not applicable", "30-90 day system effect": "Integrity strengthened.", "Signals": "Relaxed energy.", "Edge condition": "Don’t scapegoat.", "Example moves": "Reframe expectations.", "Future effect": "Trust sustained." },
+        "Transcendent": { "Present pattern": "Pressure transmuted into presence.", "Immediate cost": "Not applicable", "30-90 day system effect": "Field coherence grows.", "Signals": "Shared calm.", "Edge condition": "Avoid bypassing.", "Example moves": "Anchor rhythm collectively.", "Future effect": "Wholeness expands." }
+      },
+      "Guiding Questions": ["What pressure am I under?", "Who set this pace?", "What is the system asking instead?"]
+    },
+    {
+      "Name": "Experiment With Shifts",
+      "Purpose of This Theme": "Try out slowing or speeding gently.",
+      "Why This Matters": "Experimenting reveals better rhythm.",
+      "Outcomes": {
+        "Poor": { "Present pattern": "No experiments.", "Immediate cost": "Rigid pace.", "30-90 day system effect": "Trust erodes.", "Signals": "Exhaustion or stalling.", "Edge condition": "Avoid extremes.", "Example moves": "All-or-nothing change.", "Future effect": "Stress rises." },
+        "Expected": { "Present pattern": "Small experiments.", "Immediate cost": "Relief felt.", "30-90 day system effect": "Balance improves.", "Signals": "Relaxation.", "Edge condition": "Avoid overdoing.", "Example moves": "Adjust break length.", "Future effect": "System steadies." },
+        "Excellent": { "Present pattern": "Experimentation habitual.", "Immediate cost": "Not applicable", "30-90 day system effect": "Resilience grows.", "Signals": "Confidence rises.", "Edge condition": "Not chaotic.", "Example moves": "Shift meeting tempo.", "Future effect": "System coherence." },
+        "Transcendent": { "Present pattern": "Experimenting becomes collective play.", "Immediate cost": "Not applicable", "30-90 day system effect": "Flow deepens.", "Signals": "Shared ease.", "Edge condition": "Avoid trivializing.", "Example moves": "Group rhythm reset.", "Future effect": "Field coherence grows." }
+      },
+      "Guiding Questions": ["What pace experiment can I try?", "What shifted?", "What did others notice?"]
+    },
+    {
+      "Name": "Align With Trust",
+      "Purpose of This Theme": "Let trust guide speed.",
+      "Why This Matters": "Speed of Trust > urgency.",
+      "Outcomes": {
+        "Poor": { "Present pattern": "Ignore trust.", "Immediate cost": "Missteps rise.", "30-90 day system effect": "Trust erodes.", "Signals": "Tension in team.", "Edge condition": "Avoid blind trust.", "Example moves": "Rush without checking in.", "Future effect": "Fragmentation." },
+        "Expected": { "Present pattern": "Trust sometimes guides.", "Immediate cost": "Relief felt.", "30-90 day system effect": "Integrity stabilizes.", "Signals": "More ease.", "Edge condition": "Avoid laziness.", "Example moves": "Pause for consent.", "Future effect": "Sustained pace." },
+        "Excellent": { "Present pattern": "Trust central.", "Immediate cost": "Not applicable", "30-90 day system effect": "Alignment grows.", "Signals": "Greater coherence.", "Edge condition": "Not complacency.", "Example moves": "Adjust with feedback.", "Future effect": "Resilience expands." },
+        "Transcendent": { "Present pattern": "Trust sensed as system rhythm.", "Immediate cost": "Not applicable", "30-90 day system effect": "Collective flow.", "Signals": "Shared trust.", "Edge condition": "No bypass.", "Example moves": "Field synchrony.", "Future effect": "System coherence deepens." }
+      },
+      "Guiding Questions": ["What pace builds trust?", "What does trust feel like here?", "How can trust reset our rhythm?"]
+    },
+    {
+      "Name": "Name Natural Rhythm",
+      "Purpose of This Theme": "Discover personal and system rhythm.",
+      "Why This Matters": "Alignment comes from authentic rhythm.",
+      "Outcomes": {
+        "Poor": { "Present pattern": "Ignore rhythm.", "Immediate cost": "Stress persists.", "30-90 day system effect": "Misalignment deepens.", "Signals": "Exhaustion or boredom.", "Edge condition": "Avoid imitation.", "Example moves": "Copy others’ pace.", "Future effect": "Energy drains." },
+        "Expected": { "Present pattern": "Some rhythm noticed.", "Immediate cost": "Calm grows.", "30-90 day system effect": "Balance improves.", "Signals": "Relaxed tone.", "Edge condition": "Not rigid.", "Example moves": "Track energy waves.", "Future effect": "Resilience grows." },
+        "Excellent": { "Present pattern": "Rhythm integrated.", "Immediate cost": "Not applicable", "30-90 day system effect": "Flow strengthens.", "Signals": "Confidence rises.", "Edge condition": "Not isolation.", "Example moves": "Sync with system rhythm.", "Future effect": "Coherence builds." },
+        "Transcendent": { "Present pattern": "Rhythm felt as field flow.", "Immediate cost": "Not applicable", "30-90 day system effect": "Wholeness deepens.", "Signals": "Shared presence.", "Edge condition": "No bypass.", "Example moves": "Synchronize naturally.", "Future effect": "Collective rhythm." }
+      },
+      "Guiding Questions": ["What is my natural rhythm?", "What is the system’s rhythm?", "How can I align them?"]
+    }
+  ],
+  "Completion Prompts": [
+    "What did I learn about my natural pace?",
+    "Where did trust change our rhythm?",
+    "What experiment will I keep this week?"
+  ],
+  "Version": "1.0.0",
+  "Created At": "2025-09-13",
+  "Protocol ID": "pacing_adjustment",
+  "Category": "pacing",
+  "Metadata": {
+    "Complexity": 2,
+    "Readiness Stage": "Explore",
+    "Modes": ["Full Walk", "Theme-Only"],
+    "Estimated Time": "10–15 minutes",
+    "Tone Markers": ["reflective", "grounded"],
+    "Primary Scenarios": ["misaligned pacing", "overwhelm"],
+    "Related Protocols": ["resourcing_mini_walk", "clearing_entry"],
+    "Tags": ["pacing", "trust"],
+    "Algorithm": { "Present": false },
+    "Stones": [
+      "the-speed-of-trust",
+      "clarity-over-cleverness",
+      "presence-is-productivity",
+      "nothing-forced-nothing-withheld"
+    ],
+    "Fields": ["leadership", "rhythm"],
+    "Bridges": []
+  }
+}

@@ -48,7 +48,7 @@ jobs:
     - name: Run RAG evaluation on both lanes
       run: |
         echo "Running evaluation on fast and accurate lanes..."
-        python -m eval.run_eval --evalset eval/evalset.json --outdir eval/out
+        python -m eval.run_eval --evalset eval/datasets/founder_early.jsonl --outdir eval/out
     
     - name: Check for regressions
       id: regression_check

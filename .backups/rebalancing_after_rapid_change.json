@@ -1,0 +1,366 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Capture one insight from today's session that will guide your next steps.",
+    "Identify one outdated practice you will release to create space for new growth.",
+    "Choose one small action to align your role with the new system reality."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "identity-shift",
+      "transitioning-field",
+      "relational-integrity",
+      "collapse-regenerative"
+    ],
+    "Complexity": 4,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "coherence-practices",
+      "presence-restoration",
+      "trust-as-currency",
+      "misalignment-awareness",
+      "aligned-scaling",
+      "systemic-safeguards"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Post-change stabilization",
+      "Organizational realignment"
+    ],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [
+      "Closing a Chapter",
+      "Letting Go of the Startup"
+    ],
+    "Stones": [
+      "core-signal-naming",
+      "plain-speech",
+      "rhythm-alignment",
+      "renewal-as-output",
+      "reflection-built-in",
+      "co-evolving-architecture"
+    ],
+    "Tags": [
+      "change-management",
+      "stability",
+      "realignment"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "reassuring"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You deliberately re-center roles, rhythm, and focus → The future stabilizes and regains compounding coherence.",
+    "Expected": "You slow down in some areas but keep reactive patterns elsewhere → The future carries uneven rhythm and latent instability.",
+    "Poor": "You try to maintain pre-change pace and structures → The future normalizes overextension and silent strain.",
+    "Transcendent": "You integrate change fully into a stronger, more aligned operating rhythm → The future grows from the change without residue or distortion."
+  },
+  "Overall Purpose": "To restore stability, clarity, and sustainable rhythm after a period of rapid change—whether growth, contraction, or transformation—so the system can move forward without hidden distortion.",
+  "Protocol ID": "auto_1754995405368_0",
+  "Short Title": "Rebalancing",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What has actually changed in roles, pace, or structure?",
+        "What no longer exists that people might still be operating from?",
+        "What new dynamics or expectations are now in play?"
+      ],
+      "Name": "Name What Actually Changed",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Alignment improves across roles and functions.",
+          "Edge condition": "Transparent updates without overload.",
+          "Example moves": "Publishing a change summary with clear implications.",
+          "Future effect": "The future aligns action with reality.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You map the key changes openly and precisely.",
+          "Signals": "Teams act from the same updated map."
+        },
+        "Expected": {
+          "30-90 day system effect": "Gaps widen in understanding over time.",
+          "Edge condition": "Assuming informal conversations are enough.",
+          "Example moves": "Announcing changes verbally but not in writing.",
+          "Future effect": "The future navigates with incomplete or conflicting information.",
+          "Immediate cost": "Some alignment, but hidden friction remains.",
+          "Present pattern": "You share partial updates but not the full picture.",
+          "Signals": "Different versions of 'what changed' circulating."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misalignment grows and decisions lose accuracy.",
+          "Edge condition": "Minor changes masked as status quo.",
+          "Example moves": "Not updating job descriptions after a restructure.",
+          "Future effect": "The future runs on outdated maps.",
+          "Immediate cost": "People act from outdated assumptions.",
+          "Present pattern": "You assume everyone knows what’s changed.",
+          "Signals": "Confusion in meetings; rework due to outdated information."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Adaptation becomes normal and low-friction.",
+          "Edge condition": "Updates are embedded into the culture.",
+          "Example moves": "Integrating change logs into regular team rhythms.",
+          "Future effect": "The future treats adaptation as normal and healthy.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Change becomes a shared point of truth.",
+          "Signals": "People anticipate and welcome updates."
+        }
+      },
+      "Purpose of This Theme": "To surface the real shifts—structural, relational, energetic—that have occurred.",
+      "Why This Matters": "Without clarity on what’s different, people unconsciously operate as if nothing has shifted, creating friction and burnout."
+    },
+    {
+      "Guiding Questions": [
+        "What pace feels sustainable now?",
+        "Where is speed helping—and where is it harming?",
+        "What would a healthy weekly and monthly beat look like?"
+      ],
+      "Name": "Re-anchor the Core Rhythm",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Teams regain predictable momentum.",
+          "Edge condition": "Cadence is respected even during high-pressure periods.",
+          "Example moves": "Redesigning the release calendar to allow recovery periods.",
+          "Future effect": "The future compounds trust and capacity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You set a deliberate pace for the whole system.",
+          "Signals": "Clear and consistent tempo across workflows."
+        },
+        "Expected": {
+          "30-90 day system effect": "Pockets of stability offset by areas of overload.",
+          "Edge condition": "Patching symptoms without addressing cadence root cause.",
+          "Example moves": "Shortening meetings but keeping project timelines tight.",
+          "Future effect": "The future feels patchy and unreliable.",
+          "Immediate cost": "Partial relief but uneven workload distribution.",
+          "Present pattern": "You adjust some schedules but ignore systemic rhythm.",
+          "Signals": "Some teams flourish while others struggle."
+        },
+        "Poor": {
+          "30-90 day system effect": "Burnout risk and operational slippage increase.",
+          "Edge condition": "Trying to 'push through' instead of recalibrating.",
+          "Example moves": "Keeping sprint cycles unchanged after doubling team size.",
+          "Future effect": "The future runs on brittle pace.",
+          "Immediate cost": "Pace becomes brittle and unsustainable.",
+          "Present pattern": "You keep old timelines regardless of new load.",
+          "Signals": "Missed deadlines, unplanned overtime."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Pace calibrates naturally without external enforcement.",
+          "Edge condition": "Everyone understands and honors rhythm logic.",
+          "Example moves": "Embedding rhythm review in quarterly planning.",
+          "Future effect": "The future calibrates pace naturally with each shift.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Rhythm becomes adaptive and trusted.",
+          "Signals": "Smooth adaptation to fluctuating demands."
+        }
+      },
+      "Purpose of This Theme": "To restore a sustainable operating cadence that matches the post-change reality.",
+      "Why This Matters": "Change often speeds things up or slows them down unevenly. Without rhythm reset, misalignment becomes chronic."
+    },
+    {
+      "Guiding Questions": [
+        "What’s mine to carry now—and what’s not?",
+        "Who else needs to let go or take on something new?",
+        "What role edges need to be named to prevent friction?"
+      ],
+      "Name": "Clarify Roles in the New Landscape",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Coordination becomes smoother and more efficient.",
+          "Edge condition": "Roles evolve without resistance when needed.",
+          "Example moves": "Publishing updated role maps after organizational change.",
+          "Future effect": "The future runs on clarity and shared ownership.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Roles are reset cleanly and communicated.",
+          "Signals": "Clear ownership of outcomes."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy waste through unclear accountability.",
+          "Edge condition": "Delaying role reassignment until 'things settle'.",
+          "Example moves": "Clarifying lead roles but leaving support unclear.",
+          "Future effect": "The future wastes energy in confusion.",
+          "Immediate cost": "Improved clarity in some areas, lingering confusion in others.",
+          "Present pattern": "Some roles are clarified, but overlaps remain.",
+          "Signals": "Decision bottlenecks in certain functions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Frustration and inefficiency compound.",
+          "Edge condition": "Roles persist based on habit, not need.",
+          "Example moves": "Continuing to own a process even after handoff.",
+          "Future effect": "The future inherits hidden duplication or gaps.",
+          "Immediate cost": "Work overlaps or critical gaps appear.",
+          "Present pattern": "Everyone assumes their role is unchanged.",
+          "Signals": "Duplicate work or missed responsibilities."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Self-management increases, freeing leadership focus.",
+          "Edge condition": "Continuous refinement of roles as the system changes.",
+          "Example moves": "Quarterly role reviews embedded in team rhythms.",
+          "Future effect": "The future evolves without role-based tension.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Role clarity strengthens trust and autonomy.",
+          "Signals": "Smooth handoffs; proactive ownership."
+        }
+      },
+      "Purpose of This Theme": "To ensure responsibilities match the new context.",
+      "Why This Matters": "In rapid change, roles can drift; people keep doing old tasks that no longer serve."
+    },
+    {
+      "Guiding Questions": [
+        "What did we learn about ourselves during this change?",
+        "What worked surprisingly well?",
+        "What would we do differently next time?"
+      ],
+      "Name": "Integrate Lessons from the Change",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Learning compounds across cycles.",
+          "Edge condition": "Lessons are integrated without overcomplicating workflow.",
+          "Example moves": "Publishing a lessons-learned brief after major changes.",
+          "Future effect": "The future becomes more intelligent.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You deliberately capture insights and apply them.",
+          "Signals": "Adjustments trace back to documented lessons."
+        },
+        "Expected": {
+          "30-90 day system effect": "Some beneficial changes stick, others fade.",
+          "Edge condition": "Lessons discussed but not documented.",
+          "Example moves": "Informal chats about what worked without formal capture.",
+          "Future effect": "The future benefits partially but loses depth.",
+          "Immediate cost": "Partial improvement in practices.",
+          "Present pattern": "You note some lessons informally.",
+          "Signals": "Inconsistent application of insights."
+        },
+        "Poor": {
+          "30-90 day system effect": "Mistakes repeat and learning stagnates.",
+          "Edge condition": "Treating change as a one-off event.",
+          "Example moves": "Jumping to the next initiative without reflection.",
+          "Future effect": "The future repeats shallow patterns.",
+          "Immediate cost": "Opportunities for improvement are missed.",
+          "Present pattern": "You move on without sense-making.",
+          "Signals": "No debriefs or post-mortems."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Rapid adaptation without repeated mistakes.",
+          "Edge condition": "Learning celebrated as much as delivery.",
+          "Example moves": "Maintaining a living playbook of change learnings.",
+          "Future effect": "The future evolves faster and with more resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Lessons become cultural muscle.",
+          "Signals": "Reflexive review after every significant change."
+        }
+      },
+      "Purpose of This Theme": "To extract learning so the change strengthens the system rather than just passing through it.",
+      "Why This Matters": "Change without reflection wastes signal and repeats avoidable mistakes."
+    },
+    {
+      "Guiding Questions": [
+        "What practices or processes no longer serve?",
+        "What am I holding onto out of habit or fear?",
+        "What could we bless and release to create space?"
+      ],
+      "Name": "Release What No Longer Fits",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "System feels lighter and clearer.",
+          "Edge condition": "Releases are done with closure and acknowledgment.",
+          "Example moves": "Ceremonially closing a project before shifting focus.",
+          "Future effect": "The future gains speed and clarity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You release what’s misaligned with intention and care.",
+          "Signals": "Streamlined workflows and reduced clutter."
+        },
+        "Expected": {
+          "30-90 day system effect": "Improvement stalls after initial clean-up.",
+          "Edge condition": "Avoiding deeper changes to keep comfort.",
+          "Example moves": "Retiring an old report but keeping the process.",
+          "Future effect": "The future improves slightly but keeps hidden residue.",
+          "Immediate cost": "Minor efficiency gains but core drag remains.",
+          "Present pattern": "You let go of obvious mismatches.",
+          "Signals": "Lingering use of legacy systems or norms."
+        },
+        "Poor": {
+          "30-90 day system effect": "Adaptation slows, frustration grows.",
+          "Edge condition": "Fear of loss driving retention of the old.",
+          "Example moves": "Maintaining redundant approval processes.",
+          "Future effect": "The future clogs with outdated processes.",
+          "Immediate cost": "Energy and focus drain into unnecessary work.",
+          "Present pattern": "You keep everything from before.",
+          "Signals": "Resistance to new tools or workflows."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System remains lean and adaptive.",
+          "Edge condition": "Release is seen as evolution, not loss.",
+          "Example moves": "Embedding 'release reviews' into quarterly planning.",
+          "Future effect": "The future remains light, responsive, and adaptive.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Letting go becomes a shared norm.",
+          "Signals": "Teams suggest releases without prompting."
+        }
+      },
+      "Purpose of This Theme": "To consciously let go of structures, habits, or mindsets that the new reality doesn’t require.",
+      "Why This Matters": "Holding onto expired forms creates drag and confusion."
+    },
+    {
+      "Guiding Questions": [
+        "What is our north star now?",
+        "How will we know we’re on track?",
+        "What changes about our priorities in this new chapter?"
+      ],
+      "Name": "Reaffirm the Shared Direction",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Momentum builds toward shared goals.",
+          "Edge condition": "Direction is woven into rituals and practices.",
+          "Example moves": "Embedding the new vision into weekly planning.",
+          "Future effect": "The future aligns in action and spirit.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "The new direction is explicit and felt.",
+          "Signals": "Teams reference direction in daily choices."
+        },
+        "Expected": {
+          "30-90 day system effect": "Teams revert to old habits in stress moments.",
+          "Edge condition": "Direction set once, not revisited.",
+          "Example moves": "One-time announcement of new goals.",
+          "Future effect": "The future drifts when pressure hits.",
+          "Immediate cost": "Alignment fades under pressure.",
+          "Present pattern": "The direction is named but not embodied.",
+          "Signals": "Inconsistent decision-making criteria."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misalignment compounds over time.",
+          "Edge condition": "Vision statements that are vague or outdated.",
+          "Example moves": "Referencing old strategy documents post-change.",
+          "Future effect": "The future scatters effort.",
+          "Immediate cost": "Effort scatters into unrelated priorities.",
+          "Present pattern": "The vision stays fuzzy.",
+          "Signals": "Conflicting priorities between teams."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System remains on course through future changes.",
+          "Edge condition": "Direction evolves naturally with context.",
+          "Example moves": "Creating a living vision document updated quarterly.",
+          "Future effect": "The future holds coherence even as circumstances evolve.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Direction becomes self-reinforcing.",
+          "Signals": "People instinctively choose aligned actions."
+        }
+      },
+      "Purpose of This Theme": "To ensure everyone knows where the system is heading now.",
+      "Why This Matters": "Change without directional clarity leaves people rowing in different directions."
+    }
+  ],
+  "Title": "Rebalancing After Rapid Change",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when your team, company, or personal leadership context has recently shifted—after a funding round, a pivot, a rapid scale-up, a sudden contraction, or major structural change—and things feel fast but ungrounded.",
+  "Why This Matters": "Rapid change—no matter how positive—can unseat rhythm, blur roles, and scatter attention. If not consciously rebalanced, the system can lock into survival patterns, eroding trust and coherence over time."
+}

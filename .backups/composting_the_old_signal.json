@@ -1,0 +1,307 @@
+{
+  "Category": "Growth and Innovation",
+  "Completion Prompts": [
+    "Identify one outdated signal you can compost this week.",
+    "Choose one process to transform old signals into new insights.",
+    "Reflect on a recent decision: Did you balance old and new signals effectively?"
+  ],
+  "Created At": "2023-10-07",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "signal"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Signal renewal",
+      "Innovation and growth"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Decision Making in Rhythm",
+      "Mapping Our Funding Narrative"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "light-before-form",
+      "nothing-forced-nothing-withheld",
+      "presence-is-productivity",
+      "stewardship-not-ownership"
+    ],
+    "Tags": [
+      "renewal",
+      "innovation",
+      "signal transformation"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You regularly transform old signals into new insights → The future thrives on continuous innovation.",
+    "Expected": "You occasionally compost old signals → The future sees some renewal but also recurring stagnation.",
+    "Poor": "You ignore outdated signals → The future is burdened with clutter and missed opportunities.",
+    "Transcendent": "Signal composting becomes second nature → The future evolves with dynamic, adaptive growth."
+  },
+  "Overall Purpose": "To transform outdated signals into fertile ground for new growth, ensuring that past patterns inform future innovation.",
+  "Protocol ID": "auto_1755597435017_0",
+  "Short Title": "Signal Composting",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What signals are no longer relevant?",
+        "How do outdated signals affect our current processes?",
+        "What new signals are emerging?"
+      ],
+      "Name": "Identifying Outdated Signals",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Clear pathways for innovation and growth.",
+          "Edge condition": "Balancing recognition with action.",
+          "Example moves": "Conducting regular signal audits.",
+          "Future effect": "The future thrives on continuous innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You actively seek out and identify old signals.",
+          "Signals": "Regular updates and improvements."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent progress and innovation.",
+          "Edge condition": "Relying on intuition without analysis.",
+          "Example moves": "Reviewing signals periodically but not systematically.",
+          "Future effect": "The future sees some renewal but also recurring stagnation.",
+          "Immediate cost": "Partial renewal, some stagnation remains.",
+          "Present pattern": "You sometimes notice outdated signals.",
+          "Signals": "Occasional breakthroughs, persistent blocks."
+        },
+        "Poor": {
+          "30-90 day system effect": "Accumulation of inefficiencies.",
+          "Edge condition": "Confusing persistence with relevance.",
+          "Example moves": "Ignoring feedback loops that no longer apply.",
+          "Future effect": "The future is burdened with clutter and missed opportunities.",
+          "Immediate cost": "Stagnation and repeated mistakes.",
+          "Present pattern": "You overlook or dismiss old signals.",
+          "Signals": "Recurring issues, repeated patterns."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Dynamic adaptation and growth.",
+          "Edge condition": "Avoiding over-analysis that stalls action.",
+          "Example moves": "Embedding signal review in all processes.",
+          "Future effect": "The future evolves with dynamic, adaptive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Signal identification is ingrained in the culture.",
+          "Signals": "Fluid adaptation to change."
+        }
+      },
+      "Purpose of This Theme": "To recognize signals that no longer serve the system's current needs.",
+      "Why This Matters": "Identifying outdated signals prevents them from obstructing progress and allows for intentional renewal."
+    },
+    {
+      "Guiding Questions": [
+        "How can we repurpose old signals?",
+        "What new opportunities can emerge from past patterns?",
+        "What processes support signal transformation?"
+      ],
+      "Name": "Transforming Signals into Fertile Ground",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Sustained innovation and growth.",
+          "Edge condition": "Balancing transformation with action.",
+          "Example moves": "Creating a process for signal transformation.",
+          "Future effect": "The future thrives on continuous innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You systematically transform old signals into resources.",
+          "Signals": "Consistent new ideas and improvements."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial innovation, some stagnation.",
+          "Edge condition": "Reflecting without acting.",
+          "Example moves": "Discussing old signals in meetings.",
+          "Future effect": "The future experiences intermittent growth.",
+          "Immediate cost": "Some learning, but limited transformation.",
+          "Present pattern": "You sometimes reflect on old signals.",
+          "Signals": "Occasional new insights, recurring issues."
+        },
+        "Poor": {
+          "30-90 day system effect": "Repetitive cycles without growth.",
+          "Edge condition": "Mistaking disposal for transformation.",
+          "Example moves": "Deleting old data without analysis.",
+          "Future effect": "The future repeats past mistakes.",
+          "Immediate cost": "Lost opportunities for learning.",
+          "Present pattern": "You discard old signals without reflection.",
+          "Signals": "Frequent déjà vu, unlearned lessons."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Dynamic, ongoing growth and adaptation.",
+          "Edge condition": "Avoiding over-complication that stalls progress.",
+          "Example moves": "Embedding transformation in all processes.",
+          "Future effect": "The future evolves with dynamic, adaptive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Transformation is embedded in the culture.",
+          "Signals": "Effortless adaptation to change."
+        }
+      },
+      "Purpose of This Theme": "To convert old signals into resources for new growth.",
+      "Why This Matters": "Transformation of old signals creates a foundation for innovation and prevents stagnation."
+    },
+    {
+      "Guiding Questions": [
+        "What space is needed for new signals?",
+        "How do we ensure new signals are recognized?",
+        "What processes support ongoing space creation?"
+      ],
+      "Name": "Creating Space for New Signals",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Smooth emergence of new opportunities.",
+          "Edge condition": "Balancing space with structure.",
+          "Example moves": "Implementing regular decluttering sessions.",
+          "Future effect": "The future thrives on continuous innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently create space for new signals.",
+          "Signals": "Regularly updated processes and ideas."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial adaptation and growth.",
+          "Edge condition": "Clearing space without intention.",
+          "Example moves": "Removing old signals sporadically.",
+          "Future effect": "The future experiences uneven growth.",
+          "Immediate cost": "Some new signals emerge, others are missed.",
+          "Present pattern": "You occasionally make space for new signals.",
+          "Signals": "Intermittent innovation, persistent blocks."
+        },
+        "Poor": {
+          "30-90 day system effect": "Blocked innovation and adaptation.",
+          "Edge condition": "Mistaking clutter for richness.",
+          "Example moves": "Holding onto outdated processes.",
+          "Future effect": "The future is stifled by past clutter.",
+          "Immediate cost": "New signals are overlooked.",
+          "Present pattern": "You clutter the system with old signals.",
+          "Signals": "Overwhelmed by noise, missing new trends."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Effortless adaptation and growth.",
+          "Edge condition": "Avoiding emptiness that lacks direction.",
+          "Example moves": "Embedding space creation in all processes.",
+          "Future effect": "The future evolves with dynamic, adaptive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Space creation is a cultural norm.",
+          "Signals": "Fluid integration of new signals."
+        }
+      },
+      "Purpose of This Theme": "To clear space for new signals to emerge and be recognized.",
+      "Why This Matters": "Without space, new signals struggle to surface, hindering innovation and adaptation."
+    },
+    {
+      "Guiding Questions": [
+        "How do we balance old and new signals?",
+        "What processes support signal integration?",
+        "What risks come from over-relying on old or new signals?"
+      ],
+      "Name": "Balancing Old and New Signals",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Sustained innovation and continuity.",
+          "Edge condition": "Balancing integration with innovation.",
+          "Example moves": "Creating a process for signal integration.",
+          "Future effect": "The future thrives on continuous innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You integrate old insights with new signals.",
+          "Signals": "Consistent growth and adaptation."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial growth and adaptation.",
+          "Edge condition": "Balancing without integration.",
+          "Example moves": "Occasionally updating strategies.",
+          "Future effect": "The future experiences intermittent growth.",
+          "Immediate cost": "Some innovation, but limited continuity.",
+          "Present pattern": "You sometimes balance old and new signals.",
+          "Signals": "Mixed success in innovation."
+        },
+        "Poor": {
+          "30-90 day system effect": "Stagnation and missed opportunities.",
+          "Edge condition": "Mistaking stability for growth.",
+          "Example moves": "Clinging to outdated strategies.",
+          "Future effect": "The future is trapped in the past.",
+          "Immediate cost": "Innovation is stifled.",
+          "Present pattern": "You prioritize old signals over new ones.",
+          "Signals": "Resistance to change, repetitive patterns."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Effortless adaptation and growth.",
+          "Edge condition": "Avoiding over-reliance on either.",
+          "Example moves": "Embedding integration in all processes.",
+          "Future effect": "The future evolves with dynamic, adaptive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Integration is a cultural norm.",
+          "Signals": "Fluid integration of old and new."
+        }
+      },
+      "Purpose of This Theme": "To integrate past insights with emerging signals for holistic growth.",
+      "Why This Matters": "Balancing old and new signals ensures continuity while fostering innovation."
+    },
+    {
+      "Guiding Questions": [
+        "How do we cultivate a culture of renewal?",
+        "What processes support ongoing renewal?",
+        "What risks come from resisting renewal?"
+      ],
+      "Name": "Cultivating a Culture of Renewal",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Sustained innovation and adaptability.",
+          "Edge condition": "Balancing renewal with stability.",
+          "Example moves": "Creating a culture of continuous improvement.",
+          "Future effect": "The future thrives on continuous innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently cultivate renewal.",
+          "Signals": "Consistent openness to new ideas."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial innovation and renewal.",
+          "Edge condition": "Embracing without commitment.",
+          "Example moves": "Trying new methods sporadically.",
+          "Future effect": "The future experiences uneven growth.",
+          "Immediate cost": "Some growth, but limited adaptability.",
+          "Present pattern": "You occasionally embrace renewal.",
+          "Signals": "Intermittent openness to change."
+        },
+        "Poor": {
+          "30-90 day system effect": "Blocked growth and adaptation.",
+          "Edge condition": "Mistaking stability for security.",
+          "Example moves": "Rejecting new approaches.",
+          "Future effect": "The future is stifled by fear of change.",
+          "Immediate cost": "Stagnation and resistance to innovation.",
+          "Present pattern": "You resist change and renewal.",
+          "Signals": "Resistance to new ideas, fear of change."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Effortless adaptation and growth.",
+          "Edge condition": "Avoiding over-reliance on change.",
+          "Example moves": "Embedding renewal in all processes.",
+          "Future effect": "The future evolves with dynamic, adaptive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Renewal is a cultural norm.",
+          "Signals": "Fluid integration of new ideas."
+        }
+      },
+      "Purpose of This Theme": "To foster a mindset that values renewal and transformation.",
+      "Why This Matters": "A culture of renewal ensures that the system remains vibrant and adaptable."
+    }
+  ],
+  "Title": "Composting the Old Signal",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "- During periods of transition or change\n- When old patterns persist despite new strategies\n- When innovation feels stifled or stagnant",
+  "Why This Matters": "Without composting old signals, outdated patterns can clutter our processes, stifling innovation and growth. By composting, we create space for new insights and opportunities to emerge."
+}

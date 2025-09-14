@@ -1,0 +1,305 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one issue you can address openly this week.",
+    "Choose one area to implement a feedback loop.",
+    "Reflect on recent progress: How can you celebrate it with your team?"
+  ],
+  "Created At": "2023-10-18",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "60–90 min",
+    "Fields": [],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Identifying and addressing issues",
+      "Creating a culture of transparency"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Continuous Improvement Practices",
+      "Feedback Loop Integration"
+    ],
+    "Stones": [
+      "built-for-wholeness",
+      "clarity-over-cleverness",
+      "integrity-is-the-growth-strategy",
+      "nothing-forced-nothing-withheld",
+      "presence-is-productivity"
+    ],
+    "Tags": [
+      "transparency",
+      "problem-solving",
+      "feedback"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You consistently name and address issues openly → The future benefits from steady growth and enhanced team dynamics.",
+    "Expected": "You identify some issues but overlook others → The future experiences sporadic improvements but persistent underlying problems.",
+    "Poor": "You avoid addressing issues and let them fester → The future is burdened with unresolved problems and declining morale.",
+    "Transcendent": "Naming issues becomes a natural and integral part of the culture → The future thrives on adaptability and proactive problem-solving."
+  },
+  "Overall Purpose": "To create a space where challenges and inefficiencies can be openly identified and addressed, fostering a culture of transparency and continuous improvement.",
+  "Protocol ID": "auto_1755596971421_0",
+  "Short Title": "Identify Issues",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Do team members feel safe to share concerns?",
+        "What barriers exist to open communication?",
+        "How can we reinforce a culture of safety?"
+      ],
+      "Name": "Creating a Safe Environment",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Proactive problem-solving and engagement.",
+          "Edge condition": "Balancing safety with accountability.",
+          "Example moves": "Regularly scheduled open forums.",
+          "Future effect": "The future benefits from continuous improvement and trust.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Team members feel consistently safe to share issues.",
+          "Signals": "Regular, open feedback."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent problem resolution.",
+          "Edge condition": "Assuming safety without confirmation.",
+          "Example moves": "Occasional feedback sessions.",
+          "Future effect": "The future sees sporadic improvements but lingering issues.",
+          "Immediate cost": "Partial visibility into problems.",
+          "Present pattern": "Some team members feel safe to share issues.",
+          "Signals": "Selective feedback, uneven engagement."
+        },
+        "Poor": {
+          "30-90 day system effect": "Growing frustration and disengagement.",
+          "Edge condition": "Fear of speaking up.",
+          "Example moves": "Ignoring feedback or punishing dissent.",
+          "Future effect": "The future inherits a culture of silence and stagnation.",
+          "Immediate cost": "Issues remain hidden and unresolved.",
+          "Present pattern": "Team members are hesitant to speak up.",
+          "Signals": "Lack of feedback, high turnover."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Dynamic adaptation and innovation.",
+          "Edge condition": "Avoiding complacency in safety.",
+          "Example moves": "Embedding feedback mechanisms into daily operations.",
+          "Future effect": "The future thrives on a culture of openness and resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Safety to speak up is ingrained in the culture.",
+          "Signals": "High engagement, low turnover."
+        }
+      },
+      "Purpose of This Theme": "To ensure team members feel safe to speak up about issues without fear of retribution.",
+      "Why This Matters": "A safe environment encourages honesty and openness, which are essential for identifying and resolving problems."
+    },
+    {
+      "Guiding Questions": [
+        "What are the underlying causes of these issues?",
+        "How can we differentiate symptoms from causes?",
+        "What tools can help us uncover root causes?"
+      ],
+      "Name": "Identifying Core Issues",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Sustainable solutions and progress.",
+          "Edge condition": "Balancing depth of analysis with action.",
+          "Example moves": "Regular root cause workshops.",
+          "Future effect": "The future enjoys sustained growth and problem resolution.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Root causes are consistently identified and addressed.",
+          "Signals": "Decreased recurrence of issues."
+        },
+        "Expected": {
+          "30-90 day system effect": "Intermittent problem-solving.",
+          "Edge condition": "Guessing at root causes.",
+          "Example moves": "Occasional root cause analysis.",
+          "Future effect": "The future experiences partial relief but ongoing challenges.",
+          "Immediate cost": "Partial resolution of issues.",
+          "Present pattern": "Some root causes are identified, others missed.",
+          "Signals": "Inconsistent improvements."
+        },
+        "Poor": {
+          "30-90 day system effect": "Cycle of temporary fixes.",
+          "Edge condition": "Mistaking symptoms for causes.",
+          "Example moves": "Quick fixes without analysis.",
+          "Future effect": "The future is trapped in a loop of unresolved issues.",
+          "Immediate cost": "Problems resurface repeatedly.",
+          "Present pattern": "Focus is on symptoms, not causes.",
+          "Signals": "Recurring issues, short-term solutions."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High adaptability and innovation.",
+          "Edge condition": "Avoiding over-analysis.",
+          "Example moves": "Integrating root cause analysis into all processes.",
+          "Future effect": "The future thrives on a foundation of understanding and foresight.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Root cause analysis is a habitual practice.",
+          "Signals": "Proactive issue identification."
+        }
+      },
+      "Purpose of This Theme": "To discern the root causes of problems rather than just symptoms.",
+      "Why This Matters": "Addressing symptoms without understanding root causes leads to temporary fixes and recurring issues."
+    },
+    {
+      "Guiding Questions": [
+        "How can we ensure our discussions remain constructive?",
+        "What practices support solution-focused dialogue?",
+        "How do we handle disagreements productively?"
+      ],
+      "Name": "Encouraging Constructive Dialogue",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Strong team cohesion and problem resolution.",
+          "Edge condition": "Balancing openness with focus.",
+          "Example moves": "Facilitated solution-oriented sessions.",
+          "Future effect": "The future benefits from a culture of collaboration and innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Discussions are consistently constructive and solution-focused.",
+          "Signals": "Frequent collaborative problem-solving."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent team cohesion.",
+          "Edge condition": "Allowing negativity to dominate.",
+          "Example moves": "Structured debates with mixed results.",
+          "Future effect": "The future sees sporadic collaboration and problem-solving.",
+          "Immediate cost": "Mixed outcomes from dialogues.",
+          "Present pattern": "Some discussions are constructive, others not.",
+          "Signals": "Occasional productive discussions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Deteriorating team dynamics.",
+          "Edge condition": "Mistaking criticism for dialogue.",
+          "Example moves": "Blame games in meetings.",
+          "Future effect": "The future is marked by division and inefficiency.",
+          "Immediate cost": "Increased tension and unresolved issues.",
+          "Present pattern": "Discussions are blame-focused and unproductive.",
+          "Signals": "Frequent arguments, lack of solutions."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High-performing, cohesive teams.",
+          "Edge condition": "Avoiding groupthink.",
+          "Example moves": "Embedding dialogue principles into team culture.",
+          "Future effect": "The future thrives on creativity and collective intelligence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Constructive dialogue is a cultural norm.",
+          "Signals": "Universal participation in problem-solving."
+        }
+      },
+      "Purpose of This Theme": "To foster discussions that are solution-oriented and respectful.",
+      "Why This Matters": "Constructive dialogue leads to effective problem-solving and strengthens team cohesion."
+    },
+    {
+      "Guiding Questions": [
+        "How can we create effective feedback mechanisms?",
+        "What structures support continuous feedback?",
+        "How do we ensure feedback leads to action?"
+      ],
+      "Name": "Building a Feedback Loop",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Continuous improvement and adaptation.",
+          "Edge condition": "Balancing feedback with action.",
+          "Example moves": "Implementing structured feedback systems.",
+          "Future effect": "The future thrives on continuous learning and improvement.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Feedback is structured and regular.",
+          "Signals": "Regular, actionable feedback."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent progress.",
+          "Edge condition": "Relying on informal feedback.",
+          "Example moves": "Periodic feedback sessions.",
+          "Future effect": "The future experiences partial progress but ongoing issues.",
+          "Immediate cost": "Some improvements, but gaps remain.",
+          "Present pattern": "Feedback occurs occasionally but lacks structure.",
+          "Signals": "Feedback is uneven, some issues addressed."
+        },
+        "Poor": {
+          "30-90 day system effect": "Stagnation and recurring issues.",
+          "Edge condition": "Mistaking silence for satisfaction.",
+          "Example moves": "Ad-hoc feedback without follow-up.",
+          "Future effect": "The future is marked by unaddressed challenges.",
+          "Immediate cost": "Missed opportunities for improvement.",
+          "Present pattern": "Feedback is sporadic and unstructured.",
+          "Signals": "Feedback is rare, issues persist."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High adaptability and resilience.",
+          "Edge condition": "Avoiding feedback fatigue.",
+          "Example moves": "Integrating feedback into all processes.",
+          "Future effect": "The future is characterized by agility and sustained growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Feedback loops are embedded in the culture.",
+          "Signals": "Feedback is integral and proactive."
+        }
+      },
+      "Purpose of This Theme": "To create mechanisms for continuous feedback and improvement.",
+      "Why This Matters": "A feedback loop ensures that issues are continuously identified and addressed, preventing stagnation."
+    },
+    {
+      "Guiding Questions": [
+        "How can we celebrate progress effectively?",
+        "What practices reinforce learning and improvement?",
+        "How do we ensure recognition is meaningful?"
+      ],
+      "Name": "Celebrating Progress and Learning",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "High motivation and sustained effort.",
+          "Edge condition": "Balancing celebration with humility.",
+          "Example moves": "Regular recognition events.",
+          "Future effect": "The future thrives on a culture of motivation and continuous improvement.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Progress and learning are consistently celebrated.",
+          "Signals": "Regular celebrations and acknowledgments."
+        },
+        "Expected": {
+          "30-90 day system effect": "Varied engagement levels.",
+          "Edge condition": "Recognizing only major achievements.",
+          "Example moves": "Periodic acknowledgments.",
+          "Future effect": "The future experiences fluctuating motivation and progress.",
+          "Immediate cost": "Inconsistent motivation.",
+          "Present pattern": "Some progress is acknowledged, some is not.",
+          "Signals": "Occasional recognition, uneven morale."
+        },
+        "Poor": {
+          "30-90 day system effect": "Reduced engagement and effort.",
+          "Edge condition": "Mistaking progress for completion.",
+          "Example moves": "Ignoring team achievements.",
+          "Future effect": "The future is marked by disengagement and stagnation.",
+          "Immediate cost": "Decreased motivation and morale.",
+          "Present pattern": "Progress and learning go unrecognized.",
+          "Signals": "Lack of recognition, low morale."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High morale and innovation.",
+          "Edge condition": "Avoiding complacency in success.",
+          "Example moves": "Integrating celebration into daily routines.",
+          "Future effect": "The future is characterized by a vibrant, motivated, and innovative culture.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Celebration of progress is cultural and ongoing.",
+          "Signals": "Universal recognition and motivation."
+        }
+      },
+      "Purpose of This Theme": "To acknowledge improvements and learnings, reinforcing positive behaviors.",
+      "Why This Matters": "Celebrating progress motivates teams and reinforces a culture of improvement and learning."
+    }
+  ],
+  "Title": "Naming What's Not Working",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when recurring issues arise, during team reflections, or when progress feels stalled despite efforts.",
+  "Why This Matters": "Without naming what isn't working, problems persist and compound, leading to inefficiencies, frustration, and missed opportunities for growth and innovation."
+}

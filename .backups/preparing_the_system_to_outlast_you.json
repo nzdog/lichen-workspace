@@ -1,0 +1,305 @@
+{
+  "Category": "Sustainability",
+  "Completion Prompts": [
+    "Identify one area where knowledge documentation can be improved.",
+    "Choose an emerging leader to mentor this month.",
+    "Reflect on a recent change: How adaptable was the system in response?"
+  ],
+  "Created At": "2023-10-05",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "75–90 min",
+    "Fields": [],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Leadership transition",
+      "System sustainability"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Leadership Development Pathways",
+      "Knowledge Management Strategies"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "integrity-is-the-growth-strategy",
+      "light-before-form",
+      "presence-is-productivity",
+      "stewardship-not-ownership"
+    ],
+    "Tags": [
+      "sustainability",
+      "leadership",
+      "adaptability"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You establish robust structures and knowledge-sharing practices → The future maintains stability and growth.",
+    "Expected": "You create some continuity plans but leave key areas unaddressed → The future experiences partial resilience and sporadic challenges.",
+    "Poor": "You leave without preparing the system for your absence → The future struggles with gaps and instability.",
+    "Transcendent": "The system adapts seamlessly to changes in leadership → The future thrives with autonomy and innovation."
+  },
+  "Overall Purpose": "To ensure the systems we build continue to thrive and evolve beyond our direct involvement, fostering resilience and sustainability.",
+  "Protocol ID": "auto_1755597195503_0",
+  "Short Title": "System Longevity",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What critical knowledge needs documentation?",
+        "How accessible is this information to others?",
+        "What updates are needed to keep documents relevant?"
+      ],
+      "Name": "Documenting Knowledge",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Smooth transitions and consistent operations.",
+          "Edge condition": "Balancing detail with accessibility.",
+          "Example moves": "Regularly updating and reviewing documents.",
+          "Future effect": "The future maintains stability and growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Comprehensive documentation is maintained.",
+          "Signals": "Few disruptions during personnel changes."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent application of knowledge.",
+          "Edge condition": "Assuming partial documentation is sufficient.",
+          "Example moves": "Updating documents sporadically.",
+          "Future effect": "The future experiences partial resilience and sporadic challenges.",
+          "Immediate cost": "Partial understanding and occasional errors.",
+          "Present pattern": "Some documentation exists but is incomplete.",
+          "Signals": "Varied adherence to processes."
+        },
+        "Poor": {
+          "30-90 day system effect": "Confusion and inefficiency increase.",
+          "Edge condition": "Relying on memory over documentation.",
+          "Example moves": "Keeping procedures in personal notes only.",
+          "Future effect": "The future struggles with gaps and instability.",
+          "Immediate cost": "Critical information is lost with departures.",
+          "Present pattern": "Knowledge is held informally and inconsistently.",
+          "Signals": "Frequent questions about basic processes."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System evolves independently of individuals.",
+          "Edge condition": "Avoiding over-reliance on documentation alone.",
+          "Example moves": "Creating collaborative knowledge platforms.",
+          "Future effect": "The future thrives with autonomy and innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Knowledge sharing is embedded in the culture.",
+          "Signals": "Collective ownership of information."
+        }
+      },
+      "Purpose of This Theme": "To capture and share essential information and processes within the system.",
+      "Why This Matters": "Documented knowledge prevents loss and empowers others to continue the work effectively."
+    },
+    {
+      "Guiding Questions": [
+        "Who are potential leaders within the system?",
+        "What skills and support do they need?",
+        "How can leadership be more distributed?"
+      ],
+      "Name": "Building Leadership Capacity",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Robust leadership at multiple levels.",
+          "Edge condition": "Balancing guidance with autonomy.",
+          "Example moves": "Creating mentorship and development programs.",
+          "Future effect": "The future maintains stability and growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Leadership capacity is actively nurtured.",
+          "Signals": "Effective delegation and empowerment."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial empowerment and mixed results.",
+          "Edge condition": "Developing leaders without clear pathways.",
+          "Example moves": "Offering occasional leadership training.",
+          "Future effect": "The future experiences partial resilience and sporadic challenges.",
+          "Immediate cost": "Emerging leaders but with limited scope.",
+          "Present pattern": "Some leadership development occurs.",
+          "Signals": "Inconsistent leadership practices."
+        },
+        "Poor": {
+          "30-90 day system effect": "Dependency on a few individuals.",
+          "Edge condition": "Mistaking control for leadership.",
+          "Example moves": "Retaining all decision power at the top.",
+          "Future effect": "The future struggles with gaps and instability.",
+          "Immediate cost": "Limited growth and adaptability.",
+          "Present pattern": "Leadership roles are centralized and static.",
+          "Signals": "Bottlenecks in decision-making."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System thrives through collective leadership.",
+          "Edge condition": "Avoiding leadership by consensus alone.",
+          "Example moves": "Embedding leadership development into daily practices.",
+          "Future effect": "The future thrives with autonomy and innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Leadership is dynamic and distributed.",
+          "Signals": "Shared vision and collaborative decision-making."
+        }
+      },
+      "Purpose of This Theme": "To develop and empower future leaders within the system.",
+      "Why This Matters": "Sustainable systems require distributed leadership to adapt and grow."
+    },
+    {
+      "Guiding Questions": [
+        "How does the system currently respond to change?",
+        "What barriers exist to adaptability?",
+        "How can we foster a culture of innovation?"
+      ],
+      "Name": "Creating a Culture of Adaptability",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Proactive and responsive system.",
+          "Edge condition": "Balancing innovation with core values.",
+          "Example moves": "Regularly soliciting and acting on feedback.",
+          "Future effect": "The future maintains stability and growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Adaptability is encouraged and supported.",
+          "Signals": "Quick adaptation to new challenges."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed success in new initiatives.",
+          "Edge condition": "Changing only when necessary.",
+          "Example moves": "Implementing changes without full buy-in.",
+          "Future effect": "The future experiences partial resilience and sporadic challenges.",
+          "Immediate cost": "Occasional adaptation but with resistance.",
+          "Present pattern": "Some openness to change exists.",
+          "Signals": "Uneven adoption of new practices."
+        },
+        "Poor": {
+          "30-90 day system effect": "Inflexibility and declining relevance.",
+          "Edge condition": "Confusing stability with rigidity.",
+          "Example moves": "Ignoring feedback and innovation.",
+          "Future effect": "The future struggles with gaps and instability.",
+          "Immediate cost": "Missed opportunities and stagnation.",
+          "Present pattern": "Resistance to change is prevalent.",
+          "Signals": "Frequent pushback on new ideas."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System leads in innovation and resilience.",
+          "Edge condition": "Avoiding change for change's sake.",
+          "Example moves": "Embedding adaptability into strategic planning.",
+          "Future effect": "The future thrives with autonomy and innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Adaptability is a core system value.",
+          "Signals": "Continuous improvement and evolution."
+        }
+      },
+      "Purpose of This Theme": "To foster a system that embraces change and innovation.",
+      "Why This Matters": "Adaptable systems can navigate uncertainty and capitalize on new opportunities."
+    },
+    {
+      "Guiding Questions": [
+        "What resources are critical for the system's longevity?",
+        "How are resources currently managed?",
+        "What strategies can enhance resource sustainability?"
+      ],
+      "Name": "Ensuring Resource Sustainability",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Stable and efficient operations.",
+          "Edge condition": "Balancing resource use with renewal.",
+          "Example moves": "Implementing sustainable resource practices.",
+          "Future effect": "The future maintains stability and growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Resources are managed with foresight.",
+          "Signals": "Consistent resource availability."
+        },
+        "Expected": {
+          "30-90 day system effect": "Strained operations and reactive measures.",
+          "Edge condition": "Planning based on short-term needs.",
+          "Example moves": "Adjusting budgets reactively.",
+          "Future effect": "The future experiences partial resilience and sporadic challenges.",
+          "Immediate cost": "Occasional shortages and inefficiencies.",
+          "Present pattern": "Resource planning is inconsistent.",
+          "Signals": "Periodic resource reallocations."
+        },
+        "Poor": {
+          "30-90 day system effect": "Operational constraints and cutbacks.",
+          "Edge condition": "Mistaking abundance for sustainability.",
+          "Example moves": "Overcommitting resources without planning.",
+          "Future effect": "The future struggles with gaps and instability.",
+          "Immediate cost": "Depletion and scarcity.",
+          "Present pattern": "Resources are consumed without foresight.",
+          "Signals": "Frequent resource shortages."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System thrives with abundant resources.",
+          "Edge condition": "Avoiding complacency in resource abundance.",
+          "Example moves": "Embedding sustainability into all resource planning.",
+          "Future effect": "The future thrives with autonomy and innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Resource sustainability is integral to strategy.",
+          "Signals": "Resource use aligns with strategic goals."
+        }
+      },
+      "Purpose of This Theme": "To manage resources wisely for long-term viability.",
+      "Why This Matters": "Sustainable resource management ensures the system's continued operation and growth."
+    },
+    {
+      "Guiding Questions": [
+        "What is the current vision for the system?",
+        "How is this vision communicated and reinforced?",
+        "What changes are needed to align the system with the vision?"
+      ],
+      "Name": "Fostering a Shared Vision",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Unified efforts and clear progress.",
+          "Edge condition": "Balancing vision with adaptability.",
+          "Example moves": "Engaging all stakeholders in vision creation.",
+          "Future effect": "The future maintains stability and growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Vision is shared and actively pursued.",
+          "Signals": "Consistent focus on shared goals."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent progress toward goals.",
+          "Edge condition": "Assuming communication equals buy-in.",
+          "Example moves": "Sharing vision statements without engagement.",
+          "Future effect": "The future experiences partial resilience and sporadic challenges.",
+          "Immediate cost": "Partial alignment and focus.",
+          "Present pattern": "Vision is communicated but not fully embraced.",
+          "Signals": "Varied commitment to the vision."
+        },
+        "Poor": {
+          "30-90 day system effect": "Disjointed efforts and inefficiency.",
+          "Edge condition": "Mistaking activity for alignment.",
+          "Example moves": "Pursuing initiatives without a unifying purpose.",
+          "Future effect": "The future struggles with gaps and instability.",
+          "Immediate cost": "Misalignment and conflict.",
+          "Present pattern": "Vision is unclear or fragmented.",
+          "Signals": "Conflicting priorities and goals."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System leads with clarity and purpose.",
+          "Edge condition": "Avoiding rigidity in vision pursuit.",
+          "Example moves": "Embedding vision into daily practices.",
+          "Future effect": "The future thrives with autonomy and innovation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Vision is lived and evolves with the system.",
+          "Signals": "Natural alignment in actions and decisions."
+        }
+      },
+      "Purpose of This Theme": "To align the system around a common purpose and direction.",
+      "Why This Matters": "A shared vision unites efforts and guides decision-making across the system."
+    }
+  ],
+  "Title": "Preparing the System to Outlast You",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when planning transitions, during leadership changes, or when systems show dependency on specific individuals.",
+  "Why This Matters": "Without intentional preparation, systems may falter when key individuals leave, leading to loss of knowledge, continuity, and potential. Ensuring longevity protects the system's integrity and purpose."
+}

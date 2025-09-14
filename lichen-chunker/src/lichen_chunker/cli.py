@@ -27,6 +27,7 @@ def process_with_profile(
     output_dir: Path,
     index_path: Path,
     schema: Optional[Path],
+    eval_mode: bool = False,
     debug: bool = False
 ) -> Tuple[List, dict, float]:
     """Process files with a specific profile."""
@@ -39,6 +40,7 @@ def process_with_profile(
         overlap_tokens=overlap,
         index_path=index_path,
         profile=profile_name,
+        eval_mode=eval_mode,
         sidebar_overrides={
             "backend": backend,
             "max_tokens": max_tokens, 
@@ -254,12 +256,20 @@ def process(
     overlap: int = typer.Option(60, "--overlap", help="Overlap tokens between chunks"),
     output_dir: Path = typer.Option(Path("./data"), "--output", "-o", help="Output directory for chunks"),
     index_path: Path = typer.Option(Path("./index"), "--index", "-i", help="Index directory"),
-    schema: Optional[Path] = typer.Option(None, "--schema", "-s", help="Path to schema file")
+    schema: Optional[Path] = typer.Option(None, "--schema", "-s", help="Path to schema file"),
+    eval_mode: bool = typer.Option(False, "--eval-mode", help="Output files in evaluation system format (.vector/ with fast/accurate lanes)")
 ):
     """Process protocol files end-to-end (validate, chunk, embed, index)."""
     if not files:
         console.print("[red]No files provided[/red]")
         raise typer.Exit(1)
+    
+    # Handle eval mode - adjust paths for evaluation system
+    if eval_mode:
+        console.print("[cyan]🎯 Evaluation Mode: Outputting to .vector/ with fast/accurate lanes[/cyan]")
+        # Override paths for eval mode
+        index_path = Path("../.vector")  # Go up one level to workspace root
+        output_dir = Path("../.vector")  # Also put chunks in .vector for metadata
     
     # Handle "both" profile - process with both speed and accuracy
     if profile == "both":
@@ -268,13 +278,13 @@ def process(
         # Process with Speed profile
         console.print("\n[cyan]📈 Speed Profile Processing[/cyan]")
         speed_results, speed_stats, speed_time = process_with_profile(
-            files, "speed", backend, max_tokens, overlap, output_dir, index_path, schema
+            files, "speed", backend, max_tokens, overlap, output_dir, index_path, schema, eval_mode
         )
         
         # Process with Accuracy profile  
         console.print("\n[cyan]🎯 Accuracy Profile Processing[/cyan]")
         accuracy_results, accuracy_stats, accuracy_time = process_with_profile(
-            files, "accuracy", backend, max_tokens, overlap, output_dir, index_path, schema
+            files, "accuracy", backend, max_tokens, overlap, output_dir, index_path, schema, eval_mode
         )
         
         # Two-lane summary
@@ -320,6 +330,7 @@ def process(
         overlap_tokens=overlap,
         index_path=index_path,
         profile=profile,
+        eval_mode=eval_mode,
         sidebar_overrides={
             "backend": backend,
             "max_tokens": max_tokens, 

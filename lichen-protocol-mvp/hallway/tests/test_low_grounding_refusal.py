@@ -73,8 +73,9 @@ class TestLowGroundingRefusal:
         assert result["meta"]["grounding_score"] < 0.5
         
         # Verify that generation was attempted but result was rejected
-        mock_adapter.retrieve.assert_called_once()
-        mock_adapter.generate.assert_called_once()
+        # With escalation policy, it should escalate from fast to accurate due to low grounding
+        assert mock_adapter.retrieve.call_count == 2  # fast then accurate
+        assert mock_adapter.generate.call_count == 2  # once for fast lane check, once for accurate lane
     
     @pytest.mark.asyncio
     @patch('hallway.adapters.rag_adapter.get_rag_adapter')

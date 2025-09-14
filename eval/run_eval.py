@@ -8,14 +8,16 @@ import os
 import time
 import yaml
 import glob
+import logging
+from datetime import datetime
 from typing import List, Dict, Any, Set
 
-from .config import LANE_TARGETS, evaluate_metric_band
-from .metrics import (
+from config import LANE_TARGETS, evaluate_metric_band
+from metrics import (
     precision_at_k, recall_at_k, mrr_at_k, ndcg_at_k,
     diversity_unique_docs_topk, p95, simple_grounding_score, stones_alignment_score
 )
-from .adapter import retrieve, generate, expected_stones_for_query
+from adapter import retrieve, generate, expected_stones_for_query
 
 
 def check_semantic_alignment(answer: str, stone_info: Dict[str, Any], assertions: List[str]) -> Dict[str, Any]:
@@ -72,7 +74,18 @@ def load_evalset(evalset_path: str) -> List[Dict[str, Any]]:
         return json.load(f)
 
 
-def load_stones_registry(stones_path: str = "eval/stones.yaml") -> Dict[str, Dict[str, Any]]:
+def load_evalset_jsonl(evalset_path: str) -> List[Dict[str, Any]]:
+    """Load evaluation dataset from JSONL file."""
+    evalset = []
+    with open(evalset_path, 'r') as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                evalset.append(json.loads(line))
+    return evalset
+
+
+def load_stones_registry(stones_path: str = "stones.yaml") -> Dict[str, Dict[str, Any]]:
     """Load the canonical Stones registry."""
     try:
         with open(stones_path, 'r') as f:
@@ -92,12 +105,14 @@ def load_prompts_from_yaml(prompts_dir: str, stones_registry: Dict[str, Dict[str
     
     # Find all YAML files in the prompts directory
     yaml_files = glob.glob(os.path.join(prompts_dir, "*.yaml"))
+    print(f"Found {len(yaml_files)} YAML files in {prompts_dir}")
     
     for yaml_file in yaml_files:
         try:
             with open(yaml_file, 'r') as f:
                 data = yaml.safe_load(f)
                 if 'prompts' in data:
+                    print(f"Loading {len(data['prompts'])} prompts from {yaml_file}")
                     for prompt in data['prompts']:
                         # Validate and fix stone_meaning if needed
                         if stones_registry and 'stone' in prompt:
@@ -110,32 +125,77 @@ def load_prompts_from_yaml(prompts_dir: str, stones_registry: Dict[str, Dict[str
                             else:
                                 print(f"Warning: Unknown stone '{stone_slug}' in {prompt.get('query_id', 'unknown')} in {yaml_file}")
                         prompts.append(prompt)
+                else:
+                    print(f"No 'prompts' key found in {yaml_file}")
         except Exception as e:
             print(f"Warning: Could not load {yaml_file}: {e}")
     
+    print(f"Total prompts loaded: {len(prompts)}")
     return prompts
 
 
-def evaluate_lane(evalset: List[Dict[str, Any]], lane: str, outdir: str, stones_registry: Dict[str, Dict[str, Any]] = None) -> Dict[str, Any]:
+def evaluate_lane(evalset: List[Dict[str, Any]], lane: str, outdir: str, stones_registry: Dict[str, Dict[str, Any]] = None, debug_retrieval: bool = False, use_router: bool = True) -> Dict[str, Any]:
     """
     Evaluate a single lane (fast or accurate) and return aggregate metrics.
+    
+    Args:
+        evalset: List of evaluation items
+        lane: Lane to evaluate (fast/accurate)
+        outdir: Output directory for results
+        stones_registry: Stones registry for semantic alignment
+        debug_retrieval: Enable debug logging
+        use_router: Whether to use protocol router for retrieval
     """
     records = []
     retriever_latencies = []
     
+    # Setup debug logging if requested
+    debug_logger = None
+    if debug_retrieval:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_path = f"logs/retrieval_{timestamp}.log"
+        os.makedirs("logs", exist_ok=True)
+        
+        debug_logger = logging.getLogger(f"retrieval_debug_{lane}")
+        debug_logger.setLevel(logging.INFO)
+        handler = logging.FileHandler(log_path)
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        debug_logger.addHandler(handler)
+        
+        debug_logger.info(f"Starting {lane} lane evaluation with debug logging")
+    
     # Process each evaluation item
-    for item in evalset:
-        query_id = item["query_id"]
+    for i, item in enumerate(evalset):
+        query_id = item.get("query_id") or item.get("id", "unknown")
         query = item.get("query") or item.get("prompt", "")
         gold_doc_ids = set(item.get("gold_doc_ids", []))
         expected_stones = item.get("expected_stones", [])
+        # If no expected_stones but we have a stone field, use that
+        if not expected_stones and "stone" in item:
+            expected_stones = [item["stone"]]
         top_k_for_generation = item.get("top_k_for_generation", 8)
+        
+        # Debug logging for first 3 queries
+        if debug_logger and i < 3:
+            debug_logger.info(f"Query {i+1}: {query}")
+            debug_logger.info(f"Expected gold docs: {list(gold_doc_ids)}")
         
         # Measure retriever latency
         start_time = time.time()
-        retrieval_results = retrieve(query, lane)
+        retrieval_results = retrieve(query, lane, use_router=use_router)
         latency_ms = (time.time() - start_time) * 1000
         retriever_latencies.append(latency_ms)
+        
+        # Debug logging for retrieval results
+        if debug_logger and i < 3:
+            debug_logger.info(f"Retrieval results: {len(retrieval_results)} docs")
+            for j, result in enumerate(retrieval_results[:5]):
+                router_info = ""
+                if "router_decision" in result:
+                    router_decision = result["router_decision"]
+                    router_info = f", router: {router_decision['route']} (conf: {router_decision['confidence']:.2f})"
+                debug_logger.info(f"  {j+1}. doc={result.get('doc', 'unknown')}, score={result.get('score', 0.0):.3f}{router_info}, text={result.get('text', '')[:80]}...")
         
         # Extract ranked document IDs
         ranked_doc_ids = [result["doc"] for result in retrieval_results]
@@ -170,11 +230,17 @@ def evaluate_lane(evalset: List[Dict[str, Any]], lane: str, outdir: str, stones_
                 stone_info = stones_registry[stone_slug]
                 semantic_alignment = check_semantic_alignment(answer, stone_info, item.get('assertions', []))
         
+        # Extract router information
+        router_decision = None
+        if retrieval_results and "router_decision" in retrieval_results[0]:
+            router_decision = retrieval_results[0]["router_decision"]
+        
         # Create record
         record = {
             "query_id": query_id,
             "query": query,
             "lane": lane,
+            "use_router": use_router,
             "ranked_doc_ids": ranked_doc_ids,
             "gold_doc_ids": list(gold_doc_ids),
             "expected_stones": expected_stones,
@@ -194,6 +260,11 @@ def evaluate_lane(evalset: List[Dict[str, Any]], lane: str, outdir: str, stones_
         # Add semantic alignment if available
         if semantic_alignment:
             record["semantic_alignment"] = semantic_alignment
+        
+        # Add router decision if available
+        if router_decision:
+            record["router_decision"] = router_decision
+        
         records.append(record)
     
     # Calculate aggregate metrics
@@ -343,12 +414,18 @@ def main():
     parser = argparse.ArgumentParser(description="Run RAG evaluation harness")
     parser.add_argument("--evalset", default="eval/evalset.json", 
                        help="Path to evaluation dataset JSON file (legacy)")
-    parser.add_argument("--prompts-dir", default="eval/prompts", 
+    parser.add_argument("--prompts-dir", default="prompts", 
                        help="Directory containing YAML prompt files")
     parser.add_argument("--outdir", default="eval/out", 
                        help="Output directory for results")
-    parser.add_argument("--use-yaml", action="store_true", default=True,
-                       help="Use YAML prompts directory instead of JSON evalset")
+    parser.add_argument("--use-yaml", action="store_true", default=False,
+                       help="Use YAML prompts directory instead of JSON/JSONL evalset")
+    parser.add_argument("--debug-retrieval", action="store_true", default=False,
+                       help="Enable debug logging for retrieval operations")
+    parser.add_argument("--router", action="store_true", default=False,
+                       help="Use protocol router for retrieval")
+    parser.add_argument("--no-router", action="store_true", default=False,
+                       help="Disable protocol router for retrieval")
     
     args = parser.parse_args()
     
@@ -358,23 +435,38 @@ def main():
         print(f"Loaded {len(stones_registry)} stones from registry")
     
     # Load evaluation dataset
-    if args.use_yaml:
+    if args.use_yaml or (not args.use_yaml and args.evalset == "eval/evalset.json"):
         print(f"Loading prompts from YAML files in {args.prompts_dir}...")
         evalset = load_prompts_from_yaml(args.prompts_dir, stones_registry)
         print(f"Loaded {len(evalset)} prompts from YAML files")
     else:
         print(f"Loading evalset from {args.evalset}...")
-        evalset = load_evalset(args.evalset)
-        print(f"Loaded {len(evalset)} prompts from JSON file")
+        # Detect file format and use appropriate loader
+        if args.evalset.endswith('.jsonl'):
+            evalset = load_evalset_jsonl(args.evalset)
+            print(f"Loaded {len(evalset)} prompts from JSONL file")
+        else:
+            evalset = load_evalset(args.evalset)
+            print(f"Loaded {len(evalset)} prompts from JSON file")
     
     if not evalset:
         print("Error: No evaluation prompts loaded!")
         return
     
+    # Determine router usage
+    use_router = True  # Default to using router
+    if args.no_router:
+        use_router = False
+    elif args.router:
+        use_router = True
+    
+    router_mode = "with router" if use_router else "without router"
+    print(f"\nRunning evaluation {router_mode}")
+    
     # Evaluate both lanes
     for lane in ["fast", "accurate"]:
-        print(f"\nEvaluating {lane} lane...")
-        summary = evaluate_lane(evalset, lane, args.outdir, stones_registry)
+        print(f"\nEvaluating {lane} lane {router_mode}...")
+        summary = evaluate_lane(evalset, lane, args.outdir, stones_registry, args.debug_retrieval, use_router)
         print_dashboard(summary, lane)
     
     print(f"\nEvaluation complete. Results saved to {args.outdir}/")

@@ -1,0 +1,307 @@
+{
+  "Category": "Funding Strategy",
+  "Completion Prompts": [
+    "Identify one aspect of your funding narrative to refine this month.",
+    "Choose a funder to engage more deeply as a partner.",
+    "Reflect on a recent funding proposal: Did it align with funder priorities?"
+  ],
+  "Created At": "2023-10-10",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "integrity",
+      "signal"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Developing fundraising strategies",
+      "Aligning funding narrative with mission"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Strategic Partnerships",
+      "Mission Alignment"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "integrity-is-the-growth-strategy",
+      "presence-is-productivity",
+      "stewardship-not-ownership"
+    ],
+    "Tags": [
+      "funding",
+      "narrative",
+      "strategy"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You convey a clear and resonant funding narrative → The future enjoys steady support and strategic partnerships.",
+    "Expected": "You articulate a basic funding narrative but lack depth → The future experiences sporadic engagement and moderate growth.",
+    "Poor": "You present a disjointed funding story → The future faces inconsistent support and financial instability.",
+    "Transcendent": "Your funding narrative becomes a beacon for aligned funders → The future thrives with abundant resources and shared vision."
+  },
+  "Overall Purpose": "To craft a coherent and compelling funding narrative that aligns with our mission and attracts sustainable financial support.",
+  "Protocol ID": "auto_1755596259080_0",
+  "Short Title": "Funding Narrative",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What is the essence of our mission?",
+        "How does our message align with funder values?",
+        "What makes our narrative compelling?"
+      ],
+      "Name": "Understanding Our Core Message",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Increased funder interest and engagement.",
+          "Edge condition": "Balancing depth with simplicity.",
+          "Example moves": "Crafting tailored messages for different funder segments.",
+          "Future effect": "The future enjoys steady support and strategic partnerships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You articulate a clear and compelling core message.",
+          "Signals": "Consistent positive responses from funders."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate growth and support.",
+          "Edge condition": "Relying on generic messaging.",
+          "Example moves": "Using a standard pitch for all funders.",
+          "Future effect": "The future experiences sporadic engagement and moderate growth.",
+          "Immediate cost": "Limited engagement from funders.",
+          "Present pattern": "You have a basic core message.",
+          "Signals": "Some funders show interest, others remain indifferent."
+        },
+        "Poor": {
+          "30-90 day system effect": "Missed funding opportunities.",
+          "Edge condition": "Mistaking activity for clarity.",
+          "Example moves": "Presenting different messages to different audiences.",
+          "Future effect": "The future faces inconsistent support and financial instability.",
+          "Immediate cost": "Confusion among potential funders.",
+          "Present pattern": "You lack a unified core message.",
+          "Signals": "Inconsistent messaging, varied interpretations."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Strong, sustainable funding relationships.",
+          "Edge condition": "Avoiding over-reliance on a single message.",
+          "Example moves": "Engaging funders in co-creating the narrative.",
+          "Future effect": "The future thrives with abundant resources and shared vision.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Your core message resonates deeply with funders.",
+          "Signals": "Funders actively seek partnership opportunities."
+        }
+      },
+      "Purpose of This Theme": "To distill the essence of our mission into a clear and compelling message.",
+      "Why This Matters": "A strong core message attracts funders who resonate with our mission and values."
+    },
+    {
+      "Guiding Questions": [
+        "What are the key priorities of our target funders?",
+        "How can we align our narrative with these priorities?",
+        "Where do our mission and funder values intersect?"
+      ],
+      "Name": "Aligning with Funder Priorities",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Enhanced funder relationships and support.",
+          "Edge condition": "Maintaining authenticity while aligning.",
+          "Example moves": "Customizing proposals to match specific funder goals.",
+          "Future effect": "The future enjoys steady support and strategic partnerships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You align our narrative with funder priorities effectively.",
+          "Signals": "Positive feedback and increased funding success."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed success in funding applications.",
+          "Edge condition": "Assuming partial alignment is sufficient.",
+          "Example moves": "Adapting proposals slightly for funder interests.",
+          "Future effect": "The future experiences sporadic engagement and moderate growth.",
+          "Immediate cost": "Partial alignment with funders.",
+          "Present pattern": "You consider funder priorities to some extent.",
+          "Signals": "Occasional positive responses, frequent rejections."
+        },
+        "Poor": {
+          "30-90 day system effect": "Strained financial resources.",
+          "Edge condition": "Mistaking our needs for their priorities.",
+          "Example moves": "Submitting generic proposals without funder research.",
+          "Future effect": "The future faces inconsistent support and financial instability.",
+          "Immediate cost": "Low interest from potential funders.",
+          "Present pattern": "You ignore funder priorities.",
+          "Signals": "Frequent rejections, lack of engagement."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Deep, collaborative funding relationships.",
+          "Edge condition": "Avoiding dependency on specific funders.",
+          "Example moves": "Co-developing projects with funders.",
+          "Future effect": "The future thrives with abundant resources and shared vision.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Alignment with funder priorities is seamless and natural.",
+          "Signals": "Funders advocate for our mission."
+        }
+      },
+      "Purpose of This Theme": "To ensure our funding narrative aligns with the interests and values of potential funders.",
+      "Why This Matters": "Alignment with funder priorities increases the likelihood of securing support and building lasting relationships."
+    },
+    {
+      "Guiding Questions": [
+        "What elements make our story unique and compelling?",
+        "How can we connect emotionally with funders?",
+        "What narrative techniques can enhance our story?"
+      ],
+      "Name": "Crafting a Compelling Story",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Increased funder interest and commitment.",
+          "Edge condition": "Balancing emotion with substance.",
+          "Example moves": "Weaving personal stories with mission impact.",
+          "Future effect": "The future enjoys steady support and strategic partnerships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Your story is engaging and well-structured.",
+          "Signals": "Positive emotional responses from funders."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate funding success.",
+          "Edge condition": "Relying on a few strong points.",
+          "Example moves": "Including anecdotes without a cohesive narrative.",
+          "Future effect": "The future experiences sporadic engagement and moderate growth.",
+          "Immediate cost": "Limited emotional engagement.",
+          "Present pattern": "Your story has some compelling elements.",
+          "Signals": "Some funders show interest, others remain unmoved."
+        },
+        "Poor": {
+          "30-90 day system effect": "Difficulty in securing new funding.",
+          "Edge condition": "Focusing solely on facts and figures.",
+          "Example moves": "Presenting dry, data-heavy proposals.",
+          "Future effect": "The future faces inconsistent support and financial instability.",
+          "Immediate cost": "Funders lose interest quickly.",
+          "Present pattern": "Your story is fragmented and uninspiring.",
+          "Signals": "Lack of emotional connection, low engagement."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Strong, sustained funding relationships.",
+          "Edge condition": "Avoiding over-dramatization.",
+          "Example moves": "Creating multimedia narratives that resonate deeply.",
+          "Future effect": "The future thrives with abundant resources and shared vision.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Your story inspires and mobilizes funders.",
+          "Signals": "Funders actively champion our cause."
+        }
+      },
+      "Purpose of This Theme": "To create a narrative that captivates and inspires potential funders.",
+      "Why This Matters": "A compelling story engages funders emotionally, making them more likely to invest in our mission."
+    },
+    {
+      "Guiding Questions": [
+        "How can we enhance our credibility with funders?",
+        "What practices build trust in our funding relationships?",
+        "Where might we improve transparency and accountability?"
+      ],
+      "Name": "Building Trust and Credibility",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Strong, stable funding relationships.",
+          "Edge condition": "Balancing transparency with discretion.",
+          "Example moves": "Providing detailed, timely reports.",
+          "Future effect": "The future enjoys steady support and strategic partnerships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently demonstrate trustworthiness.",
+          "Signals": "High funder confidence and satisfaction."
+        },
+        "Expected": {
+          "30-90 day system effect": "Stable but limited funding relationships.",
+          "Edge condition": "Relying on past successes.",
+          "Example moves": "Delivering on promises but with delays.",
+          "Future effect": "The future experiences sporadic engagement and moderate growth.",
+          "Immediate cost": "Some trust, but room for improvement.",
+          "Present pattern": "You demonstrate basic reliability.",
+          "Signals": "Occasional funder concerns about follow-through."
+        },
+        "Poor": {
+          "30-90 day system effect": "Erosion of trust and support.",
+          "Edge condition": "Mistaking opacity for strategic advantage.",
+          "Example moves": "Providing incomplete or inconsistent reports.",
+          "Future effect": "The future faces inconsistent support and financial instability.",
+          "Immediate cost": "Funders question your reliability.",
+          "Present pattern": "You lack transparency and consistency.",
+          "Signals": "Frequent requests for clarification, skepticism."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Enduring, transformative funding partnerships.",
+          "Edge condition": "Avoiding complacency in maintaining trust.",
+          "Example moves": "Engaging funders in transparent decision-making processes.",
+          "Future effect": "The future thrives with abundant resources and shared vision.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Trust and credibility are hallmarks of your organization.",
+          "Signals": "Funders advocate for your organization."
+        }
+      },
+      "Purpose of This Theme": "To establish a reputation of reliability and integrity with funders.",
+      "Why This Matters": "Trust and credibility are foundational to securing and maintaining funding relationships."
+    },
+    {
+      "Guiding Questions": [
+        "How can we engage funders as true partners?",
+        "What opportunities exist for co-creation with funders?",
+        "How do we balance funder input with our mission?"
+      ],
+      "Name": "Engaging Funders as Partners",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Deepened funder relationships and collaboration.",
+          "Edge condition": "Balancing funder input with organizational autonomy.",
+          "Example moves": "Co-creating projects with funders.",
+          "Future effect": "The future enjoys steady support and strategic partnerships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You actively involve funders as partners.",
+          "Signals": "Funders contribute ideas and resources."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate collaboration and support.",
+          "Edge condition": "Assuming occasional engagement is sufficient.",
+          "Example moves": "Inviting funders to annual events.",
+          "Future effect": "The future experiences sporadic engagement and moderate growth.",
+          "Immediate cost": "Some funder involvement, but limited depth.",
+          "Present pattern": "You engage funders occasionally.",
+          "Signals": "Funders participate in some activities."
+        },
+        "Poor": {
+          "30-90 day system effect": "Transactional relationships with little depth.",
+          "Edge condition": "Mistaking funding for partnership.",
+          "Example moves": "Only contacting funders during fundraising campaigns.",
+          "Future effect": "The future faces inconsistent support and financial instability.",
+          "Immediate cost": "Limited funder engagement and loyalty.",
+          "Present pattern": "You treat funders as mere sources of money.",
+          "Signals": "Funders feel undervalued, lack of collaboration."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Transformative, co-creative partnerships.",
+          "Edge condition": "Avoiding over-reliance on funder direction.",
+          "Example moves": "Establishing joint ventures with funders.",
+          "Future effect": "The future thrives with abundant resources and shared vision.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Funders are integral partners in your mission.",
+          "Signals": "Funders champion and expand your mission."
+        }
+      },
+      "Purpose of This Theme": "To cultivate collaborative relationships with funders that go beyond transactions.",
+      "Why This Matters": "Engaging funders as partners fosters deeper commitment and shared success."
+    }
+  ],
+  "Title": "Mapping Our Funding Narrative",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when developing fundraising strategies, during budget planning, or when seeking new funding sources.",
+  "Why This Matters": "Without a clear funding narrative, organizations struggle to communicate their value, leading to missed opportunities for support and growth. A well-defined narrative ensures alignment with funders and stakeholders."
+}

@@ -1,0 +1,336 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one funder whose values align with your strategic goals.",
+    "Name one cultural signal that indicates a strong funder fit.",
+    "Choose one governance term to prioritize in your next negotiation."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "Matches funder profiles with strategic and cultural criteria (funder fit matching).",
+      "Present": true,
+      "Type": "matching",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "power-imbalance",
+      "urgency-distortion"
+    ],
+    "Complexity": 3,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "systemic-safeguards",
+      "values-before-velocity",
+      "trust-as-currency",
+      "misalignment-awareness",
+      "decision-clarity",
+      "walking-with-responsibility"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Choosing between funding sources",
+      "Assessing unsolicited offers"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [
+      "Cost Lines to Bless or Cut",
+      "Unit Economics as a Living Compass"
+    ],
+    "Stones": [
+      "relational-depth",
+      "trust-paces-growth",
+      "aligned-scaling",
+      "coherence-as-growth",
+      "core-signal-naming",
+      "plain-speech"
+    ],
+    "Tags": [
+      "energy-behind-capital",
+      "funder-fit",
+      "funding-energy",
+      "speed-of-trust-in-fundraising",
+      "venture-capital",
+      "long-term-integrity",
+      "capital-vehicles",
+      "term-alignment",
+      "regenerative-capital",
+      "strategic-alignment",
+      "founder-investor-fit",
+      "governance",
+      "angels",
+      "investor-fit",
+      "capital-strategy",
+      "cultural-fit",
+      "no-contortion-for-acceptance",
+      "timing-readiness",
+      "stewardship-of-the-system",
+      "alignment-over-optics",
+      "investment",
+      "strategic-partners"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "directive"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Funder choice aligns with strategy, culture, and rhythm → The future grows with both capital and integrity intact.",
+    "Expected": "Some fit assessment is done, but major differences in funder expectations remain unaddressed → The future faces occasional conflicts.",
+    "Poor": "Funding choice is driven purely by availability → The future risks misaligned expectations and control issues.",
+    "Transcendent": "Cultural instinct ensures funding always strengthens, never distorts, the build → The future compounds alignment and momentum."
+  },
+  "Overall Purpose": "To clarify which type of funder best serves your next move—not just who’s willing to write a cheque.",
+  "Protocol ID": "auto_1754995405617_0",
+  "Short Title": "Funder Fit Check",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "How does this funder define success?",
+        "How does that match our own definition?",
+        "What happens if strategies diverge?"
+      ],
+      "Name": "Clarifying Strategic Fit",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Smooth decision-making.",
+          "Edge condition": "You ensure alignment before accepting funds.",
+          "Example moves": "Detailed strategy compatibility review.",
+          "Future effect": "Long-term coherence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Thorough exploration of funder’s strategic aims.",
+          "Signals": "Funder reinforces chosen strategy."
+        },
+        "Expected": {
+          "30-90 day system effect": "Occasional tension with funder.",
+          "Edge condition": "You skip asking hard strategic questions.",
+          "Example moves": "Discussing vision at high level only.",
+          "Future effect": "Alignment depends on personalities.",
+          "Immediate cost": "Partial clarity.",
+          "Present pattern": "Some alignment check, but not exhaustive.",
+          "Signals": "Misaligned growth timelines."
+        },
+        "Poor": {
+          "30-90 day system effect": "Conflicting expectations slow progress.",
+          "Edge condition": "You assume money equals support.",
+          "Example moves": "Signing term sheets without deep discussion of goals.",
+          "Future effect": "Loss of strategic control.",
+          "Immediate cost": "Mismatched priorities.",
+          "Present pattern": "You accept money without assessing strategic alignment.",
+          "Signals": "Funder pushes for pivots misaligned with vision."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Unified momentum.",
+          "Edge condition": "You refuse capital that compromises direction.",
+          "Example moves": "Walking away from high offers with poor fit.",
+          "Future effect": "Integrity and growth reinforce each other.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Strategic alignment is non-negotiable cultural instinct.",
+          "Signals": "Shared language and goals from day one."
+        }
+      },
+      "Purpose of This Theme": "To ensure the funder’s goals and vision align with the company’s direction.",
+      "Why This Matters": "Even generous funding can cause harm if the funder’s strategy conflicts with yours."
+    },
+    {
+      "Guiding Questions": [
+        "How does this funder work with portfolio companies?",
+        "Do their values align with ours?",
+        "Would they thrive in our cultural environment?"
+      ],
+      "Name": "Assessing Cultural Alignment",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Culture reinforced, not eroded.",
+          "Edge condition": "You prioritize culture fit as highly as capital terms.",
+          "Example moves": "Cultural fit interviews with funders.",
+          "Future effect": "Culture grows stronger with each raise.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Deep evaluation of cultural fit before funding.",
+          "Signals": "Shared values in decision-making."
+        },
+        "Expected": {
+          "30-90 day system effect": "Periodic morale dips.",
+          "Edge condition": "You rely on first impressions.",
+          "Example moves": "Casual culture chats without depth.",
+          "Future effect": "Cultural fit remains uncertain.",
+          "Immediate cost": "Partial harmony.",
+          "Present pattern": "Some cultural assessment done, but surface-level.",
+          "Signals": "Different risk tolerance or communication norms."
+        },
+        "Poor": {
+          "30-90 day system effect": "Erosion of team morale.",
+          "Edge condition": "You see culture as internal only.",
+          "Example moves": "Accepting money from aggressive operators without cultural vetting.",
+          "Future effect": "Culture drifts toward funder’s norms.",
+          "Immediate cost": "Early tension.",
+          "Present pattern": "Culture fit is ignored in funding decisions.",
+          "Signals": "Funder imposes work styles that clash with team."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Shared cultural stewardship.",
+          "Edge condition": "You refuse capital that shifts cultural norms.",
+          "Example moves": "Funder participates in cultural rituals.",
+          "Future effect": "Culture becomes a joint asset.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Cultural fit is instinctively protected.",
+          "Signals": "Funder champions the culture."
+        }
+      },
+      "Purpose of This Theme": "To ensure the funder’s values and working style support the company’s culture.",
+      "Why This Matters": "A cultural mismatch can erode trust, morale, and rhythm—regardless of capital provided."
+    },
+    {
+      "Guiding Questions": [
+        "What return does this funder expect?",
+        "In what timeframe?",
+        "How does that align with our growth rhythm?"
+      ],
+      "Name": "Understanding Expectations on Returns and Timeline",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Sustainable scaling.",
+          "Edge condition": "You negotiate timelines based on reality.",
+          "Example moves": "Explicit exit horizon discussion.",
+          "Future effect": "Growth and trust co-exist.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Clear agreement on realistic return and timeline.",
+          "Signals": "No surprises on performance metrics."
+        },
+        "Expected": {
+          "30-90 day system effect": "Occasional deadline pressure.",
+          "Edge condition": "You accept open-ended terms.",
+          "Example moves": "Agreeing to ‘grow fast’ without definition.",
+          "Future effect": "Tension builds over time.",
+          "Immediate cost": "Partial clarity.",
+          "Present pattern": "Some discussion of returns, but vague timelines.",
+          "Signals": "Shifting expectations mid-stream."
+        },
+        "Poor": {
+          "30-90 day system effect": "Short-termism.",
+          "Edge condition": "You avoid talking about return timelines.",
+          "Example moves": "Ignoring return clauses in agreements.",
+          "Future effect": "Forced pivots or exits.",
+          "Immediate cost": "Unrealistic performance pressure.",
+          "Present pattern": "You accept funding without understanding return expectations.",
+          "Signals": "Funder pushes for premature scaling."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Shared patience and pacing.",
+          "Edge condition": "You resist timelines that distort build.",
+          "Example moves": "Co-creating growth pacing plans.",
+          "Future effect": "Pace and payoff align with integrity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Return/timeline alignment is cultural instinct.",
+          "Signals": "Timelines match strategic rhythm."
+        }
+      },
+      "Purpose of This Theme": "To clarify the funder’s expectations for financial returns and timing.",
+      "Why This Matters": "Misaligned expectations create pressure that can distort decisions."
+    },
+    {
+      "Guiding Questions": [
+        "What value does this funder bring beyond capital?",
+        "How will that value shape our next phase?",
+        "Would we want them involved if no money was exchanged?"
+      ],
+      "Name": "Evaluating Non-Capital Value",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Faster progress with fewer bottlenecks.",
+          "Edge condition": "You factor non-capital value into selection.",
+          "Example moves": "Scoring funders on strategic contributions.",
+          "Future effect": "Capital and capability grow together.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Deliberate evaluation of funder’s added value.",
+          "Signals": "Funder actively contributes beyond money."
+        },
+        "Expected": {
+          "30-90 day system effect": "Uneven acceleration.",
+          "Edge condition": "You rely on capital to solve all challenges.",
+          "Example moves": "Occasional use of funder’s network.",
+          "Future effect": "Growth is slower than possible.",
+          "Immediate cost": "Partial leverage.",
+          "Present pattern": "Some consideration of non-capital value.",
+          "Signals": "Inconsistent support from funder."
+        },
+        "Poor": {
+          "30-90 day system effect": "Slower growth.",
+          "Edge condition": "You undervalue non-capital contributions.",
+          "Example moves": "Not asking about introductions or expertise.",
+          "Future effect": "Potential remains untapped.",
+          "Immediate cost": "Missed opportunities for leverage.",
+          "Present pattern": "Decision is based on capital only.",
+          "Signals": "Funder absent in value creation beyond money."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Long-term advantage over peers.",
+          "Edge condition": "You never choose based on money alone.",
+          "Example moves": "Cultural habit of valuing contribution over cheque size.",
+          "Future effect": "Sustained strategic leverage.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Non-capital value is weighted equally with capital.",
+          "Signals": "Funder is a true partner in success."
+        }
+      },
+      "Purpose of This Theme": "To assess the strategic, operational, or network value beyond money that a funder brings.",
+      "Why This Matters": "Capital is important, but additional value can accelerate success—or lack of it can slow you down."
+    },
+    {
+      "Guiding Questions": [
+        "What governance terms protect our autonomy?",
+        "Where are we willing to share control?",
+        "What terms are non-negotiable?"
+      ],
+      "Name": "Protecting Autonomy and Governance",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Healthy investor-founder dynamic.",
+          "Edge condition": "You negotiate governance early.",
+          "Example moves": "Board composition limits.",
+          "Future effect": "Autonomy and accountability co-exist.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Governance terms protect strategic autonomy.",
+          "Signals": "Clear founder rights in agreements."
+        },
+        "Expected": {
+          "30-90 day system effect": "Gradual loss of strategic freedom.",
+          "Edge condition": "You accept governance terms to secure deal.",
+          "Example moves": "Weak protective provisions.",
+          "Future effect": "Autonomy slowly erodes.",
+          "Immediate cost": "Reduced independence.",
+          "Present pattern": "Some governance review, but concessions made without safeguards.",
+          "Signals": "Investor veto on key decisions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Funder-driven decisions override team.",
+          "Edge condition": "You undervalue governance clauses.",
+          "Example moves": "Agreeing to majority investor control.",
+          "Future effect": "Vision compromised.",
+          "Immediate cost": "Loss of control.",
+          "Present pattern": "Governance terms are accepted without review.",
+          "Signals": "Board packed with investor reps."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Sustained founder-led vision.",
+          "Edge condition": "You refuse deals that weaken governance.",
+          "Example moves": "Cultural mantra of safeguarding decision rights.",
+          "Future effect": "Vision and control remain intact.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Governance protection is cultural instinct.",
+          "Signals": "No risk of hostile governance shifts."
+        }
+      },
+      "Purpose of This Theme": "To safeguard decision-making power and governance integrity when accepting funding.",
+      "Why This Matters": "Even aligned funders can unintentionally erode autonomy through governance structures."
+    }
+  ],
+  "Title": "Angels vs.",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When preparing to raise capital\nWhen choosing between angel investors, venture capital, or other funding sources\nWhen assessing whether to accept an unsolicited offer\nWhen wanting to protect strategic direction and cultural integrity",
+  "Why This Matters": "Not all money is the same. The wrong investor can distort your rhythm, culture, and direction."
+}

@@ -1,5 +1,6 @@
 """FAISS indexer for vector storage and retrieval."""
 
+import json
 import pickle
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -17,21 +18,24 @@ from .types import Chunk, ChunkMetadata, SearchResult
 class Indexer:
     """FAISS indexer for storing and retrieving chunk embeddings."""
     
-    def __init__(self, index_path: Path, embedding_backend: EmbeddingBackend):
+    def __init__(self, index_path: Path, embedding_backend: EmbeddingBackend, eval_mode: bool = False):
         """
         Initialize indexer.
         
         Args:
             index_path: Path to store index files
             embedding_backend: Backend for generating embeddings
+            eval_mode: Whether to output in evaluation system format
         """
         self.index_path = index_path
         self.embedding_backend = embedding_backend
         self.dimension = embedding_backend.dimension
+        self.eval_mode = eval_mode
         
         # FAISS index
         self.index: Optional[faiss.IndexFlatIP] = None
         self.docstore: List[ChunkMetadata] = []
+        self.chunks: List[Chunk] = []  # Store full chunks for eval mode
         
         # Load existing index if it exists
         self._load_index()
@@ -84,9 +88,11 @@ class Indexer:
         # Add to index
         self.index.add(embeddings_array)
         
-        # Add to docstore
+        # Add to docstore and chunks
         for chunk in chunks:
             self.docstore.append(chunk.metadata)
+            if self.eval_mode:
+                self.chunks.append(chunk)
         
         print(f"Added {len(chunks)} chunks to index")
     
@@ -173,22 +179,73 @@ class Indexer:
         """Save index and docstore to disk."""
         ensure_directory(self.index_path)
         
-        # Save FAISS index
-        index_file = self.index_path / "index.faiss"
-        faiss.write_index(self.index, str(index_file))
-        
-        # Save docstore
-        docstore_file = self.index_path / "docstore.pkl"
-        with open(docstore_file, 'wb') as f:
-            pickle.dump(self.docstore, f)
-        
-        # Save metadata as parquet for easy inspection
-        metadata_file = self.index_path / "metadata.parquet"
-        if self.docstore:
-            metadata_df = pd.DataFrame([meta.model_dump() for meta in self.docstore])
-            metadata_df.to_parquet(metadata_file, index=False)
-        
-        print(f"Saved index with {len(self.docstore)} chunks to {self.index_path}")
+        if self.eval_mode:
+            # Evaluation system format
+            # Save FAISS index with lane-specific name
+            lane_name = self.index_path.name  # fast or accurate
+            index_file = self.index_path / f"{lane_name}.index.faiss"
+            faiss.write_index(self.index, str(index_file))
+            
+            # Save metadata as JSONL for evaluation system
+            metadata_file = self.index_path / f"{lane_name}.meta.jsonl"
+            with open(metadata_file, 'w', encoding='utf-8') as f:
+                for i, meta in enumerate(self.docstore):
+                    # Get text from stored chunks if available
+                    text = ""
+                    if i < len(self.chunks):
+                        text = self.chunks[i].text
+                    
+                    # Create evaluation system format
+                    eval_meta = {
+                        "text": text,
+                        "metadata": {
+                            "chunk_id": meta.chunk_id,
+                            "protocol_id": meta.protocol_id,
+                            "title": meta.title,
+                            "section_name": meta.section_name,
+                            "section_idx": meta.section_idx,
+                            "chunk_idx": meta.chunk_idx,
+                            "n_tokens": meta.n_tokens,
+                            "source_path": meta.source_path,
+                            "stones": meta.stones,
+                            "created_at": meta.created_at,
+                            "hash": meta.hash,
+                            "profile": meta.profile if hasattr(meta, 'profile') else lane_name,
+                            "fusion_info": meta.fusion_info if hasattr(meta, 'fusion_info') else None
+                        }
+                    }
+                    f.write(json.dumps(eval_meta) + '\n')
+            
+            # Save stats file
+            stats_file = self.index_path / f"{lane_name}.stats.json"
+            stats = {
+                "dim": self.dimension,
+                "count": len(self.docstore),
+                "lane": lane_name,
+                "model_name": self.embedding_backend.name
+            }
+            with open(stats_file, 'w') as f:
+                json.dump(stats, f)
+            
+            print(f"Saved eval format index with {len(self.docstore)} chunks to {self.index_path}")
+        else:
+            # Original format
+            # Save FAISS index
+            index_file = self.index_path / "index.faiss"
+            faiss.write_index(self.index, str(index_file))
+            
+            # Save docstore
+            docstore_file = self.index_path / "docstore.pkl"
+            with open(docstore_file, 'wb') as f:
+                pickle.dump(self.docstore, f)
+            
+            # Save metadata as parquet for easy inspection
+            metadata_file = self.index_path / "metadata.parquet"
+            if self.docstore:
+                metadata_df = pd.DataFrame([meta.model_dump() for meta in self.docstore])
+                metadata_df.to_parquet(metadata_file, index=False)
+            
+            print(f"Saved index with {len(self.docstore)} chunks to {self.index_path}")
     
     def get_stats(self) -> Dict[str, Any]:
         """Get index statistics."""
@@ -207,7 +264,8 @@ class Indexer:
 
 def create_indexer(
     index_path: Path, 
-    embedding_backend: EmbeddingBackend
+    embedding_backend: EmbeddingBackend,
+    eval_mode: bool = False
 ) -> Indexer:
     """
     Create a new indexer.
@@ -215,8 +273,9 @@ def create_indexer(
     Args:
         index_path: Path to store index files
         embedding_backend: Backend for generating embeddings
+        eval_mode: Whether to output in evaluation system format
         
     Returns:
         Indexer instance
     """
-    return Indexer(index_path, embedding_backend)
+    return Indexer(index_path, embedding_backend, eval_mode)

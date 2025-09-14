@@ -1,0 +1,306 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one personal practice that strengthens your resilience.",
+    "Choose one community activity to enhance collective support.",
+    "Reflect on a recent change: How did you embrace it as an opportunity?"
+  ],
+  "Created At": "2023-10-15",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "regenerative"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Resilience building",
+      "Adapting to change"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Navigating Through Change",
+      "Strengthening Community Ties"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "light-before-form",
+      "presence-is-productivity",
+      "stewardship-not-ownership"
+    ],
+    "Tags": [
+      "resilience",
+      "adaptability",
+      "growth"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You consistently feed the roots of resilience → The future maintains steady adaptability and robust recovery.",
+    "Expected": "You occasionally nurture resilience but inconsistently → The future experiences uneven adaptability and sporadic recovery.",
+    "Poor": "You neglect the foundational elements of resilience → The future struggles with fragility and frequent setbacks.",
+    "Transcendent": "Resilience becomes an ingrained aspect of culture → The future thrives through change with grace and strength."
+  },
+  "Overall Purpose": "To nurture and strengthen the foundational elements of resilience within individuals and systems, ensuring sustained adaptability and growth.",
+  "Protocol ID": "auto_1755597106396_0",
+  "Short Title": "Resilience Roots",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What practices nurture your inner strength?",
+        "How do you balance self-care with responsibilities?",
+        "What signals indicate your resilience is waning?"
+      ],
+      "Name": "Cultivating Inner Strength",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Enhanced resilience and sustained performance.",
+          "Edge condition": "Balancing self-care with external responsibilities.",
+          "Example moves": "Establishing daily mindfulness practices.",
+          "Future effect": "The future maintains steady adaptability and robust recovery.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You prioritize regular self-care and personal growth.",
+          "Signals": "Consistent emotional stability, proactive stress management."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent resilience and recovery.",
+          "Edge condition": "Relying on ad-hoc self-care without routine.",
+          "Example moves": "Journaling sporadically, attending occasional workshops.",
+          "Future effect": "The future experiences uneven adaptability and sporadic recovery.",
+          "Immediate cost": "Some improvement in stress management.",
+          "Present pattern": "You occasionally engage in self-care and reflection.",
+          "Signals": "Periodic calm, occasional emotional clarity."
+        },
+        "Poor": {
+          "30-90 day system effect": "Burnout and decreased performance.",
+          "Edge condition": "Mistaking busyness for productivity.",
+          "Example moves": "Skipping breaks, neglecting self-reflection.",
+          "Future effect": "The future struggles with fragility and frequent setbacks.",
+          "Immediate cost": "Increased stress and reduced coping ability.",
+          "Present pattern": "You ignore personal development and self-care.",
+          "Signals": "Frequent overwhelm, emotional volatility."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System-wide resilience and thriving individuals.",
+          "Edge condition": "Avoiding complacency in personal growth.",
+          "Example moves": "Embedding self-awareness practices into daily routines.",
+          "Future effect": "The future thrives through change with grace and strength.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Inner strength cultivation is a cultural norm.",
+          "Signals": "Collective emotional intelligence, shared calm."
+        }
+      },
+      "Purpose of This Theme": "To build personal resilience by fostering self-awareness and emotional intelligence.",
+      "Why This Matters": "Inner strength provides the foundation for navigating external challenges with clarity and confidence."
+    },
+    {
+      "Guiding Questions": [
+        "How can you strengthen your community ties?",
+        "What resources can be shared within your network?",
+        "How does your community support resilience?"
+      ],
+      "Name": "Building Community Support",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Robust support network and shared resilience.",
+          "Edge condition": "Balancing community engagement with personal boundaries.",
+          "Example moves": "Organizing regular community gatherings.",
+          "Future effect": "The future maintains steady adaptability and robust recovery.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You actively build and maintain community ties.",
+          "Signals": "Frequent collaboration, strong community bonds."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent support and collaboration.",
+          "Edge condition": "Relying on community only during crises.",
+          "Example moves": "Joining groups sporadically, attending some events.",
+          "Future effect": "The future experiences uneven adaptability and sporadic recovery.",
+          "Immediate cost": "Some access to resources and encouragement.",
+          "Present pattern": "You occasionally engage with community support.",
+          "Signals": "Periodic teamwork, occasional resource pooling."
+        },
+        "Poor": {
+          "30-90 day system effect": "Increased isolation and vulnerability.",
+          "Edge condition": "Mistaking independence for strength.",
+          "Example moves": "Avoiding team activities, neglecting outreach.",
+          "Future effect": "The future struggles with fragility and frequent setbacks.",
+          "Immediate cost": "Lack of support during challenges.",
+          "Present pattern": "You isolate from community and support networks.",
+          "Signals": "Rare collaboration, limited resource sharing."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System-wide resilience and interconnected strength.",
+          "Edge condition": "Avoiding over-dependence on community.",
+          "Example moves": "Embedding community support in organizational structures.",
+          "Future effect": "The future thrives through change with grace and strength.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Community support is integral to the culture.",
+          "Signals": "Collective problem-solving, seamless resource sharing."
+        }
+      },
+      "Purpose of This Theme": "To foster strong, supportive networks that enhance collective resilience.",
+      "Why This Matters": "Community support provides a safety net and amplifies individual resilience through shared resources and encouragement."
+    },
+    {
+      "Guiding Questions": [
+        "What opportunities does change present?",
+        "How can uncertainty be reframed as potential?",
+        "What practices help you adapt to new circumstances?"
+      ],
+      "Name": "Embracing Change and Uncertainty",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Dynamic adaptation and proactive innovation.",
+          "Edge condition": "Balancing change with core stability.",
+          "Example moves": "Encouraging creative problem-solving.",
+          "Future effect": "The future maintains steady adaptability and robust recovery.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You embrace change as a natural part of growth.",
+          "Signals": "Positive outlook, frequent experimentation."
+        },
+        "Expected": {
+          "30-90 day system effect": "Slow progress and cautious innovation.",
+          "Edge condition": "Waiting for certainty before acting.",
+          "Example moves": "Trying new approaches reluctantly.",
+          "Future effect": "The future experiences uneven adaptability and sporadic recovery.",
+          "Immediate cost": "Partial adaptation to new circumstances.",
+          "Present pattern": "You sometimes accept change but with hesitation.",
+          "Signals": "Occasional openness, selective adaptation."
+        },
+        "Poor": {
+          "30-90 day system effect": "Stagnation and rigidity.",
+          "Edge condition": "Mistaking stability for security.",
+          "Example moves": "Clinging to outdated methods, avoiding new challenges.",
+          "Future effect": "The future struggles with fragility and frequent setbacks.",
+          "Immediate cost": "Increased stress and missed opportunities.",
+          "Present pattern": "You resist change and fear uncertainty.",
+          "Signals": "Frequent complaints, reluctance to adapt."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Continuous evolution and thriving adaptability.",
+          "Edge condition": "Avoiding change for change's sake.",
+          "Example moves": "Integrating adaptive practices into daily operations.",
+          "Future effect": "The future thrives through change with grace and strength.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Embracing change is embedded in the culture.",
+          "Signals": "Collective excitement for new possibilities."
+        }
+      },
+      "Purpose of This Theme": "To develop a mindset that views change and uncertainty as opportunities for growth.",
+      "Why This Matters": "Embracing change reduces fear and resistance, allowing for adaptive and innovative responses."
+    },
+    {
+      "Guiding Questions": [
+        "What core values guide your actions?",
+        "How do these values support resilience?",
+        "Where might values need reinforcement?"
+      ],
+      "Name": "Strengthening Core Values",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Strong integrity and coherent direction.",
+          "Edge condition": "Balancing value adherence with flexibility.",
+          "Example moves": "Regularly revisiting and reinforcing values.",
+          "Future effect": "The future maintains steady adaptability and robust recovery.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently align actions with core values.",
+          "Signals": "Clear priorities, consistent decision-making."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial integrity and coherence.",
+          "Edge condition": "Prioritizing short-term gains over values.",
+          "Example moves": "Referencing values selectively.",
+          "Future effect": "The future experiences uneven adaptability and sporadic recovery.",
+          "Immediate cost": "Occasional alignment in decisions.",
+          "Present pattern": "You have some awareness of core values.",
+          "Signals": "Inconsistent adherence to values."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misalignment and ethical drift.",
+          "Edge condition": "Mistaking flexibility for value compromise.",
+          "Example moves": "Making decisions without a guiding framework.",
+          "Future effect": "The future struggles with fragility and frequent setbacks.",
+          "Immediate cost": "Inconsistent decisions and actions.",
+          "Present pattern": "You lack clarity on core values.",
+          "Signals": "Frequent confusion, conflicting priorities."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Unified direction and ethical resilience.",
+          "Edge condition": "Avoiding rigidity that stifles innovation.",
+          "Example moves": "Embedding values into all organizational practices.",
+          "Future effect": "The future thrives through change with grace and strength.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Core values are deeply ingrained in the culture.",
+          "Signals": "Collective commitment to shared values."
+        }
+      },
+      "Purpose of This Theme": "To anchor resilience in a clear set of core values that guide actions and decisions.",
+      "Why This Matters": "Core values provide a compass during uncertainty, ensuring alignment and integrity."
+    },
+    {
+      "Guiding Questions": [
+        "What can be learned from recent setbacks?",
+        "How can these lessons enhance resilience?",
+        "What practices support learning from failure?"
+      ],
+      "Name": "Learning from Setbacks",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Continuous improvement and resilience.",
+          "Edge condition": "Balancing learning with forward momentum.",
+          "Example moves": "Integrating feedback loops into processes.",
+          "Future effect": "The future maintains steady adaptability and robust recovery.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You systematically learn from setbacks.",
+          "Signals": "Regular lessons learned, proactive adjustments."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial growth and improvement.",
+          "Edge condition": "Reflecting only on major setbacks.",
+          "Example moves": "Conducting occasional reviews.",
+          "Future effect": "The future experiences uneven adaptability and sporadic recovery.",
+          "Immediate cost": "Some learning and adaptation.",
+          "Present pattern": "You occasionally reflect on setbacks.",
+          "Signals": "Infrequent lessons learned, sporadic adjustments."
+        },
+        "Poor": {
+          "30-90 day system effect": "Recurrent mistakes and stagnation.",
+          "Edge condition": "Mistaking failure for defeat.",
+          "Example moves": "Avoiding post-mortem analyses.",
+          "Future effect": "The future struggles with fragility and frequent setbacks.",
+          "Immediate cost": "Missed learning opportunities.",
+          "Present pattern": "You ignore or deny setbacks.",
+          "Signals": "Frequent blame, lack of reflection."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System-wide growth and resilience.",
+          "Edge condition": "Avoiding over-analysis that hinders progress.",
+          "Example moves": "Embedding learning practices into all levels.",
+          "Future effect": "The future thrives through change with grace and strength.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Learning from setbacks is a cultural norm.",
+          "Signals": "Collective learning and adaptation."
+        }
+      },
+      "Purpose of This Theme": "To transform setbacks into learning opportunities that enhance resilience.",
+      "Why This Matters": "Learning from setbacks prevents repeated mistakes and fosters growth."
+    }
+  ],
+  "Title": "Feeding the Roots of Resilience",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use during periods of change, when facing unexpected challenges, or when resilience levels appear depleted.",
+  "Why This Matters": "Without a focus on resilience, systems and individuals become brittle, unable to adapt to change or recover from setbacks, leading to stagnation and decline."
+}

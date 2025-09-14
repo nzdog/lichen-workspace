@@ -1,0 +1,317 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one action to enhance your support cadence this week.",
+    "Choose one escalation pathway to clarify with your team.",
+    "Commit to one proactive step to detect issues before they arise."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "regenerative-integrity",
+      "transitioning-field"
+    ],
+    "Complexity": 3,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "resilience-rooting",
+      "coherence-practices",
+      "relational-repair",
+      "trust-as-currency",
+      "decision-clarity",
+      "signal-vs-noise"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Customer support process design",
+      "Escalation management"
+    ],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [
+      "Customer Feedback Loops",
+      "Crisis Management Framework"
+    ],
+    "Stones": [
+      "plain-speech",
+      "core-signal-naming",
+      "rhythm-alignment",
+      "renewal-as-output",
+      "trust-paces-growth",
+      "relational-depth"
+    ],
+    "Tags": [
+      "support",
+      "escalation",
+      "customer-service"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "directive"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Support rhythm is reliable and escalations are handled promptly and effectively → The future drives strong retention and trust.",
+    "Expected": "Support has some structure but inconsistent escalation handling → The future sees uneven customer satisfaction.",
+    "Poor": "Support is reactive, unstructured, and inconsistent → The future risks high churn and reputation damage.",
+    "Transcendent": "Support rhythm and escalation excellence is a cultural norm → The future sustains loyalty, advocacy, and operational calm."
+  },
+  "Overall Purpose": "To establish a predictable support rhythm and clear escalation paths that ensure timely, effective resolution of customer issues.",
+  "Protocol ID": "auto_1754995404311_0",
+  "Short Title": "Support & Escalations",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Is our support cadence predictable and reliable?",
+        "Do we have clear triggers and processes for escalation?",
+        "Are we empowering front-line staff to resolve issues quickly?"
+      ],
+      "Name": "Defining Support Cadence",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Higher satisfaction.",
+          "Edge condition": "Cadence documented and enforced.",
+          "Example moves": "Daily ticket review meeting.",
+          "Future effect": "The future drives retention.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Clear, consistent support review and resolution rhythm.",
+          "Signals": "Better workload balance."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed satisfaction.",
+          "Edge condition": "No monitoring.",
+          "Example moves": "Weekly review sometimes skipped.",
+          "Future effect": "The future sees uneven satisfaction.",
+          "Immediate cost": "Partial predictability.",
+          "Present pattern": "Some cadence but inconsistently followed.",
+          "Signals": "Delayed cases."
+        },
+        "Poor": {
+          "30-90 day system effect": "Customer frustration.",
+          "Edge condition": "Assume ad-hoc handling works.",
+          "Example moves": "Only replying when time permits.",
+          "Future effect": "The future risks churn.",
+          "Immediate cost": "Response delays.",
+          "Present pattern": "No defined support cadence.",
+          "Signals": "Low satisfaction scores."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Issues resolved faster than promised.",
+          "Edge condition": "Cadence tracked as KPI.",
+          "Example moves": "Auto-reminders for review cycles.",
+          "Future effect": "The future sustains loyalty.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Cadence discipline is part of team culture.",
+          "Signals": "Operational calm."
+        }
+      },
+      "Purpose of This Theme": "Set predictable intervals for reviewing and resolving customer requests.",
+      "Why This Matters": "Unpredictable rhythms frustrate customers and overwhelm teams."
+    },
+    {
+      "Guiding Questions": [
+        "What are the current steps in our escalation process and where do they typically encounter bottlenecks?",
+        "How can we ensure that everyone involved understands their role in the escalation pathway?",
+        "To what extent do our escalation pathways align with industry best practices and how can we improve them?"
+      ],
+      "Name": "Clear Escalation Pathways",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Fewer customer escalations.",
+          "Edge condition": "Escalation playbook in place.",
+          "Example moves": "Defined SLAs for handoffs.",
+          "Future effect": "The future drives retention.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Clear triggers and process for escalation.",
+          "Signals": "Clear accountability."
+        },
+        "Expected": {
+          "30-90 day system effect": "Slow resolutions.",
+          "Edge condition": "No formal decision points.",
+          "Example moves": "Escalating too late or too often.",
+          "Future effect": "The future sees uneven satisfaction.",
+          "Immediate cost": "Inconsistent escalation.",
+          "Present pattern": "Some process but unclear thresholds.",
+          "Signals": "Confused ownership."
+        },
+        "Poor": {
+          "30-90 day system effect": "Increased frustration.",
+          "Edge condition": "Assume team will figure it out.",
+          "Example moves": "Only escalating after customer complains.",
+          "Future effect": "The future risks churn.",
+          "Immediate cost": "Stalled issues.",
+          "Present pattern": "No defined escalation process.",
+          "Signals": "Reputational damage."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Customer trust maximised.",
+          "Edge condition": "Process embedded and trained.",
+          "Example moves": "Escalation simulation drills.",
+          "Future effect": "The future sustains loyalty.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Escalation mastery is part of support DNA.",
+          "Signals": "Quick cross-functional response."
+        }
+      },
+      "Purpose of This Theme": "Define exactly how and when an issue should be escalated to higher levels.",
+      "Why This Matters": "Without clarity, issues linger unresolved or escalate too late."
+    },
+    {
+      "Guiding Questions": [
+        "What systems are currently in place to identify potential issues before they escalate?",
+        "How can we improve our current processes to better anticipate and address emerging problems?",
+        "Who is responsible for monitoring and reporting potential risks within our team?"
+      ],
+      "Name": "Proactive Issue Detection",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Higher trust.",
+          "Edge condition": "Proactive contact process.",
+          "Example moves": "Alerting customers before they notice issue.",
+          "Future effect": "The future drives retention.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Comprehensive monitoring and proactive outreach.",
+          "Signals": "Reduced inbound volume."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed results.",
+          "Edge condition": "No structured system.",
+          "Example moves": "Spot checks only.",
+          "Future effect": "The future sees uneven satisfaction.",
+          "Immediate cost": "Partial prevention.",
+          "Present pattern": "Some monitoring but limited coverage.",
+          "Signals": "Still mostly reactive."
+        },
+        "Poor": {
+          "30-90 day system effect": "Customer dissatisfaction.",
+          "Edge condition": "Assume no news is good news.",
+          "Example moves": "Waiting for complaints.",
+          "Future effect": "The future risks churn.",
+          "Immediate cost": "Late responses.",
+          "Present pattern": "No proactive monitoring for issues.",
+          "Signals": "Missed trust-building moments."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High loyalty.",
+          "Edge condition": "Always-on detection systems.",
+          "Example moves": "Dedicated proactive support team.",
+          "Future effect": "The future sustains loyalty.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Proactivity is a support culture norm.",
+          "Signals": "Advocacy grows."
+        }
+      },
+      "Purpose of This Theme": "Identify and address potential problems before customers report them.",
+      "Why This Matters": "Reactive support misses opportunities to delight customers."
+    },
+    {
+      "Guiding Questions": [
+        "How can we streamline our current processes to enhance the speed of issue resolution?",
+        "What tools or resources are necessary to empower our support teams to act more efficiently?",
+        "To what extent do our current training programs equip support teams to handle complex issues quickly?"
+      ],
+      "Name": "Empowering Support Teams to Resolve Quickly",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Lower escalation rates.",
+          "Edge condition": "Empowerment framework in place.",
+          "Example moves": "Resolution playbooks.",
+          "Future effect": "The future drives retention.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Front-line empowered within clear guidelines.",
+          "Signals": "Higher trust."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate satisfaction.",
+          "Edge condition": "No clear guidelines.",
+          "Example moves": "Front-line can fix only minor issues.",
+          "Future effect": "The future sees uneven satisfaction.",
+          "Immediate cost": "Partial speed.",
+          "Present pattern": "Some empowerment but limited scope.",
+          "Signals": "Inconsistent authority."
+        },
+        "Poor": {
+          "30-90 day system effect": "High escalation volume.",
+          "Edge condition": "Assume escalation is always needed.",
+          "Example moves": "Only managers can approve fixes.",
+          "Future effect": "The future risks churn.",
+          "Immediate cost": "Delays.",
+          "Present pattern": "No empowerment for front-line staff.",
+          "Signals": "Customer frustration."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Consistently high CSAT.",
+          "Edge condition": "Built into onboarding.",
+          "Example moves": "Autonomy celebrated and reviewed.",
+          "Future effect": "The future sustains loyalty.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Empowerment embedded in culture and systems.",
+          "Signals": "Loyalty reinforced."
+        }
+      },
+      "Purpose of This Theme": "Give support staff the tools, authority, and knowledge to resolve issues fast.",
+      "Why This Matters": "Bottlenecks slow down resolutions and frustrate customers."
+    },
+    {
+      "Guiding Questions": [
+        "How can we accurately assess the current performance levels of our support team?",
+        "What metrics are most effective in evaluating support performance improvements?",
+        "Which tools and technologies can enhance the efficiency of our support processes?"
+      ],
+      "Name": "Measuring and Improving Support Performance",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Better efficiency.",
+          "Edge condition": "Review cycle in place.",
+          "Example moves": "Weekly KPI review meetings.",
+          "Future effect": "The future drives retention.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Full tracking with action-oriented reviews.",
+          "Signals": "Higher satisfaction."
+        },
+        "Expected": {
+          "30-90 day system effect": "Slow progress.",
+          "Edge condition": "No analysis loop.",
+          "Example moves": "Reports without action.",
+          "Future effect": "The future sees uneven satisfaction.",
+          "Immediate cost": "Partial insight.",
+          "Present pattern": "Some tracking but incomplete.",
+          "Signals": "Recurring issues."
+        },
+        "Poor": {
+          "30-90 day system effect": "Slow improvement.",
+          "Edge condition": "Assume performance is fine.",
+          "Example moves": "Not measuring response or resolution time.",
+          "Future effect": "The future risks churn.",
+          "Immediate cost": "Blind to issues.",
+          "Present pattern": "No tracking of support performance.",
+          "Signals": "Missed commitments."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Customer trust compounds.",
+          "Edge condition": "Always-on feedback loops.",
+          "Example moves": "Real-time dashboards.",
+          "Future effect": "The future sustains loyalty.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Performance improvement is cultural habit.",
+          "Signals": "Fast adaptation to change."
+        }
+      },
+      "Purpose of This Theme": "Track key metrics to continuously improve support rhythm and escalation handling.",
+      "Why This Matters": "Without measurement, problems persist unnoticed."
+    }
+  ],
+  "Title": "Support Rhythm & Escalations",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when designing or refining customer support processes to improve resolution speed, quality, and predictability.",
+  "Why This Matters": "Without a consistent rhythm and defined escalation process, support teams risk slow responses, missed commitments, and customer dissatisfaction. Predictable rhythms and clear escalation paths build trust and retention."
+}

@@ -1,0 +1,379 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Capture one insight from today to share with your team.",
+    "Identify one small change you can make to align better with customer needs.",
+    "Choose one action to improve your sales process based on field insights."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "Aligns sales stages with customer decision journeys (stage alignment).",
+      "Present": true,
+      "Type": "matching",
+      "Version": ""
+    },
+    "Bridging": [
+      {
+        "type": "dual",
+        "values": [
+          "relational-integrity"
+        ]
+      },
+      {
+        "type": "drift",
+        "values": [
+          "regenerative-integrity"
+        ]
+      }
+    ],
+    "Complexity": 4,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      {
+        "type": "regenerative",
+        "values": [
+          "resilience-rooting",
+          "coherence-practices"
+        ]
+      },
+      {
+        "type": "relational",
+        "values": [
+          "trust-as-currency",
+          "misalignment-awareness"
+        ]
+      },
+      {
+        "type": "integrity",
+        "values": [
+          "systemic-safeguards",
+          "aligned-scaling"
+        ]
+      }
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Sales process design",
+      "Market entry",
+      "Feedback integration"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [
+      "Customer-Centric Selling",
+      "Adaptive Sales Strategies"
+    ],
+    "Stones": [
+      {
+        "type": "clarity",
+        "values": [
+          "plain-speech",
+          "core-signal-naming"
+        ]
+      },
+      {
+        "type": "integrity",
+        "values": [
+          "aligned-scaling",
+          "coherence-as-growth"
+        ]
+      },
+      {
+        "type": "system",
+        "values": [
+          "reflection-built-in",
+          "system-as-companion"
+        ]
+      }
+    ],
+    "Tags": [
+      "sales",
+      "customer alignment",
+      "process design"
+    ],
+    "ThemeCount": 5,
+    "Tone Markers": [
+      "grounded",
+      "directive"
+    ],
+    "metadata_tags": [
+      "Sales",
+      "Process",
+      "Field-Aligned",
+      "Protocol",
+      "Strategy",
+      "Alignment",
+      "Optimization",
+      "Efficiency",
+      "Customer-Centric",
+      "Salesforce",
+      "Guide",
+      "Implementation",
+      "Framework",
+      "Training",
+      "Development",
+      "Execution",
+      "Fieldwork",
+      "Coherence",
+      "Methodology"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You build the process from field data and customer realities → The future creates predictable, high-quality conversions.",
+    "Expected": "You incorporate some field insights but inconsistently → The future sees uneven performance.",
+    "Poor": "You design sales steps in isolation from customer reality → The future risks low adoption and conversion.",
+    "Transcendent": "Field alignment is embedded in sales culture—processes adapt quickly to market shifts → The future sustains strong, resilient sales performance."
+  },
+  "Overall Purpose": "To design a sales process that matches real customer contexts, needs, and decision-making patterns in the field.",
+  "Protocol ID": "auto_1754995404524_0",
+  "Short Title": "Field-Aligned Sales",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What do field insights reveal about our current process?",
+        "How aligned are our stages to the real customer journey?",
+        "What will we measure to know this process is working?"
+      ],
+      "Name": "Capturing Field Insights Systematically",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Higher adoption rates.",
+          "Edge condition": "Ownership for gathering insights assigned.",
+          "Example moves": "Monthly rep-customer insight sessions.",
+          "Future effect": "The future creates predictable conversions.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Regular, structured feedback loop in place.",
+          "Signals": "Insights stored and shared."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed results from changes.",
+          "Edge condition": "No central record of insights.",
+          "Example moves": "Taking notes during rare field visits.",
+          "Future effect": "The future sees uneven performance.",
+          "Immediate cost": "Partial insight.",
+          "Present pattern": "Some feedback gathered but inconsistently.",
+          "Signals": "Occasional rep surveys."
+        },
+        "Poor": {
+          "30-90 day system effect": "Processes fail in practice.",
+          "Edge condition": "Only hearing from top performers.",
+          "Example moves": "Redesigning process without rep input.",
+          "Future effect": "The future risks low adoption.",
+          "Immediate cost": "Decisions disconnected from reality.",
+          "Present pattern": "No structured feedback from the field.",
+          "Signals": "Reps improvise or ignore process."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Customer relevance stays high.",
+          "Edge condition": "Insights reviewed before every process update.",
+          "Example moves": "Real-time feedback dashboard from reps.",
+          "Future effect": "The future sustains resilient sales performance.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Field insights are embedded in continuous improvement.",
+          "Signals": "Shared, living insight repository."
+        }
+      },
+      "Purpose of This Theme": "Gather structured, ongoing feedback from sales reps and customers.",
+      "Why This Matters": "Without systematic insight gathering, process changes rely on guesswork."
+    },
+    {
+      "Guiding Questions": [
+        "How do customers typically discover our products or services?",
+        "What factors influence customers' decisions at each stage of their journey?",
+        "Which channels are most effective in guiding customers through their decision-making process?"
+      ],
+      "Name": "Mapping the Customer Decision Journey",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Higher conversion rates.",
+          "Edge condition": "Journey reviewed annually.",
+          "Example moves": "Persona-specific journey maps.",
+          "Future effect": "The future creates predictable conversions.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Journey mapped for all key customer segments.",
+          "Signals": "Actions tailored to stage and segment."
+        },
+        "Expected": {
+          "30-90 day system effect": "Missed opportunities with others.",
+          "Edge condition": "No segmentation in journey mapping.",
+          "Example moves": "Using enterprise journey for SMB buyers.",
+          "Future effect": "The future sees uneven performance.",
+          "Immediate cost": "Partial fit.",
+          "Present pattern": "Journey mapped for some customer types only.",
+          "Signals": "Generic sales stages applied broadly."
+        },
+        "Poor": {
+          "30-90 day system effect": "Lost opportunities.",
+          "Edge condition": "Assume all buyers follow same path.",
+          "Example moves": "Pushing demos on first contact.",
+          "Future effect": "The future risks low close rates.",
+          "Immediate cost": "Mis-timed sales actions.",
+          "Present pattern": "No documented customer journey.",
+          "Signals": "Selling before trust is built."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Alignment remains strong as markets shift.",
+          "Edge condition": "Customer journey data integrated with CRM.",
+          "Example moves": "Automated stage detection in CRM.",
+          "Future effect": "The future sustains strong sales performance.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Journey mapping is dynamic and updated in real time.",
+          "Signals": "Signals trigger tailored actions."
+        }
+      },
+      "Purpose of This Theme": "Understand and document the actual steps customers take before buying.",
+      "Why This Matters": "Misaligned processes push too early or miss key decision points."
+    },
+    {
+      "Guiding Questions": [
+        "How do our current sales stages reflect the actual customer journey in the field?",
+        "What adjustments are necessary to ensure our sales stages align with field realities?",
+        "Which sales stage is most frequently misaligned with field experiences, and why?"
+      ],
+      "Name": "Aligning Sales Stages to Field Reality",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Better adoption and forecasting.",
+          "Edge condition": "Review after pilot.",
+          "Example moves": "Field-tested stage definitions.",
+          "Future effect": "The future creates predictable conversions.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Stages co-designed with reps and validated in the field.",
+          "Signals": "Stages align with customer momentum."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent reporting and results.",
+          "Edge condition": "No validation with reps.",
+          "Example moves": "Keeping outdated qualification stage.",
+          "Future effect": "The future sees uneven performance.",
+          "Immediate cost": "Partial adoption.",
+          "Present pattern": "Some stages reflect field reality but others don't.",
+          "Signals": "Reps customize on the fly."
+        },
+        "Poor": {
+          "30-90 day system effect": "Reps skip or bypass process.",
+          "Edge condition": "Design based on theory only.",
+          "Example moves": "Forcing 5 stages on a 2-step buying cycle.",
+          "Future effect": "The future risks low adoption.",
+          "Immediate cost": "Stages feel artificial.",
+          "Present pattern": "Sales stages designed without field input.",
+          "Signals": "Deals stall or drop."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High trust in forecasts.",
+          "Edge condition": "Regular stage alignment workshops.",
+          "Example moves": "Monthly stage-fit check with reps.",
+          "Future effect": "The future sustains resilient sales performance.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Stage alignment is ongoing and responsive.",
+          "Signals": "Stage data signals market shifts."
+        }
+      },
+      "Purpose of This Theme": "Ensure sales process stages match what actually happens in the field.",
+      "Why This Matters": "Misaligned stages confuse reps and create friction for customers."
+    },
+    {
+      "Guiding Questions": [
+        "How can we assess the current skill levels of our team to identify training needs for tool adoption?",
+        "What strategies can we implement to ensure seamless integration of new tools into existing workflows?",
+        "To what extent are our current training programs effective in promoting the adoption of new tools?"
+      ],
+      "Name": "Integrating Tools and Training for Adoption",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Consistent execution across reps.",
+          "Edge condition": "Refresher training available.",
+          "Example moves": "Roleplay sessions in onboarding.",
+          "Future effect": "The future creates predictable conversions.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Integrated tools and role-based training provided.",
+          "Signals": "CRM supports process stages."
+        },
+        "Expected": {
+          "30-90 day system effect": "Workarounds emerge.",
+          "Edge condition": "No feedback on tools.",
+          "Example moves": "Training once at rollout only.",
+          "Future effect": "The future sees uneven performance.",
+          "Immediate cost": "Partial adoption.",
+          "Present pattern": "Basic training provided but tools not optimized.",
+          "Signals": "CRM fields misaligned with process."
+        },
+        "Poor": {
+          "30-90 day system effect": "Inconsistent execution.",
+          "Edge condition": "Assume process is self-explanatory.",
+          "Example moves": "Sharing PDF of process and nothing else.",
+          "Future effect": "The future risks low adoption.",
+          "Immediate cost": "Low usage of process.",
+          "Present pattern": "No training or tools provided.",
+          "Signals": "Reps revert to old habits."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High consistency and results.",
+          "Edge condition": "Ongoing peer learning.",
+          "Example moves": "Monthly process mastery clinics.",
+          "Future effect": "The future sustains resilient sales performance.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Adoption supported by culture, coaching, and continuous enablement.",
+          "Signals": "Tools evolve with process."
+        }
+      },
+      "Purpose of This Theme": "Equip reps with the right tools and training to use the process effectively.",
+      "Why This Matters": "Even the best-designed process fails without adoption."
+    },
+    {
+      "Guiding Questions": [
+        "What patterns or trends have emerged from the results?",
+        "How can we leverage the insights gained to improve our strategy?",
+        "To what extent do the results align with our initial objectives?"
+      ],
+      "Name": "Reviewing and Iterating Based on Results",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Increased conversion rates.",
+          "Edge condition": "Review cadence set.",
+          "Example moves": "Quarterly process performance review.",
+          "Future effect": "The future creates predictable conversions.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Process metrics tracked and tied to regular reviews.",
+          "Signals": "Changes based on data."
+        },
+        "Expected": {
+          "30-90 day system effect": "Missed opportunities.",
+          "Edge condition": "No ownership of metrics.",
+          "Example moves": "Looking at win rate once a year.",
+          "Future effect": "The future sees uneven performance.",
+          "Immediate cost": "Slow optimization.",
+          "Present pattern": "Some metrics tracked but not tied to improvements.",
+          "Signals": "Reports generated but not reviewed."
+        },
+        "Poor": {
+          "30-90 day system effect": "Blind to improvement opportunities.",
+          "Edge condition": "Assume process is fine unless broken.",
+          "Example moves": "Not tracking stage-to-close rates.",
+          "Future effect": "The future risks decline.",
+          "Immediate cost": "Stagnant or declining results.",
+          "Present pattern": "No measurement of process effectiveness.",
+          "Signals": "Relying on anecdotes."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Process stays relevant and high-performing.",
+          "Edge condition": "Improvement backlog maintained.",
+          "Example moves": "Always-on process feedback loop.",
+          "Future effect": "The future sustains resilient sales performance.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Measurement and iteration embedded in culture.",
+          "Signals": "Everyone contributes to refinements."
+        }
+      },
+      "Purpose of This Theme": "Measure performance of the sales process and refine it regularly.",
+      "Why This Matters": "Processes stagnate without measurement and iteration."
+    }
+  ],
+  "Title": "Building a Field-Aligned Sales Process",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when creating or refining the sales process, entering new markets, or after significant feedback from field reps or customers.",
+  "Why This Matters": "A sales process disconnected from the realities of customer behavior leads to wasted effort, poor conversion, and missed opportunities. Field alignment ensures relevance, trust, and efficiency."
+}

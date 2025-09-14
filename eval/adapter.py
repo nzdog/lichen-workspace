@@ -5,9 +5,35 @@ This module provides the interface between the evaluation harness and the live s
 
 import json
 import os
+import re
 import time
 from functools import lru_cache
 from typing import List, Dict, Any, Optional
+
+
+def _to_eval_doc_id(meta: dict) -> str:
+    """
+    Convert retriever metadata into the doc id format used by the eval set
+    (e.g., 'the_leadership_im_actually_carrying').
+    Prefers an existing underscored id; otherwise derives from title.
+    """
+    if not isinstance(meta, dict):
+        return "unknown"
+
+    pid = (meta.get("protocol_id") or meta.get("id") or "").strip()
+    # If it already looks underscored, keep it.
+    if pid and "_" in pid:
+        return pid
+
+    title = (meta.get("title") or meta.get("protocol_title") or meta.get("doc_title") or "").strip()
+    # Fallback: derive from title
+    base = title or pid
+    if not base:
+        return "unknown"
+    # Lowercase, replace non-alnum with spaces, collapse spaces to underscores
+    s = re.sub(r"[^a-zA-Z0-9]+", " ", base).strip().lower()
+    s = re.sub(r"\s+", "_", s)
+    return s or "unknown"
 
 
 @lru_cache(maxsize=1)
@@ -48,13 +74,14 @@ def _load_dummy_answers_data() -> Dict[str, List[Dict[str, Any]]]:
     return data
 
 
-def retrieve(query: str, lane: str) -> List[Dict[str, Any]]:
+def retrieve(query: str, lane: str, use_router: bool = True) -> List[Dict[str, Any]]:
     """
     Retrieve documents for a query using the specified lane.
     
     Args:
         query: The search query
         lane: The lane to use ("fast" or "accurate")
+        use_router: Whether to use protocol router for scoped retrieval
         
     Returns:
         List of at least 20 dictionaries, each containing:
@@ -64,23 +91,23 @@ def retrieve(query: str, lane: str) -> List[Dict[str, Any]]:
         - score (float): Relevance score
         - text (str): The actual text content
     """
-    # Use the RAG adapter from lichen-protocol-mvp
-    try:
-        import sys
-        sys.path.append('lichen-protocol-mvp')
-        from hallway.adapters.rag_adapter import get_rag_adapter
-        
-        rag_adapter = get_rag_adapter()
-        return rag_adapter.retrieve(query, lane)
-    except ImportError:
-        # Fallback to dummy mode if RAG adapter not available
-        if os.getenv("USE_DUMMY_RAG") == "1":
-            return _retrieve_dummy(query, lane)
-        else:
-            raise NotImplementedError(
-                "RAG adapter not available. Set USE_DUMMY_RAG=1 for the dummy retriever.\n"
-                "TODO: Ensure lichen-protocol-mvp is in the Python path."
-            )
+    from rag.retrieve.protocol_first_hybrid import retrieve as hybrid_retrieve
+    top_k = 20  # eval expects >=20 candidates
+    lane_norm = (lane or "fast").lower()
+    results = hybrid_retrieve(query, lane=lane_norm, top_k=top_k)
+    
+    out = []
+    for rank, r in enumerate(results, start=1):
+        meta = r.get("metadata") or {}
+        out.append({
+            "doc": _to_eval_doc_id(meta),
+            "chunk": int(meta.get("chunk_index") or meta.get("chunk_no") or 0),
+            "rank": rank,
+            "score": float(r.get("score") or 0.0),
+            "text": r.get("text") or meta.get("text") or ""
+        })
+    # If fewer than 20, just return what we have; eval handles it.
+    return out
 
 
 def _retrieve_dummy(query: str, lane: str) -> List[Dict[str, Any]]:
@@ -119,23 +146,14 @@ def generate(query: str, context_texts: List[str], lane: str) -> Dict[str, Any]:
         - answer (str): The generated answer
         - hallucinations (int): Count of hallucinated facts (0 for now)
     """
-    # Use the RAG adapter from lichen-protocol-mvp
-    try:
-        import sys
-        sys.path.append('lichen-protocol-mvp')
-        from hallway.adapters.rag_adapter import get_rag_adapter
-        
-        rag_adapter = get_rag_adapter()
-        return rag_adapter.generate(query, context_texts, lane)
-    except ImportError:
-        # Fallback to dummy mode if RAG adapter not available
-        if os.getenv("USE_DUMMY_RAG") == "1":
-            return _generate_dummy(query, context_texts, lane)
-        else:
-            raise NotImplementedError(
-                "RAG adapter not available. Set USE_DUMMY_RAG=1 for the dummy generator.\n"
-                "TODO: Ensure lichen-protocol-mvp is in the Python path."
-            )
+    # TODO: Replace with new generation system when available
+    # For now, fallback to dummy mode
+    if os.getenv("USE_DUMMY_RAG") == "1":
+        return _generate_dummy(query, context_texts, lane)
+    else:
+        raise NotImplementedError(
+            "Generation system not yet migrated. Set USE_DUMMY_RAG=1 for the dummy generator."
+        )
 
 
 def _generate_dummy(query: str, context_texts: List[str], lane: str) -> Dict[str, Any]:

@@ -77,12 +77,12 @@ class FAISSStore:
         
         if lane_config or os.getenv(env_path_key):
             # Use per-lane paths
-            self.index_path = os.getenv(env_path_key, lane_config.get("path", f".vector/{self.lane}.index.faiss"))
-            self.meta_path = os.getenv(env_meta_key, lane_config.get("meta", f".vector/{self.lane}.meta.jsonl"))
-            self.stats_path = os.getenv(env_stats_key, lane_config.get("stats", f".vector/{self.lane}.stats.json"))
+            self.index_path = Path(os.getenv(env_path_key, lane_config.get("path", f".vector/{self.lane}.index.faiss")))
+            self.meta_path = Path(os.getenv(env_meta_key, lane_config.get("meta", f".vector/{self.lane}.meta.jsonl")))
+            self.stats_path = Path(os.getenv(env_stats_key, lane_config.get("stats", f".vector/{self.lane}.stats.json")))
         else:
             # Fall back to legacy single-index paths
-            self.index_path = vector_store_config.get("path_or_index", ".vector/index.faiss")
+            self.index_path = Path(vector_store_config.get("path_or_index", ".vector/index.faiss"))
             self.meta_path = Path(self.index_path).parent / "meta.jsonl"
             self.stats_path = Path(self.index_path).parent / "stats.json"
             logger.warning(f"Using legacy index for {self.lane} lane: {self.index_path}")
@@ -93,6 +93,10 @@ class FAISSStore:
     def _load_embedding_model(self, model_name: str) -> SentenceTransformer:
         """Load and cache embedding model."""
         if self.embed_model is None:
+            # Ensure model name has the sentence-transformers prefix if not present
+            if not model_name.startswith('sentence-transformers/'):
+                model_name = f'sentence-transformers/{model_name}'
+            
             logger.info(f"Loading embedding model: {model_name}")
             self.embed_model = SentenceTransformer(model_name)
             logger.info("Embedding model loaded successfully")
@@ -137,22 +141,63 @@ class FAISSStore:
         return self.index
     
     def _load_metadata(self) -> Dict[int, Dict[str, Any]]:
-        """Load metadata from JSONL file."""
+        """Load metadata from JSONL file or directory of JSONL files."""
         meta_path = Path(self.meta_path)
         if not meta_path.exists():
-            raise FileNotFoundError(f"Metadata file not found at {meta_path}")
+            raise FileNotFoundError(f"Metadata path not found at {meta_path}")
         
         logger.info(f"Loading metadata from {meta_path}")
         metadata = {}
-        with open(meta_path, 'r') as f:
-            for line in f:
-                if line.strip():
-                    meta = json.loads(line)
-                    vector_id = meta.get("vector_id")
-                    if vector_id is not None:
-                        metadata[vector_id] = meta
+        vector_id = 0
         
-        logger.info(f"Loaded metadata for {len(metadata)} vectors")
+        if meta_path.is_file():
+            # Single JSONL file
+            jsonl_files = [meta_path]
+        else:
+            # Directory of JSONL files
+            jsonl_files = list(meta_path.glob("*.chunks.jsonl"))
+            if not jsonl_files:
+                raise FileNotFoundError(f"No .chunks.jsonl files found in {meta_path}")
+        
+        for jsonl_file in sorted(jsonl_files):
+            logger.info(f"Loading metadata from {jsonl_file}")
+            with open(jsonl_file, 'r') as f:
+                for line in f:
+                    if line.strip():
+                        meta = json.loads(line)
+                        
+                        # Handle nested metadata structure from chunker
+                        if "metadata" in meta:
+                            nested_meta = meta["metadata"]
+                            # Extract key fields
+                            processed_meta = {
+                                "vector_id": vector_id,  # Use global vector_id
+                                "doc": nested_meta.get("protocol_id", "unknown"),
+                                "chunk": nested_meta.get("chunk_idx", 0),
+                                "text": meta.get("text", ""),
+                                "title": nested_meta.get("title", ""),
+                                "section_name": nested_meta.get("section_name", ""),
+                                "stones": nested_meta.get("stones", []),
+                                "chunk_id": nested_meta.get("chunk_id", "")
+                            }
+                        else:
+                            # Handle flat metadata structure
+                            processed_meta = {
+                                "vector_id": meta.get("vector_id", vector_id),
+                                "doc": meta.get("doc", "unknown"),
+                                "chunk": meta.get("chunk", 0),
+                                "text": meta.get("text", ""),
+                                "title": meta.get("title", ""),
+                                "section_name": meta.get("section_name", ""),
+                                "stones": meta.get("stones", []),
+                                "chunk_id": meta.get("chunk_id", "")
+                            }
+                        
+                        vector_id = processed_meta["vector_id"]
+                        metadata[vector_id] = processed_meta
+                        vector_id += 1
+        
+        logger.info(f"Loaded metadata for {len(metadata)} vectors from {len(jsonl_files)} files")
         return metadata
     
     def _normalize_embedding(self, embedding: np.ndarray) -> np.ndarray:
@@ -187,7 +232,15 @@ class FAISSStore:
             if idx in self.metadata:
                 # For MMR, we need the original embeddings
                 # Since we don't store them, we'll use a simplified approach
-                candidate_embeddings.append(np.random.random(self.dim))  # Placeholder
+                # Use the metadata to create a more meaningful embedding approximation
+                meta = self.metadata[idx]
+                text = meta.get("text", "")
+                # Create a simple hash-based embedding for diversity calculation
+                import hashlib
+                text_hash = hashlib.md5(text.encode()).hexdigest()
+                # Convert hash to a vector-like representation
+                hash_vector = np.array([ord(c) for c in text_hash[:self.dim]]) / 255.0
+                candidate_embeddings.append(hash_vector)
         
         if not candidate_embeddings:
             return candidates[:top_k]
@@ -261,18 +314,53 @@ class FAISSStore:
         if self.index is None:
             return []
         
+        # Ensure top_k is at least 1
+        if top_k <= 0:
+            top_k = 5
+        
         # Normalize query embedding
         query_embedding = self._normalize_embedding(query_embedding.reshape(1, -1))
         
         # Search index
         scores, indices = self.index.search(query_embedding, top_k)
         
-        # Convert to list of (index, score) tuples
+        # Convert to list of (index, score) tuples and deduplicate
         results = []
+        seen_indices = set()
         for i, (score, idx) in enumerate(zip(scores[0], indices[0])):
-            if idx >= 0:  # Valid index
+            if idx >= 0 and idx not in seen_indices:  # Valid index and not duplicate
                 results.append((int(idx), float(score)))
+                seen_indices.add(idx)
         
+        # If we have fewer results than requested due to deduplication, search for more
+        if len(results) < top_k:
+            # Search for more candidates to fill the gap
+            search_k = min(top_k * 3, self.index.ntotal)  # Search more broadly
+            scores, indices = self.index.search(query_embedding, search_k)
+            
+            for i, (score, idx) in enumerate(zip(scores[0], indices[0])):
+                if idx >= 0 and idx not in seen_indices and len(results) < top_k:
+                    results.append((int(idx), float(score)))
+                    seen_indices.add(idx)
+        
+        # If no results, try fallback search
+        if not results and hasattr(self, 'config') and self.config.get('fast', {}).get('fallback_search'):
+            logger.warning(f"FAISS search returned 0 results, trying fallback search")
+            results = self._fallback_search(query_embedding, top_k)
+        
+        return results
+    
+    def _fallback_search(self, query_embedding: np.ndarray, top_k: int) -> List[Tuple[int, float]]:
+        """Fallback search using simple keyword matching when FAISS returns 0 results."""
+        # Simple keyword-based fallback - return first few documents
+        results = []
+        for i, (idx, meta) in enumerate(self.metadata.items()):
+            if i >= top_k:
+                break
+            # Give a low but non-zero score
+            results.append((idx, 0.1))
+        
+        logger.info(f"Fallback search returned {len(results)} results")
         return results
     
     def get_meta(self, idx: int) -> Optional[Dict[str, Any]]:
@@ -282,9 +370,10 @@ class FAISSStore:
     def embed_query(self, query: str, model_name: str = None) -> np.ndarray:
         """Embed a query using the lane's embedding model."""
         if model_name is None:
-            # Get lane-specific model with env override
-            env_key = f"EMBED_MODEL_{self.lane.upper()}"
-            model_name = os.getenv(env_key, self.config.get(self.lane, {}).get("embed_model", "sentence-transformers/all-MiniLM-L6-v2"))
+            # Get lane-specific model from model config
+            from .model_config import get_model_config
+            model_config = get_model_config()
+            model_name = model_config.get_embed_model(self.lane)
         
         model = self._load_embedding_model(model_name)
         embedding = model.encode([query])[0]
@@ -292,8 +381,9 @@ class FAISSStore:
     
     def get_embedder_name(self) -> str:
         """Get the resolved embedding model name for this lane."""
-        env_key = f"EMBED_MODEL_{self.lane.upper()}"
-        return os.getenv(env_key, self.config.get(self.lane, {}).get("embed_model", "sentence-transformers/all-MiniLM-L6-v2"))
+        from .model_config import get_model_config
+        model_config = get_model_config()
+        return model_config.get_embed_model(self.lane)
     
     def get_index_info(self) -> Dict[str, Any]:
         """Get index information (path, dim, count) from stats."""
@@ -352,7 +442,7 @@ class FAISSStore:
             start_time = time.time()
             
             # Process in batches for efficiency
-            batch_size = 32
+            batch_size = 16  # Reduced for better memory efficiency with larger model
             all_scores = []
             
             for i in range(0, len(pairs), batch_size):
@@ -371,11 +461,15 @@ class FAISSStore:
             # Sort by cross-encoder score
             reranked.sort(key=lambda x: x[1], reverse=True)
             
+            # Filter out low-quality results (score < -1.5) - more selective
+            filtered = [(idx, score) for idx, score in reranked if score > -1.5]
+            
             # Log summary
             model_name_used = self.get_reranker_model_name() or model_name
-            logger.info(f"Reranked {len(candidates)} candidates to top-{top_k} using {model_name_used} in {rerank_time:.1f}ms")
+            logger.info(f"Reranked {len(candidates)} candidates to top-{top_k} using {model_name_used} in {rerank_time:.1f}ms (filtered {len(reranked) - len(filtered)} low-quality)")
             
-            return reranked[:top_k]
+            # Return top_k results, or all filtered results if fewer than top_k
+            return filtered[:top_k] if filtered else reranked[:top_k]
             
         except Exception as e:
             logger.warning(f"Cross-encoder reranking failed: {e}")

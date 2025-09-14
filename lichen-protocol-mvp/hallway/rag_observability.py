@@ -152,13 +152,18 @@ class RAGObservability:
                     stones: Optional[List[str]] = None,
                     citations: Optional[List[Dict[str, Any]]] = None,
                     flags: Optional[Dict[str, Any]] = None,
-                    trace: Optional[Dict[str, Any]] = None) -> None:
+                    trace: Optional[Dict[str, Any]] = None,
+                    lane_used: Optional[str] = None,
+                    prev_lane: Optional[str] = None,
+                    escalation_reason: Optional[str] = None,
+                    embed_model: Optional[str] = None,
+                    reranker_model: Optional[str] = None) -> None:
         """
         Log a RAG turn event with updated JSONL schema.
         
         Args:
             request_id: Unique request identifier (UUID v4)
-            lane: RAG lane (fast/accurate)
+            lane: RAG lane (fast/accurate) - legacy parameter, use lane_used instead
             query: User query (will be redacted if REDACT_LOGS=1)
             topk: Number of results requested
             stages: Stage timing {retrieve_ms, rerank_ms, synth_ms, total_ms}
@@ -167,6 +172,11 @@ class RAGObservability:
             citations: Citations array with source_id and span info
             flags: RAG flags {rag_enabled, fallback}
             trace: Optional debug info (kept small)
+            lane_used: Final lane actually used (overrides lane parameter)
+            prev_lane: Previous lane if escalation occurred
+            escalation_reason: Reason for escalation (if any)
+            embed_model: Embedding model used for this lane
+            reranker_model: Reranker model used for this lane (null if not used)
         """
         if not self.enabled or not self._should_sample():
             return
@@ -176,15 +186,23 @@ class RAGObservability:
             event = {
                 "ts": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),  # Second precision
                 "request_id": request_id,
-                "lane": lane,
+                "lane": lane_used or lane,  # Use lane_used if provided, otherwise fall back to lane
                 "topk": topk,
                 "stones": stones,
                 "grounding_score": grounding_score,
                 "stages": stages,
                 "flags": flags or {"rag_enabled": True, "fallback": None},
                 "citations": citations or [],
-                "trace": trace
+                "trace": trace,
+                "embed_model": embed_model,
+                "reranker_model": reranker_model
             }
+            
+            # Add escalation fields if provided
+            if prev_lane is not None:
+                event["prev_lane"] = prev_lane
+            if escalation_reason is not None:
+                event["escalation_reason"] = escalation_reason
             
             # Handle query redaction - only redact the query field if redaction is enabled
             if self.redact:
@@ -222,6 +240,11 @@ def log_rag_turn(request_id: str,
                 stones: Optional[List[str]] = None,
                 citations: Optional[List[Dict[str, Any]]] = None,
                 flags: Optional[Dict[str, Any]] = None,
-                trace: Optional[Dict[str, Any]] = None) -> None:
+                trace: Optional[Dict[str, Any]] = None,
+                lane_used: Optional[str] = None,
+                prev_lane: Optional[str] = None,
+                escalation_reason: Optional[str] = None,
+                embed_model: Optional[str] = None,
+                reranker_model: Optional[str] = None) -> None:
     """Log a RAG turn event using the global observability instance."""
-    _rag_obs.log_rag_turn(request_id, lane, query, topk, stages, grounding_score, stones, citations, flags, trace)
+    _rag_obs.log_rag_turn(request_id, lane, query, topk, stages, grounding_score, stones, citations, flags, trace, lane_used, prev_lane, escalation_reason, embed_model, reranker_model)

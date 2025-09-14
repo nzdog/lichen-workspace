@@ -1,0 +1,313 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Reflect on how you can enhance the founder's orientation experience.",
+    "Identify one relationship-building activity to deepen connections.",
+    "Consider how you can support the founder's role clarity and adaptability."
+  ],
+  "Created At": "2023-10-05",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "wholeness-relational",
+      "integrity-is-the-growth-strategy"
+    ],
+    "Complexity": 2,
+    "Estimated Time": "90–120 min",
+    "Fields": [
+      "relationship-building",
+      "role-clarity",
+      "sustainable-rhythms",
+      "founder-journey"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Founder integration",
+      "Role clarity and relationship building"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Leadership Transition",
+      "Cultural Alignment"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "presence-is-productivity",
+      "stewardship-not-ownership",
+      "the-speed-of-trust"
+    ],
+    "Tags": [
+      "onboarding",
+      "integration",
+      "founder"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "The founder is well-integrated, clear on their role, and connected to the system → The future sustains alignment and harmonious growth.",
+    "Expected": "The founder is somewhat integrated but lacks full clarity or connection → The future experiences partial alignment and occasional friction.",
+    "Poor": "The founder feels isolated and unclear about their role → The future inherits misalignment and potential discord.",
+    "Transcendent": "The founder's integration elevates the system's coherence and vitality → The future moves with unity and shared purpose, adapting fluidly."
+  },
+  "Overall Purpose": "To integrate a new founder into the system with integrity and alignment, ensuring they are oriented, connected, and clear on their role while establishing sustainable rhythms that honor both their journey and the system's needs.",
+  "Protocol ID": "auto_1754995405265_1",
+  "Short Title": "Founder Onboarding",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What are the core values the founder needs to understand?",
+        "How can we make the orientation engaging and memorable?",
+        "What foundational knowledge is crucial for the founder's success?"
+      ],
+      "Name": "Initial Orientation",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Strong alignment and understanding.",
+          "Edge condition": "Balancing depth with accessibility.",
+          "Example moves": "Including interactive sessions with key team members.",
+          "Future effect": "The future sustains alignment and harmonious growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Orientation is thorough and engaging.",
+          "Signals": "Confident navigation of the system by the founder."
+        },
+        "Expected": {
+          "30-90 day system effect": "Some alignment but gaps remain.",
+          "Edge condition": "Relying on documentation without personal connection.",
+          "Example moves": "Providing an overview without interactive sessions.",
+          "Future effect": "The future experiences partial alignment and occasional friction.",
+          "Immediate cost": "The founder has a surface-level understanding.",
+          "Present pattern": "Orientation covers basics but lacks depth.",
+          "Signals": "Occasional confusion about deeper values."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misalignment and inefficiencies persist.",
+          "Edge condition": "Mistaking speed for thoroughness.",
+          "Example moves": "Skipping detailed introductions to key systems.",
+          "Future effect": "The future inherits misalignment and potential discord.",
+          "Immediate cost": "The founder feels lost and disconnected.",
+          "Present pattern": "Orientation is rushed or incomplete.",
+          "Signals": "Frequent questions about basic processes."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Deep integration and inspiration.",
+          "Edge condition": "Avoiding overwhelm with too much information.",
+          "Example moves": "Crafting a personalized orientation journey.",
+          "Future effect": "The future moves with unity and shared purpose, adapting fluidly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Orientation is a transformative experience.",
+          "Signals": "Founder contributes new insights and energy."
+        }
+      },
+      "Purpose of This Theme": "To provide the founder with a comprehensive introduction to the system's values, structures, and rhythms.",
+      "Why This Matters": "A thorough orientation ensures the founder understands the system's essence and can align their actions accordingly."
+    },
+    {
+      "Guiding Questions": [
+        "Who are the key stakeholders the founder needs to connect with?",
+        "How can we facilitate deep and meaningful relationships?",
+        "What ongoing support can we provide to strengthen these connections?"
+      ],
+      "Name": "Relationship Building",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Robust collaboration and trust.",
+          "Edge condition": "Balancing formal and informal relationship-building.",
+          "Example moves": "Facilitating regular check-ins with stakeholders.",
+          "Future effect": "The future sustains alignment and harmonious growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Intentional efforts to build strong relationships.",
+          "Signals": "Frequent, meaningful interactions."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate collaboration with some gaps.",
+          "Edge condition": "Relying on formal meetings for relationship building.",
+          "Example moves": "Organizing introductory meetings but not follow-ups.",
+          "Future effect": "The future experiences partial alignment and occasional friction.",
+          "Immediate cost": "The founder has basic connections but lacks depth.",
+          "Present pattern": "Some relationship-building activities are initiated.",
+          "Signals": "Superficial interactions with stakeholders."
+        },
+        "Poor": {
+          "30-90 day system effect": "Weak collaboration and trust issues.",
+          "Edge condition": "Assuming relationships will naturally develop.",
+          "Example moves": "Ignoring structured meet-and-greets.",
+          "Future effect": "The future inherits misalignment and potential discord.",
+          "Immediate cost": "The founder feels isolated and unsupported.",
+          "Present pattern": "Relationships are left to form organically without guidance.",
+          "Signals": "Limited interaction with key stakeholders."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Synergistic collaboration and innovation.",
+          "Edge condition": "Avoiding cliques that exclude others.",
+          "Example moves": "Creating mentorship opportunities.",
+          "Future effect": "The future moves with unity and shared purpose, adapting fluidly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Relationships are deep and transformative.",
+          "Signals": "High levels of trust and shared vision."
+        }
+      },
+      "Purpose of This Theme": "To foster meaningful connections between the founder and key stakeholders within the system.",
+      "Why This Matters": "Strong relationships build trust and facilitate collaboration, essential for the founder's effective integration."
+    },
+    {
+      "Guiding Questions": [
+        "What are the core responsibilities of the founder's role?",
+        "How can we ensure ongoing clarity and adaptability in their role?",
+        "What support is needed to empower the founder in their role?"
+      ],
+      "Name": "Role Clarity",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Effective and confident role execution.",
+          "Edge condition": "Balancing clarity with flexibility.",
+          "Example moves": "Regular role review sessions.",
+          "Future effect": "The future sustains alignment and harmonious growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Role clarity is comprehensive and evolving.",
+          "Signals": "Proactive engagement in role responsibilities."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial alignment with occasional confusion.",
+          "Edge condition": "Over-reliance on written role descriptions.",
+          "Example moves": "Discussing role expectations in initial meetings only.",
+          "Future effect": "The future experiences partial alignment and occasional friction.",
+          "Immediate cost": "The founder understands some responsibilities.",
+          "Present pattern": "Basic role clarity is provided.",
+          "Signals": "Inconsistent execution of role duties."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misalignment and inefficiencies.",
+          "Edge condition": "Assuming role clarity without explicit communication.",
+          "Example moves": "Providing a generic role description.",
+          "Future effect": "The future inherits misalignment and potential discord.",
+          "Immediate cost": "The founder feels uncertain and hesitant.",
+          "Present pattern": "Role expectations are vague or undefined.",
+          "Signals": "Frequent role-related questions."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Dynamic role evolution and contribution.",
+          "Edge condition": "Avoiding rigidity that stifles creativity.",
+          "Example moves": "Encouraging role adaptation based on system needs.",
+          "Future effect": "The future moves with unity and shared purpose, adapting fluidly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Role clarity inspires innovation and growth.",
+          "Signals": "Creative approaches to role fulfillment."
+        }
+      },
+      "Purpose of This Theme": "To ensure the founder understands their role, responsibilities, and how they contribute to the system's goals.",
+      "Why This Matters": "Clear role definition prevents confusion and empowers the founder to act with confidence and purpose."
+    },
+    {
+      "Guiding Questions": [
+        "What rhythms support the founder's well-being and effectiveness?",
+        "How can we ensure these rhythms are sustainable?",
+        "What flexibility is needed to adapt to changing circumstances?"
+      ],
+      "Name": "Establishing Sustainable Rhythms",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Consistent productivity and well-being.",
+          "Edge condition": "Balancing routine with adaptability.",
+          "Example moves": "Implementing regular reflection and planning sessions.",
+          "Future effect": "The future sustains alignment and harmonious growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Rhythms are well-established and supportive.",
+          "Signals": "Balanced work-life integration."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent productivity and well-being.",
+          "Edge condition": "Relying on ad-hoc scheduling.",
+          "Example moves": "Scheduling irregular check-ins.",
+          "Future effect": "The future experiences partial alignment and occasional friction.",
+          "Immediate cost": "The founder experiences mixed levels of stress.",
+          "Present pattern": "Some routines are established but lack consistency.",
+          "Signals": "Occasional periods of high stress."
+        },
+        "Poor": {
+          "30-90 day system effect": "Burnout and decreased productivity.",
+          "Edge condition": "Mistaking busyness for productivity.",
+          "Example moves": "Ignoring the need for regular breaks.",
+          "Future effect": "The future inherits misalignment and potential discord.",
+          "Immediate cost": "The founder feels overwhelmed and stressed.",
+          "Present pattern": "Rhythms are chaotic or non-existent.",
+          "Signals": "Erratic work patterns and fatigue."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Innovative and sustained contribution.",
+          "Edge condition": "Avoiding rigidity that limits spontaneity.",
+          "Example moves": "Embedding flexibility into daily routines.",
+          "Future effect": "The future moves with unity and shared purpose, adapting fluidly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Rhythms enhance creativity and resilience.",
+          "Signals": "High energy and creative output."
+        }
+      },
+      "Purpose of This Theme": "To create routines and practices that support the founder's integration and the system's stability.",
+      "Why This Matters": "Sustainable rhythms prevent burnout and ensure the founder can contribute effectively over the long term."
+    },
+    {
+      "Guiding Questions": [
+        "What unique experiences does the founder bring?",
+        "How can we integrate these experiences into the system?",
+        "What opportunities exist for co-creation and innovation?"
+      ],
+      "Name": "Honoring the Founder’s Journey",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Enhanced system richness and innovation.",
+          "Edge condition": "Balancing integration with system coherence.",
+          "Example moves": "Creating spaces for sharing personal stories.",
+          "Future effect": "The future sustains alignment and harmonious growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "The founder's journey is actively integrated.",
+          "Signals": "Frequent contributions of unique perspectives."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate integration of unique insights.",
+          "Edge condition": "Relying on formal introductions only.",
+          "Example moves": "Mentioning past achievements in initial meetings.",
+          "Future effect": "The future experiences partial alignment and occasional friction.",
+          "Immediate cost": "The founder feels partially recognized.",
+          "Present pattern": "Some acknowledgment of the founder's journey.",
+          "Signals": "Occasional sharing of past experiences."
+        },
+        "Poor": {
+          "30-90 day system effect": "Loss of potential insights and innovation.",
+          "Edge condition": "Assuming the founder will conform without integration.",
+          "Example moves": "Ignoring the founder's past achievements.",
+          "Future effect": "The future inherits misalignment and potential discord.",
+          "Immediate cost": "The founder feels unappreciated and disconnected.",
+          "Present pattern": "The founder's journey is overlooked or undervalued.",
+          "Signals": "Limited sharing of personal experiences."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Dynamic evolution and shared vision.",
+          "Edge condition": "Avoiding overshadowing the system's existing culture.",
+          "Example moves": "Encouraging co-creation of new initiatives.",
+          "Future effect": "The future moves with unity and shared purpose, adapting fluidly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "The founder's journey transforms the system.",
+          "Signals": "High levels of innovation and engagement."
+        }
+      },
+      "Purpose of This Theme": "To acknowledge and integrate the founder's unique experiences and vision into the system.",
+      "Why This Matters": "Honoring the founder's journey enriches the system and fosters a sense of belonging and purpose."
+    }
+  ],
+  "Title": "Onboarding the Founder",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When a new founder joins the system, during the initial stages of founder integration, or when recalibrating the founder's role within the system.",
+  "Why This Matters": "Without a structured onboarding process, a new founder may feel disconnected, unclear about their role, and misaligned with the system's values and rhythms. This can lead to friction, miscommunication, and missed opportunities for growth and cohesion."
+}
