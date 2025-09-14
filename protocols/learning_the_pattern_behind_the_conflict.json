@@ -1,0 +1,311 @@
+{
+  "Category": "conflict-and-repair",
+  "Completion Prompts": [
+    "Name one recurring conflict pattern you see.",
+    "Write a short note owning your part in that pattern and a concrete behavior you will change.",
+    "Identify one new response you will try next time the pattern arises, and add a reminder."
+  ],
+  "Created At": "2025-08-19",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "60 minutes",
+    "Fields": [
+      "relational",
+      "integrity",
+      "wholeness"
+    ],
+    "Modes": [
+      "Full Walk"
+    ],
+    "Primary Scenarios": [
+      "A recurring conflict arises in a startup team and needs to be learned from, not repeated."
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "clearing-lingering-residue",
+      "when-its-not-repairable",
+      "preparing-for-a-repair-conversation"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "integrity-is-the-growth-strategy",
+      "presence-is-productivity",
+      "the-speed-of-trust"
+    ],
+    "Tags": [
+      "conflict",
+      "pattern",
+      "relationships",
+      "repair",
+      "integration"
+    ],
+    "Tone Markers": [
+      "clarity",
+      "coherence",
+      "steadiness",
+      "relational",
+      "integrity",
+      "field-aware",
+      "brevity"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Understands the systemic drivers of conflict and makes intentional shifts.",
+    "Expected": "Recognizes recurring patterns and begins naming them.",
+    "Poor": "Treats conflict as isolated events; repeats the same fights.",
+    "Transcendent": "Transforms conflict into a teacher that strengthens relationships and the field."
+  },
+  "Overall Purpose": "To reveal and integrate the recurring patterns beneath conflict so they do not repeat unconsciously.",
+  "Protocol ID": "learningthepatternbehindtheconflict",
+  "Short Title": "Conflict Pattern",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What keeps showing up in our conflicts?",
+        "When and where does it activate most reliably?",
+        "What exits from the pattern have worked before?"
+      ],
+      "Name": "Noticing the Repetition",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Responses improve; escalation time shortens.",
+          "Edge condition": "Over-analysis paralysis.",
+          "Example moves": "Create a one-page pattern map with conditions and exits.",
+          "Future effect": "Team anticipates and routes around triggers.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Maps when/where patterns activate and why.",
+          "Signals": "Calmer tone; earlier flagging of risk."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy begins to stabilize; fewer surprises.",
+          "Edge condition": "Avoid shaming yourself or others for patterns.",
+          "Example moves": "Jot a quick ‘pattern snapshot’ after tense moments.",
+          "Future effect": "Pattern becomes workable; options open.",
+          "Immediate cost": "Some discomfort facing the pattern.",
+          "Present pattern": "Recognizes recurring triggers and dynamics.",
+          "Signals": "Clearer naming; shared language appears."
+        },
+        "Poor": {
+          "30-90 day system effect": "Patterns repeat; stress accumulates across cycles.",
+          "Edge condition": "Denial that a pattern exists.",
+          "Example moves": "End meetings with ‘what repeated today?’",
+          "Future effect": "Repetition entrenches and expands into more areas.",
+          "Immediate cost": "Keeps reacting the same way; no learning loop.",
+          "Present pattern": "Sees each conflict as separate and situational.",
+          "Signals": "Déjà vu; same arguments; same roles in fights."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System adjusts; conflicts reduce at the root.",
+          "Edge condition": "Avoid one-size-fits-all fixes.",
+          "Example moves": "Turn the map into two small structural experiments.",
+          "Future effect": "Organization gets better at learning from conflict.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Reads repetition as a field-level signal for design change.",
+          "Signals": "Smoother handoffs; fewer flare-ups across teams."
+        }
+      },
+      "Purpose of This Theme": "To identify where patterns recur across conflicts.",
+      "Why This Matters": "Awareness is the first step to breaking cycles."
+    },
+    {
+      "Guiding Questions": [
+        "What past dynamics does this echo?",
+        "Which structures/agreements feed this pattern?",
+        "What small change would relieve pressure quickly?"
+      ],
+      "Name": "Tracing the Roots",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust and execution quality improve.",
+          "Edge condition": "Don’t over-engineer the system all at once.",
+          "Example moves": "Pilot one policy or ritual to address a top root.",
+          "Future effect": "Patterns weaken across multiple contexts.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Maps roots to specific interventions and agreements.",
+          "Signals": "Clear role expectations; explicit boundaries."
+        },
+        "Expected": {
+          "30-90 day system effect": "Insights grow; more accurate hypotheses.",
+          "Edge condition": "Don’t weaponize origin stories.",
+          "Example moves": "Write a short roots statement with evidence.",
+          "Future effect": "Better levers for change become visible.",
+          "Immediate cost": "Vulnerability to look honestly at self and system.",
+          "Present pattern": "Considers deeper origins alongside surface events.",
+          "Signals": "Balanced analysis of roles and conditions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Root causes remain untouched; frustration deepens.",
+          "Edge condition": "Avoid armchair therapy; stay concrete.",
+          "Example moves": "Name one personal, one relational, one systemic contributor.",
+          "Future effect": "Misdiagnosis leads to misdesigned fixes.",
+          "Immediate cost": "Short-term relief; long-term repeat.",
+          "Present pattern": "Blames surface events or people only.",
+          "Signals": "Finger-pointing; post-mortems that miss context."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Culture becomes more signal-sensitive.",
+          "Edge condition": "Avoid ideology; stay empirical.",
+          "Example moves": "Review roots quarterly; adjust lightly.",
+          "Future effect": "Field-level adaptability increases.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Sees roots as invitations to mature the field.",
+          "Signals": "People flag roots early without blame."
+        }
+      },
+      "Purpose of This Theme": "To explore personal, relational, and systemic roots of the pattern.",
+      "Why This Matters": "Roots often go unseen but shape present dynamics."
+    },
+    {
+      "Guiding Questions": [
+        "What part do I reliably play here?",
+        "What is one behavior I will change next time?",
+        "What cue will help me notice in time?"
+      ],
+      "Name": "Owning My Part",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Escalations shorten; recovery faster.",
+          "Edge condition": "Avoid rigid scripts; keep humane.",
+          "Example moves": "Use a cue (breath/word) + alternate move.",
+          "Future effect": "Resilience and trust increase.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Builds a personal interrupt for the trigger moment.",
+          "Signals": "You catch yourself earlier; teammates mirror."
+        },
+        "Expected": {
+          "30-90 day system effect": "Conflict softens; experiments feel possible.",
+          "Edge condition": "Don’t over-own others’ work.",
+          "Example moves": "Share your change with timing and metric.",
+          "Future effect": "New options appear in the moment.",
+          "Immediate cost": "Vulnerability; ego sting.",
+          "Present pattern": "Names a specific contribution and a small change.",
+          "Signals": "Warmer tone; fewer interruptions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Trust erodes; others harden their stance.",
+          "Edge condition": "Avoid confession theater; keep it specific.",
+          "Example moves": "Write one sentence owning your part and one behavior you’ll change.",
+          "Future effect": "Patterns harden around roles (‘the blocker’, ‘the savior’).",
+          "Immediate cost": "Short relief; cycle entrenches.",
+          "Present pattern": "Externalizes blame entirely.",
+          "Signals": "Defensive tone; justification loops."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System learns to adjust quickly after misses.",
+          "Edge condition": "Avoid savior arcs; stay ordinary.",
+          "Example moves": "Normalize ‘own one thing’ in retros.",
+          "Future effect": "Repair becomes reflexive in the field.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Turns ownership into a cultural pattern of repair.",
+          "Signals": "Quicker acknowledgments; faster resets."
+        }
+      },
+      "Purpose of This Theme": "To acknowledge personal contribution to the pattern and choose a shift.",
+      "Why This Matters": "Taking responsibility unlocks change and invites reciprocity."
+    },
+    {
+      "Guiding Questions": [
+        "What is the other person protecting or caring for?",
+        "What are they right about that I can name?",
+        "What shared constraint are we both living inside?"
+      ],
+      "Name": "Seeing the Other Clearly",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Relational trust improves; options widen.",
+          "Edge condition": "Avoid flattery to manipulate.",
+          "Example moves": "Name one thing they’re right about.",
+          "Future effect": "Partnership quality increases.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Acknowledges their contribution with compassion.",
+          "Signals": "Specific appreciation; fewer assumptions."
+        },
+        "Expected": {
+          "30-90 day system effect": "Common ground emerges; heat lowers.",
+          "Edge condition": "Don’t demand reciprocity immediately.",
+          "Example moves": "Summarize their view and confirm accuracy.",
+          "Future effect": "Repair becomes feasible.",
+          "Immediate cost": "Time and patience to get it right.",
+          "Present pattern": "Listens and reflects their perspective.",
+          "Signals": "Slower cadence; clarifying questions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Division hardens; future collaboration worsens.",
+          "Edge condition": "Avoid psychoanalyzing; ask, don’t assume.",
+          "Example moves": "Ask: ‘What need are you protecting right now?’",
+          "Future effect": "Misunderstanding calcifies into identity conflict.",
+          "Immediate cost": "Temporary self-righteous relief; relationship cost.",
+          "Present pattern": "Caricatures or dismisses the other.",
+          "Signals": "Eye-rolls; talking over; selective listening."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Conflict illuminates how the system shapes behavior.",
+          "Edge condition": "Avoid dissolving accountability into the ether.",
+          "Example moves": "Map the shared constraint you both feel.",
+          "Future effect": "Collective maturity grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Sees the other as mirror of shared field conditions.",
+          "Signals": "‘We’ language rises; blame drops."
+        }
+      },
+      "Purpose of This Theme": "To recognize the other’s perspective and legitimate needs.",
+      "Why This Matters": "Mutual recognition interrupts projection and softens cycles."
+    },
+    {
+      "Guiding Questions": [
+        "What smallest whole move can we try next time?",
+        "How will we remember in the hot moment?",
+        "What metric would tell us it worked?"
+      ],
+      "Name": "Designing a New Response",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Conflicts end sooner; fewer cross-team ripples.",
+          "Edge condition": "Don’t over-instrument or moralize misses.",
+          "Example moves": "Write the 3-step interrupt you’ll use and share it.",
+          "Future effect": "Learning compounds into culture.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Builds a tiny protocol for trigger moments.",
+          "Signals": "Shared language; faster resets."
+        },
+        "Expected": {
+          "30-90 day system effect": "Escalations shrink; signal increases.",
+          "Edge condition": "Guard against stealth scope creep.",
+          "Example moves": "Add a calendar nudge + peer checkpoint.",
+          "Future effect": "Momentum toward healthier pattern.",
+          "Immediate cost": "Small setup effort (calendar, teammate, cue).",
+          "Present pattern": "Picks a reversible step and a reminder.",
+          "Signals": "Clear owner; timebox; exit criteria."
+        },
+        "Poor": {
+          "30-90 day system effect": "Cycle repeats; cynicism grows.",
+          "Edge condition": "Avoid heroic vows without scaffolding.",
+          "Example moves": "Define one reversible move you will actually try.",
+          "Future effect": "Pattern deepens through learned helplessness.",
+          "Immediate cost": "Short relief; longer regret.",
+          "Present pattern": "Falls into familiar reactions without supports.",
+          "Signals": "‘Here we go again’ scripts; weekend slacks."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System carries less conflict debt overall.",
+          "Edge condition": "Avoid turning it into control theater.",
+          "Example moves": "Document the norm once it sticks; keep it light.",
+          "Future effect": "Regenerative conflict practice emerges.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Makes pattern-interrupt a team norm.",
+          "Signals": "Others mirror the interrupt; calmer field."
+        }
+      },
+      "Purpose of This Theme": "To choose practical moves that interrupt the pattern next time.",
+      "Why This Matters": "Without new responses, awareness drifts back into habit."
+    }
+  ],
+  "Title": "Learning the Pattern Behind the Conflict",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "After or during conflict when the same tensions seem to recur without resolution.",
+  "Why This Matters": "Conflict often replays deeper patterns. Seeing them clearly allows choice, repair, and future coherence."
+}

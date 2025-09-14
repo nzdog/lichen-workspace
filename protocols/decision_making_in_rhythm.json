@@ -1,0 +1,318 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one decision you can align with the system's natural rhythm this week.",
+    "Choose one upcoming decision to scale the process appropriately.",
+    "Reflect on a recent decision: Did you balance data and intuition effectively?"
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "collapse-regenerative",
+      "regenerative-integrity",
+      "wholeness-relational"
+    ],
+    "Complexity": 3,
+    "Estimated Time": "60–75 min",
+    "Fields": [
+      "emergent-timing",
+      "coherence-practices",
+      "decision-clarity",
+      "walking-with-responsibility",
+      "trust-as-currency",
+      "misalignment-awareness"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Decision alignment",
+      "Pacing decisions with system rhythms"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [
+      "Cost Lines to Bless or Cut",
+      "Unit Economics as a Living Compass"
+    ],
+    "Stones": [
+      "rhythm-alignment",
+      "renewal-as-output",
+      "core-signal-naming",
+      "plain-speech",
+      "reflection-built-in",
+      "system-as-companion"
+    ],
+    "Tags": [
+      "timing",
+      "alignment",
+      "decision-making"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "directive"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You pace decisions to match readiness and capacity → The future sustains steady, confident progress.",
+    "Expected": "You time some decisions well but rush or delay others → The future experiences mixed momentum and occasional rework.",
+    "Poor": "You decide reactively without regard for timing → The future inherits chaos and inconsistent follow-through.",
+    "Transcendent": "Rhythmic decision-making becomes second nature → The future moves with clarity and coherence, adapting timing fluidly."
+  },
+  "Overall Purpose": "To align decision-making pace and process with the natural rhythms of the system, ensuring clarity, coherence, and sustainability.",
+  "Protocol ID": "decisionmakinginrhythm",
+  "Short Title": "Decision Rhythm",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What signals show the system is ready for this decision?",
+        "Where might waiting improve the outcome?",
+        "What risks come from moving too soon or too late?"
+      ],
+      "Name": "Sensing the Right Timing",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust in decision quality and follow-through grows.",
+          "Edge condition": "Balancing timely action with readiness checks.",
+          "Example moves": "Scheduling big decisions for natural pause points.",
+          "Future effect": "The future sustains steady, confident progress.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently align decisions with readiness and rhythm.",
+          "Signals": "Smooth uptake and execution after decisions."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed trust in decision-making process.",
+          "Edge condition": "Relying on gut feel without cross-checking readiness.",
+          "Example moves": "Delaying a decision until after a project ends but rushing another midstream.",
+          "Future effect": "The future experiences mixed momentum and occasional rework.",
+          "Immediate cost": "Some decisions stick, others unravel.",
+          "Present pattern": "You sometimes consider timing but inconsistently.",
+          "Signals": "Inconsistent follow-through after decisions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Frustration and wasted effort accumulate.",
+          "Edge condition": "Confusing speed with effectiveness.",
+          "Example moves": "Announcing a major change during peak workload.",
+          "Future effect": "The future inherits chaos and inconsistent follow-through.",
+          "Immediate cost": "Decisions land poorly or require rework.",
+          "Present pattern": "You decide solely based on urgency.",
+          "Signals": "Frequent backtracking or course corrections."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Momentum and trust stay high through changing conditions.",
+          "Edge condition": "Avoiding overdeliberation that slows necessary action.",
+          "Example moves": "Embedding readiness scans before key decision points.",
+          "Future effect": "The future moves with clarity and coherence, adapting timing fluidly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Right-timing awareness is part of the culture.",
+          "Signals": "Collective sense of when to move on choices."
+        }
+      },
+      "Purpose of This Theme": "To determine when a decision is most likely to land well and hold.",
+      "Why This Matters": "Right timing depends on system readiness, available information, and energy levels."
+    },
+    {
+      "Guiding Questions": [
+        "What size is this decision in impact and scope?",
+        "What process matches that size?",
+        "Where have we mismatched scale and process recently?"
+      ],
+      "Name": "Matching Decision Scale to Process",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Decisions are both efficient and thorough.",
+          "Edge condition": "Avoiding over-optimization that erodes flexibility.",
+          "Example moves": "Creating decision tiers with matching processes.",
+          "Future effect": "The future sustains pace without sacrificing quality.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You deliberately match process to decision scale.",
+          "Signals": "Smooth handling of both small and large decisions."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy leaks or risks remain unmitigated.",
+          "Edge condition": "Guessing at process needs without clear criteria.",
+          "Example moves": "Delegating some small choices but reviewing others unnecessarily.",
+          "Future effect": "The future balances some decisions well but leaves others exposed.",
+          "Immediate cost": "Some efficiency, but mismatches still occur.",
+          "Present pattern": "You sometimes scale process to decision size.",
+          "Signals": "Occasional regret over skipped due diligence."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decision fatigue and uneven quality.",
+          "Edge condition": "Mistaking uniformity for fairness.",
+          "Example moves": "Holding full review meetings for minor purchases.",
+          "Future effect": "The future bogs down in inefficiency and risk.",
+          "Immediate cost": "Small choices drag on; big ones feel rushed.",
+          "Present pattern": "You use the same process for all decisions.",
+          "Signals": "Equal effort on trivial and major matters."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System feels light yet thorough across all decision types.",
+          "Edge condition": "Maintaining flexibility while standardizing.",
+          "Example moves": "Embedding scale-matching into decision protocols.",
+          "Future effect": "The future moves efficiently and wisely without conscious effort.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Scaling decision process is habitual and shared.",
+          "Signals": "No complaints about over- or under-processing decisions."
+        }
+      },
+      "Purpose of This Theme": "To right-size the process for the magnitude and impact of the choice.",
+      "Why This Matters": "Overcomplicating small decisions wastes energy; under-preparing big ones creates risk."
+    },
+    {
+      "Guiding Questions": [
+        "How much time would allow the best decision here?",
+        "Who needs to reflect before deciding?",
+        "What’s the risk of deciding now versus later?"
+      ],
+      "Name": "Creating Space for Reflection",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "More robust and durable decisions.",
+          "Edge condition": "Balancing space with timely action.",
+          "Example moves": "Using a 'proposal → reflection → decision' cycle.",
+          "Future effect": "The future sustains confident, well-informed choices.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You build reflection time into decision process.",
+          "Signals": "Few regrets about decision timing."
+        },
+        "Expected": {
+          "30-90 day system effect": "Reduced but still present oversights.",
+          "Edge condition": "Allowing reflection only for contentious decisions.",
+          "Example moves": "Sleeping on major decisions.",
+          "Future effect": "The future benefits partially from better-informed choices.",
+          "Immediate cost": "Better context for some decisions.",
+          "Present pattern": "You sometimes pause for reflection.",
+          "Signals": "Occasional improved outcomes from waiting."
+        },
+        "Poor": {
+          "30-90 day system effect": "Higher rate of decision reversal.",
+          "Edge condition": "Mistaking reflection for indecision.",
+          "Example moves": "Finalizing choices in the same meeting where they’re introduced.",
+          "Future effect": "The future repeats avoidable oversights.",
+          "Immediate cost": "Overlooked information and perspectives.",
+          "Present pattern": "You decide without reflection time.",
+          "Signals": "Frequent 'we didn’t think of that' moments."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System adapts quickly without sacrificing depth.",
+          "Edge condition": "Avoiding over-analysis that delays progress.",
+          "Example moves": "Embedding pause points in all decision workflows.",
+          "Future effect": "The future moves with both speed and wisdom.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Reflection time is an unspoken norm.",
+          "Signals": "Collective comfort with pausing before action."
+        }
+      },
+      "Purpose of This Theme": "To allow time for perspectives and implications to surface before deciding.",
+      "Why This Matters": "Rushed decisions miss context; space allows for better integration of factors."
+    },
+    {
+      "Guiding Questions": [
+        "What data is most relevant here?",
+        "What is my gut saying?",
+        "How do I reconcile them into a stronger choice?"
+      ],
+      "Name": "Balancing Data and Intuition",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Consistent quality and adaptability in outcomes.",
+          "Edge condition": "Keeping space for intuition without undermining evidence.",
+          "Example moves": "Creating decision templates that include both inputs.",
+          "Future effect": "The future sustains quality choices across varied contexts.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You deliberately weigh data and intuition together.",
+          "Signals": "Few decisions feel lopsided."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed accuracy and adaptability.",
+          "Edge condition": "Letting one dominate in high-pressure moments.",
+          "Example moves": "Looking at data after deciding intuitively.",
+          "Future effect": "The future benefits from balance inconsistently.",
+          "Immediate cost": "Better balance in some decisions, skew in others.",
+          "Present pattern": "You sometimes combine data and intuition.",
+          "Signals": "Occasional regret for ignoring one source."
+        },
+        "Poor": {
+          "30-90 day system effect": "Lower adaptability and decision quality.",
+          "Edge condition": "Mistaking preference for balanced judgment.",
+          "Example moves": "Dismissing data trends in favor of 'feeling right'.",
+          "Future effect": "The future is shaped by partial information.",
+          "Immediate cost": "Blind spots from one-sided decision-making.",
+          "Present pattern": "You default entirely to intuition or data.",
+          "Signals": "Ignoring disconfirming evidence or instincts."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Resilient decisions through shifts and surprises.",
+          "Edge condition": "Avoiding token use of one to justify the other.",
+          "Example moves": "Training teams to articulate both data and instinct before deciding.",
+          "Future effect": "The future moves wisely through uncertainty with full-system intelligence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Balanced integration is cultural and constant.",
+          "Signals": "Shared comfort with both data and gut in discussions."
+        }
+      },
+      "Purpose of This Theme": "To integrate evidence and gut sense in decision-making.",
+      "Why This Matters": "Over-reliance on one or the other can skew choices; balance creates resilience."
+    },
+    {
+      "Guiding Questions": [
+        "Who needs to know this decision?",
+        "How will we communicate it clearly and quickly?",
+        "What follow-up is needed to ensure it holds?"
+      ],
+      "Name": "Closing the Loop",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Smooth, efficient execution.",
+          "Edge condition": "Balancing detail with clarity.",
+          "Example moves": "Documenting and sharing all major decisions with context.",
+          "Future effect": "The future sustains alignment and momentum.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently communicate decisions and rationale.",
+          "Signals": "Few follow-up clarifications needed."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent execution and rework.",
+          "Edge condition": "Skipping communication under time pressure.",
+          "Example moves": "Announcing decisions in one channel only.",
+          "Future effect": "The future executes unevenly.",
+          "Immediate cost": "Partial alignment on follow-through.",
+          "Present pattern": "You communicate some decisions clearly, others not.",
+          "Signals": "Varied understanding of decisions across the team."
+        },
+        "Poor": {
+          "30-90 day system effect": "Confusion and wasted work persist.",
+          "Edge condition": "Mistaking internal clarity for shared clarity.",
+          "Example moves": "Finalizing plans without informing all stakeholders.",
+          "Future effect": "The future suffers avoidable misalignment.",
+          "Immediate cost": "People act on outdated assumptions.",
+          "Present pattern": "You make decisions but fail to communicate them.",
+          "Signals": "Repeated questions on settled topics."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Decisions hold without re-litigation.",
+          "Edge condition": "Avoiding over-communication that slows action.",
+          "Example moves": "Integrating loop-closing into decision protocols.",
+          "Future effect": "The future moves forward with cohesion and clarity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Loop-closing is embedded in decision culture.",
+          "Signals": "Consistent, confident action after decisions."
+        }
+      },
+      "Purpose of This Theme": "To ensure decisions are communicated, understood, and acted on.",
+      "Why This Matters": "Unclosed decisions create confusion, duplication, and stalled momentum."
+    }
+  ],
+  "Title": "Decision Making in Rhythm",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when the system is facing multiple simultaneous choices, during periods of change, or when past decisions have led to overload or missed timing.",
+  "Why This Matters": "Decisions made out of sync—too fast or too slow—create friction, rework, and missed opportunities. Aligning decisions to rhythm builds trust and momentum."
+}

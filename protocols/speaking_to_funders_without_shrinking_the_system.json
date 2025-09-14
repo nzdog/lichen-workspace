@@ -1,0 +1,321 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Capture one key element you will communicate fully to funders.",
+    "Identify one story that preserves the system's integrity.",
+    "Choose one way to frame complexity as a strength in your next pitch."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "wholeness-contortion",
+      "regenerative-integrity"
+    ],
+    "Complexity": 4,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "systemic-safeguards",
+      "values-before-velocity",
+      "whole-system-sensing",
+      "integration-practices",
+      "trust-as-currency",
+      "misalignment-awareness"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Funding pitches",
+      "Philanthropic messaging",
+      "Investment communication"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [
+      "Cost Lines to Bless or Cut",
+      "Unit Economics as a Living Compass"
+    ],
+    "Stones": [
+      "aligned-scaling",
+      "coherence-as-growth",
+      "honoring-complexity",
+      "integration-not-fragmentation",
+      "plain-speech",
+      "simple-not-shallow"
+    ],
+    "Tags": [
+      "system",
+      "integrity",
+      "communication",
+      "funding",
+      "complexity"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "directive",
+      "reassuring"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "The system is communicated in its full truth and value while remaining accessible → The future receives aligned funding without distortion.",
+    "Expected": "Some elements of wholeness are preserved, but complexity is softened for accessibility → The future risks gradual narrowing of vision.",
+    "Poor": "Messaging is oversimplified or altered to match perceived funder preferences → The future sees mission drift and reduced integrity.",
+    "Transcendent": "Speaking in wholeness is cultural instinct—funders engage with and protect the system’s integrity → The future compounds resources and trust."
+  },
+  "Overall Purpose": "To communicate the vision, value, and integrity of the system to funders in a way that maintains its full scope, complexity, and long-term intent.",
+  "Protocol ID": "speakingtofunderswithoutshrinkingthesystem",
+  "Short Title": "Funders Without Shrinkage",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Are we showing the whole system?",
+        "What would be lost if we removed this element?",
+        "How can we make complexity clear without oversimplifying?"
+      ],
+      "Name": "Holding the Full Picture",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Aligned funding agreements.",
+          "Edge condition": "You present complexity accessibly.",
+          "Example moves": "Visual models showing full scope.",
+          "Future effect": "Funding supports intended outcomes.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Full scope communicated clearly.",
+          "Signals": "Funder uses system language accurately."
+        },
+        "Expected": {
+          "30-90 day system effect": "Occasional funding friction.",
+          "Edge condition": "You simplify without follow-up detail.",
+          "Example moves": "Condensing key elements beyond recognition.",
+          "Future effect": "Funder expectations drift.",
+          "Immediate cost": "Partial understanding.",
+          "Present pattern": "Most of the system is presented, but some depth lost.",
+          "Signals": "Need for constant clarification."
+        },
+        "Poor": {
+          "30-90 day system effect": "Funding priorities distort implementation.",
+          "Edge condition": "You fear complexity will alienate funders.",
+          "Example moves": "Removing core elements from proposals.",
+          "Future effect": "Misaligned support.",
+          "Immediate cost": "System is misunderstood.",
+          "Present pattern": "Essential complexity is removed to please funders.",
+          "Signals": "Funder surprised by actual operations."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Funding deepens coherence.",
+          "Edge condition": "You refuse to omit integral parts.",
+          "Example moves": "Embedded wholeness brief in all pitches.",
+          "Future effect": "System grows without distortion.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Full-picture communication is cultural instinct.",
+          "Signals": "Funders advocate for full scope."
+        }
+      },
+      "Purpose of This Theme": "To ensure that all communications reflect the complete scope and intent of the system.",
+      "Why This Matters": "Leaving out essential elements for the sake of simplicity risks misrepresentation and misaligned funding."
+    },
+    {
+      "Guiding Questions": [
+        "How is our complexity part of our value?",
+        "What examples show complexity producing results?",
+        "How can we make this complexity relatable?"
+      ],
+      "Name": "Framing Complexity as a Strength",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Funding supports multi-dimensional impact.",
+          "Edge condition": "You use stories to make complexity relatable.",
+          "Example moves": "Explaining how layers reinforce outcomes.",
+          "Future effect": "Funding deepens system capacity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Complexity is embraced and explained as a strength.",
+          "Signals": "Funder repeats complexity as a selling point."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed commitment levels.",
+          "Edge condition": "You apologize for complexity.",
+          "Example moves": "Glossing over systemic connections.",
+          "Future effect": "Funder trust remains partial.",
+          "Immediate cost": "Funder uncertain about scalability.",
+          "Present pattern": "Some complexity is acknowledged, but framed defensively.",
+          "Signals": "Questions about why it’s ‘so complicated’."
+        },
+        "Poor": {
+          "30-90 day system effect": "Funding favors simpler but less effective approaches.",
+          "Edge condition": "You assume funders can’t handle complexity.",
+          "Example moves": "Only showing one program in funding deck.",
+          "Future effect": "System underfunded and misunderstood.",
+          "Immediate cost": "Unique value overlooked.",
+          "Present pattern": "Complexity is hidden or downplayed.",
+          "Signals": "Funder unaware of interdependencies."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Sustained multi-year funding.",
+          "Edge condition": "You never reduce complexity for approval.",
+          "Example moves": "Culture of complexity-as-value storytelling.",
+          "Future effect": "System remains whole and well-supported.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Complexity framing is cultural instinct.",
+          "Signals": "Funders protect the system’s complexity."
+        }
+      },
+      "Purpose of This Theme": "To position the system’s complexity as a core advantage rather than a liability.",
+      "Why This Matters": "Funders often seek simple stories, but real transformation requires layered, interconnected systems."
+    },
+    {
+      "Guiding Questions": [
+        "Have we set realistic expectations for pace and scope?",
+        "Do funders understand our metrics and rhythms?",
+        "What would change if they didn’t?"
+      ],
+      "Name": "Setting Funder Expectations Early",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Fewer delivery conflicts.",
+          "Edge condition": "You integrate expectations into agreements.",
+          "Example moves": "Pre-funding expectation workshops.",
+          "Future effect": "Aligned partnership from start.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Clear expectations set on pace, scope, and outcomes.",
+          "Signals": "Funder timeline matches system rhythm."
+        },
+        "Expected": {
+          "30-90 day system effect": "Occasional pace friction.",
+          "Edge condition": "You skip hard conversations early.",
+          "Example moves": "Setting metrics without context.",
+          "Future effect": "Alignment requires repeated resets.",
+          "Immediate cost": "Partial alignment.",
+          "Present pattern": "Some expectations set, but not comprehensive.",
+          "Signals": "Re-negotiations after delays."
+        },
+        "Poor": {
+          "30-90 day system effect": "Mission drift under delivery pressure.",
+          "Edge condition": "You fear losing funding by being upfront.",
+          "Example moves": "Overpromising on speed.",
+          "Future effect": "System pace distorted.",
+          "Immediate cost": "Pressure to conform to funder timelines.",
+          "Present pattern": "Expectations left vague until after commitment.",
+          "Signals": "Funder asks for faster results."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "No pressure to shrink or distort.",
+          "Edge condition": "You decline funders who resist aligned pacing.",
+          "Example moves": "Culture of truth-first in funding talks.",
+          "Future effect": "Partnerships sustain integrity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Expectation-setting is cultural instinct.",
+          "Signals": "Funder reinforces realistic pace with others."
+        }
+      },
+      "Purpose of This Theme": "To ensure funders understand the system’s pace, metrics, and rhythms before committing.",
+      "Why This Matters": "Misaligned expectations cause pressure to shrink or change the system post-funding."
+    },
+    {
+      "Guiding Questions": [
+        "Are our stories both inspiring and true?",
+        "Do they preserve the system’s complexity?",
+        "How do we validate the stories we tell?"
+      ],
+      "Name": "Using Stories That Preserve Integrity",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Funding supports intended outcomes.",
+          "Edge condition": "You validate story accuracy internally.",
+          "Example moves": "First-person accounts with context.",
+          "Future effect": "Trust and impact grow.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Stories are accurate and compelling.",
+          "Signals": "Funder retells story without distortion."
+        },
+        "Expected": {
+          "30-90 day system effect": "Misaligned support.",
+          "Edge condition": "You trade nuance for emotion.",
+          "Example moves": "Simplified but skewed narratives.",
+          "Future effect": "Expectations mismatch.",
+          "Immediate cost": "Partial understanding.",
+          "Present pattern": "Some accuracy in stories, but details sacrificed for effect.",
+          "Signals": "Need for later correction."
+        },
+        "Poor": {
+          "30-90 day system effect": "Funding supports distorted priorities.",
+          "Edge condition": "You value impact over truth.",
+          "Example moves": "Cherry-picking examples to fit funder bias.",
+          "Future effect": "Trust erodes.",
+          "Immediate cost": "Funder misinformed.",
+          "Present pattern": "Stories chosen purely for appeal, not accuracy.",
+          "Signals": "Surprise at actual program design."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Funders amplify system truth.",
+          "Edge condition": "You never distort for appeal.",
+          "Example moves": "Culture of story-truth alignment.",
+          "Future effect": "Funding reinforces integrity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Integrity storytelling is cultural instinct.",
+          "Signals": "Stories circulate accurately across networks."
+        }
+      },
+      "Purpose of This Theme": "To choose narratives that connect with funders emotionally while maintaining the system’s truth.",
+      "Why This Matters": "Stories can inspire without distorting reality; the wrong story can oversimplify and weaken understanding."
+    },
+    {
+      "Guiding Questions": [
+        "Do we believe in the system’s wholeness?",
+        "How does that show in our language?",
+        "Where are we tempted to compromise for approval?"
+      ],
+      "Name": "Maintaining Confidence in Wholeness",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Commitments match vision.",
+          "Edge condition": "You speak with conviction and clarity.",
+          "Example moves": "Consistent core messaging.",
+          "Future effect": "Integrity reinforced through funding.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Grounded confidence in system integrity.",
+          "Signals": "Funder reflects confidence back."
+        },
+        "Expected": {
+          "30-90 day system effect": "Gradual narrowing of scope.",
+          "Edge condition": "You adjust based on reactions.",
+          "Example moves": "Softening claims in meetings.",
+          "Future effect": "Wholeness compromised.",
+          "Immediate cost": "Mixed messaging.",
+          "Present pattern": "Some confidence, but occasional concessions.",
+          "Signals": "Frequent second-guessing of approach."
+        },
+        "Poor": {
+          "30-90 day system effect": "System identity erodes.",
+          "Edge condition": "You seek validation over alignment.",
+          "Example moves": "Overjustifying the design.",
+          "Future effect": "Misaligned commitments.",
+          "Immediate cost": "Funder shapes the narrative.",
+          "Present pattern": "Communications shaped by insecurity.",
+          "Signals": "Defensive tone in presentations."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Funding amplifies rather than alters.",
+          "Edge condition": "You never diminish wholeness for appeal.",
+          "Example moves": "Culture of confidence in all external talks.",
+          "Future effect": "System expands while staying whole.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Confidence in wholeness is cultural instinct.",
+          "Signals": "Funders adopt system language as their own."
+        }
+      },
+      "Purpose of This Theme": "To communicate from a place of grounded confidence in the system’s value and design.",
+      "Why This Matters": "If you doubt the system’s wholeness, it’s easier to let funder preferences reshape it."
+    }
+  ],
+  "Title": "Speaking to Funders Without Shrinking the System",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When preparing funding pitches or proposals\nWhen refining messaging for philanthropic or investment audiences\nWhen training team members to represent the system to funders\nWhen re-engaging existing funders with updates",
+  "Why This Matters": "In efforts to appeal to funders, there is a risk of oversimplifying or altering the system’s essence. Protecting its wholeness in communication ensures that funding supports the actual vision rather than a diluted version."
+}

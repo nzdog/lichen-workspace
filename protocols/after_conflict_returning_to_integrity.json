@@ -1,0 +1,307 @@
+{
+  "Category": "Conflict Resolution",
+  "Completion Prompts": [
+    "Identify one conflict you can acknowledge and address this week.",
+    "Choose one relationship to rebuild trust through consistent actions.",
+    "Reflect on a recent conflict: What lessons can you integrate for future growth?"
+  ],
+  "Created At": "2023-11-01",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "integrity"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Conflict resolution",
+      "Trust rebuilding"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Building Trust in Teams",
+      "Navigating Difficult Conversations"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "integrity-is-the-growth-strategy",
+      "no-contortion-for-acceptance",
+      "presence-is-productivity",
+      "the-speed-of-trust"
+    ],
+    "Tags": [
+      "conflict",
+      "integrity",
+      "trust"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You engage with conflicts openly and thoroughly → The future sustains trust and stronger relationships.",
+    "Expected": "You address conflicts with some openness but lack full resolution → The future experiences partial healing but recurring issues.",
+    "Poor": "You ignore conflicts or address them superficially → The future inherits lingering distrust and unresolved tensions.",
+    "Transcendent": "Conflict resolution becomes a natural, integral process → The future thrives on trust and adaptive resilience."
+  },
+  "Overall Purpose": "To guide individuals and teams in restoring trust and integrity after conflicts, ensuring that relationships are repaired and strengthened.",
+  "Protocol ID": "afterconflictreturningtointegrity",
+  "Short Title": "Conflict Integrity",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What conflict needs acknowledgment?",
+        "How can we validate each party's experience?",
+        "What are the risks of not acknowledging this conflict?"
+      ],
+      "Name": "Acknowledging the Conflict",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Clear path towards resolution and understanding.",
+          "Edge condition": "Balancing acknowledgment with action.",
+          "Example moves": "Facilitating a meeting to discuss the conflict openly.",
+          "Future effect": "The future sustains trust and stronger relationships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You openly acknowledge and explore the conflict.",
+          "Signals": "Open dialogues, willingness to listen."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed progress in resolving issues.",
+          "Edge condition": "Acknowledging without action.",
+          "Example moves": "Bringing up the conflict but not exploring it fully.",
+          "Future effect": "The future experiences partial healing but recurring issues.",
+          "Immediate cost": "Partial recognition but incomplete understanding.",
+          "Present pattern": "You acknowledge conflict but with hesitation.",
+          "Signals": "Occasional discussions about the conflict."
+        },
+        "Poor": {
+          "30-90 day system effect": "Increased division and mistrust.",
+          "Edge condition": "Mistaking silence for resolution.",
+          "Example moves": "Ignoring signs of disagreement.",
+          "Future effect": "The future inherits lingering distrust and unresolved tensions.",
+          "Immediate cost": "Tensions simmer and may escalate.",
+          "Present pattern": "You avoid or deny the conflict.",
+          "Signals": "Silent treatment, passive-aggressive behavior."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Conflicts are seen as opportunities for growth.",
+          "Edge condition": "Avoiding over-analysis that stalls resolution.",
+          "Example moves": "Embedding conflict acknowledgment in team norms.",
+          "Future effect": "The future thrives on trust and adaptive resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Acknowledgment is a natural part of the culture.",
+          "Signals": "Proactive engagement in conflict discussions."
+        }
+      },
+      "Purpose of This Theme": "To openly recognize and name the conflict without assigning blame.",
+      "Why This Matters": "Acknowledgment is the first step to resolution; it validates all parties' experiences."
+    },
+    {
+      "Guiding Questions": [
+        "What environment fosters honest dialogue?",
+        "Who needs to feel safe to speak?",
+        "How can we ensure all voices are heard?"
+      ],
+      "Name": "Creating Safe Spaces for Dialogue",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Enhanced trust and effective conflict resolution.",
+          "Edge condition": "Balancing openness with focus.",
+          "Example moves": "Regularly scheduling safe space discussions.",
+          "Future effect": "The future sustains trust and stronger relationships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently create and maintain safe spaces for dialogue.",
+          "Signals": "Active participation, diverse perspectives shared."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent progress in conflict resolution.",
+          "Edge condition": "Creating safety only for certain individuals.",
+          "Example moves": "Occasionally facilitating open forums.",
+          "Future effect": "The future experiences partial healing but recurring issues.",
+          "Immediate cost": "Partial openness, but some voices remain unheard.",
+          "Present pattern": "You sometimes create safe spaces for dialogue.",
+          "Signals": "Some participation, but hesitance remains."
+        },
+        "Poor": {
+          "30-90 day system effect": "Resentment and misunderstandings grow.",
+          "Edge condition": "Mistaking silence for agreement.",
+          "Example moves": "Holding discussions in intimidating settings.",
+          "Future effect": "The future inherits unresolved tensions and disengagement.",
+          "Immediate cost": "Voices and perspectives are stifled.",
+          "Present pattern": "You create environments where people feel unsafe to speak.",
+          "Signals": "Fear of speaking up, lack of engagement."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Dialogue flows naturally, fostering continuous growth.",
+          "Edge condition": "Avoiding over-facilitation that stifles spontaneity.",
+          "Example moves": "Integrating safe space practices into daily interactions.",
+          "Future effect": "The future thrives on trust and adaptive resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Safe spaces are embedded in the culture.",
+          "Signals": "Universal comfort in sharing and listening."
+        }
+      },
+      "Purpose of This Theme": "To foster environments where open and honest communication can occur.",
+      "Why This Matters": "Safe spaces encourage vulnerability and honesty, essential for genuine resolution."
+    },
+    {
+      "Guiding Questions": [
+        "What actions will rebuild trust?",
+        "How can we demonstrate commitment?",
+        "What are the consequences of not following through?"
+      ],
+      "Name": "Rebuilding Trust Through Action",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust and integrity are restored.",
+          "Edge condition": "Balancing commitment with capacity.",
+          "Example moves": "Regularly reviewing and fulfilling commitments.",
+          "Future effect": "The future sustains trust and stronger relationships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently align actions with commitments.",
+          "Signals": "Reliability, strengthened relationships."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent relationship strength.",
+          "Edge condition": "Following through only when convenient.",
+          "Example moves": "Occasionally keeping promises.",
+          "Future effect": "The future experiences partial healing but recurring issues.",
+          "Immediate cost": "Partial trust restoration.",
+          "Present pattern": "You sometimes follow through on commitments.",
+          "Signals": "Mixed messages about reliability."
+        },
+        "Poor": {
+          "30-90 day system effect": "Relationships become strained and fragile.",
+          "Edge condition": "Mistaking intentions for actions.",
+          "Example moves": "Promising change without implementing it.",
+          "Future effect": "The future suffers from deepening mistrust.",
+          "Immediate cost": "Trust erodes further.",
+          "Present pattern": "You make promises but fail to follow through.",
+          "Signals": "Broken promises, skepticism."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Relationships flourish with deep trust.",
+          "Edge condition": "Avoiding complacency in trust-building.",
+          "Example moves": "Embedding accountability in team practices.",
+          "Future effect": "The future thrives on trust and adaptive resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Trust-building actions are a cultural norm.",
+          "Signals": "Universal confidence in follow-through."
+        }
+      },
+      "Purpose of This Theme": "To restore trust by aligning words with actions and demonstrating commitment.",
+      "Why This Matters": "Trust is rebuilt through consistent, reliable actions that reinforce integrity."
+    },
+    {
+      "Guiding Questions": [
+        "What have we learned from this conflict?",
+        "How can we apply these insights?",
+        "What can prevent similar conflicts in the future?"
+      ],
+      "Name": "Integrating Lessons Learned",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Continual growth and improved conflict management.",
+          "Edge condition": "Balancing reflection with action.",
+          "Example moves": "Regularly reviewing conflict outcomes.",
+          "Future effect": "The future sustains confident, well-informed choices.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently integrate lessons from conflicts.",
+          "Signals": "Fewer recurring issues, proactive adjustments."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial improvement in handling conflicts.",
+          "Edge condition": "Reflecting only on significant conflicts.",
+          "Example moves": "Discussing lessons in some meetings.",
+          "Future effect": "The future benefits partially from better-informed choices.",
+          "Immediate cost": "Some insights gained, but not fully applied.",
+          "Present pattern": "You sometimes reflect on conflicts.",
+          "Signals": "Occasional application of lessons."
+        },
+        "Poor": {
+          "30-90 day system effect": "Stagnation and recurring issues.",
+          "Edge condition": "Mistaking resolution for learning.",
+          "Example moves": "Moving on without reflection.",
+          "Future effect": "The future repeats avoidable oversights.",
+          "Immediate cost": "Mistakes are repeated.",
+          "Present pattern": "You overlook lessons from conflicts.",
+          "Signals": "Frequent similar conflicts."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System evolves with each conflict, becoming more resilient.",
+          "Edge condition": "Avoiding over-analysis that delays progress.",
+          "Example moves": "Embedding reflection in conflict resolution protocols.",
+          "Future effect": "The future moves with both speed and wisdom.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Learning from conflicts is ingrained in the culture.",
+          "Signals": "Collective commitment to learning and growth."
+        }
+      },
+      "Purpose of This Theme": "To reflect on conflicts and extract valuable insights for future growth.",
+      "Why This Matters": "Learning from conflicts prevents recurrence and fosters continuous improvement."
+    },
+    {
+      "Guiding Questions": [
+        "How can we celebrate this resolution?",
+        "What positive outcomes have emerged?",
+        "How can we reinforce these behaviors moving forward?"
+      ],
+      "Name": "Celebrating Reconciliation",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Stronger relationships and reinforced positive behaviors.",
+          "Edge condition": "Balancing celebration with humility.",
+          "Example moves": "Regularly recognizing and celebrating resolutions.",
+          "Future effect": "The future sustains trust and stronger relationships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently celebrate reconciliations.",
+          "Signals": "Frequent acknowledgment of progress."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent closure and acknowledgment.",
+          "Edge condition": "Celebrating only major resolutions.",
+          "Example moves": "Acknowledging resolutions in some meetings.",
+          "Future effect": "The future experiences partial reinforcement of positive change.",
+          "Immediate cost": "Partial reinforcement of positive outcomes.",
+          "Present pattern": "You sometimes celebrate resolutions.",
+          "Signals": "Occasional recognition of reconciliations."
+        },
+        "Poor": {
+          "30-90 day system effect": "Lack of closure and recognition.",
+          "Edge condition": "Mistaking resolution for celebration.",
+          "Example moves": "Moving on without acknowledging progress.",
+          "Future effect": "The future lacks reinforcement of positive change.",
+          "Immediate cost": "Missed opportunities to reinforce positive outcomes.",
+          "Present pattern": "You overlook the importance of celebrating resolutions.",
+          "Signals": "Resolutions feel incomplete."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Relationships thrive on continuous positive reinforcement.",
+          "Edge condition": "Avoiding complacency in celebrating achievements.",
+          "Example moves": "Embedding celebration in team practices.",
+          "Future effect": "The future thrives on trust and adaptive resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Celebration of reconciliation is a cultural norm.",
+          "Signals": "Universal appreciation for progress and growth."
+        }
+      },
+      "Purpose of This Theme": "To acknowledge and celebrate the resolution of conflicts and the strengthening of relationships.",
+      "Why This Matters": "Celebrating reconciliation reinforces positive behaviors and strengthens bonds."
+    }
+  ],
+  "Title": "Restoring Integrity After Conflict",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use after any interpersonal or team conflict, when trust has been compromised, or when unresolved issues impact collaboration.",
+  "Why This Matters": "Unresolved conflicts can erode trust, create division, and hinder progress. Addressing and resolving conflicts with integrity fosters a culture of openness and resilience."
+}

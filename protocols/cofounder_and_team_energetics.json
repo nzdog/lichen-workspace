@@ -1,0 +1,319 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one energy pattern you will observe more closely this week.",
+    "Choose one action to align your energy with your co-founders before the next team meeting.",
+    "Commit to one practice that will help balance energy across your team."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "regenerative-integrity",
+      "wholeness-relational"
+    ],
+    "Complexity": 3,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "resilience-rooting",
+      "coherence-practices",
+      "relational-repair",
+      "trust-as-currency",
+      "misalignment-awareness",
+      "exhaustion-patterns",
+      "survival-drain"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Team alignment",
+      "Conflict resolution",
+      "Energy management"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [
+      "Team Dynamics Calibration",
+      "Leadership Energy Sync"
+    ],
+    "Stones": [
+      "relational-depth",
+      "repair-in-motion",
+      "rhythm-alignment",
+      "renewal-as-output",
+      "core-signal-naming"
+    ],
+    "Tags": [
+      "leadership-alignment",
+      "team-dynamics",
+      "energy-management"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational",
+      "non-coercive"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Energetics are actively observed, discussed, and aligned → The future sustains trust, high performance, and morale.",
+    "Expected": "Some attention to energy dynamics but inconsistently → The future delivers partial improvements but recurring friction.",
+    "Poor": "Energetic misalignments go unnoticed or unaddressed → The future sees decreased trust, rising tension, and inconsistent performance.",
+    "Transcendent": "Energetic stewardship is part of the cultural DNA → The future thrives with deep trust, cohesion, and shared resilience."
+  },
+  "Overall Purpose": "To intentionally manage and align the interpersonal energy dynamics between co-founders and the wider team, ensuring resilience, trust, and sustainable collaboration.",
+  "Protocol ID": "cofounderandteamenergetics",
+  "Short Title": "Team Energetics",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What’s the current energy pattern in the team?",
+        "Where do we see alignment or tension?",
+        "What signals are emerging?"
+      ],
+      "Name": "Reading the Energy Landscape",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Team feels seen and supported.",
+          "Edge condition": "You act on observations quickly.",
+          "Example moves": "Regular energy check-ins in meetings.",
+          "Future effect": "Culture stays adaptive and healthy.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Energy levels and patterns are observed regularly.",
+          "Signals": "Open sharing about morale."
+        },
+        "Expected": {
+          "30-90 day system effect": "Recurring small conflicts.",
+          "Edge condition": "You check in only after visible issues.",
+          "Example moves": "Occasional morale surveys.",
+          "Future effect": "Alignment fluctuates.",
+          "Immediate cost": "Opportunities for course correction missed.",
+          "Present pattern": "Some awareness of energy dynamics but inconsistent attention.",
+          "Signals": "Mood shifts after meetings."
+        },
+        "Poor": {
+          "30-90 day system effect": "Conflicts surface unexpectedly.",
+          "Edge condition": "You assume silence means alignment.",
+          "Example moves": "Skipping team pulse checks.",
+          "Future effect": "Misalignments become entrenched.",
+          "Immediate cost": "Tensions simmer unnoticed.",
+          "Present pattern": "Energy patterns are ignored.",
+          "Signals": "Drop in enthusiasm, unspoken frustration."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Trust deepens.",
+          "Edge condition": "You refuse to normalize disengagement.",
+          "Example moves": "Shared responsibility for energy health.",
+          "Future effect": "Culture thrives through mutual stewardship.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Energy awareness is embedded in leadership practice.",
+          "Signals": "Team openly names energy changes."
+        }
+      },
+      "Purpose of This Theme": "To regularly observe and assess the energy dynamics between co-founders and team members.",
+      "Why This Matters": "Awareness is the first step to addressing misalignment and sustaining team health."
+    },
+    {
+      "Guiding Questions": [
+        "Are we in energetic sync before engaging the team?",
+        "Where do we need to align before going public?",
+        "What’s our process for pre-alignment?"
+      ],
+      "Name": "Aligning Co-Founder Energy First",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust and stability grow.",
+          "Edge condition": "You prioritize pre-alignment.",
+          "Example moves": "Private sync before key meetings.",
+          "Future effect": "Leadership alignment becomes a strength.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Co-founders align on energy and message before addressing the team.",
+          "Signals": "Consistent tone and direction."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed trust in leadership.",
+          "Edge condition": "You assume broad agreement is enough.",
+          "Example moves": "Aligning only on major decisions.",
+          "Future effect": "Energy alignment remains inconsistent.",
+          "Immediate cost": "Minor confusion.",
+          "Present pattern": "Some alignment but occasional mismatches.",
+          "Signals": "Different tones from each founder."
+        },
+        "Poor": {
+          "30-90 day system effect": "Trust and clarity decline.",
+          "Edge condition": "You address alignment only after public tension.",
+          "Example moves": "Debating strategy in front of the team.",
+          "Future effect": "Cultural stability erodes.",
+          "Immediate cost": "Mixed signals and uncertainty.",
+          "Present pattern": "Co-founders present misaligned energy to the team.",
+          "Signals": "Conflicting messages from leadership."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High trust and cohesion.",
+          "Edge condition": "You refuse to show misalignment publicly.",
+          "Example moves": "Daily or weekly co-founder alignment check-ins.",
+          "Future effect": "Leadership energy consistently anchors the team.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Energy alignment is a leadership ritual.",
+          "Signals": "Unified presence in all contexts."
+        }
+      },
+      "Purpose of This Theme": "To ensure the co-founders are in energetic sync before engaging with the team.",
+      "Why This Matters": "The team mirrors the energy and alignment of its leaders."
+    },
+    {
+      "Guiding Questions": [
+        "Where is energy overdrawn or underused?",
+        "How can we balance workload and recognition?",
+        "What patterns are emerging in energy use?"
+      ],
+      "Name": "Balancing Energy Across the Team",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Higher sustained performance.",
+          "Edge condition": "You track balance proactively.",
+          "Example moves": "Rotating responsibilities, shared recognition.",
+          "Future effect": "Team energy remains resilient.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Workload and recognition are actively balanced.",
+          "Signals": "No consistent overwork or underuse."
+        },
+        "Expected": {
+          "30-90 day system effect": "Frustration in certain roles.",
+          "Edge condition": "You react only when imbalance is obvious.",
+          "Example moves": "Occasional redistribution of tasks.",
+          "Future effect": "Energy distribution remains unstable.",
+          "Immediate cost": "Uneven engagement.",
+          "Present pattern": "Some balance efforts but gaps remain.",
+          "Signals": "Silent withdrawal by some members."
+        },
+        "Poor": {
+          "30-90 day system effect": "Morale and performance drop.",
+          "Edge condition": "You reward overwork without balance.",
+          "Example moves": "Assigning tasks to ‘go-to’ people repeatedly.",
+          "Future effect": "Team energy erodes.",
+          "Immediate cost": "Burnout and resentment.",
+          "Present pattern": "Workload and recognition skew heavily to certain people.",
+          "Signals": "Some team members always overloaded."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Burnout risk is low across the board.",
+          "Edge condition": "You refuse to overload or neglect any member.",
+          "Example moves": "Energy balance reviews in planning.",
+          "Future effect": "Team thrives in sustainable rhythms.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Energy balance is a cultural value.",
+          "Signals": "High, steady engagement from all."
+        }
+      },
+      "Purpose of This Theme": "To ensure workload, attention, and recognition are distributed in ways that sustain collective energy.",
+      "Why This Matters": "Uneven distribution creates burnout in some and disengagement in others."
+    },
+    {
+      "Guiding Questions": [
+        "Where is energy leaking right now?",
+        "How quickly are we addressing it?",
+        "What habits could prevent it?"
+      ],
+      "Name": "Addressing Energy Leaks Quickly",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Stronger momentum.",
+          "Edge condition": "You stay proactive on energy health.",
+          "Example moves": "Direct conversations on impact.",
+          "Future effect": "Team learns to protect its energy.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Energy drains are spotted and addressed quickly.",
+          "Signals": "Problems resolved before spreading."
+        },
+        "Expected": {
+          "30-90 day system effect": "Leaky patterns persist.",
+          "Edge condition": "You address only visible problems.",
+          "Example moves": "Occasional conflict resolution efforts.",
+          "Future effect": "Energy drains reappear.",
+          "Immediate cost": "Partial recovery of energy.",
+          "Present pattern": "Some drains addressed but inconsistently.",
+          "Signals": "Recurring conflict or disengagement."
+        },
+        "Poor": {
+          "30-90 day system effect": "Frustration builds.",
+          "Edge condition": "You normalize energy leaks.",
+          "Example moves": "Tolerating disruptive behavior.",
+          "Future effect": "Culture weakens.",
+          "Immediate cost": "Momentum slows.",
+          "Present pattern": "Energy drains are ignored.",
+          "Signals": "Ongoing issues without resolution."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Resilience stays high.",
+          "Edge condition": "You refuse to tolerate ongoing drains.",
+          "Example moves": "Collective accountability for energy stewardship.",
+          "Future effect": "Energy becomes a renewable resource.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Rapid energy repair is part of team culture.",
+          "Signals": "Team addresses leaks without prompting."
+        }
+      },
+      "Purpose of This Theme": "To identify and resolve situations that drain energy from the team.",
+      "Why This Matters": "Unaddressed drains reduce capacity, morale, and trust."
+    },
+    {
+      "Guiding Questions": [
+        "What restores our energy most effectively?",
+        "How can we build it into our rhythm?",
+        "What signals show renewal is needed?"
+      ],
+      "Name": "Building Energy Renewal Practices",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Burnout risk reduced.",
+          "Edge condition": "You prioritize recovery in planning.",
+          "Example moves": "Planned rest cycles, shared breaks.",
+          "Future effect": "Team maintains strong capacity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Regular renewal practices are in place.",
+          "Signals": "Consistent engagement and morale."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy fluctuates.",
+          "Edge condition": "You allow renewal to be optional.",
+          "Example moves": "Occasional team well-being days.",
+          "Future effect": "Energy remains unstable.",
+          "Immediate cost": "Partial recovery.",
+          "Present pattern": "Some renewal practices but not consistent.",
+          "Signals": "Team recharges only after big pushes."
+        },
+        "Poor": {
+          "30-90 day system effect": "Lower performance and morale.",
+          "Edge condition": "You assume rest happens outside work.",
+          "Example moves": "Skipping breaks and recovery time.",
+          "Future effect": "Burnout rates increase.",
+          "Immediate cost": "Gradual fatigue.",
+          "Present pattern": "No intentional energy renewal.",
+          "Signals": "Team feels drained most weeks."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Culture supports resilience long-term.",
+          "Edge condition": "You refuse to run at constant depletion.",
+          "Example moves": "Integrated renewal in all workflows.",
+          "Future effect": "Energy health becomes self-sustaining.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Energy renewal is a core cultural value.",
+          "Signals": "Recovery is normalized and celebrated."
+        }
+      },
+      "Purpose of This Theme": "To create rhythms and practices that restore energy at both individual and team levels.",
+      "Why This Matters": "Without renewal, energy naturally declines, leading to burnout."
+    }
+  ],
+  "Title": "Co-Founder and Team Energetics",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When sensing tension or energy imbalances between leaders and team\nDuring periods of rapid change or scaling\nWhen onboarding new key team members\nTo strengthen relational trust and collaborative flow",
+  "Why This Matters": "Energetic alignment shapes how decisions are made, how conflicts are navigated, and how momentum is sustained. Mismanaged energetics lead to hidden friction, burnout, and cultural erosion."
+}

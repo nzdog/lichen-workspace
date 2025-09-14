@@ -1,0 +1,314 @@
+{
+  "Category": "Founder Wellbeing & Wholeness",
+  "Completion Prompts": [
+    "Write down one way you re-integrated a split today.",
+    "Name one hidden part you welcomed back this week.",
+    "Describe one paradox you held without collapse."
+  ],
+  "Created At": "2025-08-19",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [],
+    "Complexity": 1,
+    "Estimated Time": "30 minutes",
+    "Fields": [
+      "wholeness",
+      "integrity",
+      "regenerative"
+    ],
+    "Modes": [
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Founder or team member feels fragmented or pressured to suppress parts of themselves."
+    ],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [
+      "presence-is-productivity",
+      "no-contortion-for-acceptance",
+      "nothing-forced-nothing-withheld"
+    ],
+    "Stones": [
+      "built-for-wholeness",
+      "presence-is-productivity",
+      "clarity-over-cleverness",
+      "stewardship-not-ownership"
+    ],
+    "Tags": [
+      "wholeness",
+      "wellbeing",
+      "presence",
+      "resilience",
+      "authenticity",
+      "integration"
+    ],
+    "Tone Markers": [
+      "clarity",
+      "coherence",
+      "steadiness",
+      "relational",
+      "integrity",
+      "brevity",
+      "field-aware",
+      "invitational",
+      "non-diagnostic",
+      "sacred/light-touch"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You create conditions where the team can hold complexity and contradiction without collapse.",
+    "Expected": "You name the fragmentation, invite the hidden parts back in, and act from greater coherence.",
+    "Poor": "You keep splitting roles or selves. Burnout rises as suppressed parts leak sideways.",
+    "Transcendent": "Wholeness becomes a cultural norm—your startup thrives by including humanity, not editing it out."
+  },
+  "Overall Purpose": "To realign with the principle that people and systems are not meant to fragment themselves to fit external demands. Wholeness is strength, not weakness.",
+  "Protocol ID": "builtforwholeness",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Where do I feel I’m fragmenting myself to fit?",
+        "Where do I see my team hiding or shrinking parts of themselves?",
+        "What split most drains my energy right now?"
+      ],
+      "Name": "Spotting the Splits",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Better role design and boundaries.",
+          "Edge condition": "Don’t weaponize observations.",
+          "Example moves": "Weekly reflection on split vs. whole behaviors.",
+          "Future effect": "Team culture normalizes naming fragmentation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You track patterns of fragmentation across contexts.",
+          "Signals": "Language of wholeness enters conversations."
+        },
+        "Expected": {
+          "30-90 day system effect": "Improved awareness and alignment.",
+          "Edge condition": "Avoid judgment; simply notice.",
+          "Example moves": "Share one observed split with a trusted ally.",
+          "Future effect": "You begin mending divides.",
+          "Immediate cost": "Some discomfort at what you see.",
+          "Present pattern": "You can identify where splits show up.",
+          "Signals": "Clearer naming of contradictions."
+        },
+        "Poor": {
+          "30-90 day system effect": "Resentment and misalignment.",
+          "Edge condition": "Don’t confuse adaptation with fragmentation.",
+          "Example moves": "Write down 3 ways you fragment daily.",
+          "Future effect": "Splits deepen over time.",
+          "Immediate cost": "Exhaustion and confusion.",
+          "Present pattern": "Unacknowledged splits sap energy.",
+          "Signals": "Contradictory behavior, sharp context shifts."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Structural changes emerge to support wholeness.",
+          "Edge condition": "Guard against totalizing language.",
+          "Example moves": "Redesign role expectations to remove split demands.",
+          "Future effect": "Wholeness fuels long-term resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Splits are recognized as signals pointing to system design flaws.",
+          "Signals": "New practices of integration spread."
+        }
+      },
+      "Purpose of This Theme": "To notice where you or the team are fragmenting.",
+      "Why This Matters": "Naming fragmentation is the first step to restoring wholeness."
+    },
+    {
+      "Guiding Questions": [
+        "What part of myself is not welcome at work?",
+        "What am I afraid would happen if I showed this part?",
+        "How might the team benefit if this part was integrated?"
+      ],
+      "Name": "Inviting the Hidden Parts",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "More robust decisions; fewer blind spots.",
+          "Edge condition": "Ensure space remains safe, not performative.",
+          "Example moves": "Include ‘what’s not being voiced?’ as a standard meeting question.",
+          "Future effect": "Team becomes more adaptive.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Hidden parts become actively integrated into decisions.",
+          "Signals": "Diverse perspectives show up early."
+        },
+        "Expected": {
+          "30-90 day system effect": "Greater presence and contribution.",
+          "Edge condition": "Respect pacing; not all parts emerge at once.",
+          "Example moves": "Create a check-in that asks ‘What part of you isn’t here yet?’",
+          "Future effect": "Wholeness strengthens.",
+          "Immediate cost": "Vulnerability risk; takes courage.",
+          "Present pattern": "Space is opened for hidden parts to appear.",
+          "Signals": "More honesty in dialogue."
+        },
+        "Poor": {
+          "30-90 day system effect": "Unseen needs explode in conflict.",
+          "Edge condition": "Don’t force disclosure.",
+          "Example moves": "Name one hidden part aloud, without judgment.",
+          "Future effect": "Suppressed issues keep returning.",
+          "Immediate cost": "Drained energy and morale.",
+          "Present pattern": "Parts remain hidden; silence reigns.",
+          "Signals": "Quiet withdrawal, overcompensation."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Culture prizes authenticity and inclusion.",
+          "Edge condition": "Avoid fetishizing vulnerability.",
+          "Example moves": "Celebrate contradictions as strengths.",
+          "Future effect": "Your startup attracts aligned talent and energy.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Integration of hidden parts transforms culture.",
+          "Signals": "Members show up fully, contradictions included."
+        }
+      },
+      "Purpose of This Theme": "To welcome the suppressed or neglected parts of self/team back into the work.",
+      "Why This Matters": "Energy locked in hiding drains more than it protects."
+    },
+    {
+      "Guiding Questions": [
+        "What small act can remind me of wholeness today?",
+        "How do I signal wholeness to others without words?",
+        "What rhythm makes wholeness sustainable?"
+      ],
+      "Name": "Practicing Wholeness Daily",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Culture adopts sustainable wholeness cues.",
+          "Edge condition": "Avoid overloading rituals with meaning.",
+          "Example moves": "Weekly team ‘what made me feel whole?’ round.",
+          "Future effect": "Collective coherence rises.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Practices expand to team rituals.",
+          "Signals": "Team-wide participation in simple rituals."
+        },
+        "Expected": {
+          "30-90 day system effect": "Momentum builds; less drain.",
+          "Edge condition": "Keep practices small and sustainable.",
+          "Example moves": "Morning reflection on where I feel whole.",
+          "Future effect": "Energy slowly rebalances.",
+          "Immediate cost": "Takes a few minutes’ effort.",
+          "Present pattern": "You adopt at least one daily practice.",
+          "Signals": "Consistent rhythm of practice."
+        },
+        "Poor": {
+          "30-90 day system effect": "Fragmentation resumes.",
+          "Edge condition": "Avoid perfectionism.",
+          "Example moves": "Try one micro-practice per day.",
+          "Future effect": "Wholeness fades quickly.",
+          "Immediate cost": "Change doesn’t stick.",
+          "Present pattern": "Wholeness is a one-off idea, not embodied.",
+          "Signals": "Practices dropped; no continuity."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Field coherence and resilience rise.",
+          "Edge condition": "Hold humility about impact.",
+          "Example moves": "Wholeness embodied so deeply it becomes contagious.",
+          "Future effect": "Startup operates from a regenerative field.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Daily wholeness shifts field dynamics.",
+          "Signals": "Sustained calm even under stress."
+        }
+      },
+      "Purpose of This Theme": "To create small daily practices that affirm wholeness.",
+      "Why This Matters": "Wholeness is a muscle, built in rhythm, not just reflection."
+    },
+    {
+      "Guiding Questions": [
+        "Where is contradiction showing up now?",
+        "How can structure hold both sides without collapse?",
+        "What paradox might fuel innovation here?"
+      ],
+      "Name": "Designing for Contradiction",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Resilience rises; failures decrease.",
+          "Edge condition": "Balance inclusion with focus.",
+          "Example moves": "Policy that supports both remote focus and on-site connection.",
+          "Future effect": "Contradiction becomes fuel, not a fracture.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Contradictions are intentionally built into design.",
+          "Signals": "Structures absorb paradox calmly."
+        },
+        "Expected": {
+          "30-90 day system effect": "Flexibility increases; fewer blowups.",
+          "Edge condition": "Avoid surface-level acknowledgment only.",
+          "Example moves": "Explicitly map paradoxes on a board.",
+          "Future effect": "System flexes better.",
+          "Immediate cost": "Takes time to name and document.",
+          "Present pattern": "Contradictions are acknowledged and mapped.",
+          "Signals": "Language of both/and emerges."
+        },
+        "Poor": {
+          "30-90 day system effect": "Polarization and brittle systems.",
+          "Edge condition": "Don’t glamorize paradox without structure.",
+          "Example moves": "Map tensions explicitly.",
+          "Future effect": "Rigidity grows.",
+          "Immediate cost": "Stress and rigidity.",
+          "Present pattern": "Contradictions are suppressed; either/or thinking rules.",
+          "Signals": "Binary arguments, rigidity in decisions."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Innovation pipeline accelerates.",
+          "Edge condition": "Avoid fetishizing complexity.",
+          "Example moves": "New products or models born from paradoxes.",
+          "Future effect": "Wholeness becomes a generator of new fields.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Contradictions seed new innovations.",
+          "Signals": "Emergent solutions from paradoxes."
+        }
+      },
+      "Purpose of This Theme": "To build structures that allow contradiction without collapse.",
+      "Why This Matters": "Startups thrive on paradox—speed and patience, vision and detail."
+    },
+    {
+      "Guiding Questions": [
+        "What pressures most test my wholeness?",
+        "Which practice holds best under stress?",
+        "How does my steadiness ripple into the team?"
+      ],
+      "Name": "Sustaining Wholeness Under Pressure",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Crises handled calmly; trust increases.",
+          "Edge condition": "Don’t repress emotions in the name of wholeness.",
+          "Example moves": "Brief check-in during crisis moments.",
+          "Future effect": "Stress resilience improves systematically.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Wholeness sustains even under heavy stress.",
+          "Signals": "Steadier tone in conflict."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial coherence remains.",
+          "Edge condition": "Don’t aim for perfection under fire.",
+          "Example moves": "One deep breath before answering.",
+          "Future effect": "Resilience builds gradually.",
+          "Immediate cost": "Still stressful, but not destructive.",
+          "Present pattern": "You maintain some practices under pressure.",
+          "Signals": "Reduced reactivity."
+        },
+        "Poor": {
+          "30-90 day system effect": "Burnout, fractured trust.",
+          "Edge condition": "Notice re-fragmentation as signal, not failure.",
+          "Example moves": "Pause before reacting in stress.",
+          "Future effect": "Wholeness collapses under stress.",
+          "Immediate cost": "Short-term relief; long-term cost.",
+          "Present pattern": "Under pressure, you fragment again.",
+          "Signals": "Regression, dropping practices."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Your presence shifts how pressure is held.",
+          "Edge condition": "Stay humble; avoid savior dynamics.",
+          "Example moves": "Model calm coherence publicly.",
+          "Future effect": "Your team learns stress can be metabolized into signal.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Wholeness becomes the stabilizing field itself.",
+          "Signals": "Others calm in your presence."
+        }
+      },
+      "Purpose of This Theme": "To protect wholeness when urgency or external pressure rises.",
+      "Why This Matters": "Stress is the real test of coherence."
+    }
+  ],
+  "Title": "Built for Wholeness",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When you feel fragmented, are pressured to shrink or compartmentalize, or sense that parts of yourself or your team are being excluded to fit an external mold.",
+  "Why This Matters": "In startups and high-pressure contexts, founders often split themselves—professional vs. personal, rational vs. emotional, visionary vs. executor. This protocol restores coherence so that energy is not wasted maintaining false divides."
+}

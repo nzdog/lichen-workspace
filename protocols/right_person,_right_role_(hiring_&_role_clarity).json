@@ -1,0 +1,313 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one role that needs clearer definition this month.",
+    "Choose one upcoming hire to align more closely with system values.",
+    "Reflect on a recent hire: Did you consider long-term impact effectively?"
+  ],
+  "Created At": "2023-10-10",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "alignment-resonance",
+      "growth-through-alignment"
+    ],
+    "Complexity": 2,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "role-definition",
+      "values-alignment",
+      "strategic-hiring",
+      "responsibility-clarity"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Hiring decisions",
+      "Role clarity and alignment"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [
+      "Values Alignment in Teams",
+      "Strategic Role Definition"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "integrity-is-the-growth-strategy",
+      "built-for-wholeness",
+      "the-system-walks-with-us"
+    ],
+    "Tags": [
+      "hiring",
+      "role clarity",
+      "alignment"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You align roles with both system needs and values → The future sustains clarity and adaptive growth.",
+    "Expected": "You define roles but miss alignment with system values → The future experiences partial coherence and occasional friction.",
+    "Poor": "You hire reactively without clear role definition → The future faces misalignment and inefficiency.",
+    "Transcendent": "Role clarity and alignment become integral to the culture → The future moves with seamless integration and shared purpose."
+  },
+  "Overall Purpose": "To ensure that hiring decisions align with the system's values, needs, and future direction, creating clarity and coherence in roles and responsibilities.",
+  "Protocol ID": "rightpersonrightrolehiringroleclarity",
+  "Short Title": "Hiring & Role Clarity",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What are the core responsibilities of this role?",
+        "How does this role align with system needs and values?",
+        "What flexibility is built into this role for future adaptation?"
+      ],
+      "Name": "Defining Role Clarity",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Smooth operation and accountability.",
+          "Edge condition": "Balancing clarity with flexibility.",
+          "Example moves": "Regularly reviewing and adapting role definitions.",
+          "Future effect": "The future sustains clarity and adaptive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Roles are clear and aligned with system needs.",
+          "Signals": "Clear understanding of roles across the system."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed effectiveness and occasional friction.",
+          "Edge condition": "Defining roles without future adaptability.",
+          "Example moves": "Creating roles based on current tasks only.",
+          "Future effect": "The future experiences partial coherence and occasional friction.",
+          "Immediate cost": "Partial clarity with gaps.",
+          "Present pattern": "Roles are defined but not fully aligned with needs.",
+          "Signals": "Some role confusion, sporadic overlap."
+        },
+        "Poor": {
+          "30-90 day system effect": "Frustration and misalignment grow.",
+          "Edge condition": "Mistaking activity for productivity.",
+          "Example moves": "Assigning tasks without clear role context.",
+          "Future effect": "The future inherits chaos and inconsistency.",
+          "Immediate cost": "Confusion and inefficiency.",
+          "Present pattern": "Roles are vague or undefined.",
+          "Signals": "Frequent role overlap, unclear responsibilities."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Roles evolve naturally with the system.",
+          "Edge condition": "Avoiding rigidity in role definitions.",
+          "Example moves": "Integrating role clarity into cultural practices.",
+          "Future effect": "The future moves with seamless integration and shared purpose.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Role clarity is embedded in the culture.",
+          "Signals": "Seamless role transitions, shared understanding."
+        }
+      },
+      "Purpose of This Theme": "To create precise and adaptable role definitions that serve the system's current and future needs.",
+      "Why This Matters": "Clear roles prevent overlap and confusion, enabling focused contributions and accountability."
+    },
+    {
+      "Guiding Questions": [
+        "How do our values manifest in this role?",
+        "What evidence shows alignment with our values?",
+        "How will this role reinforce or challenge our values?"
+      ],
+      "Name": "Aligning with Values",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Strong cultural integrity and trust.",
+          "Edge condition": "Maintaining flexibility in value interpretation.",
+          "Example moves": "Embedding values in hiring processes and evaluations.",
+          "Future effect": "The future sustains integrity and cohesive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Hiring aligns with core values consistently.",
+          "Signals": "Consistent value alignment in actions and decisions."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent cultural cohesion.",
+          "Edge condition": "Balancing skills and values inadequately.",
+          "Example moves": "Including values in hiring criteria but not in practice.",
+          "Future effect": "The future experiences partial cohesion and sporadic tension.",
+          "Immediate cost": "Some alignment with occasional conflicts.",
+          "Present pattern": "Values are considered but not prioritized.",
+          "Signals": "Periodic value misalignments."
+        },
+        "Poor": {
+          "30-90 day system effect": "Erosion of trust and coherence.",
+          "Edge condition": "Mistaking skills for alignment.",
+          "Example moves": "Hiring based solely on technical skills.",
+          "Future effect": "The future suffers from cultural fragmentation.",
+          "Immediate cost": "Cultural misalignment and tension.",
+          "Present pattern": "Hiring decisions ignore system values.",
+          "Signals": "Frequent value conflicts, misaligned priorities."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Values are lived and evolve with the system.",
+          "Edge condition": "Avoiding dogmatism in value application.",
+          "Example moves": "Integrating values into everyday practices and decisions.",
+          "Future effect": "The future thrives on shared values and purpose.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Values alignment is a natural part of hiring.",
+          "Signals": "Unspoken understanding and alignment on values."
+        }
+      },
+      "Purpose of This Theme": "To ensure that hiring decisions reflect and reinforce the system's core values.",
+      "Why This Matters": "Alignment with values ensures cohesion and integrity within the system."
+    },
+    {
+      "Guiding Questions": [
+        "What are the key responsibilities of this role?",
+        "How do these responsibilities align with system goals?",
+        "What flexibility is built into these responsibilities for future adaptation?"
+      ],
+      "Name": "Clarity of Responsibilities",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Smooth operation and accountability.",
+          "Edge condition": "Balancing clarity with flexibility.",
+          "Example moves": "Regularly reviewing and adapting responsibilities.",
+          "Future effect": "The future sustains clarity and adaptive growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Responsibilities are clear and actionable.",
+          "Signals": "Clear understanding of responsibilities across the system."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed effectiveness and occasional overlap.",
+          "Edge condition": "Defining responsibilities without future adaptability.",
+          "Example moves": "Creating task lists without clear outcomes.",
+          "Future effect": "The future experiences partial clarity and occasional friction.",
+          "Immediate cost": "Partial clarity with some gaps.",
+          "Present pattern": "Responsibilities are defined but not fully actionable.",
+          "Signals": "Some task confusion, sporadic accountability issues."
+        },
+        "Poor": {
+          "30-90 day system effect": "Increased frustration and misalignment.",
+          "Edge condition": "Mistaking busyness for productivity.",
+          "Example moves": "Assigning tasks without clear ownership.",
+          "Future effect": "The future inherits chaos and inefficiency.",
+          "Immediate cost": "Confusion and inefficiency.",
+          "Present pattern": "Responsibilities are vague or overlapping.",
+          "Signals": "Frequent task duplication, unclear accountability."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Responsibilities evolve naturally with the system.",
+          "Edge condition": "Avoiding rigidity in responsibility definitions.",
+          "Example moves": "Integrating responsibility clarity into cultural practices.",
+          "Future effect": "The future moves with seamless integration and shared purpose.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Responsibility clarity is embedded in the culture.",
+          "Signals": "Seamless task transitions, shared understanding."
+        }
+      },
+      "Purpose of This Theme": "To ensure that each role has clear, actionable responsibilities that contribute to the system's goals.",
+      "Why This Matters": "Clear responsibilities prevent overlap and ensure accountability."
+    },
+    {
+      "Guiding Questions": [
+        "What long-term impact will this role have on the system?",
+        "How does this role contribute to our strategic vision?",
+        "What future opportunities does this role create or support?"
+      ],
+      "Name": "Long-Term Field Impact",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Strong adaptability and growth potential.",
+          "Edge condition": "Maintaining flexibility in strategic planning.",
+          "Example moves": "Embedding long-term vision in hiring processes and evaluations.",
+          "Future effect": "The future sustains strategic growth and adaptability.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Hiring decisions align with long-term system evolution.",
+          "Signals": "Consistent strategic alignment in hiring."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial growth and adaptability.",
+          "Edge condition": "Balancing immediate and long-term needs inadequately.",
+          "Example moves": "Including long-term goals in hiring criteria but not in practice.",
+          "Future effect": "The future experiences partial growth and sporadic adaptability.",
+          "Immediate cost": "Some strategic alignment with gaps.",
+          "Present pattern": "Long-term impact is considered but not prioritized.",
+          "Signals": "Occasional strategic misalignments."
+        },
+        "Poor": {
+          "30-90 day system effect": "Limited growth and adaptability.",
+          "Edge condition": "Mistaking immediate needs for strategic priorities.",
+          "Example moves": "Hiring for current tasks without future vision.",
+          "Future effect": "The future is constrained by short-sighted decisions.",
+          "Immediate cost": "Short-term solutions with long-term gaps.",
+          "Present pattern": "Hiring decisions focus on immediate needs only.",
+          "Signals": "Frequent short-term hires, reactive adjustments."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Strategic vision is lived and evolves with the system.",
+          "Edge condition": "Avoiding rigidity in strategic planning.",
+          "Example moves": "Integrating long-term vision into everyday practices and decisions.",
+          "Future effect": "The future thrives on strategic growth and adaptability.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Long-term impact is a natural part of hiring.",
+          "Signals": "Unspoken understanding and alignment on long-term goals."
+        }
+      },
+      "Purpose of This Theme": "To consider the long-term effects of hiring decisions on the system's evolution and field impact.",
+      "Why This Matters": "Strategic hiring shapes the system's future and its contribution to the broader field."
+    },
+    {
+      "Guiding Questions": [
+        "How do this individual's strengths align with the role?",
+        "What evidence shows a good fit for this role?",
+        "How will this role support the individual's growth and contribution?"
+      ],
+      "Name": "Ensuring Role Fit",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "High morale and effectiveness.",
+          "Edge condition": "Maintaining flexibility in role assignments.",
+          "Example moves": "Embedding fit assessments in role assignments.",
+          "Future effect": "The future sustains high morale and effective contribution.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Role assignments align with individual strengths.",
+          "Signals": "Consistent role alignment and performance."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed morale and effectiveness.",
+          "Edge condition": "Balancing fit and availability inadequately.",
+          "Example moves": "Including fit in role assignments but not in practice.",
+          "Future effect": "The future experiences partial alignment and sporadic effectiveness.",
+          "Immediate cost": "Some alignment with gaps.",
+          "Present pattern": "Role fit is considered but not prioritized.",
+          "Signals": "Occasional role mismatches."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decreased morale and effectiveness.",
+          "Edge condition": "Mistaking availability for suitability.",
+          "Example moves": "Assigning roles based on availability rather than fit.",
+          "Future effect": "The future is hindered by persistent misalignment.",
+          "Immediate cost": "Misalignment and underperformance.",
+          "Present pattern": "Role assignments ignore individual strengths.",
+          "Signals": "Frequent role mismatches, high turnover."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Individuals thrive and contribute at their best.",
+          "Edge condition": "Avoiding rigidity in role assignments.",
+          "Example moves": "Integrating fit assessments into everyday practices and decisions.",
+          "Future effect": "The future thrives on aligned contributions and shared purpose.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Role fit is a natural part of the culture.",
+          "Signals": "Unspoken understanding and alignment on role fit."
+        }
+      },
+      "Purpose of This Theme": "To match individuals with roles that align with their strengths and the system's needs.",
+      "Why This Matters": "Role fit ensures that individuals can thrive and contribute effectively to the system."
+    }
+  ],
+  "Title": "Right Person, Right Role (Hiring & Role Clarity)",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When considering a new hire, During role redefinition or restructuring, When experiencing role-related confusion or overlap",
+  "Why This Matters": "Misaligned hiring leads to role confusion, wasted resources, and potential system disruption. Clarity and alignment in hiring foster a resilient and adaptive system."
+}

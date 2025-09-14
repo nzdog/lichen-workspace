@@ -1,0 +1,318 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one non-dilutive option to explore further.",
+    "Name one strategic milestone that justifies raising capital.",
+    "Capture one autonomy safeguard to prioritize in funding talks."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "regenerative-integrity"
+    ],
+    "Complexity": 3,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "systemic-safeguards",
+      "capital-field-dynamics",
+      "decision-clarity",
+      "walking-with-responsibility",
+      "resilience-rooting",
+      "presence-restoration"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Evaluating funding necessity",
+      "Exploring alternative growth strategies"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [
+      "Cost Lines to Bless or Cut",
+      "Unit Economics as a Living Compass"
+    ],
+    "Stones": [
+      "core-signal-naming",
+      "plain-speech",
+      "aligned-scaling",
+      "integrity-over-expedience",
+      "rhythm-alignment"
+    ],
+    "Tags": [
+      "growth-strategy",
+      "capital",
+      "investment",
+      "autonomy",
+      "funding"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational",
+      "non-coercive"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Decision is based on clear strategic, financial, and cultural analysis → The future benefits from capital only when it truly serves the build.",
+    "Expected": "Some analysis done, but emotional or external pressure drives the decision → The future gains some benefit, but with preventable trade-offs.",
+    "Poor": "Decision to raise is made reactively or from fear of missing out → The future risks misalignment and wasted dilution.",
+    "Transcendent": "Funding necessity is evaluated as cultural reflex—capital is used as a precise tool, never a default → The future compounds both autonomy and impact."
+  },
+  "Overall Purpose": "To determine whether raising external capital is truly necessary, or if alternative strategies can achieve current goals without taking on investor constraints.",
+  "Protocol ID": "doweneedtoraise",
+  "Short Title": "Funding Necessity Check",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What would this capital allow us to do that we cannot do otherwise?",
+        "Is that worth the trade-offs of raising?",
+        "Are there other ways to achieve the same outcome?"
+      ],
+      "Name": "Clarifying the Strategic Purpose of Capital",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "High-impact growth.",
+          "Edge condition": "You tie capital to specific milestones.",
+          "Example moves": "Raise only for high-ROI activities.",
+          "Future effect": "Capital accelerates the right things.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Clear, prioritized connection between funding and strategic outcomes.",
+          "Signals": "Everyone can state exactly why we’d raise."
+        },
+        "Expected": {
+          "30-90 day system effect": "Capital supports some, but not all, key priorities.",
+          "Edge condition": "You mix essential and non-essential uses.",
+          "Example moves": "Including wish list items in use-of-funds.",
+          "Future effect": "Moderate return on capital.",
+          "Immediate cost": "Partial clarity on capital use.",
+          "Present pattern": "Some strategic link, but not quantified or prioritized.",
+          "Signals": "Shifting explanations for the raise."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misaligned growth or waste.",
+          "Edge condition": "You raise because it seems like the next step.",
+          "Example moves": "‘We’ll figure out the use later.’",
+          "Future effect": "Diminished ROI.",
+          "Immediate cost": "Capital used without targeted impact.",
+          "Present pattern": "No clear link between funding and strategy.",
+          "Signals": "Vague reasoning for raising."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Capital compounds aligned growth.",
+          "Edge condition": "You reject raises without tight alignment.",
+          "Example moves": "Use-of-funds built into strategic narrative.",
+          "Future effect": "Funding always strengthens the core.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Strategic clarity on capital use is cultural instinct.",
+          "Signals": "No drift from original purpose."
+        }
+      },
+      "Purpose of This Theme": "To identify exactly what raising money would make possible that cannot be done otherwise.",
+      "Why This Matters": "If the purpose isn’t clear, capital risks being used inefficiently or without impact."
+    },
+    {
+      "Guiding Questions": [
+        "What non-dilutive options could meet our needs?",
+        "How would these compare in cost and impact to equity?",
+        "What mix of funding could balance growth and control?"
+      ],
+      "Name": "Exploring Non-Dilutive Alternatives",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Better control over growth path.",
+          "Edge condition": "You weigh trade-offs equally.",
+          "Example moves": "Testing revenue financing before equity.",
+          "Future effect": "Capital fit improves.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Viable non-dilutive options are explored alongside equity.",
+          "Signals": "Alternatives evaluated before raising."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial preservation of control.",
+          "Edge condition": "You overestimate the difficulty of non-dilutive options.",
+          "Example moves": "Skipping grant applications due to time cost.",
+          "Future effect": "Potential remains untapped.",
+          "Immediate cost": "Missed opportunities for better-fit funding.",
+          "Present pattern": "Some alternatives considered, but not pursued seriously.",
+          "Signals": "Alternatives raised but dismissed quickly."
+        },
+        "Poor": {
+          "30-90 day system effect": "Loss of ownership stake.",
+          "Edge condition": "You assume all capital must come from investors.",
+          "Example moves": "Defaulting to VC without research.",
+          "Future effect": "Ownership and control diminish unnecessarily.",
+          "Immediate cost": "Unnecessary dilution.",
+          "Present pattern": "Equity raising is considered the only option.",
+          "Signals": "No exploration of alternatives."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Autonomy preserved long-term.",
+          "Edge condition": "You treat ownership as a strategic asset.",
+          "Example moves": "Hybrid capital stack design.",
+          "Future effect": "Control and growth thrive together.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Non-dilutive exploration is cultural instinct.",
+          "Signals": "Equity raise never default choice."
+        }
+      },
+      "Purpose of This Theme": "To examine whether partnerships, revenue strategies, or other funding models could meet needs without selling equity.",
+      "Why This Matters": "Non-dilutive options can preserve control and ownership while still enabling growth."
+    },
+    {
+      "Guiding Questions": [
+        "What are the total costs—financial, cultural, and strategic—of this raise?",
+        "How do they compare to the benefits?",
+        "Can we achieve our goals with less cost?"
+      ],
+      "Name": "Understanding the True Cost of Capital",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Fewer surprises post-raise.",
+          "Edge condition": "You negotiate to protect autonomy.",
+          "Example moves": "Dilution modeling before term sheet.",
+          "Future effect": "Funding strengthens, not weakens, position.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Full picture of capital costs understood and weighed.",
+          "Signals": "Terms aligned with strategy."
+        },
+        "Expected": {
+          "30-90 day system effect": "Occasional friction with investors.",
+          "Edge condition": "You prioritize cheque size over terms.",
+          "Example moves": "Agreeing to governance shifts for funding.",
+          "Future effect": "Gradual erosion of autonomy.",
+          "Immediate cost": "Partial awareness of trade-offs.",
+          "Present pattern": "Some cost factors considered, but not comprehensively.",
+          "Signals": "Terms read but not negotiated."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misalignment with investors.",
+          "Edge condition": "You undervalue control.",
+          "Example moves": "Accepting high dilution for speed.",
+          "Future effect": "Loss of decision-making power.",
+          "Immediate cost": "Surprise at post-raise constraints.",
+          "Present pattern": "Cost of capital considered only in financial terms.",
+          "Signals": "No review of governance terms."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Capital enhances capacity without eroding control.",
+          "Edge condition": "You see cost beyond money.",
+          "Example moves": "Cultural stories of funding discipline.",
+          "Future effect": "Growth is always on our terms.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Cost–benefit analysis of capital is cultural instinct.",
+          "Signals": "No regret after raise."
+        }
+      },
+      "Purpose of This Theme": "To evaluate both the visible and hidden costs of taking on outside funding.",
+      "Why This Matters": "Capital comes with expectations, dilution, and potential constraints—underestimating the cost can damage autonomy and flexibility."
+    },
+    {
+      "Guiding Questions": [
+        "Is now the right season to raise?",
+        "Do we have readiness in place to use capital effectively?",
+        "How does this match our natural growth rhythm?"
+      ],
+      "Name": "Matching Funding to Pace and Season",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Scaling feels natural.",
+          "Edge condition": "You plan raise to match readiness milestones.",
+          "Example moves": "Raise post-pilot success.",
+          "Future effect": "Growth aligned with rhythm.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Raise timing matches readiness and growth needs.",
+          "Signals": "Capital flows into prepared systems."
+        },
+        "Expected": {
+          "30-90 day system effect": "Growth pace feels forced.",
+          "Edge condition": "You adapt to investor calendar.",
+          "Example moves": "Raise in off-season for core market.",
+          "Future effect": "Rhythm disrupted.",
+          "Immediate cost": "Uneven scaling.",
+          "Present pattern": "Some attention to timing, but reactive.",
+          "Signals": "Funding mismatched to operational season."
+        },
+        "Poor": {
+          "30-90 day system effect": "Capital sits idle or is burned too fast.",
+          "Edge condition": "You chase timing that works for investors.",
+          "Example moves": "Preemptive raise without plan.",
+          "Future effect": "Funding mismatches growth.",
+          "Immediate cost": "Misfit between funding and execution capacity.",
+          "Present pattern": "Raise timing based on investor availability, not readiness.",
+          "Signals": "Raising before product–market fit or too late in runway."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "No strain from mistimed capital.",
+          "Edge condition": "You refuse mistimed raises.",
+          "Example moves": "Embedded pacing check in funding decisions.",
+          "Future effect": "Rhythm and capital work as one.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Pace–capital alignment is cultural instinct.",
+          "Signals": "Raise always feels ‘right-timed’."
+        }
+      },
+      "Purpose of This Theme": "To align capital decisions with the organization’s natural growth rhythm and current stage.",
+      "Why This Matters": "Raising too early or too late can create strain, waste, or missed opportunities."
+    },
+    {
+      "Guiding Questions": [
+        "How will this raise affect our control?",
+        "What governance safeguards are non-negotiable?",
+        "What’s the autonomy cost of saying yes?"
+      ],
+      "Name": "Protecting Autonomy Through Capital Decisions",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Stable strategic direction.",
+          "Edge condition": "You negotiate autonomy upfront.",
+          "Example moves": "Board seat limits.",
+          "Future effect": "Mission protected.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Funding terms protect autonomy fully.",
+          "Signals": "Governance balanced in agreements."
+        },
+        "Expected": {
+          "30-90 day system effect": "Gradual erosion of control.",
+          "Edge condition": "You compromise to close deal.",
+          "Example moves": "Weak protective clauses.",
+          "Future effect": "Control at risk in future raises.",
+          "Immediate cost": "Partial strategic freedom.",
+          "Present pattern": "Some autonomy safeguards in place, but gaps remain.",
+          "Signals": "Concessions made under pressure."
+        },
+        "Poor": {
+          "30-90 day system effect": "Misaligned strategic shifts.",
+          "Edge condition": "You trade autonomy for speed.",
+          "Example moves": "Majority board control to investors.",
+          "Future effect": "Mission drift.",
+          "Immediate cost": "Loss of control.",
+          "Present pattern": "Autonomy risks ignored in funding decisions.",
+          "Signals": "Investor veto on critical choices."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Long-term mission integrity.",
+          "Edge condition": "You refuse deals without safeguards.",
+          "Example moves": "Cultural norm of autonomy-first funding.",
+          "Future effect": "Independence and impact grow together.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Autonomy protection is cultural instinct.",
+          "Signals": "No history of control loss."
+        }
+      },
+      "Purpose of This Theme": "To safeguard decision-making power and mission integrity when evaluating funding.",
+      "Why This Matters": "Capital that compromises autonomy can distort direction and culture."
+    }
+  ],
+  "Title": "Do We Need to Raise?",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When considering a new funding round\nWhen pressure to raise comes from external stakeholders\nWhen evaluating multiple growth paths\nWhen wanting to protect autonomy and flexibility",
+  "Why This Matters": "Raising money can accelerate growth—but it also brings obligations, expectations, and potential loss of control. Many companies raise when they could instead optimize, partner, or pace themselves."
+}

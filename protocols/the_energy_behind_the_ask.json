@@ -1,0 +1,319 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Identify one genuine motive behind your ask and commit to aligning it with your strategy.",
+    "Choose one way to ensure mutual value in your next ask.",
+    "Decide on one action to maintain integrity under pressure in future asks."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "relational-integrity",
+      "misalignment",
+      "signal-unclear"
+    ],
+    "Complexity": 3,
+    "Estimated Time": "60–75 min",
+    "Fields": [
+      "trust-as-currency",
+      "relational-repair",
+      "systemic-safeguards",
+      "values-before-velocity",
+      "decision-clarity",
+      "walking-with-responsibility"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Preparing a funding ask",
+      "Aligning team on ask purpose",
+      "Refining a pitch",
+      "Assessing declined asks"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [],
+    "Stones": [
+      "relational-depth",
+      "trust-paces-growth",
+      "coherence-as-growth",
+      "integrity-over-expedience",
+      "plain-speech",
+      "core-signal-naming"
+    ],
+    "Tags": [
+      "integrity",
+      "motivation",
+      "timing",
+      "tone",
+      "partnership"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational",
+      "non-coercive"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "The ask is grounded in clarity, confidence, and mutual value → The future builds strong, aligned partnerships.",
+    "Expected": "The ask has some clarity and alignment, but mixed signals remain → The future gains partial success but with relational friction.",
+    "Poor": "The ask is driven by desperation, ego, or misalignment → The future risks strained relationships and compromised positioning.",
+    "Transcendent": "A culturally embedded practice ensures every ask radiates integrity, resonance, and mutual benefit → The future compounds trust and influence."
+  },
+  "Overall Purpose": "To ensure that the motivation, clarity, and relational posture behind a funding or partnership ask align with integrity, resonance, and long-term fit.",
+  "Protocol ID": "theenergybehindtheask",
+  "Short Title": "Ask Energy Check",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Why are we making this ask now?",
+        "What do we truly want beyond the tangible request?",
+        "How does this serve both us and them?"
+      ],
+      "Name": "Clarifying True Motivation",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Stronger credibility.",
+          "Edge condition": "You ensure motives align with strategy.",
+          "Example moves": "Motivation workshop before pitch.",
+          "Future effect": "Trust and clarity reinforce each other.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Full clarity on genuine motives behind ask.",
+          "Signals": "Consistency in explaining the ask."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent messaging.",
+          "Edge condition": "You underplay or overstate real needs.",
+          "Example moves": "Framing the ask differently to different audiences.",
+          "Future effect": "Trust remains tentative.",
+          "Immediate cost": "Partial clarity.",
+          "Present pattern": "Some awareness of motives, but not fully aligned.",
+          "Signals": "Changing explanations for the ask."
+        },
+        "Poor": {
+          "30-90 day system effect": "Damaged trust and positioning.",
+          "Edge condition": "You pursue the ask to solve unrelated internal issues.",
+          "Example moves": "Asking for funding to 'buy time' without clear plan.",
+          "Future effect": "Partnerships falter.",
+          "Immediate cost": "Mixed or negative reception.",
+          "Present pattern": "Ask is made without examining deeper motives.",
+          "Signals": "Inability to clearly state the purpose."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Partnerships form with ease and alignment.",
+          "Edge condition": "You refuse asks that don’t meet motive clarity.",
+          "Example moves": "Cultural habit of motive check before outreach.",
+          "Future effect": "Trust grows exponentially.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Motivation clarity is cultural instinct.",
+          "Signals": "Partners feel the ask is authentic."
+        }
+      },
+      "Purpose of This Theme": "To identify the real reason behind the ask, beyond surface needs.",
+      "Why This Matters": "Unclear or misaligned motives can undermine credibility and trust."
+    },
+    {
+      "Guiding Questions": [
+        "What’s in this for them?",
+        "How will they measure the value?",
+        "What’s the shared win?"
+      ],
+      "Name": "Ensuring Mutual Value",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Balanced, sustainable relationships.",
+          "Edge condition": "You design ask from mutual outcomes.",
+          "Example moves": "Value-mapping before proposal.",
+          "Future effect": "Partnerships deepen over time.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Clear, compelling mutual value articulated.",
+          "Signals": "Excitement from both sides."
+        },
+        "Expected": {
+          "30-90 day system effect": "Transactional relationships.",
+          "Edge condition": "You rely on goodwill instead of value alignment.",
+          "Example moves": "Generic benefits in pitch.",
+          "Future effect": "Partnerships lack depth.",
+          "Immediate cost": "Mediocre engagement.",
+          "Present pattern": "Some value offered to partner, but not compelling.",
+          "Signals": "Polite but lukewarm responses."
+        },
+        "Poor": {
+          "30-90 day system effect": "Partnership imbalance.",
+          "Edge condition": "You overlook the other party’s priorities.",
+          "Example moves": "Pitching without knowing partner’s goals.",
+          "Future effect": "Opportunities dry up.",
+          "Immediate cost": "Low receptivity.",
+          "Present pattern": "Ask focuses only on our benefit.",
+          "Signals": "Funder or partner disengages quickly."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Long-term alliances.",
+          "Edge condition": "You refuse asks without mutual benefit.",
+          "Example moves": "Embedded mutuality check in all proposals.",
+          "Future effect": "Network grows in trust and reciprocity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Mutual value creation is cultural instinct.",
+          "Signals": "Partners actively seek future asks."
+        }
+      },
+      "Purpose of This Theme": "To design the ask so both parties benefit in clear and meaningful ways.",
+      "Why This Matters": "An ask without mutual benefit feels extractive and weakens relationships."
+    },
+    {
+      "Guiding Questions": [
+        "What’s the current stage of this relationship?",
+        "What tone fits that stage?",
+        "How will we progress naturally to bigger asks?"
+      ],
+      "Name": "Matching Tone to Relationship Stage",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust grows predictably.",
+          "Edge condition": "You adapt tone with precision.",
+          "Example moves": "Progressive asks that grow with trust.",
+          "Future effect": "Partnership momentum accelerates.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Tone calibrated to exact relationship stage.",
+          "Signals": "Partner feels seen and respected."
+        },
+        "Expected": {
+          "30-90 day system effect": "Slower trust-building.",
+          "Edge condition": "You overestimate relationship depth.",
+          "Example moves": "Assuming informal tone too soon.",
+          "Future effect": "Partnership development drags.",
+          "Immediate cost": "Mixed reception.",
+          "Present pattern": "Tone generally matches stage, but with some missteps.",
+          "Signals": "Uneven engagement from partners."
+        },
+        "Poor": {
+          "30-90 day system effect": "Opportunities close prematurely.",
+          "Edge condition": "You treat all partners as equally warm or cold.",
+          "Example moves": "Large ask in first meeting.",
+          "Future effect": "Trust collapses.",
+          "Immediate cost": "Damaged rapport.",
+          "Present pattern": "Tone is mismatched to relationship maturity.",
+          "Signals": "Awkward or defensive responses."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High conversion of asks to partnerships.",
+          "Edge condition": "You refuse to rush or drag pace.",
+          "Example moves": "Relationship-stage mapping for all asks.",
+          "Future effect": "Trust and outcomes compound.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Tone alignment is cultural instinct.",
+          "Signals": "No mismatched tone experiences."
+        }
+      },
+      "Purpose of This Theme": "To align the tone and framing of the ask with the maturity and nature of the relationship.",
+      "Why This Matters": "An ask that’s too aggressive or too vague for the relationship stage can backfire."
+    },
+    {
+      "Guiding Questions": [
+        "What’s happening for them right now?",
+        "When are they most open to this type of ask?",
+        "What external factors might impact timing?"
+      ],
+      "Name": "Timing the Ask for Maximum Receptivity",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Faster yes or clear no.",
+          "Edge condition": "You coordinate ask with external timing cues.",
+          "Example moves": "Aligning pitch with budget cycles.",
+          "Future effect": "Conversion rates improve.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Ask timed to align with partner’s context and priorities.",
+          "Signals": "Partner context considered."
+        },
+        "Expected": {
+          "30-90 day system effect": "Opportunities hit or miss.",
+          "Edge condition": "You rely on luck for timing.",
+          "Example moves": "Timing based on guesswork.",
+          "Future effect": "Results vary widely.",
+          "Immediate cost": "Partial receptivity.",
+          "Present pattern": "Some attention to timing, but limited research.",
+          "Signals": "Occasional overlap with partner’s priorities."
+        },
+        "Poor": {
+          "30-90 day system effect": "Missed opportunities.",
+          "Edge condition": "You assume readiness based on your own schedule.",
+          "Example moves": "Pitching during unrelated crises.",
+          "Future effect": "Potential partners close off.",
+          "Immediate cost": "Low acceptance.",
+          "Present pattern": "Ask is made without regard to timing.",
+          "Signals": "Funder distracted or in crunch period."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Steady pipeline of wins.",
+          "Edge condition": "You refuse to push an ask when timing is off.",
+          "Example moves": "Built-in timing check in all outreach.",
+          "Future effect": "Success rate climbs over time.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Timing sensitivity is cultural instinct.",
+          "Signals": "Partners often say 'perfect timing'."
+        }
+      },
+      "Purpose of This Theme": "To choose a moment when the partner or funder is most open to considering the ask.",
+      "Why This Matters": "Even the best ask can fail if the timing is wrong."
+    },
+    {
+      "Guiding Questions": [
+        "How will we protect integrity if urgency rises?",
+        "What pressures could distort our delivery?",
+        "What’s our plan to stay steady under pressure?"
+      ],
+      "Name": "Holding Integrity Under Pressure",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Agreements built to last.",
+          "Edge condition": "You prepare in advance for high-pressure asks.",
+          "Example moves": "Practicing calm, clear delivery.",
+          "Future effect": "Reputation strengthens.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Integrity fully preserved under pressure.",
+          "Signals": "Partner feels respected regardless of urgency."
+        },
+        "Expected": {
+          "30-90 day system effect": "Some regret in agreements.",
+          "Edge condition": "You hide urgency instead of managing it.",
+          "Example moves": "Concealing true situation until post-deal.",
+          "Future effect": "Trust weakened.",
+          "Immediate cost": "Mixed perception.",
+          "Present pattern": "Integrity mostly held, but some strain shows.",
+          "Signals": "Tense or rushed delivery."
+        },
+        "Poor": {
+          "30-90 day system effect": "Partnerships formed under duress fail.",
+          "Edge condition": "You see urgency as justification.",
+          "Example moves": "Aggressive pushing for commitment.",
+          "Future effect": "Reputation suffers.",
+          "Immediate cost": "Damaged trust.",
+          "Present pattern": "Pressure overrides integrity in the ask.",
+          "Signals": "Overpromising or bending facts."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Resilient relationships and outcomes.",
+          "Edge condition": "You refuse to compromise truth for speed.",
+          "Example moves": "Cultural commitment to honesty-first.",
+          "Future effect": "Influence grows over time.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Integrity under pressure is cultural instinct.",
+          "Signals": "Partners trust intentions without question."
+        }
+      },
+      "Purpose of This Theme": "To ensure that urgency or pressure does not compromise clarity, truth, or relational respect.",
+      "Why This Matters": "Desperation energy can repel partners and lead to poor agreements."
+    }
+  ],
+  "Title": "The Energy Behind the Ask",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When preparing to make a funding or partnership ask\nWhen aligning internal teams on the purpose and tone of an ask\nWhen refining a pitch or proposal\nWhen assessing why an ask may have been declined",
+  "Why This Matters": "The intention and energy behind an ask shape how it is received, the quality of the relationship, and the sustainability of any agreement."
+}

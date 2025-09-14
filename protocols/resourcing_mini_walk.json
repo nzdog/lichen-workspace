@@ -1,0 +1,299 @@
+{
+  "Category": "resourcing",
+  "Completion Prompts": [
+    "What shifted in me?",
+    "What did I notice during this walk?",
+    "What resourcing will I keep using?"
+  ],
+  "Created At": "2025-09-13",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [],
+    "Complexity": 1,
+    "Estimated Time": "5–10 minutes",
+    "Fields": [
+      "resourcing",
+      "presence"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "overwhelm"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [],
+    "Stones": [
+      "light-before-form",
+      "presence-is-productivity",
+      "the-speed-of-trust",
+      "built-for-wholeness"
+    ],
+    "Tags": [
+      "resourcing",
+      "overwhelm"
+    ],
+    "Tone Markers": [
+      "gentle",
+      "grounded"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Resourcing becomes a regular practice that maintains balance.",
+    "Expected": "Brief resourcing restores temporary stability.",
+    "Poor": "Overwhelm persists and coherence degrades.",
+    "Transcendent": "Micro-resourcing integrates into the field, sustaining collective coherence."
+  },
+  "Overall Purpose": "Provide a short, grounding walk to restore presence and coherence during overwhelm.",
+  "Protocol ID": "resourcingminiwalk",
+  "Short Title": "Resourcing Mini Walk",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What does my breath feel like now?",
+        "What shifts with one conscious breath?",
+        "How can I return to breath more often?"
+      ],
+      "Name": "Return to Breath",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Coherence stable across contexts.",
+          "Edge condition": "No zoning out, stay present to sensations.",
+          "Example moves": "Three-breath pause, breath as anchor.",
+          "Future effect": "Grounded clarity, decision-making improves.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Breath awareness reliable and automatic.",
+          "Signals": "Relaxed face, steady gaze, centered posture."
+        },
+        "Expected": {
+          "30-90 day system effect": "Stress reduced gradually.",
+          "Edge condition": "Avoid forcefulness, maintain natural rhythm.",
+          "Example moves": "Notice inhale/exhale cycle, count breaths.",
+          "Future effect": "Resilience builds, emotional regulation improves.",
+          "Immediate cost": "Calm begins to settle.",
+          "Present pattern": "Breath noticed with gentle awareness.",
+          "Signals": "Shoulders drop, jaw relaxes."
+        },
+        "Poor": {
+          "30-90 day system effect": "Burnout risk grows exponentially.",
+          "Edge condition": "Over-focusing on control, perfectionism.",
+          "Example moves": "Pause and breathe once, then rush back.",
+          "Future effect": "Fatigue compounds, reactivity increases.",
+          "Immediate cost": "Stress rises rapidly.",
+          "Present pattern": "Breath ignored or forced.",
+          "Signals": "Shallow breath, chest tightness."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Deep coherence emerges system-wide.",
+          "Edge condition": "Avoid bypassing, integrate with action.",
+          "Example moves": "Synchronize breath with others, group breathing.",
+          "Future effect": "Field steadiness expands, collective resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Breath as doorway to field awareness.",
+          "Signals": "Collective rhythm, shared stillness."
+        }
+      },
+      "Purpose of This Theme": "Anchor attention in breath.",
+      "Why This Matters": "Breath is always available and stabilizing."
+    },
+    {
+      "Guiding Questions": [
+        "What anchors me here?",
+        "What is steady in my environment?",
+        "How do I re-ground quickly?"
+      ],
+      "Name": "Orient to Environment",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Resilience grows, adaptability increases.",
+          "Edge condition": "Not detachment, maintain engagement.",
+          "Example moves": "Feel textures, sense temperature, notice sounds.",
+          "Future effect": "Deep coherence, environmental attunement.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Grounding is natural and effortless.",
+          "Signals": "Soft eyes, receptive body language."
+        },
+        "Expected": {
+          "30-90 day system effect": "Stress reduced, connection improves.",
+          "Edge condition": "Avoid checking out, stay engaged.",
+          "Example moves": "Look around intentionally, notice details.",
+          "Future effect": "Presence becomes habitual, spatial awareness grows.",
+          "Immediate cost": "Stability returns gradually.",
+          "Present pattern": "Basic awareness restored with intention.",
+          "Signals": "Relaxed posture, open gaze."
+        },
+        "Poor": {
+          "30-90 day system effect": "Disconnection deepens, isolation increases.",
+          "Edge condition": "Over-analysis, rumination loops.",
+          "Example moves": "Name 3 objects mechanically.",
+          "Future effect": "Anxiety grows, environmental blindness.",
+          "Immediate cost": "Fragmentation grows rapidly.",
+          "Present pattern": "Lost in thoughts, unaware of surroundings.",
+          "Signals": "Absent stare, closed posture."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Collective orientation grows, ecosystem awareness.",
+          "Edge condition": "No bypassing, integrate with action.",
+          "Example moves": "Notice shared field cues, collective sensing.",
+          "Future effect": "Field harmony expands, environmental stewardship.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Environment as living field anchor.",
+          "Signals": "Shared calm, synchronized attention."
+        }
+      },
+      "Purpose of This Theme": "Ground in surroundings.",
+      "Why This Matters": "External anchors calm internal turbulence."
+    },
+    {
+      "Guiding Questions": [
+        "Who supports me now?",
+        "What inner resources are steady?",
+        "What does support feel like?"
+      ],
+      "Name": "Name Support Available",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust deepens, collaboration flourishes.",
+          "Edge condition": "Not over-reliance, maintain mutual support.",
+          "Example moves": "Lean on team rhythm, offer support proactively.",
+          "Future effect": "System coherence improves, collective resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Support fully integrated into daily practice.",
+          "Signals": "Confidence returns, collaborative energy."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy restored, relationship quality improves.",
+          "Edge condition": "Avoid dependency, maintain reciprocity.",
+          "Example moves": "Reach out to ally, express gratitude.",
+          "Future effect": "Resilience builds, support network strengthens.",
+          "Immediate cost": "Relief felt, connection restored.",
+          "Present pattern": "Some supports noticed with appreciation.",
+          "Signals": "Relaxed voice, open body language."
+        },
+        "Poor": {
+          "30-90 day system effect": "Exhaustion, system breakdown risk.",
+          "Edge condition": "Avoid false independence, recognize codependence.",
+          "Example moves": "Say one support aloud without feeling.",
+          "Future effect": "Collapse risk rises, burnout inevitable.",
+          "Immediate cost": "Isolation grows rapidly.",
+          "Present pattern": "Support ignored or denied.",
+          "Signals": "Withdrawn posture, closed communication."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Wholeness grows, ecosystem health.",
+          "Edge condition": "No bypass, integrate with action.",
+          "Example moves": "Sense collective holding, field-level support.",
+          "Future effect": "Field coherence deepens, systemic transformation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Support felt as living field presence.",
+          "Signals": "Shared strength, collective confidence."
+        }
+      },
+      "Purpose of This Theme": "Recognize inner and outer supports.",
+      "Why This Matters": "Support counters overwhelm."
+    },
+    {
+      "Guiding Questions": [
+        "Where is tension in me?",
+        "What helps me release it?",
+        "What does release allow?"
+      ],
+      "Name": "Release Tension",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "System steadies, resilience increases.",
+          "Edge condition": "No over-release, maintain healthy boundaries.",
+          "Example moves": "Body scan, conscious relaxation.",
+          "Future effect": "Energy restored, physical vitality.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Release integrated into natural rhythm.",
+          "Signals": "Calm tone, fluid movement, relaxed presence."
+        },
+        "Expected": {
+          "30-90 day system effect": "Calm grows, body intelligence increases.",
+          "Edge condition": "Avoid collapse, maintain healthy structure.",
+          "Example moves": "Shake out body, gentle stretches.",
+          "Future effect": "Balance returns, body awareness deepens.",
+          "Immediate cost": "Relief begins, awareness expands.",
+          "Present pattern": "Tension noticed with curiosity.",
+          "Signals": "Relaxed shoulders, softer expression."
+        },
+        "Poor": {
+          "30-90 day system effect": "Health risk, chronic pain potential.",
+          "Edge condition": "Avoid forcing release, recognize tension patterns.",
+          "Example moves": "Stretch neck mechanically.",
+          "Future effect": "Stress accumulates, physical breakdown.",
+          "Immediate cost": "Strain increases exponentially.",
+          "Present pattern": "Tension ignored or normalized.",
+          "Signals": "Tight jaw, hunched shoulders, shallow breathing."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Coherence deepens, collective healing.",
+          "Edge condition": "Not dissociation, maintain presence.",
+          "Example moves": "Collective shake, group body awareness.",
+          "Future effect": "System harmony, collective vitality.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Release as sacred ritual practice.",
+          "Signals": "Ease visible, shared relaxation."
+        }
+      },
+      "Purpose of This Theme": "Let go of held strain.",
+      "Why This Matters": "Release restores flow."
+    },
+    {
+      "Guiding Questions": [
+        "What brings me into now?",
+        "How can I anchor presence?",
+        "What shifts when I return?"
+      ],
+      "Name": "Anchor in Present",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust increases, leadership presence emerges.",
+          "Edge condition": "Not rigidity, maintain adaptability.",
+          "Example moves": "Return to anchor often, presence as default.",
+          "Future effect": "System coherence, collective presence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Presence habitual and effortless.",
+          "Signals": "Calm demeanor, steady attention."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy steadies, focus improves.",
+          "Edge condition": "Avoid hyper-focus, maintain soft awareness.",
+          "Example moves": "Notice current task, sense surroundings.",
+          "Future effect": "Resilience grows, presence becomes reliable.",
+          "Immediate cost": "Calm returns, clarity emerges.",
+          "Present pattern": "Presence restored with intention.",
+          "Signals": "Focused eyes, engaged attention."
+        },
+        "Poor": {
+          "30-90 day system effect": "Coherence degrades, decision-making suffers.",
+          "Edge condition": "Avoid avoidance, recognize dissociation patterns.",
+          "Example moves": "Name 3 sensations mechanically.",
+          "Future effect": "Stress deepens, presence becomes rare.",
+          "Immediate cost": "Overwhelm worsens, reactivity increases.",
+          "Present pattern": "Absent in moment, lost in thoughts.",
+          "Signals": "Distracted gaze, scattered attention."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Wholeness expands, collective transformation.",
+          "Edge condition": "No bypass, integrate with action.",
+          "Example moves": "Anchor as group, collective mindfulness.",
+          "Future effect": "Collective coherence, field-level presence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Presence as living field anchor.",
+          "Signals": "Shared stillness, synchronized presence."
+        }
+      },
+      "Purpose of This Theme": "Return to now.",
+      "Why This Matters": "Presence interrupts overwhelm."
+    }
+  ],
+  "Title": "Resourcing Mini Walk",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When overwhelmed, fragmented, or unable to find focus.",
+  "Why This Matters": "Light Before Form and Presence Is Productivity mean that small, reliable moves can reset the whole system."
+}

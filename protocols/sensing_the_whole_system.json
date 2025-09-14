@@ -1,0 +1,310 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Capture one insight about the system's interconnections you noticed today.",
+    "Identify one small action you can take to enhance systemic health.",
+    "Reflect on a weak signal you will pay more attention to moving forward."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "wholeness-contortion",
+      "wholeness-relational"
+    ],
+    "Complexity": 4,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "whole-system-sensing",
+      "integration-practices",
+      "resilience-rooting",
+      "coherence-practices"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Strategic decision-making",
+      "Navigating uncertainty",
+      "Detecting subtle signals of change"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [],
+    "Stones": [
+      "honoring-complexity",
+      "integration-not-fragmentation",
+      "co-evolving-architecture",
+      "reflection-built-in"
+    ],
+    "Tags": [
+      "systemic-thinking",
+      "strategic-foresight",
+      "interconnections"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You regularly sense and interpret the whole system → The future aligns actions with deeper patterns and opportunities.",
+    "Expected": "You occasionally zoom out to see patterns → The future makes some proactive moves but misses deeper currents.",
+    "Poor": "You track only immediate or local signals → The future reacts to crises instead of anticipating them.",
+    "Transcendent": "Whole-system sensing becomes second nature → The future moves in harmony with emergent conditions and systemic truth."
+  },
+  "Overall Purpose": "To cultivate the capacity to perceive the interconnections, rhythms, and underlying health of the entire system—not just its visible outputs—so actions are grounded in systemic reality.",
+  "Protocol ID": "sensingthewholesystem",
+  "Short Title": "Whole System",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What other parts of the system might be affected by this change?",
+        "Where have I seen this pattern before?",
+        "What signals suggest ripple effects are starting?"
+      ],
+      "Name": "Noticing Patterns Across the System",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Decisions strengthen multiple parts of the system at once.",
+          "Edge condition": "Mapping without overcomplicating decision-making.",
+          "Example moves": "Creating a cross-functional impact map for initiatives.",
+          "Future effect": "The future aligns actions with deeper patterns and opportunities.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You deliberately map interconnections before acting.",
+          "Signals": "Ripple effects anticipated and managed."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial systemic alignment; lingering blind spots.",
+          "Edge condition": "Connections noticed only in hindsight.",
+          "Example moves": "Reviewing effects post-project rather than in planning.",
+          "Future effect": "The future makes some proactive moves but misses deeper currents.",
+          "Immediate cost": "You prevent some issues but miss others.",
+          "Present pattern": "You sometimes connect changes to wider impacts.",
+          "Signals": "Occasional surprise issues from overlooked connections."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decisions unintentionally create strain elsewhere.",
+          "Edge condition": "Short-term wins masking long-term damage.",
+          "Example moves": "Optimizing one team's output without checking downstream impacts.",
+          "Future effect": "The future reacts to crises instead of preventing them.",
+          "Immediate cost": "You miss cascading effects until they are disruptive.",
+          "Present pattern": "You focus only on isolated metrics or events.",
+          "Signals": "Problems seem to appear 'out of nowhere'."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Systemic coherence and resilience grow steadily.",
+          "Edge condition": "Awareness applied with lightness, not control.",
+          "Example moves": "Designing strategy from whole-system flow rather than isolated goals.",
+          "Future effect": "The future moves in harmony with emergent conditions and systemic truth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Pattern recognition is intuitive and constant.",
+          "Signals": "Early sensing of shifts before they manifest outwardly."
+        }
+      },
+      "Purpose of This Theme": "To observe how changes or behaviors in one area ripple across others.",
+      "Why This Matters": "Interdependencies mean that no change is isolated—seeing these links is key to systemic health."
+    },
+    {
+      "Guiding Questions": [
+        "How does this look in 30, 90, and 365 days?",
+        "Which horizon is currently overemphasized?",
+        "What could rebalance my attention?"
+      ],
+      "Name": "Balancing Multiple Time Horizons",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Steady progress toward enduring goals.",
+          "Edge condition": "Horizon balance adapted as context shifts.",
+          "Example moves": "Incorporating horizon checks into major decision templates.",
+          "Future effect": "The future stays on course while adapting in real time.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You intentionally review all three horizons before key moves.",
+          "Signals": "Balanced allocation of resources and focus."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed alignment across horizons.",
+          "Edge condition": "Overweighting one horizon at key moments.",
+          "Example moves": "Annual strategic review without interim course checks.",
+          "Future effect": "The future makes partial adjustments but still reacts late.",
+          "Immediate cost": "Some proactive adjustments happen but inconsistently.",
+          "Present pattern": "You occasionally check medium- or long-term trends.",
+          "Signals": "Strategy reviews happen irregularly."
+        },
+        "Poor": {
+          "30-90 day system effect": "Long-term health erodes while chasing quick wins.",
+          "Edge condition": "Over-investing in now at the expense of later.",
+          "Example moves": "Cutting maintenance budgets to hit quarterly targets.",
+          "Future effect": "The future is driven by reactivity, not strategy.",
+          "Immediate cost": "You miss slow-building risks and opportunities.",
+          "Present pattern": "You focus only on immediate outcomes.",
+          "Signals": "Frequent 'urgent' fires crowd out strategic work."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Resilience across economic and operational cycles.",
+          "Edge condition": "Time balance held without rigidity.",
+          "Example moves": "Leaders naturally frame updates across horizons.",
+          "Future effect": "The future moves with enduring stability and foresight.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Time horizon balance is embedded in thinking and culture.",
+          "Signals": "No horizon consistently neglected."
+        }
+      },
+      "Purpose of This Theme": "To hold short, medium, and long-term perspectives simultaneously when sensing the system.",
+      "Why This Matters": "Systems shift over different timelines—attention to all prevents over- or under-reacting."
+    },
+    {
+      "Guiding Questions": [
+        "What subtle patterns or anomalies have I noticed lately?",
+        "Could this be an early sign of a bigger shift?",
+        "How might we explore this without overcommitting?"
+      ],
+      "Name": "Listening to Weak Signals",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "System can pivot or prepare before pressures mount.",
+          "Edge condition": "Distinguishing signal from noise accurately.",
+          "Example moves": "Maintaining a log of faint trends to revisit.",
+          "Future effect": "The future adjusts fluidly to emerging realities.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You track and explore weak signals consistently.",
+          "Signals": "Adjustments often ahead of the curve."
+        },
+        "Expected": {
+          "30-90 day system effect": "Adaptation happens later than ideal.",
+          "Edge condition": "Over-relying on clear evidence before moving.",
+          "Example moves": "Waiting for quarterly data before adjusting strategy.",
+          "Future effect": "The future adapts, but slower than needed.",
+          "Immediate cost": "You gain some early warning but lose lead time.",
+          "Present pattern": "You notice weak signals but act only when confirmed.",
+          "Signals": "Often 'catching up' to trends."
+        },
+        "Poor": {
+          "30-90 day system effect": "Changes feel sudden and overwhelming.",
+          "Edge condition": "Writing off weak signals as noise.",
+          "Example moves": "Dismissing minor customer feedback as irrelevant.",
+          "Future effect": "The future faces preventable shocks.",
+          "Immediate cost": "You miss early chances to adapt.",
+          "Present pattern": "You ignore faint or ambiguous signals.",
+          "Signals": "Consistent surprise at emerging issues."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Opportunities and threats are met early with confidence.",
+          "Edge condition": "Balanced readiness without paranoia.",
+          "Example moves": "Weekly 'signal sensing' rituals in leadership meetings.",
+          "Future effect": "The future shapes trends instead of reacting to them.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Weak-signal awareness is a cultural norm.",
+          "Signals": "Collective attention to the subtle and emergent."
+        }
+      },
+      "Purpose of This Theme": "To detect subtle cues that precede major shifts.",
+      "Why This Matters": "Small anomalies often indicate larger systemic changes underway."
+    },
+    {
+      "Guiding Questions": [
+        "Whose perspective would add clarity here?",
+        "What am I not seeing because of my role or position?",
+        "How can we integrate differing views without losing coherence?"
+      ],
+      "Name": "Integrating Multiple Perspectives",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Systemic accuracy improves over time.",
+          "Edge condition": "Balancing breadth with decision speed.",
+          "Example moves": "Structured listening across roles before big shifts.",
+          "Future effect": "The future acts from a broad and integrated understanding.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You systematically gather diverse inputs.",
+          "Signals": "Fewer 'unknown unknowns' emerge."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate improvement in decision quality.",
+          "Edge condition": "Consulting others only when pressured.",
+          "Example moves": "Running ideas past one or two trusted peers.",
+          "Future effect": "The future benefits from partial diversity of view.",
+          "Immediate cost": "Some blind spots covered, some remain.",
+          "Present pattern": "You occasionally seek other perspectives.",
+          "Signals": "Feedback sometimes reveals unseen risks."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decisions are biased and partial.",
+          "Edge condition": "Assuming your perspective is complete.",
+          "Example moves": "Making strategy without cross-functional input.",
+          "Future effect": "The future stumbles into avoidable missteps.",
+          "Immediate cost": "You miss blind spots and alternative insights.",
+          "Present pattern": "You rely only on your own view or immediate circle.",
+          "Signals": "Surprise when others point out overlooked issues."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High trust and coherence across functions.",
+          "Edge condition": "Perspective diversity embraced without dilution.",
+          "Example moves": "Rotating system sensing roles to build shared literacy.",
+          "Future effect": "The future sees itself clearly from all angles.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Multiple perspectives are embedded in every sensing process.",
+          "Signals": "Shared awareness with minimal friction."
+        }
+      },
+      "Purpose of This Theme": "To combine diverse viewpoints for a richer whole-system picture.",
+      "Why This Matters": "Different roles and experiences reveal different aspects of the system."
+    },
+    {
+      "Guiding Questions": [
+        "How will this decision impact the system’s health in 90 days?",
+        "What signals tell me the system is under strain?",
+        "If health was my only metric, what would I choose?"
+      ],
+      "Name": "Linking System Health to Decision-Making",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Resilience strengthens over time.",
+          "Edge condition": "Balancing health protection with timely delivery.",
+          "Example moves": "Blocking initiatives that would overstrain capacity.",
+          "Future effect": "The future grows more robust and adaptable.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consistently weigh decisions against system health.",
+          "Signals": "Fewer breakdowns, higher morale."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial protection of resilience.",
+          "Edge condition": "Treating health as secondary to targets.",
+          "Example moves": "Delaying maintenance until problems appear.",
+          "Future effect": "The future preserves some capacity but loses ground.",
+          "Immediate cost": "Some harmful choices avoided, others slip through.",
+          "Present pattern": "You sometimes consider system health in decisions.",
+          "Signals": "Health checks occur inconsistently."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decline in resilience and adaptability.",
+          "Edge condition": "Ignoring long-term harm for short-term gain.",
+          "Example moves": "Approving unsustainable workloads for deadlines.",
+          "Future effect": "The future depletes core capacity.",
+          "Immediate cost": "System strain accumulates unnoticed.",
+          "Present pattern": "You decide based on isolated benefits or pressures.",
+          "Signals": "Frequent fixes for recurring problems."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System thrives across cycles of change.",
+          "Edge condition": "Resilience prioritized without stagnation.",
+          "Example moves": "Embedding health impact review in all major decisions.",
+          "Future effect": "The future sustains compounding capacity and coherence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "System health is a non-negotiable decision anchor.",
+          "Signals": "Health metrics and lived experience both trend up."
+        }
+      },
+      "Purpose of This Theme": "To use systemic well-being as a primary decision filter.",
+      "Why This Matters": "If decisions degrade system health, short-term gains become long-term losses."
+    }
+  ],
+  "Title": "Sensing the Whole System",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when you need to make strategic decisions, navigate uncertainty, or detect subtle signals of change before they become urgent.",
+  "Why This Matters": "Focusing only on parts of the system creates blind spots. By sensing the whole, you can anticipate shifts, detect early signs of strain or opportunity, and move with alignment across all dimensions."
+}

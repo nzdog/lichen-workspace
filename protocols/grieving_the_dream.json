@@ -1,0 +1,368 @@
+{
+  "Category": "Venture Lifecycle & Endings",
+  "Completion Prompts": [
+    "Write the one-line obituary for the dream—and the one-line blessing.",
+    "List two gifts you will reuse within the next 60 days and name their owners.",
+    "Name one repair to complete and one ritual act to close."
+  ],
+  "Created At": "2025-08-19",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [
+      "liminal"
+    ],
+    "Complexity": 2,
+    "Estimated Time": "60 minutes",
+    "Fields": [
+      "wholeness",
+      "relational",
+      "integrity",
+      "collapse"
+    ],
+    "Modes": [
+      "Full Walk"
+    ],
+    "Primary Scenarios": [
+      "A founder or team faces the end of a cherished venture path and needs a dignified, future-facing closure."
+    ],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [
+      "blessing-what-was",
+      "letting-go-of-the-startup",
+      "clearing-lingering-residue"
+    ],
+    "Stones": [
+      "integrity-is-the-growth-strategy",
+      "nothing-forced-nothing-withheld",
+      "no-contortion-for-acceptance",
+      "built-for-wholeness",
+      "the-speed-of-trust",
+      "light-before-form"
+    ],
+    "Tags": [
+      "grief",
+      "endings",
+      "closure",
+      "transition",
+      "legacy",
+      "continuity",
+      "resilience",
+      "wholeness"
+    ],
+    "Tone Markers": [
+      "clarity",
+      "coherence",
+      "steadiness",
+      "relational",
+      "integrity",
+      "field-aware",
+      "invitational",
+      "sacred/light-touch",
+      "brevity"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Grief becomes a source of insight and continuity. Gifts are carried forward, residue is cleared.",
+    "Expected": "Grief is felt and named without drama. You can honor what was and release it.",
+    "Poor": "Grief is bypassed or performed. Energy stays stuck; the past quietly steers the future.",
+    "Transcendent": "The goodbye enlarges you. Love for the dream becomes fuel that stabilizes a wiser next chapter."
+  },
+  "Overall Purpose": "To fully grieve the venture, role, or vision that is ending so that love for what it was can coexist with clarity for what comes next.",
+  "Protocol ID": "grievingthedream",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Exactly what is dying?",
+        "What remains alive beyond this ending?",
+        "What date or boundary marks the end?"
+      ],
+      "Name": "Naming What’s Dying",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust increases.",
+          "Edge condition": "Stay warm and brief.",
+          "Example moves": "Decision log entry + stakeholder Q&A.",
+          "Future effect": "Ending becomes teachable craft.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Links the ending to timing, criteria, and care.",
+          "Signals": "Calm cadence; clearer roles."
+        },
+        "Expected": {
+          "30-90 day system effect": "Planning stabilizes.",
+          "Edge condition": "Avoid justification loops.",
+          "Example moves": "Publish a one-paragraph end note.",
+          "Future effect": "Cleaner downstream decisions.",
+          "Immediate cost": "Short discomfort.",
+          "Present pattern": "States clearly what is ending.",
+          "Signals": "Direct language, fewer mixed messages."
+        },
+        "Poor": {
+          "30-90 day system effect": "False hope, scope creep.",
+          "Edge condition": "Don’t conflate pausing with dying.",
+          "Example moves": "Sentence pair: ‘What is ending is… What is not ending is…’",
+          "Future effect": "Unclear endings reappear as friction.",
+          "Immediate cost": "Lingering confusion.",
+          "Present pattern": "Vague, avoids specificity.",
+          "Signals": "‘Maybe later’, hedging, silence."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Attention returns to emergence.",
+          "Edge condition": "Avoid triumphalism.",
+          "Example moves": "Ritual line: ‘Thank you. You may rest.’",
+          "Future effect": "Endings expand capacity for beginnings.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Names the ending as a field transition.",
+          "Signals": "Gratitude, steadiness."
+        }
+      },
+      "Purpose of This Theme": "To say plainly which part of the dream is ending—and which parts are not.",
+      "Why This Matters": "Ambiguity prolongs pain. Precision allows compassion and release."
+    },
+    {
+      "Guiding Questions": [
+        "Where does grief sit in my body?",
+        "What small container will I actually use today?",
+        "What would feeling—without fixing—look like now?"
+      ],
+      "Name": "Making Space to Feel",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Fewer emotional flare-ups later.",
+          "Edge condition": "Avoid rigid ‘healing plans’.",
+          "Example moves": "Slow exhale, shaking, humming.",
+          "Future effect": "Body trusts the process.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Somatic practices help grief move cleanly.",
+          "Signals": "Grounded body; steadier voice."
+        },
+        "Expected": {
+          "30-90 day system effect": "Lighter presence; clearer thinking.",
+          "Edge condition": "Keep it simple; no performance.",
+          "Example moves": "Walk/cry/journal without fixing.",
+          "Future effect": "Grief cycles complete faster.",
+          "Immediate cost": "Vulnerability; time.",
+          "Present pattern": "Creates small, real containers to feel.",
+          "Signals": "Deeper breath; softer tone."
+        },
+        "Poor": {
+          "30-90 day system effect": "Hidden resentment, burnout risk.",
+          "Edge condition": "Beware productivity-as-avoidance.",
+          "Example moves": "5–10 minutes of uninterrupted feeling.",
+          "Future effect": "Emotions backlog.",
+          "Immediate cost": "Flatness, reactivity later.",
+          "Present pattern": "Numbs or performs grief.",
+          "Signals": "Tight jaw, quick pivots, sarcasm."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Culture permits human truth without collapse.",
+          "Edge condition": "Stay ordinary; no savior arcs.",
+          "Example moves": "Open a meeting with ‘I’m grieving this…’.",
+          "Future effect": "Humanity strengthens execution.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Feeling becomes an act of stewardship.",
+          "Signals": "Warm honesty; less posturing."
+        }
+      },
+      "Purpose of This Theme": "To allow grief to move through the body, not just the mind.",
+      "Why This Matters": "Unfelt grief leaks into tone, decisions, and relationships."
+    },
+    {
+      "Guiding Questions": [
+        "What part of me fused with this dream?",
+        "What of me was never this dream?",
+        "What anchors hold me beyond it?"
+      ],
+      "Name": "Separating Identity from the Dream",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Direction clarifies.",
+          "Edge condition": "Don’t rush to rebrand.",
+          "Example moves": "Define 2 anchors: practice, relationship, or place.",
+          "Future effect": "A steadier self leads the next work.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You consciously design post-dream identity anchors.",
+          "Signals": "Simpler story about who you are."
+        },
+        "Expected": {
+          "30-90 day system effect": "More stable choices.",
+          "Edge condition": "Avoid self-negation.",
+          "Example moves": "List roles you still carry independent of this dream.",
+          "Future effect": "Self recovers faster.",
+          "Immediate cost": "Ego sting; relief after.",
+          "Present pattern": "Identity is named as larger than the venture.",
+          "Signals": "Both/and language about self."
+        },
+        "Poor": {
+          "30-90 day system effect": "Fragile decision-making.",
+          "Edge condition": "Watch for ‘I am my metrics’.",
+          "Example moves": "Write 3 truths about you that persist beyond this.",
+          "Future effect": "Identity spirals with outcomes.",
+          "Immediate cost": "Shame or grandiosity.",
+          "Present pattern": "Self equals startup.",
+          "Signals": "All-or-nothing stories."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Presence feels trustworthy.",
+          "Edge condition": "Stay grounded, not superior.",
+          "Example moves": "Name the gift the dream gave your character.",
+          "Future effect": "Wiser leadership emerges.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Self expands through grieving; humility deepens.",
+          "Signals": "Less proof-seeking; more listening."
+        }
+      },
+      "Purpose of This Theme": "To decouple self-worth from the venture’s fate.",
+      "Why This Matters": "When identity fuses with a dream, endings feel annihilating."
+    },
+    {
+      "Guiding Questions": [
+        "Which gifts are alive and reusable?",
+        "Where will the top two be used in 60 days?",
+        "Who needs to receive each gift?"
+      ],
+      "Name": "Harvesting the Gifts",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Momentum returns quickly.",
+          "Edge condition": "Don’t force weak gifts to live.",
+          "Example moves": "Put gifts on the roadmap with dates.",
+          "Future effect": "Learning compounds into moats.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Gifts plug into near-term plans.",
+          "Signals": "Visible reuse."
+        },
+        "Expected": {
+          "30-90 day system effect": "Faster starts later.",
+          "Edge condition": "Keep it practical.",
+          "Example moves": "Assign owners for top 2 gifts.",
+          "Future effect": "Continuity increases.",
+          "Immediate cost": "Time to write and share.",
+          "Present pattern": "Document concrete gifts to reuse.",
+          "Signals": "Clear, specific lists."
+        },
+        "Poor": {
+          "30-90 day system effect": "Reinventing wheels next time.",
+          "Edge condition": "Beware revisionist blame.",
+          "Example moves": "List 5 gifts: skill, asset, relationship, insight, ritual.",
+          "Future effect": "Value evaporates.",
+          "Immediate cost": "Demoralization.",
+          "Present pattern": "Binary success/failure story erases learning.",
+          "Signals": "‘Nothing worked’ narrative."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "External story matures.",
+          "Edge condition": "Avoid polishing pain away.",
+          "Example moves": "Write a short ‘what endured’ note.",
+          "Future effect": "Reputation for integrity strengthens.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Gifts update the field narrative.",
+          "Signals": "Quiet pride; grounded sharing."
+        }
+      },
+      "Purpose of This Theme": "To preserve lessons, assets, and relationships worth carrying forward.",
+      "Why This Matters": "If we don’t name what lives, we lose compounding value."
+    },
+    {
+      "Guiding Questions": [
+        "Who do I owe an acknowledgment or amends to?",
+        "What exactly needs to be said?",
+        "What channel and tone will keep it clean?"
+      ],
+      "Name": "Repairing Invisible Bonds",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Network strengthens.",
+          "Edge condition": "Don’t overdo apologies.",
+          "Example moves": "Prioritize top 2 residues and clear them.",
+          "Future effect": "Future work meets less friction.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Completes small repairs across key relationships.",
+          "Signals": "Ease in collaboration."
+        },
+        "Expected": {
+          "30-90 day system effect": "Trust stabilizes.",
+          "Edge condition": "Repair ≠ forced reconciliation.",
+          "Example moves": "Direct message: brief, specific, accountable.",
+          "Future effect": "Energy unbinds from the past.",
+          "Immediate cost": "Vulnerability.",
+          "Present pattern": "Addresses one concrete repair or amends.",
+          "Signals": "Warmer exchanges."
+        },
+        "Poor": {
+          "30-90 day system effect": "Trust erodes quietly.",
+          "Edge condition": "Don’t overexpose; choose right level.",
+          "Example moves": "One specific amends or acknowledgment.",
+          "Future effect": "Past loops reopen.",
+          "Immediate cost": "Tension lingers.",
+          "Present pattern": "Avoids repair or makes vague gestures.",
+          "Signals": "Edge in tone, avoidance."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Opportunities re-open cleanly.",
+          "Edge condition": "Stay sincere, not performative.",
+          "Example moves": "Offer a tailored intro or thanks.",
+          "Future effect": "Community coherence increases.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Relational fabric becomes stronger than before.",
+          "Signals": "Mutual goodwill."
+        }
+      },
+      "Purpose of This Theme": "To clear subtle resentments or unspoken apologies tied to the dream.",
+      "Why This Matters": "Invisible bonds keep attention tethered to the past."
+    },
+    {
+      "Guiding Questions": [
+        "What words bless this dream as it ends?",
+        "What single living thread do we carry?",
+        "What smallest next step affirms the new chapter?"
+      ],
+      "Name": "Ritual of Goodbye and Recommitment",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Continuity without clinging.",
+          "Edge condition": "Protect from scope creep.",
+          "Example moves": "Calendar a smallest whole move.",
+          "Future effect": "Momentum resumes cleanly.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Names one living thread and a first next step.",
+          "Signals": "Forward orientation returns."
+        },
+        "Expected": {
+          "30-90 day system effect": "Emotion integrates; memory settles.",
+          "Edge condition": "Keep it ordinary and true.",
+          "Example moves": "Say the goodbye line; one breath; place an object.",
+          "Future effect": "Endings become easier next time.",
+          "Immediate cost": "Presence and a witness (optional).",
+          "Present pattern": "Completes a short, sincere ritual.",
+          "Signals": "Softer body; clearer focus."
+        },
+        "Poor": {
+          "30-90 day system effect": "Residue resurfaces.",
+          "Edge condition": "Beware performative ceremony.",
+          "Example moves": "2–5 minute ritual you’ll actually do.",
+          "Future effect": "Closure keeps slipping.",
+          "Immediate cost": "Closure remains incomplete.",
+          "Present pattern": "Skips ritual; hurries onward.",
+          "Signals": "Flat tone; quick pivot."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Collective coherence rises.",
+          "Edge condition": "Guard humility and sincerity.",
+          "Example moves": "Share a simple ‘how we end’ note.",
+          "Future effect": "Endings seed regenerative beginnings.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Ritual becomes a cultural practice of dignified endings.",
+          "Signals": "Others request the practice."
+        }
+      },
+      "Purpose of This Theme": "To close with a simple ritual that blesses what was and turns toward what’s next.",
+      "Why This Matters": "Ritual anchors memory and releases attachment."
+    }
+  ],
+  "Title": "Grieving the Dream",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When a startup path, identity, or cherished plan is ending (or needs to), and you want a clean, human, future-facing way to let it go.",
+  "Why This Matters": "Un-grieved dreams keep us entangled with the past. Deliberate grief protects coherence, restores energy, and prevents old longings from distorting new work."
+}

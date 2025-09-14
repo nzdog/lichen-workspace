@@ -1,0 +1,298 @@
+{
+  "Category": "founder-wellbeing-and-wholeness",
+  "Completion Prompts": [
+    "Where did I force today?",
+    "What did I hold back?",
+    "What ease emerged when I released control?"
+  ],
+  "Created At": "2025-08-19",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [],
+    "Complexity": 1,
+    "Estimated Time": "45 minutes",
+    "Fields": [
+      "wholeness",
+      "relational"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [],
+    "Stones": [
+      "nothing-forced",
+      "nothing-withheld"
+    ],
+    "Tags": [
+      "wholeness",
+      "rhythm",
+      "nothing-forced",
+      "nothing-withheld"
+    ],
+    "Tone Markers": [
+      "clarity",
+      "steadiness",
+      "coherence"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Systems adapt to reduce force and withholding.",
+    "Expected": "Notice and shift toward natural rhythm.",
+    "Poor": "Force and withholding dominate, eroding trust.",
+    "Transcendent": "Ease and openness become field norm."
+  },
+  "Overall Purpose": "Restore natural flow by neither forcing nor withholding.",
+  "Protocol ID": "nothingforcednothingwithheld",
+  "Short Title": "Nothing Forced",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Where did I push too hard?",
+        "What cost did I feel?",
+        "What alternative rhythm existed?"
+      ],
+      "Name": "Recognizing Force",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Teams shift to cooperative rhythm.",
+          "Edge condition": "Don’t overdesign new rules.",
+          "Example moves": "Simplify one pressured process.",
+          "Future effect": "Field supports ease.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Systemically reduce force.",
+          "Signals": "Conflict de-escalates faster."
+        },
+        "Expected": {
+          "30-90 day system effect": "Alignment improves within weeks.",
+          "Edge condition": "Avoid stalling everything.",
+          "Example moves": "Replace forcing with inquiry.",
+          "Future effect": "Momentum steadies.",
+          "Immediate cost": "Discomfort of slowing down.",
+          "Present pattern": "Notice one moment of force.",
+          "Signals": "Body calmer; tasks flow smoother."
+        },
+        "Poor": {
+          "30-90 day system effect": "Relationships fray, misalignment grows.",
+          "Edge condition": "Confuse urgency with momentum.",
+          "Example moves": "Note one forced act today.",
+          "Future effect": "Future trust debt accumulates.",
+          "Immediate cost": "Immediate tension and conflict.",
+          "Present pattern": "Push outcomes despite resistance.",
+          "Signals": "Tight deadlines, visible stress."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "New patterns arise naturally.",
+          "Edge condition": "Avoid demonizing urgency.",
+          "Example moves": "Introduce regular reflection pause.",
+          "Future effect": "Ease attracts coherence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Read force as systemic imbalance.",
+          "Signals": "Culture of flow develops."
+        }
+      },
+      "Purpose of This Theme": "See when energy is pushed or pulled unnaturally.",
+      "Why This Matters": "Forced action drains trust and coherence."
+    },
+    {
+      "Guiding Questions": [
+        "What am I holding back?",
+        "Why?",
+        "What would careful honesty look like?"
+      ],
+      "Name": "Honoring Withholding",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Less gossip, more direct repair.",
+          "Edge condition": "Don’t overexpose private data.",
+          "Example moves": "Create feedback ritual.",
+          "Future effect": "Communication culture transforms.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Track systemic withholds.",
+          "Signals": "Team culture clearer, lighter."
+        },
+        "Expected": {
+          "30-90 day system effect": "Decisions more grounded.",
+          "Edge condition": "Avoid blurting everything.",
+          "Example moves": "Share with care and timing.",
+          "Future effect": "Trust deepens.",
+          "Immediate cost": "Awkward honesty.",
+          "Present pattern": "Voice one held-back truth.",
+          "Signals": "Tension drops; respect rises."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decisions skewed, clarity lost.",
+          "Edge condition": "Don’t confuse discernment with withholding.",
+          "Example moves": "Write the unspoken sentence.",
+          "Future effect": "Patterns of silence persist.",
+          "Immediate cost": "Relief now, tension later.",
+          "Present pattern": "Keep silent on critical issue.",
+          "Signals": "Side conversations, unease."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Structures emerge to surface truths.",
+          "Edge condition": "Avoid forced transparency.",
+          "Example moves": "Model safe disclosure.",
+          "Future effect": "Culture metabolizes truth easily.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Withholding seen as field signal.",
+          "Signals": "Atmosphere of openness forms."
+        }
+      },
+      "Purpose of This Theme": "Name where truth, energy, or care is held back.",
+      "Why This Matters": "Unspoken or withheld energy distorts trust."
+    },
+    {
+      "Guiding Questions": [
+        "Where do I feel ease?",
+        "How does body respond?",
+        "What pattern of flow repeats?"
+      ],
+      "Name": "Listening for Ease",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Projects sustain longer energy.",
+          "Edge condition": "Don’t abandon accountability.",
+          "Example moves": "Sync rhythms in standup.",
+          "Future effect": "Teams thrive sustainably.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Align team cadence with ease.",
+          "Signals": "Conflicts drop; throughput up."
+        },
+        "Expected": {
+          "30-90 day system effect": "Efficiency improves, stress drops.",
+          "Edge condition": "Avoid slacking.",
+          "Example moves": "Build micro‑rhythm check.",
+          "Future effect": "Work feels lighter.",
+          "Immediate cost": "Fear of seeming slow.",
+          "Present pattern": "Follow one signal of ease.",
+          "Signals": "Flow state appears more often."
+        },
+        "Poor": {
+          "30-90 day system effect": "Burnout risk rises.",
+          "Edge condition": "Don’t call laziness ease.",
+          "Example moves": "Pause for breath check.",
+          "Future effect": "Misalignment worsens.",
+          "Immediate cost": "Stress spikes fast.",
+          "Present pattern": "Ignore signs of strain.",
+          "Signals": "Interrupted flow, multitasking."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Innovation rises with flow.",
+          "Edge condition": "Don’t idolize comfort.",
+          "Example moves": "Codify ease in planning.",
+          "Future effect": "System attracts regenerative cycles.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Ease becomes system compass.",
+          "Signals": "Coherence becomes contagious."
+        }
+      },
+      "Purpose of This Theme": "Attune to natural rhythm instead of force.",
+      "Why This Matters": "Ease signals alignment with field."
+    },
+    {
+      "Guiding Questions": [
+        "What is pressing too soon?",
+        "What would waiting serve?",
+        "What timing feels alive?"
+      ],
+      "Name": "Allowing Natural Timing",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "System synchronizes.",
+          "Edge condition": "Don’t create bottlenecks.",
+          "Example moves": "Share timing cues openly.",
+          "Future effect": "Field entrains to coherence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Shift timing across team.",
+          "Signals": "Teams pace together."
+        },
+        "Expected": {
+          "30-90 day system effect": "Stronger foundations.",
+          "Edge condition": "Avoid endless waiting.",
+          "Example moves": "Test one delayed action.",
+          "Future effect": "Results hold better.",
+          "Immediate cost": "Anxiety of waiting.",
+          "Present pattern": "Delay until aligned.",
+          "Signals": "Smooth launches, resilience rises."
+        },
+        "Poor": {
+          "30-90 day system effect": "Fragile structures collapse.",
+          "Edge condition": "Don’t confuse readiness with fear.",
+          "Example moves": "Map timing pressure.",
+          "Future effect": "Breakage accumulates.",
+          "Immediate cost": "Stress, fragile results.",
+          "Present pattern": "Force outcomes before ready.",
+          "Signals": "Rushed rollouts, brittle launches."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Sustained flourishing.",
+          "Edge condition": "Avoid rigidity of schedules.",
+          "Example moves": "Introduce rhythm rituals.",
+          "Future effect": "Structures evolve to flow.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Timing honored as systemic pattern.",
+          "Signals": "Ecosystem adapts to right time."
+        }
+      },
+      "Purpose of This Theme": "Trust emergence and timing without pushing.",
+      "Why This Matters": "Timing shapes sustainability of results."
+    },
+    {
+      "Guiding Questions": [
+        "Where am I gripping tight?",
+        "What’s feared underneath?",
+        "What would trust look like?"
+      ],
+      "Name": "Releasing Control",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Teams scale without bottleneck.",
+          "Edge condition": "Don’t remove oversight fully.",
+          "Example moves": "Share decision rights map.",
+          "Future effect": "Leadership spreads.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Design for distributed control.",
+          "Signals": "Resilience rises."
+        },
+        "Expected": {
+          "30-90 day system effect": "Ownership expands.",
+          "Edge condition": "Avoid abdication.",
+          "Example moves": "Clarify outcome, not steps.",
+          "Future effect": "Capability strengthens.",
+          "Immediate cost": "Fear of loss.",
+          "Present pattern": "Delegate with trust.",
+          "Signals": "Fewer corrections, more initiative."
+        },
+        "Poor": {
+          "30-90 day system effect": "Team morale sinks.",
+          "Edge condition": "Don’t confuse clarity with control.",
+          "Example moves": "Skip one check‑in.",
+          "Future effect": "Dependency grows.",
+          "Immediate cost": "Immediate tension.",
+          "Present pattern": "Micromanage tasks.",
+          "Signals": "Checking, correcting constantly."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System self‑organizes.",
+          "Edge condition": "Avoid power vacuum.",
+          "Example moves": "Codify shared stewardship.",
+          "Future effect": "Field self‑corrects.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Control replaced by stewardship.",
+          "Signals": "Emergent leadership appears."
+        }
+      },
+      "Purpose of This Theme": "Let go of controlling outcomes.",
+      "Why This Matters": "Control hides fear; release grows trust."
+    }
+  ],
+  "Title": "Nothing Forced, Nothing Withheld",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When urgency pressures or silence erodes clarity.",
+  "Why This Matters": "Force and withholding both distort truth and drain energy."
+}

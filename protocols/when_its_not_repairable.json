@@ -1,0 +1,299 @@
+{
+  "Category": "conflict-and-repair",
+  "Completion Prompts": [
+    "What repair is truly over?",
+    "What closure ritual is needed?",
+    "What learning emerges?"
+  ],
+  "Created At": "2025-08-19",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [],
+    "Complexity": 2,
+    "Estimated Time": "60 minutes",
+    "Fields": [
+      "integrity",
+      "relational",
+      "collapse"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [],
+    "Stones": [
+      "integrity-is-the-growth-strategy",
+      "nothing-forced-nothing-withheld"
+    ],
+    "Tags": [
+      "conflict",
+      "repair",
+      "closure",
+      "learning"
+    ],
+    "Tone Markers": [
+      "clarity",
+      "integrity",
+      "steadiness"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "System learns and resets from failed repair.",
+    "Expected": "Limits named, closure created.",
+    "Poor": "Attempts at repair repeat endlessly.",
+    "Transcendent": "System regenerates by integrating endings."
+  },
+  "Overall Purpose": "Discern when repair is no longer possible and create coherent closure.",
+  "Protocol ID": "whenitsnotrepairable",
+  "Short Title": "Not Repairable",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "Where am I forcing repair?",
+        "What signals closure?",
+        "How might naming these limits protect future energy and coherence?"
+      ],
+      "Name": "Recognizing Limits of Repair",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Energy re-channels.",
+          "Edge condition": "Don’t enable avoidance.",
+          "Example moves": "Create closure ritual.",
+          "Future effect": "Culture strengthens.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "System recognizes limits.",
+          "Signals": "Teams reset."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy clarifies.",
+          "Edge condition": "Avoid premature closure.",
+          "Example moves": "Name boundary clearly.",
+          "Future effect": "System integrity builds.",
+          "Immediate cost": "Grief arises.",
+          "Present pattern": "Acknowledge limits.",
+          "Signals": "Signals of finality felt."
+        },
+        "Poor": {
+          "30-90 day system effect": "Conflict festers.",
+          "Edge condition": "Don’t confuse effort with repair.",
+          "Example moves": "Name repair attempts.",
+          "Future effect": "Future collapse risk.",
+          "Immediate cost": "Energy drains.",
+          "Present pattern": "Cling to repair.",
+          "Signals": "Repeated cycles."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System coherence deepens.",
+          "Edge condition": "Avoid rigid boundaries.",
+          "Example moves": "Anchor in clarity practice.",
+          "Future effect": "System regenerates.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Limits honored as compass.",
+          "Signals": "Field resets."
+        }
+      },
+      "Purpose of This Theme": "Discern when repair is no longer viable.",
+      "Why This Matters": "Clarity about limits prevents false hope."
+    },
+    {
+      "Guiding Questions": [
+        "What effort deserves blessing?",
+        "What gratitude remains?",
+        "What gesture could make the effort feel fully seen without prolonging the conflict?"
+      ],
+      "Name": "Honoring the Attempt",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Culture respects effort.",
+          "Edge condition": "Don’t create martyrdom.",
+          "Example moves": "Ritualize gratitude.",
+          "Future effect": "System steadies.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "System honors attempt.",
+          "Signals": "Conflict residue lessens."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy releases.",
+          "Edge condition": "Avoid hollow blessing.",
+          "Example moves": "Express gratitude.",
+          "Future effect": "Trust rebuilds partially.",
+          "Immediate cost": "Awkwardness felt.",
+          "Present pattern": "Bless attempt.",
+          "Signals": "Respect grows."
+        },
+        "Poor": {
+          "30-90 day system effect": "Energy stuck.",
+          "Edge condition": "Don’t dismiss attempts.",
+          "Example moves": "Name effort once.",
+          "Future effect": "Resentment grows.",
+          "Immediate cost": "Bitterness builds.",
+          "Present pattern": "Ignore effort.",
+          "Signals": "Distrust rises."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System coherence expands.",
+          "Edge condition": "Avoid empty ritual.",
+          "Example moves": "Embed gratitude practice.",
+          "Future effect": "Field coherence grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Blessing becomes norm.",
+          "Signals": "Field regenerates."
+        }
+      },
+      "Purpose of This Theme": "Bless the effort even if repair fails.",
+      "Why This Matters": "Blessing prevents bitterness."
+    },
+    {
+      "Guiding Questions": [
+        "What ending remains unmarked?",
+        "What ritual can close it?",
+        "What symbol or action would unmistakably mark this ending for everyone involved?"
+      ],
+      "Name": "Creating Closure",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Culture respects endings.",
+          "Edge condition": "Don’t over-engineer.",
+          "Example moves": "Codify closure ritual.",
+          "Future effect": "Resilience strengthens.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Closure normalized.",
+          "Signals": "Teams reset."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy released.",
+          "Edge condition": "Avoid performative closure.",
+          "Example moves": "Mark end with symbol.",
+          "Future effect": "System stabilizes.",
+          "Immediate cost": "Grief arises.",
+          "Present pattern": "Create closure ritual.",
+          "Signals": "Finality felt."
+        },
+        "Poor": {
+          "30-90 day system effect": "Energy drains.",
+          "Edge condition": "Don’t avoid closure.",
+          "Example moves": "List open loops.",
+          "Future effect": "System weakens.",
+          "Immediate cost": "Confusion lingers.",
+          "Present pattern": "Leave open loops.",
+          "Signals": "Cycles repeat."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Endings integrated system-wide.",
+          "Edge condition": "Avoid rigid closure.",
+          "Example moves": "Weave closure into culture.",
+          "Future effect": "Field coherence builds.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Closure as cultural anchor.",
+          "Signals": "Field regenerates."
+        }
+      },
+      "Purpose of This Theme": "Mark the end of attempts with clarity.",
+      "Why This Matters": "Closure protects energy for what’s next."
+    },
+    {
+      "Guiding Questions": [
+        "What did we learn?",
+        "What prevents repeat?",
+        "How can this learning be preserved so it strengthens future decisions?"
+      ],
+      "Name": "Extracting Learning",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Teams integrate insights.",
+          "Edge condition": "Don’t weaponize insight.",
+          "Example moves": "Share learnings safely.",
+          "Future effect": "System coherence grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Learning normalized.",
+          "Signals": "Fewer repeats."
+        },
+        "Expected": {
+          "30-90 day system effect": "Patterns shift.",
+          "Edge condition": "Avoid over-analysis.",
+          "Example moves": "Capture insight simply.",
+          "Future effect": "System evolves.",
+          "Immediate cost": "Discomfort felt.",
+          "Present pattern": "Name key learning.",
+          "Signals": "Signals of growth."
+        },
+        "Poor": {
+          "30-90 day system effect": "Patterns persist.",
+          "Edge condition": "Don’t avoid reflection.",
+          "Example moves": "Note one learning.",
+          "Future effect": "Cycles repeat.",
+          "Immediate cost": "Repeat mistakes.",
+          "Present pattern": "Ignore lessons.",
+          "Signals": "Blind spots remain."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "System continually adapts.",
+          "Edge condition": "Avoid rigid lessons.",
+          "Example moves": "Embed reflection rituals.",
+          "Future effect": "Field regenerates.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Learning becomes culture.",
+          "Signals": "Field strengthens."
+        }
+      },
+      "Purpose of This Theme": "Gather insight from what could not repair.",
+      "Why This Matters": "Learning transforms loss into growth."
+    },
+    {
+      "Guiding Questions": [
+        "Where does residue linger?",
+        "What would clean release be?",
+        "What practice would help ensure the release feels complete rather than partial?"
+      ],
+      "Name": "Releasing Without Residue",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Teams free energy.",
+          "Edge condition": "Don’t glorify detachment.",
+          "Example moves": "Create release practices.",
+          "Future effect": "System regenerates.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Release normalized.",
+          "Signals": "Conflicts lessen."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy clears.",
+          "Edge condition": "Avoid forced forgiveness.",
+          "Example moves": "Mark release with clarity.",
+          "Future effect": "System steadies.",
+          "Immediate cost": "Sadness present.",
+          "Present pattern": "Release cleanly.",
+          "Signals": "Trust partially restored."
+        },
+        "Poor": {
+          "30-90 day system effect": "Trust erodes.",
+          "Edge condition": "Don’t mask bitterness.",
+          "Example moves": "Name residue.",
+          "Future effect": "Future burden builds.",
+          "Immediate cost": "Energy stuck.",
+          "Present pattern": "Cling with residue.",
+          "Signals": "Bitter tone."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Culture renews.",
+          "Edge condition": "Avoid rigid release.",
+          "Example moves": "Anchor release in ritual.",
+          "Future effect": "System thrives.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Release as systemic signal.",
+          "Signals": "Field clears."
+        }
+      },
+      "Purpose of This Theme": "Let go of what can’t repair without residue.",
+      "Why This Matters": "Release frees future energy."
+    }
+  ],
+  "Title": "When It’s Not Repairable",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When repeated attempts at repair fail or cycles repeat.",
+  "Why This Matters": "Forcing repair drains energy; clarity restores it."
+}

@@ -1,0 +1,297 @@
+{
+  "Category": "entry",
+  "Completion Prompts": [
+    "What shifted as I entered?",
+    "What residue cleared?",
+    "How does this threshold change me?"
+  ],
+  "Created At": "2025-09-13",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [],
+    "Complexity": 1,
+    "Estimated Time": "5–10 minutes",
+    "Fields": [
+      "entry",
+      "integrity"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "session entry"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [],
+    "Stones": [
+      "integrity-is-the-growth-strategy",
+      "the-system-walks-with-us"
+    ],
+    "Tags": [
+      "entry",
+      "residue-clearing"
+    ],
+    "Tone Markers": [
+      "light",
+      "clear"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Clear entry becomes habitual.",
+    "Expected": "Basic reset achieved.",
+    "Poor": "Residue carried forward, clarity lost.",
+    "Transcendent": "Entry thresholds transform the whole field."
+  },
+  "Overall Purpose": "Help founders clear residue and enter a new space with integrity.",
+  "Protocol ID": "clearingentry",
+  "Short Title": "Clearing Entry",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What am I carrying right now?",
+        "What can I set down?",
+        "What would be clean to leave behind?"
+      ],
+      "Name": "Name Residue",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Integrity grows.",
+          "Edge condition": "No perfectionism.",
+          "Example moves": "Simple release ritual.",
+          "Future effect": "Flow improves.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Residue clearing consistent.",
+          "Signals": "Energy shifts."
+        },
+        "Expected": {
+          "30-90 day system effect": "Clarity restored.",
+          "Edge condition": "Avoid blame.",
+          "Example moves": "Write a quick note.",
+          "Future effect": "Clarity maintained.",
+          "Immediate cost": "Relief begins.",
+          "Present pattern": "Residue noticed.",
+          "Signals": "Relaxed posture."
+        },
+        "Poor": {
+          "30-90 day system effect": "Coherence declines.",
+          "Edge condition": "Over-identification.",
+          "Example moves": "Say what lingers.",
+          "Future effect": "Baggage builds.",
+          "Immediate cost": "Clutter persists.",
+          "Present pattern": "Ignore residue.",
+          "Signals": "Tension carried."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Coherence field resets.",
+          "Edge condition": "Avoid bypassing.",
+          "Example moves": "Speak clearing aloud.",
+          "Future effect": "System stays clean.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Thresholds honored deeply.",
+          "Signals": "Ease and lightness."
+        }
+      },
+      "Purpose of This Theme": "Acknowledge what you’re carrying.",
+      "Why This Matters": "What is named can be released."
+    },
+    {
+      "Guiding Questions": [
+        "What am I entering?",
+        "How do I bless this moment?",
+        "What does blessing shift in me?"
+      ],
+      "Name": "Bless Transition",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Integrity expands.",
+          "Edge condition": "Not empty ritual.",
+          "Example moves": "Group blessing.",
+          "Future effect": "System coherence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Blessing normalized.",
+          "Signals": "Ease visible."
+        },
+        "Expected": {
+          "30-90 day system effect": "Clarity improves.",
+          "Edge condition": "Avoid dramatizing.",
+          "Example moves": "Say thanks.",
+          "Future effect": "Coherence grows.",
+          "Immediate cost": "Relief felt.",
+          "Present pattern": "Bless transition simply.",
+          "Signals": "Calm tone."
+        },
+        "Poor": {
+          "30-90 day system effect": "Coherence weakens.",
+          "Edge condition": "Avoid shallow ritual.",
+          "Example moves": "Jump without pause.",
+          "Future effect": "Residue persists.",
+          "Immediate cost": "Disconnection.",
+          "Present pattern": "Skip transition.",
+          "Signals": "Rushed tone."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Wholeness emerges.",
+          "Edge condition": "Avoid bypass.",
+          "Example moves": "Bless as collective.",
+          "Future effect": "Field coherence grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Blessing as field anchor.",
+          "Signals": "Shared reverence."
+        }
+      },
+      "Purpose of This Theme": "Honor the shift into new space.",
+      "Why This Matters": "Blessing reinforces coherence."
+    },
+    {
+      "Guiding Questions": [
+        "What is this space for?",
+        "How do I hold it?",
+        "What future does this open?"
+      ],
+      "Name": "Set Intention",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Alignment expands.",
+          "Edge condition": "Avoid forcing.",
+          "Example moves": "Share intention.",
+          "Future effect": "System coheres.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Intention clear.",
+          "Signals": "Calm focus."
+        },
+        "Expected": {
+          "30-90 day system effect": "Coherence improves.",
+          "Edge condition": "Avoid rigidity.",
+          "Example moves": "Name goal.",
+          "Future effect": "Trust builds.",
+          "Immediate cost": "Clarity grows.",
+          "Present pattern": "Intention named.",
+          "Signals": "Focused eyes."
+        },
+        "Poor": {
+          "30-90 day system effect": "Fragmentation.",
+          "Edge condition": "Over-prescribe.",
+          "Example moves": "Dive in unclear.",
+          "Future effect": "System drifts.",
+          "Immediate cost": "Aimless.",
+          "Present pattern": "Skip intention.",
+          "Signals": "Confused energy."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Wholeness grows.",
+          "Edge condition": "No bypass.",
+          "Example moves": "Align as group.",
+          "Future effect": "Field coherence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Intention as field compass.",
+          "Signals": "Shared clarity."
+        }
+      },
+      "Purpose of This Theme": "Name what this space is for.",
+      "Why This Matters": "Intention guides coherence."
+    },
+    {
+      "Guiding Questions": [
+        "What old energy lingers?",
+        "How can I release it now?",
+        "What changes when it’s gone?"
+      ],
+      "Name": "Release Old Energy",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Integrity builds.",
+          "Edge condition": "Avoid bypass.",
+          "Example moves": "Team release.",
+          "Future effect": "System clears.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Release normalized.",
+          "Signals": "Ease visible."
+        },
+        "Expected": {
+          "30-90 day system effect": "Clarity expands.",
+          "Edge condition": "Not over-dramatic.",
+          "Example moves": "Stretch/shake.",
+          "Future effect": "Ease grows.",
+          "Immediate cost": "Relief felt.",
+          "Present pattern": "Energy released.",
+          "Signals": "Relaxation."
+        },
+        "Poor": {
+          "30-90 day system effect": "Trust erodes.",
+          "Edge condition": "Avoid denial.",
+          "Example moves": "Skip release.",
+          "Future effect": "Stagnation.",
+          "Immediate cost": "Cluttered space.",
+          "Present pattern": "Energy carried.",
+          "Signals": "Restless body."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Coherence strengthens.",
+          "Edge condition": "Not avoidance.",
+          "Example moves": "Collective release.",
+          "Future effect": "Wholeness grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Release as ritual.",
+          "Signals": "Shared stillness."
+        }
+      },
+      "Purpose of This Theme": "Discharge what doesn’t belong.",
+      "Why This Matters": "Old energy blocks flow."
+    },
+    {
+      "Guiding Questions": [
+        "What makes this entry fresh?",
+        "How can I step in as new?",
+        "What field opens with this entry?"
+      ],
+      "Name": "Open Freshly",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Integrity deepens.",
+          "Edge condition": "Avoid superficiality.",
+          "Example moves": "Group acknowledgment.",
+          "Future effect": "System coheres.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Freshness consistent.",
+          "Signals": "Clear focus."
+        },
+        "Expected": {
+          "30-90 day system effect": "Trust builds.",
+          "Edge condition": "Not forced.",
+          "Example moves": "Simple reset ritual.",
+          "Future effect": "Clarity grows.",
+          "Immediate cost": "Energy lightens.",
+          "Present pattern": "Fresh start attempted.",
+          "Signals": "Smile returns."
+        },
+        "Poor": {
+          "30-90 day system effect": "System stagnates.",
+          "Edge condition": "Avoid pretending.",
+          "Example moves": "Repeat old patterns.",
+          "Future effect": "Field closes.",
+          "Immediate cost": "Dull entry.",
+          "Present pattern": "Carry old baggage.",
+          "Signals": "Heavy energy."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Wholeness grows.",
+          "Edge condition": "Avoid denial.",
+          "Example moves": "Field-wide renewal.",
+          "Future effect": "System regenerates.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Freshness as cultural norm.",
+          "Signals": "Shared joy."
+        }
+      },
+      "Purpose of This Theme": "Enter as if new.",
+      "Why This Matters": "Fresh entry resets coherence."
+    }
+  ],
+  "Title": "Clearing Entry",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Before starting a new session, call, or deep work block.",
+  "Why This Matters": "Integrity Is the Growth Strategy and The System Walks With Us remind us that clean thresholds create coherent work."
+}

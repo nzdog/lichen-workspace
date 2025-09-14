@@ -1,0 +1,297 @@
+{
+  "Category": "founder-wellbeing-and-wholeness",
+  "Completion Prompts": [
+    "What presence did I embody today?",
+    "Where did distraction cost me?",
+    "What rhythm supported depth?"
+  ],
+  "Created At": "2025-08-19",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [],
+    "Complexity": 1,
+    "Estimated Time": "45 minutes",
+    "Fields": [
+      "wholeness",
+      "signal"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [],
+    "Stones": [
+      "presence-is-productivity"
+    ],
+    "Tags": [
+      "presence",
+      "productivity",
+      "rhythm",
+      "wellbeing"
+    ],
+    "Tone Markers": [
+      "clarity",
+      "steadiness",
+      "presence"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Teams normalize presence in culture.",
+    "Expected": "Presence named as productivity, stress drops.",
+    "Poor": "Presence ignored, shallow output dominates.",
+    "Transcendent": "Presence becomes systemic foundation."
+  },
+  "Overall Purpose": "Show that presence itself is a form of productivity.",
+  "Protocol ID": "presenceisproductivity",
+  "Short Title": "Presence",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "How do I confuse output with worth?",
+        "When was I most present today?",
+        "What future work might emerge if presence is treated as the true measure of progress?"
+      ],
+      "Name": "Distinguishing Presence from Output",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Culture supports deep work.",
+          "Edge condition": "Don’t enforce rituals harshly.",
+          "Example moves": "Introduce presence check-in.",
+          "Future effect": "Team resilience grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Systematic presence practices.",
+          "Signals": "Interruptions drop."
+        },
+        "Expected": {
+          "30-90 day system effect": "Clarity and energy improve.",
+          "Edge condition": "Avoid false balance.",
+          "Example moves": "Pause mid-task to reset.",
+          "Future effect": "Deeper productivity arises.",
+          "Immediate cost": "Fear of slowing down.",
+          "Present pattern": "Value presence equally.",
+          "Signals": "Notice focus returning."
+        },
+        "Poor": {
+          "30-90 day system effect": "Quality drops quickly.",
+          "Edge condition": "Don’t romanticize overwork.",
+          "Example moves": "Track one moment of presence lost.",
+          "Future effect": "Future disconnection grows.",
+          "Immediate cost": "Stress and depletion.",
+          "Present pattern": "Equate worth with output.",
+          "Signals": "Long hours, shallow work."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Work flows sustainably.",
+          "Edge condition": "Avoid spiritual bypass.",
+          "Example moves": "Embed presence in culture.",
+          "Future effect": "Field coheres around depth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Presence becomes systemic norm.",
+          "Signals": "Trust increases everywhere."
+        }
+      },
+      "Purpose of This Theme": "Clarify that presence itself is productive.",
+      "Why This Matters": "Productivity without presence leads to burnout."
+    },
+    {
+      "Guiding Questions": [
+        "Where is tension today?",
+        "What breath restores me?",
+        "How could small daily embodied practices ripple into long-term resilience?"
+      ],
+      "Name": "Embodied Attention",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Healthier team energy.",
+          "Edge condition": "Don’t mandate conformity.",
+          "Example moves": "Offer embodied practices.",
+          "Future effect": "Culture of vitality.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Embed embodiment in workflow.",
+          "Signals": "Reduced burnout."
+        },
+        "Expected": {
+          "30-90 day system effect": "Stress reduced, energy steady.",
+          "Edge condition": "Avoid obsessing.",
+          "Example moves": "Add micro body-scan.",
+          "Future effect": "Wellbeing improves.",
+          "Immediate cost": "Momentary discomfort.",
+          "Present pattern": "Check body regularly.",
+          "Signals": "Breathing slows."
+        },
+        "Poor": {
+          "30-90 day system effect": "Errors and stress rise.",
+          "Edge condition": "Don’t dismiss breaks.",
+          "Example moves": "Note posture once daily.",
+          "Future effect": "System strain accumulates.",
+          "Immediate cost": "Exhaustion, tension.",
+          "Present pattern": "Ignore body signals.",
+          "Signals": "Back pain, fatigue."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "New norms of vitality emerge.",
+          "Edge condition": "Avoid performance pressure.",
+          "Example moves": "Create embodied rituals.",
+          "Future effect": "Field grows in wholeness.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Embodiment as cultural signal.",
+          "Signals": "System rhythms align with life."
+        }
+      },
+      "Purpose of This Theme": "Bring awareness to body as anchor of focus.",
+      "Why This Matters": "Embodiment sustains energy."
+    },
+    {
+      "Guiding Questions": [
+        "When was I last deeply focused?",
+        "What boundary protects it?",
+        "What future breakthrough could uninterrupted focus make possible?"
+      ],
+      "Name": "Deep Focus",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Higher creative output.",
+          "Edge condition": "Don’t punish flexibility.",
+          "Example moves": "Designate focus days.",
+          "Future effect": "Teams advance together.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Institutionalize deep work.",
+          "Signals": "Interruptions reduce."
+        },
+        "Expected": {
+          "30-90 day system effect": "Key work progresses.",
+          "Edge condition": "Avoid rigidity.",
+          "Example moves": "Protect one block daily.",
+          "Future effect": "Deeper progress.",
+          "Immediate cost": "Anxiety about emails.",
+          "Present pattern": "Create focus block.",
+          "Signals": "Flow returns."
+        },
+        "Poor": {
+          "30-90 day system effect": "Projects stall.",
+          "Edge condition": "Don’t glorify busy.",
+          "Example moves": "Track focus loss.",
+          "Future effect": "Future overwhelm.",
+          "Immediate cost": "Low quality results.",
+          "Present pattern": "Work fragmented.",
+          "Signals": "Multitasking obvious."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Structures defend deep time.",
+          "Edge condition": "Avoid exclusion.",
+          "Example moves": "Normalize deep focus culture.",
+          "Future effect": "Field values depth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Focus as systemic value.",
+          "Signals": "Innovation accelerates."
+        }
+      },
+      "Purpose of This Theme": "Protect spaces for uninterrupted concentration.",
+      "Why This Matters": "Focus drives meaningful progress."
+    },
+    {
+      "Guiding Questions": [
+        "How present was I in last meeting?",
+        "What shifted when I listened fully?",
+        "How would consistently choosing presence in dialogue reshape trust over time?"
+      ],
+      "Name": "Relational Presence",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Meetings become efficient.",
+          "Edge condition": "Don’t over-schedule.",
+          "Example moves": "Create no-device agreements.",
+          "Future effect": "Teams thrive.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Normalize relational presence.",
+          "Signals": "Decisions clearer."
+        },
+        "Expected": {
+          "30-90 day system effect": "Clarity and trust improve.",
+          "Edge condition": "Avoid performative listening.",
+          "Example moves": "Practice active listening.",
+          "Future effect": "Collaboration deepens.",
+          "Immediate cost": "Fear of slowing team.",
+          "Present pattern": "Stay with one conversation.",
+          "Signals": "Others feel heard."
+        },
+        "Poor": {
+          "30-90 day system effect": "Collaboration falters.",
+          "Edge condition": "Don’t confuse multitasking.",
+          "Example moves": "Log one moment of distraction.",
+          "Future effect": "Trust erodes.",
+          "Immediate cost": "Misunderstandings rise.",
+          "Present pattern": "Distracted in dialogue.",
+          "Signals": "People feel unseen."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Culture of deep respect.",
+          "Edge condition": "Avoid idealizing harmony.",
+          "Example moves": "Codify presence rituals.",
+          "Future effect": "Field coherence grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Relational presence shifts field.",
+          "Signals": "Relationships regenerate."
+        }
+      },
+      "Purpose of This Theme": "Stay present with others.",
+      "Why This Matters": "Connection is part of productivity."
+    },
+    {
+      "Guiding Questions": [
+        "What rhythm did I ignore?",
+        "How can I respect it tomorrow?",
+        "What signals tell me a rhythm is strong enough to carry us into the future?"
+      ],
+      "Name": "Protecting Rhythm",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Teams pace well.",
+          "Edge condition": "Don’t force sync.",
+          "Example moves": "Align planning to rhythms.",
+          "Future effect": "Long-term resilience.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "System rhythms embedded.",
+          "Signals": "Less burnout."
+        },
+        "Expected": {
+          "30-90 day system effect": "Energy stabilizes.",
+          "Edge condition": "Avoid rigidity.",
+          "Example moves": "Plan with rhythm.",
+          "Future effect": "Momentum stabilizes.",
+          "Immediate cost": "Fear of lost time.",
+          "Present pattern": "Respect rhythm.",
+          "Signals": "Days flow smoother."
+        },
+        "Poor": {
+          "30-90 day system effect": "Momentum collapses.",
+          "Edge condition": "Don’t confuse urgency with rhythm.",
+          "Example moves": "Note rhythm breach.",
+          "Future effect": "Cycles weaken.",
+          "Immediate cost": "Exhaustion spikes.",
+          "Present pattern": "Override rhythm.",
+          "Signals": "Erratic energy."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Work cycles regenerative.",
+          "Edge condition": "Avoid rhythm dogma.",
+          "Example moves": "Anchor decisions in rhythm.",
+          "Future effect": "System sustains itself.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Rhythm as field compass.",
+          "Signals": "System coherence grows."
+        }
+      },
+      "Purpose of This Theme": "Hold sustainable rhythms.",
+      "Why This Matters": "Rhythm is foundation of productivity."
+    }
+  ],
+  "Title": "Presence Is Productivity",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When overwork overrides awareness and rhythm.",
+  "Why This Matters": "Without presence, productivity collapses into burnout."
+}

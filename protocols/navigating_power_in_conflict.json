@@ -1,0 +1,304 @@
+{
+  "Category": "Conflict Resolution",
+  "Completion Prompts": [
+    "Identify a current conflict where power dynamics need attention.",
+    "Reflect on a past conflict: How did power influence the outcome?",
+    "Consider a future conflict: How can you ensure equitable voice?"
+  ],
+  "Created At": "2023-10-05",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [],
+    "Complexity": 3,
+    "Estimated Time": "60–90 min",
+    "Fields": [],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Conflict resolution",
+      "Power dynamics management"
+    ],
+    "Readiness Stage": "Act",
+    "Related Protocols": [
+      "Building Trust in Teams",
+      "Equitable Decision-Making"
+    ],
+    "Stones": [
+      "clarity-over-cleverness",
+      "light-before-form",
+      "presence-is-productivity",
+      "stewardship-not-ownership"
+    ],
+    "Tags": [
+      "conflict",
+      "power dynamics",
+      "equity"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "Power dynamics are skillfully navigated, fostering equitable resolutions and strengthened relationships.",
+    "Expected": "Power is acknowledged but not effectively managed, resulting in partial resolutions and lingering tensions.",
+    "Poor": "Power dynamics are ignored, leading to unresolved conflicts and entrenched inequities.",
+    "Transcendent": "Power navigation becomes intuitive, creating a culture of fairness and mutual respect in conflicts."
+  },
+  "Overall Purpose": "To understand and manage power dynamics in conflicts, ensuring equitable resolutions and fostering trust within the system.",
+  "Protocol ID": "navigatingpowerinconflict",
+  "Short Title": "Power in Conflict",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What power structures are influencing this conflict?",
+        "Who holds power, and how is it being used?",
+        "How can we address power imbalances?"
+      ],
+      "Name": "Recognizing Power Dynamics",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Enhanced trust and equitable resolutions.",
+          "Edge condition": "Balancing power awareness with action.",
+          "Example moves": "Facilitating power-awareness workshops.",
+          "Future effect": "The future sustains fair and collaborative environments.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Power dynamics are actively explored and understood.",
+          "Signals": "Open discussions about power, equitable solutions."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed trust and collaboration.",
+          "Edge condition": "Assuming awareness equals understanding.",
+          "Example moves": "Noting power dynamics but not addressing them.",
+          "Future effect": "The future experiences recurring conflicts.",
+          "Immediate cost": "Partial resolutions with lingering tensions.",
+          "Present pattern": "Power is acknowledged but not fully understood.",
+          "Signals": "Occasional power struggles, partial agreements."
+        },
+        "Poor": {
+          "30-90 day system effect": "Trust and collaboration diminish.",
+          "Edge condition": "Mistaking silence for agreement.",
+          "Example moves": "Ignoring power imbalances in discussions.",
+          "Future effect": "The future inherits entrenched conflicts and inequities.",
+          "Immediate cost": "Conflicts remain unresolved or escalate.",
+          "Present pattern": "Power dynamics are overlooked or denied.",
+          "Signals": "Frequent unresolved disputes, power plays."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Conflicts are resolved with fairness and respect.",
+          "Edge condition": "Avoiding overemphasis on power at the expense of resolution.",
+          "Example moves": "Integrating power dynamics into conflict resolution protocols.",
+          "Future effect": "The future thrives in a culture of equity and mutual respect.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Power awareness is embedded in the culture.",
+          "Signals": "Collective understanding of power dynamics."
+        }
+      },
+      "Purpose of This Theme": "To identify and understand the power structures influencing the conflict.",
+      "Why This Matters": "Awareness of power dynamics is crucial for addressing imbalances and achieving fair outcomes."
+    },
+    {
+      "Guiding Questions": [
+        "Whose voices are missing in this discussion?",
+        "How can we ensure all perspectives are heard?",
+        "What structures support balanced participation?"
+      ],
+      "Name": "Balancing Power and Voice",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Full engagement and diverse solutions.",
+          "Edge condition": "Balancing voice with decision efficiency.",
+          "Example moves": "Using facilitation techniques to balance participation.",
+          "Future effect": "The future benefits from inclusive and innovative solutions.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "All voices are actively encouraged and balanced.",
+          "Signals": "Equitable participation, diverse perspectives."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial engagement and satisfaction.",
+          "Edge condition": "Assuming presence equals participation.",
+          "Example moves": "Inviting input but not ensuring it is heard.",
+          "Future effect": "The future experiences uneven engagement.",
+          "Immediate cost": "Some perspectives are considered, others overlooked.",
+          "Present pattern": "Efforts are made to include all voices, but inconsistently.",
+          "Signals": "Inconsistent participation, occasional overlooked input."
+        },
+        "Poor": {
+          "30-90 day system effect": "Increased dissatisfaction and disengagement.",
+          "Edge condition": "Mistaking volume for validity.",
+          "Example moves": "Allowing dominant voices to control discussions.",
+          "Future effect": "The future suffers from limited perspectives and solutions.",
+          "Immediate cost": "Marginalized perspectives are ignored.",
+          "Present pattern": "Dominant voices overshadow others.",
+          "Signals": "Frequent interruptions, lack of diverse input."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Conflicts are resolved with comprehensive input.",
+          "Edge condition": "Avoiding tokenism in inclusion efforts.",
+          "Example moves": "Embedding voice equity in all conflict protocols.",
+          "Future effect": "The future thrives on diversity and shared power.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Equitable voice is a cultural norm.",
+          "Signals": "Collective respect for diverse contributions."
+        }
+      },
+      "Purpose of This Theme": "To ensure all voices are heard and power is balanced in conflict resolution.",
+      "Why This Matters": "Equitable voice ensures diverse perspectives are considered, leading to fairer outcomes."
+    },
+    {
+      "Guiding Questions": [
+        "What does an equitable resolution look like here?",
+        "How can we ensure all parties feel respected?",
+        "What steps can we take to balance power in resolutions?"
+      ],
+      "Name": "Facilitating Equitable Resolutions",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust and collaboration are strengthened.",
+          "Edge condition": "Balancing thoroughness with timeliness.",
+          "Example moves": "Facilitating consensus-building sessions.",
+          "Future effect": "The future sustains harmonious and equitable relationships.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Resolutions are crafted with equity and respect.",
+          "Signals": "Widespread acceptance and commitment."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed satisfaction and trust levels.",
+          "Edge condition": "Assuming compromise equals fairness.",
+          "Example moves": "Seeking quick resolutions without full input.",
+          "Future effect": "The future experiences recurring conflicts.",
+          "Immediate cost": "Some parties feel unheard or disadvantaged.",
+          "Present pattern": "Resolutions attempt fairness but fall short.",
+          "Signals": "Partial buy-in, lingering dissatisfaction."
+        },
+        "Poor": {
+          "30-90 day system effect": "Resentment and mistrust grow.",
+          "Edge condition": "Mistaking settlement for resolution.",
+          "Example moves": "Accepting resolutions that benefit only the dominant party.",
+          "Future effect": "The future inherits unresolved tensions.",
+          "Immediate cost": "Inequities are perpetuated.",
+          "Present pattern": "Resolutions favor the powerful.",
+          "Signals": "One-sided agreements, unresolved grievances."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Conflicts are resolved with mutual respect and understanding.",
+          "Edge condition": "Avoiding over-negotiation that delays resolution.",
+          "Example moves": "Integrating equity principles into all resolution processes.",
+          "Future effect": "The future thrives on fairness and collaborative growth.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Equitable resolution is an ingrained practice.",
+          "Signals": "Consistent satisfaction and trust in outcomes."
+        }
+      },
+      "Purpose of This Theme": "To guide conflicts towards resolutions that respect all parties and balance power.",
+      "Why This Matters": "Equitable resolutions build trust and prevent future conflicts."
+    },
+    {
+      "Guiding Questions": [
+        "How can we build trust during this conflict?",
+        "What actions undermine trust here?",
+        "How can we repair trust if it’s broken?"
+      ],
+      "Name": "Building Trust in Conflict",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Strong, resilient relationships.",
+          "Edge condition": "Balancing trust-building with conflict resolution.",
+          "Example moves": "Facilitating trust-building workshops.",
+          "Future effect": "The future sustains robust, trusting collaborations.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Trust is actively cultivated throughout conflicts.",
+          "Signals": "Open communication, mutual respect."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent relationship strength.",
+          "Edge condition": "Assuming initial trust is sufficient.",
+          "Example moves": "Occasional trust-building activities.",
+          "Future effect": "The future experiences fluctuating trust levels.",
+          "Immediate cost": "Mixed levels of openness and cooperation.",
+          "Present pattern": "Trust is considered but not consistently built.",
+          "Signals": "Varying degrees of defensiveness and cooperation."
+        },
+        "Poor": {
+          "30-90 day system effect": "Erosion of relationships and collaboration.",
+          "Edge condition": "Mistaking politeness for trust.",
+          "Example moves": "Focusing solely on outcomes, not process.",
+          "Future effect": "The future is marked by distrust and isolation.",
+          "Immediate cost": "Increased defensiveness and resistance.",
+          "Present pattern": "Trust is undermined during conflicts.",
+          "Signals": "Frequent defensiveness, lack of openness."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Conflicts are resolved with deep mutual understanding.",
+          "Edge condition": "Avoiding complacency in trust maintenance.",
+          "Example moves": "Embedding trust principles in all conflict processes.",
+          "Future effect": "The future thrives on enduring trust and cooperation.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Trust-building is integral to conflict culture.",
+          "Signals": "Consistent openness and collaboration."
+        }
+      },
+      "Purpose of This Theme": "To foster trust throughout the conflict resolution process.",
+      "Why This Matters": "Trust is the foundation of effective conflict resolution and long-term collaboration."
+    },
+    {
+      "Guiding Questions": [
+        "What have we learned from past conflicts?",
+        "How can we apply these lessons to future conflicts?",
+        "What patterns in power dynamics have emerged?"
+      ],
+      "Name": "Reflecting on Power and Conflict",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Continuous learning and adaptation.",
+          "Edge condition": "Balancing reflection with action.",
+          "Example moves": "Establishing regular reflection sessions.",
+          "Future effect": "The future evolves with informed, adaptive practices.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Regular reflection on conflicts and power dynamics.",
+          "Signals": "Consistent application of insights."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial improvement and adaptation.",
+          "Edge condition": "Assuming reflection is a one-time event.",
+          "Example moves": "Conducting post-conflict reviews sporadically.",
+          "Future effect": "The future benefits unevenly from past experiences.",
+          "Immediate cost": "Some learning, but gaps remain.",
+          "Present pattern": "Occasional reflection on conflicts.",
+          "Signals": "Inconsistent application of lessons learned."
+        },
+        "Poor": {
+          "30-90 day system effect": "Stagnation and recurring conflicts.",
+          "Edge condition": "Mistaking resolution for closure.",
+          "Example moves": "Moving on without debriefing.",
+          "Future effect": "The future repeats past conflicts.",
+          "Immediate cost": "Repeated mistakes and unresolved issues.",
+          "Present pattern": "Conflicts are not reflected upon.",
+          "Signals": "Frequent déjà vu in conflicts."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Systemic growth and resilience.",
+          "Edge condition": "Avoiding over-analysis that hinders progress.",
+          "Example moves": "Integrating reflection into all conflict protocols.",
+          "Future effect": "The future thrives on continuous learning and evolution.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Reflection is embedded in the conflict culture.",
+          "Signals": "Collective learning and improvement."
+        }
+      },
+      "Purpose of This Theme": "To reflect on past conflicts and power dynamics to inform future actions.",
+      "Why This Matters": "Reflection allows for learning and growth, preventing repeated mistakes and fostering improvement."
+    }
+  ],
+  "Title": "Navigating Power in Conflict",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use during conflicts where power imbalances are evident, when past conflicts have led to unresolved tensions, or when striving for equitable solutions.",
+  "Why This Matters": "Unchecked power dynamics can exacerbate conflicts, leading to inequitable outcomes and eroded trust. Navigating power thoughtfully promotes fairness and collaboration."
+}

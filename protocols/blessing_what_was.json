@@ -1,0 +1,370 @@
+{
+  "Category": "Venture Lifecycle & Endings",
+  "Completion Prompts": [
+    "Name one sentence that blesses what was and one that opens what’s next.",
+    "List two gifts you are carrying forward and the first reuse date for each.",
+    "What residue did you release, and what act marked that release?"
+  ],
+  "Created At": "2025-08-19",
+  "Metadata": {
+    "Algorithm": {
+      "Present": false
+    },
+    "Bridges": [
+      "liminal"
+    ],
+    "Complexity": 2,
+    "Estimated Time": "45 minutes",
+    "Fields": [
+      "regenerative",
+      "wholeness",
+      "signal",
+      "collapse"
+    ],
+    "Modes": [
+      "Full Walk"
+    ],
+    "Primary Scenarios": [
+      "Closing a venture or major project while preserving gifts and relationships"
+    ],
+    "Readiness Stage": "Integrate",
+    "Related Protocols": [
+      "grieving-the-dream",
+      "clearing-lingering-residue",
+      "letting-go-of-the-startup",
+      "rebuilding-trust-over-time"
+    ],
+    "Stones": [
+      "integrity-is-the-growth-strategy",
+      "nothing-forced-nothing-withheld",
+      "no-contortion-for-acceptance",
+      "built-for-wholeness",
+      "the-speed-of-trust",
+      "the-system-walks-with-us"
+    ],
+    "Tags": [
+      "endings",
+      "closure",
+      "legacy",
+      "transition",
+      "integrity",
+      "coherence",
+      "grief",
+      "continuity"
+    ],
+    "Tone Markers": [
+      "clarity",
+      "coherence",
+      "steadiness",
+      "relational",
+      "integrity",
+      "brevity",
+      "field-aware",
+      "invitational",
+      "non-diagnostic",
+      "sacred/light-touch"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You complete specific acts of closure, communicate with care, and ritualize the blessing. The team’s narrative shifts from loss to continuity and learning.",
+    "Expected": "You name the ending, acknowledge what worked and what didn’t, and offer a sincere blessing. Energy begins returning to the present and future work.",
+    "Poor": "The ending is avoided or rushed. You oscillate between blame and nostalgia. Energy remains tied up in the past and decisions drag into the next chapter.",
+    "Transcendent": "The ending becomes a multiplier: gratitude expands the field, old patterns compost into signal, and a new chapter arrives lighter, clearer, and more potent."
+  },
+  "Overall Purpose": "To close a chapter with integrity by actively blessing the people, choices, and work that have brought you here—releasing attachment without denial and making room for what wants to emerge next.",
+  "Protocol ID": "blessingwhatwas",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What exactly is ending? What is not?",
+        "What commitment is complete—and what endures beyond this ending?",
+        "What boundary or date marks the end?"
+      ],
+      "Name": "Naming the True Ending",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Confidence increases; risk perception drops.",
+          "Edge condition": "Keep the tone firm yet warm.",
+          "Example moves": "Decision log entry + brief Q&A with stakeholders.",
+          "Future effect": "Organization learns how to end with dignity.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Links the ending to purpose, timing, and criteria.",
+          "Signals": "Shared language, steady cadence, fewer escalations."
+        },
+        "Expected": {
+          "30-90 day system effect": "Alignment improves; planning stabilizes.",
+          "Edge condition": "Do not over-explain; avoid justification loops.",
+          "Example moves": "One-page closure note with scope, timing, next steps.",
+          "Future effect": "Reduces rework; sets up clean handovers.",
+          "Immediate cost": "Short-term discomfort for you/others.",
+          "Present pattern": "States the ending plainly and compassionately.",
+          "Signals": "Clear statements, fewer mixed messages."
+        },
+        "Poor": {
+          "30-90 day system effect": "Scope creep and quiet resistance.",
+          "Edge condition": "If fear of letting people down blocks clarity.",
+          "Example moves": "Write: “What is ending is… What is not ending is…”",
+          "Future effect": "Unended endings repeat as new problems.",
+          "Immediate cost": "Confusion and mixed expectations.",
+          "Present pattern": "Avoids naming; talks around the change.",
+          "Signals": "Vague language, shifting plans, lingering ‘maybe’."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Ends seed beginnings; creativity returns.",
+          "Edge condition": "Guard against triumphalism or spiritual bypass.",
+          "Example moves": "Short ritual: state the end, thank it, open the next door.",
+          "Future effect": "Endings become a strategic capability.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Ending is named as part of a larger field transition.",
+          "Signals": "Calm presence, gratitude, forward invitations."
+        }
+      },
+      "Purpose of This Theme": "To state clearly what is ending and what is not.",
+      "Why This Matters": "Ambiguity keeps energy stuck. Precision releases it."
+    },
+    {
+      "Guiding Questions": [
+        "Which skills, assets, or relationships will we keep?",
+        "What did this chapter teach us that the next chapter needs?",
+        "Where will the top two gifts be reused in the next 60 days?"
+      ],
+      "Name": "Extracting the Gifts",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Roadmaps sharpen; team redeploys quickly.",
+          "Edge condition": "Avoid forcing every lesson into the next plan.",
+          "Example moves": "Assign owners; schedule first reuse moments.",
+          "Future effect": "Learning compounds into moats.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Maps gifts to future opportunities and roles.",
+          "Signals": "Clear handoffs; visible reuse in new work."
+        },
+        "Expected": {
+          "30-90 day system effect": "Knowledge transfers; onboarding improves.",
+          "Edge condition": "Keep it specific; avoid abstract platitudes.",
+          "Example moves": "Memo: ‘What we can now do faster/cleaner/cheaper.’",
+          "Future effect": "Next ventures start on stronger footing.",
+          "Immediate cost": "Time to reflect and document.",
+          "Present pattern": "Captures concrete learnings and reusable assets.",
+          "Signals": "Concise write-ups; asset registry updated."
+        },
+        "Poor": {
+          "30-90 day system effect": "Reinventing wheels in the next chapter.",
+          "Edge condition": "Beware of rewriting history to avoid pain.",
+          "Example moves": "List: 5 things learned; 3 you will reuse; 2 to teach others.",
+          "Future effect": "Patterns repeat; value evaporates.",
+          "Immediate cost": "Missed assets; lowered morale.",
+          "Present pattern": "Focuses on loss or blame; skips learning.",
+          "Signals": "Binary ‘success/failure’ stories; no documented insights."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Identity shifts from ‘ending’ to ‘evolving’.",
+          "Edge condition": "Guard against self-congratulation.",
+          "Example moves": "Public thank-you or write-up of durable learnings.",
+          "Future effect": "Reputation for integrity and wisdom grows.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Gifts are integrated into the field narrative.",
+          "Signals": "Shared pride; external story resonates."
+        }
+      },
+      "Purpose of This Theme": "To name lessons, capabilities, relationships, and assets worth carrying forward.",
+      "Why This Matters": "If gifts remain unnamed, they can’t be reused or taught."
+    },
+    {
+      "Guiding Questions": [
+        "What unspoken residue is still present?",
+        "What amends or acknowledgments are mine to make?",
+        "What simple ritual will mark the release?"
+      ],
+      "Name": "Releasing the Residue",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Trust restored; loops close.",
+          "Edge condition": "Amends ≠ forced reconciliation.",
+          "Example moves": "Specific apology + behavior change checkpoint.",
+          "Future effect": "Relational fabric strengthens.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Completes amends or repair where appropriate.",
+          "Signals": "Directness, warmth, follow-through."
+        },
+        "Expected": {
+          "30-90 day system effect": "Lighter interactions; clearer attention.",
+          "Edge condition": "Don’t outsource forgiveness to others.",
+          "Example moves": "Ritual: speak the blessing; thank; release.",
+          "Future effect": "Capacity returns for creative work.",
+          "Immediate cost": "Emotional effort; brief vulnerability.",
+          "Present pattern": "Names residue and chooses a release method.",
+          "Signals": "Softened tone; fewer rehashes."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decision friction; defensive posture.",
+          "Edge condition": "Notice if apology or amends are needed.",
+          "Example moves": "Write a private ‘unsent letter’; burn or archive.",
+          "Future effect": "Past pain steers future choices.",
+          "Immediate cost": "Lower energy; frayed relationships.",
+          "Present pattern": "Clings to ‘should have’; replays conflicts.",
+          "Signals": "Rumination, subtle blame, edge in tone."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Team culture normalizes honest closure.",
+          "Edge condition": "Avoid spiritual bypass; feel before you bless.",
+          "Example moves": "Shared moment of blessing; simple closing ritual.",
+          "Future effect": "Field coherence deepens post-ending.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Transforms residue into compassion and clarity.",
+          "Signals": "Humility; gratitude toward constraints."
+        }
+      },
+      "Purpose of This Theme": "To let go of regret, resentment, and self-judgment.",
+      "Why This Matters": "Residue binds attention; blessing restores presence."
+    },
+    {
+      "Guiding Questions": [
+        "Who needs to hear a specific thank you from me?",
+        "What did each person grow in themselves through this work?",
+        "What closing message would I be proud to receive in their place?"
+      ],
+      "Name": "Blessing the People",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Shared meaning; reduced rumor risk.",
+          "Edge condition": "Avoid pressure to speak.",
+          "Example moves": "Facilitated reflection with 3 rounds: gratitude, gifts, wishes.",
+          "Future effect": "Shared trust compounds into future work.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Creates a closing circle or conversation.",
+          "Signals": "Calm facilitation; honest reflections."
+        },
+        "Expected": {
+          "30-90 day system effect": "Bridges stay open; referrals rise.",
+          "Edge condition": "Match message to the relationship.",
+          "Example moves": "Short thank-you notes; public credit if appropriate.",
+          "Future effect": "Network strengthens; reputation lifts.",
+          "Immediate cost": "Time and emotional presence.",
+          "Present pattern": "Offers specific, sincere acknowledgments.",
+          "Signals": "Direct notes; warm tone; specific examples."
+        },
+        "Poor": {
+          "30-90 day system effect": "Weaker network; lost goodwill.",
+          "Edge condition": "Beware of performative praise.",
+          "Example moves": "Name 3 specific contributions per key person.",
+          "Future effect": "Doors quietly close.",
+          "Immediate cost": "Demotivation; cool relationships.",
+          "Present pattern": "Skips gratitude or makes it generic.",
+          "Signals": "One-liners, mass messages, silence."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Mutual uplift; long-tail collaborations.",
+          "Edge condition": "No transactional tone.",
+          "Example moves": "Offer tailored intros or references.",
+          "Future effect": "Community resilience grows through endings.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Aligns blessing with each person’s next path.",
+          "Signals": "Introductions, endorsements, invitations."
+        }
+      },
+      "Purpose of This Theme": "To recognize the humans who carried this work with you.",
+      "Why This Matters": "People remember how endings feel more than the reasons."
+    },
+    {
+      "Guiding Questions": [
+        "Which threads are still alive—and why?",
+        "What is their smallest next step in the next 30 days?",
+        "What boundaries protect these threads from scope creep?"
+      ],
+      "Name": "Carrying Forward What’s Alive",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Speed rises; learning loops shorten.",
+          "Edge condition": "Don’t force weak threads to live.",
+          "Example moves": "Migration notes; first ‘reuse’ commit shipped.",
+          "Future effect": "Institutional memory strengthens.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Integrates living threads into clear roadmaps.",
+          "Signals": "Visible reuse; better hitting of milestones."
+        },
+        "Expected": {
+          "30-90 day system effect": "Continuity; fewer cold starts.",
+          "Edge condition": "Protect from scope creep.",
+          "Example moves": "Quarterly check on the carried threads.",
+          "Future effect": "Compounding continuity and trust.",
+          "Immediate cost": "Focus trade-offs; small resourcing.",
+          "Present pattern": "Selects a few living threads and sustains them.",
+          "Signals": "Simple plan; owners; dates."
+        },
+        "Poor": {
+          "30-90 day system effect": "Restart costs later; cynicism grows.",
+          "Edge condition": "Watch for fear-based purges.",
+          "Example moves": "Identify 2 threads to continue; assign owners.",
+          "Future effect": "Value chain fractures.",
+          "Immediate cost": "Loss of momentum; morale dip.",
+          "Present pattern": "All-or-nothing thinking; discards signal.",
+          "Signals": "‘Burn it down’ talk; hard pivots without harvest."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Opportunity surface expands.",
+          "Edge condition": "Stay humble about what’s emerging.",
+          "Example moves": "Invite partners into the living thread.",
+          "Future effect": "A more regenerative field forms.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Living threads open new strategic options.",
+          "Signals": "Emergent collaborations; serendipity increases."
+        }
+      },
+      "Purpose of This Theme": "To commit to the elements that still have signal.",
+      "Why This Matters": "Not everything should end. Blessings also preserve vitality."
+    },
+    {
+      "Guiding Questions": [
+        "What simple ritual will you actually complete?",
+        "Who (if anyone) should witness this?",
+        "What words will you speak to bless and release?"
+      ],
+      "Name": "Ritualizing the Blessing",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Shared meaning and accountability.",
+          "Edge condition": "Attendance is invitational, never forced.",
+          "Example moves": "3-step ritual: thank, release, open.",
+          "Future effect": "Culture of clean closure forms.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Invites the right witnesses and names commitments.",
+          "Signals": "Calm resonance after the ritual."
+        },
+        "Expected": {
+          "30-90 day system effect": "Memory settles; emotion integrates.",
+          "Edge condition": "Keep it simple and grounded.",
+          "Example moves": "Speak the blessing aloud; close with a breath.",
+          "Future effect": "Endings become easier to enact.",
+          "Immediate cost": "A few minutes of presence and witness.",
+          "Present pattern": "Completes a short, sincere ritual.",
+          "Signals": "Softer body; steadier focus."
+        },
+        "Poor": {
+          "30-90 day system effect": "Residue resurfaces in new work.",
+          "Edge condition": "Beware of performative ceremony.",
+          "Example moves": "Choose a 5–10 min ritual you will actually do.",
+          "Future effect": "Closure keeps slipping.",
+          "Immediate cost": "Closure feels incomplete.",
+          "Present pattern": "Skips ritual; stays purely cerebral.",
+          "Signals": "Flat tone; quick pivot; no marker."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Endings raise collective coherence.",
+          "Edge condition": "Guard humility and sincerity as it scales.",
+          "Example moves": "Publish a short ‘how we end’ guide.",
+          "Future effect": "Endings seed a regenerative norm.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Ritual becomes a field practice others adopt.",
+          "Signals": "Others request the practice; stories spread."
+        }
+      },
+      "Purpose of This Theme": "To mark the ending with a simple, embodied act.",
+      "Why This Matters": "Rituals anchor memory, meaning, and release."
+    }
+  ],
+  "Title": "Blessing What Was",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "When a project, role, relationship, phase, or venture is ending—or you sense it should—and you want to honor it fully so that you carry forward only what’s alive.",
+  "Why This Matters": "Unconscious endings leak energy. Without an intentional blessing, residue lingers: second-guessing, hidden resentment, or self-blame. A clean blessing preserves the gifts, removes distortion, and restores momentum."
+}

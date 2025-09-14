@@ -1,0 +1,311 @@
+{
+  "Category": "",
+  "Completion Prompts": [
+    "Capture one early signal you noticed today and plan how to track it.",
+    "Identify one pattern from today's session and consider its potential impact.",
+    "Choose one small action to test an emerging pattern this week."
+  ],
+  "Created At": "2025-08-13",
+  "Metadata": {
+    "Algorithm": {
+      "Description": "",
+      "Present": false,
+      "Type": "",
+      "Version": ""
+    },
+    "Bridges": [
+      "signal-unclear",
+      "transitioning-field",
+      "relational-integrity"
+    ],
+    "Complexity": 4,
+    "Estimated Time": "60–90 min",
+    "Fields": [
+      "resilience-rooting",
+      "emergent-timing",
+      "signal-vs-noise",
+      "decision-clarity"
+    ],
+    "Modes": [
+      "Full Walk",
+      "Theme-Only"
+    ],
+    "Primary Scenarios": [
+      "Entering a new market",
+      "Responding to significant shifts",
+      "Clarifying direction amidst multiple futures"
+    ],
+    "Readiness Stage": "Explore",
+    "Related Protocols": [],
+    "Stones": [
+      "signal-before-shape",
+      "core-signal-naming",
+      "honoring-complexity",
+      "integration-not-fragmentation"
+    ],
+    "Tags": [
+      "pattern-recognition",
+      "emerging-trends",
+      "strategic-foresight"
+    ],
+    "Tone Markers": [
+      "grounded",
+      "invitational"
+    ]
+  },
+  "Overall Outcomes": {
+    "Excellent": "You regularly map emerging signals and test their implications → The future positions you ahead of shifts with informed, timely action.",
+    "Expected": "You notice some emerging patterns but act on them inconsistently → The future captures partial opportunities and mitigates some risks.",
+    "Poor": "You ignore or dismiss early signals → The future surprises you with avoidable crises or missed opportunities.",
+    "Transcendent": "Mapping emerging patterns is embedded in your culture → The future consistently shapes its environment rather than being shaped by it."
+  },
+  "Overall Purpose": "To make visible the signals, shifts, and possibilities that are beginning to take shape—before they become fixed—so choices can be made with clarity and alignment.",
+  "Protocol ID": "mappingwhatsemerging",
+  "Short Title": "Mapping Emerging",
+  "Themes": [
+    {
+      "Guiding Questions": [
+        "What small changes have I noticed recently?",
+        "Could these be early signs of a larger shift?",
+        "How might I track them without overreacting?"
+      ],
+      "Name": "Spotting Early Signals",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Shifts are met with readiness and agility.",
+          "Edge condition": "Avoiding overwhelm by prioritizing signals.",
+          "Example moves": "Maintaining a signal log reviewed monthly.",
+          "Future effect": "The future positions you ahead of shifts with informed, timely action.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You systematically scan for early signals.",
+          "Signals": "Regular identification of trends before they accelerate."
+        },
+        "Expected": {
+          "30-90 day system effect": "Partial preparedness for change.",
+          "Edge condition": "Over-relying on intuition without verification.",
+          "Example moves": "Following one emerging trend but missing related shifts.",
+          "Future effect": "The future captures partial opportunities and mitigates some risks.",
+          "Immediate cost": "Some opportunities are captured; others are missed.",
+          "Present pattern": "You occasionally pick up on early signals.",
+          "Signals": "Occasional 'we saw this coming' moments."
+        },
+        "Poor": {
+          "30-90 day system effect": "Changes feel sudden and disruptive.",
+          "Edge condition": "Dismissing small anomalies as irrelevant.",
+          "Example moves": "Ignoring a small but consistent customer complaint trend.",
+          "Future effect": "The future surprises you with avoidable crises or missed opportunities.",
+          "Immediate cost": "You miss the chance to act early.",
+          "Present pattern": "You notice only the most obvious shifts.",
+          "Signals": "Frequent surprise at market or internal developments."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Consistent anticipation of shifts across the team.",
+          "Edge condition": "Avoiding hypervigilance.",
+          "Example moves": "Embedding signal spotting in team rituals.",
+          "Future effect": "The future consistently shapes its environment rather than being shaped by it.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Early signal awareness is cultural and constant.",
+          "Signals": "Everyone shares responsibility for sensing."
+        }
+      },
+      "Purpose of This Theme": "To detect faint indicators of change before they become obvious.",
+      "Why This Matters": "Weak signals often appear long before major shifts—they’re easier to influence early."
+    },
+    {
+      "Guiding Questions": [
+        "What signals seem connected?",
+        "What story might they be telling?",
+        "What would it mean if this pattern continues?"
+      ],
+      "Name": "Connecting Signals into Patterns",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Decisions anticipate interconnected changes.",
+          "Edge condition": "Not forcing patterns where none exist.",
+          "Example moves": "Creating quarterly pattern maps.",
+          "Future effect": "The future moves ahead with integrated, systemic insight.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You intentionally map signals into patterns.",
+          "Signals": "Visual maps or summaries of pattern clusters."
+        },
+        "Expected": {
+          "30-90 day system effect": "Inconsistent anticipation of change.",
+          "Edge condition": "Acting on partial patterns prematurely.",
+          "Example moves": "Spotting a trend in one product line but missing cross-market links.",
+          "Future effect": "The future captures some opportunities but misses deeper shifts.",
+          "Immediate cost": "Occasional clarity, but some patterns go unnoticed.",
+          "Present pattern": "You sometimes connect signals into patterns.",
+          "Signals": "Patterns noticed only in hindsight."
+        },
+        "Poor": {
+          "30-90 day system effect": "Decisions lack systemic insight.",
+          "Edge condition": "Overlooking cause-and-effect relationships.",
+          "Example moves": "Tracking issues separately without synthesis.",
+          "Future effect": "The future reacts without understanding the bigger picture.",
+          "Immediate cost": "Connections are missed, reducing clarity.",
+          "Present pattern": "You treat each signal as isolated.",
+          "Signals": "Fragmented notes on changes."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Shifts are shaped with strategic influence.",
+          "Edge condition": "Balancing pattern recognition with openness to new data.",
+          "Example moves": "Team-wide review of live pattern dashboards.",
+          "Future effect": "The future consistently shapes patterns to its advantage.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Pattern mapping is embedded in all sensing work.",
+          "Signals": "Shared, living pattern maps."
+        }
+      },
+      "Purpose of This Theme": "To link individual observations into coherent emerging narratives.",
+      "Why This Matters": "A single signal can be noise; patterns tell a story worth acting on."
+    },
+    {
+      "Guiding Questions": [
+        "What’s the smallest test we could run on this pattern?",
+        "What would success look like?",
+        "How will we measure the result?"
+      ],
+      "Name": "Testing the Implications",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Emerging bets succeed more often.",
+          "Edge condition": "Balancing speed with rigor.",
+          "Example moves": "A/B testing responses to emerging trends.",
+          "Future effect": "The future allocates resources effectively toward validated shifts.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You run structured tests to explore implications.",
+          "Signals": "Measured experiments on key signals."
+        },
+        "Expected": {
+          "30-90 day system effect": "Some false starts still occur.",
+          "Edge condition": "Overrelying on anecdotal tests.",
+          "Example moves": "Piloting changes without structured measurement.",
+          "Future effect": "The future makes some informed bets but still wastes resources.",
+          "Immediate cost": "Partial risk reduction, partial clarity.",
+          "Present pattern": "You test patterns informally.",
+          "Signals": "Mixed results from emerging bets."
+        },
+        "Poor": {
+          "30-90 day system effect": "Loss of confidence in sensing process.",
+          "Edge condition": "Confusing possibility with certainty.",
+          "Example moves": "Launching a major initiative based on a hunch.",
+          "Future effect": "The future suffers avoidable false starts.",
+          "Immediate cost": "Resources wasted on false leads.",
+          "Present pattern": "You act fully on untested patterns.",
+          "Signals": "Frequent pivots after poor results."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "The system adapts with precision and confidence.",
+          "Edge condition": "Avoiding testing for its own sake.",
+          "Example moves": "Integrating test-and-learn cycles into sensing workflow.",
+          "Future effect": "The future shapes itself from well-tested emerging possibilities.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Testing implications is a default practice.",
+          "Signals": "Consistent high win-rate from emerging bets."
+        }
+      },
+      "Purpose of This Theme": "To explore the possible outcomes of emerging patterns.",
+      "Why This Matters": "Testing reduces the risk of overcommitting to unproven trends."
+    },
+    {
+      "Guiding Questions": [
+        "What are 3 different ways this could play out?",
+        "What signals would point to each path?",
+        "How can we prepare for all without overextending?"
+      ],
+      "Name": "Considering Multiple Possible Futures",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Fewer surprises, faster adaptation.",
+          "Edge condition": "Balancing preparation with focus.",
+          "Example moves": "Running scenario workshops for emerging patterns.",
+          "Future effect": "The future adapts fluidly to multiple possible paths.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You explore a range of plausible futures.",
+          "Signals": "Scenario maps linked to emerging patterns."
+        },
+        "Expected": {
+          "30-90 day system effect": "Moderate readiness for change.",
+          "Edge condition": "Treating alternatives as low priority.",
+          "Example moves": "Identifying a 'plan B' without exploring further options.",
+          "Future effect": "The future navigates change with partial agility.",
+          "Immediate cost": "Some flexibility, but still anchored to a main assumption.",
+          "Present pattern": "You occasionally consider alternative outcomes.",
+          "Signals": "Limited contingency plans."
+        },
+        "Poor": {
+          "30-90 day system effect": "Limited adaptability when reality shifts.",
+          "Edge condition": "Mistaking probability for certainty.",
+          "Example moves": "Planning for only the most likely scenario.",
+          "Future effect": "The future forces reactive course changes.",
+          "Immediate cost": "You’re blindsided by unexpected turns.",
+          "Present pattern": "You assume only one outcome is possible.",
+          "Signals": "Surprise when patterns deviate from expectations."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "High adaptability without loss of focus.",
+          "Edge condition": "Avoiding diffusion of effort across too many scenarios.",
+          "Example moves": "Maintaining living future maps updated quarterly.",
+          "Future effect": "The future thrives across varied conditions.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Multiple futures thinking is embedded in planning.",
+          "Signals": "Scenarios evolve as patterns shift."
+        }
+      },
+      "Purpose of This Theme": "To imagine different ways an emerging pattern could unfold.",
+      "Why This Matters": "Considering multiple futures prevents overcommitment to one vision."
+    },
+    {
+      "Guiding Questions": [
+        "What’s the smallest meaningful action we could take?",
+        "How can this action influence the trajectory?",
+        "What support would make this action effective?"
+      ],
+      "Name": "Translating Insight into Action",
+      "Outcomes": {
+        "Excellent": {
+          "30-90 day system effect": "Consistent shaping of trends to your advantage.",
+          "Edge condition": "Ensuring timing balances boldness with readiness.",
+          "Example moves": "Launching a pilot in an emerging market segment.",
+          "Future effect": "The future reflects your intentional influence.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "You act early and strategically on mapped patterns.",
+          "Signals": "Initiatives predate broad awareness."
+        },
+        "Expected": {
+          "30-90 day system effect": "Mixed record on shaping outcomes.",
+          "Edge condition": "Acting without fully leveraging insight.",
+          "Example moves": "Testing a feature after a competitor’s launch.",
+          "Future effect": "The future shapes itself with partial input from you.",
+          "Immediate cost": "Some influence, but many opportunities pass by.",
+          "Present pattern": "You take tentative action on some patterns.",
+          "Signals": "Occasional first-mover advantage."
+        },
+        "Poor": {
+          "30-90 day system effect": "Competitors or external forces set the direction.",
+          "Edge condition": "Mistaking readiness for certainty.",
+          "Example moves": "Delaying action until customer demand is fully proven.",
+          "Future effect": "The future is shaped by others, not by you.",
+          "Immediate cost": "Opportunities to shape the outcome are lost.",
+          "Present pattern": "You wait until patterns fully mature before acting.",
+          "Signals": "Consistently late entry into emerging spaces."
+        },
+        "Transcendent": {
+          "30-90 day system effect": "Long-term positioning strengthens with each cycle.",
+          "Edge condition": "Avoiding overreach before proof of viability.",
+          "Example moves": "Embedding early-action protocols in strategy playbooks.",
+          "Future effect": "The future consistently aligns with your intended direction.",
+          "Immediate cost": "Not applicable",
+          "Present pattern": "Early, strategic action is standard practice.",
+          "Signals": "Leadership reputation for foresight."
+        }
+      },
+      "Purpose of This Theme": "To turn emerging understanding into steps that shape outcomes.",
+      "Why This Matters": "Action taken early in a pattern’s life can influence its trajectory."
+    }
+  ],
+  "Title": "Mapping What’s Emerging",
+  "Version": "1.0.0",
+  "When To Use This Protocol": "Use when entering a new market, after a significant shift, or when multiple possible futures are present and you need to clarify direction.",
+  "Why This Matters": "Early sensing allows you to shape the direction rather than just respond to it. Without mapping, you may overlook key signals or miss the chance to influence outcomes while they’re still forming."
+}
